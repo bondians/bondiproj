@@ -14,6 +14,8 @@ class CreateSongs < ActiveRecord::Migration
       t.float :fade_duration, :default => -1
       t.float :volume, :default => 0.7
       t.boolean :fade_in, :default => true
+      t.integer :user_id
+      t.integer :archive_number
       t.text :file
 
       t.timestamps
