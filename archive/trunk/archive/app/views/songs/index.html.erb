@@ -1,0 +1,46 @@
+<h1>Listing songs</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Track</th>
+    <th>Year</th>
+    <th>Album</th>
+    <th>Artist</th>
+    <th>Genre</th>
+    <th>Comments</th>
+    <th>Size</th>
+    <th>Pre</th>
+    <th>Post</th>
+    <th>Fade duration</th>
+    <th>Volume</th>
+    <th>Fade in</th>
+    <th>File</th>
+  </tr>
+
+<% for song in @songs %>
+  <tr>
+    <td><%=h song.name %></td>
+    <td><%=h song.track %></td>
+    <td><%=h song.year %></td>
+    <td><%=h song.album %></td>
+    <td><%=h song.artist %></td>
+    <td><%=h song.genre %></td>
+    <td><%=h song.comments %></td>
+    <td><%=h song.size %></td>
+    <td><%=h song.pre_id %></td>
+    <td><%=h song.post_id %></td>
+    <td><%=h song.fade_duration %></td>
+    <td><%=h song.volume %></td>
+    <td><%=h song.fade_in %></td>
+    <td><%=h song.file %></td>
+    <td><%= link_to 'Show', song %></td>
+    <td><%= link_to 'Edit', edit_song_path(song) %></td>
+    <td><%= link_to 'Destroy', song, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New song', new_song_path %>

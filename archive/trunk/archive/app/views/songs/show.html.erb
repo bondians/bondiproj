@@ -1,0 +1,73 @@
+<p>
+  <b>Name:</b>
+  <%=h @song.name %>
+</p>
+
+<p>
+  <b>Track:</b>
+  <%=h @song.track %>
+</p>
+
+<p>
+  <b>Year:</b>
+  <%=h @song.year %>
+</p>
+
+<p>
+  <b>Album:</b>
+  <%=h @song.album %>
+</p>
+
+<p>
+  <b>Artist:</b>
+  <%=h @song.artist %>
+</p>
+
+<p>
+  <b>Genre:</b>
+  <%=h @song.genre %>
+</p>
+
+<p>
+  <b>Comments:</b>
+  <%=h @song.comments %>
+</p>
+
+<p>
+  <b>Size:</b>
+  <%=h @song.size %>
+</p>
+
+<p>
+  <b>Pre:</b>
+  <%=h @song.pre_id %>
+</p>
+
+<p>
+  <b>Post:</b>
+  <%=h @song.post_id %>
+</p>
+
+<p>
+  <b>Fade duration:</b>
+  <%=h @song.fade_duration %>
+</p>
+
+<p>
+  <b>Volume:</b>
+  <%=h @song.volume %>
+</p>
+
+<p>
+  <b>Fade in:</b>
+  <%=h @song.fade_in %>
+</p>
+
+<p>
+  <b>File:</b>
+  <%=h @song.file %>
+</p>
+
+
+<%= link_to 'Edit', edit_song_path(@song) %> |
+<%= link_to 'Back', songs_path %>

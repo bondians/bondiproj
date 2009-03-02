@@ -1,0 +1,60 @@
+
+### Quick way to search tree structure for every file.. not bad eh?
+#!/usr/bin/env ruby
+
+require 'find'
+
+a = []
+
+Find.find(".") do |path|
+    puts path
+end
+
+###### Old Schemas
+
+###sqlite> .schema artists
+CREATE TABLE artists (
+    "key" integer NOT NULL,
+    artist text NOT NULL,
+    soundex text
+);
+CREATE INDEX artists_pkey on artists (key);
+
+###sqlite> .schema albums
+CREATE TABLE albums (
+    "key" integer NOT NULL,
+    album text NOT NULL,
+    artist integer DEFAULT 1 NOT NULL,
+    genre integer DEFAULT 1 NOT NULL,
+    soundex text
+);
+CREATE INDEX albums_pkey on albums (key);
+
+###sqlite> .schema genres
+CREATE TABLE genres (
+    "key" integer NOT NULL,
+    genre text NOT NULL
+);
+
+###sqlite> .schema songs
+CREATE TABLE songs (
+    "key" integer NOT NULL,
+    song text NOT NULL,
+    file text NOT NULL,
+    track integer,
+    "year" integer,
+    album integer DEFAULT 1 NOT NULL,
+    artist integer DEFAULT 1 NOT NULL,
+    genre integer DEFAULT 1 NOT NULL,
+    ripper integer DEFAULT 1 NOT NULL,
+    comments text,
+    soundex text,
+    touch timestamp with time zone,
+    size integer,
+    prekey integer DEFAULT 0 NOT NULL,
+    postkey integer DEFAULT 0 NOT NULL,
+    fadeduration double precision DEFAULT -1 NOT NULL,
+    volume double precision DEFAULT 0.7 NOT NULL,
+    fadein boolean DEFAULT true NOT NULL
+);
+CREATE INDEX songs_pkey on songs (key);

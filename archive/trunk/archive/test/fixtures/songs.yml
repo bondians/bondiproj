@@ -1,0 +1,33 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  track: 1
+  year: 1
+  album: 
+  artist: 
+  genre: 
+  comments: MyText
+  size: 1
+  pre_id: 1
+  post_id: 1
+  fade_duration: 1.5
+  volume: 1.5
+  fade_in: false
+  file: MyText
+
+two:
+  name: MyString
+  track: 1
+  year: 1
+  album: 
+  artist: 
+  genre: 
+  comments: MyText
+  size: 1
+  pre_id: 1
+  post_id: 1
+  fade_duration: 1.5
+  volume: 1.5
+  fade_in: false
+  file: MyText
