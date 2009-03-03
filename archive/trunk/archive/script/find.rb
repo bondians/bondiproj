@@ -65,7 +65,7 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
                     
                     ##Album
                     album_tag  =  tag.album ? Iconv.conv('UTF-8', 'LATIN1', tag.album) : "<no album>"
-                    album = @albums.find{|a| a.name == album_tag) || Album.new({:name=>album_tag, :genre=> genre})
+                    album = @albums.find{|a| a.name == album_tag} || Album.new({:name=>album_tag, :genre=> genre})
                     if album.new_record?
                         album.save
                         @albums.unshift(album)
