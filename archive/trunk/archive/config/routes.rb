@@ -1,7 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
-  
-  map.resources :song_types
+  map.resources :songtypes
 
+  
   map.resources :songs
 
   map.resources :albums
