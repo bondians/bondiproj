@@ -1,4 +1,4 @@
-class SongTypesController < ApplicationController
+class Song_TypesController < ApplicationController
   # GET /song_types
   # GET /song_types.xml
   def index
