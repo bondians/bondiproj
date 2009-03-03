@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(:version => 20090302054450) do
   end
 
   create_table "songs", :force => true do |t|
-    t.string   "name"
+    t.string   "title"
     t.integer  "track"
     t.integer  "year"
     t.integer  "album_id"
@@ -42,9 +42,11 @@ ActiveRecord::Schema.define(:version => 20090302054450) do
     t.integer  "size"
     t.integer  "pre_id"
     t.integer  "post_id"
-    t.float    "fade_duration", :default => -1.0
-    t.float    "volume",        :default => 0.7
-    t.boolean  "fade_in",       :default => true
+    t.float    "fade_duration",  :default => -1.0
+    t.float    "volume",         :default => 0.7
+    t.boolean  "fade_in",        :default => true
+    t.integer  "user_id"
+    t.integer  "archive_number"
     t.text     "file"
     t.datetime "created_at"
     t.datetime "updated_at"

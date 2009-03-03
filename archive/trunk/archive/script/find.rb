@@ -32,17 +32,17 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
               
                 ##Build a song object, while working with the rest
                 attributes = DEFAULTS
-                attributes[:title] = tag.title ? Iconv.conv('UTF-8', 'LATIN1', tag.title) : "<no title>"
-                attributes[:size] = tag.size.to_i
-                attributes[:year] = tag.year.to_i
-                attributes[:file] = path
-                
+                attributes[:title] = !!tag.title ? Iconv.conv('UTF-8', 'LATIN1', tag.title) : "<no title>"
+                attributes[:size] = tag.size
+                attributes[:year] = tag.year
+		attributes[:file] = Iconv.conv('UTF-8', 'LATIN1', path)
+
                 track = tag.track ? tag.track.split("/").first.to_i : nil
                 
                 ## Try to find old archive _id
                 tag_text = tag.find{|t| t[:id]==:TXXX}
                 attributes[:archive_number] = tag_text[:text] if tag_text
-                if !!!Song.find_by_archive_number(attributes[:archive_number])
+                if !Song.find_by_archive_number(attributes[:archive_number])
                     
                     #### Try to find each of the rest of the important fields
                     ##Artist
