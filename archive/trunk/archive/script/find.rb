@@ -12,6 +12,7 @@ require 'ruby-debug'
 @artists = Artist.all
 @albums = Album.all
 @songs = Song.all
+@types = Song_type.all
 
 DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
 
@@ -40,6 +41,7 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
                     attributes[:size] = File.size(path)
                     attributes[:year] = tag.year
                     attributes[:track] = tag.track ? tag.track.split("/").first.to_i : nil
+                    attributes[:song_type] = @types.find{|t| t.identifier == kind}
                 
                     ## Try to find old archive _id
                     tag_text = tag.find{|t| t[:id]==:TXXX}
@@ -57,6 +59,10 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
                     
                     ##Genre
                     genre_tag  =  tag.genre ? Iconv.conv('UTF-8', 'LATIN1', tag.genre) : "Unclassifiable"
+                    if genre_tag.match(/^\(\d+\)$/)
+                        num = genre_tag.gsub("(","").gsub(")","").to_i
+                        genre_tag = Tagger::GENRES[num]
+                    end
                     genre = @genres.find{|g| g.name == genre_tag} || Genre.new({:name=>genre_tag})
                     if genre.new_record?
                         genre.save
@@ -94,6 +100,7 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
                 attributes[:size] = File.size(path)
                 attributes[:year] = tag.DAY.to_i
                 attributes[:track] = tag.TRKN ? tag.TRKN.first : nil
+                attributes[:song_type] = @types.find{|t| t.identifier == kind}
 
                 #### Try to find each of the rest of the important fields
                 ##Artist
