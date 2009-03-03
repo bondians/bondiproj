@@ -41,7 +41,7 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
                     attributes[:size] = File.size(path)
                     attributes[:year] = tag.year
                     attributes[:track] = tag.track ? tag.track.split("/").first.to_i : nil
-                    attributes[:song_type] = @types.find{|t| t.identifier == kind}
+                    attributes[:songtype] = @types.find{|t| t.identifier == kind}
                 
                     ## Try to find old archive _id
                     tag_text = tag.find{|t| t[:id]==:TXXX}
@@ -100,7 +100,7 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
                 attributes[:size] = File.size(path)
                 attributes[:year] = tag.DAY.to_i
                 attributes[:track] = tag.TRKN ? tag.TRKN.first : nil
-                attributes[:song_type] = @types.find{|t| t.identifier == kind}
+                attributes[:songtype] = @types.find{|t| t.identifier == kind}
 
                 #### Try to find each of the rest of the important fields
                 ##Artist
