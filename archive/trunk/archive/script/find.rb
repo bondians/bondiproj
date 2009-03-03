@@ -4,7 +4,7 @@ require File.expand_path(__FILE__ + "/../../config/environment")
 
 require 'find'
 require 'id3lib'
-require 'MP4Info'
+require 'mp4info'
 require 'ruby-debug'
 
 @genres = Genre.all
