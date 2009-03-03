@@ -6,6 +6,7 @@ require 'find'
 require 'id3lib'
 require 'mp4info'
 require 'ruby-debug'
+require 'Tagit'
 
 @genres = Genre.all
 @artists = Artist.all
@@ -22,7 +23,7 @@ require 'ruby-debug'
                 debugger
                 1
                 1
-                tags = mp3.inject({}){ |info, m| m.merge(Tagit.read_tag(m)) }
+                tags = mp3.inject({}){ |info, m| m.merge(tagit.read_tag(m)) }
                 
             when "m4a"
                 puts "#{path} is a m4a !!"
