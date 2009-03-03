@@ -64,8 +64,8 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
                 album.save if album.new_record?
                 attributes[:album] = album
                 
-                Song.new(attributes)
-                if Song.save
+                song = Song.new(attributes)
+                if song.save
                     puts "Saved MP3 Titled #{attributes[:title]}"
                 else
                     puts "Saved MP3 Titled #{attributes[:title]}"
@@ -78,11 +78,11 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
                 puts "m4p"
                 #puts "#{path} is a mp4 !!"
         else
-            puts "."
+            puts "unknown"
             #puts "#{path} is some other shit!!"
         end
       else
-        puts "#{path} is not a file"
+        puts "."
     end
   end
     
