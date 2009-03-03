@@ -8,13 +8,7 @@
     <th>Album</th>
     <th>Artist</th>
     <th>Genre</th>
-    <th>Comments</th>
     <th>Size</th>
-    <th>Pre</th>
-    <th>Post</th>
-    <th>Fade duration</th>
-    <th>Volume</th>
-    <th>Fade in</th>
     <th>File</th>
   </tr>
 
@@ -23,16 +17,10 @@
     <td><%=h song.title %></td>
     <td><%=h song.track %></td>
     <td><%=h song.year %></td>
-    <td><%=h song.album %></td>
-    <td><%=h song.artist %></td>
-    <td><%=h song.genre %></td>
-    <td><%=h song.comments %></td>
+    <td><%=h song.album.name %></td>
+    <td><%=h song.artist.name %></td>
+    <td><%=h song.genre.name %></td>
     <td><%=h song.size %></td>
-    <td><%=h song.pre_id %></td>
-    <td><%=h song.post_id %></td>
-    <td><%=h song.fade_duration %></td>
-    <td><%=h song.volume %></td>
-    <td><%=h song.fade_in %></td>
     <td><%=h song.file %></td>
     <td><%= link_to 'Show', song %></td>
     <td><%= link_to 'Edit', edit_song_path(song) %></td>

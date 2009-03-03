@@ -2,7 +2,7 @@ class SongsController < ApplicationController
   # GET /songs
   # GET /songs.xml
   def index
-    @songs = Song.find(:all)
+    @songs = Song.all :include=>[:genre, :artist, :album]
 
     respond_to do |format|
       format.html # index.html.erb
