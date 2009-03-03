@@ -12,7 +12,7 @@ require 'ruby-debug'
 @artists = Artist.all
 @albums = Album.all
 @songs = Song.all
-@types = Song_type.all
+@types = Songtype.all
 
 DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
 
