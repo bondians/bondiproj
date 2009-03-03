@@ -1,0 +1,23 @@
+<p>
+  <b>Name:</b>
+  <%=h @song_type.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @song_type.description %>
+</p>
+
+<p>
+  <b>Identifier:</b>
+  <%=h @song_type.identifier %>
+</p>
+
+<p>
+  <b>Mime type:</b>
+  <%=h @song_type.mime_type %>
+</p>
+
+
+<%= link_to 'Edit', edit_song_type_path(@song_type) %> |
+<%= link_to 'Back', song_types_path %>

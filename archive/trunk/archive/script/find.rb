@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 require File.expand_path(__FILE__ + "/../../config/environment")
+require "#{RAILS_ROOT}/lib/tagger"
 
 require 'find'
 require 'id3lib'
@@ -26,7 +27,7 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
   Find.find(ARGV.shift) do |path|
       if FileTest.file?(path) && !path.match(".AppleDouble")
         kind = path.split(".")
-        case kind.last
+        case kind.last.downcase
             when "mp3"
               tag = ID3Lib::Tag.new(path)
               

@@ -1,0 +1,26 @@
+<h1>Listing song_types</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Identifier</th>
+    <th>Mime type</th>
+  </tr>
+
+<% for song_type in @song_types %>
+  <tr>
+    <td><%=h song_type.name %></td>
+    <td><%=h song_type.description %></td>
+    <td><%=h song_type.identifier %></td>
+    <td><%=h song_type.mime_type %></td>
+    <td><%= link_to 'Show', song_type %></td>
+    <td><%= link_to 'Edit', edit_song_type_path(song_type) %></td>
+    <td><%= link_to 'Destroy', song_type, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New song_type', new_song_type_path %>
