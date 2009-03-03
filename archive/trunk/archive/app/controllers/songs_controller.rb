@@ -2,12 +2,9 @@ class SongsController < ApplicationController
   # GET /songs
   # GET /songs.xml
   def index
-    @songs = Song.all :include=>[:genre, :artist, :album]
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @songs }
-    end
+    #@songs = Song.all :include=>[:genre, :artist, :album]
+    @page = params[:page] || 1
+    @songs = Stem.search(params[:search], @page)
   end
 
   # GET /songs/1

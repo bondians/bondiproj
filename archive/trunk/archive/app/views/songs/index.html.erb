@@ -1,4 +1,12 @@
+<br />
 <h1>Listing songs</h1>
+
+<% form_tag songs_path, :method => 'get' do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Seacrh", :name => nil %>
+  </p>
+<% end %>
 
 <table>
   <tr>
@@ -31,4 +39,5 @@
 
 <br />
 
-<%= link_to 'New song', new_song_path %>
+<%= will_paginate @products %>
+<br>
