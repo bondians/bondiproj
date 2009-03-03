@@ -10,7 +10,7 @@ end
 a = ID3Lib::Tag.new("jones.mp3")
 b =Album.new
 b.name = Kconv.toutf8(a[2][:text])
-b.name = Iconv.conv('UTF-8', 'LATIN-1', a[2][:text] )
+b.name = Iconv.conv('UTF-8', 'LATIN1', a[2][:text] )
 b.save
 
 
