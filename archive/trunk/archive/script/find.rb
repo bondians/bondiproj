@@ -42,32 +42,42 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
                 ## Try to find old archive _id
                 tag_text = tag.find{|t| t[:id]==:TXXX}
                 attributes[:archive_number] = tag_text[:text] if tag_text
-                if !Song.find_by_archive_number(attributes[:archive_number])
+                if !@songs.find{|s| s.file == attributes[:file]}
                     
                     #### Try to find each of the rest of the important fields
                     ##Artist
                     artist_tag = tag.artist ? Iconv.conv('UTF-8', 'LATIN1', tag.artist) : "<no artist>"
-                    artist = Artist.find_by_name(artist_tag) || Artist.new({:name=>artist_tag})
-                    artist.save if artist.new_record?
+                    artist = @artists.find{|a| a.name == artist_tag} || Artist.new({:name=>artist_tag})
+                    if artist.new_record?
+                        artist.save
+                        @artists.unshift(artist)
+                    end
                     attributes[:artist] = artist
                     
                     ##Genre
                     genre_tag  =  tag.genre ? Iconv.conv('UTF-8', 'LATIN1', tag.genre) : "Unclassifiable"
-                    genre = Genre.find_by_name(genre_tag) || Genre.new({:name=>genre_tag})
-                    genre.save if genre.new_record?
+                    genre = @genres.find{|g| g.name == genre_tag} || Genre.new({:name=>genre_tag})
+                    if genre.new_record?
+                        genre.save
+                        @genres.unshift(genre)
+                    end
                     attributes[:genre] = genre
                     
                     ##Album
                     album_tag  =  tag.album ? Iconv.conv('UTF-8', 'LATIN1', tag.album) : "<no album>"
-                    album = Album.find_by_name(album_tag) || Album.new({:name=>album_tag, :genre=> genre})
-                    album.save if album.new_record?
+                    album = @albums.find{|a| a.name == album_tag) || Album.new({:name=>album_tag, :genre=> genre})
+                    if album.new_record?
+                        album.save
+                        @albums.unshift(album)
+                    end
                     attributes[:album] = album
                     
                     song = Song.new(attributes)
                     if song.save
                         puts "Saved MP3 Titled #{attributes[:title]}"
+                        @songs.unshift(song)
                     else
-                        puts "Saved MP3 Titled #{attributes[:title]}"
+                        puts "Failed to save MP3 Titled #{attributes[:title]}"
                     end
                 else
                     puts "Song in DB #{attributes[:title]}"

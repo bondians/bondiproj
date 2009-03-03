@@ -1,8 +1,5 @@
 class SongsController < ApplicationController
-  # GET /songs
-  # GET /songs.xml
   def index
-    #@songs = Song.all :include=>[:genre, :artist, :album]
     @page = params[:page] || 1
     @songs = Song.search(params[:search], @page)
   end

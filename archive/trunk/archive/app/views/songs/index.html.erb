@@ -10,14 +10,14 @@
 
 <table>
   <tr>
-    <th>Title</th>
-    <th>Track</th>
-    <th>Year</th>
-    <th>Album</th>
-    <th>Artist</th>
-    <th>Genre</th>
-    <th>Size</th>
-    <th>File</th>
+    <th width="10%">Title</th>
+    <th width="5%">Track</th>
+    <th width="5%">Year</th>
+    <th width="10%">Album</th>
+    <th width="10%">Artist</th>
+    <th width="10%">Genre</th>
+    <th width="5%">Size</th>
+    <th width="20%">File</th>
   </tr>
 
 <% for song in @songs %>
@@ -31,8 +31,6 @@
     <td><%=h song.size %></td>
     <td><%=h song.file %></td>
     <td><%= link_to 'Show', song %></td>
-    <td><%= link_to 'Edit', edit_song_path(song) %></td>
-    <td><%= link_to 'Destroy', song, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
