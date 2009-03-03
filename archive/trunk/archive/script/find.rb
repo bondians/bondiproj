@@ -6,7 +6,6 @@ require 'find'
 require 'id3lib'
 require 'mp4info'
 require 'ruby-debug'
-require 'Tagit'
 
 @genres = Genre.all
 @artists = Artist.all
