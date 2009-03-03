@@ -19,11 +19,14 @@ require 'Tagit'
         kind = path.split(".")
         case kind.last
             when "mp3"
-                mp3 = ID3Lib::Tag.new(path) || []
+                tag = ID3Lib::Tag.new(path) || []
                 debugger
                 1
                 1
-                tags = mp3.inject({}){ |info, m| m.merge(tagit.read_tag(m)) }
+                
+                #tag.title  #=> "Talk"
+                #tag.album = 'X&Y'
+                #tag.track = '5/13'
                 
             when "m4a"
                 puts "#{path} is a m4a !!"
