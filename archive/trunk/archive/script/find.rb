@@ -24,7 +24,7 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
 ###
 
   Find.find(ARGV.shift) do |path|
-      if FileTest.file?(path)
+      if FileTest.file?(path) && !path.match(".AppleDouble")
         kind = path.split(".")
         case kind.last
             when "mp3"
