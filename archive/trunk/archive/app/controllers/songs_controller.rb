@@ -4,7 +4,7 @@ class SongsController < ApplicationController
   def index
     #@songs = Song.all :include=>[:genre, :artist, :album]
     @page = params[:page] || 1
-    @songs = Stem.search(params[:search], @page)
+    @songs = Song.search(params[:search], @page)
   end
 
   # GET /songs/1
