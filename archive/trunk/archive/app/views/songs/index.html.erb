@@ -1,5 +1,6 @@
 <br />
 <h1>Listing songs</h1>
+<% row_class = cycle("cssAlternating1", "cssAlternating2") %>
 
 <% form_tag songs_path, :method => 'get' do %>
   <p>
@@ -9,7 +10,7 @@
 <% end %>
 
 <table>
-  <tr>
+  <tr class="<%= row_class %>">
     <th width="10%">Title</th>
     <th width="5%">Track</th>
     <th width="5%">Year</th>
