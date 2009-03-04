@@ -6,7 +6,7 @@ class Song < ActiveRecord::Base
   validates_presence_of :songtype
   
   define_index do
-    indexes title
+    indexes title, :sortable => true
     indexes album.name, :as => :album, :sortable => true
     indexes artist.name, :as => :artist, :sortable => true
     indexes genre.name, :as => :genre, :sortable => true
