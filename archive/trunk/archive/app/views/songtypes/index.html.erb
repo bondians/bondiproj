@@ -14,9 +14,7 @@
     <td><%=h songtype.description %></td>
     <td><%=h songtype.identifier %></td>
     <td><%=h songtype.mime_type %></td>
-    <td><%= link_to 'Show', songtype %></td>
     <td><%= link_to 'Edit', edit_songtype_path(songtype) %></td>
-    <td><%= link_to 'Destroy', songtype, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
