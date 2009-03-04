@@ -24,7 +24,7 @@
   </tr>
 
 <% for song in @songs %>
-  <tr>
+  <tr class="<%= row_class %>" >
     <td><%=h song.title %></td>
     <td><%=h song.track %></td>
     <td><%=h song.year %></td>
