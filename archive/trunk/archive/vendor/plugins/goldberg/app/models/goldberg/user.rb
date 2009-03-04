@@ -1,4 +1,5 @@
 require 'digest/sha1'
+require_dependency "site"
 
 module Goldberg
   class User < ActiveRecord::Base
