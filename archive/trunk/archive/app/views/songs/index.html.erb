@@ -33,7 +33,7 @@
     <td><%=h number_to_human_size(song.size) %></td>
     <td><%=h song.songtype.name %></td>
     <td><%= link_to 'Show', song %></td>
-    <td><%= link_to 'Get', :controller => "songs", :action => "stream_one_song", :id => song %></td>
+    <td><%= link_to 'Stream', :controller => "songs", :action => "stream_one_song", :id => song %></td>
     <td><%= link_to 'Get', :controller => "songs", :action => "send_one_song", :id => song %></td>
   </tr>
 <% end %>
