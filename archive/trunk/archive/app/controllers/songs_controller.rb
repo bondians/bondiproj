@@ -87,4 +87,14 @@ class SongsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  private
+  def order_with_default(column, direction)
+    if params[:sort]
+      "#{params[:sort]} #{params[:direction]}, #{column} #{direction}"
+    else
+      "#{column} #{direction}"
+    end
+  end
+  
 end
