@@ -48,7 +48,7 @@ ActiveRecord::Schema.define(:version => 20090303234627) do
     t.integer  "user_id"
     t.integer  "archive_number"
     t.text     "file"
-    t.integer  "song_type_id"
+    t.integer  "songtype_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

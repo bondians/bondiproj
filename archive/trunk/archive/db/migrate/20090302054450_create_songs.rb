@@ -17,7 +17,7 @@ class CreateSongs < ActiveRecord::Migration
       t.integer :user_id
       t.integer :archive_number
       t.text :file
-      t.references :song_type
+      t.references :songtype
 
       t.timestamps
     end

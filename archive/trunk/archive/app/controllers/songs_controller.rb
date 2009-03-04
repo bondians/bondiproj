@@ -4,6 +4,12 @@ class SongsController < ApplicationController
     @songs = Song.search(params[:search], @page)
   end
 
+  def send_one_song
+   song = Song.find params[:id]
+   send_file song.file, :type => song.songtype.mime_type
+  end
+
+
   # GET /songs/1
   # GET /songs/1.xml
   def show
