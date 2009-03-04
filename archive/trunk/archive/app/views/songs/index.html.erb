@@ -17,7 +17,7 @@
     <th width="10%">Artist</th>
     <th width="10%">Genre</th>
     <th width="5%">Size</th>
-    <th width="20%">File</th>
+    <th width="20%">Type</th>
     <th width="5%">&nbsp;</th>
     <th width="5%">&nbsp;</th>
   </tr>
@@ -31,7 +31,7 @@
     <td><%=h song.artist.name %></td>
     <td><%=h song.genre.name %></td>
     <td><%=h number_to_human_size(song.size) %></td>
-    <td><%=h song.file %></td>
+    <td><%=h song.songtype.name %></td>
     <td><%= link_to 'Show', song %></td>
     <td><%= link_to 'Get', :controller => "songs", :action => "send_one_song", :id => song %></td>
   </tr>
