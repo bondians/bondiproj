@@ -1,7 +1,6 @@
 class SongsController < ApplicationController
   def index
-    @page = params[:page] || 1
-    @songs = Song.search(params[:search], @page)
+    @songs = Song.search params[:search]
   end
 
   def send_one_song
