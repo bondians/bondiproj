@@ -11,7 +11,7 @@ class SongsController < ApplicationController
   
   def stream_one_song
    song = Song.find params[:id]
-   send_file song.file, :type => 'audio/mpeg', :disposition => :inline 
+   send_file song.file, :type => "'audio/mpeg'", :disposition => :inline 
   end
 
 
