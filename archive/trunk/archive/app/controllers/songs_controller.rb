@@ -1,7 +1,7 @@
 class SongsController < ApplicationController
   def index
     @songs = Song.search params[:search], :include => [:songtype, :album, :artist, :genre], 
-    :order => {params[:sort] => params[:direction]} , :page=> params[:page], :per_page => 100
+    :order => {params[:sort].to_sym => params[:direction]} , :page=> params[:page], :per_page => 100
   end
 
   def send_one_song
