@@ -8,8 +8,8 @@ class Song < ActiveRecord::Base
   define_index do
     indexes title
     indexes album.name, :as => :album, :sortable => true
-    indexes artist.name, :sortable => true
-    indexes genre.name, :sortable => true
+    indexes artist.name
+    indexes genre.name
   end
   
 end
