@@ -1,7 +1,7 @@
 class SongsController < ApplicationController
   def index
     @songs = Song.search params[:search], :include => [:songtype, :album, :artist, :genre], 
-    :order => {params[:sort].to_sym => params[:direction]} , :page=> params[:page], :per_page => 100
+    :order => order_with_default("artist", "asc") , :page=> params[:page], :per_page => 100
   end
 
   def send_one_song
@@ -91,7 +91,7 @@ class SongsController < ApplicationController
   private
   def order_with_default(column, direction)
     if params[:sort]
-      "#{params[:sort]} #{params[:direction]}, #{column} #{direction}"
+      "#{params[:sort]} #{params[:direction]}"
     else
       "#{column} #{direction}"
     end
