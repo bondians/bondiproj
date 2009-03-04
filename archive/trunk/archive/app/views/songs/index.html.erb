@@ -28,7 +28,7 @@
     <td><%=h song.album.name %></td>
     <td><%=h song.artist.name %></td>
     <td><%=h song.genre.name %></td>
-    <td><%=h song.size %></td>
+    <td><%=h number_to_human_size(song.size) %></td>
     <td><%=h song.file %></td>
     <td><%= link_to 'Show', song %></td>
   </tr>
