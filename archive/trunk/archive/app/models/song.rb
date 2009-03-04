@@ -12,4 +12,13 @@ class Song < ActiveRecord::Base
     indexes genre.name, :as => :genre, :sortable => true
   end
   
+  private
+  def order_with_default(column, direction)
+    if params[:sort]
+      "#{params[:sort]} #{params[:direction]}, #{column} #{direction}"
+    else
+      "#{column} #{direction}"
+    end
+  end
+  
 end
