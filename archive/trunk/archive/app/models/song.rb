@@ -8,7 +8,7 @@ class Song < ActiveRecord::Base
   def self.search(search, page)
     paginate :per_page => 100, :page => page,
              :conditions => ['title like ?', "%#{search}%"],
-             :include => [:genre, :artist, :album]
+             :include => [:genre, :artist, :album, :songtype]
   end
   
 end
