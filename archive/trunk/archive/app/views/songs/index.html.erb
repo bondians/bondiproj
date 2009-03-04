@@ -10,14 +10,14 @@
 
 <table>
   <tr>
-    <th width="10%">Title</th>
+    <th width="20%">Title</th>
     <th width="5%">Track</th>
     <th width="5%">Year</th>
     <th width="10%">Album</th>
     <th width="10%">Artist</th>
     <th width="10%">Genre</th>
     <th width="5%">Size</th>
-    <th width="20%">Type</th>
+    <th width="5%">Type</th>
     <th width="5%">&nbsp;</th>
     <th width="5%">&nbsp;</th>
   </tr>
@@ -33,6 +33,7 @@
     <td><%=h number_to_human_size(song.size) %></td>
     <td><%=h song.songtype.name %></td>
     <td><%= link_to 'Show', song %></td>
+    <td><%= link_to 'Get', :controller => "songs", :action => "stream_one_song", :id => song %></td>
     <td><%= link_to 'Get', :controller => "songs", :action => "send_one_song", :id => song %></td>
   </tr>
 <% end %>
