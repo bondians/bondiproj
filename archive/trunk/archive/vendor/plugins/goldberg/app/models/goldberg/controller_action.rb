@@ -2,7 +2,7 @@ module Goldberg
   class ControllerAction < ActiveRecord::Base
     include Goldberg::Model
     
-    belongs_to :site_controller
+    belongs_to :site_controller, :class_name=>"Goldberg::SiteController", :foreign_key => :site_controller_id
     belongs_to :permission, :class_name=>"Goldberg::Permission", :foreign_key => :permission_id
     
     validates_presence_of :name, :site_controller_id
