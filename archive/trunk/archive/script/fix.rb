@@ -38,12 +38,12 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
         attributes = DEFAULTS
         ## Shortcircuit if its already present
             attributes[:title] = !!tag.title ? Iconv.conv('UTF-8', 'LATIN1', tag.title) : "<no ttle>"
-            attributes[:title] = Iconv.conv('UTF-8', 'UTF-16', tag.title) unless attributes[:title].match(/[a-zA-Z][a-zA-Z]/)
+            attributes[:title] = Iconv.conv('UTF-8', 'UTF-16', tag.title) unless !!attributes[:title].match(/[a-zA-Z][a-zA-Z]/)
             
             #### Try to find each of the rest of the important fields
             ##Artist
             artist_tag = tag.artist ? Iconv.conv('UTF-8', 'LATIN1', tag.artist) : "<no artist>"
-            artist_tag = Iconv.conv('UTF-8', 'UTF-16', tag.artist) unless artist_tag.match(/[a-zA-Z][a-zA-Z]/)
+            artist_tag = Iconv.conv('UTF-8', 'UTF-16', tag.artist) unless !!artist_tag.match(/[a-zA-Z][a-zA-Z]/)
             artist = @artists.find{|a| a.name == artist_tag} || Artist.new({:name=>artist_tag})
             if artist.new_record?
                 artist.save
@@ -53,12 +53,12 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
             
             ##Genre
             genre_tag  =  tag.genre ? Iconv.conv('UTF-8', 'LATIN1', tag.genre) : "Unclassifiable"
-            if genre_tag.match(/^\(\d+\)$/)
+            if !!genre_tag.match(/^\(\d+\)$/)
                 num = genre_tag.gsub("(","").gsub(")","").to_i
                 genre_tag = Tagger::GENRES[num]
             end
-            genre_tag  =  Iconv.conv('UTF-8', 'UTF-16', tag.genre) unless genre_tag.match(/[a-zA-Z][a-z][A-Z]/)
-            if genre_tag.match(/^\(\d+\)$/)
+            genre_tag  =  Iconv.conv('UTF-8', 'UTF-16', tag.genre) unless !!genre_tag.match(/[a-zA-Z][a-z][A-Z]/)
+            if !!genre_tag.match(/^\(\d+\)$/)
                 num = genre_tag.gsub("(","").gsub(")","").to_i
                 genre_tag = Tagger::GENRES[num]
             end
@@ -71,7 +71,7 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
             
             ##Album
             album_tag  =  tag.album ? Iconv.conv('UTF-8', 'LATIN1', tag.album) : "<no album>"
-            album_tag  =  Iconv.conv('UTF-8', 'UTF-16', tag.album) unless album_tag.match(/[a-zA-Z][a-zA-Z]/)
+            album_tag  =  Iconv.conv('UTF-8', 'UTF-16', tag.album) unless !!album_tag.match(/[a-zA-Z][a-zA-Z]/)
             album = @albums.find{|a| a.name == album_tag} || Album.new({:name=>album_tag, :genre=> genre})
             if album.new_record?
                 album.save
