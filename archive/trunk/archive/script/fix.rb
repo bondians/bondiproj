@@ -14,7 +14,7 @@ require 'ruby-debug'
 
 @types = Songtype.all
 @songs = Song.search nil, :include => [:songtype, :album, :artist, :genre], 
-    :order => 'title desc' , :page=> params[:page], :per_page => 100
+    :order => 'title desc' , :page=> 1, :per_page => 100
 
 DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
 
