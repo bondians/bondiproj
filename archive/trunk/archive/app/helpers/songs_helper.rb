@@ -9,8 +9,9 @@ module SongsHelper
     text ||= column.humanize
     query_string = ""
     if params[:search]
-      query_string << "&amp;search="
-      query_string << params[:sort]
+      query_string << "search="
+      query_string << params[:search]
+      query_string << "&amp;"
     end
     if params[:sort]
       if params[:sort] == column
@@ -36,7 +37,7 @@ module SongsHelper
     query_string << (params[:sort] == column && params[:direction] == order ? opposite : order)
     if params[:search]
       query_string << "&amp;search="
-      query_string << params[:sort]
+      query_string << params[:search]
     end
     if params[:sort] == column
       text << direction_span(params[:direction] == "desc" ? "&#8595;" : "&#8593;")
