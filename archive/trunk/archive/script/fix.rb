@@ -82,7 +82,6 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
             path.update_attributes(attributes)
             if path.save
                 puts "Saved MP3 Titled #{attributes[:title]}"
-                @songs.unshift(path)
             else
                 puts "Failed to save MP3 Titled #{attributes[:title]}"
             end
