@@ -32,6 +32,7 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
     case kind
     when "mp3"
       tag = ID3Lib::Tag.new(path.file)
+      puts path.file
       
         ##Build a song object, while working with the rest
         attributes = DEFAULTS
