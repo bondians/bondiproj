@@ -51,8 +51,8 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
             attributes[:artist] = artist
             
             ##Genre
-            genre_tag  =  tag.genre ? Iconv.conv('UTF-8', 'UTF-16', tag.genre) : "Unclassifiable"
-            genre_tag  =  Iconv.conv('UTF-8', 'LATIN1', tag.genre) unless genre_tag.match(/[a-zA-Z][a-z][A-Z]/)
+            genre_tag  =  tag.genre ? Iconv.conv('UTF-8', 'LATIN1', tag.genre) : "Unclassifiable"
+            genre_tag  =  Iconv.conv('UTF-8', 'UTF-16', tag.genre) unless genre_tag.match(/[a-zA-Z][a-z][A-Z]/)
             if genre_tag.match(/^\(\d+\)$/)
                 num = genre_tag.gsub("(","").gsub(")","").to_i
                 genre_tag = Tagger::GENRES[num]
