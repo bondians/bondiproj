@@ -36,13 +36,13 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
         ##Build a song object, while working with the rest
         attributes = DEFAULTS
         ## Shortcircuit if its already present
-            attributes[:title] = !!tag.title ? Iconv.conv('UTF-8', 'UTF-16', tag.title) : "<no ttle>"
-            attributes[:title] = Iconv.conv('UTF-8', 'LATIN1', tag.title) unless attributes[:title].match(/[a-zA-Z][a-zA-Z]/)
+            attributes[:title] = !!tag.title ? Iconv.conv('UTF-8', 'LATIN1', tag.title) : "<no ttle>"
+            attributes[:title] = Iconv.conv('UTF-8', 'UTF-16', tag.title) unless attributes[:title].match(/[a-zA-Z][a-zA-Z]/)
             
             #### Try to find each of the rest of the important fields
             ##Artist
-            artist_tag = tag.artist ? Iconv.conv('UTF-8', 'UTF-16', tag.artist) : "<no artist>"
-            artist_tag = Iconv.conv('UTF-8', 'LATIN1', tag.artist) unless artist_tag.match(/[a-zA-Z][a-zA-Z]/)
+            artist_tag = tag.artist ? Iconv.conv('UTF-8', 'LATIN1', tag.artist) : "<no artist>"
+            artist_tag = Iconv.conv('UTF-8', 'UTF-16', tag.artist) unless artist_tag.match(/[a-zA-Z][a-zA-Z]/)
             artist = @artists.find{|a| a.name == artist_tag} || Artist.new({:name=>artist_tag})
             if artist.new_record?
                 artist.save
@@ -65,8 +65,8 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
             attributes[:genre] = genre
             
             ##Album
-            album_tag  =  tag.album ? Iconv.conv('UTF-8', 'UTF-16', tag.album) : "<no album>"
-            album_tag  =  Iconv.conv('UTF-8', 'LATIN1', tag.album) unless album_tag.match(/[a-zA-Z][a-zA-Z]/)
+            album_tag  =  tag.album ? Iconv.conv('UTF-8', 'LATIN1', tag.album) : "<no album>"
+            album_tag  =  Iconv.conv('UTF-8', 'UTF-16', tag.album) unless album_tag.match(/[a-zA-Z][a-zA-Z]/)
             album = @albums.find{|a| a.name == album_tag} || Album.new({:name=>album_tag, :genre=> genre})
             if album.new_record?
                 album.save
