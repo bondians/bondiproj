@@ -73,7 +73,7 @@
 </p>
 
 <div>
-<%= send_file @song.file, :disposition => :inline %>  
+<%= ActionController::Streaming.send_file @song.file, :disposition => :inline %>  
 </div>
 
 
