@@ -3,7 +3,7 @@ class AlbumsController < ApplicationController
   # GET /albums.xml
   def index
     #@albums = Album.find(:all, :include=>:genre)
-    @albums = Album.search params[:search], :include => :genre, :page=> params[:page], :per_page => 100
+    @albums = Album.search params[:search], :include => [:artist, :genre] :page=> params[:page], :per_page => 100
   end
 
   # GET /albums/1
