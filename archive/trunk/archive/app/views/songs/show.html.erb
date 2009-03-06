@@ -72,10 +72,6 @@
   <%=h @song.file %>
 </p>
 
-<div>
-<%= Module::ActionController::Streaming.send_file @song.file, :disposition => :inline %>  
-</div>
-
 
 
 <%= link_to 'Edit', edit_song_path(@song) %> |
