@@ -23,7 +23,7 @@
 
 <% for song in @songs %>
   <%# cur_class = "#{row_class}" %>
-  <%= render :partial => 'song', :locals => { :song => song, :cur_class => row_class } %>
+  <%= render :partial => 'song', :locals => { :song => song, :cur_class => "#{row_class}" } %>
 <% end %>
 </table>
 
