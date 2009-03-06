@@ -6,7 +6,7 @@ class SongsController < ApplicationController
 
   def send_one_song
    song = Song.find params[:id]
-   send_file song.file, :type => song.songtype.mime_type, :disposition => :inline
+   send_file song.file, :type => song.songtype.mime_type
   end
   
   def stream_one_song
@@ -22,15 +22,6 @@ class SongsController < ApplicationController
   # GET /songs/1.xml
   def show
     @song = Song.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.mp3 do
-        render :action => :show, :layout=>false
-        send_file @song.file, :disposition => :inline, :stream => :true
-    end
-      format.xml  { render :xml => @song }
-    end
   end
 
   # GET /songs/new
