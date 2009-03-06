@@ -10,20 +10,17 @@
 
 <table>
   <tr>
-    <th>Name</th>
+    <th>Click To View</th>
   </tr>
 
 <% for artist in @artists %>
   <tr class="<%= cycle("cssAlternating1", "cssAlternating2") %>" >
-    <td><%=h artist.name %></td>
-    <td><%= link_to 'Show', artist %></td>
-    <td><%#= link_to 'Edit', edit_artist_path(artist) %></td>
-    <td><%#= link_to 'Destroy', artist, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%=link_to artist.name, artist %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= will_paginate @products %>
+<%= will_paginate @artists %>
 <br>
