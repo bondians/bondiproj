@@ -18,4 +18,4 @@ config.action_mailer.raise_delivery_errors = false
 
 require 'will_paginate'
 
-Mime::Type.register 'audio/mpeg', :mp3
+Mime::Type.register "audio/mpeg", :mp3
