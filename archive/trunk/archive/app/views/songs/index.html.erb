@@ -1,6 +1,5 @@
 <br />
 <h1>Listing songs</h1>
-<% row_class = cycle("cssAlternating1", "cssAlternating2") %>
 <% form_tag songs_path, :method => 'get' do %>
   <p>
     <%= text_field_tag :search, params[:search] %>
@@ -22,8 +21,7 @@
   </tr>
 
 <% for song in @songs %>
-  <%# cur_class = "#{row_class}" %>
-  <%= render :partial => 'song', :locals => { :song => song, :cur_class => "#{row_class}" } %>
+  <%= render :partial => 'song', :locals => { :song => song, :cur_class => cycle("cssAlternating1", "cssAlternating2") } %>
 <% end %>
 </table>
 
