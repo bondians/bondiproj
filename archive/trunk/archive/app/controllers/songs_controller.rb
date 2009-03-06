@@ -26,9 +26,8 @@ class SongsController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.mp3 do
-        render :layout=>false
-        Mongrel::DirHandler::add_mime_type('mp3','audio/mp3')
-        Mongrel::DirHandler::send_file @song.file, :disposition => :inline, :stream => :true
+        render :action => :show, :layout=>false
+        send_file @song.file, :disposition => :inline, :stream => :true
     end
       format.xml  { render :xml => @song }
     end
