@@ -2,12 +2,8 @@ class ArtistsController < ApplicationController
   # GET /artists
   # GET /artists.xml
   def index
-    @artists = Artist.find(:all)
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @artists }
-    end
+    #@artists = Artist.find(:all)
+    @artists = Artist.search params[:search], :page=> params[:page], :per_page => 100
   end
 
   # GET /artists/1

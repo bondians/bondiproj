@@ -2,12 +2,8 @@ class GenresController < ApplicationController
   # GET /genres
   # GET /genres.xml
   def index
-    @genres = Genre.find(:all)
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @genres }
-    end
+    #@genres = Genre.find(:all)
+    @genres = Genre.search params[:search], :page=> params[:page], :per_page => 100
   end
 
   # GET /genres/1
