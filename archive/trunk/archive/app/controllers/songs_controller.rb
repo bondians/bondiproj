@@ -1,5 +1,6 @@
 class SongsController < ApplicationController
   def index
+    params[:search] ||= ""
     @songs = Song.search params[:search], :include => [:songtype, :album, :artist, :genre], 
     :order => order_with_default("title", "asc") , :page=> params[:page], :per_page => 100
   end
