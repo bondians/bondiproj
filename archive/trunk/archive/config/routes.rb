@@ -1,6 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  
+  map.resources :sonviews
+  
   map.resources :songtypes
-
   
   map.resources :songs
 
