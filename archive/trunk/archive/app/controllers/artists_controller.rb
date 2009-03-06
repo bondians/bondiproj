@@ -9,12 +9,7 @@ class ArtistsController < ApplicationController
   # GET /artists/1
   # GET /artists/1.xml
   def show
-    @artist = Artist.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @artist }
-    end
+    @artist = Artist.find(params[:id], :include => :albums)
   end
 
   # GET /artists/new
