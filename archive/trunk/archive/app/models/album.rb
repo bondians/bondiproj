@@ -4,7 +4,7 @@ class Album < ActiveRecord::Base
   has_many :songs
   
   define_index do
-    indexes :name, :sortable => true
+    indexes name, :sortable => true
   end
   
   
