@@ -1,3 +1,36 @@
+his is what I did in my view:
+<%= link_to_remote 'play in line',
+:url=>{:action=>'playinline',:songurl=>a.url
+,:disposition=>'inline'}%>
+<div id="playa<%= Digest::MD5.hexdigest(a.url) %>">
+</div>
+
+in my controller:
+def playinline
+@songurl=params[:songurl]
+@md5=Digest::MD5.hexdigest(params[:songurl])
+end
+
+def play
+@tag=Rtag.find_by_url(params['songurl'])
+@file=@xxxxxxxxxxxxxxxxxxxxxxxxxx+-J2VVmMCRNWE@public.gmane.org[1..-1]
+@file=@file[1..-1] if @file[0..1]=='//'
+# render :layout=>false
+Mongrel::DirHandler::add_mime_type('mp3','audio/mp3')
+send_file @file, :type => 'audio/mp3', :disposition => 'inline' ,:stream=>true
+end
+
+in my playinline.rjs:
+page.replace_html 'playa'+@md5, '<embed
+src="'+url_for(:action=>'play',:disposition=>'inline',:songurl=>@songurl)+'"
+width="300" height="42" ></embed>'
+
+works great
+
+Pat
+
+
+
 require 'id3lib'
 require 'iconv'
 class String
