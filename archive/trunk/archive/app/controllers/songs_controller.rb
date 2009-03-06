@@ -25,7 +25,7 @@ class SongsController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.mp3 {send_file @song.file, :disposition => :inline}
+      format.mp3 {send_file @song.file}
       format.xml  { render :xml => @song }
     end
   end
