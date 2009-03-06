@@ -1,0 +1,13 @@
+  <tr class = "#{cur_class}" >
+    <td><%=h song.title %></td>
+    <td><%=h song.track %></td>
+    <td><%=h song.year %></td>
+    <td><%=h song.album.name %></td>
+    <td><%=h song.artist.name %></td>
+    <td><%=h song.genre.name %></td>
+    <td><%=h number_to_human_size(song.size) %></td>
+    <td><%=h song.songtype.name %></td>
+    <td width="20"><%= link_to 'Show', song %></td>
+    <td width="20"><%= link_to 'Stream', :controller => "songs", :action => "stream_one_song", :id => song %></td>
+    <td width="20"><%= link_to 'Get', :controller => "songs", :action => "send_one_song", :id => song %></td>
+  </tr>
