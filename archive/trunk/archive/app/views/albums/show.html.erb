@@ -13,6 +13,13 @@
   <%=h @album.genre %>
 </p>
 
+<p>
+  <b>Tracks:</b>
+  <% for song in @album.songs %>
+  <%= render :partial => 'songs/song', :locals => { :song => song, :cur_class => cycle("cssAlternating1", "cssAlternating2") } %>
+<% end %>
+</p>
+
 
 <%= link_to 'Edit', edit_album_path(@album) %> |
 <%= link_to 'Back', albums_path %>
