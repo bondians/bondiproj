@@ -5,6 +5,11 @@ class Song < ActiveRecord::Base
   belongs_to :songtype
   validates_presence_of :songtype
   
+  def <=> (other)
+    track <=> other.track
+  end
+
+  
   define_index do
     indexes title, :as => :title, :sortable => true
     indexes album.name, :as => :album, :sortable => true
