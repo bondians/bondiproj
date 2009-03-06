@@ -6,7 +6,7 @@
   </tr>
 
 <% for artist in @artists %>
-  <tr>
+  <tr class="<%= cycle("cssAlternating1", "cssAlternating2") %>" >
     <td><%=h artist.name %></td>
     <td><%= link_to 'Show', artist %></td>
     <td><%#= link_to 'Edit', edit_artist_path(artist) %></td>
