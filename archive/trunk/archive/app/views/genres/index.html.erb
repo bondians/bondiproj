@@ -1,5 +1,12 @@
 <h1>Listing genres</h1>
 
+<% form_tag genres_path, :method => 'get' do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>
+  </p>
+<% end %>
+
 <table>
   <tr>
     <th>Name</th>
@@ -14,6 +21,11 @@
   </tr>
 <% end %>
 </table>
+
+<br />
+
+<%= will_paginate @genres %>
+<br>
 
 <br />
 
