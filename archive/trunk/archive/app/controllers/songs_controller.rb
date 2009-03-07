@@ -1,4 +1,7 @@
 class SongsController < ApplicationController
+  skip_before_filter :goldberg_security_up
+  prepend_before_filter :do_basic_auth, :goldberg_security_up
+  
   def index
     @songs = Song.search params[:search], :include => [:songtype, :album, :artist, :genre], 
     :order => order_with_default("title", "asc") , :page=> params[:page], :per_page => 100
@@ -11,10 +14,8 @@ class SongsController < ApplicationController
   
   def stream_one_song
    song = Song.find params[:id]
-   #send_data(@media.data, :type => "audio/mpeg", :filename => "media-#{@media.id}.mp3", :disposition => "inline")
-   respond_to do |format|
-    format.mp3 {send_data song.file, :type => "audio/mpeg", :disposition => :inline}
-    end
+   logger.debug "Streaming #{Song.name}, type: #{song.songtype.mime_type}"
+   send_file song.file, :type => song.songtype.mime_type, :disposition => "inline"
   end
 
 
