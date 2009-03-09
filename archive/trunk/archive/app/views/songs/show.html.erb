@@ -76,10 +76,10 @@
 Test Song:
 <br />
 <object type="audio/x-wav" data="stream_one_song/<%= @song.id %>" width="200" height="20">
-  <param name="src" value="data/test.wav">
+  <param name="src" value="<%= File.basename(@song.file) %>">
   <param name="autoplay" value="false">
   <param name="autoStart" value="0">
-  alt : <a href="stream_one_song/<%= @song.id %>">test.wav</a>
+  alt : <a href="stream_one_song/<%= @song.id %>"><%= File.basename(@song.file) %></a>
 </object>
 
 
