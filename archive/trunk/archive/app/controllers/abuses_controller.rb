@@ -5,10 +5,21 @@ class AbusesController < ApplicationController
     @abuse = Abuse.first :offset=>rand(Abuse.all.length)
   end
 
+  # GET /abuses/1
+  # GET /abuses/1.xml
+  def show
+    redirect_to(abuses_url)
+  end
+
   # GET /abuses/new
   # GET /abuses/new.xml
   def new
     @abuse = Abuse.new
+
+    respond_to do |format|
+      format.html # new.html.erb
+      format.xml  { render :xml => @abuse }
+    end
   end
 
   # GET /abuses/1/edit
