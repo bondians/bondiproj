@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :abuses
+
   
   map.resources :sonviews
   

@@ -1,0 +1,16 @@
+<h1>Editing abuse</h1>
+
+<% form_for(@abuse) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :abuse %><br />
+    <%= f.text_area :abuse %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @abuse %> |
+<%= link_to 'Back', abuses_path %>
