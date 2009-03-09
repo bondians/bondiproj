@@ -1,0 +1,4 @@
+#EXTM3U
+
+#EXTINF: <%= @song.size / 192000 / 8 %>, <%= @song.title %>
+<%= url_for :controller => "songs", :action => "send_one_song", :id => @song, :only_path => false %>
