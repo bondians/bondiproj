@@ -2,18 +2,13 @@ class AbusesController < ApplicationController
   # GET /abuses
   # GET /abuses.xml
   def index
-    Abuse.first :offset=>rand(Abuse.all.length)
+    @abuse = Abuse.first :offset=>rand(Abuse.all.length)
   end
 
   # GET /abuses/new
   # GET /abuses/new.xml
   def new
     @abuse = Abuse.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @abuse }
-    end
   end
 
   # GET /abuses/1/edit
@@ -46,7 +41,7 @@ class AbusesController < ApplicationController
     respond_to do |format|
       if @abuse.update_attributes(params[:abuse])
         flash[:notice] = 'Abuse was successfully updated.'
-        format.html { redirect_to(@abuse) }
+        format.html { redirect_to(abuses_url) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
