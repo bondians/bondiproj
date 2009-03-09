@@ -29,7 +29,7 @@ class AbusesController < ApplicationController
     respond_to do |format|
       if @abuse.save
         flash[:notice] = 'Abuse was successfully created.'
-        format.html { redirect_to(@abuse) }
+        format.html { redirect_to(abuses_url) }
         format.xml  { render :xml => @abuse, :status => :created, :location => @abuse }
       else
         format.html { render :action => "new" }
