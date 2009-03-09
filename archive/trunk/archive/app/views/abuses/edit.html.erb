@@ -12,5 +12,6 @@
   </p>
 <% end %>
 
-<%= link_to 'Show', @abuse %> |
+
 <%= link_to 'Back', abuses_path %>
+<%= link_to 'Destroy', @abuse, :confirm => 'Are you sure?', :method => :delete %>
