@@ -74,9 +74,17 @@
 
 <br />
 Test Song:
-<embed
-       src="http://archive.deepbondi.net:8000/songs/stream_one_song/28879"
-       HEIGHT=60 WIDTH=144>
+<br />
+<object type="audio/x-wav" data="<%= @song.file %>" width="200" height="20">
+  <param name="src" value="data/test.wav">
+  <param name="autoplay" value="false">
+  <param name="autoStart" value="0">
+  alt : <a href="data/test.wav">test.wav</a>
+</object>
+
+
+
+<br />
 
 
 <%= link_to 'Edit', edit_song_path(@song) %> |
