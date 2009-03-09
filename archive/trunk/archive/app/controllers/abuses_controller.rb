@@ -5,17 +5,6 @@ class AbusesController < ApplicationController
     Abuse.first :offset=>rand(Abuse.all.length)
   end
 
-  # GET /abuses/1
-  # GET /abuses/1.xml
-  def show
-    @abuse = Abuse.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @abuse }
-    end
-  end
-
   # GET /abuses/new
   # GET /abuses/new.xml
   def new
