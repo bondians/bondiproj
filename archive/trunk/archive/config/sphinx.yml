@@ -35,7 +35,7 @@ test:
   encoding: unicode
   database: archive_test
   pool: 5
-  username: archive
+  username: cayuse
   password:
 
 production:

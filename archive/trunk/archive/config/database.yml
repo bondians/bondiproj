@@ -47,5 +47,5 @@ production:
   encoding: unicode
   database: archive_production
   pool: 5
-  username: archive
+  username: cayuse
   password:
