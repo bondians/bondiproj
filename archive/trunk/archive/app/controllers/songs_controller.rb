@@ -9,13 +9,12 @@ class SongsController < ApplicationController
 
   def send_one_song
    song = Song.find params[:id]
-   send_file song.file, :type => song.songtype.mime_type
+   send_file song.file, :type => song.songtype.mime_type, :disposition => "inline", :x_sendfile=>true
   end
   
   def stream_one_song
-   song = Song.find params[:id]
-   logger.debug "Streaming #{Song.name}, type: #{song.songtype.mime_type}"
-   send_file song.file, :type => song.songtype.mime_type, :disposition => "inline"
+   @song = Song.find params[:id]
+   render :content_type => "audio/x-mpegurl", :layout => "blank.erb"
   end
 
 
