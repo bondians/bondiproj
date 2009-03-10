@@ -17,9 +17,9 @@ class SongsController < ApplicationController
       format.m3u
       
       # make sure songtype.identifier is not the name of a "real" method!
-      #unless format.respond_to? @song.songtype.identifier
+      unless format.respond_to? @song.songtype.identifier
         format.send(@song.songtype.identifier) { send_song_file @song }
-      #end
+      end
     end
   end
 
@@ -88,7 +88,7 @@ class SongsController < ApplicationController
   private
   
   def send_song_file(song)
-    send_file song.file, :type => song.songtype.mime_type, :disposition => "inline", :x_sendfile => true
+    send_file song.file, :type => %{'song.songtype.mime_type'}, :disposition => "inline", :x_sendfile => true
   end
   
   def order_with_default(column, direction)
