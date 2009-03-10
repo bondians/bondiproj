@@ -5,7 +5,7 @@
 
 <p>
   <b>Track:</b>
-  <%=h @song.track %>
+  <%=h @song.track %> of: <%=h @song.album.songs.length %>
 </p>
 
 <p>
@@ -35,7 +35,7 @@
 
 <p>
   <b>Size:</b>
-  <%=h @song.size %>
+  <%=h number_to_human_size(@song.size) %>
 </p>
 
 <p>
@@ -63,19 +63,11 @@
   <%=h @song.fade_in %>
 </p>
 
-  <b>Archive Number:</b>
-  <%=h @song.archive_number %>
-</p>
-
-<p>
-  <b>File:</b>
-  <%=h @song.file %>
-</p>
 
 <br />
-Test Song:
+Your Selection:
 <br />
-<object data="<%= "#{@song.id}.#{@song.songtype.identifier}" %>" width="200" height="20">
+<object type="audio/x-mp3", data="<%= "#{@song.id}.#{@song.songtype.identifier}" %>" width="200" height="20">
   <param name="src" value="<%= "#{@song.id}.#{@song.songtype.identifier}" %>"
   <param name="autoplay" value="false">
   <param name="autoStart" value="0">

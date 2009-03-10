@@ -17,15 +17,15 @@
   </p>
   <p>
     <%= f.label :album %><br />
-    <%= f.text_field :album %>
+    <%= @song.album.name %>
   </p>
   <p>
     <%= f.label :artist %><br />
-    <%= f.text_field :artist %>
+    <%= @song.artist.name %>
   </p>
   <p>
     <%= f.label :genre %><br />
-    <%= f.text_field :genre %>
+    <%= @song.genre.name %>
   </p>
   <p>
     <%= f.label :comments %><br />
@@ -33,7 +33,7 @@
   </p>
   <p>
     <%= f.label :size %><br />
-    <%= f.text_field :size %>
+    <%= number_to_human_size(@song.size) %>
   </p>
   <p>
     <%= f.label :pre_id %><br />
@@ -57,7 +57,7 @@
   </p>
   <p>
     <%= f.label :file %><br />
-    <%= f.text_area :file %>
+    <%= @song.file %>
   </p>
   <p>
     <%= f.submit "Update" %>
