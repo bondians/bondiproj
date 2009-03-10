@@ -150,8 +150,8 @@ margin-right:10px;
 }
 
 div.rightside {
-float:right;
-margin-left:10px;
+float:left;
+margin-right:10px;
 }
 
 div.leftside h1, div.rightside h1 {
