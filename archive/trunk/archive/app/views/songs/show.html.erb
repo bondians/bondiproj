@@ -67,21 +67,13 @@
 <br />
 Your Selection:
 <br />
-<object DATA="<%= @song.formatted_id %>"
-        WIDTH="200"
-        HEIGHT="20"
-        TITLE="<%=h @song.title %>" >
+<object DATA="<%= @song.formatted_id %>" TITLE="<%=h @song.title %>" WIDTH="200" HEIGHT="20">
   <param name="autoplay" value="false">
   <param name="autoStart" value="0">
-  <object TYPE="<%=h @song.songtype.mime_type %>"
-          DATA="<%= @song.formatted_id %>"
-          WIDTH="200"
-          HEIGHT="20"
-          TITLE="<%=h @song.title %>" >
+  <object DATA="<%= @song.formatted_id %>" TYPE="<%=h @song.songtype.mime_type %>" TITLE="<%=h @song.title %>" WIDTH="200" HEIGHT="20">
     <param name="autoplay" value="false">
     <param name="autoStart" value="0">
-    
-    <embed src="<%= @song.formatted_id %>" width="200" height="20" autoplay="false" autoStart="false" />
+    Alt: <embed src="<%= @song.formatted_id %>" width="200" height="20" autoplay="false" autoStart="false" />
   </object>
 </object>
 
