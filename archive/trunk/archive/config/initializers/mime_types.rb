@@ -7,5 +7,5 @@
     Mime::Type.register "audio/x-mpegurl", "m3u"
     
     Songtype.all.each do |type|
-      Mime::Type.register type.mime_type, type.name
+      Mime::Type.register type.mime_type, type.identifier
     end

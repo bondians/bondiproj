@@ -6,5 +6,5 @@
     <td><%=h number_to_human_size(song.size) %></td>
     <td><%=h song.songtype.name %></td>
     <td width="20"><%= link_to 'Stream', :controller => "songs", :action => "show", :id => song, :format => "m3u" %></td>
-    <td width="20"><%= link_to 'Get',    :controller => "songs", :action => "show", :id => song, :format => song.songtype.name %></td>
+    <td width="20"><%= link_to 'Get',    :controller => "songs", :action => "show", :id => song, :format => song.songtype.identifier %></td>
   </tr>

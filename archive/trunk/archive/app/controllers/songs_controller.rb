@@ -7,20 +7,6 @@ class SongsController < ApplicationController
     :order => order_with_default("title", "asc") , :page=> params[:page], :per_page => 100
   end
 
-  def send_one_song
-   song = Song.find params[:id]
-   send_file song.file, :type => song.songtype.mime_type, :disposition => "inline", :x_sendfile=>true
-  end
-  
-  def stream_one_song
-   @song = Song.find params[:id]
-   
-   respond_to do |format|
-     format.m3u { render :layout => "blank.erb" }
-   end
-  end
-
-
   # GET /songs/1
   # GET /songs/1.xml
   def show
@@ -30,10 +16,10 @@ class SongsController < ApplicationController
       format.html
       format.m3u
       
-      # would also like to be able to do this by iteration over Songtype.all
-      format.mp3 { send_song_file "mp3", @song }
-      format.m4a { send_song_file "m4a", @song }
-      format.m4p { send_song_file "m4p", @song }
+      # make sure songtype.identifier is not the name of a "real" method!
+      unless format.respond_to? @song.songtype.identifier
+        format.send(@song.songtype.identifier) { send_song_file @song }
+      end
     end
   end
 
@@ -101,12 +87,8 @@ class SongsController < ApplicationController
   
   private
   
-  def send_song_file(type, song)
-    if song.songtype.name == type
-      send_file song.file, :type => song.songtype.mime_type, :disposition => "inline", :x_sendfile => true
-    else
-      redirect_to("/404.html")
-    end
+  def send_song_file(song)
+    send_file song.file, :type => song.songtype.mime_type, :disposition => "inline", :x_sendfile => true
   end
   
   def order_with_default(column, direction)
