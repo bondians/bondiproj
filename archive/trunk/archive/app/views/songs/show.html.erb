@@ -71,15 +71,13 @@ Your Selection:
   <param name="src" value="<%= @song.formatted_id %>">
   <param name="autoplay" value="false">
   <param name="autoStart" value="0">
-  <object DATA="<%= @song.formatted_id %>" WIDTH="200" HEIGHT="20">
+  <object DATA="<%= @song.formatted_id %>" TYPE="<%= @song.songtype.mime_type %> WIDTH="200" HEIGHT="20">
     <param name="autoplay" value="false">
     <param name="autoStart" value="0">
       
       ALT: YOUR BROWSER SUCKS ASS 
   </object>
 </object>
-
-
 
 <br />
 
