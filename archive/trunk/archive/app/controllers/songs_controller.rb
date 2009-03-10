@@ -33,7 +33,7 @@ class SongsController < ApplicationController
       # would also like to be able to do this by iteration over Songtype.all
       format.mp3 do
         send_song_file "mp3", @song
-        render => :false
+        render :false
         end
       format.m4a { send_song_file "m4a", @song }
       format.m4p { send_song_file "m4p", @song }
