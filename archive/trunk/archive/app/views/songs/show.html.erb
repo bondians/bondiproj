@@ -67,7 +67,7 @@
 <br />
 Your Selection:
 <br />
-<object type="<%= @song.songtype.mime_type %>" data="<%= "#{@song.id}.#{@song.songtype.identifier}" %>" width="200" height="20">
+<object data="<%= "#{@song.id}.#{@song.songtype.identifier}" %>" width="200" height="20">
   <param name="movie" value="<%= "#{@song.id}.#{@song.songtype.identifier}" %>" />
   <param name="autoplay" value="false" />
   <param name="autoStart" value="0" />
