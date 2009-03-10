@@ -8,7 +8,10 @@ class Song < ActiveRecord::Base
   def <=> (other)
     track <=> other.track
   end
-
+  
+  def formatted_id
+    "#{@song.id}.#{@song.songtype.identifier}"
+  end
   
   define_index do
     indexes title, :as => :title, :sortable => true
