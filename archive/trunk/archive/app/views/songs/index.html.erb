@@ -6,23 +6,9 @@
     <%= submit_tag "Search", :name => nil %>
   </p>
 <% end %>
+<br />
+  <%= render :partial => 'songs', :locals => { :songs => @songs } %>
 
-<table>
-  <tr>
-    <th width="25%"><%= default_sortable_header("title", 'desc') %></th>
-    <th width="25%"><%= sortable_header("artist", 'asc') %></th>
-    <th width="20%"><%= sortable_header("album", 'asc') %></th>
-    <th width="10%"><%= sortable_header("genre", 'asc') %></th>
-    <th width="5%" >Size</th>
-    <th width="5%" >Type</th>
-    <th colspan="5%" >&nbsp;</th>
-    <th colspan="5%" >&nbsp;</th>
-  </tr>
-
-<% for song in @songs %>
-  <%= render :partial => 'song', :locals => { :song => song, :cur_class => cycle("cssAlternating1", "cssAlternating2") } %>
-<% end %>
-</table>
 
 <br />
 
