@@ -71,8 +71,7 @@ Your Selection:
   <param name="src" value="<%= "#{@song.id}.#{@song.songtype.identifier}" %>">
   <param name="autoplay" value="false">
   <param name="autoStart" value="0">
-  <embed src="<%= "#{@song.id}.#{@song.songtype.identifier}" %>" width="200" height="20">
-  alt : <a href="<%= "#{@song.id}.#{@song.songtype.identifier}" %>"><%= File.basename(@song.file) %></a>
+  alt : <embed src="<%= "#{@song.id}.#{@song.songtype.identifier}" %>" width="200" height="20">
 </object>
 
 
