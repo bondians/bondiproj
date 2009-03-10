@@ -10,7 +10,7 @@ class Song < ActiveRecord::Base
   end
   
   def formatted_id
-    "#{@song.id}.#{@song.songtype.identifier}"
+    "#{self.id}.#{self.songtype.identifier}"
   end
   
   define_index do
