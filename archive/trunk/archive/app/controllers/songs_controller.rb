@@ -15,8 +15,9 @@ class SongsController < ApplicationController
   def stream_one_song
    @song = Song.find params[:id]
    
-   request.headers["Content-Disposition"] = "filename=\"#{@song.id}.m3u\""
-   render :content_type => "audio/x-mpegurl", :layout => "blank.erb"
+   respond_to do |format|
+     format.m3u { render :layout => "blank.erb" }
+   end
   end
 
 
@@ -24,6 +25,22 @@ class SongsController < ApplicationController
   # GET /songs/1.xml
   def show
     @song = Song.find(params[:id])
+    
+    Mime::Type.register "audio/x-mpegurl", "m3u"
+    
+    Songtype.all.each do |type|
+      Mime::Type.register type.mime_type, type.name
+    end
+    
+    respond_to do |format|
+      format.html
+      format.m3u
+      
+      # would also like to be able to do this by iteration over Songtype.all
+      format.mp3 { send_song_file "mp3", @song }
+      format.m4a { send_song_file "m4a", @song }
+      format.m4p { send_song_file "m4p", @song }
+    end
   end
 
   # GET /songs/new
@@ -89,6 +106,15 @@ class SongsController < ApplicationController
   end
   
   private
+  
+  def send_song_file(type, song)
+    if song.songtype.name == type
+      send_file song.file, :type => song.songtype.mime_type, :disposition => "inline", :x_sendfile => true
+    else
+      redirect_to("/404.html")
+    end
+  end
+  
   def order_with_default(column, direction)
     if params[:sort]
       "#{params[:sort]} #{params[:direction]}"
