@@ -3,7 +3,7 @@
 <% form_for :content_page, :url => {:action => 'update', 
                                     :id => @content_page.id} do |form| %>
   <%= render :partial => 'form', :locals => {:form => form} %>
-  <%= submit_tag 'Edit' %>
+  <%= submit_tag 'Save' %>
 <% end %>
 
 <%= link_to 'Show', :action => 'show', :id => @content_page %> |
