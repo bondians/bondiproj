@@ -14,6 +14,8 @@ class SongsController < ApplicationController
   
   def stream_one_song
    @song = Song.find params[:id]
+   
+   request.headers["Content-Disposition"] = "filename=\"#{@song.id}.m3u\""
    render :content_type => "audio/x-mpegurl", :layout => "blank.erb"
   end
 
