@@ -15,21 +15,20 @@
     <%= f.label :genre %><br />
     <%= link_to @album.genre.name, @album.genre %>
   </p>
-  <p>
-    <%= f.submit "Update" %>
-  </p>
   
   <br />
   Select songs to fix with this change!
   <% for song in @album.songs %>
     <table>
     <% for song in @album.songs.sort %>
-      <%= render :partial => 'songs/song', :locals => { :song => song, :cur_class => cycle("cssAlternating1", "cssAlternating2") } %>
-      <td> <input type="checkbox"> </td>
+      <%= render :partial => 'songs/song', :locals => { :song => song, :f => f, :cur_class => cycle("cssAlternating1", "cssAlternating2") } %>
     <% end %>
   </table>
   <% end %>
   
+  <p>
+    <%= f.submit "Update" %>
+  </p>
   
 <% end %>
 
