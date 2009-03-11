@@ -9,15 +9,28 @@
   </p>
   <p>
     <%= f.label :artist %><br />
-    <%= f.text_field :artist %>
+    <%= link_to @album.artist.name, @album.artist %>
   </p>
   <p>
     <%= f.label :genre %><br />
-    <%= f.text_field :genre %>
+    <%= link_to @album.genre.name, @album.genre %>
   </p>
   <p>
     <%= f.submit "Update" %>
   </p>
+  
+  <br />
+  Select songs to fix with this change!
+  <% for song in @album.songs %>
+    <table>
+    <% for song in @album.songs.sort %>
+      <%= render :partial => 'songs/song', :locals => { :song => song, :cur_class => cycle("cssAlternating1", "cssAlternating2") } %>
+      <td> check_box </td>
+    <% end %>
+  </table>
+  <% end %>
+  
+  
 <% end %>
 
 <%= link_to 'Show', @album %> |
