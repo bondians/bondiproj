@@ -62,11 +62,11 @@ class Tagger
   end
   
   def artist
-    self.send("artist_#{@type}")
+    !!@type ? self.send("artist_#{@type}") : nil
   end
   
   def title
-    self.send("title_#{@type}")
+    !!@type ? self.send("title_#{@type}") : nil
   end
   
   
