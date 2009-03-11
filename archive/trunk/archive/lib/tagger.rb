@@ -49,8 +49,7 @@ class Tagger
 136 => "Christian Gangsta Rap", 137 => "Heavy Metal",       138 => "Black Metal",     139 => "Crossover",
 140 => "Contemporary Christian",141 => "Christian Rock",    142 => "Merengue",        143 => "Salsa",
 144 => "Trash Metal",           145 => "Anime",             146 => "Jpop",            147 => "Synthpop" }
-  ##Tries to parse a tag, and returns some sort of usefully defined object.
-  ##Initially only parses id3v2 tags, hopefully expandable to work on every tag type
+
   
   def initialize(filename)
     @filename = filename
