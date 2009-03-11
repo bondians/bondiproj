@@ -10,6 +10,11 @@ require 'iconv'
 
 
 class Tagger
+  NO_GENRE = "<no genre>"
+  NO_ALBUM = "<no album>"
+  NO_ARTIST = "<no artist>"
+  NO_TITLE = "<no title>"
+  
   TAG_FOR_NAME = { "mp3" => "id3", "m4a" => "aac", "m4p" => "aac"}
   GENRES = {
   0 => "Blues",                   1 => "Classic Rock",        2 => "Country",           3 => "Dance",
@@ -69,25 +74,89 @@ class Tagger
     self.send("title_#{@type}")
   end
   
+  def lookup_genre
+    genre_tag = self.genre
+    if genre_tag.match(/^\(\d+\)$/)
+        num = genre_tag.gsub("(","").gsub(")","").to_i
+        genre_tag = Tagger::GENRES[num]
+    end
+    
+    return genre_tag
+  end
+  
+  def genre
+    self.send("genre_#{@type}")
+  end
+  
+  def album
+    self.send("album_#{@type}")
+  end
+  
+  def year
+    self.send("year_#{@type}")
+  end
+  
+  def artwork
+    self.send("artwork_#{@type}")
+  end
+  def track
+    self.send("track_#{@type}")
+  end
+  def size
+    File.size(@filename)
+  end
   
   private
+  
+  def genre_id3
+    !!@tag.genre ? Iconv.conv('UTF-8', 'LATIN1', @tag.genre) : NO_GENRE
+  end
+  def genre_aac
+    !!@tag.GNRE ? Iconv.conv('UTF-8', 'LATIN1', @tag.GNRE) : NO_GENRE
+  end
+  def album_id3
+    album_tag  =  !!@tag.album ? Iconv.conv('UTF-8', 'LATIN1', @tag.album) : NO_ALBUM
+    album_tag  =  Iconv.conv('UTF-8', 'UTF-16', @tag.album) unless !!album_tag.match(/[a-zA-Z][a-zA-Z]/)
+    return album_tag
+  end
+  def album_aac
+    !!tag.ALB ? Iconv.conv('UTF-8', 'LATIN1', tag.ALB) : NO_ALBUM
+  end
+  def year_id3
+    @tag.year
+  end
+  def year_aac
+    @tag.DAY.to_i
+  end
+  def track_id3
+    !!tag.track ? tag.track.split("/").first.to_i : nil
+  end
+  def track_aac
+    !!tag.TRKN ? tag.TRKN.first : nil
+  end
+  def artwork_id3
+  end
+  def artwork_aac
+  end
+  
   def title_id3
-    title = !!@tag.title ? Iconv.conv('UTF-8', 'LATIN1', @tag.title) : "<no ttle>"
+    title = !!@tag.title ? Iconv.conv('UTF-8', 'LATIN1', @tag.title) : NO_TITLE
     title = Iconv.conv('UTF-8', 'UTF-16', tag.title) unless !!title.match(/[a-zA-Z][a-zA-Z]/)
     return title
   end
   
   def title_aac
+    !!tag.NAM ? Iconv.conv('UTF-8', 'LATIN1', tag.NAM) : NO_TITLE
   end
   
   def artist_id3
-    artist = !!@tag.artist ? Iconv.conv('UTF-8', 'LATIN1', @tag.artist) : "<no artist>"
+    artist = !!@tag.artist ? Iconv.conv('UTF-8', 'LATIN1', @tag.artist) : NO_ARTIST
     artist = Iconv.conv('UTF-8', 'UTF-16', @tag.artist) unless !!artist.match(/[a-zA-Z][a-zA-Z]/)
     return artist
   end
   
   def artist_aac
-    artist = !!@tag.ART ? Iconv.conv('UTF-8', 'LATIN1', @tag.ART) : "<no artist>"
+    artist = !!@tag.ART ? Iconv.conv('UTF-8', 'LATIN1', @tag.ART) : NO_ARTIST
   end
   
   def read_frames
