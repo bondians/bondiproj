@@ -21,7 +21,7 @@
   <% for song in @album.songs %>
     <table>
     <% for song in @album.songs.sort %>
-      <%= render :partial => 'songs/song', :locals => { :song => song, :f => f, :cur_class => cycle("cssAlternating1", "cssAlternating2") } %>
+      <%= render :partial => 'song', :locals => { :song => song, :f => f, :cur_class => cycle("cssAlternating1", "cssAlternating2") } %>
     <% end %>
   </table>
   <% end %>
