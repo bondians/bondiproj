@@ -48,6 +48,11 @@ class AlbumsController < ApplicationController
   # PUT /albums/1
   # PUT /albums/1.xml
   def update
+    
+    debugger
+    1
+    1
+    
     @album = Album.find(params[:id])
 
     respond_to do |format|
