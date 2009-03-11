@@ -18,13 +18,11 @@
   
   <br />
   Select songs to fix with this change!
+  <table>
   <% for song in @album.songs %>
-    <table>
-    <% for song in @album.songs.sort %>
       <%= render :partial => 'song', :locals => { :song => song, :f => f, :cur_class => cycle("cssAlternating1", "cssAlternating2") } %>
-    <% end %>
-  </table>
   <% end %>
+  </table>
   
   <p>
     <%= f.submit "Update" %>
