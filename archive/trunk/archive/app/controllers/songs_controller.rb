@@ -65,6 +65,11 @@ class SongsController < ApplicationController
   # PUT /songs/1
   # PUT /songs/1.xml
   def update
+    
+    debugger
+    1
+    1
+    
     @song = Song.find(params[:id])
 
     respond_to do |format|
