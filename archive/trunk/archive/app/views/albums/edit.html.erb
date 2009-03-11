@@ -17,7 +17,8 @@
   </p>
   
   <br />
-  Select songs to fix with this change!
+  <h1> Seleced song files will be changed!</h1>
+  <br />
   <table>
   <% for song in @album.songs %>
       <%= render :partial => 'song', :locals => { :song => song, :f => f, :cur_class => cycle("cssAlternating1", "cssAlternating2") } %>
