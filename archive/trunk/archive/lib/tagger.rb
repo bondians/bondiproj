@@ -120,7 +120,7 @@ class Tagger
     return album_tag
   end
   def album_aac
-    !!tag.ALB ? Iconv.conv('UTF-8', 'LATIN1', tag.ALB) : NO_ALBUM
+    !!@tag.ALB ? Iconv.conv('UTF-8', 'LATIN1', @tag.ALB) : NO_ALBUM
   end
   def year_id3
     @tag.year
@@ -129,10 +129,10 @@ class Tagger
     @tag.DAY.to_i
   end
   def track_id3
-    !!tag.track ? tag.track.split("/").first.to_i : nil
+    !!@tag.track ? @tag.track.split("/").first.to_i : nil
   end
   def track_aac
-    !!tag.TRKN ? tag.TRKN.first : nil
+    !!@tag.TRKN ? @tag.TRKN.first : nil
   end
   def artwork_id3
   end
@@ -141,12 +141,12 @@ class Tagger
   
   def title_id3
     title = !!@tag.title ? Iconv.conv('UTF-8', 'LATIN1', @tag.title) : NO_TITLE
-    title = Iconv.conv('UTF-8', 'UTF-16', tag.title) unless !!title.match(/[a-zA-Z][a-zA-Z]/)
+    title = Iconv.conv('UTF-8', 'UTF-16', @tag.title) unless !!title.match(/[a-zA-Z][a-zA-Z]/)
     return title
   end
   
   def title_aac
-    !!tag.NAM ? Iconv.conv('UTF-8', 'LATIN1', tag.NAM) : NO_TITLE
+    !!@tag.NAM ? Iconv.conv('UTF-8', 'LATIN1', @tag.NAM) : NO_TITLE
   end
   
   def artist_id3
