@@ -25,7 +25,7 @@
     <table>
     <% for song in @album.songs.sort %>
       <%= render :partial => 'songs/song', :locals => { :song => song, :cur_class => cycle("cssAlternating1", "cssAlternating2") } %>
-      <td> check_box </td>
+      <td> <input type="checkbox"> </td>
     <% end %>
   </table>
   <% end %>
