@@ -5,6 +5,11 @@ class SongsController < ApplicationController
   def index
     @songs = Song.search params[:search], :include => [:songtype, :album, :artist, :genre], 
     :order => order_with_default("title", "asc") , :page=> params[:page], :per_page => 100
+    
+    respond_to do |format|
+      format.html
+      format.xml { render :xml => @songs }
+    end
   end
 
   # GET /songs/1
@@ -15,6 +20,7 @@ class SongsController < ApplicationController
     respond_to do |format|
       format.html
       format.m3u
+      format.xml { render :xml => @song }
       
       # make sure songtype.identifier is not the name of a "real" method!
       unless format.respond_to? @song.songtype.identifier
