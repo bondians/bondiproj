@@ -56,17 +56,17 @@ class Tagger
     namechunks = @filename.split(".")
     @type = Tagger::TAG_FOR_NAME[namechunks.last.downcase]
     
-    fail "improper filetype" unless @type
+    fail "Unregisstered Filetype" unless @type
     
     read_frames
   end
   
   def artist
-    !!@type ? self.send("artist_#{@type}") : nil
+    self.send("artist_#{@type}")
   end
   
   def title
-    !!@type ? self.send("title_#{@type}") : nil
+    self.send("title_#{@type}")
   end
   
   
