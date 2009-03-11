@@ -56,7 +56,7 @@ class Tagger
     namechunks = @filename.split(".")
     @type = Tagger::TAG_FOR_NAME[namechunks.last.downcase]
     
-    fail "Unregisstered Filetype" unless @type
+    fail "Unregistered Filetype" unless @type
     
     read_frames
   end
