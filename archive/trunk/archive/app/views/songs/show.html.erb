@@ -67,11 +67,15 @@
 <br />
 Your Selection:
 <br />
-<object DECLARE CLASSID="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" DATA="<%= @song.formatted_id %>" WIDTH="200" HEIGHT="20">
+<object declare
+        id="<%= "#{@song.id}.declaration" %>"
+        CLASSID="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" DATA="<%= @song.formatted_id %>" WIDTH="200" HEIGHT="20">
   <param name="src" value="<%= @song.formatted_id %>">
   <param name="autoplay" value="false">
   <param name="autoStart" value="0">
-  <object DECLARE DATA="<%= @song.formatted_id %>" TYPE="<%= @song.songtype.mime_type %>" WIDTH="200" HEIGHT="20">
+  <object declare
+          id="<%= "#{@song.id}.declaration" %>"
+          DATA="<%= @song.formatted_id %>" TYPE="<%= @song.songtype.mime_type %>" WIDTH="200" HEIGHT="20">
     <param name="autoplay" value="false">
     <param name="autoStart" value="0">
       
