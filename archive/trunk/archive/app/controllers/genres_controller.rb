@@ -3,7 +3,7 @@ class GenresController < ApplicationController
   # GET /genres.xml
   def index
     #@genres = Genre.find(:all)
-    @genres = Genre.search params[:search], :page=> params[:page], :per_page => 100
+    @genres = Genre.search params[:search], :order => :name :page => params[:page], :per_page => 100
   end
 
   # GET /genres/1

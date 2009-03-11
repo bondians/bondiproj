@@ -3,7 +3,7 @@ class ArtistsController < ApplicationController
   # GET /artists.xml
   def index
     #@artists = Artist.find(:all)
-    @artists = Artist.search params[:search], :page=> params[:page], :per_page => 100
+    @artists = Artist.search params[:search], :order => :name, :page => params[:page], :per_page => 100
   end
 
   # GET /artists/1
