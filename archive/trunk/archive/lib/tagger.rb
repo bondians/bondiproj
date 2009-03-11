@@ -3,11 +3,14 @@
 #{:textenc=>0, :text=>"iTunes v1.0", :id=>:TENC}, {:textenc=>0, :text=>"11/13", :id=>:TRCK},
 #{:description=>"", :textenc=>0, :text=>"164348", :id=>:TXXX}]
 
-def tagit
-  Tagger.instance
-end
+require 'id3lib'
+require 'mp4info'
+require 'iconv'
+
+
 
 class Tagger
+  TAG_FOR_NAME = { "mp3" => "id3", "m4a" => "aac", "m4p" => "aac"}
   GENRES = {
   0 => "Blues",                   1 => "Classic Rock",        2 => "Country",           3 => "Dance",
   4 => "Disco",                   5 => "Funk",                6 => "Grunge",            7 => "Hip-Hop",
@@ -49,7 +52,48 @@ class Tagger
   ##Tries to parse a tag, and returns some sort of usefully defined object.
   ##Initially only parses id3v2 tags, hopefully expandable to work on every tag type
   
-  def read_tag(tag)
+  def initialize(filename)
+    @filename = filename
+    namechunks = @filename.split(".")
+    @type = Tagger::TAG_FOR_NAME[namechunks.last.downcase]
+    return nil unless @type
+    
+    read_frames
+  end
+  
+  def artist
+    self.send("artist_#{@type}")
+  end
+  def title
+    self.send("title_#{@type}")
+  end
+  
+  
+  private
+  def title_id3
+    title = !!@tag.title ? Iconv.conv('UTF-8', 'LATIN1', @tag.title) : "<no ttle>"
+    title = Iconv.conv('UTF-8', 'UTF-16', tag.title) unless !!title.match(/[a-zA-Z][a-zA-Z]/)
+    return title
+  end
+  def title_aac
+  end
+  def artist_id3
+    
+  end
+  def artist_aac
+    Iconv.conv('UTF-8', 'LATIN1', @tags.ART)
+  end
+  
+  def read_frames
+    self.send("read_frames_#{@type}")
+  end
+  
+  def read_frames_id3
+    @tag = ID3Lib::Tag.new(@filename)
+  end
+  
+  def read_frames_aac
+    @tag = MP4Info.open(@filename)
   end
   
 end
