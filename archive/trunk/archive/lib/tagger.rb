@@ -1,7 +1,7 @@
-#=> [{:textenc=>0, :text=>"O Holy Night", :id=>:TIT2}, {:textenc=>0, :text=>"Leontyne Price", :id=>:TPE1},
-#{:textenc=>0, :text=>"Leontyne Price : Christmas Songs", :id=>:TALB}, {:textenc=>0, :text=>"Unclassifiable", :id=>:TCON},
-#{:textenc=>0, :text=>"iTunes v1.0", :id=>:TENC}, {:textenc=>0, :text=>"11/13", :id=>:TRCK},
-#{:description=>"", :textenc=>0, :text=>"164348", :id=>:TXXX}]
+# Usage
+# require 'tagger'   or "require 'lib/tagger'
+# foo = Tagger.new("filename")
+# foo.artist  => "Some Artist Guy"
 
 require 'id3lib'
 require 'mp4info'
@@ -64,6 +64,7 @@ class Tagger
   def artist
     self.send("artist_#{@type}")
   end
+  
   def title
     self.send("title_#{@type}")
   end
@@ -75,13 +76,18 @@ class Tagger
     title = Iconv.conv('UTF-8', 'UTF-16', tag.title) unless !!title.match(/[a-zA-Z][a-zA-Z]/)
     return title
   end
+  
   def title_aac
   end
+  
   def artist_id3
-    
+    artist = !!@tag.artist ? Iconv.conv('UTF-8', 'LATIN1', @tag.artist) : "<no artist>"
+    artist = Iconv.conv('UTF-8', 'UTF-16', @tag.artist) unless !!artist.match(/[a-zA-Z][a-zA-Z]/)
+    return artist
   end
+  
   def artist_aac
-    Iconv.conv('UTF-8', 'LATIN1', @tags.ART)
+    artist = !!@tag.ART ? Iconv.conv('UTF-8', 'LATIN1', @tag.ART) : "<no artist>"
   end
   
   def read_frames
