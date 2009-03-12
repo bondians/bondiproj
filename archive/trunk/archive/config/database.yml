@@ -39,8 +39,8 @@ test:
   encoding: unicode
   database: archive_test
   pool: 5
-  username: archive
-  password:
+  username: cayuse
+#  password:
 
 production:
   adapter: postgresql
@@ -48,4 +48,3 @@ production:
   database: archive_production
   pool: 5
   username: cayuse
-  password:
