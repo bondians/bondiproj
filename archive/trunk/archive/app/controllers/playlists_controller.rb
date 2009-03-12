@@ -42,15 +42,9 @@ class PlaylistsController < ApplicationController
   # POST /playlists
   # POST /playlists.xml
   def create
-    debugger
-    1
-    1
     
     @playlist = Playlist.new(params[:playlist])
     @playlist.user_id = Goldberg.user.id
-    debugge
-    1
-    1
     
     respond_to do |format|
       if @playlist.save
