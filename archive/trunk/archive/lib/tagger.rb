@@ -11,7 +11,7 @@ require 'lib/dbconst'
 class MP4Fixer
   ## This class translates id3lib-ruby calls to the similar call in MP4Info
   def initialize(filename)
-    @tag = MP4Info.open(@filename)
+    @tag = MP4Info.open(filename)
   end
   
   def title
