@@ -2,9 +2,9 @@ class PlaylistsController < ApplicationController
   # GET /playlists
   # GET /playlists.xml
   def index
-    playlists = Playlist.all :include=> :goldberg_user
-    @my_playlists = playlists.select{|t| t.user.id == Goldberg.user.id}
-    @other_playlists = playlists.reject{|t| t.user.id == Goldberg.user.id}
+    playlists = Playlist.all :include=> :user
+    @my_playlists = playlists.select{|t| t.user == Goldberg.user}
+    @other_playlists = playlists.reject{|t| t.user == Goldberg.user}
 
     respond_to do |format|
       format.html # index.html.erb
