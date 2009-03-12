@@ -55,15 +55,15 @@ class Tagger
   end
   
   def title
-    self.convert(@tag.title)
+    convert(@tag.title)
   end
   
   def artist
-    self.convert(@tag.artist)
+    convert(@tag.artist)
   end
   
   def album
-    self.convert(@tag.album)
+    convert(@tag.album)
   end
   
   def genre
