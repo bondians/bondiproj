@@ -6,7 +6,7 @@
 require 'id3lib'
 require 'mp4info'
 require 'iconv'
-require 'lib/dbconst'
+require 'dbconst'
 
 class MP4Fixer
   ## This class translates id3lib-ruby calls to the similar call in MP4Info
