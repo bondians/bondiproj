@@ -3,6 +3,7 @@ class Song < ActiveRecord::Base
   belongs_to :artist
   belongs_to :genre
   belongs_to :songtype
+  has_many :plentries
   validates_presence_of :songtype
   
   def <=> (other)

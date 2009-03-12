@@ -5,6 +5,7 @@ module Goldberg
     include Goldberg::Model
 
     belongs_to :role, :class_name=>"Goldberg::Role", :foreign_key => :role_id
+    has_many :playlists
     
     validates_presence_of :name, :role_id, :password
     validates_uniqueness_of :name
