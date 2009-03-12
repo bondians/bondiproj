@@ -43,7 +43,7 @@ class PlaylistsController < ApplicationController
   # POST /playlists.xml
   def create
     @playlist = Playlist.new(params[:playlist])
-    @playlist.user = Goldberg.user
+    @playlist.golberg_user = Goldberg.user
 
     respond_to do |format|
       if @playlist.save
