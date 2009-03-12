@@ -1,18 +1,29 @@
-<h1>Listing playlists</h1>
+<h1>My Playlists</h1>
 
 <table>
   <tr>
-    <th>User</th>
-    <th>Name</th>
+    <th width="20%">Name</th>
   </tr>
 
-<% for playlist in @playlists %>
+<% for playlist in @my_playlists %>
   <tr>
-    <td><%=h playlist.user_id %></td>
-    <td><%=h playlist.name %></td>
-    <td><%= link_to 'Show', playlist %></td>
-    <td><%= link_to 'Edit', edit_playlist_path(playlist) %></td>
-    <td><%= link_to 'Destroy', playlist, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%=link_to playlist.name, playlist %></td>
+  </tr>
+<% end %>
+</table>
+
+<h1>Other Playlists</h1>
+
+<table>
+  <tr>
+    <th width="20%">User</th>
+    <th width="20%">Name</th>
+  </tr>
+
+<% for playlist in @other_playlists %>
+  <tr>
+    <td><%=h playlist.user.name %></td>
+    <td><%=link_to playlist.name, playlist %></td>
   </tr>
 <% end %>
 </table>

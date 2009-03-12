@@ -2,7 +2,9 @@ class PlaylistsController < ApplicationController
   # GET /playlists
   # GET /playlists.xml
   def index
-    @playlists = Playlist.find(:all)
+    playlists = Playlist.all :include=> :goldberg_user
+    @my_playlists = playlists.select{|t| t.user.id == Goldberg.user.id}
+    @other_playlists = playlists.reject{|t| t.user.id == Goldberg.user.id}
 
     respond_to do |format|
       format.html # index.html.erb
@@ -41,6 +43,7 @@ class PlaylistsController < ApplicationController
   # POST /playlists.xml
   def create
     @playlist = Playlist.new(params[:playlist])
+    @playlist.user = Goldberg.user
 
     respond_to do |format|
       if @playlist.save
