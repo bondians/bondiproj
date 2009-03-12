@@ -15,7 +15,7 @@ class PlaylistsController < ApplicationController
   # GET /playlists/1
   # GET /playlists/1.xml
   def show
-    @playlist = Playlist.find(params[:id])
+    @playlist = Playlist.find(params[:id], :include => :songs)
 
     respond_to do |format|
       format.html # show.html.erb

@@ -1,11 +1,14 @@
 <p>
-  <b>User:</b>
-  <%=h @playlist.user_id %>
+  <h1><%=h @playlist.name %></h1>
 </p>
 
 <p>
-  <b>Name:</b>
-  <%=h @playlist.name %>
+  <b>Tracks:</b>
+  <table>
+    <% for song in @playlist.songs %>
+      <%= render :partial => 'songs/song', :locals => { :song => song, :cur_class => cycle("cssAlternating1", "cssAlternating2") } %>
+    <% end %>
+  </table>
 </p>
 
 
