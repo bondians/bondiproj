@@ -1,0 +1,2 @@
+module PlentriesHelper
+end

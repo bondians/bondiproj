@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :plentries
+
+  map.resources :playlists
+
   map.resources :abuses
 
   
