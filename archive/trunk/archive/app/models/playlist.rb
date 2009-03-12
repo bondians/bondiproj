@@ -1,8 +1,6 @@
 class Playlist < ActiveRecord::Base
-  
-  include Goldberg::Model
-  
-  belongs_to :user 
+
+  belongs_to :user, :class_name=>"Goldberg::User", :foreign_key => :user_id
   has_many :plentries
   
   attr_accessible :name
