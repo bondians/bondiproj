@@ -36,7 +36,11 @@ class PlaylistsController < ApplicationController
 
   # GET /playlists/1/edit
   def edit
-    @playlist = Playlist.find(params[:id])
+    @playlist = Playlist.find(params[:id], :include=>[:user, :songs])
+    if @playlist.user != Goldberg.user
+      flash[:error] = "You cannot Edit other users' playlists"
+      redirect_to(@playlist)
+    end
   end
 
   # POST /playlists
@@ -49,7 +53,7 @@ class PlaylistsController < ApplicationController
     respond_to do |format|
       if @playlist.save
         flash[:notice] = 'Playlist was successfully created.'
-        format.html { redirect_to(@playlist) }
+        format.html { redirect_to(playlists_url) }
         format.xml  { render :xml => @playlist, :status => :created, :location => @playlist }
       else
         format.html { render :action => "new" }
