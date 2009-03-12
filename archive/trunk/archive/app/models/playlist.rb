@@ -1,5 +1,8 @@
 class Playlist < ActiveRecord::Base
-  belongs_to :goldberg_user
+  
+  include Goldberg::Model
+  
+  belongs_to :user 
   has_many :plentries
   
   attr_accessible :name
