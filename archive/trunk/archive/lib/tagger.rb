@@ -55,23 +55,28 @@ class Tagger
   end
   
   def title
-    convert(@tag.title)
+    return convert(@tag.title) if @tag.title
+    return DBConstant::NO_TITLE
   end
   
   def artist
-    convert(@tag.artist)
+    return convert(@tag.artist) if @tag.title
+    return DBConstant::NO_ARTIST
   end
   
   def album
-    convert(@tag.album)
+    return convert(@tag.album) if @tag.title
+    return DBConstant::NO_ALBUM
   end
   
   def genre
-    @tag.genre
+    return @tag.genre if @tag.genre
+    return DBCONSTANT::NO_GENRE
   end
   
   def year
-    @tag.year.to_i
+    return @tag.year.to_i if @tag.year
+    return nil
   end
   
   def track
