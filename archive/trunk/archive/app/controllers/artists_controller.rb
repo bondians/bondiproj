@@ -35,7 +35,7 @@ class ArtistsController < ApplicationController
 
     respond_to do |format|
       if @artist.save
-        flash[:notice] = 'Artist was successfully created.'
+        flash[:note] = 'Artist was successfully created.'
         format.html { redirect_to(@artist) }
         format.xml  { render :xml => @artist, :status => :created, :location => @artist }
       else
@@ -52,7 +52,7 @@ class ArtistsController < ApplicationController
 
     respond_to do |format|
       if @artist.update_attributes(params[:artist])
-        flash[:notice] = 'Artist was successfully updated.'
+        flash[:note] = 'Artist was successfully updated.'
         format.html { redirect_to(@artist) }
         format.xml  { head :ok }
       else

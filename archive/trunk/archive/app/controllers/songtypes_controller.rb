@@ -44,7 +44,7 @@ class SongtypesController < ApplicationController
 
     respond_to do |format|
       if @songtype.save
-        flash[:notice] = 'Songtype was successfully created.'
+        flash[:note] = 'Songtype was successfully created.'
         format.html { redirect_to(@songtype) }
         format.xml  { render :xml => @songtype, :status => :created, :location => @songtype }
       else
@@ -61,7 +61,7 @@ class SongtypesController < ApplicationController
 
     respond_to do |format|
       if @songtype.update_attributes(params[:songtype])
-        flash[:notice] = 'Songtype was successfully updated.'
+        flash[:note] = 'Songtype was successfully updated.'
         format.html { redirect_to(@songtype) }
         format.xml  { head :ok }
       else

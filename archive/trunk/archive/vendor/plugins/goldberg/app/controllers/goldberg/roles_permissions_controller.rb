@@ -32,7 +32,7 @@ module Goldberg
     def create
       @roles_permission = RolesPermission.new(params[:roles_permission])
       if @roles_permission.save
-        flash[:notice] = 'RolesPermission was successfully created.'
+        flash[:note] = 'RolesPermission was successfully created.'
         redirect_to :controller => 'roles', :action => 'show', 
         :id => @roles_permission.role_id
       else
@@ -47,7 +47,7 @@ module Goldberg
     def update
       @roles_permission = RolesPermission.find(params[:id])
       if @roles_permission.update_attributes(params[:roles_permission])
-        flash[:notice] = 'RolesPermission was successfully updated.'
+        flash[:note] = 'RolesPermission was successfully updated.'
         redirect_to :action => 'show', :id => @roles_permission
       else
         render :action => 'edit'

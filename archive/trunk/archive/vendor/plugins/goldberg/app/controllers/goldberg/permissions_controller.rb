@@ -27,7 +27,7 @@ module Goldberg
     def create
       @permission = Permission.new(params[:permission])
       if @permission.save
-        flash[:notice] = 'Permission was successfully created.'
+        flash[:note] = 'Permission was successfully created.'
         Role.rebuild_cache
         redirect_to :action => 'list'
       else
@@ -42,7 +42,7 @@ module Goldberg
     def update
       @permission = Permission.find(params[:id])
       if @permission.update_attributes(params[:permission])
-        flash[:notice] = 'Permission was successfully updated.'
+        flash[:note] = 'Permission was successfully updated.'
         Role.rebuild_cache
         redirect_to :action => 'show', :id => @permission
       else

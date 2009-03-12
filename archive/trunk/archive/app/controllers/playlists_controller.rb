@@ -52,7 +52,7 @@ class PlaylistsController < ApplicationController
     
     respond_to do |format|
       if @playlist.save
-        flash[:notice] = 'Playlist was successfully created.'
+        flash[:note] = 'Playlist was successfully created.'
         format.html { redirect_to(playlists_url) }
         format.xml  { render :xml => @playlist, :status => :created, :location => @playlist }
       else
@@ -69,7 +69,7 @@ class PlaylistsController < ApplicationController
 
     respond_to do |format|
       if @playlist.update_attributes(params[:playlist])
-        flash[:notice] = 'Playlist was successfully updated.'
+        flash[:note] = 'Playlist was successfully updated.'
         format.html { redirect_to(@playlist) }
         format.xml  { head :ok }
       else

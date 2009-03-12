@@ -35,7 +35,7 @@ class AlbumsController < ApplicationController
 
     respond_to do |format|
       if @album.save
-        flash[:notice] = 'Album was successfully created.'
+        flash[:note] = 'Album was successfully created.'
         format.html { redirect_to(@album) }
         format.xml  { render :xml => @album, :status => :created, :location => @album }
       else
@@ -57,7 +57,7 @@ class AlbumsController < ApplicationController
 
     respond_to do |format|
       if @album.update_attributes(params[:album])
-        flash[:notice] = 'Album was successfully updated.'
+        flash[:note] = 'Album was successfully updated.'
         format.html { redirect_to(@album) }
         format.xml  { head :ok }
       else

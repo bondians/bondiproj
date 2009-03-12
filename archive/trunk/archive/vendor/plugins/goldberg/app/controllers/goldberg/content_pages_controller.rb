@@ -49,7 +49,7 @@ module Goldberg
     def create
       @content_page = ContentPage.new(params[:content_page])
       if @content_page.save
-        flash[:notice] = 'ContentPage was successfully created.'
+        flash[:note] = 'ContentPage was successfully created.'
         Role.rebuild_cache
         redirect_to :action => 'list'
       else
@@ -66,7 +66,7 @@ module Goldberg
     def update
       @content_page = ContentPage.find(params[:id])
       if @content_page.update_attributes(params[:content_page])
-        flash[:notice] = 'ContentPage was successfully updated.'
+        flash[:note] = 'ContentPage was successfully updated.'
         Role.rebuild_cache
         redirect_to :action => 'show', :id => @content_page
       else

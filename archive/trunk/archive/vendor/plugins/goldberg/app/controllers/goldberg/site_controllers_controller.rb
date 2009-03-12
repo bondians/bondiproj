@@ -43,7 +43,7 @@ module Goldberg
     def create
       @site_controller = SiteController.new(params[:site_controller])
       if @site_controller.save
-        flash[:notice] = 'SiteController was successfully created.'
+        flash[:note] = 'SiteController was successfully created.'
         Role.rebuild_cache
         redirect_to :action => 'list'
       else
@@ -60,7 +60,7 @@ module Goldberg
     def update
       @site_controller = SiteController.find(params[:id])
       if @site_controller.update_attributes(params[:site_controller])
-        flash[:notice] = 'SiteController was successfully updated.'
+        flash[:note] = 'SiteController was successfully updated.'
         Role.rebuild_cache
         redirect_to :action => 'show', :id => @site_controller
       else

@@ -53,7 +53,7 @@ module Goldberg
       end
       @controller_action = ControllerAction.new(params[:controller_action])
       if @controller_action.save
-        flash[:notice] = 'ControllerAction was successfully created.'
+        flash[:note] = 'ControllerAction was successfully created.'
         Role.rebuild_cache
         redirect_to :controller => 'site_controllers', :action => 'show',
         :id => @controller_action.site_controller_id
@@ -73,7 +73,7 @@ module Goldberg
     def update
       @controller_action = ControllerAction.find(params[:id])
       if @controller_action.update_attributes(params[:controller_action])
-        flash[:notice] = 'ControllerAction was successfully updated.'
+        flash[:note] = 'ControllerAction was successfully updated.'
         Role.rebuild_cache
         redirect_to :controller => 'site_controllers', :action => 'show',
         :id => @controller_action.site_controller_id

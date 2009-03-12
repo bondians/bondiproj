@@ -56,7 +56,7 @@ module Goldberg
       @menu_item.seq = MenuItem.next_seq(@menu_item.parent_id)
       
       if @menu_item.save
-        flash[:notice] = 'MenuItem was successfully created.'
+        flash[:note] = 'MenuItem was successfully created.'
         Role.rebuild_cache
         redirect_to :action => 'list'
       else
@@ -98,7 +98,7 @@ module Goldberg
       end
 
       if @menu_item.update_attributes(params[:menu_item])
-        flash[:notice] = 'MenuItem was successfully updated.'
+        flash[:note] = 'MenuItem was successfully updated.'
         if do_repack
           MenuItem.repack(repack_for)
         end

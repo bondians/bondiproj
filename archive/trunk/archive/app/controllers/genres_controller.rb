@@ -40,7 +40,7 @@ class GenresController < ApplicationController
 
     respond_to do |format|
       if @genre.save
-        flash[:notice] = 'Genre was successfully created.'
+        flash[:note] = 'Genre was successfully created.'
         format.html { redirect_to(@genre) }
         format.xml  { render :xml => @genre, :status => :created, :location => @genre }
       else
@@ -57,7 +57,7 @@ class GenresController < ApplicationController
 
     respond_to do |format|
       if @genre.update_attributes(params[:genre])
-        flash[:notice] = 'Genre was successfully updated.'
+        flash[:note] = 'Genre was successfully updated.'
         format.html { redirect_to(@genre) }
         format.xml  { head :ok }
       else

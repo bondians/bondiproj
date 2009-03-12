@@ -52,7 +52,7 @@ class SongsController < ApplicationController
 
     respond_to do |format|
       if @song.save
-        flash[:notice] = 'Song was successfully created.'
+        flash[:note] = 'Song was successfully created.'
         format.html { redirect_to(@song) }
         format.xml  { render :xml => @song, :status => :created, :location => @song }
       else
@@ -69,7 +69,7 @@ class SongsController < ApplicationController
 
     respond_to do |format|
       if @song.update_attributes(params[:song])
-        flash[:notice] = 'Song was successfully updated.'
+        flash[:note] = 'Song was successfully updated.'
         format.html { redirect_to(@song) }
         format.xml  { head :ok }
       else

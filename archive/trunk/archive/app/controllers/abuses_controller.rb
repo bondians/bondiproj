@@ -34,7 +34,7 @@ class AbusesController < ApplicationController
 
     respond_to do |format|
       if @abuse.save
-        flash[:notice] = 'Abuse was successfully created.'
+        flash[:note] = 'Abuse was successfully created.'
         format.html { redirect_to(abuses_url) }
         format.xml  { render :xml => @abuse, :status => :created, :location => @abuse }
       else
@@ -51,7 +51,7 @@ class AbusesController < ApplicationController
 
     respond_to do |format|
       if @abuse.update_attributes(params[:abuse])
-        flash[:notice] = 'Abuse was successfully updated.'
+        flash[:note] = 'Abuse was successfully updated.'
         format.html { redirect_to(abuses_url) }
         format.xml  { head :ok }
       else

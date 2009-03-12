@@ -31,7 +31,7 @@ module Goldberg
       @role = Role.new(params[:role])
       if @role.save
         Role.rebuild_cache
-        flash[:notice] = 'Role was successfully created.'
+        flash[:note] = 'Role was successfully created.'
         redirect_to :action => 'list'
       else
         foreign
@@ -49,7 +49,7 @@ module Goldberg
       if @role.update_attributes(params[:role])
         Role.rebuild_cache
         @role = Role.find(params[:id])
-        flash[:notice] = 'Role was successfully updated.'
+        flash[:note] = 'Role was successfully updated.'
         redirect_to :action => 'show', :id => @role.id
       else
         foreign
