@@ -42,6 +42,10 @@ class PlaylistsController < ApplicationController
   # POST /playlists
   # POST /playlists.xml
   def create
+    debugger
+    1
+    1
+    
     @playlist = Playlist.new(params[:playlist])
     @playlist.user_id = Golberg.user.id
 
