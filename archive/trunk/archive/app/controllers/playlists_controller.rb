@@ -47,7 +47,7 @@ class PlaylistsController < ApplicationController
     1
     
     @playlist = Playlist.new(params[:playlist])
-    @playlist.user_id = Golberg.user.id
+    @playlist.user_id = Goldberg.user.id
     debugge
     1
     1
