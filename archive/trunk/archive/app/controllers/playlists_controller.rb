@@ -48,7 +48,10 @@ class PlaylistsController < ApplicationController
     
     @playlist = Playlist.new(params[:playlist])
     @playlist.user_id = Golberg.user.id
-
+    debugge
+    1
+    1
+    
     respond_to do |format|
       if @playlist.save
         flash[:notice] = 'Playlist was successfully created.'
