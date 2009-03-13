@@ -6,7 +6,7 @@ class Playlist < ActiveRecord::Base
   
   attr_accessible :name
   
-  def self.add_songs_for_list(songs, playlist)
+  def self.add_songs_to_playlist(songs, playlist)
     debugger
     1
     1
