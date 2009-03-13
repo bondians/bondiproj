@@ -1,20 +1,23 @@
+<% unless nodraws.include?(:checkbox) %>
  <% form_tag :controller => :selections_dispatch, :action => :dispatch do %>
- 
+<% end %>
 <table>
   <tr>
-    <% if !nodraws.include?(:checkbox) %> <th width="5%">Mark</th> <% end %>
-    <% if !nodraws.include?(:title)    %> <th width="25%"><%= default_sortable_header("title", 'desc') %></th> <% end %>
-    <% if !nodraws.include?(:track)    %> <th width="5%">Track</th><% end %>
-    <% if !nodraws.include?(:artist)   %> <th width="25%"><%= sortable_header("artist", 'asc') %></th> <% end %>
-    <% if !nodraws.include?(:album)    %> <th width="20%"><%= sortable_header("album", 'asc') %></th> <% end %>
-    <% if !nodraws.include?(:genre)    %> <th width="10%"><%= sortable_header("genre", 'asc') %></th> <% end %>
-    <% if !nodraws.include?(:size)     %> <th width="5%" >Size</th> <% end %>
-    <% if !nodraws.include?(:type)     %> <th width="5%" >Type</th> <% end %>
-    <% if !nodraws.include?(:get)      %> <th colspan="5%" >&nbsp;</th> <% end %>
+    <% unless nodraws.include?(:checkbox) %> <th width="5%">Mark</th> <% end %>
+    <% unless nodraws.include?(:title)    %> <th width="25%"><%= default_sortable_header("title", 'desc') %></th> <% end %>
+    <% unless nodraws.include?(:track)    %> <th width="5%">Track</th><% end %>
+    <% unless nodraws.include?(:artist)   %> <th width="25%"><%= sortable_header("artist", 'asc') %></th> <% end %>
+    <% unless nodraws.include?(:album)    %> <th width="20%"><%= sortable_header("album", 'asc') %></th> <% end %>
+    <% unless nodraws.include?(:genre)    %> <th width="10%"><%= sortable_header("genre", 'asc') %></th> <% end %>
+    <% unless nodraws.include?(:size)     %> <th width="5%" >Size</th> <% end %>
+    <% unless nodraws.include?(:type)     %> <th width="5%" >Type</th> <% end %>
+    <% unless nodraws.include?(:get)      %> <th width="5%" >&nbsp;</th> <% end %>
   </tr>
     <% for song in songs %>
       <%= render :partial => 'selections_dispatch/song', :locals => { :song => song, :nodraws => nodraws, :cur_class => cycle("cssAlternating1", "cssAlternating2") } %>
     <% end %>
 </table>
-   <p><%= submit_tag "Add to Playlist" %></p>
- <% end %>
+  <% unless nodraws.include?(:checkbox) %>
+    <p><%= submit_tag "Add to Playlist" %></p>
+  <% end %>
+<% end %>

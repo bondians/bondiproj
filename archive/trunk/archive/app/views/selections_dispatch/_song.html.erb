@@ -1,11 +1,11 @@
 <tr class = "<%= "#{cur_class}" %>" >
-  <% if !nodraws.include?(:checkbox) %> <td> <%=  check_box_tag "songs[]", song.id %> </td> <% end %>
-  <% if !nodraws.include?(:title)    %> <td><%= link_to song.title, song  %></td> <% end %>
-  <% if !nodraws.include?(:track)    %> <td width="5%"><%= song.track %></td><% end %>
-  <% if !nodraws.include?(:artist)   %> <td><%= link_to song.artist.name, song.artist %></td> <% end %>
-  <% if !nodraws.include?(:album)    %> <td><%= link_to song.album.name, song.album %></td> <% end %>
-  <% if !nodraws.include?(:genre)    %> <td><%=h song.genre.name %></td> <% end %>
-  <% if !nodraws.include?(:size)     %> <td><%=h number_to_human_size(song.size) %></td> <% end %>
-  <% if !nodraws.include?(:type)     %> <td><%=h song.songtype.name %></td> <% end %>
-  <% if !nodraws.include?(:get)      %> <td width="20"><%= link_to 'Get', :controller => "songs", :action => "show", :id => song, :format => song.songtype.identifier %></td> <% end %>
+  <% unless nodraws.include?(:checkbox) %> <td> <%=  check_box_tag "songs[]", song.id %> </td> <% end %>
+  <% unless nodraws.include?(:title)    %> <td><%= link_to song.title, song  %></td> <% end %>
+  <% unless nodraws.include?(:track)    %> <td width="5%"><%= song.track %></td><% end %>
+  <% unless nodraws.include?(:artist)   %> <td><%= link_to song.artist.name, song.artist %></td> <% end %>
+  <% unless nodraws.include?(:album)    %> <td><%= link_to song.album.name, song.album %></td> <% end %>
+  <% unless nodraws.include?(:genre)    %> <td><%=h song.genre.name %></td> <% end %>
+  <% unless nodraws.include?(:size)     %> <td><%=h number_to_human_size(song.size) %></td> <% end %>
+  <% unless nodraws.include?(:type)     %> <td><%=h song.songtype.name %></td> <% end %>
+  <% unless nodraws.include?(:get)      %> <td><%= link_to 'Get', :controller => "songs", :action => "show", :id => song, :format => song.songtype.identifier %></td> <% end %>
 </tr>
