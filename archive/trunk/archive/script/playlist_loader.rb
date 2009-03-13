@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-
+ 
 require ("#{RAILS_ROOT}/config/environment")
 
 data = IO.readlines("#{RAILS_ROOT}/oldplaylists.txt")
