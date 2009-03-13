@@ -14,6 +14,10 @@ module SelectionsDispatchHelper
   # :get
   
     def draw_songs(songs, *nodraws)
+      debugger
+      1
+      1
+      
       render :template => "wrapper", :locals => {:songs => songs, :nodraws => nodraws}
     end
     
