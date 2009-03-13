@@ -27,7 +27,7 @@ data.each do |line|
       unless playlist
         playlist = Playlist.new
         playlist.user = user
-        playlist.name = listnam
+        playlist.name = listname
         playlist.save
         playlists.unshift(playlist)
       end
