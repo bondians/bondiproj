@@ -2,14 +2,14 @@
  <% debugger;1;1 %>
 <table>
   <tr>
-    <% if !!nodraws.include?(:checkbox) %> <th width="5%">Mark</th> <% end %>
-    <% if !!nodraws.include?(:title)    %> <th width="25%"><%= default_sortable_header("title", 'desc') %></th> <% end %>
-    <% if !!nodraws.include?(:artist)   %> <th width="25%"><%= sortable_header("artist", 'asc') %></th> <% end %>
-    <% if !!nodraws.include?(:album)    %> <th width="20%"><%= sortable_header("album", 'asc') %></th> <% end %>
-    <% if !!nodraws.include?(:genre)    %> <th width="10%"><%= sortable_header("genre", 'asc') %></th> <% end %>
-    <% if !!nodraws.include?(:size)     %> <th width="5%" >Size</th> <% end %>
-    <% if !!nodraws.include?(:type)     %> <th width="5%" >Type</th> <% end %>
-    <% if !!nodraws.include?(:get)      %> <th colspan="5%" >&nbsp;</th> <% end %>
+    <% if !nodraws.include?(:checkbox) %> <th width="5%">Mark</th> <% end %>
+    <% if !nodraws.include?(:title)    %> <th width="25%"><%= default_sortable_header("title", 'desc') %></th> <% end %>
+    <% if !nodraws.include?(:artist)   %> <th width="25%"><%= sortable_header("artist", 'asc') %></th> <% end %>
+    <% if !nodraws.include?(:album)    %> <th width="20%"><%= sortable_header("album", 'asc') %></th> <% end %>
+    <% if !nodraws.include?(:genre)    %> <th width="10%"><%= sortable_header("genre", 'asc') %></th> <% end %>
+    <% if !nodraws.include?(:size)     %> <th width="5%" >Size</th> <% end %>
+    <% if !nodraws.include?(:type)     %> <th width="5%" >Type</th> <% end %>
+    <% if !nodraws.include?(:get)      %> <th colspan="5%" >&nbsp;</th> <% end %>
   </tr>
     <% for song in songs %>
       <%= render :partial => 'song', :locals => { :song => song, :nodraws => nodraws, :cur_class => cycle("cssAlternating1", "cssAlternating2") } %>
