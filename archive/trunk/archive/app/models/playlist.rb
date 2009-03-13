@@ -8,7 +8,7 @@ class Playlist < ActiveRecord::Base
   
   def self.add_songs_to_playlist(songs, plist)
     playlist = Playlist.find plist
-    return if Goldberg.user.playlists.include?(playlist)
+    return unless Goldberg.user.playlists.include?(playlist)
     
     songs.each do |s|
       song = Song.find s
