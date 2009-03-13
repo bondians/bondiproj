@@ -3,7 +3,7 @@
 
 require File.expand_path(__FILE__ + "/../../config/environment")
 
-data = IO.readlines(File.expand_path(__FILE__ + "/../../oldplaylists.txt"))
+data = []
 
 playlists = Playlist.all :include=>:user
 
