@@ -14,7 +14,7 @@ module SelectionsDispatchHelper
   # :get
   
     def draw_songs(songs, *nodraws)
-      render :template => "selections_dispatch/wrapper", :locals => {:songs => songs, :nodraws => nodraws}
+      render :file => "#{RAILS_ROOT}/app/views/selections_dispatch/_wrapper.htl.erb", :locals => {:songs => songs, :nodraws => nodraws}
     end
     
 end
