@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-
+RAILS_ENV='production'
 require File.expand_path(__FILE__ + "/../../config/environment")
 
 data = IO.readlines(File.expand_path(__FILE__ + "/../../oldplaylists.txt"))

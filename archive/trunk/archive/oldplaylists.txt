@@ -1148,361 +1148,361 @@
 171566|cayuse.country|American Honky-Tonk Bar Associ
 171527|cayuse.country|Unanswered Prayers
 173923|gamestock|Honey, I'm Home
-161774|jacook.thecave|The19A
-161781|jacook.thecave|The American Lass
-161782|jacook.thecave|The Cricket's Wicket
-161821|jacook.thecave|Is This Love
-161822|jacook.thecave|No Woman No Cry
-161829|jacook.thecave|I Shot The Sheriff
-161831|jacook.thecave|Redemption Song
-161834|jacook.thecave|Jamming
-161843|jacook.thecave|Keep On Moving
-161855|jacook.thecave|Stir It Up
-161879|jacook.thecave|Something To Talk About
-161881|jacook.thecave|I can't Make You Love Me
-161891|jacook.thecave|Love Sneakin' Up On You
-161894|jacook.thecave|Cool, Clear Water
-161897|jacook.thecave|Dimming Of The Day
-161899|jacook.thecave|Steal Your Heart Away
-161906|jacook.thecave|cry on my shoulder
-161908|jacook.thecave|nobody's girl
-161909|jacook.thecave|have a heart
-161910|jacook.thecave|too soon to tell
-161973|jacook.thecave|If You See Him / If You See Her (With Reba)
-161985|jacook.thecave|Neon Moon
-162046|jacook.thecave|Star Eyes
-162115|jacook.thecave|Lean on Me
-162121|jacook.thecave|The Hard Way
-162244|jacook.thecave|MMM MMM MMM MMM
-162254|jacook.thecave|Susie Q
-162264|jacook.thecave|Who'll Stop the Rain
-162268|jacook.thecave|Long As I Can See the Light
-162345|jacook.thecave|Soul Serenade
-162426|jacook.thecave|So Far Away
-162429|jacook.thecave|Your Latest Trick
-162434|jacook.thecave|Brothers In Arms
-162627|jacook.thecave|Lucky Man
-162651|jacook.thecave|Alisan
-162658|jacook.thecave|I Love To See You Fly
-162876|jacook.thecave|The River
-163068|jacook.thecave|Before Barbed Wire
-163069|jacook.thecave|Cloudburst
-163070|jacook.thecave|Dubuque
-163078|jacook.thecave|The Dance
-163096|jacook.thecave|Corrina, Corrina
-163123|jacook.thecave|Serenade In Blue
-163148|jacook.thecave|Moonlight Serenade
-163149|jacook.thecave|King Porter Stomp
-163150|jacook.thecave|Little Brown Jug
-163169|jacook.thecave|Ode To Joy
-163203|jacook.thecave|In The Mood
-163206|jacook.thecave|String Of Pearls
-163388|jacook.thecave|Sugar Magnolia
-163395|jacook.thecave|Friend of the Devil
-163408|jacook.thecave|Abba Father
-163410|jacook.thecave|Begins
-163412|jacook.thecave|Jesus is Coming
-163413|jacook.thecave|Jesus Knows
-163414|jacook.thecave|Love Is The Power
-163419|jacook.thecave|Standing Right In Front Of You
-163595|jacook.thecave|Tucker's Town
-163596|jacook.thecave|She Crawls Away
-163599|jacook.thecave|Earth Stopped Cold At Dawn
-163604|jacook.thecave|Fool
-163605|jacook.thecave|Tootie
-164331|jacook.thecave|Mercy, Mercy, Mercy
-164830|jacook.thecave|Lisa (Take 3)
-164831|jacook.thecave|Lisa (Take 8)
-164833|jacook.thecave|Star Eyes
-164842|jacook.thecave|Night in that land
-164849|jacook.thecave|Timewinds
-164850|jacook.thecave|Perchance To Dream
-164851|jacook.thecave|The Erebus and the Terror
-164852|jacook.thecave|On the Deep
-164853|jacook.thecave|Hourglass
-164855|jacook.thecave|Wiggy Wiggy
-164856|jacook.thecave|Tundra Summer
-164857|jacook.thecave|Something of Time
-165153|jacook.thecave|Wish You Were Here
-165156|jacook.thecave|Money
-165158|jacook.thecave|Any Colour You Like
-165196|jacook.thecave|Comfortably Numb
-165209|jacook.thecave|Us and Them
-165348|jacook.thecave|Quintessence
-165368|jacook.thecave|Center of Courage
-165390|jacook.thecave|Wonderful Tonight (live)
-165391|jacook.thecave|Change the World
-165471|jacook.thecave|heart of worship
-165538|jacook.thecave|Little Wing
-165545|jacook.thecave|She's A Beauty
-165547|jacook.thecave|What Do You Want From Life
-166063|jacook.thecave|Bookends Theme
-166262|jacook.thecave|Aja
-166268|jacook.thecave|Negative Girl
-166272|jacook.thecave|Two Against Nature
-166417|jacook.thecave|Impossible Love
-166418|jacook.thecave|Kingston Town
-166419|jacook.thecave|Tears From My Eyes
-166427|jacook.thecave|Breakfast In Bed
-166429|jacook.thecave|I Would Do For You
-166446|jacook.thecave|Stay A Little Bit Longer
-166467|jacook.thecave|Can't Help Falling In Love
-166472|jacook.thecave|Where Did I Go Wrong?
-167804|jacook.thecave|Hot House - Charlie Parker
-169267|jacook.thecave|When You Say Nothing At All
-169629|jacook.thecave|One Week
-169635|jacook.thecave|Call And Answer
-169638|jacook.thecave|Who Needs Sleep
-169641|jacook.thecave|When You Dream
-169816|jacook.thecave|Run-around
-169820|jacook.thecave|The Mountains Win Again
-169824|jacook.thecave|Hook
-169826|jacook.thecave|Just Wait
-169831|jacook.thecave|Canadian Rose
-169837|jacook.thecave|Most Precarious
-169840|jacook.thecave|Make My Way
-169935|jacook.thecave|So Jah Seh
-169993|jacook.thecave|Never Make Your Move Too Soon
-170002|jacook.thecave|Longing In Their Hearts
-170008|jacook.thecave|I Believe I'm In Love With You
-170043|jacook.thecave|Debussy: L'Isle Joyeuse
-170045|jacook.thecave|Debussy: Arabesque #1
-170092|jacook.thecave|My Maria
-170185|jacook.thecave|The Wind
-170197|jacook.thecave|Oh Very Young
-170204|jacook.thecave|Cat Stevens - Changes IV
-170205|jacook.thecave|Cat Stevens - How Can I Tell You
-170206|jacook.thecave|Cat Stevens - Tuesdays Dead
-170209|jacook.thecave|Cat Stevens - Moonshadow
-170210|jacook.thecave|Cat Stevens - Peace Train
-170211|jacook.thecave|Where Do The Children Play?
-170212|jacook.thecave|Hard-Headed Woman
-170213|jacook.thecave|Wild World
-170215|jacook.thecave|Miles From Nowhere
-170218|jacook.thecave|Into White
-170219|jacook.thecave|On The Road To Findout
-170220|jacook.thecave|Father And Son
-170222|jacook.thecave|Sitting
-170224|jacook.thecave|Angelsea
-170225|jacook.thecave|Silent Sunlight
-170230|jacook.thecave|Sweet Scarlet
-170360|jacook.thecave|Almost A Dream
-170361|jacook.thecave|The Secret Of Time
-170362|jacook.thecave|Something About Her Eyes
-170363|jacook.thecave|No Long Goodbyes
-170366|jacook.thecave|A Song For Joy
-170480|jacook.thecave|Acoustic Highway
-170497|jacook.thecave|Samba Del Luna
-170516|jacook.thecave|Carry On
-170519|jacook.thecave|Helpless
-170522|jacook.thecave|Our House
-170523|jacook.thecave|4 + 20
-170524|jacook.thecave|Country Girl
-170529|jacook.thecave|What If I Stumble
-170535|jacook.thecave|In The Light
-170537|jacook.thecave|Mind's Eye
-170837|jacook.thecave|Sultans Of Swing
-171081|jacook.thecave|Peruvian Skies
-171177|jacook.thecave|Watermark
-171179|jacook.thecave|On Your Shore
-171197|jacook.thecave|My Father's Eyes
-171198|jacook.thecave|River Of Tears
-171207|jacook.thecave|Needs His Woman
-171209|jacook.thecave|You Were There
-171234|jacook.thecave|For Your Love/The Yardbirds
-171284|jacook.thecave|Stormy Monday
-171309|jacook.thecave|Tears in Heaven
-171313|jacook.thecave|Running on Faith
-171315|jacook.thecave|Alberta
-171318|jacook.thecave|Old Love
-171335|jacook.thecave|Modern Girl
-171342|jacook.thecave|Willie and the Hand Jive
-171527|jacook.thecave|Unanswered Prayers
-171531|jacook.thecave|We Shall Be Free
-171544|jacook.thecave|If Tomorrow Never Comes
-171548|jacook.thecave|Much Too Young (To Feel This Damn Old)
-171552|jacook.thecave|The Dance
-171562|jacook.thecave|She's Every Woman
-171567|jacook.thecave|One Night A Day
-171588|jacook.thecave|What She's Doing Now
-171612|jacook.thecave|I Can Still Make Cheyenne
-171622|jacook.thecave|Miles City Train
-171625|jacook.thecave|Rag
-171627|jacook.thecave|Tamarack Pines
-171628|jacook.thecave|Forbidden Forest
-171629|jacook.thecave|Troubador
-171635|jacook.thecave|Graceful Ghost
-171636|jacook.thecave|Walking in the Air
-171641|jacook.thecave|Night Sky
-171696|jacook.thecave|Uncle John's Band
-171700|jacook.thecave|Cumberland Blues
-171703|jacook.thecave|Casey Jones
-171866|jacook.thecave|Only Wanna Be With You
-171911|jacook.thecave|Somewhere Over The Rainbow/What A Wonderful World
-171912|jacook.thecave|Hawai'i '78
-172019|jacook.thecave|Something in the way she moves
-172021|jacook.thecave|Fire and Rain
-172024|jacook.thecave|You've got a friend
-172025|jacook.thecave|Don't let me be lonely tonight
-172028|jacook.thecave|Mexico
-172029|jacook.thecave|Shower the People
-172087|jacook.thecave|The Gift
-172167|jacook.thecave|Breaking Us In Two
-172169|jacook.thecave|Real Men
-172170|jacook.thecave|A Slow Song
-172601|jacook.thecave|What a Wonderful World
-172605|jacook.thecave|A kiss to build a dream on
-172606|jacook.thecave|It takes 2 to tango
-172609|jacook.thecave|I get ideas
-172610|jacook.thecave|Gone fishin
-172611|jacook.thecave|Skokiaan
-172616|jacook.thecave|When you're smiling
-172617|jacook.thecave|Blueberry hill
-172861|jacook.thecave|Go the Distance
-172929|jacook.thecave|Because It's There
-172937|jacook.thecave|The Funky Avocado
-172940|jacook.thecave|Layover
-172951|jacook.thecave|Aerial Boundaries
-172953|jacook.thecave|Rickover's Dream
-172955|jacook.thecave|After The Gold Rush
-172975|jacook.thecave|Road To Return
-172977|jacook.thecave|Sister Soul
-172982|jacook.thecave|You Can Have Anything You Want
-172988|jacook.thecave|Point A
-172996|jacook.thecave|i carry your heart
-173003|jacook.thecave|Arrowhead
-173012|jacook.thecave|Face Yourself
-173013|jacook.thecave|I'm Coming Home
-173014|jacook.thecave|Woman Of The World
-173016|jacook.thecave|I Want You
-173020|jacook.thecave|All Along The Watchtower
-173246|jacook.thecave|Windell
-173248|jacook.thecave|Hugh
-173251|jacook.thecave|Bring Me Back a Song.
-173781|jacook.thecave|Black Magic Woman/Gypsy Queen
-173786|jacook.thecave|Samba Pa Ti
-173811|jacook.thecave|Imaginary Islands
-173813|jacook.thecave|Secret Gathering
-173815|jacook.thecave|Castaneda's Boogie
-173819|jacook.thecave|How Much Does Zimbabwe?
-173824|jacook.thecave|The Orangutan Gang (Strikes Back)
-173826|jacook.thecave|Streetnoise
-173836|jacook.thecave|Song for my Brother
-173855|jacook.thecave|Foundwind
-173858|jacook.thecave|Shadowdance
-173863|jacook.thecave|Northern Lights
-173864|jacook.thecave|The Return Of The Nairobi Trio
-173865|jacook.thecave|Neither Here Nor There
-173871|jacook.thecave|Include Me Out
-173873|jacook.thecave|Oasis
-173874|jacook.thecave|One Winter Morning
-173876|jacook.thecave|A Pause in the Rain
-173878|jacook.thecave|Changing of the Guard
-173879|jacook.thecave|Boomerang
-173886|jacook.thecave|New Electric India
-173887|jacook.thecave|Watercourse Way
-173888|jacook.thecave|Ghost Bird
-173898|jacook.thecave|A Thousand Teardrops
-174079|jacook.thecave|Lenny
-174091|jacook.thecave|Texas Flood (live)
-174109|jacook.thecave|Voodoo Chile (Slight Return) (live)
-174122|jacook.thecave|Tightrope (live)
-174145|jacook.thecave|Call It Stormy Monday
-174150|jacook.thecave|"Who Is Stevie?"
-174152|jacook.thecave|Match Box Blues
-174153|jacook.thecave|Don't Lie To Me
-174203|jacook.thecave|Life By The Drop
-174660|jacook.thecave|96 in the Shade
-174779|jacook.thecave|Glad
-174781|jacook.thecave|Empty Pages
-174810|jacook.thecave|Many Rivers To Cross
-175036|jacook.thecave|Debussy: Claire de lune
-177236|jacook.thecave|Sung to Sleep
-177310|jacook.thecave|Blue / Jim Brickman
-177521|jacook.thecave|I Shot The Sheriff
-177524|jacook.thecave|Hello Old Friend
-179584|jacook.thecave|Join the Band
-179586|jacook.thecave|All That You Dream
-179592|jacook.thecave|Spanish Moon
-179593|jacook.thecave|Dixie Chicken
-179594|jacook.thecave|Triple Face Boogie
-179596|jacook.thecave|Willin'
-185762|jacook.thecave|Cry Me a River
-185763|jacook.thecave|Dancing in the Dark
-185764|jacook.thecave|I Get Along With You Very Well
-185765|jacook.thecave|I Remember You
-185766|jacook.thecave|Love Letters
-185772|jacook.thecave|Do It Again
-185775|jacook.thecave|I'll String Along With You
-185776|jacook.thecave|I've Got You Under My Skin
-185778|jacook.thecave|Let's Fall in Love
-185779|jacook.thecave|Pick Yourself Up
-185781|jacook.thecave|The Best Thing for You
-185782|jacook.thecave|When I Look in Your Eyes
-186391|jacook.thecave|Body And Soul
-186396|jacook.thecave|Giant Steps
-186547|jacook.thecave|Amazing Grace
-186548|jacook.thecave|As You Lead Me
-186550|jacook.thecave|Intro
-186551|jacook.thecave|The Solid Rock
-186553|jacook.thecave|Words That You Say
-186554|jacook.thecave|#5
-186555|jacook.thecave|Anchor Of My Soul
-186556|jacook.thecave|Better is One Day
-186557|jacook.thecave|Galaxy
-186560|jacook.thecave|Hungry (Falling On My Knees)
-186563|jacook.thecave|Nothing But The Blood Of Jesus
-186567|jacook.thecave|Any Major Dude Will Tell You
-186570|jacook.thecave|East St. Louis Toodle-oo
-186574|jacook.thecave|Pretzel Logic
-186578|jacook.thecave|Camouflage Soul
-186579|jacook.thecave|Eternal Lifestyle
-186580|jacook.thecave|Face To Face
-186581|jacook.thecave|It Will Be Worth It All
-186582|jacook.thecave|Magic Show
-186583|jacook.thecave|No Condemnation
-186584|jacook.thecave|On & On
-186585|jacook.thecave|Paradigm
-186586|jacook.thecave|Revolution
-186587|jacook.thecave|So Hard I Try
-186588|jacook.thecave|Something Electric
-186589|jacook.thecave|The River
-186590|jacook.thecave|Truth About God
-188171|jacook.thecave|Alfie's Theme
-188173|jacook.thecave|Mercy Mercy Mercy
-188176|jacook.thecave|Superstar
-188178|jacook.thecave|The Dream
-188260|jacook.thecave|Night In Tunisia
-188270|jacook.thecave|Riviera Paradise
-188426|jacook.thecave|Another Tuesday Morning
-188427|jacook.thecave|Catching Twilight
-188428|jacook.thecave|Devotion
-188432|jacook.thecave|Night Rain
-188433|jacook.thecave|One and Only
-188434|jacook.thecave|Serenade
-188435|jacook.thecave|Simple Things
-188437|jacook.thecave|Waiting For You
-188442|jacook.thecave|In A Lover's Eyes
-188443|jacook.thecave|Lake Erie Rainfall
-188448|jacook.thecave|Sudden Inspiration
-188488|jacook.thecave|Cold Cold Heart
-188489|jacook.thecave|Come Away With Me
-188490|jacook.thecave|Don't Know Why
-188492|jacook.thecave|I've Got To See You Again
-188494|jacook.thecave|Nightingale
-188496|jacook.thecave|Painter Song
-188500|jacook.thecave|The Nearness Of You
-189262|jacook.thecave|Blue Train
-189265|jacook.thecave|Sugar
-189267|jacook.thecave|Wild Horses
-189314|jacook.thecave|Evidence
-189317|jacook.thecave|Reflections
-189318|jacook.thecave|Round About Midnight
-189321|jacook.thecave|Well You Needn't
-189324|jacook.thecave|Blue Monk
-189329|jacook.thecave|Straight, No Chaser
-189583|jacook.thecave|D Trane
-189654|jacook.thecave|Why
+161774|JACook.thecave|The19A
+161781|JACook.thecave|The American Lass
+161782|JACook.thecave|The Cricket's Wicket
+161821|JACook.thecave|Is This Love
+161822|JACook.thecave|No Woman No Cry
+161829|JACook.thecave|I Shot The Sheriff
+161831|JACook.thecave|Redemption Song
+161834|JACook.thecave|Jamming
+161843|JACook.thecave|Keep On Moving
+161855|JACook.thecave|Stir It Up
+161879|JACook.thecave|Something To Talk About
+161881|JACook.thecave|I can't Make You Love Me
+161891|JACook.thecave|Love Sneakin' Up On You
+161894|JACook.thecave|Cool, Clear Water
+161897|JACook.thecave|Dimming Of The Day
+161899|JACook.thecave|Steal Your Heart Away
+161906|JACook.thecave|cry on my shoulder
+161908|JACook.thecave|nobody's girl
+161909|JACook.thecave|have a heart
+161910|JACook.thecave|too soon to tell
+161973|JACook.thecave|If You See Him / If You See Her (With Reba)
+161985|JACook.thecave|Neon Moon
+162046|JACook.thecave|Star Eyes
+162115|JACook.thecave|Lean on Me
+162121|JACook.thecave|The Hard Way
+162244|JACook.thecave|MMM MMM MMM MMM
+162254|JACook.thecave|Susie Q
+162264|JACook.thecave|Who'll Stop the Rain
+162268|JACook.thecave|Long As I Can See the Light
+162345|JACook.thecave|Soul Serenade
+162426|JACook.thecave|So Far Away
+162429|JACook.thecave|Your Latest Trick
+162434|JACook.thecave|Brothers In Arms
+162627|JACook.thecave|Lucky Man
+162651|JACook.thecave|Alisan
+162658|JACook.thecave|I Love To See You Fly
+162876|JACook.thecave|The River
+163068|JACook.thecave|Before Barbed Wire
+163069|JACook.thecave|Cloudburst
+163070|JACook.thecave|Dubuque
+163078|JACook.thecave|The Dance
+163096|JACook.thecave|Corrina, Corrina
+163123|JACook.thecave|Serenade In Blue
+163148|JACook.thecave|Moonlight Serenade
+163149|JACook.thecave|King Porter Stomp
+163150|JACook.thecave|Little Brown Jug
+163169|JACook.thecave|Ode To Joy
+163203|JACook.thecave|In The Mood
+163206|JACook.thecave|String Of Pearls
+163388|JACook.thecave|Sugar Magnolia
+163395|JACook.thecave|Friend of the Devil
+163408|JACook.thecave|Abba Father
+163410|JACook.thecave|Begins
+163412|JACook.thecave|Jesus is Coming
+163413|JACook.thecave|Jesus Knows
+163414|JACook.thecave|Love Is The Power
+163419|JACook.thecave|Standing Right In Front Of You
+163595|JACook.thecave|Tucker's Town
+163596|JACook.thecave|She Crawls Away
+163599|JACook.thecave|Earth Stopped Cold At Dawn
+163604|JACook.thecave|Fool
+163605|JACook.thecave|Tootie
+164331|JACook.thecave|Mercy, Mercy, Mercy
+164830|JACook.thecave|Lisa (Take 3)
+164831|JACook.thecave|Lisa (Take 8)
+164833|JACook.thecave|Star Eyes
+164842|JACook.thecave|Night in that land
+164849|JACook.thecave|Timewinds
+164850|JACook.thecave|Perchance To Dream
+164851|JACook.thecave|The Erebus and the Terror
+164852|JACook.thecave|On the Deep
+164853|JACook.thecave|Hourglass
+164855|JACook.thecave|Wiggy Wiggy
+164856|JACook.thecave|Tundra Summer
+164857|JACook.thecave|Something of Time
+165153|JACook.thecave|Wish You Were Here
+165156|JACook.thecave|Money
+165158|JACook.thecave|Any Colour You Like
+165196|JACook.thecave|Comfortably Numb
+165209|JACook.thecave|Us and Them
+165348|JACook.thecave|Quintessence
+165368|JACook.thecave|Center of Courage
+165390|JACook.thecave|Wonderful Tonight (live)
+165391|JACook.thecave|Change the World
+165471|JACook.thecave|heart of worship
+165538|JACook.thecave|Little Wing
+165545|JACook.thecave|She's A Beauty
+165547|JACook.thecave|What Do You Want From Life
+166063|JACook.thecave|Bookends Theme
+166262|JACook.thecave|Aja
+166268|JACook.thecave|Negative Girl
+166272|JACook.thecave|Two Against Nature
+166417|JACook.thecave|Impossible Love
+166418|JACook.thecave|Kingston Town
+166419|JACook.thecave|Tears From My Eyes
+166427|JACook.thecave|Breakfast In Bed
+166429|JACook.thecave|I Would Do For You
+166446|JACook.thecave|Stay A Little Bit Longer
+166467|JACook.thecave|Can't Help Falling In Love
+166472|JACook.thecave|Where Did I Go Wrong?
+167804|JACook.thecave|Hot House - Charlie Parker
+169267|JACook.thecave|When You Say Nothing At All
+169629|JACook.thecave|One Week
+169635|JACook.thecave|Call And Answer
+169638|JACook.thecave|Who Needs Sleep
+169641|JACook.thecave|When You Dream
+169816|JACook.thecave|Run-around
+169820|JACook.thecave|The Mountains Win Again
+169824|JACook.thecave|Hook
+169826|JACook.thecave|Just Wait
+169831|JACook.thecave|Canadian Rose
+169837|JACook.thecave|Most Precarious
+169840|JACook.thecave|Make My Way
+169935|JACook.thecave|So Jah Seh
+169993|JACook.thecave|Never Make Your Move Too Soon
+170002|JACook.thecave|Longing In Their Hearts
+170008|JACook.thecave|I Believe I'm In Love With You
+170043|JACook.thecave|Debussy: L'Isle Joyeuse
+170045|JACook.thecave|Debussy: Arabesque #1
+170092|JACook.thecave|My Maria
+170185|JACook.thecave|The Wind
+170197|JACook.thecave|Oh Very Young
+170204|JACook.thecave|Cat Stevens - Changes IV
+170205|JACook.thecave|Cat Stevens - How Can I Tell You
+170206|JACook.thecave|Cat Stevens - Tuesdays Dead
+170209|JACook.thecave|Cat Stevens - Moonshadow
+170210|JACook.thecave|Cat Stevens - Peace Train
+170211|JACook.thecave|Where Do The Children Play?
+170212|JACook.thecave|Hard-Headed Woman
+170213|JACook.thecave|Wild World
+170215|JACook.thecave|Miles From Nowhere
+170218|JACook.thecave|Into White
+170219|JACook.thecave|On The Road To Findout
+170220|JACook.thecave|Father And Son
+170222|JACook.thecave|Sitting
+170224|JACook.thecave|Angelsea
+170225|JACook.thecave|Silent Sunlight
+170230|JACook.thecave|Sweet Scarlet
+170360|JACook.thecave|Almost A Dream
+170361|JACook.thecave|The Secret Of Time
+170362|JACook.thecave|Something About Her Eyes
+170363|JACook.thecave|No Long Goodbyes
+170366|JACook.thecave|A Song For Joy
+170480|JACook.thecave|Acoustic Highway
+170497|JACook.thecave|Samba Del Luna
+170516|JACook.thecave|Carry On
+170519|JACook.thecave|Helpless
+170522|JACook.thecave|Our House
+170523|JACook.thecave|4 + 20
+170524|JACook.thecave|Country Girl
+170529|JACook.thecave|What If I Stumble
+170535|JACook.thecave|In The Light
+170537|JACook.thecave|Mind's Eye
+170837|JACook.thecave|Sultans Of Swing
+171081|JACook.thecave|Peruvian Skies
+171177|JACook.thecave|Watermark
+171179|JACook.thecave|On Your Shore
+171197|JACook.thecave|My Father's Eyes
+171198|JACook.thecave|River Of Tears
+171207|JACook.thecave|Needs His Woman
+171209|JACook.thecave|You Were There
+171234|JACook.thecave|For Your Love/The Yardbirds
+171284|JACook.thecave|Stormy Monday
+171309|JACook.thecave|Tears in Heaven
+171313|JACook.thecave|Running on Faith
+171315|JACook.thecave|Alberta
+171318|JACook.thecave|Old Love
+171335|JACook.thecave|Modern Girl
+171342|JACook.thecave|Willie and the Hand Jive
+171527|JACook.thecave|Unanswered Prayers
+171531|JACook.thecave|We Shall Be Free
+171544|JACook.thecave|If Tomorrow Never Comes
+171548|JACook.thecave|Much Too Young (To Feel This Damn Old)
+171552|JACook.thecave|The Dance
+171562|JACook.thecave|She's Every Woman
+171567|JACook.thecave|One Night A Day
+171588|JACook.thecave|What She's Doing Now
+171612|JACook.thecave|I Can Still Make Cheyenne
+171622|JACook.thecave|Miles City Train
+171625|JACook.thecave|Rag
+171627|JACook.thecave|Tamarack Pines
+171628|JACook.thecave|Forbidden Forest
+171629|JACook.thecave|Troubador
+171635|JACook.thecave|Graceful Ghost
+171636|JACook.thecave|Walking in the Air
+171641|JACook.thecave|Night Sky
+171696|JACook.thecave|Uncle John's Band
+171700|JACook.thecave|Cumberland Blues
+171703|JACook.thecave|Casey Jones
+171866|JACook.thecave|Only Wanna Be With You
+171911|JACook.thecave|Somewhere Over The Rainbow/What A Wonderful World
+171912|JACook.thecave|Hawai'i '78
+172019|JACook.thecave|Something in the way she moves
+172021|JACook.thecave|Fire and Rain
+172024|JACook.thecave|You've got a friend
+172025|JACook.thecave|Don't let me be lonely tonight
+172028|JACook.thecave|Mexico
+172029|JACook.thecave|Shower the People
+172087|JACook.thecave|The Gift
+172167|JACook.thecave|Breaking Us In Two
+172169|JACook.thecave|Real Men
+172170|JACook.thecave|A Slow Song
+172601|JACook.thecave|What a Wonderful World
+172605|JACook.thecave|A kiss to build a dream on
+172606|JACook.thecave|It takes 2 to tango
+172609|JACook.thecave|I get ideas
+172610|JACook.thecave|Gone fishin
+172611|JACook.thecave|Skokiaan
+172616|JACook.thecave|When you're smiling
+172617|JACook.thecave|Blueberry hill
+172861|JACook.thecave|Go the Distance
+172929|JACook.thecave|Because It's There
+172937|JACook.thecave|The Funky Avocado
+172940|JACook.thecave|Layover
+172951|JACook.thecave|Aerial Boundaries
+172953|JACook.thecave|Rickover's Dream
+172955|JACook.thecave|After The Gold Rush
+172975|JACook.thecave|Road To Return
+172977|JACook.thecave|Sister Soul
+172982|JACook.thecave|You Can Have Anything You Want
+172988|JACook.thecave|Point A
+172996|JACook.thecave|i carry your heart
+173003|JACook.thecave|Arrowhead
+173012|JACook.thecave|Face Yourself
+173013|JACook.thecave|I'm Coming Home
+173014|JACook.thecave|Woman Of The World
+173016|JACook.thecave|I Want You
+173020|JACook.thecave|All Along The Watchtower
+173246|JACook.thecave|Windell
+173248|JACook.thecave|Hugh
+173251|JACook.thecave|Bring Me Back a Song.
+173781|JACook.thecave|Black Magic Woman/Gypsy Queen
+173786|JACook.thecave|Samba Pa Ti
+173811|JACook.thecave|Imaginary Islands
+173813|JACook.thecave|Secret Gathering
+173815|JACook.thecave|Castaneda's Boogie
+173819|JACook.thecave|How Much Does Zimbabwe?
+173824|JACook.thecave|The Orangutan Gang (Strikes Back)
+173826|JACook.thecave|Streetnoise
+173836|JACook.thecave|Song for my Brother
+173855|JACook.thecave|Foundwind
+173858|JACook.thecave|Shadowdance
+173863|JACook.thecave|Northern Lights
+173864|JACook.thecave|The Return Of The Nairobi Trio
+173865|JACook.thecave|Neither Here Nor There
+173871|JACook.thecave|Include Me Out
+173873|JACook.thecave|Oasis
+173874|JACook.thecave|One Winter Morning
+173876|JACook.thecave|A Pause in the Rain
+173878|JACook.thecave|Changing of the Guard
+173879|JACook.thecave|Boomerang
+173886|JACook.thecave|New Electric India
+173887|JACook.thecave|Watercourse Way
+173888|JACook.thecave|Ghost Bird
+173898|JACook.thecave|A Thousand Teardrops
+174079|JACook.thecave|Lenny
+174091|JACook.thecave|Texas Flood (live)
+174109|JACook.thecave|Voodoo Chile (Slight Return) (live)
+174122|JACook.thecave|Tightrope (live)
+174145|JACook.thecave|Call It Stormy Monday
+174150|JACook.thecave|"Who Is Stevie?"
+174152|JACook.thecave|Match Box Blues
+174153|JACook.thecave|Don't Lie To Me
+174203|JACook.thecave|Life By The Drop
+174660|JACook.thecave|96 in the Shade
+174779|JACook.thecave|Glad
+174781|JACook.thecave|Empty Pages
+174810|JACook.thecave|Many Rivers To Cross
+175036|JACook.thecave|Debussy: Claire de lune
+177236|JACook.thecave|Sung to Sleep
+177310|JACook.thecave|Blue / Jim Brickman
+177521|JACook.thecave|I Shot The Sheriff
+177524|JACook.thecave|Hello Old Friend
+179584|JACook.thecave|Join the Band
+179586|JACook.thecave|All That You Dream
+179592|JACook.thecave|Spanish Moon
+179593|JACook.thecave|Dixie Chicken
+179594|JACook.thecave|Triple Face Boogie
+179596|JACook.thecave|Willin'
+185762|JACook.thecave|Cry Me a River
+185763|JACook.thecave|Dancing in the Dark
+185764|JACook.thecave|I Get Along With You Very Well
+185765|JACook.thecave|I Remember You
+185766|JACook.thecave|Love Letters
+185772|JACook.thecave|Do It Again
+185775|JACook.thecave|I'll String Along With You
+185776|JACook.thecave|I've Got You Under My Skin
+185778|JACook.thecave|Let's Fall in Love
+185779|JACook.thecave|Pick Yourself Up
+185781|JACook.thecave|The Best Thing for You
+185782|JACook.thecave|When I Look in Your Eyes
+186391|JACook.thecave|Body And Soul
+186396|JACook.thecave|Giant Steps
+186547|JACook.thecave|Amazing Grace
+186548|JACook.thecave|As You Lead Me
+186550|JACook.thecave|Intro
+186551|JACook.thecave|The Solid Rock
+186553|JACook.thecave|Words That You Say
+186554|JACook.thecave|#5
+186555|JACook.thecave|Anchor Of My Soul
+186556|JACook.thecave|Better is One Day
+186557|JACook.thecave|Galaxy
+186560|JACook.thecave|Hungry (Falling On My Knees)
+186563|JACook.thecave|Nothing But The Blood Of Jesus
+186567|JACook.thecave|Any Major Dude Will Tell You
+186570|JACook.thecave|East St. Louis Toodle-oo
+186574|JACook.thecave|Pretzel Logic
+186578|JACook.thecave|Camouflage Soul
+186579|JACook.thecave|Eternal Lifestyle
+186580|JACook.thecave|Face To Face
+186581|JACook.thecave|It Will Be Worth It All
+186582|JACook.thecave|Magic Show
+186583|JACook.thecave|No Condemnation
+186584|JACook.thecave|On & On
+186585|JACook.thecave|Paradigm
+186586|JACook.thecave|Revolution
+186587|JACook.thecave|So Hard I Try
+186588|JACook.thecave|Something Electric
+186589|JACook.thecave|The River
+186590|JACook.thecave|Truth About God
+188171|JACook.thecave|Alfie's Theme
+188173|JACook.thecave|Mercy Mercy Mercy
+188176|JACook.thecave|Superstar
+188178|JACook.thecave|The Dream
+188260|JACook.thecave|Night In Tunisia
+188270|JACook.thecave|Riviera Paradise
+188426|JACook.thecave|Another Tuesday Morning
+188427|JACook.thecave|Catching Twilight
+188428|JACook.thecave|Devotion
+188432|JACook.thecave|Night Rain
+188433|JACook.thecave|One and Only
+188434|JACook.thecave|Serenade
+188435|JACook.thecave|Simple Things
+188437|JACook.thecave|Waiting For You
+188442|JACook.thecave|In A Lover's Eyes
+188443|JACook.thecave|Lake Erie Rainfall
+188448|JACook.thecave|Sudden Inspiration
+188488|JACook.thecave|Cold Cold Heart
+188489|JACook.thecave|Come Away With Me
+188490|JACook.thecave|Don't Know Why
+188492|JACook.thecave|I've Got To See You Again
+188494|JACook.thecave|Nightingale
+188496|JACook.thecave|Painter Song
+188500|JACook.thecave|The Nearness Of You
+189262|JACook.thecave|Blue Train
+189265|JACook.thecave|Sugar
+189267|JACook.thecave|Wild Horses
+189314|JACook.thecave|Evidence
+189317|JACook.thecave|Reflections
+189318|JACook.thecave|Round About Midnight
+189321|JACook.thecave|Well You Needn't
+189324|JACook.thecave|Blue Monk
+189329|JACook.thecave|Straight, No Chaser
+189583|JACook.thecave|D Trane
+189654|JACook.thecave|Why
 168215|mokus.4th|Black Magic Woman
 168961|mokus.4th|Sabor A Mi
 173782|mokus.4th|Oye Como Va
@@ -1791,11 +1791,11 @@
 161970|cayuse.country|How Long Gone
 170789|cayuse.country|Finish What We Started
 175301|cayuse.country|You Don't Seem to Miss Me
-189836|jacook.thecave|Sunrise
-189844|jacook.thecave|Humble Me
-189799|jacook.thecave|Harlem Nocturne
-189802|jacook.thecave|Sugar
-189804|jacook.thecave|Little Flower
+189836|JACook.thecave|Sunrise
+189844|JACook.thecave|Humble Me
+189799|JACook.thecave|Harlem Nocturne
+189802|JACook.thecave|Sugar
+189804|JACook.thecave|Little Flower
 181074|cayuse.funk|Mr. Big Stuff
 181070|cayuse.funk|Pick Up The Pieces
 181069|cayuse.funk|Brick House
@@ -2098,28 +2098,28 @@
 183743|kiowa|Let's Go Crazy
 165262|kiowa|Crazy Little Thing Called Love
 171453|kiowa|Cold As Ice
-192256|jacook.thecave|Let Me Touch You For a While
-192259|jacook.thecave|Baby, Now That I've Found You
-192262|jacook.thecave|Every Time You Say Goodbye
-192267|jacook.thecave|Stay
-192258|jacook.thecave|The Lucky One
-192273|jacook.thecave|Faraway Land
-192268|jacook.thecave|Broadway
-192283|jacook.thecave|Maybe
-192269|jacook.thecave|Ghost in This House
-192285|jacook.thecave|But You Know I Love You
-192287|jacook.thecave|When You Say Nothing At All
-192290|jacook.thecave|Down In The River to Pray (DVD Credits)
-192337|jacook.thecave|Stop This World
-192343|jacook.thecave|I'm Pulling Through
-192339|jacook.thecave|Temptation
-192345|jacook.thecave|Narrow Daylight
-192368|jacook.thecave|Hollywood
-192371|jacook.thecave|Onda
-192372|jacook.thecave|Real Emotions
-192365|jacook.thecave|Heaven
-192357|jacook.thecave|Milkcow's Calf Blues
-192350|jacook.thecave|When You Got A Good Friend
+192256|JACook.thecave|Let Me Touch You For a While
+192259|JACook.thecave|Baby, Now That I've Found You
+192262|JACook.thecave|Every Time You Say Goodbye
+192267|JACook.thecave|Stay
+192258|JACook.thecave|The Lucky One
+192273|JACook.thecave|Faraway Land
+192268|JACook.thecave|Broadway
+192283|JACook.thecave|Maybe
+192269|JACook.thecave|Ghost in This House
+192285|JACook.thecave|But You Know I Love You
+192287|JACook.thecave|When You Say Nothing At All
+192290|JACook.thecave|Down In The River to Pray (DVD Credits)
+192337|JACook.thecave|Stop This World
+192343|JACook.thecave|I'm Pulling Through
+192339|JACook.thecave|Temptation
+192345|JACook.thecave|Narrow Daylight
+192368|JACook.thecave|Hollywood
+192371|JACook.thecave|Onda
+192372|JACook.thecave|Real Emotions
+192365|JACook.thecave|Heaven
+192357|JACook.thecave|Milkcow's Calf Blues
+192350|JACook.thecave|When You Got A Good Friend
 181731|deepbondi.nidor|Bring It Back Again
 181733|deepbondi.nidor|Race With The Devil
 181734|deepbondi.nidor|Rumble In Brighton (live)
@@ -2714,28 +2714,28 @@
 164109|cayuse.christmas|Little Drummer Boy - George Kahumoku
 178261|kiowa|Silent Night
 178261|kiowa.christmas|Silent Night
-165343|jacook.thecave|How Sweet It Is
-165341|jacook.thecave|Grace
-192752|jacook.thecave|You Don't Know Me - With Diana Krall
-192753|jacook.thecave|Fever - With Natalie Cole
-192759|jacook.thecave|Crazy Love - With Van Morrison
-192760|jacook.thecave|Heaven Help Us All - With Gladys Knight
-192758|jacook.thecave|It Was A Good Year - With Willie Nelson
-192761|jacook.thecave|Over The Rainbow - With Johnny Mathis
-192757|jacook.thecave|Do I Ever Cross Your Mind? - With Bonnie Raitt
-192755|jacook.thecave|Here We Go Again - With Norah Jones
-192754|jacook.thecave|Sinner's Prayer - With B.B. King
-192742|jacook.thecave|I'm Gonna Move To The Outskirts Of Town
-174297|jacook.thecave|The Weight
-174303|jacook.thecave|Stage Fright
-174295|jacook.thecave|Up on Cripple Creek
-180812|jacook.thecave|Like a Hurricane
-180799|jacook.thecave|Sugar Mountain
-180802|jacook.thecave|After the Gold Rush
-192432|jacook.thecave|(It Takes) Two To Tango
-180789|jacook.thecave|Out on the Weekend
-180790|jacook.thecave|Harvest
-180794|jacook.thecave|Old Man
+165343|JACook.thecave|How Sweet It Is
+165341|JACook.thecave|Grace
+192752|JACook.thecave|You Don't Know Me - With Diana Krall
+192753|JACook.thecave|Fever - With Natalie Cole
+192759|JACook.thecave|Crazy Love - With Van Morrison
+192760|JACook.thecave|Heaven Help Us All - With Gladys Knight
+192758|JACook.thecave|It Was A Good Year - With Willie Nelson
+192761|JACook.thecave|Over The Rainbow - With Johnny Mathis
+192757|JACook.thecave|Do I Ever Cross Your Mind? - With Bonnie Raitt
+192755|JACook.thecave|Here We Go Again - With Norah Jones
+192754|JACook.thecave|Sinner's Prayer - With B.B. King
+192742|JACook.thecave|I'm Gonna Move To The Outskirts Of Town
+174297|JACook.thecave|The Weight
+174303|JACook.thecave|Stage Fright
+174295|JACook.thecave|Up on Cripple Creek
+180812|JACook.thecave|Like a Hurricane
+180799|JACook.thecave|Sugar Mountain
+180802|JACook.thecave|After the Gold Rush
+192432|JACook.thecave|(It Takes) Two To Tango
+180789|JACook.thecave|Out on the Weekend
+180790|JACook.thecave|Harvest
+180794|JACook.thecave|Old Man
 186735|deepbondi.c__|Livin' On The Edge
 186733|deepbondi.c__|Get A Grip
 186741|deepbondi.c__|Crazy
