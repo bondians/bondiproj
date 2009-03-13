@@ -1,10 +1,9 @@
 #!/usr/bin/env ruby
 
-puts File.expand_path(__FILE__ + "/../../config/environment")
 
 require File.expand_path(__FILE__ + "/../../config/environment")
 
-data = IO.readlines("#{RAILS_ROOT}/oldplaylists.txt")
+data = IO.readlines(File.expand_path(__FILE__ + "/../../oldplaylists.txt"))
 
 playlists = Playlist.all :include=>:user
 
