@@ -4,6 +4,7 @@
   <tr>
     <% if !nodraws.include?(:checkbox) %> <th width="5%">Mark</th> <% end %>
     <% if !nodraws.include?(:title)    %> <th width="25%"><%= default_sortable_header("title", 'desc') %></th> <% end %>
+    <% if !nodraws.include?(:track)    %> <th width="5%">Track</th><% end %>
     <% if !nodraws.include?(:artist)   %> <th width="25%"><%= sortable_header("artist", 'asc') %></th> <% end %>
     <% if !nodraws.include?(:album)    %> <th width="20%"><%= sortable_header("album", 'asc') %></th> <% end %>
     <% if !nodraws.include?(:genre)    %> <th width="10%"><%= sortable_header("genre", 'asc') %></th> <% end %>
