@@ -18,7 +18,7 @@
     <% end %>
 </table>
   <% unless nodraws.include?(:checkbox) %>
-    <p><%= collection_select :playlist, :playlist_id, Playlist.find_all_by_user(Goldberg.user), :id, :name, {:include_blank => true} %></p>
+    <p><%= collection_select :playlist, :playlist_id, Playlist.find_all_by_user_id(Goldberg.user.id), :id, :name, {:include_blank => true} %></p>
     <p><%= submit_tag "Add to Playlist" %></p>
   <% end %>
 <% end %>
