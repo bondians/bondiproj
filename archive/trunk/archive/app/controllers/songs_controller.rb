@@ -3,6 +3,10 @@ class SongsController < ApplicationController
   prepend_before_filter :do_basic_auth, :goldberg_security_up
   
   def index
+    debugger
+    1
+    1
+    
     @songs = Song.search params[:search], :include => [:songtype, :album, :artist, :genre], 
     :order => order_with_default("title", "asc") , :page => params[:page], :per_page => 100
     
