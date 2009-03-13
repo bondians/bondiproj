@@ -1,4 +1,4 @@
-<% unless nodraws.include?(:checkbox) %>
+<% if !nodraws.include?(:checkbox) %>
  <% form_tag :controller => :selections_dispatch, :action => :dispatch do %>
 <% end %>
 <table>
@@ -18,7 +18,7 @@
     <% end %>
 </table>
 <br />
-  <% unless nodraws.include?(:checkbox) %>
+  <% if !nodraws.include?(:checkbox) %>
     <p><%= collection_select :playlist, :playlist_id, Playlist.find_all_by_user_id(Goldberg.user.id), :id, :name, {:include_blank => true} %></p>
     <p><%= submit_tag "Add to Playlist" %></p>
   <% end %>
