@@ -2,7 +2,7 @@ class SelectionsDispatchController < ApplicationController
   def dispatch
     ## i need these, make sure you pull yours out safely
     songs = params[:songs]
-    playlist = params[:playlist][:playlist_id] if params[:playlist]
+    playlist = params[:playlist][:id] if params[:playlist]
     
     case params[:submit]
     when "Add to Playlist"
