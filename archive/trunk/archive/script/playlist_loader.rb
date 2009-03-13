@@ -31,7 +31,7 @@ data.each do |line|
         playlist.save
         playlists.unshift(playlist)
       end
-      pl = playlist.plentry.build
+      pl = playlist.plentries.build
       pl.song = song
       pl.save
     else
