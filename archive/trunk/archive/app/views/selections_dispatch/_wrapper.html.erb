@@ -12,7 +12,7 @@
     <% if !nodraws.include?(:get)      %> <th colspan="5%" >&nbsp;</th> <% end %>
   </tr>
     <% for song in songs %>
-      <%= render :partial => 'song', :locals => { :song => song, :nodraws => nodraws, :cur_class => cycle("cssAlternating1", "cssAlternating2") } %>
+      <%= render :partial => 'selections_dispatch/song', :locals => { :song => song, :nodraws => nodraws, :cur_class => cycle("cssAlternating1", "cssAlternating2") } %>
     <% end %>
 </table>
    <p><%= submit_tag "Add to Playlist" %></p>
