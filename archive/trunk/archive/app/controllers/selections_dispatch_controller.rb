@@ -7,6 +7,7 @@ class SelectionsDispatchController < ApplicationController
     case params[:submit]
     when "Add to Playlist"
       Playlist.add_songs_to_playlist(songs, playlist)
+      redirect_to playlist(playlist)
     end
   end
 end

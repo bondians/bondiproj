@@ -6,10 +6,16 @@ class Playlist < ActiveRecord::Base
   
   attr_accessible :name
   
-  def self.add_songs_to_playlist(songs, playlist)
-    debugger
-    1
-    1
+  def self.add_songs_to_playlist(songs, plist)
+    playlist = Playlist.find plist
+    return if Goldberg.user.playlists.include?(playlist)
     
+    songs.each do |s|
+      song = Song.find s
+      pl = playlist.plentries.build
+      pl.song = song
+      pl.save
+    end
   end
+  
 end
