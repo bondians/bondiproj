@@ -5,4 +5,11 @@ class Playlist < ActiveRecord::Base
   has_many :songs, :through => :plentries
   
   attr_accessible :name
+  
+  def self.add_songs_for_list(songs, playlist)
+    debugger
+    1
+    1
+    
+  end
 end
