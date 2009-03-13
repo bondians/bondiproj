@@ -2948,170 +2948,170 @@
 177408|deepbondi.nidor|Carol of the Bells
 177413|deepbondi.nidor|Oh Tannenbaum
 161957|deepbondi.nidor|disk0/mp3/Branford Marsalis &
-192768|sarge.GordonGoodwin|Horn of Puente
-192772|sarge.GordonGoodwin|What Sammy Said
-192770|sarge.GordonGoodwin|The Jazz Police
-192763|sarge.GordonGoodwin|A Game of Inches
-192769|sarge.GordonGoodwin|It's All Right With Me
-192765|sarge.GordonGoodwin|Thad Said No
-192762|sarge.GordonGoodwin|High Maintenance
-192766|sarge.GordonGoodwin|Hunting Wabbits
-192767|sarge.GordonGoodwin|The Quiet Corner
-192773|sarge.GordonGoodwin|Let The Good Times Roll
-192771|sarge.GordonGoodwin|Mozart 40th Symphony in G mino
-192764|sarge.GordonGoodwin|Comes Love
-186665|sarge.GordonGoodwin|Count Bubba
-186669|sarge.GordonGoodwin|Second Chances
-186664|sarge.GordonGoodwin|Bach 2 Part Invention in D Min
-186672|sarge.GordonGoodwin|There's the Rub
-186663|sarge.GordonGoodwin|A Few Good Men
-186667|sarge.GordonGoodwin|Mueva los Huesos
-186670|sarge.GordonGoodwin|Sing Sang Sung
-186668|sarge.GordonGoodwin|Samba del Gringo
-186666|sarge.GordonGoodwin|I Remember
-186671|sarge.GordonGoodwin|Swingin' for the Fences
-165381|sarge.TravelMix|Desperado
-179311|sarge.TravelMix|In The City
-179312|sarge.TravelMix|Life In The Fast Lane
-179310|sarge.TravelMix|Take It Easy
-179313|sarge.TravelMix|Desperado
-179308|sarge.TravelMix|New York Minute
-179309|sarge.TravelMix|The Last Resort
-179302|sarge.TravelMix|Learn To Be Still
-179301|sarge.TravelMix|The Girl From Yesterday
-179303|sarge.TravelMix|Tequilla Sunrise
-179300|sarge.TravelMix|Love Will Keep Us Alive
-179299|sarge.TravelMix|Get Over It
-179304|sarge.TravelMix|Hotel California
-179306|sarge.TravelMix|Pretty Maids All In A Row
-179305|sarge.TravelMix|Wasted Time
-179307|sarge.TravelMix|I Can't Tell You Why
-174287|sarge.TravelMix|Deadbeat Club
-174293|sarge.TravelMix|Topaz
-174290|sarge.TravelMix|Roam
-174294|sarge.TravelMix|Follow Your Bliss
-174292|sarge.TravelMix|Channel Z
-174291|sarge.TravelMix|Bushfire
-174288|sarge.TravelMix|Love Shack
-174289|sarge.TravelMix|Junebug
-174285|sarge.TravelMix|Cosmic Thing
-174286|sarge.TravelMix|Dry Country
-174278|sarge.TravelMix|Song For A Future Generation
-174280|sarge.TravelMix|Trism
-174283|sarge.TravelMix|Big Bird
-174276|sarge.TravelMix|Legal Tender
-174277|sarge.TravelMix|Whammy Kiss
-174282|sarge.TravelMix|Moon 83
-174279|sarge.TravelMix|Butterbean
-174284|sarge.TravelMix|Work That Skirt
-174281|sarge.TravelMix|Queen Of Las Vegas
-163213|sarge.TravelMix|Moonlight Serenade
-163211|sarge.TravelMix|St. Louis Blues March
-163212|sarge.TravelMix|Pennsylvania 6-5000
-163210|sarge.TravelMix|At Last
-163208|sarge.TravelMix|(I've Got A Gal In) Kalamazoo
-163206|sarge.TravelMix|String Of Pearls
-163207|sarge.TravelMix|Little Brown Jug
-163203|sarge.TravelMix|In The Mood
-163204|sarge.TravelMix|Chattanooga Choo-Choo
-163205|sarge.TravelMix|The American Patrol
-163209|sarge.TravelMix|Tuxedo Junction
-163507|sarge.TravelMix|disk0/mp3/Hardwar/Hardwar Disc
-163503|sarge.TravelMix|disk0/mp3/Hardwar/Hardwar Disc
-163506|sarge.TravelMix|disk0/mp3/Hardwar/Hardwar Disc
-163505|sarge.TravelMix|disk0/mp3/Hardwar/Hardwar Disc
-163508|sarge.TravelMix|disk0/mp3/Hardwar/Hardwar Disc
-163510|sarge.TravelMix|disk0/mp3/Hardwar/Hardwar Disc
-163512|sarge.TravelMix|disk0/mp3/Hardwar/Hardwar Disc
-163511|sarge.TravelMix|disk0/mp3/Hardwar/Hardwar Disc
-163504|sarge.TravelMix|disk0/mp3/Hardwar/Hardwar Disc
-163509|sarge.TravelMix|disk0/mp3/Hardwar/Hardwar Disc
-174113|sarge.TravelMix|The House Is Rockin'
-174112|sarge.TravelMix|Willie The Wimp (live)
-174120|sarge.TravelMix|Testify (live)
-174114|sarge.TravelMix|Crossfire (live)
-174119|sarge.TravelMix|Pride And Joy (live)
-174127|sarge.TravelMix|Look At Little Sister (live)
-174115|sarge.TravelMix|Wall Of Denial
-174128|sarge.TravelMix|Lookin' Out The Window (live)
-174122|sarge.TravelMix|Tightrope (live)
-174121|sarge.TravelMix|Long Way From Home
-174123|sarge.TravelMix|Cold Shot (live)
-174124|sarge.TravelMix|The Things (That) I Used To Do
-174126|sarge.TravelMix|Leave My Girl Alone (live)
-174125|sarge.TravelMix|Let Me Love You Baby (live)
-174117|sarge.TravelMix|Goin' Down (live)
-174118|sarge.TravelMix|Rude Mood (live)
-174116|sarge.TravelMix|Dirty Pool
-174105|sarge.TravelMix|Change It
-174108|sarge.TravelMix|Little Wing/Third Stone From T
-174099|sarge.TravelMix|Couldn't Stand The Weather
-174111|sarge.TravelMix|I'm Leavin' You (Commit A Crim
-174098|sarge.TravelMix|Scuttle Buttin'
-174100|sarge.TravelMix|Empty Arms
-174107|sarge.TravelMix|Rude Mood/Pipeline (live)
-174102|sarge.TravelMix|If You Have To Know
-174109|sarge.TravelMix|Voodoo Chile (Slight Return) (
-174103|sarge.TravelMix|These Blues Is Killing Me
-174104|sarge.TravelMix|Boilermaker
-174101|sarge.TravelMix|Mary Had A Little Lamb (live)
-174106|sarge.TravelMix|Shake 'N Bake
-174110|sarge.TravelMix|The Sky Is Crying (live)
-174084|sarge.TravelMix|All Your Love I Miss Loving (l
-174089|sarge.TravelMix|Crosscut Saw (live)
-174088|sarge.TravelMix|Don't Lose Your Cool (live)
-174082|sarge.TravelMix|You're Gonna Miss Me Baby
-174083|sarge.TravelMix|They Call Me Guitar Hurricane
-174085|sarge.TravelMix|Come On (Pt. III)
-174095|sarge.TravelMix|Hug You, Squeeze You (live)
-174093|sarge.TravelMix|Pride And Joy
-174096|sarge.TravelMix|Don't Stop By The Creek, Son
-174090|sarge.TravelMix|Manic Depression (live)
-174091|sarge.TravelMix|Texas Flood (live)
-174094|sarge.TravelMix|Love Struck Baby (live)
-174092|sarge.TravelMix|Collins' Shuffle (live)
-174097|sarge.TravelMix|Ask Me No Questions
-174080|sarge.TravelMix|Thunderbird
-174086|sarge.TravelMix|Letter To My Girlfriend
-174087|sarge.TravelMix|Lenny
-174081|sarge.TravelMix|I'm Cryin'
-174196|sarge.TravelMix|Riviera Paradise
+192768|SgtSchultz.GordonGoodwin|Horn of Puente
+192772|SgtSchultz.GordonGoodwin|What Sammy Said
+192770|SgtSchultz.GordonGoodwin|The Jazz Police
+192763|SgtSchultz.GordonGoodwin|A Game of Inches
+192769|SgtSchultz.GordonGoodwin|It's All Right With Me
+192765|SgtSchultz.GordonGoodwin|Thad Said No
+192762|SgtSchultz.GordonGoodwin|High Maintenance
+192766|SgtSchultz.GordonGoodwin|Hunting Wabbits
+192767|SgtSchultz.GordonGoodwin|The Quiet Corner
+192773|SgtSchultz.GordonGoodwin|Let The Good Times Roll
+192771|SgtSchultz.GordonGoodwin|Mozart 40th Symphony in G mino
+192764|SgtSchultz.GordonGoodwin|Comes Love
+186665|SgtSchultz.GordonGoodwin|Count Bubba
+186669|SgtSchultz.GordonGoodwin|Second Chances
+186664|SgtSchultz.GordonGoodwin|Bach 2 Part Invention in D Min
+186672|SgtSchultz.GordonGoodwin|There's the Rub
+186663|SgtSchultz.GordonGoodwin|A Few Good Men
+186667|SgtSchultz.GordonGoodwin|Mueva los Huesos
+186670|SgtSchultz.GordonGoodwin|Sing Sang Sung
+186668|SgtSchultz.GordonGoodwin|Samba del Gringo
+186666|SgtSchultz.GordonGoodwin|I Remember
+186671|SgtSchultz.GordonGoodwin|Swingin' for the Fences
+165381|SgtSchultz.TravelMix|Desperado
+179311|SgtSchultz.TravelMix|In The City
+179312|SgtSchultz.TravelMix|Life In The Fast Lane
+179310|SgtSchultz.TravelMix|Take It Easy
+179313|SgtSchultz.TravelMix|Desperado
+179308|SgtSchultz.TravelMix|New York Minute
+179309|SgtSchultz.TravelMix|The Last Resort
+179302|SgtSchultz.TravelMix|Learn To Be Still
+179301|SgtSchultz.TravelMix|The Girl From Yesterday
+179303|SgtSchultz.TravelMix|Tequilla Sunrise
+179300|SgtSchultz.TravelMix|Love Will Keep Us Alive
+179299|SgtSchultz.TravelMix|Get Over It
+179304|SgtSchultz.TravelMix|Hotel California
+179306|SgtSchultz.TravelMix|Pretty Maids All In A Row
+179305|SgtSchultz.TravelMix|Wasted Time
+179307|SgtSchultz.TravelMix|I Can't Tell You Why
+174287|SgtSchultz.TravelMix|Deadbeat Club
+174293|SgtSchultz.TravelMix|Topaz
+174290|SgtSchultz.TravelMix|Roam
+174294|SgtSchultz.TravelMix|Follow Your Bliss
+174292|SgtSchultz.TravelMix|Channel Z
+174291|SgtSchultz.TravelMix|Bushfire
+174288|SgtSchultz.TravelMix|Love Shack
+174289|SgtSchultz.TravelMix|Junebug
+174285|SgtSchultz.TravelMix|Cosmic Thing
+174286|SgtSchultz.TravelMix|Dry Country
+174278|SgtSchultz.TravelMix|Song For A Future Generation
+174280|SgtSchultz.TravelMix|Trism
+174283|SgtSchultz.TravelMix|Big Bird
+174276|SgtSchultz.TravelMix|Legal Tender
+174277|SgtSchultz.TravelMix|Whammy Kiss
+174282|SgtSchultz.TravelMix|Moon 83
+174279|SgtSchultz.TravelMix|Butterbean
+174284|SgtSchultz.TravelMix|Work That Skirt
+174281|SgtSchultz.TravelMix|Queen Of Las Vegas
+163213|SgtSchultz.TravelMix|Moonlight Serenade
+163211|SgtSchultz.TravelMix|St. Louis Blues March
+163212|SgtSchultz.TravelMix|Pennsylvania 6-5000
+163210|SgtSchultz.TravelMix|At Last
+163208|SgtSchultz.TravelMix|(I've Got A Gal In) Kalamazoo
+163206|SgtSchultz.TravelMix|String Of Pearls
+163207|SgtSchultz.TravelMix|Little Brown Jug
+163203|SgtSchultz.TravelMix|In The Mood
+163204|SgtSchultz.TravelMix|Chattanooga Choo-Choo
+163205|SgtSchultz.TravelMix|The American Patrol
+163209|SgtSchultz.TravelMix|Tuxedo Junction
+163507|SgtSchultz.TravelMix|disk0/mp3/Hardwar/Hardwar Disc
+163503|SgtSchultz.TravelMix|disk0/mp3/Hardwar/Hardwar Disc
+163506|SgtSchultz.TravelMix|disk0/mp3/Hardwar/Hardwar Disc
+163505|SgtSchultz.TravelMix|disk0/mp3/Hardwar/Hardwar Disc
+163508|SgtSchultz.TravelMix|disk0/mp3/Hardwar/Hardwar Disc
+163510|SgtSchultz.TravelMix|disk0/mp3/Hardwar/Hardwar Disc
+163512|SgtSchultz.TravelMix|disk0/mp3/Hardwar/Hardwar Disc
+163511|SgtSchultz.TravelMix|disk0/mp3/Hardwar/Hardwar Disc
+163504|SgtSchultz.TravelMix|disk0/mp3/Hardwar/Hardwar Disc
+163509|SgtSchultz.TravelMix|disk0/mp3/Hardwar/Hardwar Disc
+174113|SgtSchultz.TravelMix|The House Is Rockin'
+174112|SgtSchultz.TravelMix|Willie The Wimp (live)
+174120|SgtSchultz.TravelMix|Testify (live)
+174114|SgtSchultz.TravelMix|Crossfire (live)
+174119|SgtSchultz.TravelMix|Pride And Joy (live)
+174127|SgtSchultz.TravelMix|Look At Little Sister (live)
+174115|SgtSchultz.TravelMix|Wall Of Denial
+174128|SgtSchultz.TravelMix|Lookin' Out The Window (live)
+174122|SgtSchultz.TravelMix|Tightrope (live)
+174121|SgtSchultz.TravelMix|Long Way From Home
+174123|SgtSchultz.TravelMix|Cold Shot (live)
+174124|SgtSchultz.TravelMix|The Things (That) I Used To Do
+174126|SgtSchultz.TravelMix|Leave My Girl Alone (live)
+174125|SgtSchultz.TravelMix|Let Me Love You Baby (live)
+174117|SgtSchultz.TravelMix|Goin' Down (live)
+174118|SgtSchultz.TravelMix|Rude Mood (live)
+174116|SgtSchultz.TravelMix|Dirty Pool
+174105|SgtSchultz.TravelMix|Change It
+174108|SgtSchultz.TravelMix|Little Wing/Third Stone From T
+174099|SgtSchultz.TravelMix|Couldn't Stand The Weather
+174111|SgtSchultz.TravelMix|I'm Leavin' You (Commit A Crim
+174098|SgtSchultz.TravelMix|Scuttle Buttin'
+174100|SgtSchultz.TravelMix|Empty Arms
+174107|SgtSchultz.TravelMix|Rude Mood/Pipeline (live)
+174102|SgtSchultz.TravelMix|If You Have To Know
+174109|SgtSchultz.TravelMix|Voodoo Chile (Slight Return) (
+174103|SgtSchultz.TravelMix|These Blues Is Killing Me
+174104|SgtSchultz.TravelMix|Boilermaker
+174101|SgtSchultz.TravelMix|Mary Had A Little Lamb (live)
+174106|SgtSchultz.TravelMix|Shake 'N Bake
+174110|SgtSchultz.TravelMix|The Sky Is Crying (live)
+174084|SgtSchultz.TravelMix|All Your Love I Miss Loving (l
+174089|SgtSchultz.TravelMix|Crosscut Saw (live)
+174088|SgtSchultz.TravelMix|Don't Lose Your Cool (live)
+174082|SgtSchultz.TravelMix|You're Gonna Miss Me Baby
+174083|SgtSchultz.TravelMix|They Call Me Guitar Hurricane
+174085|SgtSchultz.TravelMix|Come On (Pt. III)
+174095|SgtSchultz.TravelMix|Hug You, Squeeze You (live)
+174093|SgtSchultz.TravelMix|Pride And Joy
+174096|SgtSchultz.TravelMix|Don't Stop By The Creek, Son
+174090|SgtSchultz.TravelMix|Manic Depression (live)
+174091|SgtSchultz.TravelMix|Texas Flood (live)
+174094|SgtSchultz.TravelMix|Love Struck Baby (live)
+174092|SgtSchultz.TravelMix|Collins' Shuffle (live)
+174097|SgtSchultz.TravelMix|Ask Me No Questions
+174080|SgtSchultz.TravelMix|Thunderbird
+174086|SgtSchultz.TravelMix|Letter To My Girlfriend
+174087|SgtSchultz.TravelMix|Lenny
+174081|SgtSchultz.TravelMix|I'm Cryin'
+174196|SgtSchultz.TravelMix|Riviera Paradise
 193067|deepbondi.nidor|What Do You Do In The Infantry
 193088|deepbondi.nidor|Shoo Shoo Baby
-192768|sarge.TravelMix|Horn of Puente
-192772|sarge.TravelMix|What Sammy Said
-192770|sarge.TravelMix|The Jazz Police
-192763|sarge.TravelMix|A Game of Inches
-192769|sarge.TravelMix|It's All Right With Me
-192765|sarge.TravelMix|Thad Said No
-192762|sarge.TravelMix|High Maintenance
-192766|sarge.TravelMix|Hunting Wabbits
-192767|sarge.TravelMix|The Quiet Corner
-192773|sarge.TravelMix|Let The Good Times Roll
-192771|sarge.TravelMix|Mozart 40th Symphony in G mino
-192764|sarge.TravelMix|Comes Love
-186665|sarge.TravelMix|Count Bubba
-186669|sarge.TravelMix|Second Chances
-186664|sarge.TravelMix|Bach 2 Part Invention in D Min
-186672|sarge.TravelMix|There's the Rub
-186663|sarge.TravelMix|A Few Good Men
-186667|sarge.TravelMix|Mueva los Huesos
-186670|sarge.TravelMix|Sing Sang Sung
-186668|sarge.TravelMix|Samba del Gringo
-186666|sarge.TravelMix|I Remember
-186671|sarge.TravelMix|Swingin' for the Fences
-174355|sarge.TravelMix|Jailhouse Rock
-174353|sarge.TravelMix|Minnie The Moocher
-174354|sarge.TravelMix|Sweet Home Chicago
-174351|sarge.TravelMix|Think
-174347|sarge.TravelMix|Gimme Some Lovin'
-174349|sarge.TravelMix|Everybody Needs Somebody To Lo
-174350|sarge.TravelMix|The Old Landmark
-174348|sarge.TravelMix|Shake A Tail Feather
-174345|sarge.TravelMix|She Caught The Katy
-174352|sarge.TravelMix|Theme From Rawhide
-174346|sarge.TravelMix|Peter Gunn Theme
-192804|sarge.TravelMix|Malaguena Salerosa
+192768|SgtSchultz.TravelMix|Horn of Puente
+192772|SgtSchultz.TravelMix|What Sammy Said
+192770|SgtSchultz.TravelMix|The Jazz Police
+192763|SgtSchultz.TravelMix|A Game of Inches
+192769|SgtSchultz.TravelMix|It's All Right With Me
+192765|SgtSchultz.TravelMix|Thad Said No
+192762|SgtSchultz.TravelMix|High Maintenance
+192766|SgtSchultz.TravelMix|Hunting Wabbits
+192767|SgtSchultz.TravelMix|The Quiet Corner
+192773|SgtSchultz.TravelMix|Let The Good Times Roll
+192771|SgtSchultz.TravelMix|Mozart 40th Symphony in G mino
+192764|SgtSchultz.TravelMix|Comes Love
+186665|SgtSchultz.TravelMix|Count Bubba
+186669|SgtSchultz.TravelMix|Second Chances
+186664|SgtSchultz.TravelMix|Bach 2 Part Invention in D Min
+186672|SgtSchultz.TravelMix|There's the Rub
+186663|SgtSchultz.TravelMix|A Few Good Men
+186667|SgtSchultz.TravelMix|Mueva los Huesos
+186670|SgtSchultz.TravelMix|Sing Sang Sung
+186668|SgtSchultz.TravelMix|Samba del Gringo
+186666|SgtSchultz.TravelMix|I Remember
+186671|SgtSchultz.TravelMix|Swingin' for the Fences
+174355|SgtSchultz.TravelMix|Jailhouse Rock
+174353|SgtSchultz.TravelMix|Minnie The Moocher
+174354|SgtSchultz.TravelMix|Sweet Home Chicago
+174351|SgtSchultz.TravelMix|Think
+174347|SgtSchultz.TravelMix|Gimme Some Lovin'
+174349|SgtSchultz.TravelMix|Everybody Needs Somebody To Lo
+174350|SgtSchultz.TravelMix|The Old Landmark
+174348|SgtSchultz.TravelMix|Shake A Tail Feather
+174345|SgtSchultz.TravelMix|She Caught The Katy
+174352|SgtSchultz.TravelMix|Theme From Rawhide
+174346|SgtSchultz.TravelMix|Peter Gunn Theme
+192804|SgtSchultz.TravelMix|Malaguena Salerosa
 166337|deepbondi.jose|Santeria
 175591|deepbondi.christmas|Gruber: Stille Nacht, heilige
 175592|deepbondi.christmas|Correa de Arauxo: Glosas sobre
