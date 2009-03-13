@@ -1,6 +1,8 @@
 #!/usr/bin/env ruby
-puts File.expand_path(__FILE__ + "/../config/environment")
-require File.expand_path(__FILE__ + "/../config/environment")
+
+puts File.expand_path(__FILE__ + "/../../config/environment")
+
+require File.expand_path(__FILE__ + "/../../config/environment")
 
 data = IO.readlines("#{RAILS_ROOT}/oldplaylists.txt")
 
