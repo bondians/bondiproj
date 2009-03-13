@@ -1,0 +1,2 @@
+class SelectionsDispatchController < ApplicationController
+end
