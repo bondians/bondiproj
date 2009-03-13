@@ -17,6 +17,7 @@
       <%= render :partial => 'selections_dispatch/song', :locals => { :song => song, :nodraws => nodraws, :cur_class => cycle("cssAlternating1", "cssAlternating2") } %>
     <% end %>
 </table>
+<br />
   <% unless nodraws.include?(:checkbox) %>
     <p><%= collection_select :playlist, :playlist_id, Playlist.find_all_by_user_id(Goldberg.user.id), :id, :name, {:include_blank => true} %></p>
     <p><%= submit_tag "Add to Playlist" %></p>
