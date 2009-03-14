@@ -16,9 +16,11 @@ class PlaylistsController < ApplicationController
   # GET /playlists/1.xml
   def show
     @playlist = Playlist.find(params[:id], :include => :songs)
+    @songs = @playlist.songs
 
     respond_to do |format|
       format.html # show.html.erb
+      format.m3u
       format.xml  { render :xml => @playlist }
     end
   end

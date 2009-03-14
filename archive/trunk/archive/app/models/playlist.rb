@@ -18,4 +18,22 @@ class Playlist < ActiveRecord::Base
     end
   end
   
+  def to_xml(options = {})
+    returning '' do |output|
+      xml = options[:builder] ||= Builder::XmlMarkup.new(:target => output, :indent => options[:indent] || 2)
+      xml.instruct! unless options[:skip_instruct]
+      
+      xml.playlist(:id => id, :name => name, :created => created_at, :updated => updated_at) {
+        if (user != nil) 
+          xml.owner(user.name, :id => user_id)
+        end
+        xml.songs {
+          @songs.each do |song|
+            song.to_xml(:builder => xml, :skip_instruct => true)
+          end
+        }
+      }
+    end
+  end
+  
 end
