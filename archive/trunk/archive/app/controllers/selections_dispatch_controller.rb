@@ -9,6 +9,10 @@ class SelectionsDispatchController < ApplicationController
       Playlist.add_songs_to_playlist(songs, playlist)
       redirect_to(playlist)
     when "Remove from Playlist"
+      debugger
+      1
+      1
+      
       Playlist.remove_songs_from_playlist(songs, playlist)
       redirect_to(playlist)
     end
