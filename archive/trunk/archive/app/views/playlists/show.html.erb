@@ -4,7 +4,9 @@
 
 <p>
   <b>Tracks:</b>
-<%= draw_songs(@playlist.songs, :track, :playlist_add, :playlist_del) %>
+<%=
+  Goldberg.user.playlists.include?(@playlist) ? draw_songs(@playlist.songs, :track, :playlist_add, :playlist_del) : draw_songs(@playlist.songs, :track)
+%>
 </p>
 
 
