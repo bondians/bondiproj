@@ -12,6 +12,10 @@ class SelectionsDispatchController < ApplicationController
     when "Remove from Playlist"
       Playlist.remove_songs_from_playlist(songs, playlist)
       redirect_to(playlist)
+      
+    when "Get Streaming List"
+      @songs = Song.find songs, :include => :songtype
+      render :action => "playlists/show", :format => :m3u
     end
   end
 end
