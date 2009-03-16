@@ -18,7 +18,7 @@ class Playlist < ActiveRecord::Base
     end
   end
   
-  def self.remove_songs_from_playlist(song, plist)
+  def self.remove_songs_from_playlist(songs, plist)
     playlist = Playlist.find plist, :include=>[:plentries, :songs]
     
     return unless Goldberg.user.playlists.include?(playlist)
