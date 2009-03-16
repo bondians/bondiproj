@@ -1,5 +1,5 @@
 <tr class = "<%= "#{cur_class}" %>" >
-  <% unless nodraws.include?(:checkbox) %> <td> <%= check_box_tag "songs[]", song.id, :class=>'song' %> </td> <% end %>
+  <% unless nodraws.include?(:checkbox) %> <td> <%= check_box_tag ("songs[]", song.id, false, :class=>'song') %> </td> <% end %>
   <% unless nodraws.include?(:title)    %> <td><%= link_to song.title, song  %></td> <% end %>
   <% unless nodraws.include?(:track)    %> <td width="5%"><%= song.track %></td><% end %>
   <% unless nodraws.include?(:artist)   %> <td><%= link_to song.artist.name, song.artist %></td> <% end %>
