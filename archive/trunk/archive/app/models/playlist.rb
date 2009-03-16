@@ -24,6 +24,9 @@ class Playlist < ActiveRecord::Base
     return unless Goldberg.user.playlists.include?(playlist)
     
     songs.each do |song|
+      debugger
+      1
+      1
       entry = playlist.plentries.find{|p| p.song == song}
       entry.destroy if entry
     end
