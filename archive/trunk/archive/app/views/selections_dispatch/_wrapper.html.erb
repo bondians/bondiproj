@@ -3,7 +3,7 @@
 
 <table>
   <tr>
-    <% unless nodraws.include?(:checkbox) %> <th width="5%"><input type="text" name="Toggle" value="All" onClick="checkAll(songs_)"></th> <% end %>
+    <% unless nodraws.include?(:checkbox) %> <th width="5%"><input type="link" name="Toggle" onClick="checkAll(songs_)"></th> <% end %>
     <% unless nodraws.include?(:title)    %> <th width="25%"><%= default_sortable_header("title", 'desc') %></th> <% end %>
     <% unless nodraws.include?(:track)    %> <th width="5%">Track</th> <% end %>
     <% unless nodraws.include?(:artist)   %> <th width="25%"><%= sortable_header("artist", 'asc') %></th> <% end %>
