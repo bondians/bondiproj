@@ -5,7 +5,7 @@
   <tr>
     <% unless nodraws.include?(:checkbox) %> <th width="5%">Mark</th> <% end %>
     <% unless nodraws.include?(:title)    %> <th width="25%"><%= default_sortable_header("title", 'desc') %></th> <% end %>
-    <% unless nodraws.include?(:track)    %> <th width="5%">Track</th><% end %>
+    <% unless nodraws.include?(:track)    %> <th width="5%">Track</th> <% end %>
     <% unless nodraws.include?(:artist)   %> <th width="25%"><%= sortable_header("artist", 'asc') %></th> <% end %>
     <% unless nodraws.include?(:album)    %> <th width="20%"><%= sortable_header("album", 'asc') %></th> <% end %>
     <% unless nodraws.include?(:genre)    %> <th width="10%"><%= sortable_header("genre", 'asc') %></th> <% end %>
@@ -19,7 +19,7 @@
 </table>
 <br />
 
-    <p><%= collection_select :playlist, :id, Playlist.find_all_by_user_id(Goldberg.user.id), :id, :name %></p>
-    <p><%= submit_tag "Add to Playlist", :name => "submit" %></p>
-
+  <% unless nodraws.include?(:playlist_sel) %><p><%= collection_select :playlist, :id, Playlist.find_all_by_user_id(Goldberg.user.id), :id, :name %></p> <% end %>
+  <% unless nodraws.include?(:playlist_add) %><p><%= submit_tag "Add to Playlist", :name => "submit" %></p> <% end %>
+  <% if nodraws.include?(:playlist_del)     %><p><%= submit_tag "Remove from Playlist", :name => "submit"%></p> <% end %>
 <% end %>
