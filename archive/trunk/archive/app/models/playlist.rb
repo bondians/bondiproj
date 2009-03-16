@@ -18,6 +18,17 @@ class Playlist < ActiveRecord::Base
     end
   end
   
+  def self.remove_songs_from_playlist(song, plist)
+    playlist = Playlist.find plist, :include=>[:plentries, :songs]
+    
+    return unless Goldberg.user.playlists.include?(playlist)
+    
+    songs.each do |song|
+      entry = playlist.plentries.find{|p| p.song == song}
+      entry.destroy if entry
+    end
+  end
+  
   def to_xml(options = {})
     returning '' do |output|
       xml = options[:builder] ||= Builder::XmlMarkup.new(:target => output, :indent => options[:indent] || 2)
