@@ -18,7 +18,7 @@
     <% end %>
 </table>
 <br />
-
+<hr>
   <% unless nodraws.include?(:playlist_sel) %><p><%= collection_select :playlist, :id, Playlist.find_all_by_user_id(Goldberg.user.id), :id, :name %></p> <% end %>
   <% unless nodraws.include?(:playlist_add) %><p><%= submit_tag "Add to Playlist", :name => "submit" %></p> <% end %>
   <%     if nodraws.include?(:playlist_del) %><p><%= submit_tag "Remove from Playlist", :name => "submit"%></p> <% end %>
