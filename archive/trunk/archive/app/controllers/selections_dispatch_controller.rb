@@ -15,7 +15,7 @@ class SelectionsDispatchController < ApplicationController
       
     when "Get Streaming List"
       @songs = Song.find songs, :include => :songtype
-      render :template => '/playlists/show', :format => :m3u
+      render :m3u => '/playlists/show'
     end
   end
 end
