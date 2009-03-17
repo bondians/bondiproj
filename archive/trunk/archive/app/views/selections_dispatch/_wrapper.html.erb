@@ -4,7 +4,7 @@
 
 $(document).ready(function() {
 
-<table>
+<table id="table-1">
   <tr>
     <% unless nodraws.include?(:checkbox) %> <th width="5%"><%= check_box_tag 'toggle' , 'toggle', false, :onclick => "toggleAll('song');return false;"%></th> <% end %>
     <% unless nodraws.include?(:title)    %> <th width="25%"><%= default_sortable_header("title", 'desc') %></th> <% end %>
