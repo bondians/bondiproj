@@ -10,7 +10,7 @@ $(document).ready(
 				helperclass: 'sortHelper',
 				activeclass : 	'sortableactive',
 				hoverclass : 	'sortablehover',
-				handle: 'div.itemHeader',
+				handle: 'div.cssAlternating1',
 				tolerance: 'pointer',
 				onChange : function(ser)
 				{
