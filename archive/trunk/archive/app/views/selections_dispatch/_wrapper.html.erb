@@ -1,8 +1,5 @@
 <% javascript_include_tag 'jquery.tablednd_0_5' %>
  <% form_tag :controller => :selections_dispatch, :action => :dispatch do %>
-<script type="text/javascript">
-
-$(document).ready(function() {
 
 <table id="table-1">
   <tr>
@@ -20,9 +17,7 @@ $(document).ready(function() {
         <%= render :partial => 'selections_dispatch/song', :locals => { :song => song, :nodraws => nodraws, :cur_class => cycle("cssAlternating1", "cssAlternating2") } %>
     <% end %>
 </table>
-    $("#table-1").tableDnD();
-});
-</script>
+
 <br />
 <hr>
   <% unless nodraws.include?(:playlist_sel) %><p><%= collection_select :playlist, :id, Playlist.find_all_by_user_id(Goldberg.user.id), :id, :name %></p> <% end %>
@@ -30,3 +25,10 @@ $(document).ready(function() {
   <%     if nodraws.include?(:playlist_del) %><p><%= submit_tag "Remove from Playlist", :name => "submit"%></p> <% end %>
   <% unless nodraws.include?(:stream)       %><p><%= submit_tag "Get Streaming List", :name => "submit", :format=> :m3u %></p> <% end %>
 <% end %>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // Initialise the table
+    $("#table-1").tableDnD();
+});
+</script>
