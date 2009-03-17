@@ -1,5 +1,8 @@
 
  <% form_tag :controller => :selections_dispatch, :action => :dispatch do %>
+<script type="text/javascript">
+
+$(document).ready(function() {
 
 <table>
   <tr>
@@ -13,14 +16,13 @@
     <% unless nodraws.include?(:type)     %> <th width="5%" >Type</th> <% end %>
     <% unless nodraws.include?(:get)      %> <th width="5%" >&nbsp;</th> <% end %>
   </tr>
-  <div id="sort1" class="groupWrapper">
     <% for song in songs %>
-      <div id="<%= song.id %>" class="groupItem">
         <%= render :partial => 'selections_dispatch/song', :locals => { :song => song, :nodraws => nodraws, :cur_class => cycle("cssAlternating1", "cssAlternating2") } %>
-      </div>
     <% end %>
-  </div>
 </table>
+    $("#table-1").tableDnD();
+});
+</script>
 <br />
 <hr>
   <% unless nodraws.include?(:playlist_sel) %><p><%= collection_select :playlist, :id, Playlist.find_all_by_user_id(Goldberg.user.id), :id, :name %></p> <% end %>
