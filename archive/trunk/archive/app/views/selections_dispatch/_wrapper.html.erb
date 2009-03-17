@@ -13,11 +13,13 @@
     <% unless nodraws.include?(:type)     %> <th width="5%" >Type</th> <% end %>
     <% unless nodraws.include?(:get)      %> <th width="5%" >&nbsp;</th> <% end %>
   </tr>
+  <div id="sort1" class="groupWrapper">
     <% for song in songs %>
-    <div id="<%= song.id %>">
-      <%= render :partial => 'selections_dispatch/song', :locals => { :song => song, :nodraws => nodraws, :cur_class => cycle("cssAlternating1", "cssAlternating2") } %>
+      <div id="<%= song.id %>" class="groupItem">
+        <%= render :partial => 'selections_dispatch/song', :locals => { :song => song, :nodraws => nodraws, :cur_class => cycle("cssAlternating1", "cssAlternating2") } %>
+      </div>
     <% end %>
-    </div>
+  </div>
 </table>
 <br />
 <hr>
