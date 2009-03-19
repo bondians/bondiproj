@@ -3,7 +3,7 @@ class Plentry < ActiveRecord::Base
   belongs_to :playlist
   
   def <=> (other)
-    sort <=> other.sort
+    idx <=> other.idx
   end
   
 end
