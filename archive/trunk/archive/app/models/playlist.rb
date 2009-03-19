@@ -29,6 +29,12 @@ class Playlist < ActiveRecord::Base
     end
   end
   
+  def self.reorder_playlist(new_index)
+    return unless Goldberg.user.playlists.include?(playlist)
+    
+    new_index.each_with_index{|entry,i| Playlist.update_all(["idx = ?", i], ["id = ?", entry])}
+  end
+  
   def to_xml(options = {})
     returning '' do |output|
       xml = options[:builder] ||= Builder::XmlMarkup.new(:target => output, :indent => options[:indent] || 2)
