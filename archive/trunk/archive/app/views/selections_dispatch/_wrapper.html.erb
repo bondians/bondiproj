@@ -14,6 +14,7 @@
     <% unless nodraws.include?(:get)      %> <th width="5%" >&nbsp;</th> <% end %>
   </tr>
     <% for song in songs %>
+    <% debugger; 1; 1 %>
         <%= render :partial => 'selections_dispatch/song', :locals => { :song => song, :nodraws => nodraws, :cur_class => cycle("cssAlternating1", "cssAlternating2") } %>
     <% end %>
 </table>
