@@ -21,7 +21,7 @@ class SelectionsDispatchController < ApplicationController
     
     when "Set Order"
       new_index = params[:index]
-      Playlist.set_indices(new_index)
+      playlist = Playlist.set_index(new_index)
       redirect_to(playlist)
       
     end
