@@ -1,5 +1,5 @@
 <tr id="<%=song.id%>" class = "<%= "#{cur_class}" %>" >
-  <% unless toggledraws.include?(:no_checkbox) %> <td> <%= check_box_tag ("songs[]", song.id, false, :class=>'song') %> </td> <% end %>
+  <% unless toggledraws.include?(:no_checkbox) %> <td> <%= check_box_tag("songs[]", song.id, false, :class=>'song') %> </td> <% end %>
   <% unless toggledraws.include?(:no_title)    %> <td><%= link_to song.title, song  %></td> <% end %>
   <% unless toggledraws.include?(:no_track)    %> <td width="5%"><%= song.track %></td><% end %>
   <% unless toggledraws.include?(:no_artist)   %> <td><%= link_to song.artist.name, song.artist %></td> <% end %>

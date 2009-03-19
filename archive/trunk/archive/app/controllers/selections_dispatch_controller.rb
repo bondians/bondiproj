@@ -3,6 +3,9 @@ class SelectionsDispatchController < ApplicationController
     ## i need these, make sure you pull yours out safely
     songs = params[:songs]
     playlist = Playlist.find(params[:playlist][:id]) if params[:playlist]
+    debugger
+    1
+    1
     
     case params[:submit]
     when "Add to Playlist"
