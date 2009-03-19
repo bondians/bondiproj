@@ -4,7 +4,7 @@
 # Mime::Type.register "text/richtext", :rtf
 # Mime::Type.register_alias "text/html", :iphone
 
-    Mime::Type.register "audio/x-mpegurl", "m3u"
+    Mime::Type.register "audio/x-mpegurl", :m3u
     
     Songtype.all.each do |type|
       Mime::Type.register type.mime_type, type.identifier
