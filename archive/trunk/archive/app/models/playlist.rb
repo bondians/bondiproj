@@ -30,6 +30,10 @@ class Playlist < ActiveRecord::Base
   end
   
   def self.set_index(new_index)
+    debugger
+    1
+    1
+    
     test_entry = Plentry.find new_index.first
     return test_entry.playlist unless Goldberg.user.playlists.include?(test_entry.playlist)
     
