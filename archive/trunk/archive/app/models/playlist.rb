@@ -29,7 +29,7 @@ class Playlist < ActiveRecord::Base
     end
   end
   
-  def self.reorder_playlist(new_index)
+  def self.set_indices(new_index)
     return unless Goldberg.user.playlists.include?(playlist)
     
     new_index.each_with_index{|entry,i| Playlist.update_all(["idx = ?", i], ["id = ?", entry])}
