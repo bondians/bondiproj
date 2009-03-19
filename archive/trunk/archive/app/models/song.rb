@@ -6,6 +6,8 @@ class Song < ActiveRecord::Base
   has_many :plentries
   validates_presence_of :songtype
   
+  attr_accessor :form_idx
+  
   def <=> (other)
     track <=> other.track
   end
