@@ -17,7 +17,7 @@ class PlaylistsController < ApplicationController
   def show
     @playlist = Playlist.find(params[:id], :include => :songs)
     plentries = @playlist.plentries.sort
-    @songs = @plentries.map{|p| p.song.form_idx = p.id}
+    @songs = plentries.map{|p| p.song.form_idx = p.id; p.song}
 
     respond_to do |format|
       format.html # show.html.erb

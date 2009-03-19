@@ -3,30 +3,30 @@
 
 <table id="table-1">
   <tr class="nodrop nodrag">
-    <% unless nodraws.include?(:checkbox) %> <th width="5%" ><%= check_box_tag 'toggle' , 'toggle', false, :onclick => "toggleAll('song');return false;"%></th> <% end %>
-    <% unless nodraws.include?(:title)    %> <th width="25%"><%= default_sortable_header("title", 'desc') %></th> <% end %>
-    <% unless nodraws.include?(:track)    %> <th width="5%" >Track</th>  <% end %>
-    <% unless nodraws.include?(:artist)   %> <th width="25%"><%= sortable_header("artist", 'asc') %></th> <% end %>
-    <% unless nodraws.include?(:album)    %> <th width="20%"><%= sortable_header("album",  'asc') %></th> <% end %>
-    <% unless nodraws.include?(:genre)    %> <th width="10%"><%= sortable_header("genre",  'asc') %></th> <% end %>
-    <% unless nodraws.include?(:size)     %> <th width="5%" >Size</th>   <% end %>
-    <% unless nodraws.include?(:type)     %> <th width="5%" >Type</th>   <% end %>
-    <% unless nodraws.include?(:get)      %> <th width="5%" >&nbsp;</th> <% end %>
+    <% unless toggledraws.include?(:no_checkbox) %> <th width="5%" ><%= check_box_tag 'toggle' , 'toggle', false, :onclick => "toggleAll('song');return false;"%></th> <% end %>
+    <% unless toggledraws.include?(:no_title)    %> <th width="25%"><%= default_sortable_header("title", 'desc') %></th> <% end %>
+    <% unless toggledraws.include?(:no_track)    %> <th width="5%" >Track</th>  <% end %>
+    <% unless toggledraws.include?(:no_artist)   %> <th width="25%"><%= sortable_header("artist", 'asc') %></th> <% end %>
+    <% unless toggledraws.include?(:no_album)    %> <th width="20%"><%= sortable_header("album",  'asc') %></th> <% end %>
+    <% unless toggledraws.include?(:no_genre)    %> <th width="10%"><%= sortable_header("genre",  'asc') %></th> <% end %>
+    <% unless toggledraws.include?(:no_size)     %> <th width="5%" >Size</th>   <% end %>
+    <% unless toggledraws.include?(:no_type)     %> <th width="5%" >Type</th>   <% end %>
+    <% unless toggledraws.include?(:no_get)      %> <th width="5%" >&nbsp;</th> <% end %>
   </tr>
     <% for song in songs %>
-        <%= render :partial => 'selections_dispatch/song', :locals => { :song => song, :nodraws => nodraws, :cur_class => cycle("cssAlternating1", "cssAlternating2") } %>
+        <%= render :partial => 'selections_dispatch/song', :locals => { :song => song, :toggledraws => toggledraws, :cur_class => cycle("cssAlternating1", "cssAlternating2") } %>
     <% end %>
 </table>
 
 <br />
 <hr>
-  <% unless nodraws.include?(:playlist_sel) %><p><%= collection_select :playlist, :id, Playlist.find_all_by_user_id(Goldberg.user.id), :id, :name %></p> <% end %>
-  <% unless nodraws.include?(:playlist_add) %><p><%= submit_tag "Add to Playlist",      :name => "submit" %></p> <% end %>
-  <%     if nodraws.include?(:playlist_del) %><p><%= submit_tag "Remove from Playlist", :name => "submit" %></p> <% end %>
-  <% unless nodraws.include?(:stream)       %><p><%= submit_tag "Get Streaming List",   :name => "submit", :format=> :m3u %></p> <% end %>
+  <% unless toggledraws.include?(:no_playlist_sel) %><p><%= collection_select :playlist, :id, Playlist.find_all_by_user_id(Goldberg.user.id), :id, :name %></p> <% end %>
+  <% unless toggledraws.include?(:no_playlist_add) %><p><%= submit_tag "Add to Playlist",      :name => "submit" %></p> <% end %>
+  <%     if toggledraws.include?(:playlist_del) %><p><%= submit_tag "Remove from Playlist", :name => "submit" %></p> <% end %>
+  <% unless toggledraws.include?(:no_stream)       %><p><%= submit_tag "Get Streaming List",   :name => "submit", :format=> :m3u %></p> <% end %>
 <% end %>
 
-<% unless nodraws.include?(:dnd) %>
+<% unless toggledraws.include?(:no_dnd) %>
 <script type="text/javascript">
   $(document).ready(function() {
       // Initialise the table
