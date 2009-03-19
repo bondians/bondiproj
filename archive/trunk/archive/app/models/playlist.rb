@@ -30,9 +30,10 @@ class Playlist < ActiveRecord::Base
   end
   
   def self.set_indices(new_index)
-    return unless Goldberg.user.playlists.include?(playlist)
+    test_entry = Plentry.find new_index.first
+    return unless Goldberg.user.playlists.include?(test_entry.playlist)
     
-    new_index.each_with_index{|entry,i| Playlist.update_all(["idx = ?", i], ["id = ?", entry])}
+    new_index.each_with_index{|entry,i| Plentry.update_all(["idx = ?", i], ["id = ?", entry])}
   end
   
   def to_xml(options = {})
