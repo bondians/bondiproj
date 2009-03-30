@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  description: MyString
+  make: MyString
+  number: MyString
+  qty: 1
+  condition: 
+  request: 
+
+two:
+  description: MyString
+  make: MyString
+  number: MyString
+  qty: 1
+  condition: 
+  request: 

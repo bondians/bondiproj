@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user: 
+  name: MyString
+  department: MyString
+  bldg: MyString
+  status: 
+
+two:
+  user: 
+  name: MyString
+  department: MyString
+  bldg: MyString
+  status: 
