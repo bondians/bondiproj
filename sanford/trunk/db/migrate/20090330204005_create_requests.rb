@@ -6,6 +6,7 @@ class CreateRequests < ActiveRecord::Migration
       t.string :department
       t.string :bldg
       t.references :status
+      t.references :summary
 
       t.timestamps
     end

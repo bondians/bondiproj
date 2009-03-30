@@ -154,6 +154,7 @@ ActiveRecord::Schema.define(:version => 20090330204046) do
     t.string   "department"
     t.string   "bldg"
     t.integer  "status_id"
+    t.integer  "summary_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

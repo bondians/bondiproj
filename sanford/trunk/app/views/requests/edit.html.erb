@@ -1,32 +1,5 @@
-<h1>Editing request</h1>
+<% title "Edit Request" %>
 
-<% form_for(@request) do |f| %>
-  <%= f.error_messages %>
+<%= render :partial => 'form' %>
 
-  <p>
-    <%= f.label :user %><br />
-    <%= f.text_field :user %>
-  </p>
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :department %><br />
-    <%= f.text_field :department %>
-  </p>
-  <p>
-    <%= f.label :bldg %><br />
-    <%= f.text_field :bldg %>
-  </p>
-  <p>
-    <%= f.label :status %><br />
-    <%= f.text_field :status %>
-  </p>
-  <p>
-    <%= f.submit 'Update' %>
-  </p>
-<% end %>
-
-<%= link_to 'Show', @request %> |
-<%= link_to 'Back', requests_path %>
+<p>  <%= link_to "Show", @request %> | <%= link_to "View All", requests_path %></p>
