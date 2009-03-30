@@ -24,6 +24,7 @@ class RequestsController < ApplicationController
   # GET /requests/new
   # GET /requests/new.xml
   def new
+
     @request = Goldberg.user.requests.build
 
     respond_to do |format|

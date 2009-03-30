@@ -21,7 +21,7 @@
     <%= f.label :status %><br />
     <%= f.text_field :status %>
   </p>
-  
+
   <div id="items">
     <% f.fields_for :items do |item_form| %>
       <%= render :partial => 'item', :locals => { :f => item_form } %>
