@@ -1,5 +1,5 @@
 class Request < ActiveRecord::Base
-  belongs_to :goldberg_user
+  belongs_to :user, :class_name=>"Goldberg::User", :foreign_key=>:user_id
   belongs_to :status
   belongs_to :summary
   
