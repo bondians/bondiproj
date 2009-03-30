@@ -80,18 +80,17 @@ module Goldberg
       end
     end  # def login
     
-    def logout
-      if request.post?
-        self.class.logout(session)
-      end
-      redirect_to Goldberg.settings.public_role.get_start_path
-    end
-
+  def logout 
+    if request.post? 
+      reset_session 
+    end 
+    redirect_to Goldberg.settings.public_role.get_start_path 
+  end 
     
     protected
 
     def self.logout(session)
-      session.delete
+      reset_session
       self.clear_session(session)
     end
 
