@@ -1,3 +1,29 @@
+<h1>Surplus Request</h1>
 
+<p>Title: <%=h @submission.name%></p>
+<p>Filed by: <%=h @submission.user.fullname%></p>
+<p>Department: <%=h @submission.department%></p>
+<p>Last Update: <%=h @submission.updated_at.strftime("%b %d, %Y") %></p>
+
+<h2>Items</h2>
+<table>
+  <tr>
+    <th>Description</th>
+    <th>Make</th>
+    <th>Identification</th>
+    <th>Quantity</th>
+    <th>Condition</th>
+  </tr>
+  <% @submission.items.each do |item| %>
+    <tr>
+      <td><%=h item.description %></td>
+      <td><%=h item.make %></td>
+      <td><%=h item.number %></td>
+      <td><%=h item.qty %></td>
+      <td><%=h item.condition.name %></td>
+    </tr>
+  <% end %>
+</table>
+<br />
 <%= link_to 'Edit', edit_submission_path(@submission) %> |
 <%= link_to 'Back', submissions_path %>
