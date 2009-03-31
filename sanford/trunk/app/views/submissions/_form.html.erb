@@ -22,11 +22,18 @@
     <%= submission_form.label :bldg %><br />
     <%= submission_form.text_field :bldg %>
   </p>
-<div class="surplus_header"><span class="surplus_desc">Description</span><span class="surplus_make">Make/Model/ISBN</span><span class="surplus_idtag">Inventory ID Tag Number or if no id tag, List Serial Number</span><span class="surplus_qty">Quan.</span><span class="surplus_condition">Condition Code</span></div>
-<div id="items">
+  <div id="items" class="surplus_header">
+    <div>
+      <span class="surplus_desc">Description</span>
+      <span class="surplus_make">Make/Model/ISBN</span>
+      <span class="surplus_idtag">Inventory ID Tag Number or if no id tag, List Serial Number</span>
+      <span class="surplus_qty">Quan.</span>
+      <span class="surplus_condition">Condition Code</span>
+    </div>
     <%= render :partial => 'item', :collection => @submission.items %>
-</div>
-<p><%= add_item_link "Add an item" %></p>
+  </div>
+  <br />
+  <p><%= add_item_link "Add an item" %></p>
 
 <p>
 <%= submission_form.submit "Submit" %>
