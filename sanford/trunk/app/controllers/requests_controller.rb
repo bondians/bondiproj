@@ -24,13 +24,8 @@ class RequestsController < ApplicationController
   # GET /requests/new
   # GET /requests/new.xml
   def new
-
-    @request = Goldberg.user.requests.build
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @request }
-    end
+    @request = Request.new :attributes =>{:user => Goldberg.user}
+    @request.items.build
   end
 
   # GET /requests/1/edit

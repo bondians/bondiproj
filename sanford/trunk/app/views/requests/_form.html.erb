@@ -1,37 +1,41 @@
-<% form_for(@request) do |f| %>
-  <%= f.error_messages %>
+<% form_for(@request) do |request_form| %>
+  <%= request_form.error_messages %>
 
   <p>
-    <%= f.label :user %><br />
+    <%= request_form.label :user %><br />
     <%= @request.user.name %>
   </p>
   <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
+    <%= request_form.label :name %><br />
+    <%= request_form.text_field :name %>
   </p>
   <p>
-    <%= f.label :department %><br />
-    <%= f.text_field :department %>
+    <%= request_form.label :department %><br />
+    <%= request_form.text_field :department %>
   </p>
   <p>
-    <%= f.label :bldg %><br />
-    <%= f.text_field :bldg %>
-  </p>
-  <p>
-    <%= f.label :status %><br />
-    <%= f.text_field :status %>
+    <%= request_form.label :bldg %><br />
+    <%= request_form.text_field :bldg %>
   </p>
 
   <div id="items">
-    <% f.fields_for :items do |item_form| %>
-      <%= render :partial => 'item', :locals => { :f => item_form } %>
+    <% request_form.fields_for :items do |item_form| %>
+      <div class="item">
+        <%= render :partial => 'item', :locals => { :f => item_form } %>
+      </div>
+      <% unless item_form.object.new_record? %>
+      <div>
+        <%= item_form.label :_delete, 'Remove:' %>
+        <%= item_form.check_box :_delete %>
+      </div>
+      <% end %>
     <% end %>
   </div>
   <p>
-    <%= link_to 'Add an Item', '#item', :class => "add_nested_item", :rel => "items" %></p>
+    <%#= add_item_link "Add an Item", request_form %></p>
   <p>
     
-    <%= f.submit 'Create' %>
+    <%= request_form.submit 'Create' %>
   </p>
 <% end %>
 
