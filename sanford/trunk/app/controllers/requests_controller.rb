@@ -37,6 +37,7 @@ class RequestsController < ApplicationController
   # POST /requests.xml
   def create
     @request = Request.new(params[:request])
+    @request.user = Goldberg.user
 
     respond_to do |format|
       if @request.save
