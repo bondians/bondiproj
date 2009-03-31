@@ -1,7 +1,7 @@
 <div class="item">
   <% fields_for_item(item) do |f| %>
-    <span class="surplus_desc"><%= f.text_field :description %></span>
-    <span class="surplus_make"><%= f.text_field :make %></span>
+    <%= f.text_field(:description, :class => 'surplus_desc')%>
+    <%= f.text_field(:make, :class => 'surplus_make') %>
     <span class="surplus_idtag"><%= f.text_field :number %></span>
     <span class="surplus_qty"><%= f.text_field :qty %></span>
     <span class="surplus_condition"> <%= f.collection_select(:condition_id, Condition.all, :id, :name) %></span>
