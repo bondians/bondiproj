@@ -2,11 +2,10 @@ class SubmissionsController < ApplicationController
   # GET /submissions
   # GET /submissions.xml
   def index
-    @submissions = Submission.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @submissions }
+    if Goldberg.user.role.cache[:credentials].permission_ids.include?(6)
+      @submissions = Submission.all
+    else
+      @submissions = Submission.user
     end
   end
 
