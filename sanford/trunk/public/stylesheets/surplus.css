@@ -5,6 +5,13 @@
 	float: left;
 }
 
+.surplus_heading{
+	margin: 1px;
+	padding: 1px;
+	float: left;
+	background-color: #CCC;
+}
+
 .surplus span {
 	margin: 1px;
 	float: left;
