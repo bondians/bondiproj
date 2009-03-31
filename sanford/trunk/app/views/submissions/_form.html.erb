@@ -1,0 +1,44 @@
+<% javascript :defaults, 'delegate' %>
+<%= error_messages_for :submission %>
+
+
+
+<% form_for(@submission) do |submission_form| -%>
+
+<% content_for :jstemplates do -%>
+  <%= "var item='#{generate_template(submission_form, :items)}'" %>
+<% end -%>
+
+  <p>
+    <%= submission_form.label :user %><br />
+    <%= @submission.user.name %>
+  </p>
+  <p>
+    <%= submission_form.label :name %><br />
+    <%= submission_form.text_field :name %>
+  </p>
+  <p>
+    <%= submission_form.label :department %><br />
+    <%= submission_form.text_field :department %>
+  </p>
+  <p>
+    <%= submission_form.label :bldg %><br />
+    <%= submission_form.text_field :bldg %>
+  </p>
+
+<div id="items">
+<% submission_form.fields_for :items do |item_form| %>
+<%= render :partial => 'item', :locals => { :f => item_form } %>
+<% end %>
+</div>
+<p>
+<%= link_to 'Add an Item', '#item', :class => "add_nested_item", :rel => "items" %>
+<p><%= link_to 'Add a task', '#task', :class => "add_nested_item", :rel => "tasks" %></p>
+</p>
+<p>
+<%= submission_form.submit "Submit" %>
+</p>
+<% end -%>
+
+
+<%= link_to 'Back', submissions_path %>

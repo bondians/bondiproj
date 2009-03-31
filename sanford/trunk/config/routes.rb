@@ -1,7 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :items
+  map.resources :submissions
 
-  map.resources :requests
+  map.resources :items
 
   map.resources :summaries
 

@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090330204046) do
+ActiveRecord::Schema.define(:version => 20090331144742) do
 
   create_table "conditions", :force => true do |t|
     t.string   "code"
@@ -138,7 +138,7 @@ ActiveRecord::Schema.define(:version => 20090330204046) do
     t.string   "number"
     t.integer  "qty"
     t.integer  "condition_id"
-    t.integer  "request_id"
+    t.integer  "submission_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -161,6 +161,17 @@ ActiveRecord::Schema.define(:version => 20090330204046) do
 
   create_table "statuses", :force => true do |t|
     t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "submissions", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "name"
+    t.string   "department"
+    t.string   "bldg"
+    t.integer  "status_id"
+    t.integer  "summary_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

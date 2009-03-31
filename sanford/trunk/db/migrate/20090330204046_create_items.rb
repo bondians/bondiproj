@@ -6,7 +6,7 @@ class CreateItems < ActiveRecord::Migration
       t.string :number
       t.integer :qty
       t.references :condition
-      t.references :request
+      t.references :submission
 
       t.timestamps
     end
