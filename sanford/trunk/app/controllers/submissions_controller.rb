@@ -44,6 +44,10 @@ class SubmissionsController < ApplicationController
   def update
     params[:submission][:existing_item_attributes] ||= {}
     @submission = Submission.find(params[:id])
+    unless Goldberg.user.role.cache[:credentials].permission_ids.include?(6) || Goldberg.user == @submission.user
+      flash[:error] = "You cannot Update this submission."
+      redirect_to(submissions_url)
+    end
 
     if @submission.update_attributes(params[:submission])
       flash[:notice] = 'Submission was successfully updated.'
@@ -55,6 +59,10 @@ class SubmissionsController < ApplicationController
 
   def destroy
     @submission = Submission.find(params[:id])
+    unless Goldberg.user.role.cache[:credentials].permission_ids.include?(6) || Goldberg.user == @submission.user
+      flash[:error] = "You cannot Destroy this submission."
+      redirect_to(submissions_url)
+    end
     @submission.destroy
     redirect_to(submissions_url)
   end
