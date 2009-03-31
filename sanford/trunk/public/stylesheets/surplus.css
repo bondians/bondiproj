@@ -5,13 +5,6 @@
 	float: left;
 }
 
-.surplus_heading{
-	margin: 1px;
-	padding: 1px;
-	float: left;
-	background-color: #CCC;
-}
-
 .surplus span {
 	margin: 1px;
 	float: left;
@@ -29,23 +22,40 @@
 	background-color: #CFF;
 }
 
-.surplus .surplus_desc {
+.surplus_header span {
+	margin: 1px;
+	float: left;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: dashed;
+	border-left-style: solid;
+	border-top-color: #00C;
+	border-right-color: #00C;
+	border-bottom-color: #00C;
+	border-left-color: #00C;
+	text-align: center;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	background-color: #EEE;
+}
+
+.surplus_desc {
 	width: 250px;
 	}
 
-.surplus .surplus_make {
+.surplus_make {
 	width: 200px;
 }
 
-.surplus .surplus_idtag {
+.surplus_idtag {
 	width: 200px;
 }
 
-.surplus .surplus_qty {
+.surplus_qty {
 	width: 75px;
 }
 
-.surplus .surplus_condition {
+.surplus_condition {
 	width: 75px;
 	border-right-style: solid;
 	border-right-width: thin;
