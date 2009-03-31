@@ -2,9 +2,10 @@
 
 <table>
   <tr>
-    <th width="20%">Request Name</th>
-    <th width="5%" >Submitted By</th>
-    <th width="10" >Department</th>
+    <th width="30%">Request Name</th>
+    <th width="30%">Submitted By</th>
+    <th width="30%">Department</th>
+    <th width="10%">Updated</th>
     <th></th>
   </tr>
 
@@ -13,6 +14,7 @@
     <td><%= link_to submission.name, edit_submission_path(submission) %></td>
     <td><%= submission.user.fullname%></td>
     <td><%= submission.department%></td>
+    <td><%= submission.updated_at.strftime("%b %d, %Y") %>
     <td><%= link_to 'Destroy', submission, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>

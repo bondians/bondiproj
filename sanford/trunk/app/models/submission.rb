@@ -10,8 +10,10 @@ class Submission < ActiveRecord::Base
   
   after_update :save_items
 
+  if Goldberg.user
   named_scope :user, :conditions => ["user_id = ?", Goldberg.user.id]
-
+  end
+  
   def new_item_attributes=(item_attributes)
     item_attributes.each do |attributes|
       items.build(attributes)
