@@ -2,11 +2,17 @@
 
 <table>
   <tr>
+    <th width="20%">Request Name</th>
+    <th width="5%" >Submitted By</th>
+    <th width="10" >Department</th>
+    <th></th>
   </tr>
 
 <% @submissions.each do |submission| %>
   <tr>
     <td><%= link_to submission.name, edit_submission_path(submission) %></td>
+    <td><%= submission.user.fullname%></td>
+    <td><%= submission.department%></td>
     <td><%= link_to 'Destroy', submission, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
