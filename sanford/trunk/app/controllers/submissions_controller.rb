@@ -26,7 +26,6 @@ class SubmissionsController < ApplicationController
   def new
     @submission = Submission.new
     @submission.user = Goldberg.user
-    @submission.items.build
   end
 
   # GET /submissions/1/edit
