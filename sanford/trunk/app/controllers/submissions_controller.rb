@@ -55,6 +55,7 @@ class SubmissionsController < ApplicationController
   # PUT /submissions/1
   # PUT /submissions/1.xml
   def update
+    params[:submission][:existing_item_attributes] ||= {}
     @submission = Submission.find(params[:id])
 
     respond_to do |format|

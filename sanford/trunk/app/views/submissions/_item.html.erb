@@ -1,26 +1,23 @@
 <div class="item">
-  <p>
-    <%= f.label :description %><br />
-    <%= f.text_field :description %>
-  </p>
-  <p>
-    <%= f.label :make %><br />
-    <%= f.text_field :make %>
-  </p>
-  <p>
-    <%= f.label :number %><br />
-    <%= f.text_field :number %>
-  </p>
-  <p>
-    <%= f.label :qty %><br />
-    <%= f.text_field :qty %>
-  </p>
-  
-  <% unless f.object.new_record? %>
-    <!-- For existing records we add a checkbox to be able to delete records. -->
-    <%= f.label :_delete, "Remove:" %>
-    <%= f.check_box :_delete %>
+  <% fields_for_item(item) do |f| %>
+    <p>
+      <%= f.label :description %><br />
+      <%= f.text_field :description %>
+    </p>
+    <p>
+      <%= f.label :make %><br />
+      <%= f.text_field :make %>
+    </p>
+    <p>
+      <%= f.label :number %><br />
+      <%= f.text_field :number %>
+    </p>
+    <p>
+      <%= f.label :qty %><br />
+      <%= f.text_field :qty %>
+    </p>
+    
+    <%= link_to_function "remove", "$(this).up('.item').remove()" %>
+
   <% end %>
-
-
 </div>
