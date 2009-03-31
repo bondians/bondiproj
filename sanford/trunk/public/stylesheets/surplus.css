@@ -40,23 +40,23 @@
 }
 
 .surplus_desc {
-	width: 250px;
+	width: 100px;
 	}
 
 .surplus_make {
-	width: 200px;
+	width: 100px;
 }
 
 .surplus_idtag {
-	width: 200px;
+	width: 75px;
 }
 
 .surplus_qty {
-	width: 75px;
+	width: 50px;
 }
 
 .surplus_condition {
-	width: 75px;
+	width: 40px;
 	border-right-style: solid;
 	border-right-width: thin;
 }
