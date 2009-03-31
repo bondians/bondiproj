@@ -30,6 +30,10 @@ class SubmissionsController < ApplicationController
   # GET /submissions/1/edit
   def edit
     @submission = Submission.find(params[:id])
+    unless Goldberg.user.role.cache[:credentials].permission_ids.include?(6) || Goldberg.user.submissions.include?(@submission)
+      flash[:error] = "You cannot edit someone elses submission"
+      redirect_to(submissions_url)
+    end
   end
 
   # POST /submissions
