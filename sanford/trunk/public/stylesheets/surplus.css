@@ -3,6 +3,8 @@
 	margin: 1px;
 	padding: 1px;
 	float: left;
+	clear: left;
+	
 }
 
 .surplus span {
@@ -40,23 +42,23 @@
 }
 
 .surplus_desc {
-	width: 100px;
+	width: 20%;
 	}
 
 .surplus_make {
-	width: 100px;
+	width: 20%;
 }
 
 .surplus_idtag {
-	width: 75px;
+	width: 15%;
 }
 
 .surplus_qty {
-	width: 50px;
+	width: 15%;
 }
 
 .surplus_condition {
-	width: 40px;
+	width: 15%;
 	border-right-style: solid;
 	border-right-width: thin;
 }
