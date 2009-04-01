@@ -80,7 +80,7 @@ module Goldberg
       end
     end  # def login
     
-  def logout 
+  def logout
     if request.post? 
       reset_session 
     end 
@@ -88,6 +88,13 @@ module Goldberg
   end 
     
     protected
+      # This is a hack to help with a problem with 2.3.2
+      # This will destroy session fixation protection of your authentication system.
+      # Use it only if you understand the risk.
+  def reset_session
+    session[:lazy_load_session]
+    session.reject! { true } # clear session variables but don't assign new session id
+  end 
 
     def self.logout(session)
       reset_session
