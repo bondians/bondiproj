@@ -1,64 +1,74 @@
 @charset "UTF-8";
-.surplus {
-	margin: 1px;
-	padding: 1px;
+.surplusheader  {
+	clear: right;
+}
+
+.surplusadd  {
 	float: left;
 	clear: left;
-	
+	height: 24px;
+}
+
+.surplus  {
+	background-color: #DDF;
+	clear: right;
 }
 
 .surplus span {
-	margin: 1px;
 	float: left;
-	border-top-style: none;
-	border-right-style: none;
 	border-bottom-style: dashed;
 	border-left-style: solid;
-	border-top-color: #00C;
-	border-right-color: #00C;
 	border-bottom-color: #00C;
 	border-left-color: #00C;
 	text-align: center;
 	border-bottom-width: thin;
 	border-left-width: thin;
-	background-color: #CFF;
+	padding-left: 10px;
+	height: 24px;
+	clear: right;
 }
 
-.surplus_header span {
-	margin: 1px;
+.surplusheader span {
 	float: left;
-	border-top-style: none;
-	border-right-style: none;
 	border-bottom-style: dashed;
 	border-left-style: solid;
+	border-top-style: solid;
 	border-top-color: #00C;
-	border-right-color: #00C;
+	border-top-width: thin;
 	border-bottom-color: #00C;
 	border-left-color: #00C;
 	text-align: center;
 	border-bottom-width: thin;
 	border-left-width: thin;
-	background-color: #EEE;
+	padding-left: 10px;
+	height: 60px;
+	background-color: #FFC;
+	clear: right;
 }
 
-.surplus_desc {
-	width: 20%;
+.surplusdesc {
+	width: 18%;
 	}
 
-.surplus_make {
-	width: 20%;
+.surplusmake {
+	width: 18%;
 }
 
-.surplus_idtag {
-	width: 15%;
+.surplusidtag {
+	width: 18%;
 }
 
-.surplus_qty {
-	width: 15%;
+.surplusqty {
+	width: 10%;
 }
 
-.surplus_condition {
-	width: 15%;
+.surpluscondition {
+	width: 10%;
+}
+
+.surplusremove {
+	width: 10%;
 	border-right-style: solid;
 	border-right-width: thin;
+	border-right-color: #00C;
 }

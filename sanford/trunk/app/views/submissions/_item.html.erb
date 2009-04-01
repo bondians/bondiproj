@@ -1,10 +1,12 @@
 <div class="item">
   <% fields_for_item(item) do |f| %>
-    <%= f.text_field(:description, :class => 'surplus_desc')%>
-    <%= f.text_field(:make, :class => 'surplus_make') %>
-    <span class="surplus_idtag"><%= f.text_field :number %></span>
-    <span class="surplus_qty"><%= f.text_field :qty %></span>
-    <span class="surplus_condition"> <%= f.collection_select(:condition_id, Condition.all, :id, :name) %></span>
-    <span> <%= link_to_function "remove", "$(this).up('.item').remove()" %></span>
+    <span class="surplus">
+	 <span class='surplusdesc'><%= f.text_field(:description, :size => 15)%></span>
+    <span class='surplusmake'><%= f.text_field(:make, :size => 15) %></span>
+    <span class='surplusidtag'><%= f.text_field(:number, :size => 15) %></span>
+    <span class='surplusqty'><%= f.text_field(:qty, :size => 7) %></span>
+    <span class="surpluscondition"><%= f.collection_select(:condition_id, Condition.all, :id, :name) %></span>
+    <span class="surplusremove"><%= link_to_function "remove", "$(this).up('.item').remove()" %></span>
+    </span>
   <% end %>
 </div>
