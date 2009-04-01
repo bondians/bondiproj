@@ -79,25 +79,20 @@ module Goldberg
         end
       end
     end  # def login
-    
+
   def logout
     if request.post? 
-      reset_session 
+      #reset_session
+      session.clear
     end 
     redirect_to Goldberg.settings.public_role.get_start_path 
   end 
     
     protected
-      # This is a hack to help with a problem with 2.3.2
-      # This will destroy session fixation protection of your authentication system.
-      # Use it only if you understand the risk.
-  def reset_session
-    session[:lazy_load_session]
-    session.reject! { true } # clear session variables but don't assign new session id
-  end 
 
     def self.logout(session)
-      reset_session
+      #reset_session
+      session.clear
       self.clear_session(session)
     end
 
