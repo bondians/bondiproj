@@ -11,10 +11,12 @@
 
 <% @submissions.each do |submission| %>
   <tr>
-    <td><%= link_to submission.name, edit_submission_path(submission) %></td>
+    <td><%= link_to submission.name, submission %></td>
     <td><%= submission.user.fullname%></td>
     <td><%= submission.department%></td>
     <td><%= submission.updated_at.strftime("%b %d, %Y") %>
+    <td><%= link_to 'Report', submission_path(submission, :format => :pdf) %></td>
+    <td><%= link_to 'Edit', edit_submission_path(submission) %></td>
     <td><%= link_to 'Destroy', submission, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
