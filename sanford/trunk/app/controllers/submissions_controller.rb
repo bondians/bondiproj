@@ -14,6 +14,10 @@ class SubmissionsController < ApplicationController
       flash[:error] = "You Cannot View this submission."
       redirect_to(submissions_url)
     end
+    respond_to do |format|
+      format.html {}
+      format.pdf {render :layout => false}
+    end
   end
 
   def new
