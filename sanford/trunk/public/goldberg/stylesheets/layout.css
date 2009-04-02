@@ -39,7 +39,7 @@ div.container {
 background:#f0f0f0 url(/goldberg/images/bodybg.jpg) repeat-x;
 color:#303030;
 margin:0;
-min-width:770px;
+min-width:1200px;
 padding:0;
 text-align:left;
 width:100%;
@@ -139,9 +139,9 @@ padding:0;
 /*** Sidebars ***/
 
 div.leftside,div.rightside {
-margin:0;
-padding:0 10px 10px;
-width:165px;
+	margin:0;
+	padding:0 10px 10px;
+	width:165px;
 }
 
 div.leftside {
@@ -220,10 +220,10 @@ text-decoration:none;
 /*** Content ***/
 
 .content {
-background-color:#fafcff;
-border:1px solid #909090;
-color:#2a2a2a;
-padding:15px 20px 5px;
+	background-color:#FFF;
+	border:1px solid #909090;
+	color:#2a2a2a;
+	padding:15px 20px 5px;
 }
 
 .content {margin:0 200px;}
