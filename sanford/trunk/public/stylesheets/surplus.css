@@ -1,6 +1,7 @@
 @charset "UTF-8";
 .surplusheader  {
-	clear: right;
+	clear: both;
+	padding-bottom: 4px;
 }
 
 .surplusadd  {
@@ -10,65 +11,91 @@
 }
 
 .surplus  {
-	background-color: #DDF;
-	clear: right;
+	background-color: #EE9;
+	padding-bottom: 4px;
+	clear: left;
 }
 
 .surplus span {
-	float: left;
-	border-bottom-style: dashed;
-	border-left-style: solid;
-	border-bottom-color: #00C;
-	border-left-color: #00C;
-	text-align: center;
-	border-bottom-width: thin;
+	border-right-width: thin;
+	border-right-color: #6FE;
+	border-right-style:	solid;
 	border-left-width: thin;
-	padding-left: 10px;
-	height: 24px;
-	clear: right;
+	border-left-color: #6FE;
+	border-left-style:	solid;
+	height: 34px;
 }
 
 .surplusheader span {
 	float: left;
-	border-bottom-style: dashed;
-	border-left-style: solid;
-	border-top-style: solid;
-	border-top-color: #00C;
-	border-top-width: thin;
-	border-bottom-color: #00C;
-	border-left-color: #00C;
 	text-align: center;
-	border-bottom-width: thin;
-	border-left-width: thin;
-	padding-left: 10px;
+	border-right-width: thin;
+	border-right-color: #666;
+	border-right-style: groove;
 	height: 60px;
 	background-color: #FFC;
-	clear: right;
 }
 
 .surplusdesc {
-	width: 18%;
-	}
+	margin-left: 8px;
+	width: 17%;
+}
 
 .surplusmake {
-	width: 18%;
+	width: 17%;
 }
 
 .surplusidtag {
-	width: 18%;
+	width: 17%;
 }
 
 .surplusqty {
-	width: 10%;
+	width: 8%;
 }
 
 .surpluscondition {
 	width: 10%;
 }
 
+.surplusspacer {
+	padding: 10px;
+	width: 100px;
+	height: 4px;
+	border-left-style: none;
+	border-right-style: none;
+}
 .surplusremove {
 	width: 10%;
-	border-right-style: solid;
-	border-right-width: thin;
-	border-right-color: #00C;
+}
+
+.sdesc {
+	width: 16%;
+}
+
+.smake {
+	width: 16%;
+}
+
+.sidtag {
+	width: 16%;
+}
+
+.sqty {
+	width: 7%;
+}
+
+.scondition {
+	width: 10%;
+	margin-left: 4%;
+	margin-right: 4%;
+}
+
+.sremove {
+	width: 10%;
+}
+
+
+.surplusd {
+	width: 18%;
+	float: left;
 }

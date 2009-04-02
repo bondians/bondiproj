@@ -223,10 +223,12 @@ text-decoration:none;
 	background-color:#FFF;
 	border:1px solid #909090;
 	color:#2a2a2a;
-	padding:15px 20px 5px;
+	padding:15px 20px 5px 20px;
 }
 
-.content {margin:0 200px;}
+.content {
+	margin:0 200px 20px 200px;
+}
 
 div.content h1, div.content h2 {
 background-color:inherit;

@@ -23,14 +23,13 @@
     <%= submission_form.text_field :bldg %>
   </p>
   <div id="items">
-    <span class="surplusheader">
+    <div class="surplusheader">
       <span class="surplusdesc">Description</span>
       <span class="surplusmake">Make/Model/ISBN</span>
       <span class="surplusidtag">Inventory ID Tag Number<br />or if no id tag,<br />List Serial Number</span>
       <span class="surplusqty">Quan.</span>
       <span class="surpluscondition">Condition Code</span>
-      <span class="surplusremove">Remove Item</span>
-    </span>
+    </div>
     <%= render :partial => 'item', :collection => @submission.items %>
   </div>
   <br />
