@@ -16,6 +16,8 @@ Content:    Serial I/O library, polled or interrupt driven
 #include <avr/io.h>
 #include <avr/pgmspace.h>
 #include <avr/interrupt.h>
+#include <util/atomic.h>
+
 #include "portdef.h"
 #include "serial.h"
 
@@ -125,23 +127,6 @@ static inline void tx_int_on(void)
     UCSR0B |= BM(UDRIE0);
 }
 
-// Save status register and disable interrupts
-
-#define push_sreg_cli()             \
-    __asm__ __volatile__ (          \
-    "in __tmp_reg__,__SREG__\n\t"   \
-    "push __tmp_reg__\n\t"          \
-    "cli\n\t"                       \
-    ::)
-
-// Restore status register (enable interrupts if they were previously enabled)
-
-#define pop_sreg()                  \
-    __asm__ __volatile__ (          \
-    "pop __tmp_reg__\n\t"           \
-    "out __SREG__,__tmp_reg__\n\t"  \
-    ::)
-
 /*******************************************************************************
 void serial_in_blocking(mode)
 
@@ -155,14 +140,13 @@ Return: (return)    If blocking is disabled, will return -1 if no data available
 
 void serial_in_blocking(uint8_t mode)
 {
-    push_sreg_cli();
-
-    if (mode)
-        set_rx_block();
-    else
-        clear_rx_block();
-
-    pop_sreg();
+    ATOMIC_BLOCK(ATOMIC_RESTORESTATE)
+    {
+        if (mode)
+            set_rx_block();
+        else
+            clear_rx_block();
+    }
 }
 
 /*******************************************************************************
@@ -180,14 +164,13 @@ Return: (none)
 
 void serial_out_blocking(uint8_t mode)
 {
-    push_sreg_cli();
-
-    if (mode)
-        set_tx_block();
-    else
-        clear_tx_block();
-
-    pop_sreg();
+    ATOMIC_BLOCK(ATOMIC_RESTORESTATE)
+    {
+        if (mode)
+            set_tx_block();
+        else
+            clear_tx_block();
+    }
 }
 
 /*******************************************************************************
@@ -257,9 +240,10 @@ serial_t serial_in_used(void)
 
     // Disable receive interrupt during buffer index evaluation
 
-    push_sreg_cli();
-    rx_int_off();
-    pop_sreg();
+    ATOMIC_BLOCK(ATOMIC_RESTORESTATE)
+    {
+        rx_int_off();
+    }
 
     // Calculate used space in receive buffer
 
@@ -272,9 +256,10 @@ serial_t serial_in_used(void)
 
     // Enable transmit interrupt & exit
 
-    push_sreg_cli();
-    rx_int_on();
-    pop_sreg();
+    ATOMIC_BLOCK(ATOMIC_RESTORESTATE)
+    {
+        rx_int_on();
+    }
 
     return used;
 }
@@ -300,9 +285,10 @@ uint8_t serial_in_free(void)
 
     // Disable receive interrupt during buffer index evaluation
 
-    push_sreg_cli();
-    rx_int_off();
-    pop_sreg();
+    ATOMIC_BLOCK(ATOMIC_RESTORESTATE)
+    {
+        rx_int_off();
+    }
 
     // Calculate free space in receive buffer
 
@@ -315,9 +301,10 @@ uint8_t serial_in_free(void)
 
     // Enable transmit interrupt & exit
 
-    push_sreg_cli();
-    rx_int_on();
-    pop_sreg();
+    ATOMIC_BLOCK(ATOMIC_RESTORESTATE)
+    {
+        rx_int_on();
+    }
 
     return free;
 }
@@ -417,9 +404,10 @@ serial_t serial_out_used(void)
 
     // Disable transmit interrupt during buffer index evaluation
 
-    push_sreg_cli();
-    tx_int_off();
-    pop_sreg();
+    ATOMIC_BLOCK(ATOMIC_RESTORESTATE)
+    {
+        tx_int_off();
+    }
 
     // Calculate used space in transmit buffer
 
@@ -433,9 +421,10 @@ serial_t serial_out_used(void)
     // Enable transmit interrupt & exit
 
     if (! tx_empty()) {
-        push_sreg_cli();
-        tx_int_on();
-        pop_sreg();
+        ATOMIC_BLOCK(ATOMIC_RESTORESTATE)
+        {
+            tx_int_on();
+        }
     }
 
     return used;
@@ -462,9 +451,10 @@ serial_t serial_out_free(void)
 
     // Disable transmit interrupt during buffer index evaluation
 
-    push_sreg_cli();
-    tx_int_off();
-    pop_sreg();
+    ATOMIC_BLOCK(ATOMIC_RESTORESTATE)
+    {
+        tx_int_off();
+    }
 
     // Calculate free space in transmit buffer
 
@@ -478,9 +468,10 @@ serial_t serial_out_free(void)
     // Enable transmit interrupt & exit
 
     if (! tx_empty()) {
-        push_sreg_cli();
-        tx_int_on();
-        pop_sreg();
+        ATOMIC_BLOCK(ATOMIC_RESTORESTATE)
+        {
+            tx_int_on();
+        }
     }
 
     return free;
@@ -625,9 +616,10 @@ int16_t serial_in(void)
 
     // Disable receive interrupt during buffer/status update
 
-    push_sreg_cli();
-    rx_int_off();
-    pop_sreg();
+    ATOMIC_BLOCK(ATOMIC_RESTORESTATE)
+    {
+        rx_int_off();
+    }
 
     // Get data from receive buffer
 
@@ -646,9 +638,10 @@ int16_t serial_in(void)
     
     // Enable receive interrupt & exit
 
-    push_sreg_cli();
-    rx_int_on();
-    pop_sreg();
+    ATOMIC_BLOCK(ATOMIC_RESTORESTATE)
+    {
+        rx_int_on();
+    }
 
     return data;
 }
@@ -702,9 +695,10 @@ void serial_out(uint8_t data)
 
     // Disable transmit interrupt during buffer/status update
 
-    push_sreg_cli();
-    tx_int_off();
-    pop_sreg();
+    ATOMIC_BLOCK(ATOMIC_RESTORESTATE)
+    {
+        tx_int_off();
+    }
 
     // Put data in transmit buffer
     
@@ -723,9 +717,10 @@ void serial_out(uint8_t data)
 
     // Enable transmit interrupt & exit
 
-    push_sreg_cli();
-    tx_int_on();
-    pop_sreg();
+    ATOMIC_BLOCK(ATOMIC_RESTORESTATE)
+    {
+        tx_int_on();
+    }
 }
 
 #ifdef SERIAL_INCLUDE_STDIO
@@ -816,14 +811,13 @@ Note:   This setting only has meaning for serial_putc().  The normal serial
 
 void serial_putc_auto_newline(uint8_t mode)
 {
-    push_sreg_cli();
-
-    if (mode)
-        set_auto_newline();
-    else
-        clear_auto_newline();
-
-    pop_sreg();
+    ATOMIC_BLOCK(ATOMIC_RESTORESTATE)
+    {
+        if (mode)
+            set_auto_newline();
+        else
+            clear_auto_newline();
+    }
 }
 
 #endif  // SERIAL_INCLUDE_STDIO
@@ -880,6 +874,27 @@ void serial_hex2(uint8_t value)
 {
     serial_hex1(value >> 4);
     serial_hex1(value);
+}
+
+/*******************************************************************************
+void serial_binary(value)
+
+Usage:  Send 8-digit ASCII binary value to serial port
+
+Input:  value       8-bit value which will be converted to 8 ASCII binary
+                    digits and sent.
+
+Return: (none)
+*******************************************************************************/
+
+void serial_binary(uint8_t value)
+{
+    uint8_t digit;
+
+    for (digit = 8; digit; digit--) {
+        serial_out((value & 0x80) ? '1' : '0');
+        value <<= 1;
+    }
 }
 
 /*******************************************************************************

@@ -22,6 +22,83 @@ Byte #   |      0      | |      1      | |      2      | |      3      | |      
 Bit #    7 6 5 4 3 2 1 0 7 6 5 4 3 2 1 0 7 6 5 4 3 2 1 0 7 6 5 4 3 2 1 0 7 6 5 4 3 2 1 0 7 6 5 4 3 2 1 0 7 6 5 4 3 2 1 0 7 6 5 4 3 2 1 0
 ------------------------------------------------------------------------------*/
 
+/*------------------------------------------------------------------------------
+Display character mode output controls:
+
+Segment control (displayable characters):
+
+0..9    Turn on segment 0-9 at cursor
+A..I    Turn on segments 0 & 1..9
+a..i    Same as A..I
+<space> Turn off all segments at cursor
+
+Note: All segment-output characters will auto-advance the cursor if cursor
+auto-advance is enabled.  Previously-enabled segments at the cursor are
+overwritten by the new segment pattern specified by the character unless
+overlay mode is enabled, in which case the new segment pattern is ORed into
+the existing one.
+
+Neon lamp control:
+
+<       Turn on left neon lamp
+>       Turn on right neon lamp
+(       Turn off left neon lamp
+)       Turn off right neon lamp
+`       Turn off both neon lamps
+.       Turn on neon lamp closest to right of cursor
+,       Turn on neon lamp closest to left of cursor
+
+Intensity controls:
+
+[       Decrease intensity of subsequent segments output by 1
+]       Increase intensity of subsequent segments output by 1
+*n      Set intensity of subsequent segments output to <n>.  n = '0'..'9'.
+        Command is ignored if <n> is not an ASCII digit character.
+~       Set intensity to nominal level
+
+Cursor control:
+
+$       Normal cursor mode, auto-advance after digit output
+#       Static cursor mode, cursor stays at current position
+&       Normal output mode, previous segments overwritten by new
+|       Overlay mode, new segments overlay existing ones
+
+@n      Move cursor to digit position <n>.  n = '0'..'6'.
+        Command is ignored if <n> does not represent a valid display position.
+        Note: Display position '6' is 'off the right edge'
+{       Disable cursor wrap mode.  Cursor can advance past right side of display.
+        If cursor is in the off-right-edge position, subsequent displayable
+        characters will not be displayed.  Attempts to move the cursor past the
+        left edge of the display will be ignored.        
+}       Enable cursor wrap mode.  Cursor will move to leftmost digit if advanced
+        past the rightmost digit, or move to rightmost digit if backed up past
+        the leftmost digit.
+
+Next character behavior-modification controls:
+
+!       Next character does NOT advance cursor (single overwrite mode)
+_       Next character will overlay existing segments (single overlay mode)
+^       Move cursor left 1 digit, activate single overlay mode
+
+Note: "Single" controls affect the next DISPLAYABLE (e.g. segment-controlling)
+character.  Characters that perform control functions that occur in the output
+stream following a single-mode control character will NOT turn off the
+single-mode function.
+
+Cursor movement, display clear, miscellaneous:
+
+^L \f   Clear display, move cursor to leftmost digit
+^M \r   Move cursor to leftmost digit
+^J \n   Clear display but do not move cursor
+^H \b   Move cursor to the left one digit (decrement)
+^I \t   Move cursor to the right one digit (increment)
+^K \v   Partial display reset - set intensity to nominal, turn off overlay mode
+        (single and global), enable cursor auto-advance.  Does not affect
+        cursor position or clear display.
+
+Any character output that is not in the above list will be ignored.
+------------------------------------------------------------------------------*/
+
 #include <inttypes.h>
 #include <avr/io.h>
 #include <avr/pgmspace.h>
@@ -29,53 +106,57 @@ Bit #    7 6 5 4 3 2 1 0 7 6 5 4 3 2 1 0 7 6 5 4 3 2 1 0 7 6 5 4 3 2 1 0 7 6 5 4
 #include "portdef.h"
 #include "nixie.h"
 
+//------------------------------------------------------------------------------
+
+typedef union {
+    uint8_t all;
+    struct {
+        uint8_t no_cursor_inc   : 1;
+        uint8_t single_no_inc   : 1;
+        uint8_t overlay         : 1;
+        uint8_t single_overlay  : 1;
+        uint8_t no_cursor_wrap  : 1;
+        uint8_t unused5         : 1;
+        uint8_t unused6         : 1;
+        uint8_t unused7         : 1;
+    };
+} control_t;
+
+typedef enum {
+    NORMAL_OUTPUT,
+    SET_INTENSITY,
+    SET_CURSOR_POS
+} state_t;
+
+typedef struct {
+    uint8_t *display;
+    uint8_t cursor;
+    uint8_t intensity;
+    state_t state;
+    control_t control;
+} display_t;
+
+//------------------------------------------------------------------------------
+
 uint8_t nixie_segment[NUM_NIXIE_SEGMENTS];
 
 uint8_t *nixie_segment_ptr;
 
+//------------------------------------------------------------------------------
+
+static uint8_t cursor;
+static uint8_t intensity;
+static state_t state;
+static control_t control;
+
+//------------------------------------------------------------------------------
+
 // Segment/drive line offsets for start of each nixie tube display element
 
-static const uint8_t nixie_digit_offset[NIXIE_DISPLAY_WIDTH+2] PROGMEM =
-  {0, 10, 21, 32, 43, 53, 20, 42};
-// 0   1   2   3   4   5  LL  RL
+static const uint8_t nixie_digit_offset[] PROGMEM =
+  {0, 10, 21, 32, 43, 53, 20, 42, 31, 63};
+// 0   1   2   3   4   5  LL  RL  AA  AB
 // LL,RL = Left/Right lamp "decimal points"
-
-/******************************************************************************
- *
- ******************************************************************************/
-
-void nixie_display_init(void)
-{
-    nixie_segment_ptr = &nixie_segment[0];
-}
-
-/******************************************************************************
- *
- ******************************************************************************/
-
-void set_nixie_segment(uint8_t digit, uint8_t segment, uint8_t intensity)
-{
-    uint8_t index;
-
-    index = pgm_read_byte(&nixie_digit_offset[digit]) + segment;
-    nixie_segment_ptr[index] = intensity;
-}
-
-/******************************************************************************
- *
- ******************************************************************************/
-
-void clear_nixie_digit(uint8_t digit)
-{
-    uint8_t *p;
-    uint8_t count;
-
-    p = nixie_segment_ptr + pgm_read_byte(&nixie_digit_offset[digit]);
-    for (count = NIXIE_SEGMENTS_PER_DIGIT; count; count--) {
-        *p = 0;
-        p++;
-    }
-}
 
 /******************************************************************************
  *
@@ -144,4 +225,320 @@ void nixie_display_refresh(void)
         intensity_count = 0;
    }
 
+}
+
+/******************************************************************************
+ *
+ ******************************************************************************/
+
+void nixie_display_init(void)
+{
+    nixie_segment_ptr = &nixie_segment[0];
+    clear_nixie_display();
+    cursor = 0;
+    intensity = MAX_NIXIE_INTENSITY;
+    control.all = 0;
+    state = NORMAL_OUTPUT;
+}
+
+/******************************************************************************
+ *
+ ******************************************************************************/
+
+void set_nixie_segment(uint8_t digit, uint8_t segment, uint8_t intensity)
+{
+    uint8_t index;
+
+    index = pgm_read_byte(&nixie_digit_offset[digit]) + segment;
+    nixie_segment_ptr[index] = intensity;
+}
+
+/******************************************************************************
+ *
+ ******************************************************************************/
+
+void clear_nixie_digit(uint8_t digit)
+{
+    uint8_t *p;
+    uint8_t count;
+
+    p = nixie_segment_ptr + pgm_read_byte(&nixie_digit_offset[digit]);
+    for (count = NIXIE_SEGMENTS_PER_DIGIT; count; count--) {
+        *p = 0;
+        p++;
+    }
+}
+
+/******************************************************************************
+ *
+ ******************************************************************************/
+
+void clear_nixie_display(void)
+{
+    uint8_t *p;
+    uint8_t count;
+
+    p = nixie_segment_ptr;
+    for (count = NUM_NIXIE_SEGMENTS; count; count--) {
+        *p = 0;
+        p++;
+    }
+}
+
+/******************************************************************************
+ *
+ ******************************************************************************/
+
+static void inc_cursor(uint8_t char_mode)
+{
+    if (char_mode) {
+        if (control.no_cursor_inc || control.single_no_inc) {
+            control.single_no_inc = 0;
+            return;
+        }
+    }
+
+    cursor++;
+
+    if (control.no_cursor_wrap) {
+        if (cursor > NIXIE_DISPLAY_WIDTH) {
+            cursor = NIXIE_DISPLAY_WIDTH;
+        }
+    }
+    else if (cursor >= NIXIE_DISPLAY_WIDTH) {
+        cursor = 0;
+    }
+}
+
+/******************************************************************************
+ *
+ ******************************************************************************/
+
+static void dec_cursor(void)
+{
+    cursor--;
+
+    if (cursor & 0x80) {
+        if (control.no_cursor_wrap) {
+            cursor = 0;
+        }
+        else {
+            cursor = NIXIE_DISPLAY_WIDTH - 1;
+        }
+    }
+}
+
+/******************************************************************************
+ *
+ ******************************************************************************/
+
+void nixie_out(uint8_t ch)
+{
+    uint8_t char_type;
+
+    // If previous command requires a parameter digit, interpret next
+    // character as a parameter and set value according to previous
+    // character sent.
+
+    if (state != NORMAL_OUTPUT) {
+        ch -= '0';
+
+        if (state == SET_INTENSITY) {
+            if (ch <= MAX_NIXIE_INTENSITY) {
+                intensity = ch;
+            }
+        }
+ 
+        else if (state == SET_CURSOR_POS) {
+            if (ch <= NIXIE_DISPLAY_WIDTH) {
+                cursor = ch;
+            }
+        }
+
+        state = NORMAL_OUTPUT;
+        return;
+    }
+
+    // Determine if character is displayable
+    // char_type = 0 : Not displayable
+    // char_type = 1 : Single digit
+    // char_type = 2 : Single digit plus '0' segment
+    // char_type = 3 : Space
+
+    char_type = 0;
+    if ((ch >= '0') && (ch <= '9'))  {
+        char_type = 1;
+        ch -= '0';
+    }
+    else if ((ch >= 'A') && (ch <= 'I')) {
+        char_type = 2;
+        ch -= 'A';
+    }
+    else if ((ch >= 'a') && (ch <= 'i')) {
+        char_type = 2;
+        ch -= 'a';
+    }
+    else if (ch == ' ') {
+        char_type = 3;
+    }
+
+    // If character is displayable, turn on appropriate segment(s)
+    // on the nixie display
+
+    if (char_type) {
+        if (cursor < NIXIE_DISPLAY_WIDTH) {
+            if (! (control.overlay || control.single_overlay)) {
+                clear_nixie_digit(cursor);
+            }
+
+            if (char_type == 2) {
+                set_nixie_segment(cursor, 0, intensity);
+                ch++;
+            }
+            if (char_type != 3) {
+                set_nixie_segment(cursor, ch, intensity);
+            }
+
+            inc_cursor(1);
+        }
+
+        control.single_overlay = 0;
+        return;
+    }
+
+    // Character is not displayable
+    // Check for valid control characters
+
+    switch(ch) {
+        case '<' :                      // Turn on left neon lamp
+            set_nixie_segment(NIXIE_LEFT_LAMP, 0, intensity);
+            break;
+ 
+        case '>' :                      // Turn on right neon lamp
+            set_nixie_segment(NIXIE_RIGHT_LAMP, 0, intensity);
+            break;
+
+        case '(' :                      // Turn off left neon lamp
+            set_nixie_segment(NIXIE_LEFT_LAMP, 0, 0);
+            break;
+
+        case ')' :                      // Turn off right neon lamp
+            set_nixie_segment(NIXIE_RIGHT_LAMP, 0, 0);
+            break;
+
+        case '`' :                      // Turn off both neon lamps
+            set_nixie_segment(NIXIE_LEFT_LAMP, 0, 0);
+            set_nixie_segment(NIXIE_RIGHT_LAMP, 0, 0);
+            break;
+
+        case '.' :                      // Turn on lamp to right of cursor
+            if ((cursor == 2) || (cursor == 3)) {
+                set_nixie_segment(NIXIE_LEFT_LAMP, 0, intensity);
+            }
+            else if (cursor > 3) {
+                set_nixie_segment(NIXIE_RIGHT_LAMP, 0, intensity);
+            }
+            break;
+
+        case ',' :                      // Turn on lamp to left of cursor
+            if ((cursor == 0) || (cursor == 1)) {
+                set_nixie_segment(NIXIE_LEFT_LAMP, 0, intensity);
+            }
+            else if (cursor < 4) {
+                set_nixie_segment(NIXIE_RIGHT_LAMP, 0, intensity);
+            }
+            break;
+
+        case '[' :                      // Decrease intensity by 1
+            if (intensity) {
+                intensity--;
+            }
+            break;
+
+        case ']' :                      // Increase intensity by 1
+            if (intensity < MAX_NIXIE_INTENSITY) {
+                intensity++;
+            }
+            break;
+
+        case '*' :                      // Set intensity to following digit
+            state = SET_INTENSITY;
+            break;
+
+        case '~' :                      // Set intensity to max/nominal
+            intensity = MAX_NIXIE_INTENSITY;
+            break;
+
+        case '$' :                      // Enable cursor auto-increment
+            control.no_cursor_inc = 0;
+            break;
+
+        case '#' :                      // Disable cursor auto-increment
+            control.no_cursor_inc = 1;
+            break;
+
+        case '!' :                      // Next char does not auto-inc cursor
+            control.single_no_inc = 1;
+            break;
+
+        case '&' :                      // Disable overlay mode
+            control.overlay = 0;
+            break;
+
+        case '|' :                      // Enable overlay mode
+            control.overlay = 1;
+            break;
+
+        case '_' :                      // Next char will overlay
+            control.single_overlay = 1;
+            break;
+
+        case '^' :                      // Dec cursor, next char overlays
+            dec_cursor();
+            control.single_overlay = 1;
+            break;
+
+        case '@' :                      // Set cursor to absolute position
+            state = SET_CURSOR_POS;
+            break;
+
+        case '{' :                      // Disable cursor auto-wraparound
+            control.no_cursor_wrap = 1;
+            break;
+
+        case '}' :                      // Enable cursor auto-wraparound
+            control.no_cursor_wrap = 0;
+            break;
+
+        case '\f' :                     // Clear display, cursor to left
+            clear_nixie_display();
+            cursor = 0;
+            break;
+
+        case '\r' :                     // Move cursor to leftmost digit
+            cursor = 0;
+            break;
+
+        case '\n' :                     // Clear display
+            clear_nixie_display();
+            break;
+
+        case '\b' :                     // Move cursor left 1 digit
+            dec_cursor();
+            break;
+
+        case '\t' :                     // Move cursor right 1 digit
+            inc_cursor(0);
+            break;
+
+        case '\v' :                     // Partial display init
+            intensity = MAX_NIXIE_INTENSITY;
+            cursor = 0;
+            control.overlay = 0;
+            control.single_overlay = 0;
+            control.no_cursor_inc = 0;
+            control.single_no_inc = 0;
+            control.no_cursor_wrap = 0;
+            break;
+    }
 }

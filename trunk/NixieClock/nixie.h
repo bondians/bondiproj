@@ -34,6 +34,13 @@ Content:    Nixie display driver routines
 
 #define MAX_NIXIE_INTENSITY     9
 
+// Digit offsets for neon lamps (as used by set_nixie_segment())
+
+#define NIXIE_LEFT_LAMP         (NIXIE_DISPLAY_WIDTH + 0)
+#define NIXIE_RIGHT_LAMP        (NIXIE_DISPLAY_WIDTH + 1)
+#define NIXIE_AUX_A             (NIXIE_DISPLAY_WIDTH + 2)
+#define NIXIE_AUX_B             (NIXIE_DISPLAY_WIDTH + 3)
+
 //------------------------------------------------------------------------------
 
 // The nixie_segment[] array contains the intensity settings for each and every
@@ -51,8 +58,9 @@ extern uint8_t *nixie_segment_ptr;
 //------------------------------------------------------------------------------
 
 void nixie_display_init(void);
+void nixie_display_refresh(void);
 void set_nixie_segment(uint8_t digit, uint8_t segment, uint8_t intensity);
 void clear_nixie_digit(uint8_t digit);
-void nixie_display_refresh(void);
+void clear_nixie_display(void);
 
 #endif  // NIXIE_H

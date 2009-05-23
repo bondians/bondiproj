@@ -115,79 +115,83 @@ enum serial_io_mode {
 
 // Enable or disable blocking for serial_in()
 
-extern void serial_in_blocking(uint8_t mode);
+void serial_in_blocking(uint8_t mode);
 
 // Enable or disable blocking for serial_out()
 
-extern void serial_out_blocking(uint8_t mode);
+void serial_out_blocking(uint8_t mode);
 
 // Check if serial input buffer is empty
 
-extern uint8_t serial_in_empty(void);
+uint8_t serial_in_empty(void);
 
 // Check if serial input buffer is full
 
-extern uint8_t serial_in_full(void);
+uint8_t serial_in_full(void);
 
 // Calculate the number of bytes queued in the serial input buffer
 
-extern serial_t serial_in_used(void);
+serial_t serial_in_used(void);
 
 // Calculate the number of free bytes in the serial input buffer
 
-extern serial_t serial_in_free(void);
+serial_t serial_in_free(void);
 
 // Check if serial output buffer is empty
 
-extern uint8_t serial_out_empty(void);
+uint8_t serial_out_empty(void);
 
 // Check if serial output buffer is full
 
-extern uint8_t serial_out_full(void);
+uint8_t serial_out_full(void);
 
 // Check if transmitter is idle
 
-extern uint8_t serial_out_idle(void);
+uint8_t serial_out_idle(void);
 
 // Calculate the number of byts queued in the serial output buffer
 
-extern serial_t serial_out_used(void);
+serial_t serial_out_used(void);
 
 // Calculate the number of free bytes in the serial output buffer
 
-extern serial_t serial_out_free(void);
+serial_t serial_out_free(void);
 
 // Initialize the serial port (USART0)
 
-extern uint16_t serial_init(uint16_t baud, uint8_t mode);
+uint16_t serial_init(uint16_t baud, uint8_t mode);
 
 // Read byte from serial input buffer
 
-extern int16_t serial_in(void);
+int16_t serial_in(void);
 
 // Write byte to the serial output buffer
 
-extern void serial_out(uint8_t data);
+void serial_out(uint8_t data);
 
 // Output CR/LF sequence
 
-extern void serial_crlf(void);
+void serial_crlf(void);
 
 // Output single ASCII HEX digit
 
-extern void serial_hex1(uint8_t digit);
+void serial_hex1(uint8_t digit);
 
 // Output 2-digit ASCII HEX value
 
-extern void serial_hex2(uint8_t value);
+void serial_hex2(uint8_t value);
+
+// Output 8-digit ASCII binary value
+
+void serial_binary(uint8_t value);
 
 // Output string in RAM
 
-extern void serial_puts(const char *s);
+void serial_puts(const char *s);
 
 // Output string in program space (FLASH)
 
-extern void serial_puts_P(const char *s);
+void serial_puts_P(const char *s);
 
 //-----------------------------------------------------------------------------
 
@@ -199,15 +203,15 @@ extern FILE serial_f;
 
 // Write byte to serial output buffer (stdio-compatible)
 
-extern int serial_putc(char ch, FILE *stream);
+int serial_putc(char ch, FILE *stream);
 
 // Get byte from serial input buffer (stdio-compatible)
 
-extern int serial_getc(FILE *stream);
+int serial_getc(FILE *stream);
 
 // Control auto-newline generation for serial_putc()
 
-extern void serial_putc_auto_newline(uint8_t mode);
+void serial_putc_auto_newline(uint8_t mode);
 
 #endif  // SERIAL_INCLUDE_STDIO
 

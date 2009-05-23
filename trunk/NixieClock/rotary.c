@@ -41,7 +41,6 @@ typedef union {
 // Local (module) variables
 
 static rotary_state_t previous;
-static rotary_state_t present;
 
 static volatile int8_t left_position;
 static volatile uint8_t left_movement;
@@ -155,50 +154,78 @@ int8_t right_rotary_absolute(void)
 
 ISR(PCINT2_vect, ISR_BLOCK)
 {
-    present.left_a = PINREAD(LEFT_A) != 0;
-    present.left_b = PINREAD(LEFT_B) != 0;
-    present.right_a = PINREAD(RIGHT_A) != 0;
-    present.right_b = PINREAD(RIGHT_B) != 0;
+    register rotary_state_t present;
+
+    // Read present rotary encoder state
+    // Note: if (PINREAD(x)) y = 1; is the most efficient way to do this, it
+    // generates the tightest code when avr-gcc is used.
+
+    present.all = 0;
+
+    if (PINREAD(LEFT_A)) {
+        present.left_a = 1;
+    }
+    if (PINREAD(LEFT_B)) {
+        present.left_b = 1;
+    }
+    if (PINREAD(RIGHT_A)) {
+        present.right_a = 1;
+    }
+    if (PINREAD(RIGHT_B)) {
+        present.right_b = 1;
+    }
+
+    // Check for left encoder movement
+    // LEFT_B toggles state every time encoder is moved
+    //
+    // Note: Must check if LEFT_B has changed state since last entry because
+    // both left and right encoder movement will trigger the same interrupt.
 
     if (present.left_b != previous.left_b) {
         left_movement++;
         if (present.left_b) {
             if (present.left_a) {
-                left_position++;
+                left_position++;    // CW rotation, BA = 11
             }
             else {
-                left_position--;
+                left_position--;    // CCW rotation, BA = 10
             }
         }
         else {
             if (present.left_a) {
-                left_position--;
+                left_position--;    // CCW rotation, BA = 01
             }
             else {
-                left_position++;
+                left_position++;    // CW rotation, BA = 00
             }
         }
     }
+
+    // Check for right encoder movement
+    // RIGHT_B changes state every time encoder is moved
+    //
+    // Note: Must check if RIGHT_B has changed state since last entry because
+    // both left and right encoder movement will trigger the same interrupt.
 
     if (present.right_b != previous.right_b) {
         right_movement++;
         if (present.right_b) {
             if (present.right_a) {
-                right_position++;
+                right_position++;   // CW rotation, BA = 11
             }
             else {
-                right_position--;
+                right_position--;   // CCW rotation, BA = 10
             }
         }
         else {
             if (present.right_a) {
-                right_position--;
+                right_position--;   // CW rotation, BA = 01
             }
             else {
-                right_position++;
+                right_position++;   // CCW rotation, BA = 00
             }
         }
     }
 
-    previous.all = present.all;
+    previous = present;
 }

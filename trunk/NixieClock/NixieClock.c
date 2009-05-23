@@ -26,21 +26,23 @@ Content:    Main program
 #include "spi.h"
 #include "serial.h"
 #include "rotary.h"
+#include "button.h"
 #include "timer.h"
 #include "nixie.h"
 #include "player.h"
+#include "event.h"
 
 //------------------------------------------------------------------------------
 
 const char hello[] PROGMEM = "NixieClock v1.00 (a Deep Bondi thing)";
+
+const char player_test[] PROGMEM = "M8:O1[0:7:CNQ^DEFGAB>]0:CW";
 
 //------------------------------------------------------------------------------
 
 /******************************************************************************
  *
  ******************************************************************************/
-
-const char player_test[] PROGMEM = "M8:O1[0:7:CNQ^DEFGAB>]0:CW";
 
 int main(void)
 {
@@ -101,6 +103,7 @@ int main(void)
     set_nixie_segment(6, 0, 1);
     set_nixie_segment(7, 0, 9);
 
+/*
     int8_t intensity = 1;
     int8_t segment = 0;
     int8_t left, right;
@@ -127,5 +130,45 @@ int main(void)
             }
         }
         set_nixie_segment(0, segment, intensity);
+    } while (1);
+*/
+
+/*
+    button_t state, pressed, released, bshort, blong;
+    do {
+        state = read_button_state();
+        pressed = read_buttons_pressed();
+        released = read_buttons_released();
+        bshort = read_short_buttons();
+        blong = read_long_buttons();
+
+        serial_binary(state.all);
+        serial_out(' ');
+        serial_binary(pressed.all);
+        serial_out(' ');
+        serial_binary(released.all);
+        serial_out(' ');
+        serial_binary(bshort.all);
+        serial_out(' ');
+        serial_binary(blong.all);
+        serial_out('\r');
+
+        if (serial_in() == ' ') {
+            pressed = reset_buttons_pressed();
+            released = reset_buttons_released();
+            bshort = reset_short_buttons();
+            blong = reset_long_buttons();
+            serial_out('\n');
+        }
+    } while (1);
+*/
+
+    event_t event;
+    do {
+        event = get_next_event();
+        if (event.event != NO_EVENT) {
+           printf("Event:%u (%02X)  Data:%u (%02X)\r\n",
+                  event.event, event.event, event.data, event.data);
+        }
     } while (1);
 }
