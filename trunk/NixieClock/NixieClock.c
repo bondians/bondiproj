@@ -2,7 +2,7 @@
 Name:       main.c
 Project:    NixieClock
 Author:     Mark Schultz <n9xmj@yahoo.com>, Daniel Henderson <tindrum@mac.com>
-Date:       16-Mar-2009
+Date:       24-Mar-2009
 Tabsize:    4
 Copyright:  None
 License:    None
@@ -40,6 +40,14 @@ const char player_test[] PROGMEM = "M8:O1[0:7:CNQ^DEFGAB>]0:CW";
 
 //------------------------------------------------------------------------------
 
+FILE            primary;
+nixie_stream_t  primary_stream;
+uint8_t         primary_data[NIXIE_SEGMENTS];
+
+FILE            secondary;
+nixie_stream_t  secondary_stream;
+uint8_t         secondary_data[NIXIE_SEGMENTS];
+
 /******************************************************************************
  *
  ******************************************************************************/
@@ -65,7 +73,6 @@ int main(void)
     spi_init();
     serial_init(38400, IN_OUT_INT);
     rotary_init();
-    nixie_display_init();
     timer_init();
     beeper_init();
     delay_us(1000);         // Needed for FTDI USB-serial IC stabilization?
@@ -77,6 +84,12 @@ int main(void)
     stdout = &serial_f;
     stderr = &serial_f;
 
+    // Set up nixie display streams
+
+    nixie_stream_init(&primary, &primary_stream, primary_data);
+    nixie_stream_init(&secondary, &secondary_stream, secondary_data);
+    nixie_show_stream(&primary);
+
     // Ok to enable interrupts now
 
     sei();
@@ -85,7 +98,8 @@ int main(void)
 
     printf_P(PSTR("\r\n%S\r\n"), hello);
 
-/*
+/* Music player test
+
     player_init(player_test, MEM_PGM);
 
     do {
@@ -94,46 +108,8 @@ int main(void)
     } while (!player_is_stopped());
 */
 
-    set_nixie_segment(0, 0, 1);
-    set_nixie_segment(1, 0, 2);
-    set_nixie_segment(2, 0, 4);
-    set_nixie_segment(3, 0, 6);
-    set_nixie_segment(4, 0, 8);
-    set_nixie_segment(5, 0, 9);
-    set_nixie_segment(6, 0, 1);
-    set_nixie_segment(7, 0, 9);
+/* Button manager test
 
-/*
-    int8_t intensity = 1;
-    int8_t segment = 0;
-    int8_t left, right;
-    do {
-        do {
-            left = left_rotary_relative();
-            right = right_rotary_relative();
-        } while (!left && !right);
-        intensity += left;
-        if (intensity < 0) {
-            intensity = 0;
-        }
-        else if (intensity > MAX_NIXIE_INTENSITY) {
-            intensity = MAX_NIXIE_INTENSITY;
-        }
-        if (right) {
-            clear_nixie_digit(0);
-            segment += right;
-            if (segment < 0) {
-                segment = 0;
-            }
-            else if (segment >= NIXIE_SEGMENTS_PER_DIGIT) {
-                segment = NIXIE_SEGMENTS_PER_DIGIT - 1;
-            }
-        }
-        set_nixie_segment(0, segment, intensity);
-    } while (1);
-*/
-
-/*
     button_t state, pressed, released, bshort, blong;
     do {
         state = read_button_state();
@@ -164,11 +140,35 @@ int main(void)
 */
 
     event_t event;
+    uint8_t timer_id;
+    uint32_t count = 0;
+
+    timer_id = timer_start(MS_TO_TICKS(5000), 1);
+
     do {
         event = get_next_event();
         if (event.event != NO_EVENT) {
-           printf("Event:%u (%02X)  Data:%u (%02X)\r\n",
-                  event.event, event.event, event.data, event.data);
+           printf_P(PSTR("Event:%02u (%02X)  Data:%4d (%02X)\r\n"),
+                  event.event, event.event, (int8_t) event.data, event.data);
+        }
+
+        fprintf_P(&primary, PSTR("%06lu\r"), count);
+        count++;
+        if (count > 999999) {
+            count = 0;
         }
     } while (1);
+
+
+/* Nixie output test
+
+    int16_t ch;
+    do {
+        do {
+            ch = serial_in();
+        } while (ch  < 0);
+        serial_out(ch);
+        nixie_out(ch, &primary);
+    } while (1);
+*/
 }

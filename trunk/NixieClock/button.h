@@ -2,7 +2,7 @@
 Name:       button.h
 Project:    NixieClock
 Author:     Mark Schultz <n9xmj@yahoo.com>, Daniel Henderson <tindrum@mac.com>
-Date:       22-Mar-2009
+Date:       23-Mar-2009
 Tabsize:    4
 Copyright:  None
 License:    None
@@ -29,6 +29,10 @@ Content:    Button decoding routines
 
 #define BUTTON_LONG_DELAY       MS_TO_TICKS(1000)
 
+// Amount of time button pattern must be stable to qualify as a "chord"
+
+#define BUTTON_CHORD_DELAY      MS_TO_TICKS(750)
+
 //------------------------------------------------------------------------------
 
 // Button status bitmap
@@ -49,17 +53,61 @@ typedef union {
 
 //------------------------------------------------------------------------------
 
-// Exported functions
+// Public/exported functions
+
+// Read un-debounced button status
 
 button_t read_button_state(void);
+
+// Read debounced button status
+
+button_t read_button_debounced(void);
+
+// Read button pattern held longer than BUTTON_CHORD_DELAY
+
+button_t read_button_chord(void);
+button_t reset_button_chord(void);
+
+// Read latched state of buttons held for longer than BUTTON_SHORT_DELAY
+
 button_t read_buttons_pressed(void);
+
+// Read and reset latched state of buttons held for longer than
+// BUTTON_SHORT_DELAY
+
 button_t reset_buttons_pressed(void);
+
+// Read latched state of buttons released after being held for longer than
+// BUTTON_SHORT_DELAY
+
 button_t read_buttons_released(void);
+
+// Read and reset latched state of buttons released after being held for longer
+// than BUTTON_SHORT_DELAY
+
 button_t reset_buttons_released(void);
+
+// Read latched state of buttons held for at least BUTTON_SHORT_DELAY but
+// released before being held for longer than BUTTON_LONG_DELAY
+
 button_t read_short_buttons(void);
+
+// Read and reset latched state of buttons held for at least BUTTON_SHORT_DELAY
+// but released before being held for longer than BUTTON_LONG_DELAY
+
 button_t reset_short_buttons(void);
+
+// Read latched state of buttons held for longer than BUTTON_LONG_DELAY
+
 button_t read_long_buttons(void);
+
+// Read and reset latched state of buttons held for longer than
+// BUTTON_LONG_DELAY
+
 button_t reset_long_buttons(void);
+
+// Button scanning routine, updates all button status and latch registers,
+// typically called from a periodic timer interrupt
 
 void button_scan(void);
 

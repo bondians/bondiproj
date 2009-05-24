@@ -206,9 +206,9 @@ static void timer_update(void)
             count--;
             if (!count) {
                 count = timer_period[index];
+                timer_flag |= mask;
             }
             timer_count[index] = count;
-            timer_flag |= mask;
         }
         mask <<= 1;
     }

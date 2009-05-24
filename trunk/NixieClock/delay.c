@@ -2,7 +2,7 @@
 Name:       delay.h
 Project:    NixieClock
 Author:     Mark Schultz <n9xmj@yahoo.com>, Daniel Henderson <tindrum@mac.com>
-Date:       16-Mar-2009
+Date:       23-Mar-2009
 Tabsize:    4
 Copyright:  None
 License:    None
@@ -11,6 +11,8 @@ Target CPU: ATmega168 or ATmega328
 
 Content:    Basic software delay routines
 ------------------------------------------------------------------------------*/
+
+#include <inttypes.h>
 
 #include "delay.h"
 
@@ -68,7 +70,7 @@ void delay_us(uint16_t us)
 	short_delay(us);
 	short_delay(us);
 #else
-    #warning F_CPU is not 12.000 MHz, delay_us() requires modification for accuracy
+    #warning F_CPU not supported, delay_us() requires modification for accuracy
 	short_delay(us);
 #endif
 }

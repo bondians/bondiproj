@@ -15,9 +15,12 @@ Content:    Nixie display driver routines
 #ifndef NIXIE_H
 #define NIXIE_H
 
+#include <inttypes.h>
+#include <stdio.h>
+
 // Number of nixie segments (incuding no-connects) on the display
 
-#define NUM_NIXIE_SEGMENTS      64
+#define NIXIE_SEGMENTS           64
 
 // Number of segments per nixie digit (tube)
 
@@ -43,24 +46,47 @@ Content:    Nixie display driver routines
 
 //------------------------------------------------------------------------------
 
-// The nixie_segment[] array contains the intensity settings for each and every
-// nixie display segment.  Allowable values per element are
-// 0..MAX_NIXIE_INTENSITY.  The TIMER0 OCR0A ISR 
+// Output control flags used by nixie_out()
 
-extern uint8_t nixie_segment[NUM_NIXIE_SEGMENTS];
+typedef union {
+    uint8_t all;
+    struct {
+        uint8_t no_cursor_inc   : 1;    // Do not auto-increment cursor
+        uint8_t single_no_inc   : 1;    // Do not auto-increment cursor for next char
+        uint8_t overlay         : 1;    // Overlay new segment pattern onto existing pattern
+        uint8_t single_overlay  : 1;    // Overlay segments for next char only
+        uint8_t no_cursor_wrap  : 1;    // Do not wrap cursor when it goes off left or right side
+        uint8_t unused5         : 1;
+        uint8_t unused6         : 1;
+        uint8_t unused7         : 1;
+    };
+} control_t;
 
-// Pointer to display "page" to show
-// Should point to a NUM_NIXIE_SEGMENTS-byte array that contains intensity
-// data for each segment in the display
+// Output modes/states, determines how character stream is processed
 
-extern uint8_t *nixie_segment_ptr;
+typedef enum {
+    NORMAL_OUTPUT,                      // Interpret character normally
+    SET_INTENSITY,                      // Character is set intensity parameter
+    SET_CURSOR_POS                      // Character is cursor position parameter
+} state_t;
+
+// Collection of data needed to manage a nixie display output stream
+// A variable of this type is pointed to in the <udev> field of the
+// stdio FILE structure.
+
+typedef struct {
+    uint8_t *segdata;                   // Pointer to display segment intensity buffer
+    uint8_t cursor;                     // Cursor position, next char output here
+    uint8_t intensity;                  // Intensity level of segments written
+    state_t state;                      // Output mode, see state_t
+    control_t control;                  // Output control flags
+} nixie_stream_t;
 
 //------------------------------------------------------------------------------
 
-void nixie_display_init(void);
 void nixie_display_refresh(void);
-void set_nixie_segment(uint8_t digit, uint8_t segment, uint8_t intensity);
-void clear_nixie_digit(uint8_t digit);
-void clear_nixie_display(void);
+void nixie_stream_init(FILE *stream, nixie_stream_t *control, uint8_t *segdata);
+void nixie_show_stream(FILE *stream);
+int16_t nixie_out(char ch, FILE *stream);
 
 #endif  // NIXIE_H

@@ -45,8 +45,8 @@ Neon lamp control:
 (       Turn off left neon lamp
 )       Turn off right neon lamp
 `       Turn off both neon lamps
-.       Turn on neon lamp closest to right of cursor
-,       Turn on neon lamp closest to left of cursor
+.       Turn on neon lamp to left of cursor
+,       Turn on neon lamp to right of cursor
 
 Intensity controls:
 
@@ -102,52 +102,14 @@ Any character output that is not in the above list will be ignored.
 #include <inttypes.h>
 #include <avr/io.h>
 #include <avr/pgmspace.h>
+#include <stdio.h>
 
 #include "portdef.h"
 #include "nixie.h"
 
 //------------------------------------------------------------------------------
 
-typedef union {
-    uint8_t all;
-    struct {
-        uint8_t no_cursor_inc   : 1;
-        uint8_t single_no_inc   : 1;
-        uint8_t overlay         : 1;
-        uint8_t single_overlay  : 1;
-        uint8_t no_cursor_wrap  : 1;
-        uint8_t unused5         : 1;
-        uint8_t unused6         : 1;
-        uint8_t unused7         : 1;
-    };
-} control_t;
-
-typedef enum {
-    NORMAL_OUTPUT,
-    SET_INTENSITY,
-    SET_CURSOR_POS
-} state_t;
-
-typedef struct {
-    uint8_t *display;
-    uint8_t cursor;
-    uint8_t intensity;
-    state_t state;
-    control_t control;
-} display_t;
-
-//------------------------------------------------------------------------------
-
-uint8_t nixie_segment[NUM_NIXIE_SEGMENTS];
-
-uint8_t *nixie_segment_ptr;
-
-//------------------------------------------------------------------------------
-
-static uint8_t cursor;
-static uint8_t intensity;
-static state_t state;
-static control_t control;
+static uint8_t *nixie_segment_ptr;
 
 //------------------------------------------------------------------------------
 
@@ -165,7 +127,7 @@ static const uint8_t nixie_digit_offset[] PROGMEM =
 void nixie_display_refresh(void)
 {
     static uint8_t intensity_count;     // Intensity counter, goes from 0..MAX_NIXIE_INTENSITY, incremented every entry
-    register uint8_t segment_index;     // Iterator to index segment intensity array, 0..NUM_NIXIE_SEGMENTS
+    register uint8_t segment_index;     // Iterator to index segment intensity array, 0..NIXIE_SEGMENTS
     register uint8_t nixie_data;        // Data accumulator, sent to SPI, 8 bits of segment on/off data
     register uint8_t bit_mask;          // ORed into nixie_data if a given segment should be ON
 
@@ -174,10 +136,10 @@ void nixie_display_refresh(void)
     bit_mask = 0x01;
     nixie_data = 0x00;
 
-    // Build and shift out via SPI 64 bits (NUM_NIXIE_SEGMENTS) worth of
+    // Build and shift out via SPI 64 bits (NIXIE_SEGMENTS) worth of
     // nixie segment on/off data
 
-    for (segment_index = 0; segment_index < NUM_NIXIE_SEGMENTS; segment_index++) {
+    for (segment_index = 0; segment_index < NIXIE_SEGMENTS; segment_index++) {
 
         // A given nixie display segment should be ON for this PWM sub-cycle
         // if its intensity setting is greater than the current sub-cycle
@@ -231,41 +193,37 @@ void nixie_display_refresh(void)
  *
  ******************************************************************************/
 
-void nixie_display_init(void)
+void nixie_show_stream(FILE *stream)
 {
-    nixie_segment_ptr = &nixie_segment[0];
-    clear_nixie_display();
-    cursor = 0;
-    intensity = MAX_NIXIE_INTENSITY;
-    control.all = 0;
-    state = NORMAL_OUTPUT;
+    nixie_segment_ptr = ((nixie_stream_t *) stream->udata)->segdata;
 }
 
 /******************************************************************************
  *
  ******************************************************************************/
 
-void set_nixie_segment(uint8_t digit, uint8_t segment, uint8_t intensity)
+static void clear_nixie_display(uint8_t *segdata)
 {
-    uint8_t index;
-
-    index = pgm_read_byte(&nixie_digit_offset[digit]) + segment;
-    nixie_segment_ptr[index] = intensity;
-}
-
-/******************************************************************************
- *
- ******************************************************************************/
-
-void clear_nixie_digit(uint8_t digit)
-{
-    uint8_t *p;
     uint8_t count;
 
-    p = nixie_segment_ptr + pgm_read_byte(&nixie_digit_offset[digit]);
+    for (count = NIXIE_SEGMENTS; count; count--) {
+        *segdata = 0;
+        segdata++;
+    }
+}
+
+/******************************************************************************
+ *
+ ******************************************************************************/
+
+static void clear_nixie_digit(uint8_t *segdata, uint8_t digit)
+{
+    uint8_t count;
+
+    segdata += pgm_read_byte(&nixie_digit_offset[digit]);
     for (count = NIXIE_SEGMENTS_PER_DIGIT; count; count--) {
-        *p = 0;
-        p++;
+        *segdata = 0;
+        segdata++;
     }
 }
 
@@ -273,40 +231,63 @@ void clear_nixie_digit(uint8_t digit)
  *
  ******************************************************************************/
 
-void clear_nixie_display(void)
+static void set_nixie_segment(uint8_t *segdata, uint8_t digit, uint8_t segment, uint8_t intensity)
 {
-    uint8_t *p;
-    uint8_t count;
-
-    p = nixie_segment_ptr;
-    for (count = NUM_NIXIE_SEGMENTS; count; count--) {
-        *p = 0;
-        p++;
-    }
+    segdata += pgm_read_byte(&nixie_digit_offset[digit]) + segment;
+    *segdata = intensity;
 }
 
 /******************************************************************************
  *
  ******************************************************************************/
 
-static void inc_cursor(uint8_t char_mode)
+static void nixie_control_init(nixie_stream_t *p)
+{
+    clear_nixie_display(p->segdata);
+    p->cursor = 0;
+    p->intensity = MAX_NIXIE_INTENSITY;
+    p->control.all = 0;
+    p->state = NORMAL_OUTPUT;
+}
+
+/******************************************************************************
+ *
+ ******************************************************************************/
+
+void nixie_stream_init(FILE *stream, nixie_stream_t *control, uint8_t *segdata)
+{
+    stream->put = &nixie_out;
+    stream->get = NULL;
+    stream->flags = _FDEV_SETUP_WRITE;
+    stream->udata = control;
+
+    ((nixie_stream_t *) (stream->udata))->segdata = segdata;
+
+    nixie_control_init(control);
+}
+
+/******************************************************************************
+ *
+ ******************************************************************************/
+
+static void inc_cursor(nixie_stream_t *stream, uint8_t char_mode)
 {
     if (char_mode) {
-        if (control.no_cursor_inc || control.single_no_inc) {
-            control.single_no_inc = 0;
+        if (stream->control.no_cursor_inc || stream->control.single_no_inc) {
+            stream->control.single_no_inc = 0;
             return;
         }
     }
 
-    cursor++;
+    stream->cursor++;
 
-    if (control.no_cursor_wrap) {
-        if (cursor > NIXIE_DISPLAY_WIDTH) {
-            cursor = NIXIE_DISPLAY_WIDTH;
+    if (stream->control.no_cursor_wrap) {
+        if (stream->cursor > NIXIE_DISPLAY_WIDTH) {
+            stream->cursor = NIXIE_DISPLAY_WIDTH;
         }
     }
-    else if (cursor >= NIXIE_DISPLAY_WIDTH) {
-        cursor = 0;
+    else if (stream->cursor >= NIXIE_DISPLAY_WIDTH) {
+        stream->cursor = 0;
     }
 }
 
@@ -314,16 +295,16 @@ static void inc_cursor(uint8_t char_mode)
  *
  ******************************************************************************/
 
-static void dec_cursor(void)
+static void dec_cursor(nixie_stream_t *stream)
 {
-    cursor--;
+    stream->cursor--;
 
-    if (cursor & 0x80) {
-        if (control.no_cursor_wrap) {
-            cursor = 0;
+    if (stream->cursor & 0x80) {
+        if (stream->control.no_cursor_wrap) {
+            stream->cursor = 0;
         }
         else {
-            cursor = NIXIE_DISPLAY_WIDTH - 1;
+            stream->cursor = NIXIE_DISPLAY_WIDTH - 1;
         }
     }
 }
@@ -332,31 +313,34 @@ static void dec_cursor(void)
  *
  ******************************************************************************/
 
-void nixie_out(uint8_t ch)
+int16_t nixie_out(char ch, FILE *stream)
 {
+    register nixie_stream_t *p;
     uint8_t char_type;
+
+    p = stream->udata;
 
     // If previous command requires a parameter digit, interpret next
     // character as a parameter and set value according to previous
     // character sent.
 
-    if (state != NORMAL_OUTPUT) {
+    if (p->state != NORMAL_OUTPUT) {
         ch -= '0';
 
-        if (state == SET_INTENSITY) {
+        if (p->state == SET_INTENSITY) {
             if (ch <= MAX_NIXIE_INTENSITY) {
-                intensity = ch;
+                p->intensity = ch;
             }
         }
  
-        else if (state == SET_CURSOR_POS) {
+        else if (p->state == SET_CURSOR_POS) {
             if (ch <= NIXIE_DISPLAY_WIDTH) {
-                cursor = ch;
+                p->cursor = ch;
             }
         }
 
-        state = NORMAL_OUTPUT;
-        return;
+        p->state = NORMAL_OUTPUT;
+        return 0;
     }
 
     // Determine if character is displayable
@@ -386,24 +370,23 @@ void nixie_out(uint8_t ch)
     // on the nixie display
 
     if (char_type) {
-        if (cursor < NIXIE_DISPLAY_WIDTH) {
-            if (! (control.overlay || control.single_overlay)) {
-                clear_nixie_digit(cursor);
+        if (p->cursor < NIXIE_DISPLAY_WIDTH) {
+            if (! (p->control.overlay || p->control.single_overlay)) {
+                clear_nixie_digit(p->segdata, p->cursor);
             }
 
             if (char_type == 2) {
-                set_nixie_segment(cursor, 0, intensity);
+                set_nixie_segment(p->segdata, p->cursor, 0, p->intensity);
                 ch++;
             }
             if (char_type != 3) {
-                set_nixie_segment(cursor, ch, intensity);
+                set_nixie_segment(p->segdata, p->cursor, ch, p->intensity);
             }
-
-            inc_cursor(1);
         }
 
-        control.single_overlay = 0;
-        return;
+        inc_cursor(p, 1);
+        p->control.single_overlay = 0;
+        return 0;
     }
 
     // Character is not displayable
@@ -411,134 +394,132 @@ void nixie_out(uint8_t ch)
 
     switch(ch) {
         case '<' :                      // Turn on left neon lamp
-            set_nixie_segment(NIXIE_LEFT_LAMP, 0, intensity);
+            set_nixie_segment(p->segdata, NIXIE_LEFT_LAMP, 0, p->intensity);
             break;
  
         case '>' :                      // Turn on right neon lamp
-            set_nixie_segment(NIXIE_RIGHT_LAMP, 0, intensity);
+            set_nixie_segment(p->segdata, NIXIE_RIGHT_LAMP, 0, p->intensity);
             break;
 
         case '(' :                      // Turn off left neon lamp
-            set_nixie_segment(NIXIE_LEFT_LAMP, 0, 0);
+            set_nixie_segment(p->segdata, NIXIE_LEFT_LAMP, 0, 0);
             break;
 
         case ')' :                      // Turn off right neon lamp
-            set_nixie_segment(NIXIE_RIGHT_LAMP, 0, 0);
+            set_nixie_segment(p->segdata, NIXIE_RIGHT_LAMP, 0, 0);
             break;
 
         case '`' :                      // Turn off both neon lamps
-            set_nixie_segment(NIXIE_LEFT_LAMP, 0, 0);
-            set_nixie_segment(NIXIE_RIGHT_LAMP, 0, 0);
+            set_nixie_segment(p->segdata, NIXIE_LEFT_LAMP, 0, 0);
+            set_nixie_segment(p->segdata, NIXIE_RIGHT_LAMP, 0, 0);
             break;
 
-        case '.' :                      // Turn on lamp to right of cursor
-            if ((cursor == 2) || (cursor == 3)) {
-                set_nixie_segment(NIXIE_LEFT_LAMP, 0, intensity);
+        case '.' :                      // Turn on lamp to left of cursor
+            if ((p->cursor == 2) || (p->cursor == 3)) {
+                set_nixie_segment(p->segdata, NIXIE_LEFT_LAMP, 0, p->intensity);
             }
-            else if (cursor > 3) {
-                set_nixie_segment(NIXIE_RIGHT_LAMP, 0, intensity);
+            else if (p->cursor > 3) {
+                set_nixie_segment(p->segdata, NIXIE_RIGHT_LAMP, 0, p->intensity);
             }
             break;
 
-        case ',' :                      // Turn on lamp to left of cursor
-            if ((cursor == 0) || (cursor == 1)) {
-                set_nixie_segment(NIXIE_LEFT_LAMP, 0, intensity);
+        case ',' :                      // Turn on lamp to right of cursor
+            if ((p->cursor == 0) || (p->cursor == 1)) {
+                set_nixie_segment(p->segdata, NIXIE_LEFT_LAMP, 0, p->intensity);
             }
-            else if (cursor < 4) {
-                set_nixie_segment(NIXIE_RIGHT_LAMP, 0, intensity);
+            else if (p->cursor < 4) {
+                set_nixie_segment(p->segdata, NIXIE_RIGHT_LAMP, 0, p->intensity);
             }
             break;
 
         case '[' :                      // Decrease intensity by 1
-            if (intensity) {
-                intensity--;
+            if (p->intensity) {
+                p->intensity--;
             }
             break;
 
         case ']' :                      // Increase intensity by 1
-            if (intensity < MAX_NIXIE_INTENSITY) {
-                intensity++;
+            if (p->intensity < MAX_NIXIE_INTENSITY) {
+                p->intensity++;
             }
             break;
 
         case '*' :                      // Set intensity to following digit
-            state = SET_INTENSITY;
+            p->state = SET_INTENSITY;
             break;
 
         case '~' :                      // Set intensity to max/nominal
-            intensity = MAX_NIXIE_INTENSITY;
+            p->intensity = MAX_NIXIE_INTENSITY;
             break;
 
         case '$' :                      // Enable cursor auto-increment
-            control.no_cursor_inc = 0;
+            p->control.no_cursor_inc = 0;
             break;
 
         case '#' :                      // Disable cursor auto-increment
-            control.no_cursor_inc = 1;
+            p->control.no_cursor_inc = 1;
             break;
 
         case '!' :                      // Next char does not auto-inc cursor
-            control.single_no_inc = 1;
+            p->control.single_no_inc = 1;
             break;
 
         case '&' :                      // Disable overlay mode
-            control.overlay = 0;
+            p->control.overlay = 0;
             break;
 
         case '|' :                      // Enable overlay mode
-            control.overlay = 1;
+            p->control.overlay = 1;
             break;
 
         case '_' :                      // Next char will overlay
-            control.single_overlay = 1;
+            p->control.single_overlay = 1;
             break;
 
         case '^' :                      // Dec cursor, next char overlays
-            dec_cursor();
-            control.single_overlay = 1;
+            dec_cursor(p);
+            p->control.single_overlay = 1;
             break;
 
         case '@' :                      // Set cursor to absolute position
-            state = SET_CURSOR_POS;
+            p->state = SET_CURSOR_POS;
             break;
 
         case '{' :                      // Disable cursor auto-wraparound
-            control.no_cursor_wrap = 1;
+            p->control.no_cursor_wrap = 1;
             break;
 
         case '}' :                      // Enable cursor auto-wraparound
-            control.no_cursor_wrap = 0;
+            p->control.no_cursor_wrap = 0;
             break;
 
         case '\f' :                     // Clear display, cursor to left
-            clear_nixie_display();
-            cursor = 0;
+            clear_nixie_display(p->segdata);
+            p->cursor = 0;
             break;
 
         case '\r' :                     // Move cursor to leftmost digit
-            cursor = 0;
+            p->cursor = 0;
             break;
 
         case '\n' :                     // Clear display
-            clear_nixie_display();
+            clear_nixie_display(p->segdata);
             break;
 
         case '\b' :                     // Move cursor left 1 digit
-            dec_cursor();
+            dec_cursor(p);
             break;
 
         case '\t' :                     // Move cursor right 1 digit
-            inc_cursor(0);
+            inc_cursor(p, 0);
             break;
 
         case '\v' :                     // Partial display init
-            intensity = MAX_NIXIE_INTENSITY;
-            cursor = 0;
-            control.overlay = 0;
-            control.single_overlay = 0;
-            control.no_cursor_inc = 0;
-            control.single_no_inc = 0;
-            control.no_cursor_wrap = 0;
+            p->intensity = MAX_NIXIE_INTENSITY;
+            p->cursor = 0;
+            p->control.all = 0;
             break;
     }
+
+    return 0;
 }

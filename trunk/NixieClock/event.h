@@ -2,7 +2,7 @@
 Name:       event.h
 Project:    NixieClock
 Author:     Mark Schultz <n9xmj@yahoo.com>, Daniel Henderson <tindrum@mac.com>
-Date:       17-Mar-2009
+Date:       23-Mar-2009
 Tabsize:    4
 Copyright:  None
 License:    None
@@ -10,10 +10,14 @@ Revision:   $Id$
 Target CPU: ATmega168 or ATmega328
 
 Content:    Event queue management
+
+Note:       All public functions in this library are thread-safe
 ------------------------------------------------------------------------------*/
 
 #ifndef EVENT_H
 #define EVENT_H
+
+// Size of event queue (number of pending events it can hold)
 
 #define EVENT_QUEUE_SIZE    16
 
@@ -22,11 +26,13 @@ Content:    Event queue management
 // Event types
 //
 // Note: The scan_for_events() function assumes a specific ordering of event
-// types.  Do not change the order in which event types are declared here
-// without first checking and modifying scan_for_events().
+// types, at least for the single-button events.  Do not change the order in
+// which event types are declared here without first checking and modifying
+// the scan_for_events() function.
 
 typedef enum {
     NO_EVENT,
+
     BUTTON0_PRESSED,
     BUTTON0_RELEASED,
     BUTTON0_SHORT,
@@ -60,12 +66,16 @@ typedef enum {
     LEFT_BUTTON_SHORT,
     LEFT_BUTTON_LONG,
 
+    BUTTON_CHORD,
+
     RIGHT_ROTARY_MOVED,
     LEFT_ROTARY_MOVED,
 
     TIMER_EXPIRED,
     ONE_SECOND_ELAPSED
 } event_id;
+
+// Event record
 
 typedef struct {
     event_id event;
@@ -77,9 +87,21 @@ typedef struct {
 
 //------------------------------------------------------------------------------
 
+// Clear all pending events
+
 void clear_events(void);
+
+// Add a new event to the event queue
+
 void add_event(event_id event, uint8_t data);
+
+// Remove/return an event from the event queue
+
 event_t get_next_event(void);
+
+// Remove/return an event from the event queue.
+// Wait for a new event to occur if the queue is empty (blocking call)
+
 event_t wait_next_event(void);
 
 #endif  // EVENT_H

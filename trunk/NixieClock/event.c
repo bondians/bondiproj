@@ -2,7 +2,7 @@
 Name:       event.c
 Project:    NixieClock
 Author:     Mark Schultz <n9xmj@yahoo.com>, Daniel Henderson <tindrum@mac.com>
-Date:       22-Mar-2009
+Date:       23-Mar-2009
 Tabsize:    4
 Copyright:  None
 License:    None
@@ -70,7 +70,7 @@ void add_event(event_id event, uint8_t data)
 
 static void scan_for_events()
 {
-    button_t pressed, released, bshort, blong;
+    button_t pressed, released, bshort, blong, debounced;
     int8_t index;
     uint8_t mask;
     event_id event;
@@ -79,6 +79,7 @@ static void scan_for_events()
     released = reset_buttons_released();
     bshort = reset_short_buttons();
     blong = reset_long_buttons();
+    debounced = read_button_debounced();
 
     // Scan buttons for events
     // Pressed, released, short and long press
@@ -87,19 +88,26 @@ static void scan_for_events()
     mask = 0x01;
     for (index = 0; index < 8; index++) {
         if (pressed.all & mask) {
-            add_event(event + BUTTON0_PRESSED, 0);
+            add_event(event + BUTTON0_PRESSED, debounced.all);
         }
         if (released.all & mask) {
-            add_event(event + BUTTON0_RELEASED, 0);
+            add_event(event + BUTTON0_RELEASED, debounced.all);
         }
         if (bshort.all & mask) {
-            add_event(event + BUTTON0_SHORT, 0);
+            add_event(event + BUTTON0_SHORT, debounced.all);
         }
         if (blong.all & mask) {
-            add_event(event + BUTTON0_LONG, 0);
+            add_event(event + BUTTON0_LONG, debounced.all);
         }
         event += 4;
         mask <<= 1;
+    }
+
+    // Check for button chords
+
+    pressed = reset_button_chord();
+    if (pressed.all) {
+        add_event(BUTTON_CHORD, pressed.all);
     }
 
     // Check right rotary encoder
@@ -122,7 +130,7 @@ static void scan_for_events()
     index = 0;
     while (mask) {
         if (mask & 0x01) {
-            timer_expired(index, 1);
+            timer_expired(index, 1);            // Resets timer-expiration flag
             add_event(TIMER_EXPIRED, index);
         }
         index++;

@@ -3,35 +3,37 @@
 
 /*------------------------------------------------------------------------------
 Name:       delay.h
-Project:    LCD2USB v2; LCD display interface based on AVR USB driver
-Author:     Mark Schultz <n9xmj@yahoo.com>
-Date:       07-Jan-2007
+Project:    NixieClock
+Author:     Mark Schultz <n9xmj@yahoo.com>, Daniel Henderson <tindrum@mac.com>
+Date:       23-Mar-2009
 Tabsize:    4
-Copyright:  (c) 2007 by Mark Schultz
-License:    GPL
+Copyright:  None
+License:    None
 Revision:   $Id$
-Target CPU: ATmega168
+Target CPU: ATmega168/328
 
 Content:    Basic software delay routines
 ------------------------------------------------------------------------------*/
 
-#include <stdint.h>
-
 #ifndef F_CPU
-#define F_CPU 12000000UL
+#define F_CPU 16000000UL
 #endif
+
+//------------------------------------------------------------------------------
+
+// Public/exported functions:
 
 // Delay in 4 cycle units
 
-extern void short_delay(uint16_t cyc4);
+void short_delay(uint16_t cyc4);
 
 // Delay in microseconds
 
-extern void delay_us(uint16_t us);
+void delay_us(uint16_t us);
 
 // Delay in milliseconds
 
-extern void delay_ms(uint16_t ms);
+void delay_ms(uint16_t ms);
 
 #endif  // DELAY_H
 
