@@ -1,23 +1,24 @@
-#ifndef BEEPER_H
-#define BEEPER_H
 /*------------------------------------------------------------------------------
 Name:       player.h
 Project:    NixieClock
 Author:     Mark Schultz <n9xmj@yahoo.com>, Daniel Henderson <tindrum@mac.com>
-Date:       17-Mar-2009
+Date:       24-Mar-2009
 Tabsize:    4
 Copyright:  None
 License:    None
 Revision:   $Id$
 Target CPU: ATmega168/328
 
-Content:    Simple single-note music player, loosely based on IBM/GW BASIC
+Content:    Simple single-note music player, loosely based on IBM/GWBASIC
             interpreter PLAY strings
 ------------------------------------------------------------------------------*/
 
-// Invocation rate for player_service()
+#ifndef BEEPER_H
+#define BEEPER_H
 
-#define PLAYER_TICKS_PER_SECOND  200
+// Invocation rate for player_service(), calls per second
+
+#define PLAYER_TICKS_PER_SECOND  625
 
 // Type definitions
 
@@ -41,20 +42,39 @@ typedef enum {          // Player string memory space fetch options
 
 //------------------------------------------------------------------------------
 
-// Function prototypes
+// Public (exported) functions:
 
-extern void beep_period(uint16_t period, uint8_t prescale);
+// Turn on tone generator
 
-extern void beep_mute(uint8_t mute);
+void beep_period(uint16_t period, prescale_t prescale);
 
-extern void beep_gain(uint8_t gain);
+// Turn off tone generator (set output volume to 0)
 
-extern void beeper_init(void);
+void beep_mute(uint8_t mute);
 
-extern void player_init(const char *str, player_space_t mem_space);
+// Set output volume
 
-extern uint8_t player_is_stopped(void);
+void beep_gain(uint8_t gain);
 
-extern void player_service(void);
+// Initialize tone generator (timer)
+
+void beeper_init(void);
+
+// Start playing a music string (init music player)
+
+void player_start(const char *str, player_space_t mem_space);
+
+// Stop playback of a music string in progress
+
+void player_stop(void);
+
+// Determine if the current music string has finished playing
+
+uint8_t player_is_stopped(void);
+
+// Player service, interprets and plays a music string
+// Must be called periodically (typically from a timer interrupt)
+
+void player_service(void);
 
 #endif  // BEEPER_H

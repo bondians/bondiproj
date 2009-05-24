@@ -108,37 +108,6 @@ int main(void)
     } while (!player_is_stopped());
 */
 
-/* Button manager test
-
-    button_t state, pressed, released, bshort, blong;
-    do {
-        state = read_button_state();
-        pressed = read_buttons_pressed();
-        released = read_buttons_released();
-        bshort = read_short_buttons();
-        blong = read_long_buttons();
-
-        serial_binary(state.all);
-        serial_out(' ');
-        serial_binary(pressed.all);
-        serial_out(' ');
-        serial_binary(released.all);
-        serial_out(' ');
-        serial_binary(bshort.all);
-        serial_out(' ');
-        serial_binary(blong.all);
-        serial_out('\r');
-
-        if (serial_in() == ' ') {
-            pressed = reset_buttons_pressed();
-            released = reset_buttons_released();
-            bshort = reset_short_buttons();
-            blong = reset_long_buttons();
-            serial_out('\n');
-        }
-    } while (1);
-*/
-
     event_t event;
     uint8_t timer_id;
     uint32_t count = 0;

@@ -145,7 +145,7 @@ static bookmark_t       bookmark[NUM_BOOKMARKS];
 // Must divide by 2 since timer inverts output on each compare match, so
 // one complete on-off cycle is two timer output compare match events.
 //  Subtraction of 0.5 is done for rounding purposes.  Normally, one would ADD
-// 0.5 to the result to 'round up', but the output frequency of the timer is
+// 0.5 to the result to 'round up', but the output period of the timer is
 // actually what is put in the output compare register PLUS 1, so by 'rounding
 // down' this requirement is satisfied while still selecting a period that is
 // close to ideal as the timer resolution will allow.
@@ -160,149 +160,160 @@ static bookmark_t       bookmark[NUM_BOOKMARKS];
 static const note_t note_table[OCTAVES][NOTES_PER_OCTAVE] PROGMEM =
 {
     {
-        {.period = NOTE_PERIOD(16.35,    8), .prescale = PRESCALE_8   },    // C0
-        {.period = NOTE_PERIOD(17.32,    8), .prescale = PRESCALE_8   },    // C#0
-        {.period = NOTE_PERIOD(18.35,    8), .prescale = PRESCALE_8   },    // D0
-        {.period = NOTE_PERIOD(19.44,    8), .prescale = PRESCALE_8   },    // D#0
-        {.period = NOTE_PERIOD(20.60,    8), .prescale = PRESCALE_8   },    // E0
-        {.period = NOTE_PERIOD(21.82,    8), .prescale = PRESCALE_8   },    // F0
-        {.period = NOTE_PERIOD(23.12,    8), .prescale = PRESCALE_8   },    // F#0
-        {.period = NOTE_PERIOD(24.50,    8), .prescale = PRESCALE_8   },    // G0
-        {.period = NOTE_PERIOD(25.95,    8), .prescale = PRESCALE_8   },    // G#0
-        {.period = NOTE_PERIOD(27.50,    8), .prescale = PRESCALE_8   },    // A0
-        {.period = NOTE_PERIOD(29.13,    8), .prescale = PRESCALE_8   },    // A#0
-        {.period = NOTE_PERIOD(30.86,    8), .prescale = PRESCALE_8   },    // B0
+        {.period = NOTE_PERIOD(16.35,  8), .prescale = PRESCALE_8   },  // C0
+        {.period = NOTE_PERIOD(17.32,  8), .prescale = PRESCALE_8   },  // C#0
+        {.period = NOTE_PERIOD(18.35,  8), .prescale = PRESCALE_8   },  // D0
+        {.period = NOTE_PERIOD(19.44,  8), .prescale = PRESCALE_8   },  // D#0
+        {.period = NOTE_PERIOD(20.60,  8), .prescale = PRESCALE_8   },  // E0
+        {.period = NOTE_PERIOD(21.82,  8), .prescale = PRESCALE_8   },  // F0
+        {.period = NOTE_PERIOD(23.12,  8), .prescale = PRESCALE_8   },  // F#0
+        {.period = NOTE_PERIOD(24.50,  8), .prescale = PRESCALE_8   },  // G0
+        {.period = NOTE_PERIOD(25.95,  8), .prescale = PRESCALE_8   },  // G#0
+        {.period = NOTE_PERIOD(27.50,  8), .prescale = PRESCALE_8   },  // A0
+        {.period = NOTE_PERIOD(29.13,  8), .prescale = PRESCALE_8   },  // A#0
+        {.period = NOTE_PERIOD(30.86,  8), .prescale = PRESCALE_8   },  // B0
     },
     {
-        {.period = NOTE_PERIOD(32.70,    8), .prescale = PRESCALE_8   },    // C1
-        {.period = NOTE_PERIOD(34.65,    8), .prescale = PRESCALE_8   },    // C#1
-        {.period = NOTE_PERIOD(36.71,    8), .prescale = PRESCALE_8   },    // D1
-        {.period = NOTE_PERIOD(38.89,    8), .prescale = PRESCALE_8   },    // D#1
-        {.period = NOTE_PERIOD(41.20,    8), .prescale = PRESCALE_8   },    // E1
-        {.period = NOTE_PERIOD(43.65,    8), .prescale = PRESCALE_8   },    // F1
-        {.period = NOTE_PERIOD(46.25,    8), .prescale = PRESCALE_8   },    // F#1
-        {.period = NOTE_PERIOD(49.00,    8), .prescale = PRESCALE_8   },    // G1
-        {.period = NOTE_PERIOD(51.91,    8), .prescale = PRESCALE_8   },    // G#1
-        {.period = NOTE_PERIOD(55.00,    8), .prescale = PRESCALE_8   },    // A1
-        {.period = NOTE_PERIOD(58.27,    8), .prescale = PRESCALE_8   },    // A#1
-        {.period = NOTE_PERIOD(61.73,    8), .prescale = PRESCALE_8   },    // B1
+        {.period = NOTE_PERIOD(32.70,  8), .prescale = PRESCALE_8   },  // C1
+        {.period = NOTE_PERIOD(34.65,  8), .prescale = PRESCALE_8   },  // C#1
+        {.period = NOTE_PERIOD(36.71,  8), .prescale = PRESCALE_8   },  // D1
+        {.period = NOTE_PERIOD(38.89,  8), .prescale = PRESCALE_8   },  // D#1
+        {.period = NOTE_PERIOD(41.20,  8), .prescale = PRESCALE_8   },  // E1
+        {.period = NOTE_PERIOD(43.65,  8), .prescale = PRESCALE_8   },  // F1
+        {.period = NOTE_PERIOD(46.25,  8), .prescale = PRESCALE_8   },  // F#1
+        {.period = NOTE_PERIOD(49.00,  8), .prescale = PRESCALE_8   },  // G1
+        {.period = NOTE_PERIOD(51.91,  8), .prescale = PRESCALE_8   },  // G#1
+        {.period = NOTE_PERIOD(55.00,  8), .prescale = PRESCALE_8   },  // A1
+        {.period = NOTE_PERIOD(58.27,  8), .prescale = PRESCALE_8   },  // A#1
+        {.period = NOTE_PERIOD(61.73,  8), .prescale = PRESCALE_8   },  // B1
     },
     {
-        {.period = NOTE_PERIOD(65.41,    8), .prescale = PRESCALE_8   },    // C2
-        {.period = NOTE_PERIOD(69.30,    8), .prescale = PRESCALE_8   },    // C#2
-        {.period = NOTE_PERIOD(73.42,    8), .prescale = PRESCALE_8   },    // D2
-        {.period = NOTE_PERIOD(77.78,    8), .prescale = PRESCALE_8   },    // D#2
-        {.period = NOTE_PERIOD(82.41,    8), .prescale = PRESCALE_8   },    // E2
-        {.period = NOTE_PERIOD(87.31,    8), .prescale = PRESCALE_8   },    // F2
-        {.period = NOTE_PERIOD(92.50,    8), .prescale = PRESCALE_8   },    // F#2
-        {.period = NOTE_PERIOD(98.00,    8), .prescale = PRESCALE_8   },    // G2
-        {.period = NOTE_PERIOD(103.8,    8), .prescale = PRESCALE_8   },    // G#2
-        {.period = NOTE_PERIOD(110.0,    8), .prescale = PRESCALE_8   },    // A2
-        {.period = NOTE_PERIOD(116.5,    8), .prescale = PRESCALE_8   },    // A#2
-        {.period = NOTE_PERIOD(123.5,    1), .prescale = PRESCALE_1   },    // B2
+        {.period = NOTE_PERIOD(65.41,  8), .prescale = PRESCALE_8   },  // C2
+        {.period = NOTE_PERIOD(69.30,  8), .prescale = PRESCALE_8   },  // C#2
+        {.period = NOTE_PERIOD(73.42,  8), .prescale = PRESCALE_8   },  // D2
+        {.period = NOTE_PERIOD(77.78,  8), .prescale = PRESCALE_8   },  // D#2
+        {.period = NOTE_PERIOD(82.41,  8), .prescale = PRESCALE_8   },  // E2
+        {.period = NOTE_PERIOD(87.31,  8), .prescale = PRESCALE_8   },  // F2
+        {.period = NOTE_PERIOD(92.50,  8), .prescale = PRESCALE_8   },  // F#2
+        {.period = NOTE_PERIOD(98.00,  8), .prescale = PRESCALE_8   },  // G2
+        {.period = NOTE_PERIOD(103.8,  8), .prescale = PRESCALE_8   },  // G#2
+        {.period = NOTE_PERIOD(110.0,  8), .prescale = PRESCALE_8   },  // A2
+        {.period = NOTE_PERIOD(116.5,  8), .prescale = PRESCALE_8   },  // A#2
+        {.period = NOTE_PERIOD(123.5,  1), .prescale = PRESCALE_1   },  // B2
     },
     {
-        {.period = NOTE_PERIOD(130.8,    1), .prescale = PRESCALE_1   },    // C3
-        {.period = NOTE_PERIOD(138.6,    1), .prescale = PRESCALE_1   },    // C#3
-        {.period = NOTE_PERIOD(146.8,    1), .prescale = PRESCALE_1   },    // D3
-        {.period = NOTE_PERIOD(155.6,    1), .prescale = PRESCALE_1   },    // D#3
-        {.period = NOTE_PERIOD(164.8,    1), .prescale = PRESCALE_1   },    // E3
-        {.period = NOTE_PERIOD(174.6,    1), .prescale = PRESCALE_1   },    // F3
-        {.period = NOTE_PERIOD(185.0,    1), .prescale = PRESCALE_1   },    // F#3
-        {.period = NOTE_PERIOD(196.0,    1), .prescale = PRESCALE_1   },    // G3
-        {.period = NOTE_PERIOD(207.7,    1), .prescale = PRESCALE_1   },    // G#3
-        {.period = NOTE_PERIOD(220.0,    1), .prescale = PRESCALE_1   },    // A3
-        {.period = NOTE_PERIOD(233.1,    1), .prescale = PRESCALE_1   },    // A#3
-        {.period = NOTE_PERIOD(246.9,    1), .prescale = PRESCALE_1   },    // B3
+        {.period = NOTE_PERIOD(130.8,  1), .prescale = PRESCALE_1   },  // C3
+        {.period = NOTE_PERIOD(138.6,  1), .prescale = PRESCALE_1   },  // C#3
+        {.period = NOTE_PERIOD(146.8,  1), .prescale = PRESCALE_1   },  // D3
+        {.period = NOTE_PERIOD(155.6,  1), .prescale = PRESCALE_1   },  // D#3
+        {.period = NOTE_PERIOD(164.8,  1), .prescale = PRESCALE_1   },  // E3
+        {.period = NOTE_PERIOD(174.6,  1), .prescale = PRESCALE_1   },  // F3
+        {.period = NOTE_PERIOD(185.0,  1), .prescale = PRESCALE_1   },  // F#3
+        {.period = NOTE_PERIOD(196.0,  1), .prescale = PRESCALE_1   },  // G3
+        {.period = NOTE_PERIOD(207.7,  1), .prescale = PRESCALE_1   },  // G#3
+        {.period = NOTE_PERIOD(220.0,  1), .prescale = PRESCALE_1   },  // A3
+        {.period = NOTE_PERIOD(233.1,  1), .prescale = PRESCALE_1   },  // A#3
+        {.period = NOTE_PERIOD(246.9,  1), .prescale = PRESCALE_1   },  // B3
     },
     {
-        {.period = NOTE_PERIOD(261.6,    1), .prescale = PRESCALE_1   },    // C4
-        {.period = NOTE_PERIOD(277.2,    1), .prescale = PRESCALE_1   },    // C#4
-        {.period = NOTE_PERIOD(293.7,    1), .prescale = PRESCALE_1   },    // D4
-        {.period = NOTE_PERIOD(311.1,    1), .prescale = PRESCALE_1   },    // D#4
-        {.period = NOTE_PERIOD(329.6,    1), .prescale = PRESCALE_1   },    // E4
-        {.period = NOTE_PERIOD(349.2,    1), .prescale = PRESCALE_1   },    // F4
-        {.period = NOTE_PERIOD(370.0,    1), .prescale = PRESCALE_1   },    // F#4
-        {.period = NOTE_PERIOD(392.0,    1), .prescale = PRESCALE_1   },    // G4
-        {.period = NOTE_PERIOD(415.3,    1), .prescale = PRESCALE_1   },    // G#4
-        {.period = NOTE_PERIOD(440.0,    1), .prescale = PRESCALE_1   },    // A4
-        {.period = NOTE_PERIOD(466.2,    1), .prescale = PRESCALE_1   },    // A#4
-        {.period = NOTE_PERIOD(493.9,    1), .prescale = PRESCALE_1   },    // B4
+        {.period = NOTE_PERIOD(261.6,  1), .prescale = PRESCALE_1   },  // C4
+        {.period = NOTE_PERIOD(277.2,  1), .prescale = PRESCALE_1   },  // C#4
+        {.period = NOTE_PERIOD(293.7,  1), .prescale = PRESCALE_1   },  // D4
+        {.period = NOTE_PERIOD(311.1,  1), .prescale = PRESCALE_1   },  // D#4
+        {.period = NOTE_PERIOD(329.6,  1), .prescale = PRESCALE_1   },  // E4
+        {.period = NOTE_PERIOD(349.2,  1), .prescale = PRESCALE_1   },  // F4
+        {.period = NOTE_PERIOD(370.0,  1), .prescale = PRESCALE_1   },  // F#4
+        {.period = NOTE_PERIOD(392.0,  1), .prescale = PRESCALE_1   },  // G4
+        {.period = NOTE_PERIOD(415.3,  1), .prescale = PRESCALE_1   },  // G#4
+        {.period = NOTE_PERIOD(440.0,  1), .prescale = PRESCALE_1   },  // A4
+        {.period = NOTE_PERIOD(466.2,  1), .prescale = PRESCALE_1   },  // A#4
+        {.period = NOTE_PERIOD(493.9,  1), .prescale = PRESCALE_1   },  // B4
     },
     {
-        {.period = NOTE_PERIOD(523.3,    1), .prescale = PRESCALE_1   },    // C5
-        {.period = NOTE_PERIOD(554.4,    1), .prescale = PRESCALE_1   },    // C#5
-        {.period = NOTE_PERIOD(587.3,    1), .prescale = PRESCALE_1   },    // D5
-        {.period = NOTE_PERIOD(622.3,    1), .prescale = PRESCALE_1   },    // D#5
-        {.period = NOTE_PERIOD(659.3,    1), .prescale = PRESCALE_1   },    // E5
-        {.period = NOTE_PERIOD(698.5,    1), .prescale = PRESCALE_1   },    // F5
-        {.period = NOTE_PERIOD(740.0,    1), .prescale = PRESCALE_1   },    // F#5
-        {.period = NOTE_PERIOD(784.0,    1), .prescale = PRESCALE_1   },    // G5
-        {.period = NOTE_PERIOD(830.6,    1), .prescale = PRESCALE_1   },    // G#5
-        {.period = NOTE_PERIOD(880.0,    1), .prescale = PRESCALE_1   },    // A5
-        {.period = NOTE_PERIOD(932.3,    1), .prescale = PRESCALE_1   },    // A#5
-        {.period = NOTE_PERIOD(987.8,    1), .prescale = PRESCALE_1   },    // B5
+        {.period = NOTE_PERIOD(523.3,  1), .prescale = PRESCALE_1   },  // C5
+        {.period = NOTE_PERIOD(554.4,  1), .prescale = PRESCALE_1   },  // C#5
+        {.period = NOTE_PERIOD(587.3,  1), .prescale = PRESCALE_1   },  // D5
+        {.period = NOTE_PERIOD(622.3,  1), .prescale = PRESCALE_1   },  // D#5
+        {.period = NOTE_PERIOD(659.3,  1), .prescale = PRESCALE_1   },  // E5
+        {.period = NOTE_PERIOD(698.5,  1), .prescale = PRESCALE_1   },  // F5
+        {.period = NOTE_PERIOD(740.0,  1), .prescale = PRESCALE_1   },  // F#5
+        {.period = NOTE_PERIOD(784.0,  1), .prescale = PRESCALE_1   },  // G5
+        {.period = NOTE_PERIOD(830.6,  1), .prescale = PRESCALE_1   },  // G#5
+        {.period = NOTE_PERIOD(880.0,  1), .prescale = PRESCALE_1   },  // A5
+        {.period = NOTE_PERIOD(932.3,  1), .prescale = PRESCALE_1   },  // A#5
+        {.period = NOTE_PERIOD(987.8,  1), .prescale = PRESCALE_1   },  // B5
     },
     {
-        {.period = NOTE_PERIOD(1047,     1), .prescale = PRESCALE_1   },    // C6
-        {.period = NOTE_PERIOD(1109,     1), .prescale = PRESCALE_1   },    // C#6
-        {.period = NOTE_PERIOD(1175,     1), .prescale = PRESCALE_1   },    // D6
-        {.period = NOTE_PERIOD(1245,     1), .prescale = PRESCALE_1   },    // D#6
-        {.period = NOTE_PERIOD(1319,     1), .prescale = PRESCALE_1   },    // E6
-        {.period = NOTE_PERIOD(1397,     1), .prescale = PRESCALE_1   },    // F6
-        {.period = NOTE_PERIOD(1480,     1), .prescale = PRESCALE_1   },    // F#6
-        {.period = NOTE_PERIOD(1568,     1), .prescale = PRESCALE_1   },    // G6
-        {.period = NOTE_PERIOD(1661,     1), .prescale = PRESCALE_1   },    // G#6
-        {.period = NOTE_PERIOD(1760,     1), .prescale = PRESCALE_1   },    // A6
-        {.period = NOTE_PERIOD(1865,     1), .prescale = PRESCALE_1   },    // A#6
-        {.period = NOTE_PERIOD(1976,     1), .prescale = PRESCALE_1   },    // B6
+        {.period = NOTE_PERIOD(1047,   1), .prescale = PRESCALE_1   },  // C6
+        {.period = NOTE_PERIOD(1109,   1), .prescale = PRESCALE_1   },  // C#6
+        {.period = NOTE_PERIOD(1175,   1), .prescale = PRESCALE_1   },  // D6
+        {.period = NOTE_PERIOD(1245,   1), .prescale = PRESCALE_1   },  // D#6
+        {.period = NOTE_PERIOD(1319,   1), .prescale = PRESCALE_1   },  // E6
+        {.period = NOTE_PERIOD(1397,   1), .prescale = PRESCALE_1   },  // F6
+        {.period = NOTE_PERIOD(1480,   1), .prescale = PRESCALE_1   },  // F#6
+        {.period = NOTE_PERIOD(1568,   1), .prescale = PRESCALE_1   },  // G6
+        {.period = NOTE_PERIOD(1661,   1), .prescale = PRESCALE_1   },  // G#6
+        {.period = NOTE_PERIOD(1760,   1), .prescale = PRESCALE_1   },  // A6
+        {.period = NOTE_PERIOD(1865,   1), .prescale = PRESCALE_1   },  // A#6
+        {.period = NOTE_PERIOD(1976,   1), .prescale = PRESCALE_1   },  // B6
     },
     {
-        {.period = NOTE_PERIOD(2093,     1), .prescale = PRESCALE_1   },    // C7
-        {.period = NOTE_PERIOD(2217,     1), .prescale = PRESCALE_1   },    // C#7
-        {.period = NOTE_PERIOD(2349,     1), .prescale = PRESCALE_1   },    // D7
-        {.period = NOTE_PERIOD(2489,     1), .prescale = PRESCALE_1   },    // D#7
-        {.period = NOTE_PERIOD(2637,     1), .prescale = PRESCALE_1   },    // E7
-        {.period = NOTE_PERIOD(2794,     1), .prescale = PRESCALE_1   },    // F7
-        {.period = NOTE_PERIOD(2960,     1), .prescale = PRESCALE_1   },    // F#7
-        {.period = NOTE_PERIOD(3136,     1), .prescale = PRESCALE_1   },    // G7
-        {.period = NOTE_PERIOD(3322,     1), .prescale = PRESCALE_1   },    // G#7
-        {.period = NOTE_PERIOD(3520,     1), .prescale = PRESCALE_1   },    // A7
-        {.period = NOTE_PERIOD(3729,     1), .prescale = PRESCALE_1   },    // A#7
-        {.period = NOTE_PERIOD(3951,     1), .prescale = PRESCALE_1   },    // B7
+        {.period = NOTE_PERIOD(2093,   1), .prescale = PRESCALE_1   },  // C7
+        {.period = NOTE_PERIOD(2217,   1), .prescale = PRESCALE_1   },  // C#7
+        {.period = NOTE_PERIOD(2349,   1), .prescale = PRESCALE_1   },  // D7
+        {.period = NOTE_PERIOD(2489,   1), .prescale = PRESCALE_1   },  // D#7
+        {.period = NOTE_PERIOD(2637,   1), .prescale = PRESCALE_1   },  // E7
+        {.period = NOTE_PERIOD(2794,   1), .prescale = PRESCALE_1   },  // F7
+        {.period = NOTE_PERIOD(2960,   1), .prescale = PRESCALE_1   },  // F#7
+        {.period = NOTE_PERIOD(3136,   1), .prescale = PRESCALE_1   },  // G7
+        {.period = NOTE_PERIOD(3322,   1), .prescale = PRESCALE_1   },  // G#7
+        {.period = NOTE_PERIOD(3520,   1), .prescale = PRESCALE_1   },  // A7
+        {.period = NOTE_PERIOD(3729,   1), .prescale = PRESCALE_1   },  // A#7
+        {.period = NOTE_PERIOD(3951,   1), .prescale = PRESCALE_1   },  // B7
     },
     {
-        {.period = NOTE_PERIOD(4186,     1), .prescale = PRESCALE_1   },    // C8
-        {.period = NOTE_PERIOD(4434,     1), .prescale = PRESCALE_1   },    // C#8
-        {.period = NOTE_PERIOD(4698,     1), .prescale = PRESCALE_1   },    // D8
-        {.period = NOTE_PERIOD(4978,     1), .prescale = PRESCALE_1   },    // D#8
-        {.period = NOTE_PERIOD(5274,     1), .prescale = PRESCALE_1   },    // E8
-        {.period = NOTE_PERIOD(5588,     1), .prescale = PRESCALE_1   },    // F8
-        {.period = NOTE_PERIOD(5920,     1), .prescale = PRESCALE_1   },    // F#8
-        {.period = NOTE_PERIOD(6272,     1), .prescale = PRESCALE_1   },    // G8
-        {.period = NOTE_PERIOD(6645,     1), .prescale = PRESCALE_1   },    // G#8
-        {.period = NOTE_PERIOD(7040,     1), .prescale = PRESCALE_1   },    // A8
-        {.period = NOTE_PERIOD(7459,     1), .prescale = PRESCALE_1   },    // A#8
-        {.period = NOTE_PERIOD(7902,     1), .prescale = PRESCALE_1   },    // B8
+        {.period = NOTE_PERIOD(4186,   1), .prescale = PRESCALE_1   },  // C8
+        {.period = NOTE_PERIOD(4434,   1), .prescale = PRESCALE_1   },  // C#8
+        {.period = NOTE_PERIOD(4698,   1), .prescale = PRESCALE_1   },  // D8
+        {.period = NOTE_PERIOD(4978,   1), .prescale = PRESCALE_1   },  // D#8
+        {.period = NOTE_PERIOD(5274,   1), .prescale = PRESCALE_1   },  // E8
+        {.period = NOTE_PERIOD(5588,   1), .prescale = PRESCALE_1   },  // F8
+        {.period = NOTE_PERIOD(5920,   1), .prescale = PRESCALE_1   },  // F#8
+        {.period = NOTE_PERIOD(6272,   1), .prescale = PRESCALE_1   },  // G8
+        {.period = NOTE_PERIOD(6645,   1), .prescale = PRESCALE_1   },  // G#8
+        {.period = NOTE_PERIOD(7040,   1), .prescale = PRESCALE_1   },  // A8
+        {.period = NOTE_PERIOD(7459,   1), .prescale = PRESCALE_1   },  // A#8
+        {.period = NOTE_PERIOD(7902,   1), .prescale = PRESCALE_1   },  // B8
     },
     {
-        {.period = NOTE_PERIOD(8372,     1), .prescale = PRESCALE_1   },    // C9
-        {.period = NOTE_PERIOD(8870,     1), .prescale = PRESCALE_1   },    // C#9
-        {.period = NOTE_PERIOD(9397,     1), .prescale = PRESCALE_1   },    // D9
-        {.period = NOTE_PERIOD(9956,     1), .prescale = PRESCALE_1   },    // D#9
-        {.period = NOTE_PERIOD(10548,    1), .prescale = PRESCALE_1   },    // E9
-        {.period = NOTE_PERIOD(11175,    1), .prescale = PRESCALE_1   },    // F9
-        {.period = NOTE_PERIOD(11840,    1), .prescale = PRESCALE_1   },    // F#9
-        {.period = NOTE_PERIOD(12544,    1), .prescale = PRESCALE_1   },    // G9
-        {.period = NOTE_PERIOD(13290,    1), .prescale = PRESCALE_1   },    // G#9
-        {.period = NOTE_PERIOD(14080,    1), .prescale = PRESCALE_1   },    // A9
-        {.period = NOTE_PERIOD(14917,    1), .prescale = PRESCALE_1   },    // A#9
-        {.period = NOTE_PERIOD(15804,    1), .prescale = PRESCALE_1   },    // B9
+        {.period = NOTE_PERIOD(8372,   1), .prescale = PRESCALE_1   },  // C9
+        {.period = NOTE_PERIOD(8870,   1), .prescale = PRESCALE_1   },  // C#9
+        {.period = NOTE_PERIOD(9397,   1), .prescale = PRESCALE_1   },  // D9
+        {.period = NOTE_PERIOD(9956,   1), .prescale = PRESCALE_1   },  // D#9
+        {.period = NOTE_PERIOD(10548,  1), .prescale = PRESCALE_1   },  // E9
+        {.period = NOTE_PERIOD(11175,  1), .prescale = PRESCALE_1   },  // F9
+        {.period = NOTE_PERIOD(11840,  1), .prescale = PRESCALE_1   },  // F#9
+        {.period = NOTE_PERIOD(12544,  1), .prescale = PRESCALE_1   },  // G9
+        {.period = NOTE_PERIOD(13290,  1), .prescale = PRESCALE_1   },  // G#9
+        {.period = NOTE_PERIOD(14080,  1), .prescale = PRESCALE_1   },  // A9
+        {.period = NOTE_PERIOD(14917,  1), .prescale = PRESCALE_1   },  // A#9
+        {.period = NOTE_PERIOD(15804,  1), .prescale = PRESCALE_1   },  // B9
     }
 };
 
 /******************************************************************************
+ * beeper_init()
  *
+ * Initialize tone generator (timer)
+ *
+ * Inputs:  None
+ *
+ * Returns: Nothing
+ *
+ * Notes:   16-bit TIMER1 is used for the purpose of generating tones in this
+ *          application.  A different timer may be used but all functions
+ *          in this library, along with the prescaler selections in note_table
+ *          will need to be modified.
  ******************************************************************************/
 
 void beeper_init(void)
@@ -334,10 +345,19 @@ void beeper_init(void)
 }
 
 /******************************************************************************
+ * beep_period(period, prescale)
  *
+ * Turn on the tone generator
+ *
+ * Inputs:  period      Timer period
+ *          prescale    Timer prescaler selection (from prescale_t enum)
+ *
+ * Returns: Nothing
+ *
+ * Notes:   Output frequency = F_CPU / selected prescaler / (period+1) / 2
  ******************************************************************************/
 
-void beep_period(uint16_t period, uint8_t prescale)
+void beep_period(uint16_t period, prescale_t prescale)
 {
     // Stop counter & reset it
 
@@ -355,7 +375,13 @@ void beep_period(uint16_t period, uint8_t prescale)
 }
 
 /******************************************************************************
+ * beep_mute(mute)
  *
+ * Turn off tone generator (stop timer)
+ *
+ * Inputs:  mute        Mutes output if nonzero
+ *
+ * Returns: Nothing
  ******************************************************************************/
 
 void beep_mute(uint8_t mute)
@@ -366,7 +392,18 @@ void beep_mute(uint8_t mute)
 }
 
 /******************************************************************************
+ * beep_gain(gain)
  *
+ * Set output gain (volume)
+ *
+ * Inputs:  gain        Output gain/volume setting to apply
+ *
+ * Returns: Nothing
+ *
+ * Notes:   This function is provided for those designs that provide a means by
+ *          which the output volume can be set.  This typically requires some
+ *          sort of external hardware support.  If such hardware is not
+ *          available, this function should be declared empty.
  ******************************************************************************/
 
 void beep_gain(uint8_t gain)
@@ -374,7 +411,23 @@ void beep_gain(uint8_t gain)
 }
 
 /******************************************************************************
+ * uint8_t next_player_char()
  *
+ * Fetch next character from the play string in the selected memory space
+ *
+ * Inputs:  None passed in - uses these local module variables:
+ *          player_mem_space    Memory space containing player music string,
+ *                              as defined in the player_space_t enum.
+ *                              Set to PLAYER_STOP when the end of the string
+ *                              is encountered.
+ *                              If player_mem_space == PLAYER_STOP, the return
+ *                              value of this function will always be NULL.
+ *          player_ptr          Pointer to player music string.  Incremented to
+ *                              point to the next character in the string on
+ *                              exit.  player_ptr will never be incremented to
+ *                              point past the end of the string.
+ *
+ * Returns: Character pointed to by player_ptr on entry, converted to uppercase.
  ******************************************************************************/
 
 static uint8_t next_player_char(void)
@@ -401,7 +454,31 @@ static uint8_t next_player_char(void)
 }
 
 /******************************************************************************
+ * uint8_t find_bookmark(search_mark)
  *
+ * Locate bookmark(s) in the player music string
+ *
+ * Inputs:  search_mark     The bookmark # to search for in the player string.
+ *                          If the value 0xFF is passed in, ALL bookmarks in
+ *                          the player string are found and their positions
+ *                          recorded in bookmark[].
+ *
+ *          In addition, the following local module variables are used:
+ *
+ *          bookmark[]      This array records the positions (pointers to) the
+ *                          bookmark(s) searched for and the repeat count
+ *                          associated with it.  If all bookmarks are pre-
+ *                          searched before the music string starts playing,
+ *                          some play-time execution overhead can be saved.
+ *          player_mem_space
+ *          player_ptr      These variables are used by the next_player_char()
+ *                          function which is called within this function.
+ *                          The value of player_ptr is preserved and reset to
+ *                          its original value upon exit.
+ *
+ * Returns: Pointer to position in player music string where the specified
+ *          <search_mark> bookmark was found, or NULL if not found.  Will
+ *          also return NULL if a all-bookmark search is requested.
  ******************************************************************************/
 
 static uint8_t * find_bookmark(uint8_t search_mark)
@@ -427,16 +504,20 @@ static uint8_t * find_bookmark(uint8_t search_mark)
             repeat = 0;
             mark = next_player_char();  // Fetch bookmark #
 
-            if (is_separator(mark))     // Assume bookmark #0 if seperator
+            if (is_separator(mark)) {   // Assume bookmark #0 if seperator
                 mark = 0;
-            else if (is_digit(ch))      // Convert bookmark # to integer
+            }
+            else if (is_digit(ch)) {    // Convert bookmark # to integer
                 mark -= '0';
-            else                        // Skip analysis if bookmark # invalid
+            }
+            else {                      // Skip analysis if bookmark # invalid
                 continue;
+            }
 
             ch = next_player_char();    // Fetch 1st digit of repeat count
-            if (is_separator(ch))       // Skip past possible seperator
+            if (is_separator(ch)) {     // Skip past possible seperator
                 ch = next_player_char();
+            }
 
             while (is_digit(ch)) {      // Convert repeat count to integer
                 ch -= '0';
@@ -445,10 +526,12 @@ static uint8_t * find_bookmark(uint8_t search_mark)
             }
             player_ptr--;               // Last char not a digit, back up
 
-            if (repeat > 0xFE)          // Valid repeat counts are 0..254
+            if (repeat > 0xFE) {        // Valid repeat counts are 0..254
                 repeat = 0xFE;          //   Force to maximum if > 254
-            if (! repeat)               // Repeat count of 0 is "infinite"
+            }
+            if (! repeat) {             // Repeat count of 0 is "infinite"
                 repeat = 0xFF;          //   0xFF = infinite, never decremented
+            }
 
             // Save bookmark data
 
@@ -468,17 +551,40 @@ static uint8_t * find_bookmark(uint8_t search_mark)
 
     // Return NULL if bookmark #<search_mark> not found
 
-    if (! found_mark)
+    if (! found_mark) {
         return_ptr = 0;
+    }
 
     return return_ptr;
 }
 
 /******************************************************************************
+ * player_start(*str, mem_space)
  *
+ * Start playing a music string (initialize player)
+ *
+ * Inputs:  *str        Pointer to the music string to play
+ *          mem_space   The memory space in which <str> resides, as selected
+ *                      from the player_space_t enum.  A music string may
+ *                      reside in data RAM (1), program memory space (2), or
+ *                      in EEPROM (3).
+ *
+ *          In addition, the following local module variables are used:
+ *
+ *          player_ptr          Set to <str>; points to string to play.
+ *          player_mem_space    Set to <mem_space> | 0x80, forcing the
+ *                              player_service() function to initialize
+ *                              itself for music string playback.
+ *          bookmark[]          This routine pre-scans for bookmarks in the
+ *                              player string via the find_bookmark() function.
+ *
+ * Returns: Nothing
+ *
+ * Notes:   The player_service() function must be called periodically, typically
+ *          from a timer interrupt, for the music <str> to be played back.
  ******************************************************************************/
 
-void player_init(const char *str, player_space_t mem_space)
+void player_start(const char *str, player_space_t mem_space)
 {
     uint8_t index;
 
@@ -501,14 +607,37 @@ void player_init(const char *str, player_space_t mem_space)
     find_bookmark(0xFF);
 
     // Setting the MSB of the player memory space value will force the
-    // player_poll() routine to reset its internal variables and prepare
+    // player_service() routine to reset its internal variables and prepare
     // for playback.  This bit will be cleared after the reset is performed.
 
     player_mem_space |= 0x80;
 }
 
 /******************************************************************************
+ * player_stop()
  *
+ * Stop playback of the current music string being played (if any)
+ *
+ * Inputs:  None
+ *
+ * Returns: Nothing
+ ******************************************************************************/
+
+void player_stop(void)
+{
+    player_mem_space = PLAYER_STOP;
+    beep_mute(1);
+}
+
+/******************************************************************************
+ * uint8_t player_is_stopped()
+ *
+ * Determine if the present music string is still in the process of being
+ * played back.
+ *
+ * Inputs:  None
+ *
+ * Returns: Nonzero value if player is idle.
  ******************************************************************************/
 
 uint8_t player_is_stopped(void)
@@ -533,7 +662,7 @@ static int8_t c_major_scale[7] PROGMEM = { 9,11, 0, 2, 4, 5, 7};
 void player_service(void)
 {
     static player_state_t state;        // Player execution state
-    static player_state_t next_state;   // State to advance to when done
+    static player_state_t next_state;   // State to advance to when done with present state
     static int8_t note;                 // Note #
     static int8_t octave;               // Octave #
     static int8_t accidental;           // Accidental: 0=Flat 1=Natural 2=Sharp
@@ -544,12 +673,12 @@ void player_service(void)
     static uint16_t whole_note_period;  // # ticks in a whole note
     static uint16_t note_period;        // Note play period, PLAYER_TICKS_PER_SECOND units
     static uint16_t rest_period;        // Rest (silence) period, PLAYER_TICKS_PER_SECOND units
-    static int8_t scale[7];		// Note letter-to-number conversion, adjusted for key signature
+    static int8_t scale[7];             // Note letter-to-number conversion, adjusted for key signature
 
     int8_t ch;                          // Character fetched from play string
     int8_t digit = 0;                   // Integerized single-digit parameter
     uint16_t number = 0;                // Integerized multi-digit parameter
-    note_t *n;                          // Pointer to note beeper setting data
+    note_t *n;                          // Pointer to tone generator note data
 
     // Exit player if no play string defined
 
@@ -567,7 +696,7 @@ void player_service(void)
         // RESET state
         // Resets all player variables to their default state.
         // This state is forced as the first state to be executed when
-        // a new play string is defined using the init_player() function.
+        // a new play string is defined using the start_player() function.
 
         if ((state == STATE_RESET) ||
             (player_mem_space & 0x80)) {
