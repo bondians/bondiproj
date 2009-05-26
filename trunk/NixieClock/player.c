@@ -741,7 +741,7 @@ void player_service(void)
             note_size = 4;
             size_modifier = 0;
             note_rest_ratio = 7;
-            whole_note_period = PLAYER_TICKS_PER_SECOND * 60U * DEFAULT_BEAT / DEFAULT_TEMPO;
+            whole_note_period = (uint16_t) (PLAYER_TICKS_PER_SECOND * 60U * (uint32_t) DEFAULT_BEAT / DEFAULT_TEMPO);
             player_timer = 0;
             beep_period(0xFF, PRESCALE_STOP);
             beep_mute(0);
