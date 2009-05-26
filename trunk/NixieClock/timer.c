@@ -19,10 +19,12 @@ Content:    General purpose timing functions and RTC routines
 #include <util/atomic.h>
 
 #include "portdef.h"
-#include "timer.h"
 #include "nixie.h"
 #include "button.h"
 #include "event.h"
+#include "clock.h"
+#include "player.h"
+#include "timer.h"
 
 #if TIMER0_PRESCALER == 1
   #define TIMER0_PRESCALER_BITS     BM(CS00)
@@ -41,25 +43,11 @@ Content:    General purpose timing functions and RTC routines
 
 //------------------------------------------------------------------------------
 
-const uint8_t days_in_month[] PROGMEM =
-    {29, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-//       Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec
-
-//------------------------------------------------------------------------------
-
 static uint16_t seconds_prescaler;
 
 static volatile uint16_t timer_count[NUM_EVENT_TIMERS];
 static uint16_t timer_period[NUM_EVENT_TIMERS];
 static volatile uint8_t timer_flag;
-
-uint8_t hour;
-uint8_t minute;
-uint8_t second;
-
-uint16_t year;
-uint8_t month;
-uint8_t day;
 
 /******************************************************************************
  *
@@ -214,48 +202,6 @@ static void timer_update(void)
     }
 }
 
-/******************************************************************************
- *
- ******************************************************************************/
-
-static void clock_calendar_update(void)
-{
-    second++;
-    if (second >= 60) {
-        second = 0;
- 
-        minute++;
-        if (minute >= 60) {
-            minute = 0;
- 
-            hour++;
-            if (hour >= 24) {
-                hour = 0;
- 
-                day++;
-                if (day > pgm_read_byte(&days_in_month[month])) {
-
-                    // Leap-year logic - Add a leap-day if:
-                    // - Month is February (2), and
-                    // - Year is evenly divisible by 4, and
-                    // - Year is not evenly divisible by 100, and
-                    // - A leap-day has not already been added
-
-                    if ((month != 2) || (year & 0x0004) || !(year % 100) ||
-                        (day > pgm_read_byte(&days_in_month[month]))) {
-                        day = 1;
-
-                        month++;
-                        if (month > 12) {
-                            month = 1;
-                            year++;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
 
 /******************************************************************************
  *
@@ -269,6 +215,7 @@ ISR(TIMER0_COMPA_vect, ISR_BLOCK)
     nixie_display_refresh();
     button_scan();
     timer_update();
+    player_service();
 
     seconds_prescaler--;
     if (!seconds_prescaler) {
@@ -277,7 +224,7 @@ ISR(TIMER0_COMPA_vect, ISR_BLOCK)
 
         seconds_prescaler += TIMER0_FREQUENCY;
 
-        clock_calendar_update();
-        add_event(ONE_SECOND_ELAPSED, second);
+        time_date_update();
+        add_event(ONE_SECOND_ELAPSED, 0);
     }
 }

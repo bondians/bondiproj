@@ -31,12 +31,13 @@ Content:    Main program
 #include "nixie.h"
 #include "player.h"
 #include "event.h"
+#include "clock.h"
 
 //------------------------------------------------------------------------------
 
 const char hello[] PROGMEM = "NixieClock v1.00 (a Deep Bondi thing)";
 
-const char player_test[] PROGMEM = "M8:O1[0:7:CNQ^DEFGAB>]0:CW";
+const char player_test[] PROGMEM = "TQ:120:M8:O4[0:3:CQDEFGAB>]0:CW";
 
 //------------------------------------------------------------------------------
 
@@ -52,8 +53,67 @@ uint8_t         secondary_data[NIXIE_SEGMENTS];
  *
  ******************************************************************************/
 
+extern uint16_t player_export;
+
+void getstr(char *str, uint8_t max_len)
+{
+    char ch;
+    int c;
+    uint8_t index;
+
+    if (!max_len) {
+        *str = 0;
+        return;
+    }
+
+    max_len--;
+    index = 0;
+ 
+    do {
+        do {
+            c = serial_in();
+        } while (c < 0);
+        ch = c;
+
+        if (ch == '\r') {
+            str[index] = 0;
+            serial_crlf();
+            break;
+        }
+
+        if (ch == '\b') {
+            if (index) {
+                index--;
+                serial_out('\b');
+                serial_out(' ');
+                serial_out('\b');
+            }
+            continue;
+        }
+
+        if (ch < 0x20) {
+            continue;
+        }
+
+        if (index < max_len) {
+            str[index] = ch;
+            serial_out(ch);
+            index++;
+        }
+    } while (1);
+ 
+    str[index] = 0;
+}
+
+/******************************************************************************
+ *
+ ******************************************************************************/
+
 int main(void)
 {
+    event_t event;
+    time_t time;
+    date_t date;
 
     // Initialize I/O's
 
@@ -75,8 +135,21 @@ int main(void)
     rotary_init();
     timer_init();
     beeper_init();
+    clock_run(1);
     delay_us(1000);         // Needed for FTDI USB-serial IC stabilization?
 
+    // Set default time & date
+
+    time.hour = 12;
+    time.minute = 0;
+    time.second = 0;
+    set_time_24(&time);
+
+    date.day = 1;
+    date.month = 1;
+    date.year = 2009;
+    set_date(&date);
+    
     // Assign stdio file handles to use serial port
     // Note: serial_f is declared in serial.c/.h
 
@@ -98,16 +171,27 @@ int main(void)
 
     printf_P(PSTR("\r\n%S\r\n"), hello);
 
-/* Music player test
+    // Player test
 
-    player_init(player_test, MEM_PGM);
+    player_start(player_test, PLAYER_MEM_PGM);
+    static char str[41];
+    do {
+        getstr(str, 40);
+        player_start(str, PLAYER_MEM_RAM);
+    } while (1);
+
+    // Clock display test
 
     do {
-        player_service();
-        delay_us(4900);
-    } while (!player_is_stopped());
-*/
+        get_time_24(&time);
+        fprintf_P(&primary, PSTR("\r%02u.%02u.%02u"), time.hour, time.minute, time.second);
 
+        do {
+            event = wait_next_event();
+        } while (event.event != ONE_SECOND_ELAPSED);
+    } while (1);
+        
+/*
     event_t event;
     uint8_t timer_id;
     uint32_t count = 0;
@@ -127,7 +211,7 @@ int main(void)
             count = 0;
         }
     } while (1);
-
+*/
 
 /* Nixie output test
 

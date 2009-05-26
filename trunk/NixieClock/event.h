@@ -2,7 +2,7 @@
 Name:       event.h
 Project:    NixieClock
 Author:     Mark Schultz <n9xmj@yahoo.com>, Daniel Henderson <tindrum@mac.com>
-Date:       23-Mar-2009
+Date:       24-Mar-2009
 Tabsize:    4
 Copyright:  None
 License:    None
@@ -98,6 +98,10 @@ void add_event(event_id event, uint8_t data);
 // Remove/return an event from the event queue
 
 event_t get_next_event(void);
+
+// Return next event in event queue, but do not remove it
+
+event_t unget_next_event(void);
 
 // Remove/return an event from the event queue.
 // Wait for a new event to occur if the queue is empty (blocking call)

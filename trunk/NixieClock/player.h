@@ -22,22 +22,22 @@ Content:    Simple single-note music player, loosely based on IBM/GWBASIC
 
 // Type definitions
 
-typedef enum {          // Timer prescaler options
-    PRESCALE_STOP = 0,  //   Timer stopped 
-    PRESCALE_1 = 1,     //   F_CPU / 1
-    PRESCALE_8 = 2,     //   F_CPU / 8
-    PRESCALE_64 = 3,    //   F_CPU / 64
-    PRESCALE_256 = 4,   //   F_CPU / 256
-    PRESCALE_1024 = 5,  //   F_CPU / 1024
-    PRESCALE_EXT_L = 6, //   External, falling edge
-    PRESCALE_EXT_H = 7  //   External, rising edge
+typedef enum {              // Timer prescaler options
+    PRESCALE_STOP = 0,      //   Timer stopped 
+    PRESCALE_1 = 1,         //   F_CPU / 1
+    PRESCALE_8 = 2,         //   F_CPU / 8
+    PRESCALE_64 = 3,        //   F_CPU / 64
+    PRESCALE_256 = 4,       //   F_CPU / 256
+    PRESCALE_1024 = 5,      //   F_CPU / 1024
+    PRESCALE_EXT_L = 6,     //   External, falling edge
+    PRESCALE_EXT_H = 7      //   External, rising edge
 } prescale_t;
 
-typedef enum {          // Player string memory space fetch options
-    PLAYER_STOP = 0,    //   Stop fetching, always reads as 0
-    MEM_RAM = 1,        //   Fetch player string from RAM
-    MEM_PGM = 2,        //   Fetch player string from FLASH/program memory
-    MEM_EEPROM = 3      //   Fetch player string from EEPROM
+typedef enum {              // Player string memory space fetch options
+    PLAYER_MEM_RAM,         //   Fetch player string from RAM
+    PLAYER_MEM_PGM,         //   Fetch player string from FLASH/program memory
+    PLAYER_MEM_EEPROM,      //   Fetch player string from EEPROM
+    PLAYER_MEM_UNKNOWN
 } player_space_t;
 
 //------------------------------------------------------------------------------

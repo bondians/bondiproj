@@ -17,14 +17,20 @@ Content:    Simple single-note music player, loosely based on IBM/GW BASIC
 #include <avr/io.h>
 #include <avr/pgmspace.h>
 #include <avr/eeprom.h>
+
 #include "portdef.h"
 #include "player.h"
+
+#define debug_out(x) { while (!(UCSR0A & BM(UDRE0))); UDR0 = x; }
 
 // Constants
 
 #define OCTAVES             10
 #define NOTES_PER_OCTAVE    12
 #define NUM_BOOKMARKS       10
+
+#define DEFAULT_TEMPO       120
+#define DEFAULT_BEAT        4
 
 // Player commands and modifiers
 
@@ -62,10 +68,33 @@ Content:    Simple single-note music player, loosely based on IBM/GW BASIC
 #define is_goto_mark(ch)    (ch == ']')
 #define is_reset_cmd(ch)    (ch == '*')
 
+// Note modifier bitflags
+
 #define MOD_DOTTED          0x01
 #define MOD_TRIPLET         0x02
 #define MOD_TIED            0x04
 #define MOD_STACCATO        0x08
+
+// Accidentals
+
+#define ACCIDENTAL_FLAT     -1
+#define ACCIDENTAL_NATURAL  0
+#define ACCIDENTAL_SHARP    +1
+
+// Note sizes
+
+#define NOTE_WHOLE          1
+#define NOTE_HALF           2
+#define NOTE_QUARTER        4
+#define NOTE_8TH            8
+#define NOTE_16TH           16
+#define NOTE_32ND           32
+
+// Player run states
+
+#define PLAYER_STOP         0
+#define PLAYER_RUN          1
+#define PLAYER_INIT         2
 
 // Type definitions
 
@@ -91,8 +120,7 @@ typedef enum {          // Player execution states
     STATE_SET_BOOKMARK, //   1st stage of "set bookmark" command (bookmark # fetched)
     STATE_SET_BOOKMARK_2, // Complete "set bookmark" command (repeat count fetched)
     STATE_GOTO_BOOKMARK,//   Complete "goto bookmark" command 
-    STATE_STOP,         //   Stop playing (mute output)
-    STATE_IDLE          //   Idle state, do nothing (player is stopped)
+    STATE_STOP          //   Stop playing (mute output)
 } player_state_t;
 
 
@@ -110,7 +138,8 @@ typedef struct {        // Player bookmark info
 
 static uint16_t         player_timer;
 static uint8_t          *player_ptr;
-static player_space_t   player_mem_space = PLAYER_STOP;
+static player_space_t   player_mem_space;
+static uint8_t          player_enable;
 static bookmark_t       bookmark[NUM_BOOKMARKS];
 
 //-----------------------------------------------------------------------------
@@ -321,7 +350,7 @@ void beeper_init(void)
     // Stop timer 1 during init
     // Disable timer 1 interrupts
 
-    TCCR1B &= (uint8_t) ~(_BV(CS12) | _BV(CS11) | _BV(CS10));
+    TCCR1B &= (uint8_t) ~PRESCALE_STOP;
     TCNT1 = 0;
     TIMSK1 = 0;
 
@@ -331,17 +360,12 @@ void beeper_init(void)
 
     // Timer 1 configuration:
     // Toggle OC1A on compare match and reset counter
-    // Set prescaler (initially) to FCPU / 1
+    // Keep counter stopped, use beep_period() to enable
 
     TCCR1A = _BV(COM1A0);                   // Toggle OC1A on compare match
-    TCCR1B = _BV(WGM12) | _BV(CS10);        // CTC mode, reset when count == OCR1A
+    TCCR1B = _BV(WGM12);                    // CTC mode, reset when count == OCR1A
     DDR(BEEPER_PORT) |= _BV(BEEPER_PIN);
     BEEPER_PORT &= (uint8_t) ~_BV(BEEPER_PIN);
-
-    // Set output gain
-
-    beep_mute(1);
-    beep_gain(5);
 }
 
 /******************************************************************************
@@ -361,7 +385,7 @@ void beep_period(uint16_t period, prescale_t prescale)
 {
     // Stop counter & reset it
 
-    TCCR1B &= (uint8_t) ~(_BV(CS12) | _BV(CS11) | _BV(CS10));
+    TCCR1B &= (uint8_t) ~PRESCALE_STOP;
     TCNT1 = 0;
 
     // Set period & prescaler
@@ -387,7 +411,7 @@ void beep_period(uint16_t period, prescale_t prescale)
 void beep_mute(uint8_t mute)
 {
     if (mute) {
-        TCCR1B &= (uint8_t) ~(_BV(CS12) | _BV(CS11) | _BV(CS10));
+        TCCR1B &= (uint8_t) ~PRESCALE_STOP;
     }
 }
 
@@ -418,37 +442,35 @@ void beep_gain(uint8_t gain)
  * Inputs:  None passed in - uses these local module variables:
  *          player_mem_space    Memory space containing player music string,
  *                              as defined in the player_space_t enum.
- *                              Set to PLAYER_STOP when the end of the string
- *                              is encountered.
- *                              If player_mem_space == PLAYER_STOP, the return
- *                              value of this function will always be NULL.
  *          player_ptr          Pointer to player music string.  Incremented to
  *                              point to the next character in the string on
- *                              exit.  player_ptr will never be incremented to
- *                              point past the end of the string.
+ *                              exit.
  *
  * Returns: Character pointed to by player_ptr on entry, converted to uppercase.
  ******************************************************************************/
 
 static uint8_t next_player_char(void)
 {
-    uint8_t data = 0;
+    uint8_t data;
 
-    if (player_mem_space == MEM_RAM) {
+    if (player_mem_space == PLAYER_MEM_RAM) {
         data = *player_ptr;
     }
-    else if (player_mem_space == MEM_PGM) {
+    else if (player_mem_space == PLAYER_MEM_PGM) {
         data = pgm_read_byte(player_ptr);
     }
-    else if (player_mem_space == MEM_EEPROM) {
+    else if (player_mem_space == PLAYER_MEM_EEPROM) {
         data = eeprom_read_byte(player_ptr);
     }
+    else {
+        data = 0;
+    }
 
-    if ((data >= 'a') && (data <= 'z'))
+    if ((data >= 'a') && (data <= 'z')) {
         data &= (uint8_t) ~0x20;
+    }
 
-    if (data)
-        player_ptr++;
+    player_ptr++;
 
     return data;
 }
@@ -572,9 +594,10 @@ static uint8_t * find_bookmark(uint8_t search_mark)
  *          In addition, the following local module variables are used:
  *
  *          player_ptr          Set to <str>; points to string to play.
- *          player_mem_space    Set to <mem_space> | 0x80, forcing the
- *                              player_service() function to initialize
- *                              itself for music string playback.
+ *          player_mem_space    Set to <mem_space>
+ *          player_enable       Set to 2, forcing the player to initialize
+ *                              its internal variables and start playing
+ *                              the specified music string.
  *          bookmark[]          This routine pre-scans for bookmarks in the
  *                              player string via the find_bookmark() function.
  *
@@ -590,7 +613,8 @@ void player_start(const char *str, player_space_t mem_space)
 
     // Set player string index and memory space to values passed in
 
-    player_ptr = (uint8_t *) str;               // Typecast prevents compiler warning
+    player_stop();                      // Stop playing previous string
+    player_ptr = (uint8_t *) str;       // Typecast prevents compiler warning
     player_mem_space = mem_space;
 
     // Clear all bookmarks
@@ -606,11 +630,9 @@ void player_start(const char *str, player_space_t mem_space)
 
     find_bookmark(0xFF);
 
-    // Setting the MSB of the player memory space value will force the
-    // player_service() routine to reset its internal variables and prepare
-    // for playback.  This bit will be cleared after the reset is performed.
+    // Allow playback to start
 
-    player_mem_space |= 0x80;
+    player_enable = PLAYER_INIT;
 }
 
 /******************************************************************************
@@ -625,8 +647,9 @@ void player_start(const char *str, player_space_t mem_space)
 
 void player_stop(void)
 {
-    player_mem_space = PLAYER_STOP;
+    player_enable = PLAYER_STOP;
     beep_mute(1);
+    beep_period(0xFF, PRESCALE_STOP);
 }
 
 /******************************************************************************
@@ -642,7 +665,7 @@ void player_stop(void)
 
 uint8_t player_is_stopped(void)
 {
-    return player_mem_space == PLAYER_STOP;
+    return player_enable == PLAYER_STOP;
 }
 
 /******************************************************************************
@@ -657,7 +680,7 @@ uint8_t player_is_stopped(void)
 // C major:                                A  B  C  D  E  F  G
 static int8_t c_major_scale[7] PROGMEM = { 9,11, 0, 2, 4, 5, 7};
 
-#define NOTE_IS_REST    0x7F
+#define NOTE_IS_REST    0xFF
 
 void player_service(void)
 {
@@ -665,7 +688,7 @@ void player_service(void)
     static player_state_t next_state;   // State to advance to when done with present state
     static int8_t note;                 // Note #
     static int8_t octave;               // Octave #
-    static int8_t accidental;           // Accidental: 0=Flat 1=Natural 2=Sharp
+    static int8_t accidental;           // Accidental: -1=Flat 0=Natural +1=Sharp
     static int8_t transposition;        // # of halfsteps to transpose notes up
     static uint8_t note_size;           // Note size fraction; e.g. 4=quarter note
     static uint8_t size_modifier;       // Note size modifier flags: 0:Dotted 1:Triplet 2:Tied 3:Staccato
@@ -676,14 +699,22 @@ void player_service(void)
     static int8_t scale[7];             // Note letter-to-number conversion, adjusted for key signature
 
     int8_t ch;                          // Character fetched from play string
-    int8_t digit = 0;                   // Integerized single-digit parameter
-    uint16_t number = 0;                // Integerized multi-digit parameter
+    int8_t digit;                       // Integerized single-digit parameter
+    uint16_t number;                    // Integerized multi-digit parameter
     note_t *n;                          // Pointer to tone generator note data
 
-    // Exit player if no play string defined
+    // Exit player if stopped
 
-    if (player_mem_space == PLAYER_STOP)
+    if (player_enable == PLAYER_STOP) {
         return;
+    }
+
+    // <number> and <digit> init not really needed, but prevents compiler
+    // from complaining
+
+    number = 0;
+    digit = 0;
+    ch = 0;
 
     player_timer++;
 
@@ -699,22 +730,23 @@ void player_service(void)
         // a new play string is defined using the start_player() function.
 
         if ((state == STATE_RESET) ||
-            (player_mem_space & 0x80)) {
-            player_mem_space &= (uint8_t) ~0x80;
-            for (digit = 0; digit < 7; digit++)
+            (player_enable == PLAYER_INIT)) {
+            for (digit = 0; digit < 7; digit++) {
                 scale[digit] = pgm_read_byte(&c_major_scale[digit]);
+            }
             note = 0;
             octave = 4;
-            accidental = 0;
+            accidental = ACCIDENTAL_NATURAL;
             transposition = 0;
             note_size = 4;
             size_modifier = 0;
             note_rest_ratio = 7;
-            whole_note_period = (uint16_t) PLAYER_TICKS_PER_SECOND * 60 * 4 / 120;
+            whole_note_period = PLAYER_TICKS_PER_SECOND * 60U * DEFAULT_BEAT / DEFAULT_TEMPO;
             player_timer = 0;
             beep_period(0xFF, PRESCALE_STOP);
             beep_mute(0);
             beep_gain(5);
+            player_enable = PLAYER_RUN;
             state = STATE_GET_NOTE;
             continue;
         }
@@ -725,12 +757,13 @@ void player_service(void)
 
         else if (state == STATE_GET_NOTE) {
             ch = next_player_char();
-            if (is_separator(ch))
+            if (is_separator(ch)) {
                 continue;
+            }
             else if (is_note(ch)) {
                 ch -= 'A';
                 note = scale[ch];
-                accidental = 0;
+                accidental = ACCIDENTAL_NATURAL;
                 state = STATE_GET_MODIFIER;
                 next_state = STATE_START_NOTE;
                 continue;
@@ -751,13 +784,15 @@ void player_service(void)
                 continue;
             }
             else if (is_octave_up(ch)) {
-                if (octave < (OCTAVES - 1))
+                if (octave < (OCTAVES - 1)) {
                     octave++;
+                }
                 continue;
             }
             else if (is_octave_down(ch)) {
-                if (octave > 0)
+                if (octave > 0) {
                     octave--;
+                }
                 continue;
             }
             else if (is_ratio_cmd(ch)) {
@@ -779,11 +814,21 @@ void player_service(void)
                 continue;
             }
             else if (is_tempo_cmd(ch)) {
-                state = STATE_GET_MODIFIER;
-                next_state = STATE_SET_TEMPO;
                 // Assume quarter note gets 1 beat
-                note_size = 4;
+                note_size = DEFAULT_BEAT;
                 size_modifier = 0;
+                ch = next_player_char();
+                // Use default note size if not specified
+                if (is_separator(ch) || is_digit(ch)) {
+                    player_ptr--;
+                    state = STATE_GET_NUMBER;
+                    next_state = STATE_SET_TEMPO_2;
+                }
+                // Get a note size
+                else {
+                    state = STATE_GET_MODIFIER;
+                    next_state = STATE_SET_TEMPO;
+                }
                 continue;
             }
             else if (is_bookmark(ch)) {
@@ -800,6 +845,10 @@ void player_service(void)
                 state = STATE_RESET;
                 continue;
             }
+            else if (!ch) {
+                player_ptr--;
+            }
+            // Character not recognized, stop player
             state = STATE_STOP;
             continue;
         }
@@ -836,50 +885,52 @@ void player_service(void)
                 continue;
             }
             else if (is_flat(ch)) {
-                accidental = -1;
+                accidental = ACCIDENTAL_FLAT;
                 continue;
             }
             else if (is_natural(ch)) {
-                accidental = 0;
+                accidental = ACCIDENTAL_NATURAL;
                 continue;
             }
             else if (is_sharp(ch)) {
-                accidental = +1;
+                accidental = ACCIDENTAL_SHARP;
                 continue;
             }
             else if (is_whole(ch)) {
-                note_size = 1;
+                note_size = NOTE_WHOLE;
                 size_modifier = 0;
                 continue;
             }
             else if (is_half(ch)) {
-                note_size = 2;
+                note_size = NOTE_HALF;
                 size_modifier = 0;
                 continue;
             }
             else if (is_quarter(ch)) {
-                note_size = 4;
+                note_size = NOTE_QUARTER;
                 size_modifier = 0;
                 continue;
             }
             else if (is_8th(ch)) {
-                note_size = 8;
+                note_size = NOTE_8TH;
                 size_modifier = 0;
                 continue;
             }
             else if (is_16th(ch)) {
-                note_size = 16;
+                note_size = NOTE_16TH;
                 size_modifier = 0;
                 continue;
             }
             else if (is_32nd(ch)) {
-                note_size = 32;
+                note_size = NOTE_32ND;
                 size_modifier = 0;
                 continue;
             }
-            player_ptr--;
-            state = next_state;
-            continue;
+            else {
+                player_ptr--;
+                state = next_state;
+                continue;
+            }
         }
 
         // START NOTE state
@@ -891,11 +942,13 @@ void player_service(void)
         else if (state == STATE_START_NOTE) {
             rest_period = whole_note_period;
             // If dotted flag set, note period is 50% longer
-            if (size_modifier & MOD_DOTTED)
+            if (size_modifier & MOD_DOTTED) {
                 rest_period += rest_period >> 1;
+            }
             // If triplet flag set, note period is divided by 3
-            if (size_modifier & MOD_TRIPLET)
+            if (size_modifier & MOD_TRIPLET) {
                 rest_period /= 3;
+            }
             // Divide base (whole note) period by note size
             // e.g. if quarter note, divide by 4
             rest_period /= note_size;
@@ -911,13 +964,16 @@ void player_service(void)
             // rest for 3/8 of note time
             // If note is tied or staccato, ignore note/rest ratio setting and
             // force it to 8 (tied) or 2 (staccato).
-            if (size_modifier & MOD_TIED)
+            if (size_modifier & MOD_TIED) {
                 digit = 8;
-            else if (size_modifier & MOD_STACCATO)
+            }
+            else if (size_modifier & MOD_STACCATO) {
                 digit = 2;
-            else
+            }
+            else {
                 digit = note_rest_ratio;
-            note_period = (rest_period * (uint8_t) digit) >> 3;
+            }
+            note_period = (rest_period * digit) >> 3;
             rest_period -= note_period;
             // Adjust note tone to be played by accidental and transposition factors
             // <digit> is used as a temporary to hold the adjusted note tone
@@ -957,8 +1013,9 @@ void player_service(void)
 
         else if (state == STATE_WAIT_NOTE) {
             // Wait until note play period has elapsed
-            if (player_timer < note_period)
+            if (player_timer < note_period) {
                 break;
+            }
             // Reset tick counter
             // Subtract time from it instead of zeroing it in case some ticks
             // were "missed" due to insufficiently fast polling.  Doing this
@@ -967,10 +1024,12 @@ void player_service(void)
             player_timer -= note_period;
             // If the note has a rest period, advance to the rest state.
             // Otherwise, skip rest state and resume note/command scanning.
-            if (rest_period)
+            if (rest_period) {
                 state = STATE_START_REST;
-            else
+            }
+            else {
                 state = STATE_GET_NOTE;
+            }
             continue;
         }
 
@@ -995,8 +1054,9 @@ void player_service(void)
 
         else if (state == STATE_WAIT_REST) {
             // Wait until rest period has elapsed
-            if (player_timer < rest_period)
+            if (player_timer < rest_period) {
                 break;
+            }
             // Reset tick counter
             // Subtract time from it instead of zeroing it in case some ticks
             // were "missed" due to insufficiently fast polling.  Doing this
@@ -1044,8 +1104,9 @@ void player_service(void)
             number = 0;
             // Skip past (optional) data separator
             ch = next_player_char();
-            if (! is_separator(ch))
-                player_ptr--;
+            if (is_separator(ch)) {
+                ch = next_player_char();
+            }
             // Advance to state that will decode the multi-digit number
             state = STATE_GET_NUMBER_2;
             continue;
@@ -1058,20 +1119,16 @@ void player_service(void)
         // non-digit character is encountered.
 
         else if (state == STATE_GET_NUMBER_2) {
-            // Get (next) digit of number
-            ch = next_player_char();
-            // If digit is valid, decimal-shift it into accumulator
-            if ((ch >= '0') && (ch <= '9')) {
+            while (is_digit(ch)) {
                 ch -= '0';
                 number = (number * 10) + ch;
+                ch = next_player_char();
             }
             // If not a valid digit, end of number has been reached.
             // Back up pointer so non-digit char is processed as a note/command.
             // Advance to state that will utilize numeric parameter
-            else {
-                player_ptr--;
-                state = next_state;
-            }
+            player_ptr--;
+            state = next_state;
             continue;
         }
 
@@ -1091,8 +1148,9 @@ void player_service(void)
 
         else if (state == STATE_SET_NOTE_RATIO) {
             // Bound ratio to maximum
-            if (digit > 8)
+            if (digit > 8) {
                 digit = 8;
+            }
             // Set note/rest ratio and resume note/command scanning
             note_rest_ratio = digit;
             state = STATE_GET_NOTE;
@@ -1111,9 +1169,10 @@ void player_service(void)
             // Volume > 0, set PGA to selected volume
             else {
                 digit--;                // 1..8 -> 0..7
-                if (digit > 7)          // Bound to maximum setting
+                if (digit > 7) {        // Bound to maximum setting
                     digit = 7;
-                beep_gain(digit);       // Set PGA gain to volume
+                }
+                beep_gain(digit);       // Set volume
                 beep_mute(0);           // Un-mute speaker
             }
             // Resume note/command scanning
@@ -1129,10 +1188,12 @@ void player_service(void)
         else if (state == STATE_SET_TRANSPOSITION) {
             // Set new transposition value if it is within a one-octave range.
             // Otherwise, force it to 0
-            if (number < NOTES_PER_OCTAVE)
+            if (number < NOTES_PER_OCTAVE) {
                 transposition = number;
-            else
+            }
+            else {
                 transposition = 0;
+            }
             // Resume note/command scanning
             state = STATE_GET_NOTE;
             continue;
@@ -1141,9 +1202,10 @@ void player_service(void)
         // SET KEY state
 
         else if (state == STATE_SET_KEY) {
-            for (digit = 0; digit < 7; digit++)
+            for (digit = 0; digit < 7; digit++) {
                 scale[digit] = pgm_read_byte(&c_major_scale[digit]);
-            accidental = +1;            // Default: Sharps
+            }
+            accidental = ACCIDENTAL_SHARP;  // Default: Sharps
             state = STATE_SET_KEY_2;
             continue;
         }
@@ -1160,15 +1222,15 @@ void player_service(void)
                 continue;
             }
             else if (is_flat(ch)) {
-                accidental = -1;
+                accidental = ACCIDENTAL_FLAT;
                 continue;
             }
             else if (is_natural(ch)) {
-                accidental = 0;
+                accidental = ACCIDENTAL_NATURAL;
                 continue;
             }
             else if (is_sharp(ch)) {
-                accidental = +1;
+                accidental = ACCIDENTAL_SHARP;
                 continue;
             }
             player_ptr--;
@@ -1195,17 +1257,23 @@ void player_service(void)
         // note timing is based.
 
         else if (state == STATE_SET_TEMPO_2) {
+            // Use 120 BPM if no BPM rate specified
+            if (!number) {
+                number = DEFAULT_TEMPO;
+            }
             // Both note unit (<note_size>, <size_modifier>) and beats/min
             // (<number>) parameters have been fetched
             // Calculate whole note period based on these parameters
             whole_note_period =
-                (uint16_t) (PLAYER_TICKS_PER_SECOND * 60 * (uint32_t) number / note_size);
-            // Add 50% to beat time if dotted
-            if (size_modifier & 0x01)
+                (uint16_t) (PLAYER_TICKS_PER_SECOND * 60U * (uint32_t) note_size / number);
+           // Add 50% to beat time if dotted
+            if (size_modifier & MOD_DOTTED) {
                 whole_note_period += whole_note_period >> 1;
+            }
             // One-thrid of beat time if tripleted
-            if (size_modifier & 0x02)
+            if (size_modifier & MOD_TRIPLET) {
                 whole_note_period /= 3;
+            }
             // Resume note/command scanning
             state = STATE_GET_NOTE;
             continue;            
@@ -1235,10 +1303,12 @@ void player_service(void)
             // Both bookmark # <digit> and repeat count <number> have
             // been fetched.  Set bookmark based on these parameters,
             // along with the present value of <player_ptr>.
-            if (number > 0xFE)          // Bound repeat count to 8-bit max - 1
+            if (number > 0xFE) {        // Bound repeat count to 8-bit max - 1
                 number = 0xFE;
-            if (! number)               // Repeat count of 0 means "infinite"
+            }
+            if (! number) {             // Repeat count of 0 means "infinite"
                 number = 0xFF;
+            }
             bookmark[digit].repeat = number;
             bookmark[digit].position = player_ptr;
             // Resume note/command scanning
@@ -1258,8 +1328,9 @@ void player_service(void)
             //   - Bookmark repeat count is not 0
             if (bookmark[digit].repeat && bookmark[digit].position) {
                 // Decrement repeat count if it is not 'infinite'
-                if (bookmark[digit].repeat != 0xFF)
+                if (bookmark[digit].repeat != 0xFF) {
                     bookmark[digit].repeat--;
+                }
                 player_ptr = bookmark[digit].position;
             }
             // Resume note/command processing at new position
@@ -1272,24 +1343,16 @@ void player_service(void)
         // encountered or a parsing error occurs.
 
         else if (state == STATE_STOP) {
-            beep_mute(1);
-            beep_period(0xFFFF, PRESCALE_STOP);
-            state = STATE_IDLE;
-            player_mem_space = PLAYER_STOP;
+            player_stop();
+            state = STATE_RESET;
             break;
         }
 
-        // Idle state - playback inactive
-
-        else if (state == STATE_IDLE) {
-            break;
-        }
-
-        // Unknown state - force to idle
+        // Unknown state - force to STOP
 
         else {
-            state = STATE_IDLE;
-            break;
+            state = STATE_STOP;
+            continue;
         }
     } while (1);
 }

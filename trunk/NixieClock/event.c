@@ -2,7 +2,7 @@
 Name:       event.c
 Project:    NixieClock
 Author:     Mark Schultz <n9xmj@yahoo.com>, Daniel Henderson <tindrum@mac.com>
-Date:       23-Mar-2009
+Date:       24-Mar-2009
 Tabsize:    4
 Copyright:  None
 License:    None
@@ -157,6 +157,30 @@ event_t get_next_event(void)
             if (event_queue_tail >= EVENT_QUEUE_SIZE) {
                 event_queue_tail = 0;
             }
+        }
+        else {
+            event.event = NO_EVENT;
+            event.data = 0;
+        }
+    }
+
+    return event;
+}
+
+/******************************************************************************
+ *
+ ******************************************************************************/
+
+event_t unget_next_event(void)
+{
+    event_t event;
+
+    scan_for_events();
+
+    ATOMIC_BLOCK(ATOMIC_RESTORESTATE)
+    {
+        if (event_queue_head != event_queue_tail) {
+            event = event_queue[event_queue_tail];
         }
         else {
             event.event = NO_EVENT;
