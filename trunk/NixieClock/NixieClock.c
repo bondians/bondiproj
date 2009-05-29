@@ -162,6 +162,7 @@ int main(void)
     nixie_stream_init(&primary, &primary_stream, primary_data);
     nixie_stream_init(&secondary, &secondary_stream, secondary_data);
     nixie_show_stream(&primary);
+    nixie_display_enable(1);
 
     // Ok to enable interrupts now
 
@@ -178,13 +179,25 @@ int main(void)
     do {
         getstr(str, 40);
         player_start(str, PLAYER_MEM_RAM);
-    } while (1);
+    } while (*str != '/');
+
+    // Crossfade test
+
+    fprintf_P(&primary, PSTR("~123*5456~\r"));
+    fprintf_P(&secondary, PSTR("*5654~321\r"));
+    delay_ms(1000);
+    nixie_crossfade(&secondary);
+    nixie_out('\f', &secondary);
+    delay_ms(1000);
+    nixie_crossfade(&secondary);
+    delay_ms(1000);
 
     // Clock display test
 
     do {
         get_time_24(&time);
-        fprintf_P(&primary, PSTR("\r%02u.%02u.%02u"), time.hour, time.minute, time.second);
+        fprintf_P(&secondary, PSTR("\r%02u.%02u.%02u"), time.hour, time.minute, time.second);
+        nixie_crossfade(&secondary);
 
         do {
             event = wait_next_event();

@@ -22,15 +22,95 @@ Content:    Button decoding routines
 
 //------------------------------------------------------------------------------
 
+// Enable flag for button scanning routine button_scan()
+
+static uint8_t button_scan_enable;
+
+// Undebounced button status
 static volatile button_t button_state;
+
+// Debounced button status
 static volatile button_t button_debounced;
+
+// Stable button pattern held for > BUTTON_CHORD_DELAY
 static volatile button_t button_chord;
+
+// Latched buttons pressed, set only once per press
 static volatile button_t button_pressed;
+
+// Latched buttons released, set only once per release
 static volatile button_t button_released;
+
+// Latched buttons pressed > BUTTON_SHORT_DELAY, set when button(s) released
 static volatile button_t button_short;
+
+// Latched buttons pressed > BUTTON_LONG_DELAY, set after button held long enough
 static volatile button_t button_long;
 
+// Un-debounced button state from last button_scan()
+static volatile button_t button_previous;
+
+// Timer used to determine when a button chord has been held long enough
+// Reset whenever button press pattern changes
+static volatile uint16_t button_stable;
+
+// Button debounce timers, one per button
 static volatile uint16_t button_timer[NUM_BUTTONS];
+
+/******************************************************************************
+ * reset_buttons()
+ *
+ * Reset all button registers & timers
+ *
+ * Inputs:  None
+ *
+ * Returns: Nothing
+ ******************************************************************************/
+
+void reset_buttons(void)
+{
+    uint8_t index;
+
+    // Disable button scanning while resetting
+
+    button_scan_enable = 0;
+
+    // Reset all button-down timers
+
+    for (index = 0; index < NUM_BUTTONS; index++) {
+        button_timer[index] = 0;
+    }
+
+    // Clear all button status registers
+
+    button_state.all = 0;
+    button_debounced.all = 0;
+    button_chord.all = 0;
+    button_pressed.all = 0;
+    button_released.all = 0;
+    button_short.all = 0;
+    button_long.all = 0;
+    button_previous.all = 0;
+
+    // Enable button scanning
+
+    button_scan_enable = 1;
+}
+
+/******************************************************************************
+ * button_enable(enable)
+ *
+ * Enable or disable button scanning
+ *
+ * Inputs:  None
+ *
+ * Returns: Nothing
+ ******************************************************************************/
+
+void button_enable(uint8_t enable)
+{
+    button_scan_enable = enable;
+}
 
 /******************************************************************************
  * button_t read_button_state()
@@ -370,8 +450,11 @@ void button_scan(void)
     volatile register uint16_t *down_time_p; // Ptr to button-down timers
     register uint16_t down_time;        // Current button down timer value
 
-    static button_t previous_button;    // Un-debounced button state from last entry
-    static uint16_t button_stable;      // Amount of time button pattern has been stable
+    // Exit if scanning disabled
+
+    if (!button_scan_enable) {
+        return;
+    }
 
     // Read current button status and store as present button state
     //
@@ -416,7 +499,7 @@ void button_scan(void)
     // A button "chord" is valid if the button state has not changed
     // for a sufficiently long period of time (BUTTON_CHORD_DELAY).
 
-    if (button.all == previous_button.all) {
+    if (button.all == button_previous.all) {
         if (~button_stable) {   // Counter overflow check
             button_stable++;
         }
@@ -495,5 +578,5 @@ void button_scan(void)
         mask <<= 1;
     }
 
-    previous_button = button;
+    button_previous = button;
 }

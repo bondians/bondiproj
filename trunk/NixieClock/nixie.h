@@ -84,9 +84,23 @@ typedef struct {
 
 //------------------------------------------------------------------------------
 
+// Perform nixie display refresh (typically called from interrupt)
 void nixie_display_refresh(void);
+
+// Enable or disable nixie display
+void nixie_display_enable(uint8_t enable);
+
+// Set up a nixie display output stream (create 'virtual' displays)
 void nixie_stream_init(FILE *stream, nixie_stream_t *control, uint8_t *segdata);
+
+// Select output stream to present on nixie display
 void nixie_show_stream(FILE *stream);
+
+// Cross-fade display from current display segment pattern to another
+void nixie_crossfade(FILE *to_stream);
+
+// Character-oriented output to a display stream, stdio-compatible
+// Converts character data to a nixie segment pattern
 int16_t nixie_out(char ch, FILE *stream);
 
 #endif  // NIXIE_H

@@ -55,6 +55,14 @@ typedef union {
 
 // Public/exported functions
 
+// Reset button scanner, clear all button status registers
+
+void reset_buttons(void);
+
+// Enable or disable button scanning
+
+void button_enable(uint8_t enable);
+ 
 // Read un-debounced button status
 
 button_t read_button_state(void);
