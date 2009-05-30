@@ -2,7 +2,7 @@
 Name:       main.c
 Project:    NixieClock
 Author:     Mark Schultz <n9xmj@yahoo.com>, Daniel Henderson <tindrum@mac.com>
-Date:       24-Mar-2009
+Date:       29-Mar-2009
 Tabsize:    4
 Copyright:  None
 License:    None
@@ -16,7 +16,7 @@ Content:    Main program
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include <avr/pgmspace.h>
-#include <avr/wdt.h>
+//#include <avr/wdt.h>
 #include <avr/eeprom.h>
 #include <string.h>
 #include <stdio.h>
@@ -32,6 +32,7 @@ Content:    Main program
 #include "player.h"
 #include "event.h"
 #include "clock.h"
+#include "ClockDisplay.h"
 
 //------------------------------------------------------------------------------
 
@@ -111,10 +112,6 @@ void getstr(char *str, uint8_t max_len)
 
 int main(void)
 {
-    event_t event;
-    time_t time;
-    date_t date;
-
     // Initialize I/O's
 
     DDRB = 0b00101111;
@@ -130,26 +127,18 @@ int main(void)
 
     // Initialize peripherals
 
-    spi_init();
     serial_init(38400, IN_OUT_INT);
+    spi_init();
     rotary_init();
     timer_init();
     beeper_init();
+    time_date_init();
+
     clock_run(1);
-    delay_us(1000);         // Needed for FTDI USB-serial IC stabilization?
+    button_enable(1);
 
     // Set default time & date
 
-    time.hour = 12;
-    time.minute = 0;
-    time.second = 0;
-    set_time_24(&time);
-
-    date.day = 1;
-    date.month = 1;
-    date.year = 2009;
-    set_date(&date);
-    
     // Assign stdio file handles to use serial port
     // Note: serial_f is declared in serial.c/.h
 
@@ -170,6 +159,7 @@ int main(void)
 
     // Send sign-on message to serial port
 
+    delay_us(1000);         // Needed for FTDI USB-serial IC stabilization?
     printf_P(PSTR("\r\n%S\r\n"), hello);
 
     // Player test
@@ -183,28 +173,21 @@ int main(void)
 
     // Crossfade test
 
-    fprintf_P(&primary, PSTR("~123*5456~\r"));
-    fprintf_P(&secondary, PSTR("*5654~321\r"));
+    nixie_crossfade_rate(3);
+    fprintf_P(&primary, PSTR("123456\r"));
+    fprintf_P(&secondary, PSTR("654321\r"));
     delay_ms(1000);
     nixie_crossfade(&secondary);
     nixie_out('\f', &secondary);
     delay_ms(1000);
     nixie_crossfade(&secondary);
     delay_ms(1000);
+    nixie_crossfade_rate(0);
 
-    // Clock display test
+    ClockDisplay();
 
-    do {
-        get_time_24(&time);
-        fprintf_P(&secondary, PSTR("\r%02u.%02u.%02u"), time.hour, time.minute, time.second);
-        nixie_crossfade(&secondary);
+/* Event handler test
 
-        do {
-            event = wait_next_event();
-        } while (event.event != ONE_SECOND_ELAPSED);
-    } while (1);
-        
-/*
     event_t event;
     uint8_t timer_id;
     uint32_t count = 0;
@@ -229,12 +212,5 @@ int main(void)
 /* Nixie output test
 
     int16_t ch;
-    do {
-        do {
-            ch = serial_in();
-        } while (ch  < 0);
-        serial_out(ch);
-        nixie_out(ch, &primary);
-    } while (1);
 */
 }

@@ -132,6 +132,19 @@ void timer_restart(uint8_t timer_id, uint16_t period, uint8_t recurring)
  *
  ******************************************************************************/
 
+void timer_reset(uint8_t timer_id)
+{
+    ATOMIC_BLOCK(ATOMIC_RESTORESTATE)
+    {
+        timer_count[timer_id] = timer_period[timer_id];
+        timer_flag &= (uint8_t) ~(1 << timer_id);
+    }
+}
+
+/******************************************************************************
+ *
+ ******************************************************************************/
+
 uint16_t timer_read(uint8_t timer_id)
 {
     uint16_t count;

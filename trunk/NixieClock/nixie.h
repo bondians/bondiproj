@@ -2,7 +2,7 @@
 Name:       nixie.h
 Project:    NixieClock
 Author:     Mark Schultz <n9xmj@yahoo.com>, Daniel Henderson <tindrum@mac.com>
-Date:       20-Mar-2009
+Date:       29-Mar-2009
 Tabsize:    4
 Copyright:  None
 License:    None
@@ -36,6 +36,10 @@ Content:    Nixie display driver routines
 // F_CPU = 16000000), determines the display PWM period.
 
 #define MAX_NIXIE_INTENSITY     9
+
+// Maximum (slowest) nixie display crossfade rate
+
+#define MAX_NIXIE_CROSSFADE_RATE 3
 
 // Digit offsets for neon lamps (as used by set_nixie_segment())
 
@@ -98,6 +102,9 @@ void nixie_show_stream(FILE *stream);
 
 // Cross-fade display from current display segment pattern to another
 void nixie_crossfade(FILE *to_stream);
+
+// Set nixie display crossfade rate
+void nixie_crossfade_rate(uint8_t rate);
 
 // Character-oriented output to a display stream, stdio-compatible
 // Converts character data to a nixie segment pattern

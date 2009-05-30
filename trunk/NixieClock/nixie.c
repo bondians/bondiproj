@@ -2,7 +2,7 @@
 Name:       nixie.c
 Project:    NixieClock
 Author:     Mark Schultz <n9xmj@yahoo.com>, Daniel Henderson <tindrum@mac.com>
-Date:       20-Mar-2009
+Date:       29-Mar-2009
 Tabsize:    4
 Copyright:  None
 License:    None
@@ -144,14 +144,12 @@ FILE        I/O stream object from stdio library
 typedef union {
     uint8_t all;
     struct {
-        uint8_t refresh_enable  : 1;    // Display refresh enable
-        uint8_t one_cycle_only  : 1;    // Refresh only one full PWM cycle, then stop
-        uint8_t unused2         : 1;
-        uint8_t unused3         : 1;
-        uint8_t slow_crossfade  : 1;
-        uint8_t fade_toggle     : 1;
-        uint8_t unused6         : 1;
+        uint8_t crossfade_rate  : 2;    // Rate at which crossfade occurs (0=fastest)
+        uint8_t crossfade_count : 2;    // Counter used for crossfade timing
+        uint8_t unused4         : 1;
         uint8_t one_cycle_done  : 1;    // One full refresh PWM cycle completed
+        uint8_t one_cycle_only  : 1;    // Refresh only one full PWM cycle, then stop
+        uint8_t refresh_enable  : 1;    // Display refresh enable
     };
 } nixie_control_t;
 
@@ -161,7 +159,7 @@ typedef union {
 static uint8_t *nixie_segment_ptr;
 
 // Nixie display control & status flags
-static volatile nixie_control_t nixie_control = {0b00010000};
+static volatile nixie_control_t nixie_control = {0b10000000};
 
 //------------------------------------------------------------------------------
 
@@ -172,7 +170,7 @@ static const uint8_t nixie_digit_offset[] PROGMEM =
   {0, 10, 21, 32, 43, 53, 20, 42, 31, 63};
 // 0   1   2   3   4   5  LL  RL  AA  AB
 // LL,RL = Left/Right lamp "decimal points"
-
+// AA,AB = Aux output A/B
 /******************************************************************************
  * nixie_display_refresh()
  *
@@ -285,8 +283,8 @@ void nixie_display_refresh(void)
  *
  * Returns: Nothing
  *
- * Notes: Display is blanked and display refresh suspended if <enable> is
- *        0/FALSE.
+ * Notes:   Display is blanked and display refresh suspended if <enable> is
+ *          0/FALSE.
  ******************************************************************************/
 
 void nixie_display_enable(uint8_t enable)
@@ -445,6 +443,7 @@ void nixie_crossfade(FILE *to_stream)
     {
         nixie_control.one_cycle_only = 1;
         nixie_control.one_cycle_done = 0;
+        nixie_control.crossfade_count = 3;
     }
 
     do {
@@ -465,12 +464,11 @@ void nixie_crossfade(FILE *to_stream)
         // Perform crossfade intensity adjustment only every other cycle if
         // slow crossfade mode is enabled
 
-        if (nixie_control.slow_crossfade) {
-            nixie_control.fade_toggle = !nixie_control.fade_toggle;
-            if (nixie_control.fade_toggle) {
-                nixie_control.refresh_enable = 1;
-                continue;
-            }            
+        if (nixie_control.crossfade_count < nixie_control.crossfade_rate) {
+            nixie_control.refresh_enable = 1;
+            nixie_control.crossfade_count++;
+            activity = 1;
+            continue;
         }
 
         // Fade segments that are ON in "to" display up 
@@ -500,11 +498,32 @@ void nixie_crossfade(FILE *to_stream)
         // One crossfade cycle completed, perform another PWM cycle
 
         nixie_control.refresh_enable = 1;
+        nixie_control.crossfade_count = 0;
     } while (activity);
 
     // Crossfading complete, enable normal display refresh
 
     nixie_control.one_cycle_only = 0;
+}
+
+/******************************************************************************
+ * nixie_crossfade_rate(rate)
+ *
+ * Set rate at which display is crossfaded when using nixie_crossfade()
+ *
+ * Inputs:  rate    Rate at which display is crossfaded.  0 is fastest,
+ *                  the maximum value of 3 is slowest.
+ *
+ * Returns: Nothing
+ ******************************************************************************/
+
+void nixie_crossfade_rate(uint8_t rate)
+{
+    ATOMIC_BLOCK(ATOMIC_RESTORESTATE)
+    {
+        nixie_control.crossfade_rate =
+            (rate <= MAX_NIXIE_CROSSFADE_RATE) ? rate : MAX_NIXIE_CROSSFADE_RATE;
+    }
 }
 
 /******************************************************************************

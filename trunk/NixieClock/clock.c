@@ -42,13 +42,13 @@ void get_time_12(time_t *t, uint8_t *am_pm)
         *t = time;
     }
 
-    (t->hour)++;
-    if (t->hour > 12) {
-        t->hour -= 12;
-        *am_pm = 1;
+    *am_pm = (t->hour >= 12);
+
+    if (t->hour == 0) {
+        t->hour = 12;
     }
-    else {
-        *am_pm = 0;
+    else if (t->hour > 12) {
+        t->hour -= 12;
     }
 }
 
@@ -115,6 +115,26 @@ void set_date(date_t *d)
         date = *d;
     }
 }
+
+/******************************************************************************
+ *
+ ******************************************************************************/
+
+void time_date_init(void)
+{
+    time_t time;
+    date_t date;
+
+    time.hour = 12;
+    time.minute = 0;
+    time.second = 0;
+    set_time_24(&time);
+
+    date.day = 1;
+    date.month = 1;
+    date.year = 2009;
+    set_date(&date);
+}    
 
 /******************************************************************************
  *

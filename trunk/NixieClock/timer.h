@@ -53,6 +53,7 @@ void timer_init(void);
 uint8_t timer_start(uint16_t period, uint8_t recurring);
 void timer_stop(uint8_t timer_id);
 void timer_restart(uint8_t timer_id, uint16_t period, uint8_t recurring);
+void timer_reset(uint8_t timer_id);
 uint16_t timer_read(uint8_t timer_id);
 uint8_t timer_expired(uint8_t timer_id, uint8_t reset);
 uint8_t timer_status(void);

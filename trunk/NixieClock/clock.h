@@ -45,6 +45,8 @@ void set_time_24(time_t *t);
 void get_date(date_t *d);
 void set_date(date_t *d);
 
+void time_date_init(void);
+
 void clock_run(uint8_t run_flag);
 
 void time_date_update(void);
