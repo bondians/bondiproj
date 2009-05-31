@@ -38,7 +38,8 @@ Content:    Main program
 
 const char hello[] PROGMEM = "NixieClock v1.00 (a Deep Bondi thing)";
 
-const char player_test[] PROGMEM = "TQ:120:M8:O4[0:3:CQDEFGAB>]0:CW";
+//const char player_test[] PROGMEM = "TQ:120:M8:O4[0:3:CQDEFGAB>]0:CW";
+const char player_test[] PROGMEM = "TQ:120:M8:O4:CHGFIED>CH<GFIED>CH<GFIEFDH.";
 
 //------------------------------------------------------------------------------
 
@@ -165,11 +166,13 @@ int main(void)
     // Player test
 
     player_start(player_test, PLAYER_MEM_PGM);
+/*
     static char str[41];
     do {
         getstr(str, 40);
         player_start(str, PLAYER_MEM_RAM);
     } while (*str != '/');
+*/
 
     // Crossfade test
 

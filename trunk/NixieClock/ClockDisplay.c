@@ -59,7 +59,7 @@ void TerminalMode(void)
     fprintf_P(&primary, PSTR("\v\f"));
  
     do {
-        event = get_next_event();
+        event = get_next_event(0);
         if (event.event == BUTTON1_PRESSED) {
             break;
         }
@@ -162,7 +162,7 @@ void ClockDisplay(void)
 
         nixie_crossfade(&secondary);
 
-        event = wait_next_event();
+        event = wait_next_event(0);
 
         if (event.event == BUTTON0_PRESSED) {
             display_mode = (display_mode == MODE_DATE) ?

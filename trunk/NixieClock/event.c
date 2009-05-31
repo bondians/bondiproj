@@ -25,6 +25,7 @@ Content:    Event queue management
 
 //------------------------------------------------------------------------------
 
+
 static volatile uint8_t event_queue_head;
 static volatile uint8_t event_queue_tail;
 static event_t event_queue[EVENT_QUEUE_SIZE];
@@ -142,29 +143,138 @@ static void scan_for_events()
  *
  ******************************************************************************/
 
-event_t get_next_event(void)
+uint8_t is_button_pressed_event(event_id event)
+{
+    return ((event < LAST_BUTTON_EVENT) &&
+            !((event - BUTTON0_PRESSED) & 0x03));
+}
+
+/******************************************************************************
+ *
+ ******************************************************************************/
+
+uint8_t is_button_released_event(event_id event)
+{
+    return ((event < LAST_BUTTON_EVENT) &&
+            !((event - BUTTON0_RELEASED) & 0x03));
+}
+
+/******************************************************************************
+ *
+ ******************************************************************************/
+
+uint8_t is_button_short_event(event_id event)
+{
+    return ((event < LAST_BUTTON_EVENT) &&
+            !((event - BUTTON0_SHORT) & 0x03));
+}
+
+/******************************************************************************
+ *
+ ******************************************************************************/
+
+uint8_t is_button_long_event(event_id event)
+{
+    return ((event < LAST_BUTTON_EVENT) &&
+            !((event - BUTTON0_LONG) & 0x03));
+}
+
+/******************************************************************************
+ *
+ ******************************************************************************/
+
+uint8_t is_button_chord_event(event_id event)
+{
+    return (event == BUTTON_CHORD);
+}
+
+/******************************************************************************
+ *
+ ******************************************************************************/
+
+uint8_t is_button_event(event_id event)
+{
+    return ((event < LAST_BUTTON_EVENT) || (event == BUTTON_CHORD));
+}
+
+/******************************************************************************
+ *
+ ******************************************************************************/
+
+uint8_t is_left_rotary_event(event_id event)
+{
+    return (event == LEFT_ROTARY_MOVED);
+}
+
+/******************************************************************************
+ *
+ ******************************************************************************/
+
+uint8_t is_right_rotary_event(event_id event)
+{
+    return (event == RIGHT_ROTARY_MOVED);
+}
+
+/******************************************************************************
+ *
+ ******************************************************************************/
+
+uint8_t is_rotary_event(event_id event)
+{
+    return ((event == LEFT_ROTARY_MOVED) || (event == RIGHT_ROTARY_MOVED));
+}
+
+/******************************************************************************
+ *
+ ******************************************************************************/
+
+uint8_t is_timer_event(event_id event)
+{
+    return ((event == TIMER_EXPIRED) || (event == ONE_SECOND_ELAPSED));
+}
+
+/******************************************************************************
+ *
+ ******************************************************************************/
+
+event_t get_next_event(uint8_t mask)
 {
     event_t event;
 
-    scan_for_events();
+    do {
+        scan_for_events();
 
-    ATOMIC_BLOCK(ATOMIC_RESTORESTATE)
-    {
-        if (event_queue_head != event_queue_tail) {
-            event = event_queue[event_queue_tail];
+        ATOMIC_BLOCK(ATOMIC_RESTORESTATE)
+        {
+            if (event_queue_head != event_queue_tail) {
+                event = event_queue[event_queue_tail];
  
-            event_queue_tail++;
-            if (event_queue_tail >= EVENT_QUEUE_SIZE) {
-                event_queue_tail = 0;
+                event_queue_tail++;
+                if (event_queue_tail >= EVENT_QUEUE_SIZE) {
+                    event_queue_tail = 0;
+                }
+            }
+            else {
+                event.event = NO_EVENT;
+                event.data = 0;
             }
         }
-        else {
-            event.event = NO_EVENT;
-            event.data = 0;
-        }
-    }
+    } while (0);
 
     return event;
+}
+
+/******************************************************************************
+ *
+ ******************************************************************************/
+
+event_t wait_next_event(uint8_t mask)
+{
+    while (event_queue_head == event_queue_tail) {
+        scan_for_events();
+    }
+
+    return get_next_event(mask);
 }
 
 /******************************************************************************
@@ -191,15 +301,3 @@ event_t unget_next_event(void)
     return event;
 }
 
-/******************************************************************************
- *
- ******************************************************************************/
-
-event_t wait_next_event(void)
-{
-    while (event_queue_head == event_queue_tail) {
-        scan_for_events();
-    }
-
-    return get_next_event();
-}

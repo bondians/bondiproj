@@ -23,6 +23,17 @@ Note:       All public functions in this library are thread-safe
 
 //------------------------------------------------------------------------------
 
+// Event type masks
+
+#define EM_PRESSED          (1 << 0)
+#define EM_RELEASE          (1 << 1)
+#define EM_SHORT            (1 << 2)
+#define EM_LONG             (1 << 3)
+#define EM_LEFTR            (1 << 4)
+#define EM_RIGHTR           (1 << 5)
+#define EM_CHORD            (1 << 6)
+#define EM_TIMER            (1 << 7)
+
 // Event types
 //
 // Note: The scan_for_events() function assumes a specific ordering of event
@@ -66,6 +77,8 @@ typedef enum {
     LEFT_BUTTON_SHORT,
     LEFT_BUTTON_LONG,
 
+    LAST_BUTTON_EVENT,      // Not an event, marks position in list
+
     BUTTON_CHORD,
 
     RIGHT_ROTARY_MOVED,
@@ -97,15 +110,28 @@ void add_event(event_id event, uint8_t data);
 
 // Remove/return an event from the event queue
 
-event_t get_next_event(void);
+event_t get_next_event(uint8_t mask);
+
+// Remove/return an event from the event queue.
+// Wait for a new event to occur if the queue is empty (blocking call)
+
+event_t wait_next_event(uint8_t mask);
 
 // Return next event in event queue, but do not remove it
 
 event_t unget_next_event(void);
 
-// Remove/return an event from the event queue.
-// Wait for a new event to occur if the queue is empty (blocking call)
+// Event identification functions
 
-event_t wait_next_event(void);
+uint8_t is_button_pressed_event(event_id event);
+uint8_t is_button_released_event(event_id event);
+uint8_t is_button_short_event(event_id event);
+uint8_t is_button_long_event(event_id event);
+uint8_t is_button_chord_event(event_id event);
+uint8_t is_button_event(event_id event);
+uint8_t is_left_rotary_event(event_id event);
+uint8_t is_right_rotary_event(event_id event);
+uint8_t is_rotary_event(event_id event);
+uint8_t is_timer_event(event_id event);
 
 #endif  // EVENT_H
