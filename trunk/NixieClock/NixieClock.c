@@ -198,7 +198,7 @@ int main(void)
     timer_id = timer_start(MS_TO_TICKS(5000), 1);
 
     do {
-        event = get_next_event();
+        event = get_next_event(0);
         if (event.event != NO_EVENT) {
            printf_P(PSTR("Event:%02u (%02X)  Data:%4d (%02X)\r\n"),
                   event.event, event.event, (int8_t) event.data, event.data);
@@ -210,10 +210,5 @@ int main(void)
             count = 0;
         }
     } while (1);
-*/
-
-/* Nixie output test
-
-    int16_t ch;
 */
 }
