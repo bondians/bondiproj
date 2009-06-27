@@ -848,7 +848,7 @@ int16_t nixie_out(char ch, FILE *stream)
             break;
 
         case '~' :                      // Set intensity to max/nominal
-            p->intensity = MAX_NIXIE_INTENSITY;
+            p->intensity = NOMINAL_NIXIE_INTENSITY;
             break;
 
         case '$' :                      // Enable cursor auto-increment

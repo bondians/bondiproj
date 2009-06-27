@@ -37,6 +37,8 @@ typedef struct {
 
 // Public (exported) functions
 
+void hour_24_to_12(uint8_t hour_24, uint8_t *hour_12, uint8_t *am_pm);
+
 void get_time_12(time_t *t, uint8_t *am_pm);
 void get_time_24(time_t *t);
 void set_time_12(time_t *t, uint8_t am_pm);
@@ -44,6 +46,8 @@ void set_time_24(time_t *t);
 
 void get_date(date_t *d);
 void set_date(date_t *d);
+
+uint8_t days_in_month(uint8_t month, uint16_t year);
 
 void time_date_init(void);
 

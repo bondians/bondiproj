@@ -37,6 +37,10 @@ Content:    Nixie display driver routines
 
 #define MAX_NIXIE_INTENSITY     9
 
+// Default/normal nixie intensity level ('~' level)
+
+#define NOMINAL_NIXIE_INTENSITY 9
+
 // Maximum (slowest) nixie display crossfade rate
 
 #define MAX_NIXIE_CROSSFADE_RATE 3

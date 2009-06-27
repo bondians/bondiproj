@@ -27,9 +27,26 @@ static uint8_t run;
 
 //------------------------------------------------------------------------------
 
-const uint8_t days_in_month[] PROGMEM =
+const uint8_t days_month[] PROGMEM =
     {00, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 //       Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec
+
+/******************************************************************************
+ *
+ ******************************************************************************/
+
+void hour_24_to_12(uint8_t hour_24, uint8_t *hour_12, uint8_t *am_pm)
+{
+    *am_pm = (hour_24 >= 12);
+
+    *hour_12 = hour_24;
+    if (hour_24 == 0) {
+        *hour_12 = 12;
+    }
+    else if (hour_24 > 12) {
+        *hour_12 -= 12;
+    }
+}
 
 /******************************************************************************
  *
@@ -42,14 +59,7 @@ void get_time_12(time_t *t, uint8_t *am_pm)
         *t = time;
     }
 
-    *am_pm = (t->hour >= 12);
-
-    if (t->hour == 0) {
-        t->hour = 12;
-    }
-    else if (t->hour > 12) {
-        t->hour -= 12;
-    }
+    hour_24_to_12(t->hour, &(t->hour), am_pm);
 }
 
 /******************************************************************************
@@ -120,6 +130,25 @@ void set_date(date_t *d)
  *
  ******************************************************************************/
 
+uint8_t days_in_month(uint8_t month, uint16_t year)
+{
+    uint8_t ret;
+
+    ret = pgm_read_byte(&days_month[month]);
+
+    if ((month == 2) &&
+        ((year & 0x0003) == 0) &&
+        ((year % 100) != 0)) {
+        ret++;
+    }
+
+    return ret;
+}
+
+/******************************************************************************
+ *
+ ******************************************************************************/
+
 void time_date_init(void)
 {
     time_t time;
@@ -168,24 +197,11 @@ void time_date_update(void)
                 time.hour = 0;
  
                 date.day++;
-                if (date.day > pgm_read_byte(&days_in_month[date.month])) {
-
-                    // Leap-year logic - Add a leap-day if:
-                    // - Month is February (2), and
-                    // - Year is evenly divisible by 4, and
-                    // - Year is not evenly divisible by 100, and
-                    // - A leap-day has not already been added
-
-                    if ((date.month != 2) ||
-                        (date.year & 0x0004) || !(date.year % 100) ||
-                        (date.day > pgm_read_byte(&days_in_month[date.month]))) {
-                        date.day = 1;
-
-                        date.month++;
-                        if (date.month > 12) {
-                            date.month = 1;
-                            date.year++;
-                        }
+                if (date.day > days_in_month(date.month, date.year)) {
+                    date.month++;
+                    if (date.month > 12) {
+                        date.month = 1;
+                        date.year++;
                     }
                 }
             }

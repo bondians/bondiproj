@@ -111,6 +111,45 @@ void getstr(char *str, uint8_t max_len)
  *
  ******************************************************************************/
 
+void display_test(void)
+{
+    uint8_t digit;
+    uint8_t index;
+    uint8_t timer_id;
+    event_t event;
+
+    timer_id = timer_start(MS_TO_TICKS(1000), 1);
+    nixie_crossfade_rate(3);
+
+    for (digit = '0'; digit <= '9'; digit++) {
+        if (digit & 0x01) {
+            fputs_P(PSTR("\r`XY"), &secondary);
+        }
+        else {
+            fputs_P(PSTR("\r<>xy"), &secondary);
+        }
+        for (index = 0; index < NIXIE_DISPLAY_WIDTH; index++) {
+            fputc(digit, &secondary);
+        }
+
+        nixie_crossfade(&secondary);
+
+        do {
+            event = wait_next_event(0);
+        } while (event.event == ONE_SECOND_ELAPSED);
+
+        if (event.event != TIMER_EXPIRED) {
+            break;
+        }
+    }
+
+    timer_stop(timer_id);
+}
+
+/******************************************************************************
+ *
+ ******************************************************************************/
+
 int main(void)
 {
     // Initialize I/O's
@@ -174,28 +213,18 @@ int main(void)
     } while (*str != '/');
 */
 
-    // Crossfade test
-
-    nixie_crossfade_rate(3);
-    fprintf_P(&primary, PSTR("123456\r"));
-    fprintf_P(&secondary, PSTR("654321\r"));
-    delay_ms(1000);
-    nixie_crossfade(&secondary);
-    nixie_out('\f', &secondary);
-    delay_ms(1000);
-    nixie_crossfade(&secondary);
-    delay_ms(1000);
-    nixie_crossfade_rate(0);
+    display_test();
 
     ClockDisplay();
 
-/* Event handler test
+/*  Event handler test
 
     event_t event;
-    uint8_t timer_id;
+    uint8_t t1, t2;
     uint32_t count = 0;
 
-    timer_id = timer_start(MS_TO_TICKS(5000), 1);
+    t1 = timer_start(MS_TO_TICKS(5000), 1);
+    t2 = timer_start(MS_TO_TICKS(10000), 1);
 
     do {
         event = get_next_event(0);
