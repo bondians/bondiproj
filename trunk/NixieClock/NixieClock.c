@@ -115,10 +115,8 @@ void display_test(void)
 {
     uint8_t digit;
     uint8_t index;
-    uint8_t timer_id;
     event_t event;
 
-    timer_id = timer_start(MS_TO_TICKS(1000), 1);
     nixie_crossfade_rate(3);
 
     for (digit = '0'; digit <= '9'; digit++) {
@@ -134,16 +132,12 @@ void display_test(void)
 
         nixie_crossfade(&secondary);
 
-        do {
-            event = wait_next_event(0);
-        } while (event.event == ONE_SECOND_ELAPSED);
+        event = wait_next_event(0);
 
-        if (event.event != TIMER_EXPIRED) {
+        if (event.event != ONE_SECOND_ELAPSED) {
             break;
         }
     }
-
-    timer_stop(timer_id);
 }
 
 /******************************************************************************

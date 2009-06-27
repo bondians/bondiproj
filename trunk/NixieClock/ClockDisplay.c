@@ -420,7 +420,7 @@ uint8_t SetDate(date_t *date)
         if (event.event == TIMER_EXPIRED) {
             if (event.data == blink_timer) {
                 blink = (blink == BLINK_LOW_INTENSITY) ? 
-                        BLINK_LOW_INTENSITY : BLINK_HIGH_INTENSITY;
+                        BLINK_HIGH_INTENSITY : BLINK_LOW_INTENSITY;
                 refresh = DO_REFRESH;
             }
 
