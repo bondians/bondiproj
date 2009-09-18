@@ -1,0 +1,26 @@
+<h1>Listing graphic_arts_people</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Highlight color one</th>
+    <th>Highlight color two</th>
+    <th>Highlight color three</th>
+  </tr>
+
+<% @graphic_arts_people.each do |graphic_arts_person| %>
+  <tr>
+    <td><%=h graphic_arts_person.name %></td>
+    <td><%=h graphic_arts_person.highlight_color_one %></td>
+    <td><%=h graphic_arts_person.highlight_color_two %></td>
+    <td><%=h graphic_arts_person.highlight_color_three %></td>
+    <td><%= link_to 'Show', graphic_arts_person %></td>
+    <td><%= link_to 'Edit', edit_graphic_arts_person_path(graphic_arts_person) %></td>
+    <td><%= link_to 'Destroy', graphic_arts_person, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New graphic_arts_person', new_graphic_arts_person_path %>

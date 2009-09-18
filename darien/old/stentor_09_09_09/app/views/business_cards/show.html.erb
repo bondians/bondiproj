@@ -1,0 +1,69 @@
+<% title "Business Card" %>
+
+<p>
+  <strong>Name:</strong>
+  <%=h @business_card.name %>
+</p>
+<p>
+  <strong>Title:</strong>
+  <%=h @business_card.title %>
+</p>
+<p>
+  <strong>Title Line 2:</strong>
+  <%=h @business_card.title_line_2 %>
+</p>
+<p>
+  <strong>School:</strong>
+  <%=h @business_card.school %>
+</p>
+<p>
+  <strong>School Line 2:</strong>
+  <%=h @business_card.school_line_2 %>
+</p>
+<p>
+  <strong>Address:</strong>
+  <%=h @business_card.address %>
+</p>
+<p>
+  <strong>City:</strong>
+  <%=h @business_card.city %>
+</p>
+<p>
+  <strong>State:</strong>
+  <%=h @business_card.state %>
+</p>
+<p>
+  <strong>Zip:</strong>
+  <%=h @business_card.zip %>
+</p>
+<p>
+  <strong>Phone:</strong>
+  <%=h @business_card.phone %>
+</p>
+<p>
+  <strong>Fax:</strong>
+  <%=h @business_card.fax %>
+</p>
+<p>
+  <strong>Email:</strong>
+  <%=h @business_card.email %>
+</p>
+<p>
+  <strong>Extra Text:</strong>
+  <%=h @business_card.extra %>
+</p>
+<p>
+  <strong>Alted:</strong>
+  <%=h @business_card.altEd %>
+</p>
+<p>
+  <strong>Distinguished School:</strong>
+  <%=h @business_card.distinguished_school %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_business_card_path(@business_card) %> |
+  <%= link_to "Destroy", @business_card, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", business_cards_path %> |
+  <%= link_to "New Business Card", new_business_card_path %>
+</p>

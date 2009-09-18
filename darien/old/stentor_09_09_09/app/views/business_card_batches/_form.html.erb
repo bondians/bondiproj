@@ -1,0 +1,16 @@
+<% form_for @business_card_batch do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :quantity %><br />
+    <%= f.text_field :quantity %>
+  </p>
+  <p>
+    <%= f.label :printed %><br />
+    <%= f.check_box :printed %>
+  </p>
+  <p>
+    <%= f.label :batch_name %><br />
+    <%= f.text_field :batch_name %>
+  </p>
+  <p><%= f.submit "Submit" %></p>
+<% end %>

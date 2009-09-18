@@ -1,0 +1,48 @@
+<p>
+  <b>Name:</b>
+  <%=h @department.name %>
+</p>
+
+<p>
+  <b>Phone number:</b>
+  <%=h @department.phone_number %>
+</p>
+
+<p>
+  <b>Phone area code:</b>
+  <%=h @department.phone_area_code %>
+</p>
+
+<p>
+  <b>Fax number:</b>
+  <%=h @department.fax_number %>
+</p>
+
+<p>
+  <b>Fax area code:</b>
+  <%=h @department.fax_area_code %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%=h @department.address %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%=h @department.city %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%=h @department.state %>
+</p>
+
+<p>
+  <b>Zip code:</b>
+  <%=h @department.zip_code %>
+</p>
+
+
+<%= link_to 'Edit', edit_department_path(@department) %> |
+<%= link_to 'Back', departments_path %>

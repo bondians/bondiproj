@@ -1,0 +1,27 @@
+<% title "Business Cards" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Title</th>
+    <th>School</th>
+    <th>School Line 2</th>
+    <th>Phone</th>
+    <th>Email</th>
+  </tr>
+  <% for business_card in @business_cards %>
+    <tr>
+      <td><%=h business_card.name %></td>
+      <td><%= link_to "Show", business_card %></td>
+      <td><%= link_to "Edit", edit_business_card_path(business_card) %></td>
+      <td><%= link_to "Destroy", business_card, :confirm => 'Are you sure?', :method => :delete %></td>
+      <td><%=h business_card.title %></td>
+      <td><%=h business_card.school %></td>
+      <td><%=h business_card.school_line_2 %></td>
+      <td><%=h business_card.phone %></td>
+      <td><%=h business_card.email %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Business Card", new_business_card_path %></p>

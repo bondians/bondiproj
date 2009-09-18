@@ -1,0 +1,12 @@
+<% title "School" %>
+
+<p>
+  <strong>Name:</strong>
+  <%=h @school.name %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_school_path(@school) %> |
+  <%= link_to "Destroy", @school, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", schools_path %>
+</p>

@@ -1,0 +1,23 @@
+<p>
+  <b>Name:</b>
+  <%=h @graphic_arts_person.name %>
+</p>
+
+<p>
+  <b>Highlight color one:</b>
+  <%=h @graphic_arts_person.highlight_color_one %>
+</p>
+
+<p>
+  <b>Highlight color two:</b>
+  <%=h @graphic_arts_person.highlight_color_two %>
+</p>
+
+<p>
+  <b>Highlight color three:</b>
+  <%=h @graphic_arts_person.highlight_color_three %>
+</p>
+
+
+<%= link_to 'Edit', edit_graphic_arts_person_path(@graphic_arts_person) %> |
+<%= link_to 'Back', graphic_arts_people_path %>

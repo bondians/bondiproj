@@ -1,0 +1,48 @@
+<h1>Editing department</h1>
+
+<% form_for(@department) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :phone_number %><br />
+    <%= f.text_field :phone_number %>
+  </p>
+  <p>
+    <%= f.label :phone_area_code %><br />
+    <%= f.text_field :phone_area_code %>
+  </p>
+  <p>
+    <%= f.label :fax_number %><br />
+    <%= f.text_field :fax_number %>
+  </p>
+  <p>
+    <%= f.label :fax_area_code %><br />
+    <%= f.text_field :fax_area_code %>
+  </p>
+  <p>
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </p>
+  <p>
+    <%= f.label :city %><br />
+    <%= f.text_field :city %>
+  </p>
+  <p>
+    <%= f.label :state %><br />
+    <%= f.text_field :state %>
+  </p>
+  <p>
+    <%= f.label :zip_code %><br />
+    <%= f.text_field :zip_code %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @department %> |
+<%= link_to 'Back', departments_path %>

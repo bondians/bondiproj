@@ -1,0 +1,13 @@
+<p>
+  <b>Person:</b>
+  <%=h @person_phone.person.class %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%=h @person_phone.phone.class %>
+</p>
+
+
+<%= link_to 'Edit', edit_person_phone_path(@person_phone) %> |
+<%= link_to 'Back', person_phones_path %>

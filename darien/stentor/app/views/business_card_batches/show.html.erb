@@ -1,0 +1,47 @@
+<% title "Business Card Batch" %>
+
+<p>
+  <strong>Quantity:</strong>
+  <%=h @business_card_batch.quantity %>
+</p>
+<p>
+  <strong>Printed:</strong>
+  <%=h @business_card_batch.printed %>
+</p>
+  <%=h '@Normal:' + @business_card_batch.batch_name + '<\c>'%>
+    <%=h '@quantity:' + @business_card_batch.quantity.to_s + '<\c>' %>
+<%- for order in @orders -%>
+   <%- counter = (order.quantity / @business_card_batch.quantity) + ((order.quantity % @business_card_batch.quantity == 0) ? 0 : 1 ) -%>
+
+   <%- 1.upto(counter) do -%>
+      <%= '@name_normal:' + order.business_card.name + '\p' %>
+      <%= '@title_normal:' + order.business_card.title + '\p' %>
+      <%- if order.business_card.title_line_2 != ( "" || nil ) -%>
+          <%= '@title_normal:' + order.business_card.title_line_2 + '\p' %>
+      <%- end -%>
+      <%=h '<\c>' %>
+      <%= '@address_info:' + order.business_card.school + '\p' %>
+      <%- if order.business_card.school_line_2 != ( "" || nil ) -%>
+          <%= order.business_card.school_line_2 + '\p' %>
+      <%- end -%>
+      <%- if order.business_card.distinguished_school -%>
+       <%= '@distinguished:' + 'California Distinguished School' + '\p' %>
+      <%- end -%>
+      <%= '@address_info:' + order.business_card.address + '\p' %>
+      <%= order.business_card.city %>, <%= order.business_card.state %> <%= order.business_card.zip + '\p' %>
+      <%= order.business_card.phone %> <%= 'Fax: ' + order.business_card.fax + '\p' %>
+      <%= order.business_card.email + '\p' %>
+      <%- if order.business_card.extra != ( "" || nil ) -%>
+         <%= '@address_info:' + order.business_card.extra + '\p' %>
+      <%- end -%>
+      <%- if order.business_card.altEd -%>
+         <%= '@AltEd:(Alternative Education telephone numbers on back)' %>
+      <%- end -%>
+      <%=h '<\c>' %>
+   <%- end -%>
+<%- end -%>
+<p>
+  <%= link_to "Edit", edit_business_card_batch_path(@business_card_batch) %> |
+  <%= link_to "Destroy", @business_card_batch, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", business_card_batches_path %>
+</p>

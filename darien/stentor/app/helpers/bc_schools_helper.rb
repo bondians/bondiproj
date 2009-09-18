@@ -1,0 +1,2 @@
+module BcSchoolsHelper
+end
