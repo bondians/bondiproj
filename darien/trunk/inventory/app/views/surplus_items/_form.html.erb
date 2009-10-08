@@ -1,0 +1,24 @@
+<% form_for @surplus_items do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </p>
+  <p>
+    <%= f.label :make_model %><br />
+    <%= f.text_field :make_model %>
+  </p>
+  <p>
+    <%= f.label :inventory_id_tag_number %><br />
+    <%= f.text_field :inventory_id_tag_number %>
+  </p>
+  <p>
+    <%= f.label :quantity %><br />
+    <%= f.text_field :quantity %>
+  </p>
+  <p>
+    <%= f.label :condition_code %><br />
+    <%= f.text_field :condition_code %>
+  </p>
+  <p><%= f.submit "Submit" %></p>
+<% end %>

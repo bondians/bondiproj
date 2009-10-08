@@ -1,0 +1,19 @@
+<% title "Oversupplies" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Building</th>
+  </tr>
+  <% for oversupply in @oversupplies %>
+    <tr>
+      <td><%=h oversupply.name %></td>
+      <td><%=h oversupply.building %></td>
+      <td><%= link_to "Show", oversupply %></td>
+      <td><%= link_to "Edit", edit_oversupply_path(oversupply) %></td>
+      <td><%= link_to "Destroy", oversupply, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Oversupply", new_oversupply_path %></p>

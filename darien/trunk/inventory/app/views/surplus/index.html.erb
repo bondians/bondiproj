@@ -1,0 +1,21 @@
+<% title "Surplus" %>
+
+<table>
+  <tr>
+    <th>From</th>
+    <th>Building Number</th>
+    <th>Contact</th>
+  </tr>
+  <% for surplus in @surplus %>
+    <tr>
+      <td><%=h surplus.from %></td>
+      <td><%=h surplus.building_number %></td>
+      <td><%=h surplus.contact %></td>
+      <td><%= link_to "Show", surplus %></td>
+      <td><%= link_to "Edit", edit_surplus_path(surplus) %></td>
+      <td><%= link_to "Destroy", surplus, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Surplus", new_surplus_path %></p>

@@ -1,0 +1,9 @@
+one:
+  quantity: 1
+  printed: false
+  batch_name: MyString
+
+two:
+  quantity: 1
+  printed: false
+  batch_name: MyString

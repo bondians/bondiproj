@@ -1,0 +1,25 @@
+--- 
+users_001: 
+  user: t
+  updated_at: 2009-09-10 00:26:25
+  crypted_password: 0323605734a557f3d65285b7469684b8d462ea0f0d4d11c2511779efe3096d92875fad73c9b735cb5db9dd4429465d3ef0f0b6551ef408b892ac1a4bb9850df9
+  username: tindrum
+  password_salt: fFyEp3SxDu9PnAx3LD7L
+  super_admin: t
+  admin: t
+  id: "1"
+  persistence_token: 1c3f395c0d03d48c7a714a1d9bbad0df6eb980de09e29bc28ecad288dd18ae641c7541b33485d71ea52a804ab47be952393d0cebc8d3f1556f7973c7c81565c8
+  email: tindrum@mac.com
+  created_at: 2009-09-09 02:23:49
+users_002: 
+  user: 
+  updated_at: 2009-09-09 23:56:30
+  crypted_password: c99d18ca7f92aafcbe6a8ece2ebff7637a3440751f6989ac191a58ecbfa37d5bcd414f45d9c4f439369d27b53959d5ef6b9a328f442ef3e36fbe5680ab1f0243
+  username: haskin
+  password_salt: 7Nkx3UOYymEDUxDL2VOr
+  super_admin: 
+  admin: 
+  id: "2"
+  persistence_token: be8648c66a74bd6a097603151a1eb692882c599d7dc236fbf8ee441e0c2b6ef0436a152828db8d74be89547735b909e6b0340b3d7ca36ead2e66058a7b767983
+  email: haskin_l@auhds.us
+  created_at: 2009-09-09 23:56:30

@@ -1,0 +1,16 @@
+<% form_for @accounts do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :account_number %><br />
+    <%= f.text_field :account_number %>
+  </p>
+  <p>
+    <%= f.label :department_id %><br />
+    <%= f.text_field :department_id %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p><%= f.submit "Submit" %></p>
+<% end %>
