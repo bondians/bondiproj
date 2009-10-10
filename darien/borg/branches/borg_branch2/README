@@ -245,3 +245,6 @@ vendor
   
 Frozzling the wazjub, as per the instructions in the pdf. See page 88 for exact details.
 More songs about buildings and food.
+OK, each sub-project needs to have it's own top-level directory for svn to be able to merge the shit.
+
+Man this is particular. I should have done it the right way the first time.
