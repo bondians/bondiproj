@@ -1,0 +1,33 @@
+<% form_for @business_card_order do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :quantity %><br />
+    <%= f.text_field :quantity %>
+  </p>
+  <p>
+    <%= f.label :business_card_batch_id %><br />
+    <%= f.text_field :business_card_batch_id %>
+  </p>
+  <p>
+    <%= f.label :reprint %><br />
+    <%= f.check_box :reprint %>
+  </p>
+  <p>
+    <%#= f.label :business_card_name %><br />
+    <%#= f.text_field_with_auto_complete :business_card_order, :business_card_name, { :size => 15 }, { :url => formatted_business_cards_path(:js), :method => :get } %>
+  </p>
+  <p>
+    <%#= f.label :business_card.ordered %><br />
+    <%#= f.check_box :business_card.ordered %>
+  </p>
+  
+  <p>
+    <%= f.label "All Names" %><br />
+    <%= f.select(:business_card_id, BusinessCard.all.collect { |p| [p.name, p.id ] } ) %>
+  </p>
+  <p>
+    <%= f.label "Limited to names not added yet" %><br />
+    <%= f.select(:business_card_id, BusinessCard.find(:all, :conditions => { :ordered => FALSE }).collect { |p| [p.name, p.id ] } ) %>
+  </p>
+  <p><%= f.submit "Submit" %></p>
+<% end %>

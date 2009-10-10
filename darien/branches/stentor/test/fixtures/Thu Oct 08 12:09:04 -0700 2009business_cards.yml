@@ -1,0 +1,3021 @@
+--- 
+business_cards_148: 
+  name: Laura Gonzalez
+  school_line_2: ""
+  city: Anaheim
+  zip: "90624"
+  altEd: f
+  updated_at: 2009-09-28 15:46:58
+  title: Transition Teacher
+  id: "149"
+  ordered: t
+  title_line_2: Adult Transition Program
+  phone: 714-296-3016
+  fax: 714-220-4081
+  distinguished_school: f
+  school: Adult Education
+  address: 830 South Dale Avenue
+  extra: ""
+  state: CA
+  email: gonzalez_la@auhsd.us
+  created_at: 2009-09-28 15:43:49
+business_cards_006: 
+  name: Robert Saldivar
+  school_line_2: ""
+  city: Anaheim
+  zip: 92802-1626
+  altEd: f
+  updated_at: 2009-09-18 18:39:41
+  title: Assistant Principal
+  id: "6"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-3663
+  fax: 714-563-9214
+  distinguished_school: t
+  school: Ball Junior High School
+  address: 1500 West Ball Road
+  extra: ""
+  state: CA
+  email: saldivar_r@auhsd.us
+  created_at: 2009-09-10 02:34:55
+business_cards_090: 
+  name: Alicia Rivero
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:22:32
+  title: Teacher
+  id: "90"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: rivero_a@auhsd.us
+  created_at: 2009-09-10 04:34:04
+business_cards_062: 
+  name: "Catarina Ba\xC3\xB1ales"
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:08:30
+  title: Teacher
+  id: "62"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: banales_c@auhsd.us
+  created_at: 2009-09-10 04:19:14
+business_cards_034: 
+  name: Mike Pooley
+  school_line_2: ""
+  city: Anaheim
+  zip: 92801-5099
+  altEd: f
+  updated_at: 2009-09-10 23:56:24
+  title: Title I Coordinator
+  id: "34"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4262 x302
+  fax: 714-995-2544
+  distinguished_school: f
+  school: Savanna High School
+  address: 301 North Gilbert Avenue
+  extra: ""
+  state: CA
+  email: pooley_m@auhsd.us
+  created_at: 2009-09-10 03:48:27
+business_cards_149: 
+  name: Pam Morris
+  school_line_2: ""
+  city: Cypress
+  zip: 90630-2799
+  altEd: f
+  updated_at: 2009-09-28 15:46:45
+  title: Office Assistant / Receptionist
+  id: "150"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4201
+  fax: 714-761-4989
+  distinguished_school: f
+  school: Lexington Junior High School
+  address: 4351 Orange Avenue
+  extra: ""
+  state: CA
+  email: morris_p@auhsd.us
+  created_at: 2009-09-28 15:46:01
+business_cards_007: 
+  name: Rick Martens, Ed.D.
+  school_line_2: Gilbert High School - South
+  city: Anaheim
+  zip: "92804"
+  altEd: t
+  updated_at: 2009-09-18 18:41:56
+  title: Principal
+  id: "7"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-5659
+  fax: 714-999-5651
+  distinguished_school: f
+  school: Alternative Education
+  address: 1800 West Ball Road
+  extra: ""
+  state: CA
+  email: martens_r@auhsd.us
+  created_at: 2009-09-10 02:36:37
+business_cards_091: 
+  name: Jennifer Sasai
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:23:00
+  title: Teacher
+  id: "91"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: sasai_j@auhsd.us
+  created_at: 2009-09-10 04:34:30
+business_cards_063: 
+  name: Baldwin Borland
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:08:51
+  title: Teacher
+  id: "63"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: borland_b@auhsd.us
+  created_at: 2009-09-10 04:19:44
+business_cards_035: 
+  name: Jon Hogencamp
+  school_line_2: ""
+  city: Anaheim
+  zip: 92801-5099
+  altEd: f
+  updated_at: 2009-09-10 23:56:54
+  title: Activities Director
+  id: "35"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4297
+  fax: 714-267-3203
+  distinguished_school: f
+  school: Savanna High School
+  address: 301 North Gilbert Avenue
+  extra: ""
+  state: CA
+  email: hogencamp_j@auhsd.us
+  created_at: 2009-09-10 03:49:53
+business_cards_092: 
+  name: Jeff Scanlon
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:23:07
+  title: Teacher
+  id: "92"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: scanlon_j@auhsd.us
+  created_at: 2009-09-10 04:34:57
+business_cards_064: 
+  name: Leslie Boullon
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:09:12
+  title: Teacher
+  id: "64"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: boullon_l@auhsd.us
+  created_at: 2009-09-10 04:20:13
+business_cards_036: 
+  name: Joseph M. Farley, Ed.D.
+  school_line_2: ""
+  city: Anaheim
+  zip: 92803-3520
+  altEd: f
+  updated_at: 2009-09-10 23:57:19
+  title: Superintendent
+  id: "36"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-3520
+  fax: 714-535-1706
+  distinguished_school: f
+  school: District Office
+  address: 501 Crescent Way/P.O. Box 3520
+  extra: ""
+  state: CA
+  email: farley_j@auhsd.us
+  created_at: 2009-09-10 03:51:07
+business_cards_008: 
+  name: Sue Sachs
+  school_line_2: Polaris High School
+  city: Anaheim
+  zip: "92804"
+  altEd: t
+  updated_at: 2009-09-18 18:44:05
+  title: Assistant Principal
+  id: "8"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-3738
+  fax: 714-999-5651
+  distinguished_school: f
+  school: Gilbert South High School
+  address: 1800 West Ball Road
+  extra: ""
+  state: CA
+  email: sachs_s@auhsd.us
+  created_at: 2009-09-10 02:38:16
+business_cards_120: 
+  name: Carlos Vera
+  school_line_2: ""
+  city: Anaheim
+  zip: "92805"
+  altEd: f
+  updated_at: 2009-09-18 22:02:33
+  title: Auditorium Operations Assistant
+  id: "121"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-3730
+  fax: 714-772-6537
+  distinguished_school: f
+  school: ""
+  address: 811 W. Lincoln Avenue
+  extra: ""
+  state: CA
+  email: vera_c@auhsd.us
+  created_at: 2009-09-18 18:40:55
+business_cards_065: 
+  name: Becca Bush
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:11:20
+  title: School Psychologist
+  id: "65"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: bush_r@auhsd.us
+  created_at: 2009-09-10 04:20:48
+business_cards_037: 
+  name: Bob Jauregui
+  school_line_2: ""
+  city: Anaheim
+  zip: 92804-1699
+  altEd: f
+  updated_at: 2009-09-10 23:57:41
+  title: Assistant Principal
+  id: "37"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4071
+  fax: 714-220-4027
+  distinguished_school: f
+  school: Western High School
+  address: 501 South Western Avenue
+  extra: ""
+  state: CA
+  email: jauregui_b@auhsd.us
+  created_at: 2009-09-10 03:52:24
+business_cards_009: 
+  name: Nancy Malotte
+  school_line_2: Gilbert High School - West
+  city: Buena Park
+  zip: "90620"
+  altEd: t
+  updated_at: 2009-09-18 18:44:37
+  title: Assistant Principal
+  id: "9"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4854
+  fax: 714-994-5434
+  distinguished_school: f
+  school: Alternative Education
+  address: 6855 La Palma Avenue
+  extra: ""
+  state: CA
+  email: malotte_n@auhsd.us
+  created_at: 2009-09-10 02:39:19
+business_cards_093: 
+  name: Elise Sharp
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:23:27
+  title: Teacher
+  id: "93"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: sharp_e@auhsd.us
+  created_at: 2009-09-10 04:35:22
+business_cards_121: 
+  name: Miguel Ibarra
+  school_line_2: ""
+  city: Anaheim
+  zip: "92805"
+  altEd: f
+  updated_at: 2009-09-18 22:02:13
+  title: Auditorium Operations Assistant
+  id: "122"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-3730
+  fax: 714-772-6537
+  distinguished_school: f
+  school: ""
+  address: 811 W. Lincoln Avenue
+  extra: ""
+  state: CA
+  email: ibarra_m@auhsd.us
+  created_at: 2009-09-18 18:43:24
+business_cards_066: 
+  name: Shari Cary
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:36:48
+  title: Teacher
+  id: "66"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: cary_s@auhsd.us
+  created_at: 2009-09-10 04:21:22
+business_cards_038: 
+  name: Diane Bethencourt, Ed.D.
+  school_line_2: ""
+  city: Anaheim
+  zip: 92804-5298
+  altEd: f
+  updated_at: 2009-09-10 23:59:11
+  title: Assistant Principal
+  id: "38"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4247
+  fax: 714-220-4233
+  distinguished_school: f
+  school: Magnolia High School
+  address: 2450 West Ball Road
+  extra: ""
+  state: CA
+  email: bethencourt_d@auhsd.us
+  created_at: 2009-09-10 03:55:06
+business_cards_094: 
+  name: Greg Soper
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:23:41
+  title: Teacher
+  id: "94"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: soper_g@auhsd.us
+  created_at: 2009-09-10 04:35:48
+business_cards_150: 
+  name: Alicia A. Ramirez
+  school_line_2: ""
+  city: Anaheim
+  zip: 92803-3520
+  altEd: f
+  updated_at: 2009-10-07 02:00:46
+  title: Student Transfers
+  id: "151"
+  ordered: t
+  title_line_2: Education
+  phone: 714-999-2171
+  fax: 714-520-9754
+  distinguished_school: f
+  school: District Office
+  address: 501 Crescent Way/P.O. Box 3520
+  extra: ""
+  state: CA
+  email: ramirez_a@auhsd.us
+  created_at: 2009-10-07 01:53:12
+business_cards_122: 
+  name: Ralph Figueroa
+  school_line_2: ""
+  city: Anaheim
+  zip: 92803-3520
+  altEd: f
+  updated_at: 2009-09-18 19:05:18
+  title: Project Manager
+  id: "123"
+  ordered: t
+  title_line_2: Maintenance & Facilities
+  phone: 714-999-5456
+  fax: 714-778-0729
+  distinguished_school: f
+  school: District Office
+  address: 501 Crescent Way/P.O. Box 3520
+  extra: ""
+  state: CA
+  email: figueroa_r@auhsd.us
+  created_at: 2009-09-18 19:02:06
+business_cards_067: 
+  name: Alan Chen
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:11:37
+  title: Teacher
+  id: "67"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: chen_a@auhsd.us
+  created_at: 2009-09-10 04:21:47
+business_cards_039: 
+  name: Eva Valencia
+  school_line_2: ""
+  city: Anaheim
+  zip: 92804-5298
+  altEd: f
+  updated_at: 2009-09-10 23:58:51
+  title: Assistant Principal
+  id: "39"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4250
+  fax: 714-220-4233
+  distinguished_school: f
+  school: Magnolia High School
+  address: 2450 West Ball Road
+  extra: ""
+  state: CA
+  email: valencia_e@auhsd.us
+  created_at: 2009-09-10 03:55:58
+business_cards_095: 
+  name: Amy Staton
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:23:58
+  title: Teacher
+  id: "95"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: staton_a@auhsd.us
+  created_at: 2009-09-10 04:36:14
+business_cards_151: 
+  name: Gayle Carpenter
+  school_line_2: ""
+  city: Anaheim
+  zip: 92804-4097
+  altEd: f
+  updated_at: 2009-10-07 17:24:39
+  title: Assistant Principal
+  id: "152"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4210 x 1206
+  fax: ""
+  distinguished_school: f
+  school: Dale Junior High School
+  address: 900 South Dale Avenue
+  extra: ""
+  state: CA
+  email: carpenter_g@auhsd.us
+  created_at: 2009-10-07 17:20:06
+business_cards_123: 
+  name: Cristina Gray
+  school_line_2: ""
+  city: Anaheim
+  zip: "92804"
+  altEd: t
+  updated_at: 2009-09-18 19:38:08
+  title: Counselor
+  id: "124"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-3738
+  fax: 714-999-5651
+  distinguished_school: f
+  school: Gilbert High School - South
+  address: 1800 West Ball Road
+  extra: ""
+  state: CA
+  email: gray_c@auhsd.us
+  created_at: 2009-09-18 19:09:37
+business_cards_068: 
+  name: Kenneth Choi
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:11:55
+  title: Teacher
+  id: "68"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: choi_k@auhsd.us
+  created_at: 2009-09-10 04:22:14
+business_cards_096: 
+  name: Lesley Surfas
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:24:18
+  title: Teacher
+  id: "96"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: confirm email
+  state: CA
+  email: surfas_l@auhsd.us
+  created_at: 2009-09-10 04:36:58
+business_cards_124: 
+  name: Jenni Smith
+  school_line_2: ""
+  city: Anaheim
+  zip: 92803-3520
+  altEd: f
+  updated_at: 2009-09-18 19:37:52
+  title: Human Resources Assistant
+  id: "125"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-3549
+  fax: 714-520-9752
+  distinguished_school: f
+  school: District Office
+  address: 501 Crescent Way/P.O. Box 3520
+  extra: ""
+  state: CA
+  email: smith_je@auhsd.us
+  created_at: 2009-09-18 19:16:17
+business_cards_069: 
+  name: Rita Dressendorfer
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:12:16
+  title: Teacher
+  id: "69"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: dressendorfer_r@auhsd.us
+  created_at: 2009-09-10 04:22:47
+business_cards_097: 
+  name: Shinichi Takehara
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:24:37
+  title: Teacher
+  id: "97"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: takehara_s@auhsd.us
+  created_at: 2009-09-10 04:37:35
+business_cards_010: 
+  name: Joseph V. Gallo
+  school_line_2: ""
+  city: Anaheim
+  zip: 92806-4999
+  altEd: f
+  updated_at: 2009-09-18 18:45:21
+  title: Counselor
+  id: "10"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-3644
+  fax: 714-535-3991
+  distinguished_school: f
+  school: Katella High School
+  address: 2200 East Wagner Avenue
+  extra: "Linea de Espa\xC3\xB1ol 714-999-3650"
+  state: CA
+  email: gallo_j@auhsd.us
+  created_at: 2009-09-10 02:42:31
+business_cards_125: 
+  name: Joel Harari
+  school_line_2: ""
+  city: Anaheim
+  zip: "92805"
+  altEd: f
+  updated_at: 2009-09-18 22:21:36
+  title: Auditorium Operations Technician
+  id: "126"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-3730
+  fax: 714-772-6537
+  distinguished_school: f
+  school: ""
+  address: 811 W. Lincoln Avenue
+  extra: ""
+  state: CA
+  email: harari_j@auhsd.us
+  created_at: 2009-09-18 19:17:29
+business_cards_098: 
+  name: Richard Taylor
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:24:55
+  title: Teacher
+  id: "98"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: taylor_r@auhsd.us
+  created_at: 2009-09-10 04:38:04
+business_cards_011: 
+  name: Rosalinda Pineda
+  school_line_2: ""
+  city: Anaheim
+  zip: 92806-4999
+  altEd: f
+  updated_at: 2009-09-18 18:45:44
+  title: Counselor
+  id: "11"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-3644
+  fax: 714-535-3991
+  distinguished_school: f
+  school: Katella High School
+  address: 2200 East Wagner Avenue
+  extra: "Linea de Espa\xC3\xB1ol 714-999-3650"
+  state: CA
+  email: pineda_r@auhsd.us
+  created_at: 2009-09-10 02:54:53
+business_cards_126: 
+  name: Javier Alvarado
+  school_line_2: ""
+  city: Anaheim
+  zip: "92805"
+  altEd: f
+  updated_at: 2009-09-18 22:21:53
+  title: Auditorium Operations Assistant
+  id: "127"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-3730
+  fax: 714-772-6537
+  distinguished_school: f
+  school: ""
+  address: 811 W. Lincoln Avenue
+  extra: ""
+  state: CA
+  email: alvarado_j@auhsd.us
+  created_at: 2009-09-18 19:18:18
+business_cards_040: 
+  name: Jack Jensen
+  school_line_2: ""
+  city: Anaheim
+  zip: 92804-5298
+  altEd: f
+  updated_at: 2009-09-10 23:58:31
+  title: Assistant Principal
+  id: "40"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4256
+  fax: 714-220-4233
+  distinguished_school: f
+  school: Magnolia High School
+  address: 2450 West Ball Road
+  extra: ""
+  state: CA
+  email: jensen_ja@auhsd.us
+  created_at: 2009-09-10 03:56:52
+business_cards_099: 
+  name: Sid Viles
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:25:18
+  title: Teacher
+  id: "99"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: viles_s@auhsd.us
+  created_at: 2009-09-10 04:38:29
+business_cards_012: 
+  name: Elizabeth Marshall
+  school_line_2: ""
+  city: Anaheim
+  zip: 92806-4999
+  altEd: f
+  updated_at: 2009-09-18 18:46:24
+  title: Counselor
+  id: "12"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-3644
+  fax: 714-535-3991
+  distinguished_school: f
+  school: Katella High School
+  address: 2200 East Wagner Avenue
+  extra: "Linea de Espa\xC3\xB1ol 714-999-3650"
+  state: CA
+  email: marshall_e@auhsd.us
+  created_at: 2009-09-10 02:55:47
+business_cards_127: 
+  name: Thomas Link
+  school_line_2: An International Baccalaureate School
+  city: La Palma
+  zip: 90623-2196
+  altEd: f
+  updated_at: 2009-09-18 19:37:17
+  title: Work Experience Coordinator
+  id: "128"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4130
+  fax: ""
+  distinguished_school: f
+  school: John F. Kennedy High School
+  address: 8281 Walker Street
+  extra: ""
+  state: CA
+  email: link_t@auhsd.us
+  created_at: 2009-09-18 19:19:59
+business_cards_041: 
+  name: Denise Selbe, Ed.D.
+  school_line_2: ""
+  city: Anaheim
+  zip: 92804-5298
+  altEd: f
+  updated_at: 2009-09-10 23:58:11
+  title: Principal
+  id: "41"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4245
+  fax: 714-220-4233
+  distinguished_school: f
+  school: Magnolia High School
+  address: 2450 West Ball Road
+  extra: ""
+  state: CA
+  email: selbe_d@auhsd.us
+  created_at: 2009-09-10 03:57:27
+business_cards_013: 
+  name: Toni Mahoney
+  school_line_2: ""
+  city: Anaheim
+  zip: 92806-4999
+  altEd: f
+  updated_at: 2009-09-11 18:11:03
+  title: Guidance Counselor
+  id: "13"
+  ordered: t
+  title_line_2: GATE, ROP
+  phone: 714-999-3644
+  fax: 714-535-3991
+  distinguished_school: f
+  school: Katella High School
+  address: 2200 East Wagner Avenue
+  extra: ""
+  state: CA
+  email: mahoney_t@auhsd.us
+  created_at: 2009-09-10 02:56:38
+business_cards_128: 
+  name: Stacey Giem
+  school_line_2: ""
+  city: Cypress
+  zip: 90630-2799
+  altEd: f
+  updated_at: 2009-09-18 19:37:06
+  title: Head Counselor
+  id: "129"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4201
+  fax: 714-761-4989
+  distinguished_school: f
+  school: Lexington Junior High School
+  address: 4351 Orange Avenue
+  extra: ""
+  state: CA
+  email: giem_s@auhsd.us
+  created_at: 2009-09-18 19:21:22
+business_cards_070: 
+  name: Alan Freeman
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:12:35
+  title: Teacher
+  id: "70"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: freeman_a@auhsd.us
+  created_at: 2009-09-10 04:23:14
+business_cards_042: 
+  name: Mary Jo Durkin
+  school_line_2: ""
+  city: Anaheim
+  zip: 92804-6198
+  altEd: f
+  updated_at: 2009-09-10 23:59:34
+  title: Counselor
+  id: "42"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-5683
+  fax: 714-999-3703
+  distinguished_school: f
+  school: Loara High School
+  address: 1765 West Cerritos Avenue
+  extra: ""
+  state: CA
+  email: durkin_m@auhsd.us
+  created_at: 2009-09-10 03:58:55
+business_cards_014: 
+  name: Osvaldo Hurtado
+  school_line_2: ""
+  city: Anaheim
+  zip: 92806-4999
+  altEd: f
+  updated_at: 2009-09-11 18:10:40
+  title: Counselor
+  id: "14"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-3644
+  fax: 714-535-3991
+  distinguished_school: f
+  school: Katella High School
+  address: 2200 East Wagner Avenue
+  extra: "Linea de Espa\xC3\xB1ol 714-999-3650"
+  state: CA
+  email: hurtado_o@auhsd.us
+  created_at: 2009-09-10 02:57:36
+business_cards_129: 
+  name: Cheddy Castillo
+  school_line_2: ""
+  city: Anaheim
+  zip: 92803-3520
+  altEd: f
+  updated_at: 2009-09-18 19:36:57
+  title: Maintenance Leadman
+  id: "130"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-3581
+  fax: 714-778-0729
+  distinguished_school: f
+  school: District Office
+  address: 501 Crescent Way/P.O. Box 3520
+  extra: "Cell: 714-936-5119"
+  state: CA
+  email: ""
+  created_at: 2009-09-18 19:29:58
+business_cards_071: 
+  name: Shannon Gohr
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:12:51
+  title: Teacher
+  id: "71"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: gohr_s@auhsd.us
+  created_at: 2009-09-10 04:23:46
+business_cards_043: 
+  name: Pamela A. Krey
+  school_line_2: ""
+  city: Anaheim
+  zip: 92804-6198
+  altEd: f
+  updated_at: 2009-09-10 23:59:56
+  title: Principal
+  id: "43"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-3698
+  fax: 714-999-3703
+  distinguished_school: f
+  school: Loara High School
+  address: 1765 West Cerritos Avenue
+  extra: Cell 714-936-5217
+  state: CA
+  email: krey_p@auhsd.us
+  created_at: 2009-09-10 04:00:05
+business_cards_015: 
+  name: Barbara J. Moore, Ed.D.
+  school_line_2: ""
+  city: Anaheim
+  zip: 92803-3520
+  altEd: f
+  updated_at: 2009-09-11 18:11:48
+  title: Director, Special Youth Services
+  id: "15"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-3527
+  fax: 714-999-0622
+  distinguished_school: f
+  school: District Office
+  address: 501 Crescent Way/P.O. Box 3520
+  extra: ""
+  state: CA
+  email: moore_b@auhsd.us
+  created_at: 2009-09-10 02:58:51
+business_cards_044: 
+  name: Anna  L. Piercy
+  school_line_2: ""
+  city: Anaheim
+  zip: 92803-3520
+  altEd: f
+  updated_at: 2009-09-11 00:00:20
+  title: Board Member
+  id: "44"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-3503
+  fax: ""
+  distinguished_school: f
+  school: District Office
+  address: 501 Crescent Way/P.O. Box 3520
+  extra: ""
+  state: CA
+  email: brd_trustee@auhsd.us
+  created_at: 2009-09-10 04:00:58
+business_cards_016: 
+  name: Eugenia Traudt
+  school_line_2: ""
+  city: Anaheim
+  zip: 92804-6198
+  altEd: f
+  updated_at: 2009-09-11 18:11:59
+  title: Counselor
+  id: "16"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-3706
+  fax: 714-999-3703
+  distinguished_school: f
+  school: Loara High School
+  address: 1765 West Cerritos Avenue
+  extra: ""
+  state: CA
+  email: traudt_e@auhsd.us
+  created_at: 2009-09-10 03:00:09
+business_cards_072: 
+  name: Elizabeth Green
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:13:08
+  title: Teacher
+  id: "72"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: green_e@auhsd.us
+  created_at: 2009-09-10 04:24:13
+business_cards_045: 
+  name: John Oskoui, P.E.
+  school_line_2: ""
+  city: Anaheim
+  zip: 92803-3520
+  altEd: f
+  updated_at: 2009-09-11 00:00:38
+  title: Director, Planning, Design and Construction
+  id: "45"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-3505
+  fax: 714-520-5741
+  distinguished_school: f
+  school: District Office
+  address: 501 Crescent Way/P.O. Box 3520
+  extra: ""
+  state: CA
+  email: oskoui_j@auhsd.us
+  created_at: 2009-09-10 04:02:06
+business_cards_100: 
+  name: Tiffany Weir
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:25:33
+  title: Teacher
+  id: "100"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: weir_t@auhsd.us
+  created_at: 2009-09-10 04:38:57
+business_cards_017: 
+  name: William 'Mike' Wilson
+  school_line_2: ""
+  city: Anaheim
+  zip: "92804"
+  altEd: f
+  updated_at: 2009-09-11 18:12:15
+  title: Work Experience
+  id: "17"
+  ordered: t
+  title_line_2: Social Science & English Language Development
+  phone: 714-999-3738
+  fax: 714-999-5651
+  distinguished_school: f
+  school: Gilbert High School - South
+  address: 1800 West Ball Road
+  extra: ""
+  state: CA
+  email: edukder@yahoo.com
+  created_at: 2009-09-10 03:02:17
+business_cards_073: 
+  name: Christy Hutchings
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:13:25
+  title: Teacher
+  id: "73"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: hutchings_ch@auhsd.us
+  created_at: 2009-09-10 04:24:47
+business_cards_046: 
+  name: Doug Maclear
+  school_line_2: ""
+  city: Anaheim
+  zip: 92805-2499
+  altEd: f
+  updated_at: 2009-09-11 00:01:05
+  title: Assistant Principal
+  id: "46"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-3768
+  fax: 714-772-6537
+  distinguished_school: f
+  school: Anaheim High School
+  address: 811 West Lincoln Avenue
+  extra: ""
+  state: CA
+  email: maclear_d@auhsd.us
+  created_at: 2009-09-10 04:03:29
+business_cards_101: 
+  name: Shane Winn
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:25:50
+  title: Teacher
+  id: "101"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: winn_d@auhsd.us
+  created_at: 2009-09-10 04:39:27
+business_cards_018: 
+  name: Liliana Luna
+  school_line_2: ""
+  city: Anaheim
+  zip: 92804-4097
+  altEd: f
+  updated_at: 2009-09-10 23:44:10
+  title: Counselor
+  id: "18"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4210 x 1227
+  fax: ""
+  distinguished_school: f
+  school: Dale Junior High School
+  address: 900 South Dale Avenue
+  extra: ""
+  state: CA
+  email: luna_l@auhsd.us
+  created_at: 2009-09-10 03:20:29
+business_cards_074: 
+  name: Jin Jae
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:13:42
+  title: Teacher
+  id: "74"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: jae_j@auhsd.us
+  created_at: 2009-09-10 04:25:12
+business_cards_130: 
+  name: Brooks-Anne Crumley
+  school_line_2: ""
+  city: Cypress
+  zip: 90630-2799
+  altEd: f
+  updated_at: 2009-09-18 19:36:46
+  title: Attendance
+  id: "131"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4057
+  fax: 714-761-4989
+  distinguished_school: f
+  school: Lexington Junior High School
+  address: 4351 Orange Avenue
+  extra: ""
+  state: CA
+  email: crumley_b@auhsd.us
+  created_at: 2009-09-18 19:32:41
+business_cards_047: 
+  name: Damon Hands
+  school_line_2: ""
+  city: Anaheim
+  zip: 92802-1626
+  altEd: f
+  updated_at: 2009-09-11 00:01:28
+  title: Assistant Principal
+  id: "47"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-3663
+  fax: 714-563-9214
+  distinguished_school: t
+  school: Ball Junior High School
+  address: 1500 West Ball Road
+  extra: ""
+  state: CA
+  email: hands_d@auhsd.us
+  created_at: 2009-09-10 04:04:35
+business_cards_102: 
+  name: Victor Zahn
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:27:15
+  title: Teacher
+  id: "102"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: zahn_v@auhsd.us
+  created_at: 2009-09-10 04:39:52
+business_cards_019: 
+  name: Lisa Rockwell
+  school_line_2: ""
+  city: Anaheim
+  zip: "92804"
+  altEd: t
+  updated_at: 2009-09-18 19:07:27
+  title: Counselor
+  id: "19"
+  ordered: t
+  title_line_2: PPS Credential
+  phone: 714-999-3738
+  fax: 714-999-5651
+  distinguished_school: f
+  school: Gilbert High School - South
+  address: 1800 West Ball Road
+  extra: "Attendance: 714-808-0971"
+  state: CA
+  email: rockwell_l@auhsd.us
+  created_at: 2009-09-10 03:22:14
+business_cards_075: 
+  name: Jennifer Mele (Kennedy)
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:18:35
+  title: Teacher
+  id: "75"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: kennedy_j@auhsd.us
+  created_at: 2009-09-10 04:26:04
+business_cards_131: 
+  name: Tina Gilbert
+  school_line_2: ""
+  city: Cypress
+  zip: 90630-2799
+  altEd: f
+  updated_at: 2009-09-18 19:36:36
+  title: Registrar/Counseling Secretary
+  id: "132"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4201
+  fax: 714-761-4989
+  distinguished_school: f
+  school: Lexington Junior High School
+  address: 4351 Orange Avenue
+  extra: ""
+  state: CA
+  email: gilbert_t@auhsd.us
+  created_at: 2009-09-18 19:33:47
+business_cards_048: 
+  name: Katherine H. Smith
+  school_line_2: ""
+  city: Anaheim
+  zip: 92803-3520
+  altEd: f
+  updated_at: 2009-09-11 00:01:59
+  title: Board of Trustees
+  id: "48"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-3503
+  fax: ""
+  distinguished_school: f
+  school: District Office
+  address: 501 Crescent Way/P.O. Box 3520
+  extra: ""
+  state: CA
+  email: brd_trustees@auhsd.us
+  created_at: 2009-09-10 04:05:47
+business_cards_103: 
+  name: Karen Zelazo
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:27:40
+  title: Teacher
+  id: "103"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: zelazo_k@auhsd.us
+  created_at: 2009-09-10 04:40:22
+business_cards_076: 
+  name: Kelley Kerr
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:18:58
+  title: Teacher
+  id: "76"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: kerr_k@auhsd.us
+  created_at: 2009-09-10 04:26:34
+business_cards_132: 
+  name: David Clifton
+  school_line_2: ""
+  city: Cypress
+  zip: 90630-2921
+  altEd: f
+  updated_at: 2009-09-18 19:36:25
+  title: Athletic Director
+  id: "133"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-3071
+  fax: 714-527-7128
+  distinguished_school: f
+  school: Oxford Academy
+  address: 5172 Orange Avenue
+  extra: ""
+  state: CA
+  email: clifton_d@auhsd.us
+  created_at: 2009-09-18 19:34:52
+business_cards_049: 
+  name: Jennifer Collins, M.A.
+  school_line_2: ""
+  city: Anaheim
+  zip: 92803-3520
+  altEd: f
+  updated_at: 2009-09-11 00:02:23
+  title: School Psychologist
+  id: "49"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-3532
+  fax: ""
+  distinguished_school: f
+  school: District Office
+  address: 501 Crescent Way/P.O. Box 3520
+  extra: ""
+  state: CA
+  email: collins_j@auhsd.us
+  created_at: 2009-09-10 04:06:53
+business_cards_104: 
+  name: Marilyn Konowal
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:27:59
+  title: Librarian
+  id: "104"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4176
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: konowal_m@auhsd.us
+  created_at: 2009-09-10 04:41:10
+business_cards_077: 
+  name: Jana Kovar
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:19:14
+  title: Teacher
+  id: "77"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: kovar_j@auhsd.us
+  created_at: 2009-09-10 04:27:04
+business_cards_133: 
+  name: Donovan Martinez
+  school_line_2: ""
+  city: Anaheim
+  zip: "92805"
+  altEd: f
+  updated_at: 2009-09-18 22:22:12
+  title: Auditorium Operations Assistant
+  id: "134"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-3730
+  fax: 714-772-6537
+  distinguished_school: f
+  school: ""
+  address: 811 W. Lincoln Avenue
+  extra: ""
+  state: CA
+  email: martinez_d@auhsd.us
+  created_at: 2009-09-18 19:35:50
+business_cards_105: 
+  name: Sheri Madrzyk
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:28:47
+  title: Speech Specialist
+  id: "105"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051 x216
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: madrzyk_s@auhsd.us
+  created_at: 2009-09-10 04:41:58
+business_cards_078: 
+  name: Ron Latham
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:19:28
+  title: Teacher
+  id: "78"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: latham_r@auhsd.us
+  created_at: 2009-09-10 04:27:31
+business_cards_134: 
+  name: Josefina Negro-Laris
+  school_line_2: ""
+  city: Anaheim
+  zip: 92805-2499
+  altEd: f
+  updated_at: 2009-09-18 20:24:18
+  title: Records Secretary
+  id: "135"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-3722
+  fax: 714-772-6537
+  distinguished_school: f
+  school: Anaheim High School
+  address: 811 W. Lincoln Avenue
+  extra: ""
+  state: CA
+  email: negro_j@auhsd.us
+  created_at: 2009-09-18 20:22:26
+business_cards_106: 
+  name: Lilia Palos-Bergado
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:28:27
+  title: Instructional Assistant
+  id: "106"
+  ordered: t
+  title_line_2: Translator
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: palosbergado_l@auhsd.us
+  created_at: 2009-09-10 04:43:14
+business_cards_020: 
+  name: Stacie Muir
+  school_line_2: ""
+  city: Anaheim
+  zip: "92804"
+  altEd: t
+  updated_at: 2009-09-22 22:23:58
+  title: Counselor
+  id: "20"
+  ordered: t
+  title_line_2: ROP Career Guidance Specialist
+  phone: 714-999-3738
+  fax: 714-999-5651
+  distinguished_school: f
+  school: Polaris High School
+  address: 1800 West Ball Road
+  extra: ""
+  state: CA
+  email: muir_s@auhsd.us
+  created_at: 2009-09-10 03:23:16
+business_cards_079: 
+  name: Brenda Levy
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:19:47
+  title: Teacher
+  id: "79"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: levy_b@auhsd.us
+  created_at: 2009-09-10 04:27:54
+business_cards_135: 
+  name: Good Attendance = Academic Achievement
+  school_line_2: ""
+  city: Child Is Absent
+  zip: ""
+  altEd: f
+  updated_at: 2009-09-18 20:24:30
+  title: ""
+  id: "136"
+  ordered: t
+  title_line_2: ""
+  phone: "Attendance:"
+  fax: ""
+  distinguished_school: f
+  school: Gilbert High School - South
+  address: Call When Your
+  extra: 714-808-0971
+  state: ""
+  email: ""
+  created_at: 2009-09-18 20:23:52
+business_cards_021: 
+  name: Cristina Gray
+  school_line_2: ""
+  city: Anaheim
+  zip: "92804"
+  altEd: t
+  updated_at: 2009-09-18 19:12:18
+  title: Counselor
+  id: "21"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-3738
+  fax: 714-999-5651
+  distinguished_school: f
+  school: Gilbert High School - South
+  address: 1800 West Ball Road
+  extra: ""
+  state: CA
+  email: gray_c@auhsd.us
+  created_at: 2009-09-10 03:24:06
+business_cards_107: 
+  name: Linda Bird
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:29:10
+  title: Media Technician
+  id: "107"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4176
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: bird_l@auhsd.us
+  created_at: 2009-09-10 04:43:52
+business_cards_136: 
+  name: Karen Jackson
+  school_line_2: ""
+  city: Anaheim
+  zip: 92806-4999
+  altEd: t
+  updated_at: 2009-09-18 20:42:15
+  title: Registrar
+  id: "137"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-3640
+  fax: 714-774-2059
+  distinguished_school: f
+  school: Katella High School
+  address: 2200 East Wagner Avenue
+  extra: 714-999-3641
+  state: CA
+  email: ""
+  created_at: 2009-09-18 20:39:32
+business_cards_050: 
+  name: Kevin Biegler
+  school_line_2: ""
+  city: Anaheim
+  zip: 92805-2499
+  altEd: f
+  updated_at: 2009-09-11 00:02:43
+  title: Academy/Career Pathway Intervention Coordinator
+  id: "50"
+  ordered: t
+  title_line_2: Learning Skills
+  phone: 714-999-3717
+  fax: 714-772-6537
+  distinguished_school: f
+  school: Anaheim High School
+  address: 811 West Lincoln Avenue
+  extra: ""
+  state: CA
+  email: biegler_k@auhsd.us
+  created_at: 2009-09-10 04:08:26
+business_cards_022: 
+  name: Mary F. Luebben
+  school_line_2: ""
+  city: Anaheim
+  zip: 92804-4039
+  altEd: f
+  updated_at: 2009-09-10 23:46:02
+  title: Assistant Princeipal
+  id: "22"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-5616
+  fax: 714-220-4081
+  distinguished_school: f
+  school: Anaheim Adult Education
+  address: 830 South Dale Avenue
+  extra: ""
+  state: CA
+  email: luebben_m@auhsd.us
+  created_at: 2009-09-10 03:25:22
+business_cards_108: 
+  name: Janet Crisp
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:29:28
+  title: Office Assistant
+  id: "108"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051 x201
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: crisp_j@auhsd.us
+  created_at: 2009-09-10 04:44:33
+business_cards_137: 
+  name: Kathleen Guyer
+  school_line_2: ""
+  city: Anaheim
+  zip: 92803-3520
+  altEd: f
+  updated_at: 2009-09-18 20:48:21
+  title: District Registrar
+  id: "138"
+  ordered: t
+  title_line_2: Transcript Office
+  phone: 714-999-3586
+  fax: 714-520-9754
+  distinguished_school: f
+  school: District Office
+  address: 501 Crescent Way/P.O. Box 3520
+  extra: "Transcript Form: www.auhsd.us"
+  state: CA
+  email: guyer_k@auhsd.us
+  created_at: 2009-09-18 20:41:45
+business_cards_023: 
+  name: Yousef Nasouf
+  school_line_2: An International Baccalaureate School
+  city: La Palma
+  zip: 90623-2196
+  altEd: f
+  updated_at: 2009-09-10 23:46:49
+  title: Assistant Principal
+  id: "23"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4129
+  fax: 714-220-3087
+  distinguished_school: f
+  school: John F. Kennedy High School
+  address: 8281 Walker Street
+  extra: ""
+  state: CA
+  email: nasouf_y@auhsd.us
+  created_at: 2009-09-10 03:27:28
+business_cards_109: 
+  name: Carol Ezell
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:29:51
+  title: Health Technician
+  id: "109"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-3039
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: ezell_c@auhsd.us
+  created_at: 2009-09-10 04:45:10
+business_cards_051: 
+  name: Ben Sanchez
+  school_line_2: ""
+  city: Anaheim
+  zip: 92805-2499
+  altEd: f
+  updated_at: 2009-09-11 00:03:13
+  title: Principal
+  id: "51"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-3772
+  fax: 714-772-6537
+  distinguished_school: f
+  school: Anaheim High School
+  address: 811 West Lincoln Avenue
+  extra: ""
+  state: CA
+  email: sanchez_b@auhsd.us
+  created_at: 2009-09-10 04:09:05
+business_cards_138: 
+  name: Julissa Germano
+  school_line_2: ""
+  city: Anaheim
+  zip: 92803-3520
+  altEd: f
+  updated_at: 2009-09-18 20:47:05
+  title: Credentials Technician
+  id: "139"
+  ordered: t
+  title_line_2: Human Resources
+  phone: 714-999-1613
+  fax: 714-520-9752
+  distinguished_school: f
+  school: District Office
+  address: 501 Crescent Way/P.O. Box 3520
+  extra: ""
+  state: CA
+  email: germano_j@auhsd.us
+  created_at: 2009-09-18 20:46:23
+business_cards_024: 
+  name: Chuck Hernandez
+  school_line_2: ""
+  city: Cypress
+  zip: 90630-3994
+  altEd: f
+  updated_at: 2009-09-10 23:47:30
+  title: Assistant Principal
+  id: "24"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4147
+  fax: 714-220-4174
+  distinguished_school: f
+  school: Cypress High School
+  address: 9801 Valley View Street
+  extra: ""
+  state: CA
+  email: hernandez_ch@auhsd.us
+  created_at: 2009-09-10 03:29:39
+business_cards_080: 
+  name: Richard Lowe
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:20:02
+  title: Teacher
+  id: "80"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: lowe_ri@auhsd.us
+  created_at: 2009-09-10 04:28:40
+business_cards_052: 
+  name: Albert Guerrero
+  school_line_2: ""
+  city: Anaheim
+  zip: 92803-3520
+  altEd: f
+  updated_at: 2009-09-11 00:04:10
+  title: Maintenance Lead
+  id: "52"
+  ordered: t
+  title_line_2: Maintenance and Operations
+  phone: 714-999-3581
+  fax: 714-778-0729
+  distinguished_school: f
+  school: District Office
+  address: 501 Crescent Way/P.O. Box 3520
+  extra: Cell 714-328-8690
+  state: CA
+  email: guerrero_a@auhsd.us
+  created_at: 2009-09-10 04:10:26
+business_cards_139: 
+  name: Christina Gray
+  school_line_2: ""
+  city: Anaheim
+  zip: "92804"
+  altEd: t
+  updated_at: 2009-09-23 19:06:56
+  title: Counselor
+  id: "140"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-3738
+  fax: 714-999-5651
+  distinguished_school: f
+  school: Gilbert High School - South
+  address: 1800 West Ball Road
+  extra: ""
+  state: CA
+  email: gray_c@auhsd.us
+  created_at: 2009-09-23 19:06:13
+business_cards_025: 
+  name: Ken Nease
+  school_line_2: ""
+  city: Anaheim
+  zip: 92804-1699
+  altEd: f
+  updated_at: 2009-09-10 23:47:55
+  title: Assistant Principal
+  id: "25"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4026
+  fax: 714-220-4027
+  distinguished_school: f
+  school: Western High School
+  address: 501 South Western Avenue
+  extra: ""
+  state: CA
+  email: nease_k@auhsd.us
+  created_at: 2009-09-10 03:31:38
+business_cards_081: 
+  name: Veronica Lozano
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:20:17
+  title: Teacher
+  id: "81"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: lozano_v@auhsd.us
+  created_at: 2009-09-10 04:29:07
+business_cards_053: 
+  name: Daphne Hammer
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-10 23:27:00
+  title: Principal
+  id: "53"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: hammer_d@auhsd.us
+  created_at: 2009-09-10 04:13:18
+business_cards_026: 
+  name: Celeste Krueger, M.H.S., C.C.C.
+  school_line_2: ""
+  city: Anaheim
+  zip: 92803-3720
+  altEd: f
+  updated_at: 2009-09-10 23:48:24
+  title: Speech & Language Specialist
+  id: "26"
+  ordered: t
+  title_line_2: Assistive Technology Specialist
+  phone: Office 714-999-3535
+  fax: Cell 714-335-9239
+  distinguished_school: f
+  school: District Office
+  address: 501 Crescent Way/P.O. Box 3520
+  extra: ""
+  state: CA
+  email: krueger_c@auhsd.us
+  created_at: 2009-09-10 03:34:39
+business_cards_082: 
+  name: Marni Matsumoto-Evans
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:20:31
+  title: Teacher
+  id: "82"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: matsumotoeva_m@auhsd.us
+  created_at: 2009-09-10 04:29:50
+business_cards_054: 
+  name: Brian Bannon
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:03:58
+  title: Assistant Principal (A-K)
+  id: "54"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: bannon_b@auhsd.us
+  created_at: 2009-09-10 04:14:16
+business_cards_027: 
+  name: Lisa G. Cruz
+  school_line_2: ""
+  city: Anaheim
+  zip: 92801-5099
+  altEd: f
+  updated_at: 2009-09-10 23:49:37
+  title: Administrative Assistant,
+  id: "27"
+  ordered: t
+  title_line_2: Principal's Office
+  phone: 714-220-4295
+  fax: 714-995-2544
+  distinguished_school: f
+  school: Savanna High School
+  address: 301 North Gilbert Avenue
+  extra: 714-220-4262 x202
+  state: CA
+  email: cruz_l@auhsd.us
+  created_at: 2009-09-10 03:36:41
+business_cards_083: 
+  name: Jessica MacCaskey
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:20:47
+  title: Teacher
+  id: "83"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: maccaskey_j@auhsd.us
+  created_at: 2009-09-10 04:30:24
+business_cards_055: 
+  name: Alexandra Dortch
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:04:28
+  title: Counselor (L-Z)
+  id: "55"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: dortch_a@auhsd.us
+  created_at: 2009-09-10 04:15:06
+business_cards_110: 
+  name: Janice Goldsberry
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:33:23
+  title: Sr. Administrative Assistant
+  id: "110"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051 x200
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: goldsberry_j@auhsd.us
+  created_at: 2009-09-10 04:46:07
+business_cards_028: 
+  name: Elizabeth Cardenas
+  school_line_2: ""
+  city: Anaheim
+  zip: 92804-1699
+  altEd: f
+  updated_at: 2009-09-10 23:51:02
+  title: Counselor
+  id: "28"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-3086
+  fax: 714-220-4027
+  distinguished_school: f
+  school: Western High School
+  address: 501 South Western Avenue
+  extra: ""
+  state: CA
+  email: cardena_e@auhsd.us
+  created_at: 2009-09-10 03:39:38
+business_cards_084: 
+  name: Michael McEvoy
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:21:00
+  title: Teacher
+  id: "84"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: mcevoy_m@auhsd.us
+  created_at: 2009-09-10 04:30:52
+business_cards_056: 
+  name: Michelle Almazan
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:06:34
+  title: Teacher
+  id: "56"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: almazan_m@auhsd.us
+  created_at: 2009-09-10 04:15:40
+business_cards_111: 
+  name: Karrie Martin
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:35:27
+  title: Office Assistant
+  id: "111"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051 x207
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: martin_k@auhsd.us
+  created_at: 2009-09-10 04:46:44
+business_cards_140: 
+  name: Michele Winton
+  school_line_2: ""
+  city: Anaheim
+  zip: "92804"
+  altEd: f
+  updated_at: 2009-09-23 19:14:35
+  title: Senior Administrative Assistant
+  id: "141"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-7754
+  fax: 714-780-9730
+  distinguished_school: f
+  school: Community Day School
+  address: 1800 West Ball Road
+  extra: or 714-999-7755
+  state: CA
+  email: winton_m@auhsd.us
+  created_at: 2009-09-23 19:14:04
+business_cards_085: 
+  name: Christina Nolasco
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:21:16
+  title: Teacher
+  id: "85"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: nolasco_c@auhsd.us
+  created_at: 2009-09-10 04:31:18
+business_cards_057: 
+  name: Tina Alvahuante
+  school_line_2: ""
+  city: Anaheim
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:06:52
+  title: Teacher
+  id: "57"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: alvahuante_t@auhsd.us
+  created_at: 2009-09-10 04:16:13
+business_cards_112: 
+  name: Debra Lopez
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:35:54
+  title: Secretary
+  id: "112"
+  ordered: t
+  title_line_2: Registration/Records
+  phone: 714-220-4051 x206
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: lopez_d@auhds.us
+  created_at: 2009-09-10 04:47:24
+business_cards_029: 
+  name: Sandy Rofey
+  school_line_2: ""
+  city: Anaheim
+  zip: 92804-1699
+  altEd: f
+  updated_at: 2009-09-10 23:54:15
+  title: Counselor
+  id: "29"
+  ordered: t
+  title_line_2: ""
+  phone: 714-503-1855
+  fax: 714-220-4027
+  distinguished_school: f
+  school: Western High School
+  address: 501 South Western Avenue
+  extra: ""
+  state: CA
+  email: rofey_s@auhsd.us
+  created_at: 2009-09-10 03:40:35
+business_cards_141: 
+  name: Marilyn J. Miller, Ed.D.
+  school_line_2: ""
+  city: Anaheim
+  zip: "92804"
+  altEd: f
+  updated_at: 2009-09-23 19:15:56
+  title: Principal
+  id: "142"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-7754
+  fax: 714-780-9730
+  distinguished_school: f
+  school: Community Day School
+  address: 1800 West Ball Road
+  extra: or 714-780-9730
+  state: CA
+  email: miller_m@auhsd.us
+  created_at: 2009-09-23 19:14:58
+business_cards_086: 
+  name: Steve Palczewski
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:21:30
+  title: Teacher
+  id: "86"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: palczewski_s@auhsd.us
+  created_at: 2009-09-10 04:31:56
+business_cards_058: 
+  name: Leslie Anderson
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:07:14
+  title: Teacher
+  id: "58"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: anderson_l@auhsd.us
+  created_at: 2009-09-10 04:16:50
+business_cards_113: 
+  name: Margaret Patino
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:36:26
+  title: Secretary
+  id: "113"
+  ordered: t
+  title_line_2: Attendance
+  phone: 714-220-4053
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: patino_m@auhsd.us
+  created_at: 2009-09-10 04:47:56
+business_cards_142: 
+  name: Delia Selaya
+  school_line_2: ""
+  city: Anaheim
+  zip: 92805-3486
+  altEd: f
+  updated_at: 2009-09-23 19:22:24
+  title: Registrar/Records
+  id: "143"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-3616
+  fax: 714-776-3879
+  distinguished_school: f
+  school: Sycamore Junior High School
+  address: 1801 East Sycamore Street
+  extra: ""
+  state: CA
+  email: selaya_d@auhsd.us
+  created_at: 2009-09-23 19:17:22
+business_cards_087: 
+  name: Dominique Panella
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:21:45
+  title: Teacher
+  id: "87"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: panella_d@auhsd.us
+  created_at: 2009-09-10 04:32:26
+business_cards_059: 
+  name: Crisanta Andrade
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:07:32
+  title: Teacher
+  id: "59"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: andrade_c@auhsd.us
+  created_at: 2009-09-10 04:17:39
+business_cards_114: 
+  name: Debra Woodall
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:26:53
+  title: Office Assistant
+  id: "114"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051 x202
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: woodall_d@auhsd.us
+  created_at: 2009-09-10 04:48:37
+business_cards_143: 
+  name: Dr. Paula Case
+  school_line_2: ""
+  city: Anaheim
+  zip: 92805-3486
+  altEd: f
+  updated_at: 2009-09-23 19:22:36
+  title: Assistant Principal
+  id: "144"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-3616
+  fax: 714-776-3879
+  distinguished_school: f
+  school: Sycamore Junior High School
+  address: 1801 East Sycamore Street
+  extra: ""
+  state: CA
+  email: case_p@auhsd.us
+  created_at: 2009-09-23 19:18:17
+business_cards_115: 
+  name: Tom Leonard
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:26:32
+  title: Site Supervisor
+  id: "115"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: leonard_t@auhsd.us
+  created_at: 2009-09-10 04:49:12
+business_cards_088: 
+  name: Julie Peckham
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:22:02
+  title: Teacher
+  id: "88"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: peckham_j@auhsd.us
+  created_at: 2009-09-10 04:32:56
+business_cards_001: 
+  name: Trena Becker
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:10:15
+  title: Assistant Principal (L-Z)
+  id: "1"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: becker_t@auhsd.us
+  created_at: 2009-09-10 02:16:54
+business_cards_144: 
+  name: Joyce Byrnes
+  school_line_2: ""
+  city: Anaheim
+  zip: 92805-3486
+  altEd: f
+  updated_at: 2009-09-23 19:23:08
+  title: Counselor
+  id: "145"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-3616
+  fax: 714-776-3879
+  distinguished_school: f
+  school: Sycamore Junior High School
+  address: 1801 East Sycamore Street
+  extra: ""
+  state: CA
+  email: byrnes_j@auhsd.us
+  created_at: 2009-09-23 19:19:07
+business_cards_116: 
+  name: Sandra White
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:26:12
+  title: Food Service Manager
+  id: "116"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-3061
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: white_s@auhsd.us
+  created_at: 2009-09-10 04:49:48
+business_cards_089: 
+  name: Roland Preciado
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:22:17
+  title: Teacher
+  id: "89"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: preciado_r@auhsd.us
+  created_at: 2009-09-10 04:33:34
+business_cards_002: 
+  name: Amber Zisko
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:10:58
+  title: Teacher
+  id: "2"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: zisko_a@auhsd.us
+  created_at: 2009-09-10 02:17:46
+business_cards_030: 
+  name: Linda M. Cates
+  school_line_2: ""
+  city: Anaheim
+  zip: 92803-3520
+  altEd: f
+  updated_at: 2009-09-10 23:54:51
+  title: Senior Payroll Technician
+  id: "30"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-3593
+  fax: ""
+  distinguished_school: f
+  school: District Office
+  address: 501 Crescent Way/P.O. Box 3520
+  extra: ""
+  state: CA
+  email: cates_l@auhsd.us
+  created_at: 2009-09-10 03:41:51
+business_cards_145: 
+  name: Monica Pineda
+  school_line_2: ""
+  city: Anaheim
+  zip: 92805-3486
+  altEd: f
+  updated_at: 2009-09-23 19:23:24
+  title: Counselor
+  id: "146"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-3616
+  fax: 714-776-3879
+  distinguished_school: f
+  school: Sycamore Junior High School
+  address: 1801 East Sycamore Street
+  extra: ""
+  state: CA
+  email: armendariz_m@auhsd.us
+  created_at: 2009-09-23 19:21:09
+business_cards_117: 
+  name: Alicia A. Ramirez
+  school_line_2: ""
+  city: Anaheim
+  zip: "92803"
+  altEd: f
+  updated_at: 2009-09-18 20:25:38
+  title: Student Transfers
+  id: "117"
+  ordered: t
+  title_line_2: Education
+  phone: 714-999-2171
+  fax: 714-520-9754
+  distinguished_school: f
+  school: District Office
+  address: 501 Crescent Way/P.O. Box 3520
+  extra: ""
+  state: CA
+  email: ramirez_a@auhsd.us
+  created_at: 2009-09-15 21:48:05
+business_cards_003: 
+  name: Jaime Winn
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:10:34
+  title: Lead Counselor (A-K)
+  id: "3"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: winn_j@auhsd.us
+  created_at: 2009-09-10 02:18:40
+business_cards_031: 
+  name: Bonnie Delgado, Ed.D.
+  school_line_2: An International Baccalaureate School
+  city: La Palma
+  zip: 90623-2196
+  altEd: f
+  updated_at: 2009-09-10 23:55:15
+  title: Assistant Principal
+  id: "31"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4122
+  fax: 714-821-8291
+  distinguished_school: f
+  school: John F. Kennedy High School
+  address: 8281 Walker Street
+  extra: ""
+  state: CA
+  email: delgado_b@auhsd.us
+  created_at: 2009-09-10 03:43:31
+business_cards_146: 
+  name: Veronica Alvarez
+  school_line_2: ""
+  city: Anaheim
+  zip: 92805-3486
+  altEd: f
+  updated_at: 2009-09-23 19:23:39
+  title: Counselor
+  id: "147"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-3616
+  fax: 714-776-3879
+  distinguished_school: f
+  school: Sycamore Junior High School
+  address: 1801 East Sycamore Street
+  extra: ""
+  state: CA
+  email: alvarez_v@auhsd.us
+  created_at: 2009-09-23 19:21:51
+business_cards_118: 
+  name: Jonathan Adams
+  school_line_2: ""
+  city: Anaheim
+  zip: "92805"
+  altEd: f
+  updated_at: 2009-09-18 18:15:59
+  title: Performing Arts Supervisor
+  id: "119"
+  ordered: t
+  title_line_2: ""
+  phone: ""
+  fax: ""
+  distinguished_school: f
+  school: ""
+  address: 811 W. Lincoln Avenue
+  extra: "Cell: 714-231-6012"
+  state: CA
+  email: adams_j@auhsd.us
+  created_at: 2009-09-18 18:13:02
+business_cards_004: 
+  name: Yolanda C. Mejia
+  school_line_2: ""
+  city: Anaheim
+  zip: 92804-6198
+  altEd: f
+  updated_at: 2009-09-10 23:31:55
+  title: Assistant Principal
+  id: "4"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-3709
+  fax: 714-999-3701
+  distinguished_school: f
+  school: Loara High School
+  address: 1765 West Cerritos Avenue
+  extra: ""
+  state: CA
+  email: mejia@auhsd.us
+  created_at: 2009-09-10 02:29:25
+business_cards_060: 
+  name: Valerie Armijo
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:07:51
+  title: Teacher
+  id: "60"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: armijo_v@auhsd.us
+  created_at: 2009-09-10 04:18:13
+business_cards_032: 
+  name: Juana Rodriguez
+  school_line_2: ""
+  city: Anaheim
+  zip: "92805"
+  altEd: f
+  updated_at: 2009-09-10 23:55:37
+  title: Spanish Translator
+  id: "32"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-3717
+  fax: 714-772-6537
+  distinguished_school: f
+  school: Anaheim High School
+  address: 811 West Lincoln Avenue
+  extra: ""
+  state: CA
+  email: rodriguez_j@auhsd.us
+  created_at: 2009-09-10 03:45:23
+business_cards_147: 
+  name: Shannon Gohr
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-24 15:53:11
+  title: Teacher
+  id: "148"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: gohr_s@auhsd.us
+  created_at: 2009-09-24 15:50:53
+business_cards_119: 
+  name: Brad Minami
+  school_line_2: ""
+  city: Anaheim
+  zip: 92803-3520
+  altEd: f
+  updated_at: 2009-09-18 18:39:24
+  title: Director of Purchasing & Central Services
+  id: "120"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-3602
+  fax: 714-991-0150
+  distinguished_school: f
+  school: District Office
+  address: 501 Crescent Way/P.O. Box 3520
+  extra: ""
+  state: CA
+  email: minami_b@auhsd.us
+  created_at: 2009-09-18 18:38:43
+business_cards_005: 
+  name: Maricela Rowan
+  school_line_2: ""
+  city: Anaheim
+  zip: 92803-3520
+  altEd: f
+  updated_at: 2009-09-18 18:07:48
+  title: Risk Management Technician
+  id: "5"
+  ordered: t
+  title_line_2: ""
+  phone: 714-999-5620
+  fax: 714-520-5741
+  distinguished_school: f
+  school: District Office
+  address: 501 Crescent Way/P.O. Box 3520
+  extra: ""
+  state: CA
+  email: rowan_m@auhsd.us
+  created_at: 2009-09-10 02:32:03
+business_cards_061: 
+  name: Kimberly Artis
+  school_line_2: ""
+  city: La Palma
+  zip: 90623-2097
+  altEd: f
+  updated_at: 2009-09-11 00:08:13
+  title: Teacher
+  id: "61"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-4051
+  fax: 714-220-2237
+  distinguished_school: f
+  school: Walker Junior High School
+  address: 8132 Walker Street
+  extra: ""
+  state: CA
+  email: artis_k@auhsd.us
+  created_at: 2009-09-10 04:18:44
+business_cards_033: 
+  name: Kortney Tambara
+  school_line_2: ""
+  city: Cypress
+  zip: 90630-2921
+  altEd: f
+  updated_at: 2009-09-10 23:55:59
+  title: Counselor A-Le
+  id: "33"
+  ordered: t
+  title_line_2: ""
+  phone: 714-220-3052
+  fax: 714-229-8504
+  distinguished_school: f
+  school: Oxford Academy
+  address: 5172 Orange Avenue
+  extra: ""
+  state: CA
+  email: tambara_k@auhsd.us
+  created_at: 2009-09-10 03:46:52

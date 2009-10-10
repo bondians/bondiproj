@@ -1,0 +1,24 @@
+<% title "Jobs" %>
+
+<p>
+  <strong>Name:</strong>
+  <%=h @jobs.name %>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%=h @jobs.description %>
+</p>
+<p>
+  <strong>Due Date:</strong>
+  <%=h @jobs.due_date %>
+</p>
+<p>
+  <strong>Account:</strong>
+  <%=h @jobs.account_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_job_path(@jobs) %> |
+  <%= link_to "Destroy", @jobs, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", jobs_path %>
+</p>

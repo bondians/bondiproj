@@ -1,0 +1,31 @@
+one:
+  name: MyString
+  title: MyString
+  title_line_2: MyString
+  school: MyString
+  school_line_2: MyString
+  address: MyString
+  city: MyString
+  state: MyString
+  zip: MyString
+  phone: MyString
+  fax: MyString
+  email: MyString
+  altEd: false
+  distinguished_school: false
+
+two:
+  name: MyString
+  title: MyString
+  title_line_2: MyString
+  school: MyString
+  school_line_2: MyString
+  address: MyString
+  city: MyString
+  state: MyString
+  zip: MyString
+  phone: MyString
+  fax: MyString
+  email: MyString
+  altEd: false
+  distinguished_school: false

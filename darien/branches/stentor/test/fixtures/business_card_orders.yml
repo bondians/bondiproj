@@ -1,0 +1,11 @@
+one:
+  quantity: 1
+  businsess_card_batch_id: 1
+  reprint: false
+  business_card_id: 1
+
+two:
+  quantity: 1
+  businsess_card_batch_id: 1
+  reprint: false
+  business_card_id: 1

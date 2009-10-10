@@ -1,0 +1,20 @@
+<% title "Notes" %>
+
+<p>
+  <strong>Name:</strong>
+  <%=h @notes.name %>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%=h @notes.description %>
+</p>
+<p>
+  <strong>Job:</strong>
+  <%=h @notes.job_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_notes_path(@notes) %> |
+  <%= link_to "Destroy", @notes, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", notes_path %>
+</p>
