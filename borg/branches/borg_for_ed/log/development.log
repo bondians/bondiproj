@@ -241,3 +241,45 @@ Processing TasksController#index (for 127.0.0.1 at 2009-10-10 04:20:59) [GET]
 Rendering template within layouts/tasks
 Rendering tasks/index
 Completed in 73ms (View: 66, DB: 1) | 200 OK [http://branches.local/borg_ed/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-10-10 05:24:31) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 27ms (View: 21, DB: 1) | 200 OK [http://branches.local/borg_ed/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-10-10 05:24:58) [GET]
+  [4;35;1mTask Load (0.6ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://branches.local/borg_ed/tasks]
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-10-10 05:25:00) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://branches.local/borg_ed/tasks/new]
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-10-10 05:25:11) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"s5ooJ23cAynPaYjM1VvZVBTJZlVMx7mpib1fvtQBo1U=", "task"=>{"name"=>"ed's branch borg", "description"=>"located right nere"}}
+  [4;36;1mTask Create (0.4ms)[0m   [0;1mINSERT INTO "tasks" ("name", "created_at", "updated_at", "description") VALUES('ed''s branch borg', '2009-10-10 12:25:11', '2009-10-10 12:25:11', 'located right nere')[0m
+Redirected to http://branches.local/borg_ed/tasks/6
+Completed in 17ms (DB: 0) | 302 Found [http://branches.local/borg_ed/tasks]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-10-10 05:25:11) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 6) [0m
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://branches.local/borg_ed/tasks/6]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-10-10 05:25:12) [GET]
+  [4;36;1mTask Load (0.6ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 10ms (View: 6, DB: 1) | 200 OK [http://branches.local/borg_ed/tasks]
