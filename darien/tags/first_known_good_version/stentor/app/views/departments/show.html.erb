@@ -1,0 +1,12 @@
+<% title "Departments" %>
+
+<p>
+  <strong>Name:</strong>
+  <%=h @departments.name %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_department_path(@departments) %> |
+  <%= link_to "Destroy", @departments, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", departments_path %>
+</p>

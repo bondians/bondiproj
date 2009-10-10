@@ -1,0 +1,29 @@
+<% title "Bc Schools" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Zip</th>
+    <th>Default Phone</th>
+    <th>Default Fax</th>
+  </tr>
+  <% for bc_school in @bc_schools %>
+    <tr>
+      <td><%=h bc_school.name %></td>
+      <td><%=h bc_school.address %></td>
+      <td><%=h bc_school.city %></td>
+      <td><%=h bc_school.state %></td>
+      <td><%=h bc_school.zip %></td>
+      <td><%=h bc_school.default_phone %></td>
+      <td><%=h bc_school.default_fax %></td>
+      <td><%= link_to "Show", bc_school %></td>
+      <td><%= link_to "Edit", edit_bc_school_path(bc_school) %></td>
+      <td><%= link_to "Destroy", bc_school, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Bc School", new_bc_school_path %></p>

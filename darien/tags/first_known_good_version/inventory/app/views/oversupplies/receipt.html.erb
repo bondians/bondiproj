@@ -1,0 +1,24 @@
+<% title "Surplus Form Received" %>
+  Receipt for Surplus Request 
+  <%= "Serial Number: " + @oversupply.id.to_s %>
+<p>
+  <strong>Name:</strong>
+  <%=h @oversupply.name %>
+</p>
+<p>
+  <strong>Building:</strong>
+  <%=h @oversupply.building %>
+</p>
+<p>
+  <strong>Contact:</strong>
+  <%=h @oversupply.contact %>
+</p>
+<p>
+  <strong>User-supplied date:</strong>
+  <%=h @oversupply.user_date %>
+</p>
+<p>
+  <strong>Submission date:</strong>
+  <%=h @oversupply.created_at %>
+</p>
+<p>You may save this receipt and print it for your records.</p>

@@ -1,0 +1,28 @@
+<% title "Business Cards" %>
+<p><%= link_to "New Business Card", new_business_card_path %></p>
+<table>
+  <tr>
+    <th width="250" align="left">Name</th>
+    <th width="100" align="left">View</th>
+    <th width="100" align="left">Edit</th>
+    <th width="300" align="left">Title</th>
+    <th width="200" align="left">School</th>
+    <th width="200" align="left">School Line 2</th>
+    <th width="200" align="left">Phone</th>
+    <th width="200" align="left">Email</th>
+  </tr>
+  <% for business_card in @business_cards %>
+    <tr>
+      <td><%=h business_card.name %></td>
+      <td><%= link_to "Show", business_card %></td>
+      <td><%= link_to "Edit", edit_business_card_path(business_card) %></td>
+      <td><%=h business_card.title %></td>
+      <td><%=h business_card.school %></td>
+      <td><%=h business_card.school_line_2 %></td>
+      <td><%=h business_card.phone %></td>
+      <td><%=h business_card.email %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Business Card", new_business_card_path %></p>
