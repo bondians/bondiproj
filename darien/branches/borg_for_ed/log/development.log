@@ -199,3 +199,38 @@ Processing TasksController#index (for ::1 at 2009-10-09 18:37:54) [GET]
 Rendering template within layouts/tasks
 Rendering tasks/index
 Completed in 448ms (View: 442, DB: 1) | 200 OK [http://localhost/borg/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-10-10 01:18:34) [GET]
+  [4;36;1mTask Load (0.6ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 23ms (View: 17, DB: 1) | 200 OK [http://branches.local/borg_ed/tasks]
+
+
+Processing TasksController#new (for 127.0.0.1 at 2009-10-10 01:18:37) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://branches.local/borg_ed/tasks/new]
+
+
+Processing TasksController#create (for 127.0.0.1 at 2009-10-10 01:18:52) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"s5ooJ23cAynPaYjM1VvZVBTJZlVMx7mpib1fvtQBo1U=", "task"=>{"name"=>"ed's task", "description"=>"this database is different from borg_dan"}}
+  [4;35;1mTask Create (0.4ms)[0m   [0mINSERT INTO "tasks" ("name", "created_at", "updated_at", "description") VALUES('ed''s task', '2009-10-10 08:18:52', '2009-10-10 08:18:52', 'this database is different from borg_dan')[0m
+Redirected to http://branches.local/borg_ed/tasks/5
+Completed in 50ms (DB: 0) | 302 Found [http://branches.local/borg_ed/tasks]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2009-10-10 01:18:52) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 5) [0m
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://branches.local/borg_ed/tasks/5]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-10-10 01:18:54) [GET]
+  [4;35;1mTask Load (0.5ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://branches.local/borg_ed/tasks]
