@@ -1,0 +1,38 @@
+<% title "Business Card Order" %>
+
+<p>
+  <strong>Quantity:</strong>
+  <%=h @business_card_order.quantity %>
+</p>
+<p>
+  <strong>Businsess Card Batch:</strong>
+  <%=h @business_card_order.business_card_batch_id %>
+</p>
+<p>
+  <strong>Reprint:</strong>
+  <%=h @business_card_order.reprint %>
+</p>
+<p>
+  <strong>Business Card ID:</strong>
+  <%=h @business_card_order.business_card_id %>
+</p>
+<p>
+  <strong>Name:</strong>
+  <%=h @business_card_order.business_card.name %>
+</p>
+<p>
+  <strong>Title:</strong>
+  <%=h @business_card_order.business_card.title %>
+</p>
+<p>
+  <strong>School:</strong>
+  <%=h @business_card_order.business_card.school %>
+</p>
+
+<p>
+  <%= link_to "Preview Card", business_card_path(@business_card_order.business_card) %> |
+  <%= link_to "Edit", edit_business_card_order_path(@business_card_order) %> |
+  <%= link_to "Destroy", @business_card_order, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", business_card_orders_path %> |
+  <%= link_to "New Business Card Order", new_business_card_order_path %>
+</p>

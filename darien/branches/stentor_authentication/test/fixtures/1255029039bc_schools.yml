@@ -1,0 +1,23 @@
+--- 
+bc_schools_001: 
+  name: MyString
+  city: MyString
+  zip: MyString
+  updated_at: 2009-10-08 18:24:01
+  id: "953125641"
+  address: MyString
+  default_phone: MyString
+  default_fax: MyString
+  state: MyString
+  created_at: 2009-10-08 18:24:01
+bc_schools_002: 
+  name: MyString
+  city: MyString
+  zip: MyString
+  updated_at: 2009-10-08 18:24:01
+  id: "996332877"
+  address: MyString
+  default_phone: MyString
+  default_fax: MyString
+  state: MyString
+  created_at: 2009-10-08 18:24:01
