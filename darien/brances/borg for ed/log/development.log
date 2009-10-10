@@ -1,0 +1,201 @@
+  [4;36;1mSQL (0.9ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (6.4ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTasks (20091006025901)
+  [4;36;1mSQL (1.9ms)[0m   [0;1mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091006025901')[0m
+  [4;36;1mSQL (19.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mPRAGMA index_list("tasks")[0m
+
+
+Processing TasksController#index (for 172.16.5.22 at 2009-10-06 17:34:54) [GET]
+  [4;36;1mTask Load (1.6ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 163ms (View: 133, DB: 2) | 200 OK [http://alephone.local/borg/tasks]
+
+
+Processing TasksController#new (for 172.16.5.22 at 2009-10-06 17:35:07) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 60ms (View: 41, DB: 0) | 200 OK [http://alephone.local/borg/tasks/new]
+
+
+Processing TasksController#create (for 172.16.5.22 at 2009-10-06 17:35:19) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"8EjpmQyREGwg/5R2gcAn9LgQH99gCghr7YltMu/JFyI=", "task"=>{"name"=>"domnation", "description"=>"capture jean-luc picard"}}
+  [4;35;1mTask Create (8.3ms)[0m   [0mINSERT INTO "tasks" ("name", "updated_at", "description", "created_at") VALUES('domnation', '2009-10-07 00:35:19', 'capture jean-luc picard', '2009-10-07 00:35:19')[0m
+Redirected to http://alephone.local/borg/tasks/1
+Completed in 83ms (DB: 8) | 302 Found [http://alephone.local/borg/tasks]
+
+
+Processing TasksController#show (for 172.16.5.22 at 2009-10-06 17:35:19) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTask Load (1.2ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 45ms (View: 24, DB: 1) | 200 OK [http://alephone.local/borg/tasks/1]
+
+
+Processing TasksController#index (for 172.16.5.22 at 2009-10-06 17:35:21) [GET]
+  [4;35;1mTask Load (1.9ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 33ms (View: 15, DB: 2) | 200 OK [http://alephone.local/borg/tasks]
+
+
+Processing TasksController#new (for 172.16.5.22 at 2009-10-06 17:35:23) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 31ms (View: 12, DB: 0) | 200 OK [http://alephone.local/borg/tasks/new]
+
+
+Processing TasksController#create (for 172.16.5.22 at 2009-10-06 17:35:33) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"8EjpmQyREGwg/5R2gcAn9LgQH99gCghr7YltMu/JFyI=", "task"=>{"name"=>"domination", "description"=>"borg the captain"}}
+  [4;36;1mTask Create (1.4ms)[0m   [0;1mINSERT INTO "tasks" ("name", "updated_at", "description", "created_at") VALUES('domination', '2009-10-07 00:35:33', 'borg the captain', '2009-10-07 00:35:33')[0m
+Redirected to http://alephone.local/borg/tasks/2
+Completed in 34ms (DB: 1) | 302 Found [http://alephone.local/borg/tasks]
+
+
+Processing TasksController#show (for 172.16.5.22 at 2009-10-06 17:35:33) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mTask Load (1.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 2) [0m
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 30ms (View: 9, DB: 1) | 200 OK [http://alephone.local/borg/tasks/2]
+
+
+Processing TasksController#index (for 172.16.5.22 at 2009-10-06 17:36:16) [GET]
+  [4;36;1mTask Load (2.3ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 35ms (View: 18, DB: 2) | 200 OK [http://alephone.local/borg/tasks]
+
+
+Processing TasksController#index (for 172.16.5.22 at 2009-10-06 18:06:20) [GET]
+  [4;36;1mTask Load (2.8ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 106ms (View: 86, DB: 3) | 200 OK [http://alephone.local/borg/tasks]
+
+
+Processing TasksController#index (for 172.16.5.22 at 2009-10-06 18:08:44) [GET]
+  [4;36;1mTask Load (3.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 149ms (View: 113, DB: 4) | 200 OK [http://alephone.local/borg/tasks]
+
+
+Processing TasksController#new (for 172.16.5.22 at 2009-10-06 18:08:48) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 51ms (View: 32, DB: 0) | 200 OK [http://alephone.local/borg/tasks/new]
+
+
+Processing TasksController#create (for 172.16.5.22 at 2009-10-06 18:09:01) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"8EjpmQyREGwg/5R2gcAn9LgQH99gCghr7YltMu/JFyI=", "task"=>{"name"=>"add information", "description"=>"put more stuff on here"}}
+  [4;35;1mTask Create (11.5ms)[0m   [0mINSERT INTO "tasks" ("name", "updated_at", "description", "created_at") VALUES('add information', '2009-10-07 01:09:01', 'put more stuff on here', '2009-10-07 01:09:01')[0m
+Redirected to http://alephone.local/borg/tasks/3
+Completed in 87ms (DB: 11) | 302 Found [http://alephone.local/borg/tasks]
+
+
+Processing TasksController#show (for 172.16.5.22 at 2009-10-06 18:09:01) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mTask Load (1.3ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 3) [0m
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 46ms (View: 26, DB: 1) | 200 OK [http://alephone.local/borg/tasks/3]
+
+
+Processing TasksController#index (for 172.16.5.22 at 2009-10-06 18:09:02) [GET]
+  [4;35;1mTask Load (2.6ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 36ms (View: 19, DB: 3) | 200 OK [http://alephone.local/borg/tasks]
+
+
+Processing TasksController#new (for 172.16.5.22 at 2009-10-06 18:09:34) [GET]
+Rendering template within layouts/tasks
+Rendering tasks/new
+Completed in 59ms (View: 23, DB: 0) | 200 OK [http://alephone.local/borg/tasks/new]
+
+
+Processing TasksController#create (for 172.16.5.22 at 2009-10-06 18:09:51) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"8EjpmQyREGwg/5R2gcAn9LgQH99gCghr7YltMu/JFyI=", "task"=>{"name"=>"find better clothes", "description"=>"buy some nice button-up shirts"}}
+  [4;36;1mTask Create (1.4ms)[0m   [0;1mINSERT INTO "tasks" ("name", "updated_at", "description", "created_at") VALUES('find better clothes', '2009-10-07 01:09:51', 'buy some nice button-up shirts', '2009-10-07 01:09:51')[0m
+Redirected to http://alephone.local/borg/tasks/4
+Completed in 33ms (DB: 1) | 302 Found [http://alephone.local/borg/tasks]
+
+
+Processing TasksController#show (for 172.16.5.22 at 2009-10-06 18:09:51) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mTask Load (1.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 4) [0m
+Rendering template within layouts/tasks
+Rendering tasks/show
+Completed in 29ms (View: 8, DB: 1) | 200 OK [http://alephone.local/borg/tasks/4]
+
+
+Processing TasksController#index (for 172.16.5.22 at 2009-10-06 18:09:53) [GET]
+  [4;36;1mTask Load (2.8ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 40ms (View: 22, DB: 3) | 200 OK [http://alephone.local/borg/tasks]
+
+
+Processing TasksController#index (for 172.16.5.22 at 2009-10-06 18:22:40) [GET]
+  [4;36;1mTask Load (3.4ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 138ms (View: 116, DB: 3) | 200 OK [http://172.16.7.100/borg/tasks]
+
+
+Processing ApplicationController#index (for ::1 at 2009-10-09 18:37:44) [GET]
+
+ActionController::RoutingError (No route matches "" with {:method=>:get}):
+  /Users/tindrum/passenger/lib/phusion_passenger/rack/request_handler.rb:95:in `process_request'
+  /Users/tindrum/passenger/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  /Users/tindrum/passenger/lib/phusion_passenger/railz/application_spawner.rb:378:in `start_request_handler'
+  /Users/tindrum/passenger/lib/phusion_passenger/railz/application_spawner.rb:336:in `handle_spawn_application'
+  /Users/tindrum/passenger/lib/phusion_passenger/utils.rb:183:in `safe_fork'
+  /Users/tindrum/passenger/lib/phusion_passenger/railz/application_spawner.rb:334:in `handle_spawn_application'
+  /Users/tindrum/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /Users/tindrum/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /Users/tindrum/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  /Users/tindrum/passenger/lib/phusion_passenger/abstract_server.rb:163:in `start'
+  /Users/tindrum/passenger/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  /Users/tindrum/passenger/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  /Users/tindrum/passenger/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  /Users/tindrum/passenger/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  /Users/tindrum/passenger/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  /Users/tindrum/passenger/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  /Users/tindrum/passenger/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  /Users/tindrum/passenger/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  /Users/tindrum/passenger/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  /Users/tindrum/passenger/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  /Users/tindrum/passenger/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  /Users/tindrum/passenger/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing TasksController#index (for ::1 at 2009-10-09 18:37:54) [GET]
+  [4;36;1mTask Load (0.8ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 448ms (View: 442, DB: 1) | 200 OK [http://localhost/borg/tasks]
