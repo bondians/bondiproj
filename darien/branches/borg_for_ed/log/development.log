@@ -234,3 +234,10 @@ Processing TasksController#index (for 127.0.0.1 at 2009-10-10 01:18:54) [GET]
 Rendering template within layouts/tasks
 Rendering tasks/index
 Completed in 9ms (View: 5, DB: 1) | 200 OK [http://branches.local/borg_ed/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2009-10-10 04:20:59) [GET]
+  [4;36;1mTask Load (0.7ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/tasks
+Rendering tasks/index
+Completed in 73ms (View: 66, DB: 1) | 200 OK [http://branches.local/borg_ed/tasks]
