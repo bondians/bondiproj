@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby -wKU
 require 'optparse'
 require 'ostruct'
 require 'pp'
