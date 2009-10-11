@@ -12,6 +12,7 @@ module SVN
 			options = OpenStruct.new
 			options.proj = ""
 			options.dir = ""
+			options.url = "https://deepbondi.devguard.com/svn/bondiproj/"
 
 			opts = OptionParser.new do |opts|
 				opts.banner = "Usage: svnproj.rb [options]"
@@ -36,6 +37,8 @@ module SVN
 			#puts options.dir
 			@proj = options.proj
 			@dir = options.dir
+			@url = options.url
+			puts options.url
 
 		end
 
@@ -45,9 +48,16 @@ module SVN
 		def makeit()
 			p = Pathname.new(@dir)
 			if p.directory?
-				puts "Well, I'ma gonna make this project named #{@proj} in the dir #{@dir}"
+				puts "Good news... directory #{@dir} exists!"
+				puts "Well, I'ma gonna make this project named #{@proj}."
+				system "svn info"
+
+				cmd = "svn mkdir #{@url}/#{@proj}/ -m \"This is a test\""
+				puts "Running:#{cmd}"
+				system cmd
 			else
 				puts "Sorry, the directory #{@dir} does not exist.."
+			end
 		end
 	end
 end
