@@ -1,0 +1,20 @@
+<% title "Surplus" %>
+
+<p>
+  <strong>From:</strong>
+  <%=h @surplus.from %>
+</p>
+<p>
+  <strong>Building Number:</strong>
+  <%=h @surplus.building_number %>
+</p>
+<p>
+  <strong>Contact:</strong>
+  <%=h @surplus.contact %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_surplus_path(@surplus) %> |
+  <%= link_to "Destroy", @surplus, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", surplus_path %>
+</p>

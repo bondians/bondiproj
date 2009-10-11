@@ -1,0 +1,13 @@
+one:
+  description: MyString
+  make_model: MyString
+  inventory_id_tag_number: MyString
+  quantity: 1
+  condition_code: MyString
+
+two:
+  description: MyString
+  make_model: MyString
+  inventory_id_tag_number: MyString
+  quantity: 1
+  condition_code: MyString
