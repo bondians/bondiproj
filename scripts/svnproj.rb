@@ -55,6 +55,20 @@ module SVN
 				cmd = "svn mkdir #{@url}/#{@proj}/ -m \"This is a test\""
 				puts "Running:#{cmd}"
 				system cmd
+
+				dirs = ['trunk', 'branches', 'tags']
+
+				# Now, make the trunk, branches and tags dirs
+				dirs.each do |dir|
+					cmd = "svn mkdir #{@url}/#{@proj}/#{dir} -m \"Build dir #{@proj}/#{dir}\""
+					puts "Running:#{cmd}"
+					system cmd
+				end
+
+				# Then, import dir into trunk
+				cmd = "svn import #{@dir} #{@url}/#{@proj}/trunk  -m \"Import into trunk.\""
+				puts "Running:#{cmd}"
+				system cmd
 			else
 				puts "Sorry, the directory #{@dir} does not exist.."
 			end
