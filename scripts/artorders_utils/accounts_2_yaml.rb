@@ -1,4 +1,8 @@
 #!/usr/bin/env ruby -wKU
+require 'optparse'
+require 'ostruct'
+require 'pp'
+require 'pathname'
 
 # File input: output file of a FileMaker Accounts file
 # as created by D.G. Henderson for the Graphic Arts Dept of the AUHSD
@@ -16,27 +20,34 @@
 inputfile = ARGV[0]
 outputpath = ARGV[1]
 
+p = Pathname.new(ARGV[1])
+
 begin
   # see if the outpath directory exists
-  Dir.chdir(outputpath)
+  Dir.chdir(p)
   puts "able to change to that directory"
   
   rescue SystemCallError 
      # Try to create the directory
     begin
-      Dir.mkdir(outputpath)
+      Dir.mkdir(p)
+      
       puts "able to create the directory"      
       rescue SystemCallError
         # Was unable to create directory
         puts "was not able to change to that directory"      
       raise
     end
-
-    
-
-
-
 end
+
+accounts = File.new("accounts.yml", "w")
+cmd = "touch ./findme.txt"
+system cmd
+
+accounts.print("Hello\r")
+
+accounts.close
+
 
 File.open(inputfile, "r")  do |file|
   # puts file.path
