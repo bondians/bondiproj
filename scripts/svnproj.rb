@@ -1,6 +1,7 @@
 require 'optparse'
 require 'ostruct'
 require 'pp'
+require 'pathname'
 
 
 module SVN
@@ -42,7 +43,11 @@ module SVN
 		end
 
 		def makeit()
-			puts "Well, I'ma gonna make this project named #{@proj} in the dir #{@dir}"
+			p = Pathname.new(@dir)
+			if p.directory?
+				puts "Well, I'ma gonna make this project named #{@proj} in the dir #{@dir}"
+			else
+				puts "Sorry, the directory #{@dir} does not exist.."
 		end
 	end
 end
