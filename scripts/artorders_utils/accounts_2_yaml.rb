@@ -14,9 +14,30 @@
   
 
 inputfile = ARGV[0]
+outputpath = ARGV[1]
+
+# see if the outpath directory exists
+begin
+  Dir.chdir(outputpath)
+  puts "able to change to that directory"
+  
+  rescue SystemCallError 
+     #Dir.mkdir(outputpath)
+
+    # raise 
+    begin
+      Dir.mkdir(outputpath)
+      rescue SystemCallError
+        puts "was not able to change to that directory"      
+      raise
+    end
+end
+
+
 
 File.open(inputfile, "r")  do |file|
+  puts file.path
   while line = file.gets
-    puts line
+    #puts line
   end
 end
