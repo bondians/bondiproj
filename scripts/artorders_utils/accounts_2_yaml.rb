@@ -11,3 +11,12 @@
 #
 # I couldn't get the new way of using named relations to work.
 # This script will use the old way of having the _id field
+  
+
+inputfile = ARGV[0]
+
+File.open(inputfile, "r")  do |file|
+  while line = file.gets
+    puts line
+  end
+end
