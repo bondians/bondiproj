@@ -67,7 +67,7 @@ module SVN
 				end
 
 				# Then, import dir into trunk
-				cmd = "svn import #{@dir} #{@url}/#{@proj}/trunk  -m \"Import into trunk.\""
+				cmd = sprintf("svn import %s %s/%s/trunk -m \"Import into trunk.\"",@dir,@url,@proj)
 				puts "Running:#{cmd}"
 				system cmd
 			else
