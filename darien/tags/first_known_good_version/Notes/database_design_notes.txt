@@ -1,8 +1,0 @@
-a department can has a main phone number
-people within that department may use the main number, or they may have separate lines. 
-Some people have private lines, that are not a common line of that department
-some people can has more than one department
-people can have more than one phone, and one of them is the preferred number, but they may leave a message and want to use an alternate (cell) number
-people can have fax numbers, but departments usually have them.
-So, a phone number needs a type, like office, home, cell, fax
-People can have more than one email.

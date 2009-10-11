@@ -1,9 +1,0 @@
-one:
-  from: MyString
-  building_number: MyString
-  contact: MyString
-
-two:
-  from: MyString
-  building_number: MyString
-  contact: MyString
