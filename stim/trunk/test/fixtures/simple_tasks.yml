@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  note: MyString
+  date_completed: 2009-11-05 13:16:03
+  completed: false
+
+two:
+  name: MyString
+  note: MyString
+  date_completed: 2009-11-05 13:16:03
+  completed: false

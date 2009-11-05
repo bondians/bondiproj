@@ -1,0 +1,33 @@
+<% title "Jobs" %>
+
+<div id="Accordion1" class="Accordion" tabindex="0">
+    <% for job in @jobs %>
+    <div class="AccordionPanel">
+      <div class="AccordionPanelTab"><b><%=h job.name %></b> - <%=h job.due_date.strftime("Due: %a, %b %d") %></div>
+      <div class="AccordionPanelContent">
+        <p>Job Name: <%=h job.name %></p>
+        <p>Full Description: <%=h job.description %></p>
+        <p>Submit Date (from work order): <%=h job.submit_date %></p>
+        <p>Due Date: <%=h job.due_date %></p>
+        <p>Person who entered this info: <%=h job.entry_person %></p>
+        <p>Person who requested job: <%=h job.requester %></p>
+        <p>School or Department: <%=h job.department %></p>
+        <p>Before jobs ship, they must have an account number: <%=h job.acct_number %></p>
+        <p>and an authorization signature: <%=h job.auth_sig %></p>
+        <p>For Design jobs, where is the main directory (folder) on Uno: <%=h job.uno_path %></p?>
+        <p>Which copier is this job to print on?: <%=h job.copier_name %></p>
+        <p><%= link_to "Show", job %>
+        <%= link_to "Edit", edit_job_path(job) %>
+        <%= link_to "Destroy", job, :confirm => 'Are you sure?', :method => :delete %></p>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+<script type="text/javascript">
+<!--
+var Accordion1 = new Spry.Widget.Accordion("Accordion1");
+//-->
+</script>
+
+<p><%= link_to "New Job", new_job_path %></p>

@@ -1,0 +1,50 @@
+<% form_for @job do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.label :submit_date %><br />
+    <%#= calendar_box 'job', 'submit_date' %>
+    <%= f.datetime_select :submit_date %>
+  </p>
+  <p>
+    <%= f.label :due_date %><br />
+    <%#= calendar_box 'job', 'due_date' %>
+    <%= f.datetime_select :due_date %>
+  </p>
+  <p>
+    <%= f.label :entry_person %><br />
+    <%= f.text_field :entry_person %>
+  </p>
+  <p>
+    <%= f.label :acct_number %><br />
+    <%= f.text_field :acct_number %>
+  </p>
+  <p>
+    <%= f.label :requester %><br />
+    <%= f.text_field :requester %>
+  </p>
+  <p>
+    <%= f.label :department %><br />
+    <%= f.text_field :department %>
+  </p>
+  <p>
+    <%= f.label :auth_sig %><br />
+    <%= f.check_box :auth_sig %>
+  </p>
+  <p>
+    <%= f.label :uno_path %><br />
+    <%= f.text_field :uno_path %>
+  </p>
+  <p>
+    <%= f.label :copier_name %><br />
+    <%= f.text_field :copier_name %>
+  </p>
+  <p><%= f.submit "Submit" %></p>
+<% end %>

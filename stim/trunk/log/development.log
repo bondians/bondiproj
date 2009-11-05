@@ -1,0 +1,1422 @@
+
+
+Processing Rails::InfoController#properties (for 172.16.5.4 at 2009-11-04 12:50:02) [GET]
+  [4;36;1mSQL (1.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Completed in 110ms (View: 10, DB: 1) | 200 OK [http://172.16.7.100/rails/info/properties]
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (4.8ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (3.1ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSimpleTasks (20091105211603)
+  [4;36;1mSQL (2.5ms)[0m   [0;1mCREATE TABLE "simple_tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "note" varchar(255), "date_completed" datetime, "completed" boolean, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091105211603')[0m
+Migrating to CreateJobs (20091105212249)
+  [4;36;1mSQL (1.8ms)[0m   [0;1mCREATE TABLE "jobs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "submit_date" datetime, "due_date" datetime, "entry_person" varchar(255), "acct_number" varchar(255), "requester" varchar(255), "department" varchar(255), "auth_sig" boolean, "uno_path" varchar(255), "copier_name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091105212249')[0m
+  [4;36;1mSQL (3.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mPRAGMA index_list("jobs")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mPRAGMA index_list("simple_tasks")[0m
+
+
+Processing Rails::InfoController#properties (for 172.16.5.4 at 2009-11-05 13:23:56) [GET]
+  [4;36;1mSQL (2.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Completed in 100ms (View: 9, DB: 4) | 200 OK [http://172.16.7.100/rails/info/properties]
+
+
+Processing JobsController#index (for 172.16.5.4 at 2009-11-05 13:24:01) [GET]
+  [4;36;1mJob Load (1.4ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 309ms (View: 293, DB: 1) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#new (for 172.16.5.4 at 2009-11-05 13:24:04) [GET]
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (282.1ms)
+Completed in 333ms (View: 308, DB: 0) | 200 OK [http://172.16.7.100/jobs/new]
+
+
+Processing JobsController#create (for 172.16.5.4 at 2009-11-05 13:25:20) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"Cze+UBaggMiwgHk1TSd/kD+ODwtqeqJyH+GoxEIqt44=", "job"=>{"department"=>"Graphic Arts", "submit_date(3i)"=>"5", "name"=>"job tracker", "submit_date(4i)"=>"21", "due_date(1i)"=>"2009", "submit_date(5i)"=>"24", "due_date(2i)"=>"11", "due_date(3i)"=>"10", "due_date(4i)"=>"21", "copier_name"=>"", "entry_person"=>"tindrum", "due_date(5i)"=>"24", "description"=>"Dan's making a job tracking web site using ruby on rails.", "uno_path"=>"/usr/local/Rails/stim", "auth_sig"=>"0", "submit_date(1i)"=>"2009", "submit_date(2i)"=>"11", "requester"=>"jeff schoffield", "acct_number"=>""}}
+  [4;35;1mJob Create (3.3ms)[0m   [0mINSERT INTO "jobs" ("name", "department", "updated_at", "submit_date", "description", "entry_person", "copier_name", "due_date", "uno_path", "auth_sig", "acct_number", "requester", "created_at") VALUES('job tracker', 'Graphic Arts', '2009-11-05 21:25:20', '2009-11-05 21:24:00', 'Dan''s making a job tracking web site using ruby on rails.', 'tindrum', '', '2009-11-10 21:24:00', '/usr/local/Rails/stim', 'f', '', 'jeff schoffield', '2009-11-05 21:25:20')[0m
+Redirected to http://172.16.7.100:3000/jobs/1
+Completed in 80ms (DB: 3) | 302 Found [http://172.16.7.100/jobs]
+
+
+Processing JobsController#show (for 172.16.5.4 at 2009-11-05 13:25:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mJob Load (1.9ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering jobs/show
+Completed in 59ms (View: 32, DB: 2) | 200 OK [http://172.16.7.100/jobs/1]
+
+
+Processing JobsController#edit (for 172.16.5.4 at 2009-11-05 13:26:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mJob Load (2.0ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering jobs/edit
+Rendered jobs/_form (434.8ms)
+Completed in 508ms (View: 481, DB: 2) | 200 OK [http://172.16.7.100/jobs/1/edit]
+
+
+Processing JobsController#update (for 172.16.5.4 at 2009-11-05 13:26:48) [PUT]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"Cze+UBaggMiwgHk1TSd/kD+ODwtqeqJyH+GoxEIqt44=", "id"=>"1", "job"=>{"department"=>"Graphic Arts", "submit_date(3i)"=>"5", "name"=>"job tracker", "submit_date(4i)"=>"13", "due_date(1i)"=>"2009", "submit_date(5i)"=>"24", "due_date(2i)"=>"11", "due_date(3i)"=>"10", "due_date(4i)"=>"09", "copier_name"=>"", "entry_person"=>"tindrum", "due_date(5i)"=>"00", "description"=>"Dan's making a job tracking web site using ruby on rails.", "uno_path"=>"/usr/local/Rails/stim", "auth_sig"=>"0", "submit_date(1i)"=>"2009", "submit_date(2i)"=>"11", "requester"=>"jeff schoffield", "acct_number"=>""}}
+  [4;35;1mJob Load (1.7ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 1) [0m
+  [4;36;1mJob Update (3.7ms)[0m   [0;1mUPDATE "jobs" SET "due_date" = '2009-11-10 17:00:00', "updated_at" = '2009-11-05 21:26:48' WHERE "id" = 1[0m
+Redirected to http://172.16.7.100:3000/jobs/1
+Completed in 83ms (DB: 5) | 302 Found [http://172.16.7.100/jobs/1]
+
+
+Processing JobsController#show (for 172.16.5.4 at 2009-11-05 13:26:48) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mJob Load (1.8ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering jobs/show
+Completed in 59ms (View: 33, DB: 2) | 200 OK [http://172.16.7.100/jobs/1]
+
+
+Processing JobsController#index (for 172.16.5.4 at 2009-11-05 13:26:51) [GET]
+  [4;36;1mJob Load (2.7ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 58ms (View: 41, DB: 3) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#index (for 172.16.5.13 at 2009-11-05 13:28:09) [GET]
+  [4;35;1mJob Load (2.5ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 97ms (View: 79, DB: 2) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#new (for 172.16.5.13 at 2009-11-05 13:29:13) [GET]
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (51.7ms)
+Completed in 93ms (View: 69, DB: 0) | 200 OK [http://172.16.7.100/jobs/new]
+
+
+Processing JobsController#index (for 172.16.5.13 at 2009-11-05 13:30:11) [GET]
+  [4;36;1mJob Load (3.5ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 45ms (View: 27, DB: 3) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#index (for 172.16.5.4 at 2009-11-05 13:30:15) [GET]
+  [4;35;1mJob Load (2.5ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 47ms (View: 28, DB: 2) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#new (for 172.16.5.4 at 2009-11-05 13:30:19) [GET]
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (327.0ms)
+Completed in 357ms (View: 333, DB: 0) | 200 OK [http://172.16.7.100/jobs/new]
+
+
+Processing JobsController#new (for 172.16.5.13 at 2009-11-05 13:31:11) [GET]
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (52.6ms)
+Completed in 83ms (View: 58, DB: 0) | 200 OK [http://172.16.7.100/jobs/new]
+
+
+Processing JobsController#index (for 172.16.5.13 at 2009-11-05 13:31:16) [GET]
+  [4;36;1mJob Load (2.5ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 45ms (View: 28, DB: 3) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#create (for 172.16.5.4 at 2009-11-05 13:31:36) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"Cze+UBaggMiwgHk1TSd/kD+ODwtqeqJyH+GoxEIqt44=", "job"=>{"department"=>"Western", "submit_date(3i)"=>"5", "name"=>"Certs", "submit_date(4i)"=>"13", "due_date(1i)"=>"2009", "submit_date(5i)"=>"30", "due_date(2i)"=>"11", "due_date(3i)"=>"23", "due_date(4i)"=>"13", "copier_name"=>"", "entry_person"=>"tindrum", "due_date(5i)"=>"30", "description"=>"make two-color certs for some lady in counseling", "uno_path"=>"Schools/High Schools/Western/Certificates/Councelor_Certs", "auth_sig"=>"0", "submit_date(1i)"=>"2009", "submit_date(2i)"=>"11", "requester"=>"Counselor", "acct_number"=>""}}
+  [4;35;1mJob Create (2.7ms)[0m   [0mINSERT INTO "jobs" ("name", "department", "updated_at", "submit_date", "description", "entry_person", "copier_name", "due_date", "uno_path", "auth_sig", "acct_number", "requester", "created_at") VALUES('Certs', 'Western', '2009-11-05 21:31:36', '2009-11-05 21:30:00', 'make two-color certs for some lady in counseling', 'tindrum', '', '2009-11-23 21:30:00', 'Schools/High Schools/Western/Certificates/Councelor_Certs', 'f', '', 'Counselor', '2009-11-05 21:31:36')[0m
+Redirected to http://172.16.7.100:3000/jobs/2
+Completed in 50ms (DB: 3) | 302 Found [http://172.16.7.100/jobs]
+
+
+Processing JobsController#show (for 172.16.5.4 at 2009-11-05 13:31:36) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mJob Load (1.7ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering jobs/show
+Completed in 43ms (View: 17, DB: 2) | 200 OK [http://172.16.7.100/jobs/2]
+
+
+Processing JobsController#index (for 172.16.5.4 at 2009-11-05 13:31:39) [GET]
+  [4;35;1mJob Load (3.2ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 50ms (View: 31, DB: 3) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#edit (for 172.16.5.13 at 2009-11-05 13:33:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mJob Load (1.7ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering jobs/edit
+Rendered jobs/_form (52.6ms)
+Completed in 89ms (View: 60, DB: 2) | 200 OK [http://172.16.7.100/jobs/1/edit]
+
+
+Processing JobsController#index (for 172.16.5.13 at 2009-11-05 13:33:35) [GET]
+  [4;35;1mJob Load (3.1ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 49ms (View: 31, DB: 3) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#index (for 172.16.5.4 at 2009-11-05 13:49:12) [GET]
+  [4;36;1mJob Load (3.2ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 76ms (View: 31, DB: 3) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#new (for 172.16.5.4 at 2009-11-05 13:49:19) [GET]
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (52.9ms)
+Completed in 83ms (View: 59, DB: 0) | 200 OK [http://172.16.7.100/jobs/new]
+
+
+Processing JobsController#index (for 172.16.5.4 at 2009-11-05 13:49:25) [GET]
+  [4;35;1mJob Load (4.6ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 333ms (View: 33, DB: 5) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#show (for 172.16.5.4 at 2009-11-05 13:51:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mJob Load (1.9ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering jobs/show
+Completed in 47ms (View: 18, DB: 2) | 200 OK [http://172.16.7.100/jobs/1]
+
+
+Processing JobsController#index (for 172.16.5.4 at 2009-11-05 13:51:28) [GET]
+  [4;35;1mJob Load (4.1ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 53ms (View: 31, DB: 4) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#edit (for 172.16.5.4 at 2009-11-05 13:51:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mJob Load (1.7ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering jobs/edit
+Rendered jobs/_form (54.1ms)
+Completed in 92ms (View: 62, DB: 2) | 200 OK [http://172.16.7.100/jobs/1/edit]
+
+
+Processing JobsController#index (for 172.16.5.4 at 2009-11-05 13:51:34) [GET]
+  [4;35;1mJob Load (3.3ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 52ms (View: 32, DB: 3) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#index (for 172.16.5.4 at 2009-11-05 14:05:54) [GET]
+  [4;36;1mJob Load (4.2ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 52ms (View: 31, DB: 4) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#index (for 172.16.5.4 at 2009-11-05 14:09:19) [GET]
+  [4;35;1mJob Load (3.3ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 53ms (View: 32, DB: 3) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#index (for 172.16.5.4 at 2009-11-05 14:10:51) [GET]
+  [4;36;1mJob Load (3.1ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 68ms (View: 48, DB: 3) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#index (for 172.16.5.4 at 2009-11-05 14:11:54) [GET]
+  [4;35;1mJob Load (3.2ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 53ms (View: 32, DB: 3) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#index (for 172.16.5.4 at 2009-11-05 14:12:13) [GET]
+  [4;36;1mJob Load (4.6ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 498ms (View: 453, DB: 5) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#new (for 172.16.5.13 at 2009-11-05 14:14:34) [GET]
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (58.1ms)
+Completed in 108ms (View: 82, DB: 0) | 200 OK [http://172.16.7.100/jobs/new]
+
+
+Processing JobsController#index (for 172.16.5.4 at 2009-11-05 14:15:35) [GET]
+  [4;36;1mJob Load (3.6ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 490ms (View: 447, DB: 4) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#index (for 172.16.5.4 at 2009-11-05 14:18:43) [GET]
+  [4;35;1mJob Load (3.2ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 54ms (View: 34, DB: 3) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#new (for 172.16.5.13 at 2009-11-05 14:25:04) [GET]
+Rendering template within layouts/application
+Rendering jobs/new
+
+ActionView::TemplateError (undefined method `calendar_box' for #<ActionView::Base:0x245ef8c>) on line #17 of app/views/jobs/_form.html.erb:
+14:   </p>
+15:   <p>
+16:     <%= f.label :due_date %><br />
+17:     <%= calendar_box 'item[price]', 'expire' %>
+18:     <%#= f.datetime_select :due_date %>
+19:   </p>
+20:   <p>
+
+    app/views/jobs/_form.html.erb:17
+    app/views/jobs/_form.html.erb:1
+    app/views/jobs/new.html.erb:3
+
+Rendered rescues/_trace (473.0ms)
+Rendered rescues/_request_and_response (20.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 172.16.5.4 at 2009-11-05 14:28:05) [GET]
+  [4;36;1mJob Load (4.0ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 678ms (View: 650, DB: 4) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#index (for 172.16.5.4 at 2009-11-05 14:28:24) [GET]
+  [4;35;1mJob Load (4.0ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 350ms (View: 322, DB: 4) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#index (for 172.16.5.4 at 2009-11-05 14:28:30) [GET]
+  [4;36;1mJob Load (6.1ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 77ms (View: 47, DB: 6) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#index (for 172.16.5.4 at 2009-11-05 14:29:00) [GET]
+  [4;35;1mJob Load (3.8ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 93ms (View: 69, DB: 4) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#new (for 172.16.5.13 at 2009-11-05 14:29:09) [GET]
+Rendering template within layouts/application
+Rendering jobs/new
+
+ActionView::TemplateError (undefined method `calendar_box' for #<ActionView::Base:0x2370d50>) on line #17 of app/views/jobs/_form.html.erb:
+14:   </p>
+15:   <p>
+16:     <%= f.label :due_date %><br />
+17:     <%= calendar_box 'item[price]', 'expire' %>
+18:     <%#= f.datetime_select :due_date %>
+19:   </p>
+20:   <p>
+
+    app/views/jobs/_form.html.erb:17
+    app/views/jobs/_form.html.erb:1
+    app/views/jobs/new.html.erb:3
+
+Rendered rescues/_trace (957.2ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#new (for 172.16.5.13 at 2009-11-05 14:29:23) [GET]
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (222.4ms)
+Completed in 276ms (View: 244, DB: 0) | 200 OK [http://172.16.7.100/jobs/new]
+
+
+Processing JobsController#index (for 172.16.5.4 at 2009-11-05 14:30:44) [GET]
+  [4;36;1mJob Load (4.9ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 89ms (View: 63, DB: 5) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#index (for 172.16.5.4 at 2009-11-05 14:31:00) [GET]
+  [4;35;1mJob Load (4.3ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 89ms (View: 63, DB: 4) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#index (for 172.16.5.4 at 2009-11-05 14:31:52) [GET]
+  [4;36;1mJob Load (4.0ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 121ms (View: 94, DB: 4) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#index (for 172.16.5.4 at 2009-11-05 14:32:53) [GET]
+  [4;35;1mJob Load (7.3ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 98ms (View: 68, DB: 7) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#index (for 172.16.5.4 at 2009-11-05 14:33:46) [GET]
+  [4;36;1mJob Load (4.1ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 89ms (View: 63, DB: 4) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#index (for 172.16.5.4 at 2009-11-05 14:34:54) [GET]
+  [4;35;1mJob Load (4.0ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 215ms (View: 190, DB: 4) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#index (for 172.16.5.4 at 2009-11-05 14:35:38) [GET]
+  [4;36;1mJob Load (3.8ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 222ms (View: 195, DB: 4) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#new (for 172.16.5.13 at 2009-11-05 14:36:13) [GET]
+Rendering template within layouts/application
+Rendering jobs/new
+
+ActionView::TemplateError (undefined method `calendar_box' for #<ActionView::Base:0x254fb58>) on line #17 of app/views/jobs/_form.html.erb:
+14:   </p>
+15:   <p>
+16:     <%= f.label :due_date %><br />
+17:     <%= calendar_box 'item[price]', 'expire' %>
+18:     <%#= f.datetime_select :due_date %>
+19:   </p>
+20:   <p>
+
+    app/views/jobs/_form.html.erb:17
+    app/views/jobs/_form.html.erb:1
+    app/views/jobs/new.html.erb:3
+
+Rendered rescues/_trace (479.5ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 172.16.5.4 at 2009-11-05 14:36:20) [GET]
+  [4;35;1mJob Load (3.9ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 145ms (View: 94, DB: 4) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#new (for 172.16.5.13 at 2009-11-05 14:37:34) [GET]
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (423.7ms)
+Completed in 1072ms (View: 487, DB: 0) | 200 OK [http://172.16.7.100/jobs/new]
+
+
+Processing JobsController#new (for 172.16.5.13 at 2009-11-05 14:39:04) [GET]
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (41.4ms)
+Completed in 100ms (View: 65, DB: 0) | 200 OK [http://172.16.7.100/jobs/new]
+
+
+Processing JobsController#new (for 172.16.5.13 at 2009-11-05 14:39:50) [GET]
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (231.7ms)
+Completed in 403ms (View: 244, DB: 0) | 200 OK [http://172.16.7.100/jobs/new]
+
+
+Processing JobsController#index (for 172.16.5.4 at 2009-11-05 14:44:02) [GET]
+  [4;36;1mJob Load (6.1ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 2012ms (View: 834, DB: 6) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#new (for 172.16.5.4 at 2009-11-05 14:44:21) [GET]
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (379.5ms)
+Completed in 452ms (View: 419, DB: 0) | 200 OK [http://172.16.7.100/jobs/new]
+
+
+Processing JobsController#new (for 172.16.5.13 at 2009-11-05 14:44:25) [GET]
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (42.4ms)
+Completed in 668ms (View: 114, DB: 0) | 200 OK [http://172.16.7.100/jobs/new]
+
+
+Processing JobsController#index (for 172.16.5.4 at 2009-11-05 14:44:46) [GET]
+  [4;35;1mJob Load (4.0ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 81ms (View: 53, DB: 4) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#new (for 172.16.5.4 at 2009-11-05 14:45:03) [GET]
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (41.3ms)
+Completed in 93ms (View: 58, DB: 0) | 200 OK [http://172.16.7.100/jobs/new]
+
+
+Processing JobsController#create (for 172.16.5.4 at 2009-11-05 14:46:42) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"Cze+UBaggMiwgHk1TSd/kD+ODwtqeqJyH+GoxEIqt44=", "job"=>{"department"=>"GA", "name"=>"Add checkboxen", "submit_date"=>"2009-11-12", "copier_name"=>"", "entry_person"=>"tindrum", "description"=>"Add checks for job routing:\r\nDesign\r\nCopy\r\nPress\r\nBindry\r\nShip", "uno_path"=>"", "due_date"=>"2009-11-05", "auth_sig"=>"1", "requester"=>"John Schoffield", "acct_number"=>"555"}}
+
+SystemStackError (stack level too deep):
+  app/controllers/jobs_controller.rb:15:in `new'
+  app/controllers/jobs_controller.rb:15:in `create'
+
+Rendered rescues/_trace (339.9ms)
+Rendered rescues/_request_and_response (8.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 172.16.5.4 at 2009-11-05 14:47:22) [GET]
+  [4;36;1mJob Load (5.1ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 1270ms (View: 751, DB: 5) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#new (for 172.16.5.13 at 2009-11-05 14:47:26) [GET]
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (29.6ms)
+Completed in 80ms (View: 43, DB: 0) | 200 OK [http://172.16.7.100/jobs/new]
+
+
+Processing JobsController#new (for 172.16.5.4 at 2009-11-05 14:47:32) [GET]
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (40.7ms)
+Completed in 358ms (View: 327, DB: 0) | 200 OK [http://172.16.7.100/jobs/new]
+
+
+Processing JobsController#create (for 172.16.5.4 at 2009-11-05 14:47:54) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"Cze+UBaggMiwgHk1TSd/kD+ODwtqeqJyH+GoxEIqt44=", "job"=>{"department"=>"GA", "name"=>"fix the crashes", "submit_date"=>"", "copier_name"=>"", "entry_person"=>"tindrum", "description"=>"something bad happened", "uno_path"=>"", "due_date"=>"2009-11-05", "auth_sig"=>"0", "requester"=>"", "acct_number"=>""}}
+
+SystemStackError (stack level too deep):
+  app/controllers/jobs_controller.rb:15:in `new'
+  app/controllers/jobs_controller.rb:15:in `create'
+
+Rendered rescues/_trace (419.8ms)
+Rendered rescues/_request_and_response (519.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#new (for 172.16.5.13 at 2009-11-05 14:48:51) [GET]
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (28.1ms)
+Completed in 78ms (View: 44, DB: 0) | 200 OK [http://172.16.7.100/jobs/new]
+
+
+Processing JobsController#index (for 172.16.5.13 at 2009-11-05 14:48:53) [GET]
+  [4;36;1mJob Load (3.9ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 595ms (View: 569, DB: 4) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#index (for 172.16.5.4 at 2009-11-05 14:48:56) [GET]
+  [4;35;1mJob Load (4.0ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 258ms (View: 231, DB: 4) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#edit (for 172.16.5.13 at 2009-11-05 14:49:03) [GET]
+  Parameters: {"id"=>"1"}
+
+SystemStackError (stack level too deep):
+  app/controllers/jobs_controller.rb:25:in `edit'
+
+Rendered rescues/_trace (1004.7ms)
+Rendered rescues/_request_and_response (6.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 172.16.5.13 at 2009-11-05 14:49:23) [GET]
+  [4;36;1mJob Load (5.0ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 175ms (View: 145, DB: 5) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#edit (for 172.16.5.13 at 2009-11-05 14:49:36) [GET]
+  Parameters: {"id"=>"1"}
+
+SystemStackError (stack level too deep):
+  app/controllers/jobs_controller.rb:25:in `edit'
+
+Rendered rescues/_trace (442.2ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 172.16.5.13 at 2009-11-05 14:49:38) [GET]
+  [4;35;1mJob Load (3.8ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 73ms (View: 47, DB: 4) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#edit (for 172.16.5.13 at 2009-11-05 14:49:47) [GET]
+  Parameters: {"id"=>"1"}
+
+SystemStackError (stack level too deep):
+  app/controllers/jobs_controller.rb:25:in `edit'
+
+Rendered rescues/_trace (1883.9ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 172.16.5.4 at 2009-11-05 14:49:55) [GET]
+  [4;36;1mJob Load (3.8ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 222ms (View: 194, DB: 4) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#index (for 172.16.5.13 at 2009-11-05 14:52:29) [GET]
+  [4;35;1mJob Load (137.7ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 210ms (View: 49, DB: 138) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#new (for 172.16.5.13 at 2009-11-05 14:52:30) [GET]
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (28.5ms)
+Completed in 83ms (View: 44, DB: 0) | 200 OK [http://172.16.7.100/jobs/new]
+
+
+Processing JobsController#index (for 172.16.5.4 at 2009-11-05 14:53:21) [GET]
+  [4;36;1mJob Load (3.9ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 96ms (View: 71, DB: 4) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#index (for 172.16.5.4 at 2009-11-05 14:54:59) [GET]
+  [4;35;1mJob Load (12.1ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 658ms (View: 598, DB: 12) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#create (for 172.16.5.13 at 2009-11-05 14:55:05) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"vPvG/ZU++9P7OynGzS7QhxRdAdTk+fgRsBnZ5gSdkxk=", "job"=>{"department"=>"aoueaoeu", "name"=>"aeu", "submit_date"=>"2009-11-10", "copier_name"=>"aoeu", "entry_person"=>"aoeu", "description"=>"bng", "uno_path"=>"aeu", "due_date"=>"2009-11-25", "auth_sig"=>"1", "requester"=>"aoeu", "acct_number"=>"aeu"}}
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+
+SystemStackError (stack level too deep):
+  app/controllers/jobs_controller.rb:18:in `new'
+  app/controllers/jobs_controller.rb:18:in `create'
+
+Rendered rescues/_trace (296.8ms)
+Rendered rescues/_request_and_response (1.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 172.16.5.4 at 2009-11-05 14:55:20) [GET]
+  [4;36;1mJob Load (3.9ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 230ms (View: 71, DB: 4) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#index (for 172.16.5.4 at 2009-11-05 14:55:56) [GET]
+  [4;35;1mJob Load (5.0ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 201ms (View: 86, DB: 5) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#new (for 172.16.5.4 at 2009-11-05 14:56:26) [GET]
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (31.7ms)
+Completed in 84ms (View: 45, DB: 0) | 200 OK [http://172.16.7.100/jobs/new]
+
+
+Processing JobsController#index (for 172.16.5.13 at 2009-11-05 14:56:38) [GET]
+  [4;36;1mJob Load (4.6ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 995ms (View: 523, DB: 5) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#edit (for 172.16.5.13 at 2009-11-05 14:56:45) [GET]
+  Parameters: {"id"=>"2"}
+
+SystemStackError (stack level too deep):
+  app/controllers/jobs_controller.rb:28:in `edit'
+
+Rendered rescues/_trace (319.9ms)
+Rendered rescues/_request_and_response (6.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 172.16.5.13 at 2009-11-05 14:56:48) [GET]
+  [4;35;1mJob Load (6.3ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 208ms (View: 180, DB: 6) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#new (for 172.16.5.13 at 2009-11-05 14:56:50) [GET]
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (44.4ms)
+Completed in 250ms (View: 214, DB: 0) | 200 OK [http://172.16.7.100/jobs/new]
+
+
+Processing JobsController#create (for 172.16.5.13 at 2009-11-05 14:57:03) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"vPvG/ZU++9P7OynGzS7QhxRdAdTk+fgRsBnZ5gSdkxk=", "job"=>{"department"=>"auo", "name"=>"a", "submit_date"=>"2009-11-04", "copier_name"=>"aoeu", "entry_person"=>"aeu", "description"=>"aeuaeuaeu", "uno_path"=>" aoeu", "due_date"=>"2009-11-11", "auth_sig"=>"0", "requester"=>"aeu", "acct_number"=>"aue"}}
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+
+SystemStackError (stack level too deep):
+  app/controllers/jobs_controller.rb:18:in `new'
+  app/controllers/jobs_controller.rb:18:in `create'
+
+Rendered rescues/_trace (310.2ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#create (for 172.16.5.4 at 2009-11-05 14:57:15) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"Cze+UBaggMiwgHk1TSd/kD+ODwtqeqJyH+GoxEIqt44=", "job"=>{"department"=>"Admin", "name"=>"Business Card - Haig", "submit_date"=>"2009-11-05", "copier_name"=>"", "entry_person"=>"tindrum", "description"=>"", "uno_path"=>"", "due_date"=>"2009-11-12", "auth_sig"=>"0", "requester"=>"", "acct_number"=>""}}
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+
+SystemStackError (stack level too deep):
+  app/controllers/jobs_controller.rb:18:in `new'
+  app/controllers/jobs_controller.rb:18:in `create'
+
+Rendered rescues/_trace (317.3ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#new (for 172.16.5.13 at 2009-11-05 14:57:56) [GET]
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (32.5ms)
+Completed in 212ms (View: 176, DB: 0) | 200 OK [http://172.16.7.100/jobs/new]
+
+
+Processing JobsController#create (for 172.16.5.13 at 2009-11-05 14:57:59) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"vPvG/ZU++9P7OynGzS7QhxRdAdTk+fgRsBnZ5gSdkxk=", "job"=>{"department"=>"auo", "name"=>"a", "submit_date"=>"2009-11-04", "copier_name"=>"aoeu", "entry_person"=>"aeu", "description"=>"aeuaeuaeu", "uno_path"=>" aoeu", "due_date"=>"2009-11-11", "auth_sig"=>"0", "requester"=>"aeu", "acct_number"=>"aue"}}
+
+SystemStackError (stack level too deep):
+  app/controllers/jobs_controller.rb:15:in `new'
+  app/controllers/jobs_controller.rb:15:in `create'
+
+Rendered rescues/_trace (368.3ms)
+Rendered rescues/_request_and_response (2.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#new (for 172.16.5.4 at 2009-11-05 14:58:03) [GET]
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (34.4ms)
+Completed in 190ms (View: 157, DB: 0) | 200 OK [http://172.16.7.100/jobs/new]
+
+
+Processing JobsController#create (for 172.16.5.4 at 2009-11-05 14:58:08) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"Cze+UBaggMiwgHk1TSd/kD+ODwtqeqJyH+GoxEIqt44=", "job"=>{"department"=>"GA", "name"=>"fix the crashes", "submit_date"=>"", "copier_name"=>"", "entry_person"=>"tindrum", "description"=>"something bad happened", "uno_path"=>"", "due_date"=>"2009-11-05", "auth_sig"=>"0", "requester"=>"", "acct_number"=>""}}
+
+SystemStackError (stack level too deep):
+  app/controllers/jobs_controller.rb:15:in `new'
+  app/controllers/jobs_controller.rb:15:in `create'
+
+Rendered rescues/_trace (1635.7ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 172.16.5.4 at 2009-11-05 14:58:14) [GET]
+  [4;36;1mJob Load (4.0ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 72ms (View: 47, DB: 4) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#index (for 172.16.5.13 at 2009-11-05 15:00:21) [GET]
+  [4;35;1mJob Load (3.8ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 91ms (View: 61, DB: 4) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#edit (for 172.16.5.13 at 2009-11-05 15:00:25) [GET]
+  Parameters: {"id"=>"1"}
+
+SystemStackError (stack level too deep):
+  app/controllers/jobs_controller.rb:25:in `edit'
+
+Rendered rescues/_trace (446.2ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 172.16.5.13 at 2009-11-05 15:00:50) [GET]
+  [4;36;1mJob Load (4.2ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 136ms (View: 85, DB: 4) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#index (for 172.16.5.13 at 2009-11-05 15:01:13) [GET]
+  [4;36;1mJob Load (4.9ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 1213ms (View: 762, DB: 5) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#edit (for 172.16.5.13 at 2009-11-05 15:01:17) [GET]
+  Parameters: {"id"=>"1"}
+
+SystemStackError (stack level too deep):
+  app/controllers/jobs_controller.rb:25:in `edit'
+
+Rendered rescues/_trace (408.4ms)
+Rendered rescues/_request_and_response (6.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#new (for 172.16.5.13 at 2009-11-05 15:01:28) [GET]
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (41.4ms)
+Completed in 126ms (View: 90, DB: 0) | 200 OK [http://172.16.7.100/jobs/new]
+
+
+Processing JobsController#create (for 172.16.5.13 at 2009-11-05 15:01:38) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"vPvG/ZU++9P7OynGzS7QhxRdAdTk+fgRsBnZ5gSdkxk=", "job"=>{"department"=>"ae", "name"=>"ae", "submit_date"=>"", "copier_name"=>"ae", "entry_person"=>"ae", "description"=>"ae", "uno_path"=>"a", "due_date"=>"", "auth_sig"=>"1", "requester"=>"ae", "acct_number"=>"ae"}}
+
+SystemStackError (stack level too deep):
+  app/controllers/jobs_controller.rb:15:in `new'
+  app/controllers/jobs_controller.rb:15:in `create'
+
+Rendered rescues/_trace (950.4ms)
+Rendered rescues/_request_and_response (2.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 172.16.5.4 at 2009-11-05 15:02:14) [GET]
+  [4;35;1mJob Load (4.5ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 1510ms (View: 428, DB: 4) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#index (for 172.16.5.13 at 2009-11-05 15:02:42) [GET]
+  [4;36;1mJob Load (5.6ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 75ms (View: 47, DB: 6) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#edit (for 172.16.5.13 at 2009-11-05 15:02:47) [GET]
+  Parameters: {"id"=>"1"}
+
+SystemStackError (stack level too deep):
+  app/controllers/jobs_controller.rb:25:in `edit'
+
+Rendered rescues/_trace (566.0ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#edit (for 172.16.5.13 at 2009-11-05 15:06:36) [GET]
+  Parameters: {"id"=>"1"}
+
+SystemStackError (stack level too deep):
+  app/controllers/jobs_controller.rb:25:in `edit'
+
+Rendered rescues/_trace (442.3ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#edit (for 172.16.5.13 at 2009-11-05 15:06:39) [GET]
+  Parameters: {"id"=>"1"}
+
+SystemStackError (stack level too deep):
+  app/controllers/jobs_controller.rb:25:in `edit'
+
+Rendered rescues/_trace (317.4ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#edit (for 172.16.5.13 at 2009-11-05 15:06:42) [GET]
+  Parameters: {"id"=>"1"}
+
+SystemStackError (stack level too deep):
+  app/controllers/jobs_controller.rb:25:in `edit'
+
+Rendered rescues/_trace (313.2ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#edit (for 172.16.5.13 at 2009-11-05 15:07:02) [GET]
+  Parameters: {"id"=>"1"}
+
+SystemStackError (stack level too deep):
+  app/controllers/jobs_controller.rb:25:in `edit'
+
+Rendered rescues/_trace (783.1ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 172.16.5.13 at 2009-11-05 15:07:07) [GET]
+  [4;35;1mJob Load (5.8ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 540ms (View: 512, DB: 6) | 200 OK [http://172.16.7.100/jobs/]
+
+
+Processing JobsController#edit (for 172.16.5.13 at 2009-11-05 15:07:12) [GET]
+  Parameters: {"id"=>"2"}
+
+SystemStackError (stack level too deep):
+  app/controllers/jobs_controller.rb:25:in `edit'
+
+Rendered rescues/_trace (507.0ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#show (for 172.16.5.13 at 2009-11-05 15:08:46) [GET]
+  Parameters: {"id"=>"ne"}
+
+SystemStackError (stack level too deep):
+  app/controllers/jobs_controller.rb:7:in `show'
+
+Rendered rescues/_trace (295.9ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#new (for 172.16.5.13 at 2009-11-05 15:08:50) [GET]
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (726.5ms)
+Completed in 781ms (View: 747, DB: 0) | 200 OK [http://172.16.7.100/jobs/new]
+
+
+Processing JobsController#create (for 172.16.5.13 at 2009-11-05 15:08:53) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"vPvG/ZU++9P7OynGzS7QhxRdAdTk+fgRsBnZ5gSdkxk=", "job"=>{"department"=>"", "submit_date(3i)"=>"5", "name"=>"", "submit_date(4i)"=>"15", "due_date(1i)"=>"2009", "submit_date(5i)"=>"08", "due_date(2i)"=>"11", "due_date(3i)"=>"5", "due_date(4i)"=>"15", "copier_name"=>"", "entry_person"=>"", "due_date(5i)"=>"08", "description"=>"", "uno_path"=>"", "auth_sig"=>"0", "submit_date(1i)"=>"2009", "submit_date(2i)"=>"11", "requester"=>"", "acct_number"=>""}}
+
+SystemStackError (stack level too deep):
+  app/controllers/jobs_controller.rb:15:in `new'
+  app/controllers/jobs_controller.rb:15:in `create'
+
+Rendered rescues/_trace (432.0ms)
+Rendered rescues/_request_and_response (3.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 172.16.5.13 at 2009-11-05 15:10:06) [GET]
+  [4;36;1mJob Load (3.6ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 315ms (View: 270, DB: 4) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#new (for 172.16.5.13 at 2009-11-05 15:10:26) [GET]
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (62.3ms)
+Completed in 116ms (View: 90, DB: 0) | 200 OK [http://172.16.7.100/jobs/new]
+
+
+Processing JobsController#create (for 172.16.5.13 at 2009-11-05 15:10:27) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"vPvG/ZU++9P7OynGzS7QhxRdAdTk+fgRsBnZ5gSdkxk=", "job"=>{"department"=>"", "submit_date(3i)"=>"5", "name"=>"", "submit_date(4i)"=>"15", "due_date(1i)"=>"2009", "submit_date(5i)"=>"10", "due_date(2i)"=>"11", "due_date(3i)"=>"5", "due_date(4i)"=>"15", "copier_name"=>"", "entry_person"=>"", "due_date(5i)"=>"10", "description"=>"", "uno_path"=>"", "auth_sig"=>"0", "submit_date(1i)"=>"2009", "submit_date(2i)"=>"11", "requester"=>"", "acct_number"=>""}}
+
+SystemStackError (stack level too deep):
+  app/controllers/jobs_controller.rb:18:in `new'
+  app/controllers/jobs_controller.rb:18:in `create'
+
+Rendered rescues/_trace (229.1ms)
+Rendered rescues/_request_and_response (8.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 172.16.5.13 at 2009-11-05 15:13:42) [GET]
+  [4;36;1mJob Load (3.2ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 56ms (View: 35, DB: 3) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#new (for 172.16.5.13 at 2009-11-05 15:13:44) [GET]
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (49.3ms)
+Completed in 85ms (View: 60, DB: 0) | 200 OK [http://172.16.7.100/jobs/new]
+
+
+Processing JobsController#create (for 172.16.5.13 at 2009-11-05 15:13:54) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"vPvG/ZU++9P7OynGzS7QhxRdAdTk+fgRsBnZ5gSdkxk=", "job"=>{"department"=>"aeu", "submit_date(3i)"=>"5", "name"=>"aeu", "submit_date(4i)"=>"15", "due_date(1i)"=>"2009", "submit_date(5i)"=>"13", "due_date(2i)"=>"11", "due_date(3i)"=>"5", "due_date(4i)"=>"15", "copier_name"=>"aeu", "entry_person"=>"aeu", "due_date(5i)"=>"13", "description"=>"aeu", "uno_path"=>"aeu", "auth_sig"=>"0", "submit_date(1i)"=>"2009", "submit_date(2i)"=>"11", "requester"=>"aeu", "acct_number"=>"aeu"}}
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+
+SystemStackError (stack level too deep):
+  app/controllers/jobs_controller.rb:18:in `new'
+  app/controllers/jobs_controller.rb:18:in `create'
+
+Rendered rescues/_trace (503.5ms)
+Rendered rescues/_request_and_response (2.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mJob Load (2.7ms)[0m   [0;1mSELECT * FROM "jobs" LIMIT 1[0m
+  [4;36;1mSQL (17.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (3.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSimpleTasks (20091105211603)
+Migrating to CreateJobs (20091105212249)
+  [4;36;1mSQL (1.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (15.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (3.9ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mPRAGMA index_list("jobs")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("simple_tasks")[0m
+
+
+Processing JobsController#index (for 172.16.5.13 at 2009-11-05 15:18:18) [GET]
+  [4;36;1mJob Load (4.8ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 317ms (View: 271, DB: 5) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#new (for 172.16.5.13 at 2009-11-05 15:18:24) [GET]
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (60.3ms)
+Completed in 114ms (View: 88, DB: 0) | 200 OK [http://172.16.7.100/jobs/new]
+
+
+Processing JobsController#index (for 172.16.5.13 at 2009-11-05 15:18:31) [GET]
+  [4;35;1mJob Load (3.4ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 58ms (View: 36, DB: 3) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#edit (for 172.16.5.13 at 2009-11-05 15:18:34) [GET]
+  Parameters: {"id"=>"1"}
+
+SystemStackError (stack level too deep):
+  app/controllers/jobs_controller.rb:28:in `edit'
+
+Rendered rescues/_trace (144.7ms)
+Rendered rescues/_request_and_response (5.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (2.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (4.5ms)[0m   [0;1mDROP TABLE "simple_tasks"[0m
+  [4;35;1mSQL (3.8ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20091105211603'[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mPRAGMA index_list("jobs")[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mDROP TABLE "jobs"[0m
+  [4;35;1mSQL (2.7ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20091105212249'[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.7ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSimpleTasks (20091105211603)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mCREATE TABLE "simple_tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "note" varchar(255), "date_completed" datetime, "completed" boolean, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091105211603')[0m
+Migrating to CreateJobs (20091105212249)
+  [4;35;1mSQL (2.2ms)[0m   [0mCREATE TABLE "jobs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "submit_date" datetime, "due_date" datetime, "entry_person" varchar(255), "acct_number" varchar(255), "requester" varchar(255), "department" varchar(255), "auth_sig" boolean, "uno_path" varchar(255), "copier_name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091105212249')[0m
+  [4;35;1mSQL (1.8ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mPRAGMA index_list("jobs")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mPRAGMA index_list("simple_tasks")[0m
+
+
+Processing JobsController#index (for 172.16.5.13 at 2009-11-05 15:20:37) [GET]
+  [4;36;1mJob Load (1.7ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 90ms (View: 47, DB: 2) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#new (for 172.16.5.13 at 2009-11-05 15:20:38) [GET]
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (255.3ms)
+Completed in 309ms (View: 282, DB: 0) | 200 OK [http://172.16.7.100/jobs/new]
+
+
+Processing JobsController#create (for 172.16.5.13 at 2009-11-05 15:20:41) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"vPvG/ZU++9P7OynGzS7QhxRdAdTk+fgRsBnZ5gSdkxk=", "job"=>{"department"=>"", "submit_date(3i)"=>"5", "name"=>"", "submit_date(4i)"=>"15", "due_date(1i)"=>"2009", "submit_date(5i)"=>"20", "due_date(2i)"=>"11", "due_date(3i)"=>"5", "due_date(4i)"=>"15", "copier_name"=>"", "entry_person"=>"", "due_date(5i)"=>"20", "description"=>"", "uno_path"=>"", "auth_sig"=>"0", "submit_date(1i)"=>"2009", "submit_date(2i)"=>"11", "requester"=>"", "acct_number"=>""}}
+
+SystemStackError (stack level too deep):
+  app/controllers/jobs_controller.rb:18:in `new'
+  app/controllers/jobs_controller.rb:18:in `create'
+
+Rendered rescues/_trace (217.8ms)
+Rendered rescues/_request_and_response (9.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#new (for 172.16.5.13 at 2009-11-05 15:21:18) [GET]
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (72.7ms)
+Completed in 118ms (View: 84, DB: 0) | 200 OK [http://172.16.7.100/jobs/new]
+
+
+Processing JobsController#create (for 172.16.5.13 at 2009-11-05 15:21:27) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"vPvG/ZU++9P7OynGzS7QhxRdAdTk+fgRsBnZ5gSdkxk=", "job"=>{"department"=>"aoeu", "submit_date(3i)"=>"5", "name"=>"aoeu", "submit_date(4i)"=>"15", "due_date(1i)"=>"2009", "submit_date(5i)"=>"21", "due_date(2i)"=>"11", "due_date(3i)"=>"5", "due_date(4i)"=>"15", "copier_name"=>"aoeu", "entry_person"=>"aeu", "due_date(5i)"=>"21", "description"=>"aeu", "uno_path"=>"aeu", "auth_sig"=>"1", "submit_date(1i)"=>"2009", "submit_date(2i)"=>"11", "requester"=>"aoeu", "acct_number"=>"aoeu"}}
+
+SystemStackError (stack level too deep):
+  app/controllers/jobs_controller.rb:18:in `new'
+  app/controllers/jobs_controller.rb:18:in `create'
+
+Rendered rescues/_trace (559.8ms)
+Rendered rescues/_request_and_response (4.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (2.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSimpleTasks (20091105211603)
+Migrating to CreateJobs (20091105212249)
+  [4;36;1mSQL (0.9ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mPRAGMA index_list("jobs")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("simple_tasks")[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (4.4ms)[0m   [0;1mDROP TABLE "jobs"[0m
+  [4;35;1mSQL (2.8ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20091105212249'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("simple_tasks")[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSimpleTasks (20091105211603)
+Migrating to CreateJobs (20091105212249)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (2.9ms)[0m   [0mCREATE TABLE "jobs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "submit_date" date, "due_date" date, "entry_person" varchar(255), "acct_number" varchar(255), "requester" varchar(255), "department" varchar(255), "auth_sig" boolean, "uno_path" varchar(255), "copier_name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091105212249')[0m
+  [4;35;1mSQL (2.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mPRAGMA index_list("jobs")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mPRAGMA index_list("simple_tasks")[0m
+
+
+Processing JobsController#index (for 172.16.5.13 at 2009-11-05 15:25:31) [GET]
+  [4;36;1mJob Load (1.7ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 90ms (View: 47, DB: 2) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#new (for 172.16.5.13 at 2009-11-05 15:25:33) [GET]
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (274.4ms)
+Completed in 355ms (View: 320, DB: 0) | 200 OK [http://172.16.7.100/jobs/new]
+
+
+Processing JobsController#create (for 172.16.5.13 at 2009-11-05 15:25:36) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"vPvG/ZU++9P7OynGzS7QhxRdAdTk+fgRsBnZ5gSdkxk=", "job"=>{"department"=>"", "submit_date(3i)"=>"5", "name"=>"", "submit_date(4i)"=>"15", "due_date(1i)"=>"2009", "submit_date(5i)"=>"25", "due_date(2i)"=>"11", "due_date(3i)"=>"5", "due_date(4i)"=>"15", "copier_name"=>"", "entry_person"=>"", "due_date(5i)"=>"25", "description"=>"", "uno_path"=>"", "auth_sig"=>"0", "submit_date(1i)"=>"2009", "submit_date(2i)"=>"11", "requester"=>"", "acct_number"=>""}}
+
+SystemStackError (stack level too deep):
+  app/controllers/jobs_controller.rb:18:in `new'
+  app/controllers/jobs_controller.rb:18:in `create'
+
+Rendered rescues/_trace (219.4ms)
+Rendered rescues/_request_and_response (9.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (4.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (5.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.9ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSimpleTasks (20091105211603)
+  [4;36;1mSQL (4.0ms)[0m   [0;1mCREATE TABLE "simple_tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "note" varchar(255), "date_completed" datetime, "completed" boolean, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091105211603')[0m
+Migrating to CreateJobs (20091105212249)
+  [4;36;1mSQL (3.0ms)[0m   [0;1mCREATE TABLE "jobs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "submit_date" date, "due_date" date, "entry_person" varchar(255), "acct_number" varchar(255), "requester" varchar(255), "department" varchar(255), "auth_sig" boolean, "uno_path" varchar(255), "copier_name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091105212249')[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mPRAGMA index_list("jobs")[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mPRAGMA index_list("simple_tasks")[0m
+
+
+Processing JobsController#index (for 172.16.5.13 at 2009-11-05 15:26:13) [GET]
+  [4;36;1mJob Load (1.7ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 93ms (View: 48, DB: 2) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#new (for 172.16.5.13 at 2009-11-05 15:26:15) [GET]
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (255.6ms)
+Completed in 310ms (View: 284, DB: 0) | 200 OK [http://172.16.7.100/jobs/new]
+
+
+Processing JobsController#create (for 172.16.5.13 at 2009-11-05 15:26:17) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"vPvG/ZU++9P7OynGzS7QhxRdAdTk+fgRsBnZ5gSdkxk=", "job"=>{"department"=>"", "submit_date(3i)"=>"5", "name"=>"", "submit_date(4i)"=>"15", "due_date(1i)"=>"2009", "submit_date(5i)"=>"26", "due_date(2i)"=>"11", "due_date(3i)"=>"5", "due_date(4i)"=>"15", "copier_name"=>"", "entry_person"=>"", "due_date(5i)"=>"26", "description"=>"", "uno_path"=>"", "auth_sig"=>"0", "submit_date(1i)"=>"2009", "submit_date(2i)"=>"11", "requester"=>"", "acct_number"=>""}}
+
+SystemStackError (stack level too deep):
+  app/controllers/jobs_controller.rb:18:in `new'
+  app/controllers/jobs_controller.rb:18:in `create'
+
+Rendered rescues/_trace (219.8ms)
+Rendered rescues/_request_and_response (7.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 172.16.5.13 at 2009-11-05 15:29:08) [GET]
+  [4;36;1mJob Load (2.3ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 109ms (View: 56, DB: 2) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#new (for 172.16.5.13 at 2009-11-05 15:29:11) [GET]
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (485.0ms)
+Completed in 566ms (View: 521, DB: 0) | 200 OK [http://172.16.7.100/jobs/new]
+
+
+Processing JobsController#create (for 172.16.5.13 at 2009-11-05 15:29:13) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"vPvG/ZU++9P7OynGzS7QhxRdAdTk+fgRsBnZ5gSdkxk=", "job"=>{"department"=>"", "submit_date(3i)"=>"5", "name"=>"", "submit_date(4i)"=>"15", "due_date(1i)"=>"2009", "submit_date(5i)"=>"29", "due_date(2i)"=>"11", "due_date(3i)"=>"5", "due_date(4i)"=>"15", "copier_name"=>"", "entry_person"=>"", "due_date(5i)"=>"29", "description"=>"", "uno_path"=>"", "auth_sig"=>"0", "submit_date(1i)"=>"2009", "submit_date(2i)"=>"11", "requester"=>"", "acct_number"=>""}}
+  [4;35;1mJob Create (4.2ms)[0m   [0mINSERT INTO "jobs" ("name", "department", "updated_at", "submit_date", "description", "entry_person", "copier_name", "due_date", "uno_path", "auth_sig", "acct_number", "requester", "created_at") VALUES('', '', '2009-11-05 23:29:17', '2009-11-05', '', '', '', '2009-11-05', '', 'f', '', '', '2009-11-05 23:29:17')[0m
+Redirected to http://172.16.7.100:3000/jobs/1
+Completed in 4514ms (DB: 4) | 302 Found [http://172.16.7.100/jobs]
+
+
+Processing JobsController#show (for 172.16.5.13 at 2009-11-05 15:29:17) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mJob Load (3.6ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering jobs/show
+Completed in 270ms (View: 65, DB: 4) | 200 OK [http://172.16.7.100/jobs/1]
+
+
+Processing JobsController#edit (for 172.16.5.13 at 2009-11-05 15:29:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mJob Load (254.7ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering jobs/edit
+Rendered jobs/_form (515.6ms)
+Completed in 863ms (View: 562, DB: 255) | 200 OK [http://172.16.7.100/jobs/1/edit]
+
+
+Processing JobsController#index (for 172.16.5.13 at 2009-11-05 15:29:46) [GET]
+  [4;36;1mJob Load (3.7ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 833ms (View: 799, DB: 4) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#new (for 172.16.5.13 at 2009-11-05 15:29:49) [GET]
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (223.5ms)
+Completed in 280ms (View: 237, DB: 0) | 200 OK [http://172.16.7.100/jobs/new]
+
+
+Processing JobsController#create (for 172.16.5.13 at 2009-11-05 15:29:51) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"vPvG/ZU++9P7OynGzS7QhxRdAdTk+fgRsBnZ5gSdkxk=", "job"=>{"department"=>"", "submit_date(3i)"=>"5", "name"=>"", "submit_date(4i)"=>"15", "due_date(1i)"=>"2009", "submit_date(5i)"=>"29", "due_date(2i)"=>"11", "due_date(3i)"=>"5", "due_date(4i)"=>"15", "copier_name"=>"", "entry_person"=>"", "due_date(5i)"=>"29", "description"=>"", "uno_path"=>"", "auth_sig"=>"0", "submit_date(1i)"=>"2009", "submit_date(2i)"=>"11", "requester"=>"", "acct_number"=>""}}
+  [4;35;1mJob Create (3.9ms)[0m   [0mINSERT INTO "jobs" ("name", "department", "updated_at", "submit_date", "description", "entry_person", "copier_name", "due_date", "uno_path", "auth_sig", "acct_number", "requester", "created_at") VALUES('', '', '2009-11-05 23:30:13', '2009-11-05', '', '', '', '2009-11-05', '', 'f', '', '', '2009-11-05 23:30:13')[0m
+Redirected to http://172.16.7.100:3000/jobs/2
+Completed in 22244ms (DB: 4) | 302 Found [http://172.16.7.100/jobs]
+
+
+Processing JobsController#create (for 172.16.5.13 at 2009-11-05 15:30:14) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"vPvG/ZU++9P7OynGzS7QhxRdAdTk+fgRsBnZ5gSdkxk=", "job"=>{"department"=>"", "submit_date(3i)"=>"5", "name"=>"", "submit_date(4i)"=>"15", "due_date(1i)"=>"2009", "submit_date(5i)"=>"29", "due_date(2i)"=>"11", "due_date(3i)"=>"5", "due_date(4i)"=>"15", "copier_name"=>"", "entry_person"=>"", "due_date(5i)"=>"29", "description"=>"", "uno_path"=>"", "auth_sig"=>"0", "submit_date(1i)"=>"2009", "submit_date(2i)"=>"11", "requester"=>"", "acct_number"=>""}}
+  [4;36;1mJob Create (2.5ms)[0m   [0;1mINSERT INTO "jobs" ("name", "department", "updated_at", "submit_date", "description", "entry_person", "copier_name", "due_date", "uno_path", "auth_sig", "acct_number", "requester", "created_at") VALUES('', '', '2009-11-05 23:30:25', '2009-11-05', '', '', '', '2009-11-05', '', 'f', '', '', '2009-11-05 23:30:25')[0m
+Redirected to http://172.16.7.100:3000/jobs/3
+Completed in 10979ms (DB: 2) | 302 Found [http://172.16.7.100/jobs]
+
+
+Processing JobsController#show (for 172.16.5.13 at 2009-11-05 15:30:25) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mJob Load (2.6ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering jobs/show
+Completed in 161ms (View: 35, DB: 3) | 200 OK [http://172.16.7.100/jobs/3]
+
+
+Processing JobsController#index (for 172.16.5.13 at 2009-11-05 15:30:40) [GET]
+  [4;36;1mJob Load (7.2ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 201ms (View: 146, DB: 7) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing JobsController#index (for 172.16.5.13 at 2009-11-05 15:30:41) [GET]
+  [4;35;1mJob Load (6.5ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 239ms (View: 204, DB: 6) | 200 OK [http://172.16.7.100/jobs]
