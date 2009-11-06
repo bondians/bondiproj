@@ -1,0 +1,35 @@
+<% title "Jobs" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Due Date</th>
+    <th>Due Time</th>
+    <th>Submit Date</th>
+    <th>Ordered By</th>
+    <th>Input Person</th>
+    <th>Auth Sig</th>
+    <th>Department</th>
+    <th>Account</th>
+  </tr>
+  <% for job in @jobs %>
+    <tr>
+      <td><%=h job.name %></td>
+      <td><%=h job.description %></td>
+      <td><%=h job.due_date %></td>
+      <td><%=h job.due_time %></td>
+      <td><%=h job.submit_date %></td>
+      <td><%=h job.ordered_by %></td>
+      <td><%=h job.input_person %></td>
+      <td><%=h job.auth_sig %></td>
+      <td><%=h job.department_id %></td>
+      <td><%=h job.account_id %></td>
+      <td><%= link_to "Show", job %></td>
+      <td><%= link_to "Edit", edit_job_path(job) %></td>
+      <td><%= link_to "Destroy", job, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Job", new_job_path %></p>

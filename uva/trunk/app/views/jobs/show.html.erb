@@ -1,0 +1,48 @@
+<% title "Job" %>
+
+<p>
+  <strong>Name:</strong>
+  <%=h @job.name %>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%=h @job.description %>
+</p>
+<p>
+  <strong>Due Date:</strong>
+  <%=h @job.due_date %>
+</p>
+<p>
+  <strong>Due Time:</strong>
+  <%=h @job.due_time %>
+</p>
+<p>
+  <strong>Submit Date:</strong>
+  <%=h @job.submit_date %>
+</p>
+<p>
+  <strong>Ordered By:</strong>
+  <%=h @job.ordered_by %>
+</p>
+<p>
+  <strong>Input Person:</strong>
+  <%=h @job.input_person %>
+</p>
+<p>
+  <strong>Auth Sig:</strong>
+  <%=h @job.auth_sig %>
+</p>
+<p>
+  <strong>Department:</strong>
+  <%=h @job.department_id %>
+</p>
+<p>
+  <strong>Account:</strong>
+  <%=h @job.account_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_job_path(@job) %> |
+  <%= link_to "Destroy", @job, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", jobs_path %>
+</p>

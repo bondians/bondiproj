@@ -1,0 +1,74 @@
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2009-11-06 00:15:51) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Completed in 668ms (View: 14, DB: 0) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2009-11-06 00:30:34) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Completed in 111ms (View: 1, DB: 0) | 200 OK [http://localhost/rails/info/properties]
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateJobs (20091106084428)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE TABLE "jobs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "due_date" date, "due_time" time, "submit_date" date, "ordered_by" varchar(255), "input_person" varchar(255), "auth_sig" boolean, "department_id" integer, "account_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091106084428')[0m
+Migrating to CreateDepartments (20091106084747)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TABLE "departments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091106084747')[0m
+Migrating to CreateAccounts (20091106084819)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TABLE "accounts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "number" varchar(255), "department_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091106084819')[0m
+Migrating to CreateTasks (20091106084942)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "note" varchar(255), "completed" boolean, "completed_date" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091106084942')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("accounts")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("departments")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("jobs")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tasks")[0m
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-06 00:50:12) [GET]
+  [4;36;1mJob Load (0.4ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 33ms (View: 30, DB: 0) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#new (for 127.0.0.1 at 2009-11-06 00:50:17) [GET]
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (137.8ms)
+Completed in 152ms (View: 147, DB: 0) | 200 OK [http://localhost/jobs/new]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-06 00:50:39) [GET]
+  [4;35;1mJob Load (0.4ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/jobs]
