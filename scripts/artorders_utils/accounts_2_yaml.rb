@@ -3,6 +3,18 @@ require 'optparse'
 require 'ostruct'
 require 'pp'
 require 'pathname'
+require 'yaml'
+
+def unixify (filename)
+  # change mac files to unix line endings, save under new name
+ cmd = "tr '\r' '\n' < #{filename} > tr.#{filename} "
+ system cmd
+end
+
+def act2array(accountline)
+  actarray = [ accountline[0], { "dept" => accountline[1], "subdept" => accountline[2], "subacct" =>  accountline[3], "acct2" => accountline[4], "tiny" => accountline[5] } ]
+  # return acthash
+end 
 
 # File input: output file of a FileMaker Accounts file
 # as created by D.G. Henderson for the Graphic Arts Dept of the AUHSD
@@ -17,10 +29,16 @@ require 'pathname'
 # This script will use the old way of having the _id field
   
 
-inputfile = ARGV[0]
-outputpath = ARGV[1]
+# inputfile = ARGV[0]
+p = Pathname.new(ARGV[0])
+p = p.parent if p.file?
 
-p = Pathname.new(ARGV[1])
+accts = Hash.new
+depts = Hash.new
+ords = Array.new
+
+# depts << ["0", "blank"] # seems like priming the pumps with the accts will prime this one too
+# accts << ["000000000000000", "0", "blank", "related"]
 
 begin
   # see if the outpath directory exists
@@ -41,19 +59,46 @@ begin
 end
 
 accounts = File.new("accounts.yml", "w")
-cmd = "touch ./findme.txt"
-system cmd
+departments = File.new("departments.yml", "w")
+orders = File.new("orders.yml", "w")
+fail = File.new("failures.txt", "w")
 
-accounts.print("Hello\r")
+accountID = 1
+departmentID = 1
 
-accounts.close
+unixify("accounts.tab")
 
-
-File.open(inputfile, "r")  do |file|
-  # puts file.path
+# establish accounts hash in memory
+File.open("tr.accounts.tab", "r")  do |file|
   while line = file.gets
-    #puts line
+    lineitem = line.chomp.split(/\t/) # use the regexp /\t/, not the string '\t'
+    linearray = act2array(lineitem)
+    if accts.has_key?(linearray[0])
+       fail.puts "* duplicate key *"
+       fail.puts linearray[0]
+       fail.puts "****************"
+       fail.puts linearray[1].to_s
+       fail.puts "---------------"
+    else
+       accts[linearray[0]]= linearray[1] 
+    end
+  # accounts.puts lineitem[0]
   end
 end
+
+
+accts.collect do |key, value|
+ # if value[]
+   puts "************"
+   puts key
+   puts "************"
+   puts value["dept"]
+   puts "----"
+end
+
+
+accounts.close
+departments.close
+orders.close
 
 
