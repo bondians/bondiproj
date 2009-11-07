@@ -21,7 +21,7 @@ Rails::Initializer.run do |config|
   # config.gem "aws-s3", :lib => "aws/s3"
   
   # Ryan Bates
-  config.gem "authlogic"
+  config.gem "authlogic", :source => "git://github.com/binarylogic", :version => "2.1.2"
   config.gem "haml"
   config.gem "be9-acl9", :source => "http://gems.github.com", :lib => "acl9"
   #config.gem "auto_complete"
