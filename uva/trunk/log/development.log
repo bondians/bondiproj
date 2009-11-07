@@ -72,3 +72,35 @@ Processing JobsController#index (for 127.0.0.1 at 2009-11-06 00:50:39) [GET]
 Rendering template within layouts/application
 Rendering jobs/index
 Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/jobs]
+
+
+Processing Rails::InfoController#properties (for 172.16.5.4 at 2009-11-06 10:34:21) [GET]
+  [4;36;1mSQL (3.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Completed in 233ms (View: 14, DB: 6) | 200 OK [http://172.16.7.100/rails/info/properties]
+
+
+Processing JobsController#index (for 172.16.5.4 at 2009-11-06 10:34:25) [GET]
+  [4;36;1mJob Load (3.5ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 168ms (View: 146, DB: 3) | 200 OK [http://172.16.7.100/jobs]
+
+
+Processing Rails::InfoController#properties (for 172.16.5.16 at 2009-11-06 16:57:49) [GET]
+  [4;36;1mSQL (3.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Completed in 275ms (View: 16, DB: 5) | 200 OK [http://172.16.7.100/rails/info/properties]
+
+
+Processing JobsController#index (for 172.16.5.16 at 2009-11-06 16:57:52) [GET]
+  [4;36;1mJob Load (4.9ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 193ms (View: 171, DB: 5) | 200 OK [http://172.16.7.100/jobs]
