@@ -72,6 +72,22 @@ Processing JobsController#index (for 127.0.0.1 at 2009-11-06 00:50:39) [GET]
 Rendering template within layouts/application
 Rendering jobs/index
 Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/jobs]
+<<<<<<< .mine
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-06 16:30:55) [GET]
+  [4;36;1mJob Load (5.0ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 117ms (View: 93, DB: 5) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#new (for 127.0.0.1 at 2009-11-06 16:30:57) [GET]
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (143.3ms)
+Completed in 171ms (View: 166, DB: 0) | 200 OK [http://localhost/jobs/new]
+=======
 
 
 Processing Rails::InfoController#properties (for 172.16.5.4 at 2009-11-06 10:34:21) [GET]
@@ -104,3 +120,4 @@ Processing JobsController#index (for 172.16.5.16 at 2009-11-06 16:57:52) [GET]
 Rendering template within layouts/application
 Rendering jobs/index
 Completed in 193ms (View: 171, DB: 5) | 200 OK [http://172.16.7.100/jobs]
+>>>>>>> .r772
