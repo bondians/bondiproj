@@ -41,8 +41,10 @@
   <%=h @job.account_id %>
 </p>
 <% for workflow in @workflows %>
-      Task: <%=h workflow.name %>
+     <p>
+      <%=h workflow.name %>:
       <%=h workflow.note %>
+      </p>
 <% end %>
 <p>
   <%= link_to "Edit", edit_job_path(@job) %> |

@@ -59,6 +59,8 @@
         <div>
           <%= workflow_form.label :name, 'Task: ' %>
           <%= workflow_form.text_field :name %>
+          <%= workflow_form.label :step_needed, 'Task: ' %>
+          <%= workflow_form.check_box :step_needed %>
           <%= workflow_form.label :note, 'Note: ' %>
           <%= workflow_form.text_field :note %>
         </div>

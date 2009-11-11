@@ -6,7 +6,7 @@ class Job < ActiveRecord::Base
 
   has_many :workflows, :dependent => :destroy
   
-  accepts_nested_attributes_for :workflows, :allow_destroy => true 
+  accepts_nested_attributes_for :workflows, :allow_destroy => true, :reject_if => proc { |attributes| attributes["step_needed"] == "0" } 
   
   def after_save
     #params.each do |key, value|
