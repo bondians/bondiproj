@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :workflows
+
   
   # routes added for authlogic user sessions (RB podcast #160)
   map.login "login", :controller => "user_sessions", :action => "new"

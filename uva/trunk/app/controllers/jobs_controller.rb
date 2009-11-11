@@ -37,10 +37,10 @@ class JobsController < ApplicationController
   
   def update
     @job = Job.find(params[:id])
-   # raise params.to_yaml
+    # raise params.to_yaml
     if @job.update_attributes(params[:job])
       flash[:notice] = "Successfully updated job."
-      redirect_to @job
+      redirect_to jobs_path
     else
       render :action => 'edit'
     end

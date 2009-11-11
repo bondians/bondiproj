@@ -13200,3 +13200,1867 @@ Rendering template within layouts/application
 Rendering jobs/index
   [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
 Completed in 24ms (View: 19, DB: 1) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 07:30:09) [GET]
+  [4;36;1mJob Load (0.7ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 71ms (View: 59, DB: 1) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#show (for 127.0.0.1 at 2009-11-11 07:30:12) [GET]
+  Parameters: {"id"=>"67"}
+  [4;36;1mJob Load (0.3ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 67) [0m
+  [4;35;1mWorkflow Load (0.5ms)[0m   [0mSELECT * FROM "workflows" WHERE (job_id = 67) [0m
+Rendering template within layouts/application
+Rendering jobs/show
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 91ms (View: 81, DB: 1) | 200 OK [http://localhost/jobs/67]
+
+
+Processing JobsController#edit (for 127.0.0.1 at 2009-11-11 07:30:15) [GET]
+  Parameters: {"id"=>"67"}
+  [4;35;1mJob Load (0.3ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 67) [0m
+Rendering template within layouts/application
+Rendering jobs/edit
+  [4;36;1mWorkflow Load (0.6ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows".job_id = 67) [0m
+Rendered jobs/_form (47.6ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 73ms (View: 66, DB: 1) | 200 OK [http://localhost/jobs/67/edit]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 07:34:46) [GET]
+  [4;36;1mJob Load (0.6ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 51ms (View: 41, DB: 1) | 200 OK [http://localhost/jobs/]
+
+
+Processing JobsController#show (for 127.0.0.1 at 2009-11-11 07:34:49) [GET]
+  Parameters: {"id"=>"67"}
+  [4;36;1mJob Load (0.3ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 67) [0m
+  [4;35;1mWorkflow Load (0.6ms)[0m   [0mSELECT * FROM "workflows" WHERE (job_id = 67) [0m
+Rendering template within layouts/application
+Rendering jobs/show
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 90ms (View: 24, DB: 1) | 200 OK [http://localhost/jobs/67]
+
+
+Processing JobsController#edit (for 127.0.0.1 at 2009-11-11 07:34:51) [GET]
+  Parameters: {"id"=>"67"}
+  [4;35;1mJob Load (0.8ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 67) [0m
+Rendering template within layouts/application
+Rendering jobs/edit
+  [4;36;1mWorkflow Load (0.6ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows".job_id = 67) [0m
+Rendered jobs/_form (46.0ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 71ms (View: 64, DB: 2) | 200 OK [http://localhost/jobs/67/edit]
+
+
+Processing JobsController#update (for 127.0.0.1 at 2009-11-11 07:34:58) [PUT]
+  Parameters: {"commit"=>"Create/Update Job", "authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"67", "job"=>{"name"=>"woahn", "input_person"=>"tindrum", "received_date"=>"", "submit_date"=>"", "due_time(1i)"=>"2000", "workflows_attributes"=>{"0"=>{"name"=>"Design", "_delete"=>"0", "id"=>"25", "note"=>"Dan Henderson"}, "1"=>{"name"=>"Copy", "_delete"=>"0", "id"=>"26", "note"=>"Gray"}, "2"=>{"name"=>"Press", "_delete"=>"0", "id"=>"27", "note"=>""}, "3"=>{"name"=>"Bindry", "_delete"=>"1", "id"=>"28", "note"=>""}, "4"=>{"name"=>"Ship", "_delete"=>"0", "id"=>"29", "note"=>"Dsitrict Mail"}}, "account_id"=>"", "due_time(2i)"=>"1", "due_time(3i)"=>"1", "due_time(4i)"=>"15", "due_time(5i)"=>"03", "due_date"=>"", "auth_sig"=>"0", "description"=>"need a new thingie", "ordered_by"=>"", "department_id"=>""}}
+  [4;36;1mJob Load (0.3ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 67) [0m
+  [4;35;1mWorkflow Load (0.5ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows".job_id = 67) [0m
+  [4;36;1mJob Update (0.3ms)[0m   [0;1mUPDATE "jobs" SET "updated_at" = '2009-11-11 15:34:58', "created_at" = '2009-11-11 15:04:05', "ordered_by" = '', "input_person" = 'tindrum', "name" = 'woahn', "received_date" = NULL, "department_id" = NULL, "submit_date" = NULL, "auth_sig" = 'f', "account_id" = NULL, "due_date" = NULL, "description" = 'need a new thingie', "due_time" = '2000-01-01 15:03:00' WHERE "id" = 67[0m
+  [4;35;1mWorkflow Update (0.1ms)[0m   [0mUPDATE "workflows" SET "updated_at" = '2009-11-11 15:34:58', "created_at" = '2009-11-11 15:04:05', "name" = 'Design', "job_id" = 67, "note" = 'Dan Henderson', "completed" = NULL, "completed_date" = NULL WHERE "id" = 25[0m
+  [4;36;1mWorkflow Update (0.1ms)[0m   [0;1mUPDATE "workflows" SET "updated_at" = '2009-11-11 15:34:58', "created_at" = '2009-11-11 15:04:05', "name" = 'Copy', "job_id" = 67, "note" = 'Gray', "completed" = NULL, "completed_date" = NULL WHERE "id" = 26[0m
+  [4;35;1mWorkflow Update (0.1ms)[0m   [0mUPDATE "workflows" SET "updated_at" = '2009-11-11 15:34:58', "created_at" = '2009-11-11 15:04:05', "name" = 'Press', "job_id" = 67, "note" = '', "completed" = NULL, "completed_date" = NULL WHERE "id" = 27[0m
+  [4;36;1mWorkflow Destroy (0.1ms)[0m   [0;1mDELETE FROM "workflows" WHERE "id" = 28[0m
+  [4;35;1mJob Load (0.3ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 67) [0m
+  [4;36;1mJob Destroy (0.1ms)[0m   [0;1mDELETE FROM "jobs" WHERE "id" = 67[0m
+  [4;35;1mWorkflow Update (0.1ms)[0m   [0mUPDATE "workflows" SET "updated_at" = '2009-11-11 15:34:58', "created_at" = '2009-11-11 15:04:05', "name" = 'Ship', "job_id" = 67, "note" = 'Dsitrict Mail', "completed" = NULL, "completed_date" = NULL WHERE "id" = 29[0m
+Redirected to http://localhost:3000/jobs/67
+Completed in 30ms (DB: 2) | 302 Found [http://localhost/jobs/67]
+
+
+Processing JobsController#show (for 127.0.0.1 at 2009-11-11 07:34:58) [GET]
+  Parameters: {"id"=>"67"}
+  [4;36;1mJob Load (0.1ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 67) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Job with ID=67):
+  app/controllers/jobs_controller.rb:7:in `show'
+
+Rendered rescues/_trace (29.9ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 07:35:12) [GET]
+  [4;35;1mJob Load (0.4ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 78ms (View: 74, DB: 1) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#new (for 127.0.0.1 at 2009-11-11 07:35:14) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (105.2ms)
+Completed in 133ms (View: 112, DB: 0) | 200 OK [http://localhost/jobs/new]
+
+
+Processing JobsController#create (for 127.0.0.1 at 2009-11-11 07:35:37) [POST]
+  Parameters: {"commit"=>"Create/Update Job", "authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "job"=>{"name"=>"australia", "input_person"=>"tindrum", "received_date"=>"", "submit_date"=>"", "due_time(1i)"=>"2009", "workflows_attributes"=>{"0"=>{"name"=>"Design", "note"=>"hogan"}, "1"=>{"name"=>"Copy", "note"=>"diggery"}, "2"=>{"name"=>"Press", "note"=>"croc"}, "3"=>{"name"=>"Bindry", "note"=>"kangaroo"}, "4"=>{"name"=>"Ship", "note"=>"ayers"}}, "account_id"=>"", "due_time(2i)"=>"11", "due_time(3i)"=>"11", "due_time(4i)"=>"15", "due_time(5i)"=>"35", "due_date"=>"", "auth_sig"=>"0", "description"=>"", "ordered_by"=>"", "department_id"=>""}}
+  [4;36;1mJob Create (0.4ms)[0m   [0;1mINSERT INTO "jobs" ("name", "input_person", "created_at", "submit_date", "updated_at", "received_date", "account_id", "due_time", "due_date", "description", "auth_sig", "ordered_by", "department_id") VALUES('australia', 'tindrum', '2009-11-11 15:35:37', NULL, '2009-11-11 15:35:37', NULL, NULL, '2009-11-11 15:35:00', NULL, '', 'f', '', NULL)[0m
+  [4;35;1mWorkflow Create (0.1ms)[0m   [0mINSERT INTO "workflows" ("name", "created_at", "completed", "completed_date", "updated_at", "note", "job_id") VALUES('Design', '2009-11-11 15:35:37', NULL, NULL, '2009-11-11 15:35:37', 'hogan', 69)[0m
+  [4;36;1mWorkflow Create (0.1ms)[0m   [0;1mINSERT INTO "workflows" ("name", "created_at", "completed", "completed_date", "updated_at", "note", "job_id") VALUES('Copy', '2009-11-11 15:35:37', NULL, NULL, '2009-11-11 15:35:37', 'diggery', 69)[0m
+  [4;35;1mWorkflow Create (0.1ms)[0m   [0mINSERT INTO "workflows" ("name", "created_at", "completed", "completed_date", "updated_at", "note", "job_id") VALUES('Press', '2009-11-11 15:35:37', NULL, NULL, '2009-11-11 15:35:37', 'croc', 69)[0m
+  [4;36;1mWorkflow Create (0.1ms)[0m   [0;1mINSERT INTO "workflows" ("name", "created_at", "completed", "completed_date", "updated_at", "note", "job_id") VALUES('Bindry', '2009-11-11 15:35:37', NULL, NULL, '2009-11-11 15:35:37', 'kangaroo', 69)[0m
+  [4;35;1mWorkflow Create (0.1ms)[0m   [0mINSERT INTO "workflows" ("name", "created_at", "completed", "completed_date", "updated_at", "note", "job_id") VALUES('Ship', '2009-11-11 15:35:37', NULL, NULL, '2009-11-11 15:35:37', 'ayers', 69)[0m
+Redirected to http://localhost:3000/jobs
+Completed in 87ms (DB: 1) | 302 Found [http://localhost/jobs]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 07:35:37) [GET]
+  [4;36;1mJob Load (0.6ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 26ms (View: 21, DB: 1) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#edit (for 127.0.0.1 at 2009-11-11 07:36:09) [GET]
+  Parameters: {"id"=>"69"}
+  [4;36;1mJob Load (0.3ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 69) [0m
+Rendering template within layouts/application
+Rendering jobs/edit
+  [4;35;1mWorkflow Load (0.6ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows".job_id = 69) [0m
+Rendered jobs/_form (43.2ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 122ms (View: 115, DB: 1) | 200 OK [http://localhost/jobs/69/edit]
+
+
+Processing JobsController#update (for 127.0.0.1 at 2009-11-11 07:36:24) [PUT]
+  Parameters: {"commit"=>"Create/Update Job", "authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"69", "job"=>{"name"=>"australia", "input_person"=>"tindrum", "received_date"=>"", "submit_date"=>"", "due_time(1i)"=>"2000", "workflows_attributes"=>{"0"=>{"name"=>"Design", "_delete"=>"0", "id"=>"35", "note"=>"hogan"}, "1"=>{"name"=>"Copy", "_delete"=>"0", "id"=>"36", "note"=>"diggery"}, "2"=>{"name"=>"Press", "_delete"=>"0", "id"=>"37", "note"=>"crocodile"}, "3"=>{"name"=>"Bindry", "_delete"=>"0", "id"=>"38", "note"=>"kangaroo"}, "4"=>{"name"=>"Ship", "_delete"=>"0", "id"=>"39", "note"=>"ayers"}}, "account_id"=>"", "due_time(2i)"=>"1", "due_time(3i)"=>"1", "due_time(4i)"=>"15", "due_time(5i)"=>"35", "due_date"=>"", "auth_sig"=>"0", "description"=>"", "ordered_by"=>"", "department_id"=>""}}
+  [4;35;1mJob Load (0.3ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 69) [0m
+  [4;36;1mWorkflow Load (0.5ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows".job_id = 69) [0m
+  [4;35;1mJob Update (0.3ms)[0m   [0mUPDATE "jobs" SET "updated_at" = '2009-11-11 15:36:24', "created_at" = '2009-11-11 15:35:37', "ordered_by" = '', "input_person" = 'tindrum', "name" = 'australia', "received_date" = NULL, "department_id" = NULL, "submit_date" = NULL, "auth_sig" = 'f', "account_id" = NULL, "due_date" = NULL, "description" = '', "due_time" = '2000-01-01 15:35:00' WHERE "id" = 69[0m
+  [4;36;1mWorkflow Update (0.6ms)[0m   [0;1mUPDATE "workflows" SET "updated_at" = '2009-11-11 15:36:24', "created_at" = '2009-11-11 15:35:37', "name" = 'Design', "job_id" = 69, "note" = 'hogan', "completed" = NULL, "completed_date" = NULL WHERE "id" = 35[0m
+  [4;35;1mWorkflow Update (0.1ms)[0m   [0mUPDATE "workflows" SET "updated_at" = '2009-11-11 15:36:24', "created_at" = '2009-11-11 15:35:37', "name" = 'Copy', "job_id" = 69, "note" = 'diggery', "completed" = NULL, "completed_date" = NULL WHERE "id" = 36[0m
+  [4;36;1mWorkflow Update (0.1ms)[0m   [0;1mUPDATE "workflows" SET "updated_at" = '2009-11-11 15:36:24', "created_at" = '2009-11-11 15:35:37', "name" = 'Press', "job_id" = 69, "note" = 'crocodile', "completed" = NULL, "completed_date" = NULL WHERE "id" = 37[0m
+  [4;35;1mWorkflow Update (0.1ms)[0m   [0mUPDATE "workflows" SET "updated_at" = '2009-11-11 15:36:24', "created_at" = '2009-11-11 15:35:37', "name" = 'Bindry', "job_id" = 69, "note" = 'kangaroo', "completed" = NULL, "completed_date" = NULL WHERE "id" = 38[0m
+  [4;36;1mWorkflow Update (0.1ms)[0m   [0;1mUPDATE "workflows" SET "updated_at" = '2009-11-11 15:36:24', "created_at" = '2009-11-11 15:35:37', "name" = 'Ship', "job_id" = 69, "note" = 'ayers', "completed" = NULL, "completed_date" = NULL WHERE "id" = 39[0m
+Redirected to http://localhost:3000/jobs/69
+Completed in 28ms (DB: 2) | 302 Found [http://localhost/jobs/69]
+
+
+Processing JobsController#show (for 127.0.0.1 at 2009-11-11 07:36:24) [GET]
+  Parameters: {"id"=>"69"}
+  [4;35;1mJob Load (0.3ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 69) [0m
+  [4;36;1mWorkflow Load (0.5ms)[0m   [0;1mSELECT * FROM "workflows" WHERE (job_id = 69) [0m
+Rendering template within layouts/application
+Rendering jobs/show
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 30ms (View: 21, DB: 1) | 200 OK [http://localhost/jobs/69]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 07:36:28) [GET]
+  [4;36;1mJob Load (0.6ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 84ms (View: 79, DB: 1) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#edit (for 127.0.0.1 at 2009-11-11 07:37:33) [GET]
+  Parameters: {"id"=>"69"}
+  [4;36;1mJob Load (0.3ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 69) [0m
+Rendering template within layouts/application
+Rendering jobs/edit
+  [4;35;1mWorkflow Load (0.6ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows".job_id = 69) [0m
+Rendered jobs/_form (43.9ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 62ms (View: 55, DB: 1) | 200 OK [http://localhost/jobs/69/edit]
+
+
+Processing JobsController#update (for 127.0.0.1 at 2009-11-11 07:37:41) [PUT]
+  Parameters: {"commit"=>"Create/Update Job", "authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"69", "job"=>{"name"=>"australia", "input_person"=>"tindrum", "received_date"=>"", "submit_date"=>"", "due_time(1i)"=>"2000", "workflows_attributes"=>{"0"=>{"name"=>"Design", "_delete"=>"0", "id"=>"35", "note"=>"hogan"}, "1"=>{"name"=>"Copy", "_delete"=>"0", "id"=>"36", "note"=>"diggery"}, "2"=>{"name"=>"Press", "_delete"=>"0", "id"=>"37", "note"=>"crocodile"}, "3"=>{"name"=>"Bindry", "_delete"=>"0", "id"=>"38", "note"=>"kangaroo"}, "4"=>{"name"=>"Ship", "_delete"=>"1", "id"=>"39", "note"=>"ayers"}}, "account_id"=>"", "due_time(2i)"=>"1", "due_time(3i)"=>"1", "due_time(4i)"=>"15", "due_time(5i)"=>"35", "due_date"=>"", "auth_sig"=>"0", "description"=>"", "ordered_by"=>"", "department_id"=>""}}
+  [4;35;1mJob Load (0.3ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 69) [0m
+
+RuntimeError (--- !map:HashWithIndifferentAccess 
+commit: Create/Update Job
+authenticity_token: alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=
+_method: put
+action: update
+id: "69"
+job: !map:HashWithIndifferentAccess 
+  name: australia
+  input_person: tindrum
+  due_time(1i): "2000"
+  submit_date: ""
+  received_date: ""
+  due_time(2i): "1"
+  account_id: ""
+  workflows_attributes: !map:HashWithIndifferentAccess 
+    "0": !map:HashWithIndifferentAccess 
+      name: Design
+      _delete: "0"
+      id: "35"
+      note: hogan
+    "1": !map:HashWithIndifferentAccess 
+      name: Copy
+      _delete: "0"
+      id: "36"
+      note: diggery
+    "2": !map:HashWithIndifferentAccess 
+      name: Press
+      _delete: "0"
+      id: "37"
+      note: crocodile
+    "3": !map:HashWithIndifferentAccess 
+      name: Bindry
+      _delete: "0"
+      id: "38"
+      note: kangaroo
+    "4": !map:HashWithIndifferentAccess 
+      name: Ship
+      _delete: "1"
+      id: "39"
+      note: ayers
+  due_time(3i): "1"
+  due_time(4i): "15"
+  due_date: ""
+  due_time(5i): "35"
+  description: ""
+  auth_sig: "0"
+  ordered_by: ""
+  department_id: ""
+controller: jobs
+):
+  app/controllers/jobs_controller.rb:40:in `update'
+
+Rendered rescues/_trace (27.8ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 07:39:01) [GET]
+  [4;36;1mJob Load (0.6ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 25ms (View: 20, DB: 1) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#new (for 127.0.0.1 at 2009-11-11 07:39:03) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (88.2ms)
+Completed in 111ms (View: 92, DB: 0) | 200 OK [http://localhost/jobs/new]
+
+
+Processing JobsController#create (for 127.0.0.1 at 2009-11-11 07:39:36) [POST]
+  Parameters: {"commit"=>"Create/Update Job", "authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "job"=>{"name"=>"South America", "input_person"=>"tindrum", "received_date"=>"", "submit_date"=>"", "due_time(1i)"=>"2009", "workflows_attributes"=>{"0"=>{"name"=>"Design", "note"=>"Quechua"}, "1"=>{"name"=>"Copy", "note"=>"Titicaca"}, "2"=>{"name"=>"Press", "note"=>"Chavez"}, "3"=>{"name"=>"Bindry", "note"=>"Rainforest"}, "4"=>{"name"=>"Ship", "note"=>"Patagonia"}}, "account_id"=>"", "due_time(2i)"=>"11", "due_time(3i)"=>"11", "due_time(4i)"=>"15", "due_time(5i)"=>"39", "due_date"=>"", "auth_sig"=>"0", "description"=>"", "ordered_by"=>"", "department_id"=>""}}
+  [4;35;1mJob Create (0.3ms)[0m   [0mINSERT INTO "jobs" ("name", "input_person", "created_at", "submit_date", "updated_at", "received_date", "account_id", "due_time", "due_date", "description", "auth_sig", "ordered_by", "department_id") VALUES('South America', 'tindrum', '2009-11-11 15:39:36', NULL, '2009-11-11 15:39:36', NULL, NULL, '2009-11-11 15:39:00', NULL, '', 'f', '', NULL)[0m
+  [4;36;1mWorkflow Create (0.1ms)[0m   [0;1mINSERT INTO "workflows" ("name", "created_at", "completed", "completed_date", "updated_at", "note", "job_id") VALUES('Design', '2009-11-11 15:39:36', NULL, NULL, '2009-11-11 15:39:36', 'Quechua', 70)[0m
+  [4;35;1mWorkflow Create (0.1ms)[0m   [0mINSERT INTO "workflows" ("name", "created_at", "completed", "completed_date", "updated_at", "note", "job_id") VALUES('Copy', '2009-11-11 15:39:36', NULL, NULL, '2009-11-11 15:39:36', 'Titicaca', 70)[0m
+  [4;36;1mWorkflow Create (0.1ms)[0m   [0;1mINSERT INTO "workflows" ("name", "created_at", "completed", "completed_date", "updated_at", "note", "job_id") VALUES('Press', '2009-11-11 15:39:36', NULL, NULL, '2009-11-11 15:39:36', 'Chavez', 70)[0m
+  [4;35;1mWorkflow Create (0.1ms)[0m   [0mINSERT INTO "workflows" ("name", "created_at", "completed", "completed_date", "updated_at", "note", "job_id") VALUES('Bindry', '2009-11-11 15:39:36', NULL, NULL, '2009-11-11 15:39:36', 'Rainforest', 70)[0m
+  [4;36;1mWorkflow Create (0.1ms)[0m   [0;1mINSERT INTO "workflows" ("name", "created_at", "completed", "completed_date", "updated_at", "note", "job_id") VALUES('Ship', '2009-11-11 15:39:36', NULL, NULL, '2009-11-11 15:39:36', 'Patagonia', 70)[0m
+Redirected to http://localhost:3000/jobs
+Completed in 27ms (DB: 1) | 302 Found [http://localhost/jobs]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 07:39:36) [GET]
+  [4;35;1mJob Load (0.7ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 30ms (View: 25, DB: 1) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#show (for 127.0.0.1 at 2009-11-11 07:39:39) [GET]
+  Parameters: {"id"=>"70"}
+  [4;35;1mJob Load (0.3ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 70) [0m
+  [4;36;1mWorkflow Load (0.5ms)[0m   [0;1mSELECT * FROM "workflows" WHERE (job_id = 70) [0m
+Rendering template within layouts/application
+Rendering jobs/show
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 89ms (View: 80, DB: 1) | 200 OK [http://localhost/jobs/70]
+
+
+Processing JobsController#edit (for 127.0.0.1 at 2009-11-11 07:39:52) [GET]
+  Parameters: {"id"=>"70"}
+  [4;36;1mJob Load (0.3ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 70) [0m
+Rendering template within layouts/application
+Rendering jobs/edit
+  [4;35;1mWorkflow Load (0.6ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows".job_id = 70) [0m
+Rendered jobs/_form (43.8ms)
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 62ms (View: 55, DB: 1) | 200 OK [http://localhost/jobs/70/edit]
+
+
+Processing JobsController#update (for 127.0.0.1 at 2009-11-11 07:40:32) [PUT]
+  Parameters: {"commit"=>"Create/Update Job", "authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"70", "job"=>{"name"=>"South America", "input_person"=>"tindrum", "received_date"=>"", "submit_date"=>"", "due_time(1i)"=>"2000", "workflows_attributes"=>{"0"=>{"name"=>"Design", "_delete"=>"0", "id"=>"40", "note"=>"Quechua"}, "1"=>{"name"=>"Copy", "_delete"=>"0", "id"=>"41", "note"=>"Titicaca"}, "2"=>{"name"=>"Press", "_delete"=>"0", "id"=>"42", "note"=>"Chavez"}, "3"=>{"name"=>"Bindry", "_delete"=>"0", "id"=>"43", "note"=>"Rainforest"}, "4"=>{"name"=>"Ship", "_delete"=>"0", "id"=>"44", "note"=>"Patagonia"}}, "account_id"=>"", "due_time(2i)"=>"1", "due_time(3i)"=>"1", "due_time(4i)"=>"15", "due_time(5i)"=>"39", "due_date"=>"2009-11-12", "auth_sig"=>"0", "description"=>"", "ordered_by"=>"", "department_id"=>""}}
+  [4;35;1mJob Load (0.3ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 70) [0m
+
+RuntimeError (--- !map:HashWithIndifferentAccess 
+commit: Create/Update Job
+authenticity_token: alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=
+_method: put
+action: update
+id: "70"
+job: !map:HashWithIndifferentAccess 
+  name: South America
+  input_person: tindrum
+  due_time(1i): "2000"
+  submit_date: ""
+  received_date: ""
+  due_time(2i): "1"
+  account_id: ""
+  workflows_attributes: !map:HashWithIndifferentAccess 
+    "0": !map:HashWithIndifferentAccess 
+      name: Design
+      _delete: "0"
+      id: "40"
+      note: Quechua
+    "1": !map:HashWithIndifferentAccess 
+      name: Copy
+      _delete: "0"
+      id: "41"
+      note: Titicaca
+    "2": !map:HashWithIndifferentAccess 
+      name: Press
+      _delete: "0"
+      id: "42"
+      note: Chavez
+    "3": !map:HashWithIndifferentAccess 
+      name: Bindry
+      _delete: "0"
+      id: "43"
+      note: Rainforest
+    "4": !map:HashWithIndifferentAccess 
+      name: Ship
+      _delete: "0"
+      id: "44"
+      note: Patagonia
+  due_time(3i): "1"
+  due_time(4i): "15"
+  due_date: "2009-11-12"
+  due_time(5i): "39"
+  description: ""
+  auth_sig: "0"
+  ordered_by: ""
+  department_id: ""
+controller: jobs
+):
+  app/controllers/jobs_controller.rb:40:in `update'
+
+Rendered rescues/_trace (90.4ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 07:40:46) [GET]
+  [4;36;1mJob Load (0.7ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 28ms (View: 23, DB: 1) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#edit (for 127.0.0.1 at 2009-11-11 07:40:49) [GET]
+  Parameters: {"id"=>"70"}
+  [4;36;1mJob Load (0.3ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 70) [0m
+Rendering template within layouts/application
+Rendering jobs/edit
+  [4;35;1mWorkflow Load (0.6ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows".job_id = 70) [0m
+Rendered jobs/_form (43.0ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 124ms (View: 117, DB: 1) | 200 OK [http://localhost/jobs/70/edit]
+
+
+Processing JobsController#update (for 127.0.0.1 at 2009-11-11 07:41:01) [PUT]
+  Parameters: {"commit"=>"Create/Update Job", "authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"70", "job"=>{"name"=>"South America", "input_person"=>"tindrum", "received_date"=>"", "submit_date"=>"", "due_time(1i)"=>"2000", "workflows_attributes"=>{"0"=>{"name"=>"Design", "_delete"=>"0", "id"=>"40", "note"=>"Quechua"}, "1"=>{"name"=>"Copy", "_delete"=>"0", "id"=>"41", "note"=>"Titicaca"}, "2"=>{"name"=>"Press", "_delete"=>"1", "id"=>"42", "note"=>"Chavez"}, "3"=>{"name"=>"Bindry", "_delete"=>"0", "id"=>"43", "note"=>"Rainforest"}, "4"=>{"name"=>"Ship", "_delete"=>"0", "id"=>"44", "note"=>"Patagonia"}}, "account_id"=>"", "due_time(2i)"=>"1", "due_time(3i)"=>"1", "due_time(4i)"=>"15", "due_time(5i)"=>"39", "due_date"=>"", "auth_sig"=>"0", "description"=>"", "ordered_by"=>"", "department_id"=>""}}
+  [4;35;1mJob Load (0.3ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 70) [0m
+
+RuntimeError (--- !map:HashWithIndifferentAccess 
+commit: Create/Update Job
+authenticity_token: alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=
+_method: put
+action: update
+id: "70"
+job: !map:HashWithIndifferentAccess 
+  name: South America
+  input_person: tindrum
+  due_time(1i): "2000"
+  submit_date: ""
+  received_date: ""
+  due_time(2i): "1"
+  account_id: ""
+  workflows_attributes: !map:HashWithIndifferentAccess 
+    "0": !map:HashWithIndifferentAccess 
+      name: Design
+      _delete: "0"
+      id: "40"
+      note: Quechua
+    "1": !map:HashWithIndifferentAccess 
+      name: Copy
+      _delete: "0"
+      id: "41"
+      note: Titicaca
+    "2": !map:HashWithIndifferentAccess 
+      name: Press
+      _delete: "1"
+      id: "42"
+      note: Chavez
+    "3": !map:HashWithIndifferentAccess 
+      name: Bindry
+      _delete: "0"
+      id: "43"
+      note: Rainforest
+    "4": !map:HashWithIndifferentAccess 
+      name: Ship
+      _delete: "0"
+      id: "44"
+      note: Patagonia
+  due_time(3i): "1"
+  due_time(4i): "15"
+  due_date: ""
+  due_time(5i): "39"
+  description: ""
+  auth_sig: "0"
+  ordered_by: ""
+  department_id: ""
+controller: jobs
+):
+  app/controllers/jobs_controller.rb:40:in `update'
+
+Rendered rescues/_trace (27.2ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 07:41:15) [GET]
+  [4;36;1mJob Load (0.7ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 27ms (View: 22, DB: 1) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#edit (for 127.0.0.1 at 2009-11-11 07:41:17) [GET]
+  Parameters: {"id"=>"70"}
+  [4;36;1mJob Load (0.3ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 70) [0m
+Rendering template within layouts/application
+Rendering jobs/edit
+  [4;35;1mWorkflow Load (0.6ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows".job_id = 70) [0m
+Rendered jobs/_form (43.9ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 62ms (View: 55, DB: 1) | 200 OK [http://localhost/jobs/70/edit]
+
+
+Processing JobsController#update (for 127.0.0.1 at 2009-11-11 07:41:24) [PUT]
+  Parameters: {"commit"=>"Create/Update Job", "authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"70", "job"=>{"name"=>"South America", "input_person"=>"tindrum", "received_date"=>"", "submit_date"=>"", "due_time(1i)"=>"2000", "workflows_attributes"=>{"0"=>{"name"=>"Design", "_delete"=>"0", "id"=>"40", "note"=>"Quechua"}, "1"=>{"name"=>"Copy", "_delete"=>"0", "id"=>"41", "note"=>"Titicaca"}, "2"=>{"name"=>"Press", "_delete"=>"0", "id"=>"42", "note"=>"Chavez"}, "3"=>{"name"=>"Bindry", "_delete"=>"0", "id"=>"43", "note"=>"Rainforest"}, "4"=>{"name"=>"Ship", "_delete"=>"0", "id"=>"44", "note"=>"Patagonia"}}, "account_id"=>"", "due_time(2i)"=>"1", "due_time(3i)"=>"1", "due_time(4i)"=>"15", "due_time(5i)"=>"39", "due_date"=>"2009-11-22", "auth_sig"=>"0", "description"=>"", "ordered_by"=>"", "department_id"=>""}}
+  [4;35;1mJob Load (0.3ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 70) [0m
+
+RuntimeError (--- !map:HashWithIndifferentAccess 
+commit: Create/Update Job
+authenticity_token: alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=
+_method: put
+action: update
+id: "70"
+job: !map:HashWithIndifferentAccess 
+  name: South America
+  input_person: tindrum
+  due_time(1i): "2000"
+  submit_date: ""
+  received_date: ""
+  due_time(2i): "1"
+  account_id: ""
+  workflows_attributes: !map:HashWithIndifferentAccess 
+    "0": !map:HashWithIndifferentAccess 
+      name: Design
+      _delete: "0"
+      id: "40"
+      note: Quechua
+    "1": !map:HashWithIndifferentAccess 
+      name: Copy
+      _delete: "0"
+      id: "41"
+      note: Titicaca
+    "2": !map:HashWithIndifferentAccess 
+      name: Press
+      _delete: "0"
+      id: "42"
+      note: Chavez
+    "3": !map:HashWithIndifferentAccess 
+      name: Bindry
+      _delete: "0"
+      id: "43"
+      note: Rainforest
+    "4": !map:HashWithIndifferentAccess 
+      name: Ship
+      _delete: "0"
+      id: "44"
+      note: Patagonia
+  due_time(3i): "1"
+  due_time(4i): "15"
+  due_date: "2009-11-22"
+  due_time(5i): "39"
+  description: ""
+  auth_sig: "0"
+  ordered_by: ""
+  department_id: ""
+controller: jobs
+):
+  app/controllers/jobs_controller.rb:40:in `update'
+
+Rendered rescues/_trace (89.2ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 07:41:56) [GET]
+  [4;36;1mJob Load (0.7ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 28ms (View: 23, DB: 1) | 200 OK [http://localhost/jobs/]
+
+
+Processing JobsController#edit (for 127.0.0.1 at 2009-11-11 07:41:58) [GET]
+  Parameters: {"id"=>"70"}
+  [4;36;1mJob Load (0.3ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 70) [0m
+Rendering template within layouts/application
+Rendering jobs/edit
+  [4;35;1mWorkflow Load (0.6ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows".job_id = 70) [0m
+Rendered jobs/_form (43.7ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 61ms (View: 55, DB: 1) | 200 OK [http://localhost/jobs/70/edit]
+
+
+Processing JobsController#update (for 127.0.0.1 at 2009-11-11 07:42:04) [PUT]
+  Parameters: {"commit"=>"Create/Update Job", "authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"70", "job"=>{"name"=>"South America", "input_person"=>"tindrum", "received_date"=>"", "submit_date"=>"", "due_time(1i)"=>"2000", "workflows_attributes"=>{"0"=>{"name"=>"Design", "_delete"=>"0", "id"=>"40", "note"=>"Quechua"}, "1"=>{"name"=>"Copy", "_delete"=>"0", "id"=>"41", "note"=>"Titicaca"}, "2"=>{"name"=>"Press", "_delete"=>"1", "id"=>"42", "note"=>"Chavez"}, "3"=>{"name"=>"Bindry", "_delete"=>"0", "id"=>"43", "note"=>"Rainforest"}, "4"=>{"name"=>"Ship", "_delete"=>"0", "id"=>"44", "note"=>"Patagonia"}}, "account_id"=>"", "due_time(2i)"=>"1", "due_time(3i)"=>"1", "due_time(4i)"=>"15", "due_time(5i)"=>"39", "due_date"=>"", "auth_sig"=>"0", "description"=>"", "ordered_by"=>"", "department_id"=>""}}
+  [4;35;1mJob Load (0.3ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 70) [0m
+
+RuntimeError (--- !map:HashWithIndifferentAccess 
+commit: Create/Update Job
+authenticity_token: alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=
+_method: put
+action: update
+id: "70"
+job: !map:HashWithIndifferentAccess 
+  name: South America
+  input_person: tindrum
+  due_time(1i): "2000"
+  submit_date: ""
+  received_date: ""
+  due_time(2i): "1"
+  account_id: ""
+  workflows_attributes: !map:HashWithIndifferentAccess 
+    "0": !map:HashWithIndifferentAccess 
+      name: Design
+      _delete: "0"
+      id: "40"
+      note: Quechua
+    "1": !map:HashWithIndifferentAccess 
+      name: Copy
+      _delete: "0"
+      id: "41"
+      note: Titicaca
+    "2": !map:HashWithIndifferentAccess 
+      name: Press
+      _delete: "1"
+      id: "42"
+      note: Chavez
+    "3": !map:HashWithIndifferentAccess 
+      name: Bindry
+      _delete: "0"
+      id: "43"
+      note: Rainforest
+    "4": !map:HashWithIndifferentAccess 
+      name: Ship
+      _delete: "0"
+      id: "44"
+      note: Patagonia
+  due_time(3i): "1"
+  due_time(4i): "15"
+  due_date: ""
+  due_time(5i): "39"
+  description: ""
+  auth_sig: "0"
+  ordered_by: ""
+  department_id: ""
+controller: jobs
+):
+  app/controllers/jobs_controller.rb:40:in `update'
+
+Rendered rescues/_trace (26.8ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 07:42:31) [GET]
+  [4;36;1mJob Load (0.7ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 27ms (View: 23, DB: 1) | 200 OK [http://localhost/jobs/]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:42:42) [GET]
+  [4;36;1mWorkflow Load (64.4ms)[0m   [0;1mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 204ms (View: 135, DB: 65) | 200 OK [http://localhost/workflows]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 07:43:06) [GET]
+  [4;36;1mJob Load (0.7ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 27ms (View: 22, DB: 1) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#show (for 127.0.0.1 at 2009-11-11 07:43:12) [GET]
+  Parameters: {"id"=>"69"}
+  [4;36;1mJob Load (0.3ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 69) [0m
+  [4;35;1mWorkflow Load (0.5ms)[0m   [0mSELECT * FROM "workflows" WHERE (job_id = 69) [0m
+Rendering template within layouts/application
+Rendering jobs/show
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 29ms (View: 20, DB: 1) | 200 OK [http://localhost/jobs/69]
+
+
+Processing JobsController#destroy (for 127.0.0.1 at 2009-11-11 07:43:23) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"69"}
+  [4;35;1mJob Load (0.3ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 69) [0m
+  [4;36;1mJob Destroy (0.2ms)[0m   [0;1mDELETE FROM "jobs" WHERE "id" = 69[0m
+Redirected to http://localhost:3000/jobs
+Completed in 13ms (DB: 0) | 302 Found [http://localhost/jobs/69]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 07:43:23) [GET]
+  [4;35;1mJob Load (0.6ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 24ms (View: 19, DB: 1) | 200 OK [http://localhost/jobs]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:43:29) [GET]
+  [4;35;1mWorkflow Load (2.8ms)[0m   [0mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 197ms (View: 189, DB: 3) | 200 OK [http://localhost/workflows]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 07:44:58) [GET]
+  [4;35;1mJob Load (0.6ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 24ms (View: 19, DB: 1) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#new (for 127.0.0.1 at 2009-11-11 07:45:00) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (28.9ms)
+Completed in 122ms (View: 32, DB: 0) | 200 OK [http://localhost/jobs/new]
+
+
+Processing JobsController#create (for 127.0.0.1 at 2009-11-11 07:45:08) [POST]
+  Parameters: {"commit"=>"Create/Update Job", "authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "job"=>{"name"=>"pelotita", "input_person"=>"tindrum", "received_date"=>"", "submit_date"=>"", "due_time(1i)"=>"2009", "workflows_attributes"=>{"0"=>{"name"=>"Design", "note"=>""}, "1"=>{"name"=>"Copy", "note"=>""}, "2"=>{"name"=>"Press", "note"=>""}, "3"=>{"name"=>"Bindry", "note"=>""}, "4"=>{"name"=>"Ship", "note"=>""}}, "account_id"=>"", "due_time(2i)"=>"11", "due_time(3i)"=>"11", "due_time(4i)"=>"15", "due_time(5i)"=>"45", "due_date"=>"", "auth_sig"=>"0", "description"=>"", "ordered_by"=>"", "department_id"=>""}}
+  [4;36;1mJob Create (0.3ms)[0m   [0;1mINSERT INTO "jobs" ("name", "input_person", "created_at", "submit_date", "updated_at", "received_date", "account_id", "due_time", "due_date", "description", "auth_sig", "ordered_by", "department_id") VALUES('pelotita', 'tindrum', '2009-11-11 15:45:08', NULL, '2009-11-11 15:45:08', NULL, NULL, '2009-11-11 15:45:00', NULL, '', 'f', '', NULL)[0m
+  [4;35;1mWorkflow Create (0.1ms)[0m   [0mINSERT INTO "workflows" ("name", "created_at", "completed", "completed_date", "updated_at", "note", "job_id") VALUES('Design', '2009-11-11 15:45:08', NULL, NULL, '2009-11-11 15:45:08', '', 71)[0m
+  [4;36;1mWorkflow Create (0.1ms)[0m   [0;1mINSERT INTO "workflows" ("name", "created_at", "completed", "completed_date", "updated_at", "note", "job_id") VALUES('Copy', '2009-11-11 15:45:08', NULL, NULL, '2009-11-11 15:45:08', '', 71)[0m
+  [4;35;1mWorkflow Create (0.1ms)[0m   [0mINSERT INTO "workflows" ("name", "created_at", "completed", "completed_date", "updated_at", "note", "job_id") VALUES('Press', '2009-11-11 15:45:08', NULL, NULL, '2009-11-11 15:45:08', '', 71)[0m
+  [4;36;1mWorkflow Create (0.1ms)[0m   [0;1mINSERT INTO "workflows" ("name", "created_at", "completed", "completed_date", "updated_at", "note", "job_id") VALUES('Bindry', '2009-11-11 15:45:08', NULL, NULL, '2009-11-11 15:45:08', '', 71)[0m
+  [4;35;1mWorkflow Create (0.1ms)[0m   [0mINSERT INTO "workflows" ("name", "created_at", "completed", "completed_date", "updated_at", "note", "job_id") VALUES('Ship', '2009-11-11 15:45:08', NULL, NULL, '2009-11-11 15:45:08', '', 71)[0m
+Redirected to http://localhost:3000/jobs
+Completed in 26ms (DB: 1) | 302 Found [http://localhost/jobs]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 07:45:08) [GET]
+  [4;36;1mJob Load (0.7ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 28ms (View: 23, DB: 1) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#show (for 127.0.0.1 at 2009-11-11 07:45:13) [GET]
+  Parameters: {"id"=>"71"}
+  [4;36;1mJob Load (0.3ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 71) [0m
+  [4;35;1mWorkflow Load (0.5ms)[0m   [0mSELECT * FROM "workflows" WHERE (job_id = 71) [0m
+Rendering template within layouts/application
+Rendering jobs/show
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 29ms (View: 20, DB: 1) | 200 OK [http://localhost/jobs/71]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:45:30) [GET]
+  [4;35;1mWorkflow Load (3.2ms)[0m   [0mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 222ms (View: 214, DB: 3) | 200 OK [http://localhost/workflows]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 07:45:41) [GET]
+  [4;35;1mJob Load (0.7ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 28ms (View: 23, DB: 1) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#destroy (for 127.0.0.1 at 2009-11-11 07:45:45) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"71"}
+  [4;35;1mJob Load (0.3ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 71) [0m
+  [4;36;1mJob Destroy (12.3ms)[0m   [0;1mDELETE FROM "jobs" WHERE "id" = 71[0m
+Redirected to http://localhost:3000/jobs
+Completed in 22ms (DB: 13) | 302 Found [http://localhost/jobs/71]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 07:45:45) [GET]
+  [4;35;1mJob Load (0.6ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 24ms (View: 20, DB: 1) | 200 OK [http://localhost/jobs]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:45:49) [GET]
+  [4;35;1mWorkflow Load (3.1ms)[0m   [0mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 155ms (View: 146, DB: 3) | 200 OK [http://localhost/workflows]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 07:46:21) [GET]
+  [4;35;1mJob Load (0.6ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 95ms (View: 90, DB: 1) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#destroy (for 127.0.0.1 at 2009-11-11 07:46:26) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"70"}
+  [4;35;1mJob Load (0.3ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 70) [0m
+  [4;36;1mJob Destroy (0.2ms)[0m   [0;1mDELETE FROM "jobs" WHERE "id" = 70[0m
+Redirected to http://localhost:3000/jobs
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/jobs/70]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 07:46:26) [GET]
+  [4;35;1mJob Load (0.4ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 19ms (View: 14, DB: 1) | 200 OK [http://localhost/jobs]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:46:30) [GET]
+  [4;35;1mWorkflow Load (3.1ms)[0m   [0mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 224ms (View: 216, DB: 3) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:46:34) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"1"}
+  [4;35;1mWorkflow Load (0.2ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows"."id" = 1) [0m
+  [4;36;1mWorkflow Destroy (0.2ms)[0m   [0;1mDELETE FROM "workflows" WHERE "id" = 1[0m
+  [4;35;1mJob Load (0.1ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 52) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/workflows/1]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:46:34) [GET]
+  [4;36;1mWorkflow Load (3.0ms)[0m   [0;1mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 227ms (View: 218, DB: 3) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:46:36) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"2"}
+  [4;36;1mWorkflow Load (0.2ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows"."id" = 2) [0m
+  [4;35;1mWorkflow Destroy (0.2ms)[0m   [0mDELETE FROM "workflows" WHERE "id" = 2[0m
+  [4;36;1mJob Load (0.1ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 53) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 14ms (DB: 1) | 302 Found [http://localhost/workflows/2]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:46:36) [GET]
+  [4;35;1mWorkflow Load (3.0ms)[0m   [0mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 217ms (View: 209, DB: 3) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:46:37) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"3"}
+  [4;35;1mWorkflow Load (0.2ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows"."id" = 3) [0m
+  [4;36;1mWorkflow Destroy (0.2ms)[0m   [0;1mDELETE FROM "workflows" WHERE "id" = 3[0m
+  [4;35;1mJob Load (0.1ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 54) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/workflows/3]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:46:37) [GET]
+  [4;36;1mWorkflow Load (2.9ms)[0m   [0;1mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 214ms (View: 206, DB: 3) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:46:38) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"4"}
+  [4;36;1mWorkflow Load (0.2ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows"."id" = 4) [0m
+  [4;35;1mWorkflow Destroy (0.2ms)[0m   [0mDELETE FROM "workflows" WHERE "id" = 4[0m
+  [4;36;1mJob Load (0.1ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 56) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/workflows/4]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:46:38) [GET]
+  [4;35;1mWorkflow Load (2.8ms)[0m   [0mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 209ms (View: 201, DB: 3) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:46:40) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"5"}
+  [4;35;1mWorkflow Load (0.2ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows"."id" = 5) [0m
+  [4;36;1mWorkflow Destroy (0.2ms)[0m   [0;1mDELETE FROM "workflows" WHERE "id" = 5[0m
+  [4;35;1mJob Load (0.1ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 63) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/workflows/5]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:46:40) [GET]
+  [4;36;1mWorkflow Load (2.8ms)[0m   [0;1mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 205ms (View: 198, DB: 3) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:46:41) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"6"}
+  [4;36;1mWorkflow Load (0.2ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows"."id" = 6) [0m
+  [4;35;1mWorkflow Destroy (0.2ms)[0m   [0mDELETE FROM "workflows" WHERE "id" = 6[0m
+  [4;36;1mJob Load (0.1ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 63) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/workflows/6]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:46:41) [GET]
+  [4;35;1mWorkflow Load (2.8ms)[0m   [0mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 212ms (View: 205, DB: 3) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:46:43) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"7"}
+  [4;35;1mWorkflow Load (0.2ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows"."id" = 7) [0m
+  [4;36;1mWorkflow Destroy (0.2ms)[0m   [0;1mDELETE FROM "workflows" WHERE "id" = 7[0m
+  [4;35;1mJob Load (0.1ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 63) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/workflows/7]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:46:43) [GET]
+  [4;36;1mWorkflow Load (2.7ms)[0m   [0;1mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 199ms (View: 191, DB: 3) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:46:44) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"8"}
+  [4;36;1mWorkflow Load (0.2ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows"."id" = 8) [0m
+  [4;35;1mWorkflow Destroy (0.2ms)[0m   [0mDELETE FROM "workflows" WHERE "id" = 8[0m
+  [4;36;1mJob Load (0.1ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 63) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 14ms (DB: 1) | 302 Found [http://localhost/workflows/8]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:46:44) [GET]
+  [4;35;1mWorkflow Load (2.6ms)[0m   [0mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 127ms (View: 120, DB: 3) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:46:46) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"9"}
+  [4;35;1mWorkflow Load (0.2ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows"."id" = 9) [0m
+  [4;36;1mWorkflow Destroy (0.2ms)[0m   [0;1mDELETE FROM "workflows" WHERE "id" = 9[0m
+  [4;35;1mJob Load (0.1ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 63) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/workflows/9]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:46:46) [GET]
+  [4;36;1mWorkflow Load (2.6ms)[0m   [0;1mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 126ms (View: 119, DB: 3) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:46:47) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"10"}
+  [4;36;1mWorkflow Load (0.2ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows"."id" = 10) [0m
+  [4;35;1mWorkflow Destroy (0.2ms)[0m   [0mDELETE FROM "workflows" WHERE "id" = 10[0m
+  [4;36;1mJob Load (0.1ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 64) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/workflows/10]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:46:47) [GET]
+  [4;35;1mWorkflow Load (2.5ms)[0m   [0mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 124ms (View: 116, DB: 3) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:46:48) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"11"}
+  [4;35;1mWorkflow Load (0.2ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows"."id" = 11) [0m
+  [4;36;1mWorkflow Destroy (0.2ms)[0m   [0;1mDELETE FROM "workflows" WHERE "id" = 11[0m
+  [4;35;1mJob Load (0.1ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 64) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 81ms (DB: 1) | 302 Found [http://localhost/workflows/11]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:46:48) [GET]
+  [4;36;1mWorkflow Load (2.4ms)[0m   [0;1mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 120ms (View: 113, DB: 3) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:46:49) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"14"}
+  [4;36;1mWorkflow Load (0.2ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows"."id" = 14) [0m
+  [4;35;1mWorkflow Destroy (0.2ms)[0m   [0mDELETE FROM "workflows" WHERE "id" = 14[0m
+  [4;36;1mJob Load (0.1ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 64) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/workflows/14]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:46:50) [GET]
+  [4;35;1mWorkflow Load (2.4ms)[0m   [0mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 118ms (View: 111, DB: 3) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:46:50) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"15"}
+  [4;35;1mWorkflow Load (0.2ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows"."id" = 15) [0m
+  [4;36;1mWorkflow Destroy (0.2ms)[0m   [0;1mDELETE FROM "workflows" WHERE "id" = 15[0m
+  [4;35;1mJob Load (0.1ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 65) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 58ms (DB: 0) | 302 Found [http://localhost/workflows/15]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:46:51) [GET]
+  [4;36;1mWorkflow Load (2.9ms)[0m   [0;1mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 187ms (View: 180, DB: 3) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:46:52) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"16"}
+  [4;36;1mWorkflow Load (0.2ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows"."id" = 16) [0m
+  [4;35;1mWorkflow Destroy (0.2ms)[0m   [0mDELETE FROM "workflows" WHERE "id" = 16[0m
+  [4;36;1mJob Load (0.1ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 65) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/workflows/16]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:46:52) [GET]
+  [4;35;1mWorkflow Load (2.2ms)[0m   [0mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 188ms (View: 180, DB: 3) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:46:54) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"17"}
+  [4;35;1mWorkflow Load (0.2ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows"."id" = 17) [0m
+  [4;36;1mWorkflow Destroy (0.2ms)[0m   [0;1mDELETE FROM "workflows" WHERE "id" = 17[0m
+  [4;35;1mJob Load (0.1ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 65) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/workflows/17]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:46:54) [GET]
+  [4;36;1mWorkflow Load (2.2ms)[0m   [0;1mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 179ms (View: 172, DB: 2) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:46:55) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"18"}
+  [4;36;1mWorkflow Load (0.3ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows"."id" = 18) [0m
+  [4;35;1mWorkflow Destroy (0.2ms)[0m   [0mDELETE FROM "workflows" WHERE "id" = 18[0m
+  [4;36;1mJob Load (0.1ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 65) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/workflows/18]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:46:55) [GET]
+  [4;35;1mWorkflow Load (2.1ms)[0m   [0mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 171ms (View: 164, DB: 2) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:46:57) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"20"}
+  [4;35;1mWorkflow Load (0.2ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows"."id" = 20) [0m
+  [4;36;1mWorkflow Destroy (0.2ms)[0m   [0;1mDELETE FROM "workflows" WHERE "id" = 20[0m
+  [4;35;1mJob Load (0.1ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 66) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/workflows/20]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:46:57) [GET]
+  [4;36;1mWorkflow Load (2.1ms)[0m   [0;1mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 101ms (View: 94, DB: 2) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:46:58) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"21"}
+  [4;36;1mWorkflow Load (0.2ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows"."id" = 21) [0m
+  [4;35;1mWorkflow Destroy (0.2ms)[0m   [0mDELETE FROM "workflows" WHERE "id" = 21[0m
+  [4;36;1mJob Load (0.1ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 66) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/workflows/21]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:46:58) [GET]
+  [4;35;1mWorkflow Load (2.0ms)[0m   [0mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 100ms (View: 93, DB: 2) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:46:59) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"22"}
+  [4;35;1mWorkflow Load (0.2ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows"."id" = 22) [0m
+  [4;36;1mWorkflow Destroy (0.2ms)[0m   [0;1mDELETE FROM "workflows" WHERE "id" = 22[0m
+  [4;35;1mJob Load (0.1ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 66) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/workflows/22]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:46:59) [GET]
+  [4;36;1mWorkflow Load (2.0ms)[0m   [0;1mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 97ms (View: 90, DB: 2) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:47:00) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"23"}
+  [4;36;1mWorkflow Load (0.2ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows"."id" = 23) [0m
+  [4;35;1mWorkflow Destroy (0.2ms)[0m   [0mDELETE FROM "workflows" WHERE "id" = 23[0m
+  [4;36;1mJob Load (0.1ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 66) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/workflows/23]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:47:00) [GET]
+  [4;35;1mWorkflow Load (1.9ms)[0m   [0mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 161ms (View: 154, DB: 2) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:47:02) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"25"}
+  [4;35;1mWorkflow Load (0.2ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows"."id" = 25) [0m
+  [4;36;1mWorkflow Destroy (0.2ms)[0m   [0;1mDELETE FROM "workflows" WHERE "id" = 25[0m
+  [4;35;1mJob Load (0.1ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 67) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/workflows/25]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:47:02) [GET]
+  [4;36;1mWorkflow Load (1.8ms)[0m   [0;1mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 158ms (View: 151, DB: 2) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:47:03) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"26"}
+  [4;36;1mWorkflow Load (0.2ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows"."id" = 26) [0m
+  [4;35;1mWorkflow Destroy (0.3ms)[0m   [0mDELETE FROM "workflows" WHERE "id" = 26[0m
+  [4;36;1mJob Load (0.1ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 67) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/workflows/26]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:47:03) [GET]
+  [4;35;1mWorkflow Load (1.7ms)[0m   [0mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 90ms (View: 84, DB: 2) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#new (for 127.0.0.1 at 2009-11-11 07:47:04) [GET]
+Rendering template within layouts/application
+Rendering workflows/new
+Rendered workflows/_form (10.6ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 98ms (View: 29, DB: 0) | 200 OK [http://localhost/workflows/new]
+
+
+Processing WorkflowsController#create (for 127.0.0.1 at 2009-11-11 07:47:21) [POST]
+  Parameters: {"workflow"=>{"completed_date(1i)"=>"2009", "name"=>"Design", "completed_date(2i)"=>"11", "completed_date(3i)"=>"14", "completed"=>"0", "note"=>"Dan Henderson", "job_id"=>""}, "commit"=>"Submit", "authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI="}
+  [4;36;1mWorkflow Create (0.3ms)[0m   [0;1mINSERT INTO "workflows" ("name", "created_at", "completed", "completed_date", "updated_at", "note", "job_id") VALUES('Design', '2009-11-11 15:47:21', 'f', '2009-11-14 00:00:00', '2009-11-11 15:47:21', 'Dan Henderson', NULL)[0m
+Redirected to http://localhost:3000/workflows/50
+Completed in 11ms (DB: 0) | 302 Found [http://localhost/workflows]
+
+
+Processing WorkflowsController#show (for 127.0.0.1 at 2009-11-11 07:47:21) [GET]
+  Parameters: {"id"=>"50"}
+  [4;35;1mWorkflow Load (0.2ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows"."id" = 50) [0m
+Rendering template within layouts/application
+Rendering workflows/show
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 27ms (View: 22, DB: 0) | 200 OK [http://localhost/workflows/50]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:47:24) [GET]
+  [4;35;1mWorkflow Load (1.8ms)[0m   [0mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 149ms (View: 142, DB: 2) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#edit (for 127.0.0.1 at 2009-11-11 07:47:31) [GET]
+  Parameters: {"id"=>"50"}
+  [4;35;1mWorkflow Load (0.2ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows"."id" = 50) [0m
+Rendering template within layouts/application
+Rendering workflows/edit
+Rendered workflows/_form (9.9ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 30ms (View: 25, DB: 0) | 200 OK [http://localhost/workflows/50/edit]
+
+
+Processing WorkflowsController#update (for 127.0.0.1 at 2009-11-11 07:47:34) [PUT]
+  Parameters: {"workflow"=>{"completed_date(1i)"=>"2009", "name"=>"Design", "completed_date(2i)"=>"11", "completed_date(3i)"=>"14", "completed"=>"1", "note"=>"Dan Henderson", "job_id"=>""}, "commit"=>"Submit", "authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"50"}
+  [4;35;1mWorkflow Load (0.2ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows"."id" = 50) [0m
+  [4;36;1mWorkflow Update (0.3ms)[0m   [0;1mUPDATE "workflows" SET "updated_at" = '2009-11-11 15:47:34', "created_at" = '2009-11-11 15:47:21', "name" = 'Design', "job_id" = NULL, "note" = 'Dan Henderson', "completed" = 't', "completed_date" = '2009-11-14 00:00:00' WHERE "id" = 50[0m
+Redirected to http://localhost:3000/workflows/50
+Completed in 12ms (DB: 0) | 302 Found [http://localhost/workflows/50]
+
+
+Processing WorkflowsController#show (for 127.0.0.1 at 2009-11-11 07:47:34) [GET]
+  Parameters: {"id"=>"50"}
+  [4;35;1mWorkflow Load (0.2ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows"."id" = 50) [0m
+Rendering template within layouts/application
+Rendering workflows/show
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 24ms (View: 18, DB: 0) | 200 OK [http://localhost/workflows/50]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:47:39) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"50"}
+  [4;35;1mWorkflow Load (0.2ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows"."id" = 50) [0m
+  [4;36;1mWorkflow Destroy (0.2ms)[0m   [0;1mDELETE FROM "workflows" WHERE "id" = 50[0m
+Redirected to http://localhost:3000/workflows
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/workflows/50]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:47:39) [GET]
+  [4;35;1mWorkflow Load (1.7ms)[0m   [0mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 84ms (View: 78, DB: 2) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:47:42) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"27"}
+  [4;35;1mWorkflow Load (0.2ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows"."id" = 27) [0m
+  [4;36;1mWorkflow Destroy (0.2ms)[0m   [0;1mDELETE FROM "workflows" WHERE "id" = 27[0m
+  [4;35;1mJob Load (0.1ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 67) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/workflows/27]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:47:42) [GET]
+  [4;36;1mWorkflow Load (1.7ms)[0m   [0;1mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 83ms (View: 77, DB: 2) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:47:44) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"29"}
+  [4;36;1mWorkflow Load (0.2ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows"."id" = 29) [0m
+  [4;35;1mWorkflow Destroy (0.2ms)[0m   [0mDELETE FROM "workflows" WHERE "id" = 29[0m
+  [4;36;1mJob Load (0.1ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 67) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 13ms (DB: 0) | 302 Found [http://localhost/workflows/29]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:47:44) [GET]
+  [4;35;1mWorkflow Load (1.7ms)[0m   [0mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 81ms (View: 74, DB: 2) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:47:45) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"31"}
+  [4;35;1mWorkflow Load (0.2ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows"."id" = 31) [0m
+  [4;36;1mWorkflow Destroy (0.2ms)[0m   [0;1mDELETE FROM "workflows" WHERE "id" = 31[0m
+  [4;35;1mJob Load (0.1ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 68) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/workflows/31]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:47:45) [GET]
+  [4;36;1mWorkflow Load (1.6ms)[0m   [0;1mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 148ms (View: 142, DB: 2) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:47:46) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"32"}
+  [4;36;1mWorkflow Load (0.2ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows"."id" = 32) [0m
+  [4;35;1mWorkflow Destroy (0.2ms)[0m   [0mDELETE FROM "workflows" WHERE "id" = 32[0m
+  [4;36;1mJob Load (0.1ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 68) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 14ms (DB: 1) | 302 Found [http://localhost/workflows/32]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:47:47) [GET]
+  [4;35;1mWorkflow Load (1.5ms)[0m   [0mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 72ms (View: 65, DB: 2) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:47:48) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"33"}
+  [4;35;1mWorkflow Load (0.2ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows"."id" = 33) [0m
+  [4;36;1mWorkflow Destroy (0.2ms)[0m   [0;1mDELETE FROM "workflows" WHERE "id" = 33[0m
+  [4;35;1mJob Load (0.1ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 68) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/workflows/33]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:47:48) [GET]
+  [4;36;1mWorkflow Load (1.5ms)[0m   [0;1mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 71ms (View: 65, DB: 2) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:47:49) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"34"}
+  [4;36;1mWorkflow Load (0.2ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows"."id" = 34) [0m
+  [4;35;1mWorkflow Destroy (0.2ms)[0m   [0mDELETE FROM "workflows" WHERE "id" = 34[0m
+  [4;36;1mJob Load (0.1ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 68) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/workflows/34]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:47:49) [GET]
+  [4;35;1mWorkflow Load (1.4ms)[0m   [0mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 132ms (View: 62, DB: 2) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:47:50) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"35"}
+  [4;35;1mWorkflow Load (0.2ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows"."id" = 35) [0m
+  [4;36;1mWorkflow Destroy (0.2ms)[0m   [0;1mDELETE FROM "workflows" WHERE "id" = 35[0m
+  [4;35;1mJob Load (0.1ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 69) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/workflows/35]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:47:50) [GET]
+  [4;36;1mWorkflow Load (1.3ms)[0m   [0;1mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 130ms (View: 124, DB: 2) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:47:52) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"36"}
+  [4;36;1mWorkflow Load (0.2ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows"."id" = 36) [0m
+  [4;35;1mWorkflow Destroy (0.2ms)[0m   [0mDELETE FROM "workflows" WHERE "id" = 36[0m
+  [4;36;1mJob Load (0.1ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 69) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 14ms (DB: 1) | 302 Found [http://localhost/workflows/36]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:47:52) [GET]
+  [4;35;1mWorkflow Load (1.3ms)[0m   [0mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 61ms (View: 55, DB: 2) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:47:53) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"37"}
+  [4;35;1mWorkflow Load (0.2ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows"."id" = 37) [0m
+  [4;36;1mWorkflow Destroy (0.2ms)[0m   [0;1mDELETE FROM "workflows" WHERE "id" = 37[0m
+  [4;35;1mJob Load (0.1ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 69) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/workflows/37]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:47:53) [GET]
+  [4;36;1mWorkflow Load (1.2ms)[0m   [0;1mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 58ms (View: 52, DB: 1) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:47:54) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"38"}
+  [4;36;1mWorkflow Load (0.2ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows"."id" = 38) [0m
+  [4;35;1mWorkflow Destroy (0.2ms)[0m   [0mDELETE FROM "workflows" WHERE "id" = 38[0m
+  [4;36;1mJob Load (0.1ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 69) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/workflows/38]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:47:54) [GET]
+  [4;35;1mWorkflow Load (1.1ms)[0m   [0mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 118ms (View: 112, DB: 1) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:47:56) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"39"}
+  [4;35;1mWorkflow Load (0.2ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows"."id" = 39) [0m
+  [4;36;1mWorkflow Destroy (0.3ms)[0m   [0;1mDELETE FROM "workflows" WHERE "id" = 39[0m
+  [4;35;1mJob Load (0.1ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 69) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/workflows/39]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:47:56) [GET]
+  [4;36;1mWorkflow Load (1.1ms)[0m   [0;1mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 51ms (View: 45, DB: 1) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:47:57) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"40"}
+  [4;36;1mWorkflow Load (0.2ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows"."id" = 40) [0m
+  [4;35;1mWorkflow Destroy (0.2ms)[0m   [0mDELETE FROM "workflows" WHERE "id" = 40[0m
+  [4;36;1mJob Load (0.1ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 70) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/workflows/40]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:47:57) [GET]
+  [4;35;1mWorkflow Load (1.1ms)[0m   [0mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 49ms (View: 43, DB: 1) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:47:58) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"41"}
+  [4;35;1mWorkflow Load (0.2ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows"."id" = 41) [0m
+  [4;36;1mWorkflow Destroy (0.2ms)[0m   [0;1mDELETE FROM "workflows" WHERE "id" = 41[0m
+  [4;35;1mJob Load (0.1ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 70) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/workflows/41]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:47:58) [GET]
+  [4;36;1mWorkflow Load (0.9ms)[0m   [0;1mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 45ms (View: 40, DB: 1) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:47:59) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"42"}
+  [4;36;1mWorkflow Load (0.2ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows"."id" = 42) [0m
+  [4;35;1mWorkflow Destroy (0.2ms)[0m   [0mDELETE FROM "workflows" WHERE "id" = 42[0m
+  [4;36;1mJob Load (0.1ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 70) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 14ms (DB: 1) | 302 Found [http://localhost/workflows/42]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:47:59) [GET]
+  [4;35;1mWorkflow Load (0.9ms)[0m   [0mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 43ms (View: 38, DB: 1) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:48:00) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"43"}
+  [4;35;1mWorkflow Load (0.2ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows"."id" = 43) [0m
+  [4;36;1mWorkflow Destroy (0.3ms)[0m   [0;1mDELETE FROM "workflows" WHERE "id" = 43[0m
+  [4;35;1mJob Load (0.1ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 70) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/workflows/43]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:48:00) [GET]
+  [4;36;1mWorkflow Load (0.8ms)[0m   [0;1mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 98ms (View: 93, DB: 1) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:48:02) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"44"}
+  [4;36;1mWorkflow Load (0.2ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows"."id" = 44) [0m
+  [4;35;1mWorkflow Destroy (0.2ms)[0m   [0mDELETE FROM "workflows" WHERE "id" = 44[0m
+  [4;36;1mJob Load (0.1ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 70) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/workflows/44]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:48:02) [GET]
+  [4;35;1mWorkflow Load (0.8ms)[0m   [0mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 35ms (View: 31, DB: 1) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:48:04) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"45"}
+  [4;35;1mWorkflow Load (0.2ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows"."id" = 45) [0m
+  [4;36;1mWorkflow Destroy (0.2ms)[0m   [0;1mDELETE FROM "workflows" WHERE "id" = 45[0m
+  [4;35;1mJob Load (0.1ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 71) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 73ms (DB: 1) | 302 Found [http://localhost/workflows/45]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:48:04) [GET]
+  [4;36;1mWorkflow Load (0.7ms)[0m   [0;1mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 33ms (View: 28, DB: 1) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:48:06) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"46"}
+  [4;36;1mWorkflow Load (0.2ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows"."id" = 46) [0m
+  [4;35;1mWorkflow Destroy (0.2ms)[0m   [0mDELETE FROM "workflows" WHERE "id" = 46[0m
+  [4;36;1mJob Load (0.1ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 71) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/workflows/46]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:48:06) [GET]
+  [4;35;1mWorkflow Load (0.6ms)[0m   [0mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 29ms (View: 24, DB: 1) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:48:07) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"47"}
+  [4;35;1mWorkflow Load (0.2ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows"."id" = 47) [0m
+  [4;36;1mWorkflow Destroy (0.2ms)[0m   [0;1mDELETE FROM "workflows" WHERE "id" = 47[0m
+  [4;35;1mJob Load (0.1ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 71) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/workflows/47]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:48:07) [GET]
+  [4;36;1mWorkflow Load (0.6ms)[0m   [0;1mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 27ms (View: 22, DB: 1) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:48:08) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"48"}
+  [4;36;1mWorkflow Load (0.2ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows"."id" = 48) [0m
+  [4;35;1mWorkflow Destroy (0.2ms)[0m   [0mDELETE FROM "workflows" WHERE "id" = 48[0m
+  [4;36;1mJob Load (0.1ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 71) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/workflows/48]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:48:08) [GET]
+  [4;35;1mWorkflow Load (0.5ms)[0m   [0mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 81ms (View: 77, DB: 1) | 200 OK [http://localhost/workflows]
+
+
+Processing WorkflowsController#destroy (for 127.0.0.1 at 2009-11-11 07:48:09) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"49"}
+  [4;35;1mWorkflow Load (0.2ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows"."id" = 49) [0m
+  [4;36;1mWorkflow Destroy (0.2ms)[0m   [0;1mDELETE FROM "workflows" WHERE "id" = 49[0m
+  [4;35;1mJob Load (0.1ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 71) [0m
+Redirected to http://localhost:3000/workflows
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/workflows/49]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 07:48:09) [GET]
+  [4;36;1mWorkflow Load (0.4ms)[0m   [0;1mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 18ms (View: 13, DB: 1) | 200 OK [http://localhost/workflows]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 07:48:12) [GET]
+  [4;36;1mJob Load (0.4ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 17ms (View: 13, DB: 1) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#new (for 127.0.0.1 at 2009-11-11 07:49:21) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (27.9ms)
+Completed in 109ms (View: 32, DB: 0) | 200 OK [http://localhost/jobs/new]
+
+
+Processing JobsController#create (for 127.0.0.1 at 2009-11-11 07:49:44) [POST]
+  Parameters: {"commit"=>"Create/Update Job", "authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "job"=>{"name"=>"Oligarch", "input_person"=>"tindrum", "received_date"=>"", "submit_date"=>"", "due_time(1i)"=>"2009", "workflows_attributes"=>{"0"=>{"name"=>"Design", "note"=>"fish"}, "1"=>{"name"=>"Copy", "note"=>"eggs"}, "2"=>{"name"=>"Press", "note"=>"radio"}, "3"=>{"name"=>"Bindry", "note"=>"jam"}, "4"=>{"name"=>"Ship", "note"=>"tripe"}}, "account_id"=>"", "due_time(2i)"=>"11", "due_time(3i)"=>"11", "due_time(4i)"=>"15", "due_time(5i)"=>"49", "due_date"=>"", "auth_sig"=>"0", "description"=>"", "ordered_by"=>"", "department_id"=>""}}
+  [4;35;1mJob Create (0.3ms)[0m   [0mINSERT INTO "jobs" ("name", "input_person", "created_at", "submit_date", "updated_at", "received_date", "account_id", "due_time", "due_date", "description", "auth_sig", "ordered_by", "department_id") VALUES('Oligarch', 'tindrum', '2009-11-11 15:49:44', NULL, '2009-11-11 15:49:44', NULL, NULL, '2009-11-11 15:49:00', NULL, '', 'f', '', NULL)[0m
+  [4;36;1mWorkflow Create (0.1ms)[0m   [0;1mINSERT INTO "workflows" ("name", "created_at", "completed", "completed_date", "updated_at", "note", "job_id") VALUES('Design', '2009-11-11 15:49:44', NULL, NULL, '2009-11-11 15:49:44', 'fish', 72)[0m
+  [4;35;1mWorkflow Create (0.1ms)[0m   [0mINSERT INTO "workflows" ("name", "created_at", "completed", "completed_date", "updated_at", "note", "job_id") VALUES('Copy', '2009-11-11 15:49:44', NULL, NULL, '2009-11-11 15:49:44', 'eggs', 72)[0m
+  [4;36;1mWorkflow Create (0.1ms)[0m   [0;1mINSERT INTO "workflows" ("name", "created_at", "completed", "completed_date", "updated_at", "note", "job_id") VALUES('Press', '2009-11-11 15:49:44', NULL, NULL, '2009-11-11 15:49:44', 'radio', 72)[0m
+  [4;35;1mWorkflow Create (0.1ms)[0m   [0mINSERT INTO "workflows" ("name", "created_at", "completed", "completed_date", "updated_at", "note", "job_id") VALUES('Bindry', '2009-11-11 15:49:44', NULL, NULL, '2009-11-11 15:49:44', 'jam', 72)[0m
+  [4;36;1mWorkflow Create (0.1ms)[0m   [0;1mINSERT INTO "workflows" ("name", "created_at", "completed", "completed_date", "updated_at", "note", "job_id") VALUES('Ship', '2009-11-11 15:49:44', NULL, NULL, '2009-11-11 15:49:44', 'tripe', 72)[0m
+Redirected to http://localhost:3000/jobs
+Completed in 26ms (DB: 1) | 302 Found [http://localhost/jobs]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 07:49:44) [GET]
+  [4;35;1mJob Load (0.6ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 24ms (View: 19, DB: 1) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#show (for 127.0.0.1 at 2009-11-11 07:49:46) [GET]
+  Parameters: {"id"=>"72"}
+  [4;35;1mJob Load (0.3ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 72) [0m
+  [4;36;1mWorkflow Load (0.5ms)[0m   [0;1mSELECT * FROM "workflows" WHERE (job_id = 72) [0m
+Rendering template within layouts/application
+Rendering jobs/show
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 29ms (View: 20, DB: 1) | 200 OK [http://localhost/jobs/72]
+
+
+Processing JobsController#edit (for 127.0.0.1 at 2009-11-11 07:49:48) [GET]
+  Parameters: {"id"=>"72"}
+  [4;36;1mJob Load (0.3ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 72) [0m
+Rendering template within layouts/application
+Rendering jobs/edit
+  [4;35;1mWorkflow Load (0.5ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows".job_id = 72) [0m
+Rendered jobs/_form (42.7ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 60ms (View: 54, DB: 1) | 200 OK [http://localhost/jobs/72/edit]
+
+
+Processing JobsController#update (for 127.0.0.1 at 2009-11-11 07:49:55) [PUT]
+  Parameters: {"commit"=>"Create/Update Job", "authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"72", "job"=>{"name"=>"Oligarch", "input_person"=>"tindrum", "received_date"=>"", "submit_date"=>"", "due_time(1i)"=>"2000", "workflows_attributes"=>{"0"=>{"name"=>"Design", "_delete"=>"0", "id"=>"51", "note"=>"fish"}, "1"=>{"name"=>"Copy", "_delete"=>"0", "id"=>"52", "note"=>"eggs"}, "2"=>{"name"=>"Press", "_delete"=>"0", "id"=>"53", "note"=>"radio"}, "3"=>{"name"=>"Bindry", "_delete"=>"0", "id"=>"54", "note"=>"jam"}, "4"=>{"name"=>"Ship", "_delete"=>"1", "id"=>"55", "note"=>"tripe"}}, "account_id"=>"", "due_time(2i)"=>"1", "due_time(3i)"=>"1", "due_time(4i)"=>"15", "due_time(5i)"=>"49", "due_date"=>"", "auth_sig"=>"0", "description"=>"", "ordered_by"=>"", "department_id"=>""}}
+  [4;35;1mJob Load (0.4ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 72) [0m
+  [4;36;1mWorkflow Load (0.5ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows".job_id = 72) [0m
+  [4;35;1mJob Update (0.3ms)[0m   [0mUPDATE "jobs" SET "updated_at" = '2009-11-11 15:49:55', "created_at" = '2009-11-11 15:49:44', "ordered_by" = '', "input_person" = 'tindrum', "name" = 'Oligarch', "received_date" = NULL, "department_id" = NULL, "submit_date" = NULL, "auth_sig" = 'f', "account_id" = NULL, "due_date" = NULL, "description" = '', "due_time" = '2000-01-01 15:49:00' WHERE "id" = 72[0m
+  [4;36;1mWorkflow Update (0.1ms)[0m   [0;1mUPDATE "workflows" SET "updated_at" = '2009-11-11 15:49:55', "created_at" = '2009-11-11 15:49:44', "name" = 'Design', "job_id" = 72, "note" = 'fish', "completed" = NULL, "completed_date" = NULL WHERE "id" = 51[0m
+  [4;35;1mWorkflow Update (0.1ms)[0m   [0mUPDATE "workflows" SET "updated_at" = '2009-11-11 15:49:55', "created_at" = '2009-11-11 15:49:44', "name" = 'Copy', "job_id" = 72, "note" = 'eggs', "completed" = NULL, "completed_date" = NULL WHERE "id" = 52[0m
+  [4;36;1mWorkflow Update (0.1ms)[0m   [0;1mUPDATE "workflows" SET "updated_at" = '2009-11-11 15:49:55', "created_at" = '2009-11-11 15:49:44', "name" = 'Press', "job_id" = 72, "note" = 'radio', "completed" = NULL, "completed_date" = NULL WHERE "id" = 53[0m
+  [4;35;1mWorkflow Update (0.1ms)[0m   [0mUPDATE "workflows" SET "updated_at" = '2009-11-11 15:49:55', "created_at" = '2009-11-11 15:49:44', "name" = 'Bindry', "job_id" = 72, "note" = 'jam', "completed" = NULL, "completed_date" = NULL WHERE "id" = 54[0m
+  [4;36;1mWorkflow Destroy (0.1ms)[0m   [0;1mDELETE FROM "workflows" WHERE "id" = 55[0m
+  [4;35;1mJob Load (0.2ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 72) [0m
+  [4;36;1mJob Destroy (0.1ms)[0m   [0;1mDELETE FROM "jobs" WHERE "id" = 72[0m
+Redirected to http://localhost:3000/jobs
+Completed in 90ms (DB: 2) | 302 Found [http://localhost/jobs/72]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 07:49:55) [GET]
+  [4;35;1mJob Load (0.4ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 18ms (View: 13, DB: 1) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#new (for 127.0.0.1 at 2009-11-11 07:51:02) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (27.3ms)
+Completed in 51ms (View: 31, DB: 0) | 200 OK [http://localhost/jobs/new]
+
+
+Processing JobsController#create (for 127.0.0.1 at 2009-11-11 07:51:28) [POST]
+  Parameters: {"commit"=>"Create/Update Job", "authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "job"=>{"name"=>"Pelotita", "input_person"=>"tindrum", "received_date"=>"", "submit_date"=>"", "due_time(1i)"=>"2009", "workflows_attributes"=>{"0"=>{"name"=>"Design", "note"=>"baby"}, "1"=>{"name"=>"Copy", "note"=>"osa"}, "2"=>{"name"=>"Press", "note"=>"de oro"}, "3"=>{"name"=>"Bindry", "note"=>"bella"}, "4"=>{"name"=>"Ship", "note"=>"mi gorda"}}, "account_id"=>"", "due_time(2i)"=>"11", "due_time(3i)"=>"11", "due_time(4i)"=>"15", "due_time(5i)"=>"51", "due_date"=>"", "auth_sig"=>"0", "description"=>"", "ordered_by"=>"", "department_id"=>""}}
+  [4;36;1mJob Create (0.3ms)[0m   [0;1mINSERT INTO "jobs" ("name", "input_person", "created_at", "submit_date", "updated_at", "received_date", "account_id", "due_time", "due_date", "description", "auth_sig", "ordered_by", "department_id") VALUES('Pelotita', 'tindrum', '2009-11-11 15:51:28', NULL, '2009-11-11 15:51:28', NULL, NULL, '2009-11-11 15:51:00', NULL, '', 'f', '', NULL)[0m
+  [4;35;1mWorkflow Create (0.1ms)[0m   [0mINSERT INTO "workflows" ("name", "created_at", "completed", "completed_date", "updated_at", "note", "job_id") VALUES('Design', '2009-11-11 15:51:28', NULL, NULL, '2009-11-11 15:51:28', 'baby', 73)[0m
+  [4;36;1mWorkflow Create (0.1ms)[0m   [0;1mINSERT INTO "workflows" ("name", "created_at", "completed", "completed_date", "updated_at", "note", "job_id") VALUES('Copy', '2009-11-11 15:51:28', NULL, NULL, '2009-11-11 15:51:28', 'osa', 73)[0m
+  [4;35;1mWorkflow Create (0.1ms)[0m   [0mINSERT INTO "workflows" ("name", "created_at", "completed", "completed_date", "updated_at", "note", "job_id") VALUES('Press', '2009-11-11 15:51:28', NULL, NULL, '2009-11-11 15:51:28', 'de oro', 73)[0m
+  [4;36;1mWorkflow Create (0.1ms)[0m   [0;1mINSERT INTO "workflows" ("name", "created_at", "completed", "completed_date", "updated_at", "note", "job_id") VALUES('Bindry', '2009-11-11 15:51:28', NULL, NULL, '2009-11-11 15:51:28', 'bella', 73)[0m
+  [4;35;1mWorkflow Create (0.1ms)[0m   [0mINSERT INTO "workflows" ("name", "created_at", "completed", "completed_date", "updated_at", "note", "job_id") VALUES('Ship', '2009-11-11 15:51:28', NULL, NULL, '2009-11-11 15:51:28', 'mi gorda', 73)[0m
+Redirected to http://localhost:3000/jobs
+Completed in 26ms (DB: 1) | 302 Found [http://localhost/jobs]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 07:51:28) [GET]
+  [4;36;1mJob Load (0.6ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 24ms (View: 20, DB: 1) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#show (for 127.0.0.1 at 2009-11-11 07:51:30) [GET]
+  Parameters: {"id"=>"73"}
+  [4;36;1mJob Load (0.3ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 73) [0m
+  [4;35;1mWorkflow Load (0.4ms)[0m   [0mSELECT * FROM "workflows" WHERE (job_id = 73) [0m
+Rendering template within layouts/application
+Rendering jobs/show
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 27ms (View: 19, DB: 1) | 200 OK [http://localhost/jobs/73]
+
+
+Processing JobsController#edit (for 127.0.0.1 at 2009-11-11 07:51:32) [GET]
+  Parameters: {"id"=>"73"}
+  [4;35;1mJob Load (0.3ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 73) [0m
+Rendering template within layouts/application
+Rendering jobs/edit
+  [4;36;1mWorkflow Load (0.6ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows".job_id = 73) [0m
+Rendered jobs/_form (43.4ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 62ms (View: 55, DB: 1) | 200 OK [http://localhost/jobs/73/edit]
+
+
+Processing JobsController#update (for 127.0.0.1 at 2009-11-11 07:51:38) [PUT]
+  Parameters: {"commit"=>"Create/Update Job", "authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"73", "job"=>{"name"=>"Pelotita", "input_person"=>"tindrum", "received_date"=>"", "submit_date"=>"", "due_time(1i)"=>"2000", "workflows_attributes"=>{"0"=>{"name"=>"Design", "_delete"=>"0", "id"=>"56", "note"=>"baby"}, "1"=>{"name"=>"Copy", "_delete"=>"0", "id"=>"57", "note"=>"osa"}, "2"=>{"name"=>"Press", "_delete"=>"1", "id"=>"58", "note"=>"de oro"}, "3"=>{"name"=>"Bindry", "_delete"=>"0", "id"=>"59", "note"=>"bella"}, "4"=>{"name"=>"Ship", "_delete"=>"0", "id"=>"60", "note"=>"mi gorda"}}, "account_id"=>"", "due_time(2i)"=>"1", "due_time(3i)"=>"1", "due_time(4i)"=>"15", "due_time(5i)"=>"51", "due_date"=>"", "auth_sig"=>"0", "description"=>"", "ordered_by"=>"", "department_id"=>""}}
+  [4;36;1mJob Load (0.3ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 73) [0m
+  [4;35;1mWorkflow Load (0.5ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows".job_id = 73) [0m
+  [4;36;1mJob Update (0.3ms)[0m   [0;1mUPDATE "jobs" SET "updated_at" = '2009-11-11 15:51:38', "created_at" = '2009-11-11 15:51:28', "ordered_by" = '', "input_person" = 'tindrum', "name" = 'Pelotita', "received_date" = NULL, "department_id" = NULL, "submit_date" = NULL, "auth_sig" = 'f', "account_id" = NULL, "due_date" = NULL, "description" = '', "due_time" = '2000-01-01 15:51:00' WHERE "id" = 73[0m
+  [4;35;1mWorkflow Update (0.1ms)[0m   [0mUPDATE "workflows" SET "updated_at" = '2009-11-11 15:51:38', "created_at" = '2009-11-11 15:51:28', "name" = 'Design', "job_id" = 73, "note" = 'baby', "completed" = NULL, "completed_date" = NULL WHERE "id" = 56[0m
+  [4;36;1mWorkflow Update (0.1ms)[0m   [0;1mUPDATE "workflows" SET "updated_at" = '2009-11-11 15:51:38', "created_at" = '2009-11-11 15:51:28', "name" = 'Copy', "job_id" = 73, "note" = 'osa', "completed" = NULL, "completed_date" = NULL WHERE "id" = 57[0m
+  [4;35;1mWorkflow Update (0.1ms)[0m   [0mUPDATE "workflows" SET "updated_at" = '2009-11-11 15:51:38', "created_at" = '2009-11-11 15:51:28', "name" = 'Press', "job_id" = 73, "note" = 'de oro', "completed" = NULL, "completed_date" = NULL WHERE "id" = 58[0m
+  [4;36;1mWorkflow Update (0.1ms)[0m   [0;1mUPDATE "workflows" SET "updated_at" = '2009-11-11 15:51:38', "created_at" = '2009-11-11 15:51:28', "name" = 'Bindry', "job_id" = 73, "note" = 'bella', "completed" = NULL, "completed_date" = NULL WHERE "id" = 59[0m
+  [4;35;1mWorkflow Update (0.1ms)[0m   [0mUPDATE "workflows" SET "updated_at" = '2009-11-11 15:51:38', "created_at" = '2009-11-11 15:51:28', "name" = 'Ship', "job_id" = 73, "note" = 'mi gorda', "completed" = NULL, "completed_date" = NULL WHERE "id" = 60[0m
+Redirected to http://localhost:3000/jobs
+Completed in 26ms (DB: 1) | 302 Found [http://localhost/jobs/73]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 07:51:38) [GET]
+  [4;36;1mJob Load (0.6ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 86ms (View: 82, DB: 1) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#show (for 127.0.0.1 at 2009-11-11 07:51:41) [GET]
+  Parameters: {"id"=>"73"}
+  [4;36;1mJob Load (0.3ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 73) [0m
+  [4;35;1mWorkflow Load (0.4ms)[0m   [0mSELECT * FROM "workflows" WHERE (job_id = 73) [0m
+Rendering template within layouts/application
+Rendering jobs/show
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 28ms (View: 19, DB: 1) | 200 OK [http://localhost/jobs/73]
+
+
+Processing JobsController#edit (for 127.0.0.1 at 2009-11-11 07:51:45) [GET]
+  Parameters: {"id"=>"73"}
+  [4;35;1mJob Load (0.3ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 73) [0m
+Rendering template within layouts/application
+Rendering jobs/edit
+  [4;36;1mWorkflow Load (0.5ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows".job_id = 73) [0m
+Rendered jobs/_form (42.6ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 121ms (View: 114, DB: 1) | 200 OK [http://localhost/jobs/73/edit]
+
+
+Processing JobsController#update (for 127.0.0.1 at 2009-11-11 07:51:59) [PUT]
+  Parameters: {"commit"=>"Create/Update Job", "authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"73", "job"=>{"name"=>"Pelotita", "input_person"=>"tindrum", "received_date"=>"", "submit_date"=>"", "due_time(1i)"=>"2000", "workflows_attributes"=>{"0"=>{"name"=>"Design", "_delete"=>"0", "id"=>"56", "note"=>"baby"}, "1"=>{"name"=>"Copy", "_delete"=>"1", "id"=>"57", "note"=>"osa"}, "2"=>{"name"=>"Press", "_delete"=>"0", "id"=>"58", "note"=>"de oro"}, "3"=>{"name"=>"Bindry", "_delete"=>"0", "id"=>"59", "note"=>"bella"}, "4"=>{"name"=>"Ship", "_delete"=>"0", "id"=>"60", "note"=>"mi gorda"}}, "account_id"=>"", "due_time(2i)"=>"1", "due_time(3i)"=>"1", "due_time(4i)"=>"15", "due_time(5i)"=>"51", "due_date"=>"", "auth_sig"=>"0", "description"=>"", "ordered_by"=>"", "department_id"=>""}}
+  [4;36;1mJob Load (0.3ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 73) [0m
+  [4;35;1mWorkflow Load (0.5ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows".job_id = 73) [0m
+  [4;36;1mJob Update (0.3ms)[0m   [0;1mUPDATE "jobs" SET "updated_at" = '2009-11-11 15:51:59', "created_at" = '2009-11-11 15:51:28', "ordered_by" = '', "input_person" = 'tindrum', "name" = 'Pelotita', "received_date" = NULL, "department_id" = NULL, "submit_date" = NULL, "auth_sig" = 'f', "account_id" = NULL, "due_date" = NULL, "description" = '', "due_time" = '2000-01-01 15:51:00' WHERE "id" = 73[0m
+  [4;35;1mWorkflow Update (0.1ms)[0m   [0mUPDATE "workflows" SET "updated_at" = '2009-11-11 15:51:59', "created_at" = '2009-11-11 15:51:28', "name" = 'Design', "job_id" = 73, "note" = 'baby', "completed" = NULL, "completed_date" = NULL WHERE "id" = 56[0m
+  [4;36;1mWorkflow Update (0.1ms)[0m   [0;1mUPDATE "workflows" SET "updated_at" = '2009-11-11 15:51:59', "created_at" = '2009-11-11 15:51:28', "name" = 'Copy', "job_id" = 73, "note" = 'osa', "completed" = NULL, "completed_date" = NULL WHERE "id" = 57[0m
+  [4;35;1mWorkflow Update (0.1ms)[0m   [0mUPDATE "workflows" SET "updated_at" = '2009-11-11 15:51:59', "created_at" = '2009-11-11 15:51:28', "name" = 'Press', "job_id" = 73, "note" = 'de oro', "completed" = NULL, "completed_date" = NULL WHERE "id" = 58[0m
+  [4;36;1mWorkflow Update (0.1ms)[0m   [0;1mUPDATE "workflows" SET "updated_at" = '2009-11-11 15:51:59', "created_at" = '2009-11-11 15:51:28', "name" = 'Bindry', "job_id" = 73, "note" = 'bella', "completed" = NULL, "completed_date" = NULL WHERE "id" = 59[0m
+  [4;35;1mWorkflow Update (0.1ms)[0m   [0mUPDATE "workflows" SET "updated_at" = '2009-11-11 15:51:59', "created_at" = '2009-11-11 15:51:28', "name" = 'Ship', "job_id" = 73, "note" = 'mi gorda', "completed" = NULL, "completed_date" = NULL WHERE "id" = 60[0m
+Redirected to http://localhost:3000/jobs
+Completed in 27ms (DB: 1) | 302 Found [http://localhost/jobs/73]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 07:51:59) [GET]
+  [4;36;1mJob Load (0.6ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 25ms (View: 20, DB: 1) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#show (for 127.0.0.1 at 2009-11-11 07:52:02) [GET]
+  Parameters: {"id"=>"73"}
+  [4;36;1mJob Load (0.3ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 73) [0m
+  [4;35;1mWorkflow Load (0.4ms)[0m   [0mSELECT * FROM "workflows" WHERE (job_id = 73) [0m
+Rendering template within layouts/application
+Rendering jobs/show
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 88ms (View: 79, DB: 1) | 200 OK [http://localhost/jobs/73]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 07:52:46) [GET]
+  [4;35;1mJob Load (0.6ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 24ms (View: 20, DB: 1) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#show (for 127.0.0.1 at 2009-11-11 07:52:48) [GET]
+  Parameters: {"id"=>"73"}
+  [4;35;1mJob Load (0.3ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 73) [0m
+  [4;36;1mWorkflow Load (0.4ms)[0m   [0;1mSELECT * FROM "workflows" WHERE (job_id = 73) [0m
+Rendering template within layouts/application
+Rendering jobs/show
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 28ms (View: 19, DB: 1) | 200 OK [http://localhost/jobs/73]
+
+
+Processing JobsController#edit (for 127.0.0.1 at 2009-11-11 07:52:51) [GET]
+  Parameters: {"id"=>"73"}
+  [4;36;1mJob Load (0.3ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 73) [0m
+Rendering template within layouts/application
+Rendering jobs/edit
+  [4;35;1mWorkflow Load (0.6ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows".job_id = 73) [0m
+Rendered jobs/_form (103.9ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 122ms (View: 116, DB: 1) | 200 OK [http://localhost/jobs/73/edit]
+
+
+Processing JobsController#update (for 127.0.0.1 at 2009-11-11 07:52:56) [PUT]
+  Parameters: {"commit"=>"Create/Update Job", "authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"73", "job"=>{"name"=>"Pelotita", "input_person"=>"tindrum", "received_date"=>"", "submit_date"=>"", "due_time(1i)"=>"2000", "workflows_attributes"=>{"0"=>{"name"=>"Design", "_delete"=>"0", "id"=>"56", "note"=>"baby"}, "1"=>{"name"=>"Copy", "_delete"=>"0", "id"=>"57", "note"=>"osa"}, "2"=>{"name"=>"Press", "_delete"=>"1", "id"=>"58", "note"=>"de oro"}, "3"=>{"name"=>"Bindry", "_delete"=>"0", "id"=>"59", "note"=>"bella"}, "4"=>{"name"=>"Ship", "_delete"=>"0", "id"=>"60", "note"=>"mi gorda"}}, "account_id"=>"", "due_time(2i)"=>"1", "due_time(3i)"=>"1", "due_time(4i)"=>"15", "due_time(5i)"=>"51", "due_date"=>"", "auth_sig"=>"0", "description"=>"", "ordered_by"=>"", "department_id"=>""}}
+  [4;35;1mJob Load (0.3ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 73) [0m
+  [4;36;1mWorkflow Load (0.5ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows".job_id = 73) [0m
+  [4;35;1mJob Update (0.3ms)[0m   [0mUPDATE "jobs" SET "updated_at" = '2009-11-11 15:52:56', "created_at" = '2009-11-11 15:51:28', "ordered_by" = '', "input_person" = 'tindrum', "name" = 'Pelotita', "received_date" = NULL, "department_id" = NULL, "submit_date" = NULL, "auth_sig" = 'f', "account_id" = NULL, "due_date" = NULL, "description" = '', "due_time" = '2000-01-01 15:51:00' WHERE "id" = 73[0m
+  [4;36;1mWorkflow Update (0.1ms)[0m   [0;1mUPDATE "workflows" SET "updated_at" = '2009-11-11 15:52:56', "created_at" = '2009-11-11 15:51:28', "name" = 'Design', "job_id" = 73, "note" = 'baby', "completed" = NULL, "completed_date" = NULL WHERE "id" = 56[0m
+  [4;35;1mWorkflow Update (0.1ms)[0m   [0mUPDATE "workflows" SET "updated_at" = '2009-11-11 15:52:56', "created_at" = '2009-11-11 15:51:28', "name" = 'Copy', "job_id" = 73, "note" = 'osa', "completed" = NULL, "completed_date" = NULL WHERE "id" = 57[0m
+  [4;36;1mWorkflow Destroy (0.1ms)[0m   [0;1mDELETE FROM "workflows" WHERE "id" = 58[0m
+  [4;35;1mWorkflow Update (0.1ms)[0m   [0mUPDATE "workflows" SET "updated_at" = '2009-11-11 15:52:56', "created_at" = '2009-11-11 15:51:28', "name" = 'Bindry', "job_id" = 73, "note" = 'bella', "completed" = NULL, "completed_date" = NULL WHERE "id" = 59[0m
+  [4;36;1mWorkflow Update (0.1ms)[0m   [0;1mUPDATE "workflows" SET "updated_at" = '2009-11-11 15:52:56', "created_at" = '2009-11-11 15:51:28', "name" = 'Ship', "job_id" = 73, "note" = 'mi gorda', "completed" = NULL, "completed_date" = NULL WHERE "id" = 60[0m
+Redirected to http://localhost:3000/jobs
+Completed in 26ms (DB: 1) | 302 Found [http://localhost/jobs/73]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 07:52:56) [GET]
+  [4;35;1mJob Load (0.6ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 24ms (View: 20, DB: 1) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#show (for 127.0.0.1 at 2009-11-11 07:52:59) [GET]
+  Parameters: {"id"=>"73"}
+  [4;35;1mJob Load (0.3ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 73) [0m
+  [4;36;1mWorkflow Load (0.4ms)[0m   [0;1mSELECT * FROM "workflows" WHERE (job_id = 73) [0m
+Rendering template within layouts/application
+Rendering jobs/show
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 29ms (View: 20, DB: 1) | 200 OK [http://localhost/jobs/73]
+
+
+Processing JobsController#edit (for 127.0.0.1 at 2009-11-11 07:53:11) [GET]
+  Parameters: {"id"=>"73"}
+  [4;36;1mJob Load (0.3ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 73) [0m
+Rendering template within layouts/application
+Rendering jobs/edit
+  [4;35;1mWorkflow Load (0.5ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows".job_id = 73) [0m
+Rendered jobs/_form (40.7ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 60ms (View: 53, DB: 1) | 200 OK [http://localhost/jobs/73/edit]
+
+
+Processing JobsController#show (for 127.0.0.1 at 2009-11-11 07:53:25) [GET]
+  Parameters: {"id"=>"73"}
+  [4;35;1mJob Load (0.3ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 73) [0m
+  [4;36;1mWorkflow Load (0.6ms)[0m   [0;1mSELECT * FROM "workflows" WHERE (job_id = 73) [0m
+Rendering template within layouts/application
+Rendering jobs/show
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 88ms (View: 20, DB: 1) | 200 OK [http://localhost/jobs/73]
