@@ -1,0 +1,59 @@
+  [4;36;1mJob Load (0.4ms)[0m   [0;1mSELECT * FROM "jobs" LIMIT 1[0m
+
+
+Processing JobsController#destroy (for 0.0.0.0 at 2009-11-06 19:26:01) [DELETE]
+  Parameters: {"id"=>#<Job id: 298486374, name: "MyString", description: "MyText", due_date: "2009-11-06", due_time: "2000-01-01 00:44:28", submit_date: "2009-11-06", ordered_by: "MyString", input_person: "MyString", auth_sig: false, department_id: 1, account_id: 1, created_at: "2009-11-07 03:26:00", updated_at: "2009-11-07 03:26:00">}
+  [4;35;1mJob Load (0.3ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 298486374) [0m
+  [4;36;1mJob Destroy (0.2ms)[0m   [0;1mDELETE FROM "jobs" WHERE "id" = 298486374[0m
+Redirected to http://test.host/jobs
+Completed in 5ms (DB: 2) | 302 Found [http://test.host/jobs/298486374]
+  [4;35;1mJob Load (0.2ms)[0m   [0mSELECT "jobs".id FROM "jobs" WHERE ("jobs"."id" = 298486374) LIMIT 1[0m
+  [4;36;1mJob Load (0.4ms)[0m   [0;1mSELECT * FROM "jobs" LIMIT 1[0m
+
+
+Processing JobsController#edit (for 0.0.0.0 at 2009-11-06 19:26:01) [GET]
+  Parameters: {"id"=>#<Job id: 298486374, name: "MyString", description: "MyText", due_date: "2009-11-06", due_time: "2000-01-01 00:44:28", submit_date: "2009-11-06", ordered_by: "MyString", input_person: "MyString", auth_sig: false, department_id: 1, account_id: 1, created_at: "2009-11-07 03:26:00", updated_at: "2009-11-07 03:26:00">}
+  [4;35;1mJob Load (0.3ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 298486374) [0m
+Rendering template within layouts/application
+Rendering jobs/edit
+Rendered jobs/_form (22.6ms)
+Completed in 51ms (View: 50, DB: 1) | 200 OK [http://test.host/jobs/298486374/edit]
+
+
+Processing JobsController#index (for 0.0.0.0 at 2009-11-06 19:26:01) [GET]
+  [4;36;1mJob Load (0.4ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+Completed in 7ms (View: 7, DB: 0) | 200 OK [http://test.host/jobs]
+
+
+Processing JobsController#new (for 0.0.0.0 at 2009-11-06 19:26:01) [GET]
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (25.6ms)
+Completed in 27ms (View: 27, DB: 0) | 200 OK [http://test.host/jobs/new]
+  [4;35;1mJob Load (0.3ms)[0m   [0mSELECT * FROM "jobs" LIMIT 1[0m
+
+
+Processing JobsController#show (for 0.0.0.0 at 2009-11-06 19:26:01) [GET]
+  Parameters: {"id"=>#<Job id: 298486374, name: "MyString", description: "MyText", due_date: "2009-11-06", due_time: "2000-01-01 00:44:28", submit_date: "2009-11-06", ordered_by: "MyString", input_person: "MyString", auth_sig: false, department_id: 1, account_id: 1, created_at: "2009-11-07 03:26:00", updated_at: "2009-11-07 03:26:00">}
+  [4;36;1mJob Load (0.2ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 298486374) [0m
+Rendering template within layouts/application
+Rendering jobs/show
+Completed in 5ms (View: 4, DB: 1) | 200 OK [http://test.host/jobs/298486374]
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m

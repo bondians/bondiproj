@@ -1,3 +1,5 @@
+<%= debug params %>
+
 <% form_for @job do |f| %>
   <%= f.error_messages %>
   <p>
@@ -5,40 +7,49 @@
     <%= f.text_field :name %>
   </p>
   <p>
-    <%= f.label :description %><br />
-    <%= f.text_area :description %>
-  </p>
-  <p>
-    <%= f.label :due_date %><br />
-    <%= f.date_select :due_date %>
-  </p>
-  <p>
-    <%= f.label :due_time %><br />
-    <%= f.datetime_select :due_time %>
-  </p>
-  <p>
-    <%= f.label :submit_date %><br />
-    <%= f.date_select :submit_date %>
-  </p>
-  <p>
-    <%= f.label :ordered_by %><br />
-    <%= f.text_field :ordered_by %>
-  </p>
-  <p>
-    <%= f.label :input_person %><br />
-    <%= f.text_field :input_person %>
-  </p>
-  <p>
-    <%= f.label :auth_sig %><br />
-    <%= f.check_box :auth_sig %>
-  </p>
-  <p>
-    <%= f.label :department_id %><br />
-    <%= f.text_field :department_id %>
-  </p>
-  <p>
-    <%= f.label :account_id %><br />
-    <%= f.text_field :account_id %>
-  </p>
+     <%= f.label :description %><br />
+     <%= f.text_area :description %>
+   </p>
+   <p>
+     <%= f.label :due_date %><br />
+     <%#= f.date_select :due_date %>
+     <%= calendar_box 'job', 'due_date'%>
+   </p>
+   <p>
+     <%= f.label :due_time %><br />
+     <%= f.datetime_select :due_time %>
+     <%#= calendar_select 'job', 'due_time',
+      {:class => 'datetime'}  %>
+   </p>
+   <p>
+     <%= f.label :submit_date %><br />
+     <%#= f.date_select :submit_date %>
+     <%= calendar_box 'job', 'submit_date' %>
+   </p>
+   <p>
+     <%= f.label :received_date %><br />
+     <%#= f.date_select :received_date %>
+     <%= calendar_box 'job', 'received_date' %>
+   </p>
+   <p>
+     <%= f.label :ordered_by %><br />
+     <%= f.text_field :ordered_by %>
+   </p>
+   <p>
+     <%= f.label :input_person %><br />
+     <%= f.text_field :input_person %>
+   </p>
+   <p>
+     <%= f.label :auth_sig %><br />
+     <%= f.check_box :auth_sig %>
+   </p>
+   <p>
+     <%= f.label :department_id %><br />
+     <%= f.text_field :department_id %>
+   </p>
+   <p>
+     <%= f.label :account_id %><br />
+     <%= f.text_field :account_id %>
+   </p>
   <p><%= f.submit "Submit" %></p>
 <% end %>

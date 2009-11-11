@@ -4,10 +4,15 @@
   <head>
     <title><%= h(yield(:title) || "Untitled") %></title>
     <%= stylesheet_link_tag 'application' %>
+    <%= dhtml_calendar_includes %>
     <%= yield(:head) %>
   </head>
   <body>
     <div id="container">
+      <div id="user_nav">
+        <%= link_to "Register",  new_user_path %>
+      </div>
+      
       <%- flash.each do |name, msg| -%>
         <%= content_tag :div, msg, :id => "flash_#{name}" %>
       <%- end -%>

@@ -8,11 +8,15 @@ class JobsController < ApplicationController
   end
   
   def new
+#    @tasklist = Hash.new
     @job = Job.new
+    @newjob = Hash.new{| hash, key | hash["job"] = @job }#, :tasks => @tasklist ]
   end
   
   def create
+    #raise params.to_yaml
     @job = Job.new(params[:job])
+   # @job = current_user.jobs.build(params[:job])
     if @job.save
       flash[:notice] = "Successfully created job."
       redirect_to @job
