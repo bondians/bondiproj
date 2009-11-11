@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  note: MyString
+  completed: false
+  completed_date: 2009-11-11
+  job_id: 1
+
+two:
+  name: MyString
+  note: MyString
+  completed: false
+  completed_date: 2009-11-11
+  job_id: 1

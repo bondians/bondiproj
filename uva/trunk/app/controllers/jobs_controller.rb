@@ -5,21 +5,25 @@ class JobsController < ApplicationController
   
   def show
     @job = Job.find(params[:id])
+    @workflows = Workflow.find(:all, :conditions => ['job_id = ?', @job.id])
+   # @tasks = Task.find(:all)
   end
   
   def new
-#    @tasklist = Hash.new
     @job = Job.new
-    @newjob = Hash.new{| hash, key | hash["job"] = @job }#, :tasks => @tasklist ]
+    @job[:input_person] = current_user.username
+    @job.workflows.build :name => "Design"
+    @job.workflows.build :name => "Copy"
+    @job.workflows.build :name => "Press"
+    @job.workflows.build :name => "Bindry"
+    @job.workflows.build :name => "Ship"
   end
   
   def create
-    #raise params.to_yaml
-    @job = Job.new(params[:job])
-   # @job = current_user.jobs.build(params[:job])
+   @job = Job.new(params[:job])
     if @job.save
       flash[:notice] = "Successfully created job."
-      redirect_to @job
+      redirect_to jobs_path
     else
       render :action => 'new'
     end
@@ -27,10 +31,13 @@ class JobsController < ApplicationController
   
   def edit
     @job = Job.find(params[:id])
+   # @workflows = Workflow.find(:all, :conditions => ['job_id = ?', @job.id])
+    
   end
   
   def update
     @job = Job.find(params[:id])
+   # raise params.to_yaml
     if @job.update_attributes(params[:job])
       flash[:notice] = "Successfully updated job."
       redirect_to @job

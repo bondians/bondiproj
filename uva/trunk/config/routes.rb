@@ -1,4 +1,11 @@
 ActionController::Routing::Routes.draw do |map|
+  
+  # routes added for authlogic user sessions (RB podcast #160)
+  map.login "login", :controller => "user_sessions", :action => "new"
+  map.logout "logout", :controller => "user_sessions", :action => "destroy"
+  
+  map.resources :user_sessions
+
   map.resources :users
 
   map.resources :jobs
