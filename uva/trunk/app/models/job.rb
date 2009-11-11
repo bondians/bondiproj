@@ -4,7 +4,7 @@ class Job < ActiveRecord::Base
   
   validates_presence_of :name #, :ordered_by, :due_date, :submit_date, :received_date, :description, :department_id
 
-  has_many :workflows
+  has_many :workflows, :dependent => :destroy
   
   accepts_nested_attributes_for :workflows, :allow_destroy => true 
   
