@@ -3,7 +3,8 @@
 <html>
   <head>
     <title><%= h(yield(:title) || "Untitled") %></title>
-    <%= stylesheet_link_tag 'application' %>
+    <%= stylesheet_link_tag 'application', 'SpryAccordion' %>
+    <%= javascript_include_tag :all %>
     <%= dhtml_calendar_includes %>
     <%= yield(:head) %>
   </head>

@@ -16519,3 +16519,318 @@ Rendering template within layouts/application
 Rendering workflows/index
   [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
 Completed in 93ms (View: 88, DB: 1) | 200 OK [http://localhost/workflows]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 14:22:35) [GET]
+  [4;36;1mJob Load (0.7ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 66ms (View: 55, DB: 1) | 200 OK [http://localhost/jobs]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 14:22:40) [GET]
+  [4;36;1mWorkflow Load (0.7ms)[0m   [0;1mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 39ms (View: 33, DB: 1) | 200 OK [http://localhost/workflows]
+
+
+Processing JobsController#destroy (for 127.0.0.1 at 2009-11-11 14:22:46) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"86"}
+  [4;36;1mJob Load (0.3ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 86) [0m
+  [4;35;1mWorkflow Load (0.4ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows".job_id = 86) [0m
+  [4;36;1mWorkflow Destroy (0.3ms)[0m   [0;1mDELETE FROM "workflows" WHERE "id" = 111[0m
+  [4;35;1mWorkflow Destroy (0.1ms)[0m   [0mDELETE FROM "workflows" WHERE "id" = 112[0m
+  [4;36;1mWorkflow Destroy (0.1ms)[0m   [0;1mDELETE FROM "workflows" WHERE "id" = 113[0m
+  [4;35;1mJob Destroy (0.1ms)[0m   [0mDELETE FROM "jobs" WHERE "id" = 86[0m
+Redirected to http://localhost:3000/jobs
+Completed in 17ms (DB: 1) | 302 Found [http://localhost/jobs/86]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 14:22:46) [GET]
+  [4;36;1mJob Load (0.4ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 21ms (View: 16, DB: 1) | 200 OK [http://localhost/jobs]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 14:22:48) [GET]
+  [4;36;1mWorkflow Load (0.4ms)[0m   [0;1mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 20ms (View: 15, DB: 1) | 200 OK [http://localhost/workflows]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 14:36:24) [GET]
+  [4;36;1mJob Load (0.5ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 87ms (View: 58, DB: 1) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#new (for 127.0.0.1 at 2009-11-11 14:36:27) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (126.1ms)
+Completed in 216ms (View: 138, DB: 0) | 200 OK [http://localhost/jobs/new]
+
+
+Processing JobsController#create (for 127.0.0.1 at 2009-11-11 14:36:51) [POST]
+  Parameters: {"commit"=>"Create/Update Job", "authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "job"=>{"name"=>"Bob Wills", "input_person"=>"tindrum", "received_date"=>"", "submit_date"=>"", "due_time(1i)"=>"2009", "workflows_attributes"=>{"0"=>{"name"=>"Design", "note"=>"Texas", "step_needed"=>"1"}, "1"=>{"name"=>"Copy", "note"=>"Swing", "step_needed"=>"1"}, "2"=>{"name"=>"Press", "note"=>"", "step_needed"=>"0"}, "3"=>{"name"=>"Bindry", "note"=>"", "step_needed"=>"0"}, "4"=>{"name"=>"Ship", "note"=>"Warehouse", "step_needed"=>"1"}}, "account_id"=>"", "due_time(2i)"=>"11", "due_time(3i)"=>"11", "due_time(4i)"=>"22", "due_time(5i)"=>"36", "due_date"=>"", "auth_sig"=>"0", "description"=>"", "ordered_by"=>"", "department_id"=>""}}
+WARNING: Can't mass-assign these protected attributes: step_needed
+WARNING: Can't mass-assign these protected attributes: step_needed
+WARNING: Can't mass-assign these protected attributes: step_needed
+  [4;35;1mJob Create (0.4ms)[0m   [0mINSERT INTO "jobs" ("name", "input_person", "created_at", "submit_date", "updated_at", "received_date", "account_id", "due_time", "due_date", "description", "auth_sig", "ordered_by", "department_id") VALUES('Bob Wills', 'tindrum', '2009-11-11 22:36:51', NULL, '2009-11-11 22:36:51', NULL, NULL, '2009-11-11 22:36:00', NULL, '', 'f', '', NULL)[0m
+  [4;36;1mWorkflow Create (0.1ms)[0m   [0;1mINSERT INTO "workflows" ("name", "created_at", "completed", "completed_date", "updated_at", "note", "job_id", "step_needed") VALUES('Design', '2009-11-11 22:36:51', NULL, NULL, '2009-11-11 22:36:51', 'Texas', 87, NULL)[0m
+  [4;35;1mWorkflow Create (0.1ms)[0m   [0mINSERT INTO "workflows" ("name", "created_at", "completed", "completed_date", "updated_at", "note", "job_id", "step_needed") VALUES('Copy', '2009-11-11 22:36:51', NULL, NULL, '2009-11-11 22:36:51', 'Swing', 87, NULL)[0m
+  [4;36;1mWorkflow Create (0.1ms)[0m   [0;1mINSERT INTO "workflows" ("name", "created_at", "completed", "completed_date", "updated_at", "note", "job_id", "step_needed") VALUES('Ship', '2009-11-11 22:36:51', NULL, NULL, '2009-11-11 22:36:51', 'Warehouse', 87, NULL)[0m
+Redirected to http://localhost:3000/jobs
+Completed in 89ms (DB: 1) | 302 Found [http://localhost/jobs]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 14:36:51) [GET]
+  [4;35;1mJob Load (0.7ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.strftime) on line #6 of app/views/jobs/index.html.erb:
+3: <div id="Accordion1" class="Accordion" tabindex="0">
+4:   <% for job in @jobs %>
+5:   <div class="AccordionPanel">
+6:     <div class="AccordionPanelTab"><b><%=h job.name %></b> - <%=h job.due_date.strftime("Due: %a, %b %d") %></div>
+7:       <div class="AccordionPanelContent">
+8:         <p>Job Name: <%=h job.name %></p>
+9:         <p>Long Description: <%=h job.description %></p>
+
+    app/views/jobs/index.html.erb:6
+    app/views/jobs/index.html.erb:4:in `each'
+    app/views/jobs/index.html.erb:4
+
+Rendered rescues/_trace (37.4ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 14:37:49) [GET]
+  [4;36;1mJob Load (0.6ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.strftime) on line #6 of app/views/jobs/index.html.erb:
+3: <div id="Accordion1" class="Accordion" tabindex="0">
+4:   <% for job in @jobs %>
+5:   <div class="AccordionPanel">
+6:     <div class="AccordionPanelTab"><b><%=h job.name %></b> - <%=h job.due_date.strftime("Due: %a, %b %d") %></div>
+7:       <div class="AccordionPanelContent">
+8:         <p>Job Name: <%=h job.name %></p>
+9:         <p>Long Description: <%=h job.description %></p>
+
+    app/views/jobs/index.html.erb:6
+    app/views/jobs/index.html.erb:4:in `each'
+    app/views/jobs/index.html.erb:4
+
+Rendered rescues/_trace (104.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 14:38:06) [GET]
+  [4;36;1mJob Load (0.6ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.strftime) on line #6 of app/views/jobs/index.html.erb:
+3: <div id="Accordion1" class="Accordion" tabindex="0">
+4:   <% for job in @jobs %>
+5:   <div class="AccordionPanel">
+6:     <div class="AccordionPanelTab"><b><%=h job.name %></b> - <%=h job.due_date.strftime("Due: %a, %b %d") %></div>
+7:       <div class="AccordionPanelContent">
+8:         <p>Job Name: <%=h job.name %></p>
+9:         <p>Long Description: <%=h job.description %></p>
+
+    app/views/jobs/index.html.erb:6
+    app/views/jobs/index.html.erb:4:in `each'
+    app/views/jobs/index.html.erb:4
+
+Rendered rescues/_trace (98.6ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 14:38:25) [GET]
+  [4;35;1mJob Load (0.7ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 44ms (View: 39, DB: 1) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#destroy (for 127.0.0.1 at 2009-11-11 14:38:33) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"87"}
+  [4;35;1mJob Load (0.3ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 87) [0m
+  [4;36;1mWorkflow Load (0.4ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows".job_id = 87) [0m
+  [4;35;1mWorkflow Destroy (0.4ms)[0m   [0mDELETE FROM "workflows" WHERE "id" = 114[0m
+  [4;36;1mWorkflow Destroy (0.1ms)[0m   [0;1mDELETE FROM "workflows" WHERE "id" = 115[0m
+  [4;35;1mWorkflow Destroy (0.1ms)[0m   [0mDELETE FROM "workflows" WHERE "id" = 116[0m
+  [4;36;1mJob Destroy (0.1ms)[0m   [0;1mDELETE FROM "jobs" WHERE "id" = 87[0m
+Redirected to http://localhost:3000/jobs
+Completed in 28ms (DB: 1) | 302 Found [http://localhost/jobs/87]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 14:38:33) [GET]
+  [4;35;1mJob Load (0.5ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 90ms (View: 17, DB: 1) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#new (for 127.0.0.1 at 2009-11-11 14:38:39) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (172.4ms)
+Completed in 206ms (View: 184, DB: 0) | 200 OK [http://localhost/jobs/new]
+
+
+Processing JobsController#create (for 127.0.0.1 at 2009-11-11 14:39:05) [POST]
+  Parameters: {"commit"=>"Create/Update Job", "authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "job"=>{"name"=>"Bob Wills", "input_person"=>"tindrum", "received_date"=>"", "submit_date"=>"", "due_time(1i)"=>"2009", "workflows_attributes"=>{"0"=>{"name"=>"Design", "note"=>"Texas", "step_needed"=>"1"}, "1"=>{"name"=>"Copy", "note"=>"", "step_needed"=>"0"}, "2"=>{"name"=>"Press", "note"=>"", "step_needed"=>"0"}, "3"=>{"name"=>"Bindry", "note"=>"", "step_needed"=>"0"}, "4"=>{"name"=>"Ship", "note"=>"Warehouse", "step_needed"=>"1"}}, "account_id"=>"", "due_time(2i)"=>"11", "due_time(3i)"=>"11", "due_time(4i)"=>"22", "due_time(5i)"=>"38", "due_date"=>"", "auth_sig"=>"0", "description"=>"", "ordered_by"=>"", "department_id"=>""}}
+WARNING: Can't mass-assign these protected attributes: step_needed
+WARNING: Can't mass-assign these protected attributes: step_needed
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (34.6ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 67ms (View: 49, DB: 0) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#create (for 127.0.0.1 at 2009-11-11 14:39:19) [POST]
+  Parameters: {"commit"=>"Create/Update Job", "authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "job"=>{"name"=>"Bob Wills", "input_person"=>"tindrum", "received_date"=>"0000-01-01", "submit_date"=>"0000-01-01", "due_time(1i)"=>"2009", "workflows_attributes"=>{"0"=>{"name"=>"Design", "note"=>"Texas", "step_needed"=>"0"}, "1"=>{"name"=>"Ship", "note"=>"Warehouse", "step_needed"=>"0"}}, "account_id"=>"", "due_time(2i)"=>"11", "due_time(3i)"=>"11", "due_time(4i)"=>"22", "due_time(5i)"=>"38", "due_date"=>"2009-11-11", "auth_sig"=>"0", "description"=>"", "ordered_by"=>"", "department_id"=>""}}
+  [4;35;1mJob Create (0.4ms)[0m   [0mINSERT INTO "jobs" ("name", "input_person", "created_at", "submit_date", "updated_at", "received_date", "account_id", "due_time", "due_date", "description", "auth_sig", "ordered_by", "department_id") VALUES('Bob Wills', 'tindrum', '2009-11-11 22:39:19', NULL, '2009-11-11 22:39:19', NULL, NULL, '2009-11-11 22:38:00', '2009-11-11 00:00:00', '', 'f', '', NULL)[0m
+Redirected to http://localhost:3000/jobs
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/jobs]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 14:39:19) [GET]
+  [4;36;1mJob Load (0.6ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 33ms (View: 28, DB: 1) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#new (for 127.0.0.1 at 2009-11-11 14:39:29) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (33.8ms)
+Completed in 121ms (View: 100, DB: 0) | 200 OK [http://localhost/jobs/new]
+
+
+Processing JobsController#create (for 127.0.0.1 at 2009-11-11 14:39:54) [POST]
+  Parameters: {"commit"=>"Create/Update Job", "authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "job"=>{"name"=>"Patsy Cline", "input_person"=>"tindrum", "received_date"=>"", "submit_date"=>"", "due_time(1i)"=>"2009", "workflows_attributes"=>{"0"=>{"name"=>"Design", "note"=>"", "step_needed"=>"0"}, "1"=>{"name"=>"Copy", "note"=>"Oklahoma", "step_needed"=>"1"}, "2"=>{"name"=>"Press", "note"=>"", "step_needed"=>"0"}, "3"=>{"name"=>"Bindry", "note"=>"", "step_needed"=>"0"}, "4"=>{"name"=>"Ship", "note"=>"District Mail", "step_needed"=>"1"}}, "account_id"=>"", "due_time(2i)"=>"11", "due_time(3i)"=>"11", "due_time(4i)"=>"22", "due_time(5i)"=>"39", "due_date"=>"", "auth_sig"=>"0", "description"=>"", "ordered_by"=>"", "department_id"=>""}}
+WARNING: Can't mass-assign these protected attributes: step_needed
+WARNING: Can't mass-assign these protected attributes: step_needed
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (36.8ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 71ms (View: 51, DB: 0) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#create (for 127.0.0.1 at 2009-11-11 14:40:05) [POST]
+  Parameters: {"commit"=>"Create/Update Job", "authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "job"=>{"name"=>"Patsy Cline", "input_person"=>"tindrum", "received_date"=>"0000-01-01", "submit_date"=>"0000-01-01", "due_time(1i)"=>"2009", "workflows_attributes"=>{"0"=>{"name"=>"Copy", "note"=>"Oklahoma", "step_needed"=>"0"}, "1"=>{"name"=>"Ship", "note"=>"District Mail", "step_needed"=>"0"}}, "account_id"=>"", "due_time(2i)"=>"11", "due_time(3i)"=>"11", "due_time(4i)"=>"22", "due_time(5i)"=>"39", "due_date"=>"2009-11-12", "auth_sig"=>"0", "description"=>"", "ordered_by"=>"", "department_id"=>""}}
+  [4;36;1mJob Create (32.7ms)[0m   [0;1mINSERT INTO "jobs" ("name", "input_person", "created_at", "submit_date", "updated_at", "received_date", "account_id", "due_time", "due_date", "description", "auth_sig", "ordered_by", "department_id") VALUES('Patsy Cline', 'tindrum', '2009-11-11 22:40:05', NULL, '2009-11-11 22:40:05', NULL, NULL, '2009-11-11 22:39:00', '2009-11-12 00:00:00', '', 'f', '', NULL)[0m
+Redirected to http://localhost:3000/jobs
+Completed in 48ms (DB: 33) | 302 Found [http://localhost/jobs]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 14:40:05) [GET]
+  [4;35;1mJob Load (0.7ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 33ms (View: 28, DB: 1) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#edit (for 127.0.0.1 at 2009-11-11 14:40:30) [GET]
+  Parameters: {"id"=>"88"}
+  [4;35;1mJob Load (0.3ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 88) [0m
+Rendering template within layouts/application
+Rendering jobs/edit
+  [4;36;1mWorkflow Load (0.2ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows".job_id = 88) [0m
+Rendered jobs/_form (31.3ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 120ms (View: 113, DB: 1) | 200 OK [http://localhost/jobs/88/edit]
+
+
+Processing JobsController#update (for 127.0.0.1 at 2009-11-11 14:40:49) [PUT]
+  Parameters: {"commit"=>"Create/Update Job", "authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"88", "job"=>{"name"=>"Bob Wills", "input_person"=>"tindrum", "received_date"=>"2009-11-10", "submit_date"=>"2009-11-10", "due_time(1i)"=>"2000", "account_id"=>"", "due_time(2i)"=>"1", "due_time(3i)"=>"1", "due_time(4i)"=>"22", "due_time(5i)"=>"38", "due_date"=>"2009-11-11 00:00:00", "auth_sig"=>"0", "description"=>"", "ordered_by"=>"Don Cheadle", "department_id"=>"Foods"}}
+  [4;36;1mJob Load (0.3ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 88) [0m
+  [4;35;1mJob Update (22.3ms)[0m   [0mUPDATE "jobs" SET "updated_at" = '2009-11-11 22:40:49', "created_at" = '2009-11-11 22:39:19', "ordered_by" = 'Don Cheadle', "input_person" = 'tindrum', "name" = 'Bob Wills', "received_date" = '2009-11-10 00:00:00', "department_id" = 0, "submit_date" = '2009-11-10 00:00:00', "auth_sig" = 'f', "account_id" = NULL, "due_date" = '2009-11-11 00:00:00', "description" = '', "due_time" = '2000-01-01 22:38:00' WHERE "id" = 88[0m
+Redirected to http://localhost:3000/jobs
+Completed in 50ms (DB: 23) | 302 Found [http://localhost/jobs/88]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 14:40:49) [GET]
+  [4;36;1mJob Load (0.7ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 33ms (View: 28, DB: 1) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 14:41:50) [GET]
+  [4;36;1mJob Load (0.7ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+
+ActionView::TemplateError (undefined local variable or method `null' for #<ActionView::Base:0x10315db10>) on line #10 of app/views/jobs/index.html.erb:
+7:       <div class="AccordionPanelContent">
+8:         <p>Job Name: <%=h job.name %></p>
+9:         <p>Long Description: <%=h job.description %></p>
+10:         <p>Submit Date (on work order): <%=h job.submit_date unless null %></p>
+11:         <p>Received Date (date we received/input it): <%=h job.received_date %></p>
+12:         <p>Due Date: <%=h job.due_date %></p>
+13:         <p>Due Time: <%=h job.due_time %></p>
+
+    app/views/jobs/index.html.erb:10
+    app/views/jobs/index.html.erb:4:in `each'
+    app/views/jobs/index.html.erb:4
+
+Rendered rescues/_trace (35.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 14:41:57) [GET]
+  [4;35;1mJob Load (0.7ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 82ms (View: 77, DB: 1) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 14:43:15) [GET]
+  [4;35;1mJob Load (0.7ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 38ms (View: 33, DB: 1) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 14:47:34) [GET]
+  [4;35;1mJob Load (0.7ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 390ms (View: 325, DB: 1) | 200 OK [http://localhost/jobs]

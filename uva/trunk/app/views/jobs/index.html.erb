@@ -1,35 +1,33 @@
 <% title "Jobs" %>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Description</th>
-    <th>Due Date</th>
-    <th>Due Time</th>
-    <th>Submit Date</th>
-    <th>Ordered By</th>
-    <th>Input Person</th>
-    <th>Auth Sig</th>
-    <th>Department</th>
-    <th>Account</th>
-  </tr>
+<div id="Accordion1" class="Accordion" tabindex="0">
   <% for job in @jobs %>
-    <tr>
-      <td><%=h job.name %></td>
-      <td><%=h job.description %></td>
-      <td><%=h job.due_date %></td>
-      <td><%=h job.due_time %></td>
-      <td><%=h job.submit_date %></td>
-      <td><%=h job.ordered_by %></td>
-      <td><%=h job.input_person %></td>
-      <td><%=h job.auth_sig %></td>
-      <td><%=h job.department_id %></td>
-      <td><%=h job.account_id %></td>
-      <td><%= link_to "Show", job %></td>
-      <td><%= link_to "Edit", edit_job_path(job) %></td>
-      <td><%= link_to "Destroy", job, :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
-  <% end %>
-</table>
+  <div class="AccordionPanel">
+    <div class="AccordionPanelTab"><b><%=h job.name %></b> - <%=h job.due_date.strftime("Due: %a, %b %d") %></div>
+      <div class="AccordionPanelContent">
+        <p>Job Name: <%=h job.name %></p>
+        <p>Long Description: <%=h job.description %></p>
+        <p>Submit Date (on work order): <%=h job.submit_date unless nil %></p>
+        <p>Received Date (date we received/input it): <%=h job.received_date unless nil %></p>
+        <p>Due Date: <%=h job.due_date %></p>
+        <p>Due Time: <%=h job.due_time unless nil %></p>
+        <p>Department (select one, or use 'other'): <%=h job.department_id unless nil %></p>
+        <p>Account Number (select one, or use 'other'): <%=h job.account_id unless nil %></p>
+        <p>Ordered By Name: <%=h job.ordered_by %></p>
+        <p>Check if has Authorized signature (needed for shipping): <%=h job.auth_sig %></p>
+        <p><%=h job.input_person %></p>
+        <%= link_to "Show", job %>
+        <%= link_to "Edit", edit_job_path(job) %>
+        <%= link_to "Destroy", job, :confirm => 'Are you sure?', :method => :delete %>
+      </div>
+    </div>
+   <% end %>
+ </div>
+
+ <script type="text/javascript">
+ <!--
+ var Accordion1 = new Spry.Widget.Accordion("Accordion1", { useFixedPanelHeights: false, defaultPanel: -1 });
+ //-->
+ </script>
 
 <p><%= link_to "New Job", new_job_path %></p>

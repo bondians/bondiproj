@@ -2,7 +2,7 @@ class Job < ActiveRecord::Base
   attr_accessible :name, :description, :due_date, :due_time, :submit_date, :ordered_by, :auth_sig, :department_id, :account_id, :input_person, :received_date,  :workflows_attributes
   # :name_attributes, :note_attributes, :completed_attributes, :completed_date_attributes, :job_id_attributes, :workflow, :workflows,
   
-  validates_presence_of :name #, :ordered_by, :due_date, :submit_date, :received_date, :description, :department_id
+  validates_presence_of :name, :due_date #, :ordered_by, :submit_date, :received_date, :description, :department_id
 
   has_many :workflows, :dependent => :destroy
   
