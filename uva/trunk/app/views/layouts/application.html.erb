@@ -3,7 +3,7 @@
 <html>
   <head>
     <title><%= h(yield(:title) || "Untitled") %></title>
-    <%= stylesheet_link_tag 'application', 'SpryAccordion' %>
+    <%= stylesheet_link_tag 'application', 'SpryAccordion', 'autocomplete' %>
     <%= javascript_include_tag :all %>
     <%= dhtml_calendar_includes %>
     <%= yield(:head) %>

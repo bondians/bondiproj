@@ -46,7 +46,9 @@
    </p>
    <p>
      <%= f.label :department_id %><br />
-     <%= f.text_field :department_id %>
+     
+     <%= f.text_field :department_id, :id => "depts", :name => 'depts' %>
+     <div id="departmentChoices" class="autocomplete"></div>
    </p>
    <p>
      <%= f.label :account_id %><br />
@@ -75,3 +77,4 @@
    
   <p><%= f.submit "Create/Update Job" %></p>
 <% end %>
+
