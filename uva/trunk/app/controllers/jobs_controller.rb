@@ -1,7 +1,9 @@
 class JobsController < ApplicationController
   def index
-    @jobs = Job.all
-    # find_
+    @jobs = Workflow.unshipped.collect { |flow| Job.find(flow.job_id) }
+    #puts "these: " + theses.to_yaml
+    #@jobs = Job.all
+    puts @jobs.to_yaml
   end
   
   def show

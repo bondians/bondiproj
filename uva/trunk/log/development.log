@@ -16960,3 +16960,3289 @@ Rendering jobs/index
   [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "departments" WHERE ("departments"."id" = 4) [0m
   [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
 Completed in 140ms (View: 113, DB: 22) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 18:03:40) [GET]
+
+SyntaxError (/usr/local/Rails/uva/trunk/app/models/job.rb:13: odd number list for Hash
+...ip', :completed => false } ) } } 
+                              ^):
+  app/controllers/jobs_controller.rb:3:in `index'
+
+Rendered rescues/_trace (33.5ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 18:04:41) [GET]
+
+SyntaxError (/usr/local/Rails/uva/trunk/app/models/job.rb:13: odd number list for Hash
+...ip', :completed => false ] ) } } 
+                              ^):
+  app/controllers/jobs_controller.rb:3:in `index'
+
+Rendered rescues/_trace (34.8ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 18:06:01) [GET]
+
+SyntaxError (/usr/local/Rails/uva/trunk/app/models/job.rb:13: odd number list for Hash
+... "completed = " => false ] ) } } 
+                              ^):
+  app/controllers/jobs_controller.rb:3:in `index'
+
+Rendered rescues/_trace (100.6ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 18:06:11) [GET]
+
+SyntaxError (/usr/local/Rails/uva/trunk/app/models/job.rb:13: odd number list for Hash
+..."completed = ?" => false ] ) } } 
+                              ^):
+  app/controllers/jobs_controller.rb:3:in `index'
+
+Rendered rescues/_trace (31.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 18:07:31) [GET]
+
+SyntaxError (/usr/local/Rails/uva/trunk/app/models/job.rb:13: odd number list for Hash
+...lf, "name = ?" => 'Ship' ] ) } }
+                              ^):
+  app/controllers/jobs_controller.rb:3:in `index'
+
+Rendered rescues/_trace (106.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 18:12:53) [GET]
+
+SyntaxError (/usr/local/Rails/uva/trunk/app/models/job.rb:13: odd number list for Hash
+  named_scope :not_shipped, lambda {{ self.not_shipped }}
+                                                        ^):
+  app/controllers/jobs_controller.rb:3:in `index'
+
+Rendered rescues/_trace (31.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 18:13:04) [GET]
+  [4;36;1mJob Load (1.3ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;35;1mDepartment Load (0.2ms)[0m   [0mSELECT * FROM "departments" WHERE ("departments"."id" = 0) [0m
+  [4;36;1mDepartment Load (0.3ms)[0m   [0;1mSELECT * FROM "departments" WHERE ("departments"."id" = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "departments" WHERE ("departments"."id" = 4) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 893ms (View: 563, DB: 2) | 200 OK [http://localhost/jobs]
+  [4;36;1mJob Load (0.6ms)[0m   [0;1mSELECT * FROM "jobs" ORDER BY jobs.id DESC LIMIT 1[0m
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" IN (0,91)) [0m
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."job_id" = 91) [0m
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."job_id" = '91') [0m
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."job_id" = '91') LIMIT 1[0m
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."job_id" = 91) LIMIT 1[0m
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+  [4;35;1mWorkflow Load (2.5ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows"."job_id" = 91) [0m
+  [4;36;1mWorkflow Load (6.9ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows"."id" = 121) [0m
+  [4;35;1mWorkflow Update (83.6ms)[0m   [0mUPDATE "workflows" SET "updated_at" = '2009-11-12 02:19:18', "created_at" = '2009-11-12 01:51:06', "name" = 'Ship', "job_id" = 91, "note" = '', "completed" = 't', "step_needed" = NULL, "completed_date" = NULL WHERE "id" = 121[0m
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 18:19:28) [GET]
+  [4;36;1mJob Load (0.9ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;35;1mDepartment Load (0.2ms)[0m   [0mSELECT * FROM "departments" WHERE ("departments"."id" = 0) [0m
+  [4;36;1mDepartment Load (0.2ms)[0m   [0;1mSELECT * FROM "departments" WHERE ("departments"."id" = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "departments" WHERE ("departments"."id" = 4) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 112ms (View: 97, DB: 2) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 18:20:15) [GET]
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `not_completed' for #<Class:0x103610c48>):
+  app/controllers/jobs_controller.rb:3:in `index'
+
+Rendered rescues/_trace (29.6ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 18:20:35) [GET]
+
+SystemStackError (stack level too deep):
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/controllers/jobs_controller.rb:3:in `index'
+
+Rendered rescues/_trace (2227.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 18:20:57) [GET]
+
+SystemStackError (stack level too deep):
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/controllers/jobs_controller.rb:3:in `index'
+
+Rendered rescues/_trace (2246.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 18:21:38) [GET]
+
+SystemStackError (stack level too deep):
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/controllers/jobs_controller.rb:3:in `index'
+
+Rendered rescues/_trace (2170.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 18:21:56) [GET]
+
+SystemStackError (stack level too deep):
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/models/job.rb:13
+  app/controllers/jobs_controller.rb:3:in `index'
+
+Rendered rescues/_trace (2246.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mAccount Load (0.5ms)[0m   [0;1mSELECT * FROM "accounts" LIMIT 1[0m
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 18:39:00) [GET]
+  [4;36;1mJob Load (1.1ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+
+NoMethodError (undefined method `workflows' for #<Array:0x1033cc4a0>):
+  app/controllers/jobs_controller.rb:3:in `index'
+
+Rendered rescues/_trace (29.7ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 18:39:46) [GET]
+  [4;35;1mJob Load (1.0ms)[0m   [0mSELECT * FROM "jobs" [0m
+
+NoMethodError (undefined method `workflow' for #<Array:0x1036ee110>):
+  app/controllers/jobs_controller.rb:3:in `index'
+
+Rendered rescues/_trace (28.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 18:39:55) [GET]
+  [4;36;1mJob Load (0.9ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+
+NoMethodError (undefined method `Workflow' for #<Array:0x1033ef770>):
+  app/controllers/jobs_controller.rb:3:in `index'
+
+Rendered rescues/_trace (29.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 19:08:02) [GET]
+  [4;35;1mJob Load (35.6ms)[0m   [0mSELECT * FROM "jobs" [0m
+
+NoMethodError (undefined method `workflows' for #<Array:0x10312c600>):
+  app/controllers/jobs_controller.rb:3:in `index'
+
+Rendered rescues/_trace (715.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 19:13:03) [GET]
+  [4;36;1mWorkflow Load (1.1ms)[0m   [0;1mSELECT * FROM "workflows" [0m
+
+NoMethodError (undefined method `unshipped' for #<Array:0x1034900f8>):
+  app/controllers/jobs_controller.rb:3:in `index'
+
+Rendered rescues/_trace (31.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 19:16:20) [GET]
+  [4;35;1mWorkflow Load (0.8ms)[0m   [0mSELECT * FROM "workflows" [0m
+
+NoMethodError (undefined method `unshipped' for #<Array:0x1031a6a90>):
+  app/controllers/jobs_controller.rb:3:in `index'
+
+Rendered rescues/_trace (118.3ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 19:16:42) [GET]
+  [4;36;1mWorkflow Load (0.8ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows"."completed" = 'f' AND "workflows"."name" = 'Ship') [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 288ms (View: 233, DB: 1) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 19:17:26) [GET]
+  [4;36;1mJob Load (0.9ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;35;1mDepartment Load (0.2ms)[0m   [0mSELECT * FROM "departments" WHERE ("departments"."id" = 0) [0m
+  [4;36;1mDepartment Load (0.3ms)[0m   [0;1mSELECT * FROM "departments" WHERE ("departments"."id" = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "departments" WHERE ("departments"."id" = 4) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 135ms (View: 127, DB: 2) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 19:18:07) [GET]
+  [4;35;1mWorkflow Load (0.5ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows"."completed" = 'f' AND "workflows"."name" = 'Ship') [0m
+  [4;36;1mJob Load (0.7ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;35;1mDepartment Load (0.1ms)[0m   [0mSELECT * FROM "departments" WHERE ("departments"."id" = 0) [0m
+  [4;36;1mDepartment Load (0.2ms)[0m   [0;1mSELECT * FROM "departments" WHERE ("departments"."id" = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "departments" WHERE ("departments"."id" = 4) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 77ms (View: 65, DB: 2) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 19:19:26) [GET]
+  [4;35;1mSQL (0.7ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `each_value' for #<Class:0x103116878>):
+  app/controllers/jobs_controller.rb:3:in `index'
+
+Rendered rescues/_trace (31.8ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 19:19:41) [GET]
+  [4;36;1mWorkflow Load (0.8ms)[0m   [0;1mSELECT * FROM "workflows" [0m
+
+NoMethodError (undefined method `unshipped' for #<Array:0x1033a39b0>):
+  app/controllers/jobs_controller.rb:3:in `index'
+
+Rendered rescues/_trace (27.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 19:20:16) [GET]
+  [4;35;1mWorkflow Load (0.4ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows"."completed" = 'f' AND "workflows"."name" = 'Ship') [0m
+  [4;36;1mJob Load (0.6ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;35;1mDepartment Load (0.1ms)[0m   [0mSELECT * FROM "departments" WHERE ("departments"."id" = 0) [0m
+  [4;36;1mDepartment Load (0.2ms)[0m   [0;1mSELECT * FROM "departments" WHERE ("departments"."id" = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "departments" WHERE ("departments"."id" = 4) [0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 116ms (View: 106, DB: 2) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 19:20:31) [GET]
+  [4;35;1mWorkflow Load (0.4ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows"."completed" = 'f' AND "workflows"."name" = 'Ship') [0m
+
+TypeError (can't convert Array into String):
+  app/controllers/jobs_controller.rb:4:in `+'
+  app/controllers/jobs_controller.rb:4:in `index'
+
+Rendered rescues/_trace (28.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 19:20:42) [GET]
+  [4;36;1mWorkflow Load (0.4ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows"."completed" = 'f' AND "workflows"."name" = 'Ship') [0m
+  [4;35;1mJob Load (0.7ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;36;1mDepartment Load (0.1ms)[0m   [0;1mSELECT * FROM "departments" WHERE ("departments"."id" = 0) [0m
+  [4;35;1mDepartment Load (0.3ms)[0m   [0mSELECT * FROM "departments" WHERE ("departments"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "departments" WHERE ("departments"."id" = 4) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 118ms (View: 42, DB: 2) | 200 OK [http://localhost/jobs]
+  [4;36;1mWorkflow Load (0.5ms)[0m   [0;1mSELECT * FROM "workflows" LIMIT 1[0m
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 19:22:52) [GET]
+  [4;36;1mWorkflow Load (0.6ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows"."completed" IS NULL AND "workflows"."name" = 'Ship') [0m
+  [4;35;1mJob Load (0.3ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 90) [0m
+  [4;36;1mJob Load (0.5ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;35;1mDepartment Load (0.2ms)[0m   [0mSELECT * FROM "departments" WHERE ("departments"."id" = 0) [0m
+  [4;36;1mDepartment Load (0.3ms)[0m   [0;1mSELECT * FROM "departments" WHERE ("departments"."id" = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "departments" WHERE ("departments"."id" = 4) [0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 95ms (View: 61, DB: 2) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 19:23:44) [GET]
+  [4;35;1mWorkflow Load (0.6ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows"."completed" IS NULL AND "workflows"."name" = 'Ship') [0m
+  [4;36;1mJob Load (0.4ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 90) [0m
+  [4;35;1mJob Load (0.6ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;36;1mDepartment Load (0.2ms)[0m   [0;1mSELECT * FROM "departments" WHERE ("departments"."id" = 0) [0m
+  [4;35;1mDepartment Load (0.2ms)[0m   [0mSELECT * FROM "departments" WHERE ("departments"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "departments" WHERE ("departments"."id" = 4) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 65ms (View: 49, DB: 2) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 19:24:55) [GET]
+  [4;36;1mWorkflow Load (0.7ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows"."completed" IS NULL AND "workflows"."name" = 'Ship') [0m
+  [4;35;1mJob Load (0.5ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 90) [0m
+Rendering template within layouts/application
+Rendering jobs/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.name) on line #6 of app/views/jobs/index.html.erb:
+3: <div id="Accordion1" class="Accordion" tabindex="0">
+4:   <% for job in @jobs %>
+5:   <div class="AccordionPanel">
+6:     <div class="AccordionPanelTab"><b><%=h job.name %></b> - <%=h job.due_date.strftime("Due: %a, %b %d") %></div>
+7:       <div class="AccordionPanelContent">
+8:         <p>Job Name: <%=h job.name %></p>
+9:         <p>Long Description: <%=h job.description %></p>
+
+    app/views/jobs/index.html.erb:6
+    app/views/jobs/index.html.erb:4:in `each'
+    app/views/jobs/index.html.erb:4
+
+Rendered rescues/_trace (35.9ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 19:25:23) [GET]
+  [4;36;1mWorkflow Load (0.6ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows"."completed" IS NULL AND "workflows"."name" = 'Ship') [0m
+  [4;35;1mJob Load (0.3ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 90) [0m
+  [4;36;1mJob Load (0.5ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;35;1mDepartment Load (0.2ms)[0m   [0mSELECT * FROM "departments" WHERE ("departments"."id" = 0) [0m
+  [4;36;1mDepartment Load (0.3ms)[0m   [0;1mSELECT * FROM "departments" WHERE ("departments"."id" = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "departments" WHERE ("departments"."id" = 4) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 129ms (View: 115, DB: 2) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 19:25:29) [GET]
+  [4;35;1mWorkflow Load (0.6ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows"."completed" IS NULL AND "workflows"."name" = 'Ship') [0m
+  [4;36;1mJob Load (0.3ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 90) [0m
+  [4;35;1mJob Load (0.5ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;36;1mDepartment Load (0.1ms)[0m   [0;1mSELECT * FROM "departments" WHERE ("departments"."id" = 0) [0m
+  [4;35;1mDepartment Load (0.2ms)[0m   [0mSELECT * FROM "departments" WHERE ("departments"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "departments" WHERE ("departments"."id" = 4) [0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 57ms (View: 43, DB: 2) | 200 OK [http://localhost/jobs]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 19:25:45) [GET]
+  [4;36;1mWorkflow Load (1.3ms)[0m   [0;1mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 229ms (View: 125, DB: 2) | 200 OK [http://localhost/workflows]
+
+
+Processing JobsController#new (for 127.0.0.1 at 2009-11-11 19:25:52) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (568.7ms)
+Completed in 665ms (View: 606, DB: 0) | 200 OK [http://localhost/jobs/new]
+
+
+Processing JobsController#create (for 127.0.0.1 at 2009-11-11 19:26:26) [POST]
+  Parameters: {"commit"=>"Create/Update Job", "authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "job"=>{"name"=>"to yaml", "input_person"=>"tindrum", "received_date"=>"", "submit_date"=>"", "due_time(1i)"=>"2009", "workflows_attributes"=>{"0"=>{"name"=>"Design", "note"=>"dan makes it", "step_needed"=>"1"}, "1"=>{"name"=>"Copy", "note"=>"", "step_needed"=>"0"}, "2"=>{"name"=>"Press", "note"=>"", "step_needed"=>"0"}, "3"=>{"name"=>"Bindry", "note"=>"", "step_needed"=>"0"}, "4"=>{"name"=>"Ship", "note"=>"aasm", "step_needed"=>"1"}}, "account_id"=>"", "due_time(2i)"=>"11", "due_time(3i)"=>"12", "due_time(4i)"=>"03", "due_time(5i)"=>"25", "due_date"=>"2009-11-12", "auth_sig"=>"0", "description"=>"switch this all to something I don't understand", "ordered_by"=>"", "department_id"=>""}}
+WARNING: Can't mass-assign these protected attributes: step_needed
+WARNING: Can't mass-assign these protected attributes: step_needed
+  [4;35;1mJob Create (83.0ms)[0m   [0mINSERT INTO "jobs" ("name", "input_person", "created_at", "submit_date", "updated_at", "received_date", "account_id", "due_time", "due_date", "description", "auth_sig", "ordered_by", "department_id") VALUES('to yaml', 'tindrum', '2009-11-12 03:26:26', NULL, '2009-11-12 03:26:26', NULL, NULL, '2009-11-12 03:25:00', '2009-11-12 00:00:00', 'switch this all to something I don''t understand', 'f', '', NULL)[0m
+  [4;36;1mWorkflow Create (0.2ms)[0m   [0;1mINSERT INTO "workflows" ("name", "created_at", "completed", "completed_date", "updated_at", "note", "job_id", "step_needed") VALUES('Design', '2009-11-12 03:26:26', NULL, NULL, '2009-11-12 03:26:26', 'dan makes it', 92, NULL)[0m
+  [4;35;1mWorkflow Create (0.1ms)[0m   [0mINSERT INTO "workflows" ("name", "created_at", "completed", "completed_date", "updated_at", "note", "job_id", "step_needed") VALUES('Ship', '2009-11-12 03:26:26', NULL, NULL, '2009-11-12 03:26:26', 'aasm', 92, NULL)[0m
+Redirected to http://localhost:3000/jobs
+Completed in 109ms (DB: 83) | 302 Found [http://localhost/jobs]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 19:26:26) [GET]
+  [4;36;1mWorkflow Load (0.7ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows"."completed" IS NULL AND "workflows"."name" = 'Ship') [0m
+  [4;35;1mJob Load (0.3ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 90) [0m
+  [4;36;1mJob Load (0.3ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 92) [0m
+  [4;35;1mJob Load (0.6ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;36;1mDepartment Load (0.1ms)[0m   [0;1mSELECT * FROM "departments" WHERE ("departments"."id" = 0) [0m
+  [4;35;1mDepartment Load (0.3ms)[0m   [0mSELECT * FROM "departments" WHERE ("departments"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "departments" WHERE ("departments"."id" = 4) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 61ms (View: 44, DB: 3) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 19:28:55) [GET]
+  [4;36;1mWorkflow Load (0.6ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows"."completed" IS NULL AND "workflows"."name" = 'Ship') [0m
+  [4;35;1mJob Load (0.3ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 90) [0m
+  [4;36;1mJob Load (0.3ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 92) [0m
+  [4;35;1mJob Load (0.6ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;36;1mDepartment Load (0.1ms)[0m   [0;1mSELECT * FROM "departments" WHERE ("departments"."id" = 0) [0m
+  [4;35;1mDepartment Load (0.2ms)[0m   [0mSELECT * FROM "departments" WHERE ("departments"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "departments" WHERE ("departments"."id" = 4) [0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 112ms (View: 86, DB: 3) | 200 OK [http://localhost/jobs]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 19:29:28) [GET]
+  [4;36;1mWorkflow Load (1.0ms)[0m   [0;1mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 68ms (View: 62, DB: 1) | 200 OK [http://localhost/workflows]
+
+
+Processing JobsController#destroy (for 127.0.0.1 at 2009-11-11 19:29:37) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"89"}
+  [4;36;1mJob Load (0.3ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 89) [0m
+  [4;35;1mWorkflow Load (0.2ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows".job_id = 89) [0m
+  [4;36;1mJob Destroy (48.7ms)[0m   [0;1mDELETE FROM "jobs" WHERE "id" = 89[0m
+Redirected to http://localhost:3000/jobs
+Completed in 63ms (DB: 49) | 302 Found [http://localhost/jobs/89]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 19:29:37) [GET]
+  [4;35;1mWorkflow Load (0.6ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows"."completed" IS NULL AND "workflows"."name" = 'Ship') [0m
+  [4;36;1mJob Load (0.3ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 90) [0m
+  [4;35;1mJob Load (0.3ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 92) [0m
+  [4;36;1mJob Load (0.5ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;35;1mDepartment Load (0.1ms)[0m   [0mSELECT * FROM "departments" WHERE ("departments"."id" = 0) [0m
+  [4;36;1mDepartment Load (0.2ms)[0m   [0;1mSELECT * FROM "departments" WHERE ("departments"."id" = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "departments" WHERE ("departments"."id" = 4) [0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 122ms (View: 40, DB: 2) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#destroy (for 127.0.0.1 at 2009-11-11 19:29:42) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"90"}
+  [4;35;1mJob Load (0.3ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 90) [0m
+  [4;36;1mWorkflow Load (0.3ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows".job_id = 90) [0m
+  [4;35;1mWorkflow Destroy (0.2ms)[0m   [0mDELETE FROM "workflows" WHERE "id" = 117[0m
+  [4;36;1mWorkflow Destroy (0.1ms)[0m   [0;1mDELETE FROM "workflows" WHERE "id" = 118[0m
+  [4;35;1mJob Destroy (0.1ms)[0m   [0mDELETE FROM "jobs" WHERE "id" = 90[0m
+Redirected to http://localhost:3000/jobs
+Completed in 19ms (DB: 1) | 302 Found [http://localhost/jobs/90]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 19:29:42) [GET]
+  [4;36;1mWorkflow Load (0.7ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows"."completed" IS NULL AND "workflows"."name" = 'Ship') [0m
+  [4;35;1mJob Load (0.3ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 92) [0m
+  [4;36;1mJob Load (0.4ms)[0m   [0;1mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;35;1mDepartment Load (0.2ms)[0m   [0mSELECT * FROM "departments" WHERE ("departments"."id" = 0) [0m
+  [4;36;1mDepartment Load (0.3ms)[0m   [0;1mSELECT * FROM "departments" WHERE ("departments"."id" = 4) [0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 120ms (View: 36, DB: 2) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#destroy (for 127.0.0.1 at 2009-11-11 19:29:46) [DELETE]
+  Parameters: {"authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "id"=>"88"}
+  [4;36;1mJob Load (0.3ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 88) [0m
+  [4;35;1mWorkflow Load (0.1ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows".job_id = 88) [0m
+  [4;36;1mJob Destroy (0.2ms)[0m   [0;1mDELETE FROM "jobs" WHERE "id" = 88[0m
+Redirected to http://localhost:3000/jobs
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/jobs/88]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 19:29:46) [GET]
+  [4;35;1mWorkflow Load (0.6ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows"."completed" IS NULL AND "workflows"."name" = 'Ship') [0m
+  [4;36;1mJob Load (0.3ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 92) [0m
+  [4;35;1mJob Load (0.4ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;36;1mDepartment Load (0.2ms)[0m   [0;1mSELECT * FROM "departments" WHERE ("departments"."id" = 4) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 116ms (View: 97, DB: 2) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#show (for 127.0.0.1 at 2009-11-11 19:29:52) [GET]
+  Parameters: {"id"=>"91"}
+  [4;36;1mJob Load (0.3ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 91) [0m
+  [4;35;1mWorkflow Load (0.4ms)[0m   [0mSELECT * FROM "workflows" WHERE (job_id = 91) [0m
+Rendering template within layouts/application
+Rendering jobs/show
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 62ms (View: 52, DB: 1) | 200 OK [http://localhost/jobs/91]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 19:29:56) [GET]
+  [4;35;1mWorkflow Load (0.6ms)[0m   [0mSELECT * FROM "workflows" WHERE ("workflows"."completed" IS NULL AND "workflows"."name" = 'Ship') [0m
+  [4;36;1mJob Load (0.3ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 92) [0m
+  [4;35;1mJob Load (0.5ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;36;1mDepartment Load (0.2ms)[0m   [0;1mSELECT * FROM "departments" WHERE ("departments"."id" = 4) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 107ms (View: 30, DB: 2) | 200 OK [http://localhost/jobs]
+
+
+Processing WorkflowsController#index (for 127.0.0.1 at 2009-11-11 19:29:59) [GET]
+  [4;36;1mWorkflow Load (0.8ms)[0m   [0;1mSELECT * FROM "workflows" [0m
+Rendering template within layouts/application
+Rendering workflows/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 39ms (View: 34, DB: 1) | 200 OK [http://localhost/workflows]
+
+
+Processing JobsController#new (for 127.0.0.1 at 2009-11-11 19:30:05) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering jobs/new
+Rendered jobs/_form (33.6ms)
+Completed in 127ms (View: 39, DB: 0) | 200 OK [http://localhost/jobs/new]
+
+
+Processing JobsController#create (for 127.0.0.1 at 2009-11-11 19:30:33) [POST]
+  Parameters: {"commit"=>"Create/Update Job", "authenticity_token"=>"alvMU8X3jwlgfUPGijmqBAm1QIV8TeDUJSe9VVzwUDI=", "job"=>{"name"=>"haml", "input_person"=>"tindrum", "received_date"=>"", "submit_date"=>"", "due_time(1i)"=>"2009", "workflows_attributes"=>{"0"=>{"name"=>"Design", "note"=>"dan", "step_needed"=>"1"}, "1"=>{"name"=>"Copy", "note"=>"", "step_needed"=>"0"}, "2"=>{"name"=>"Press", "note"=>"", "step_needed"=>"0"}, "3"=>{"name"=>"Bindry", "note"=>"", "step_needed"=>"0"}, "4"=>{"name"=>"Ship", "note"=>"mail", "step_needed"=>"1"}}, "account_id"=>"", "due_time(2i)"=>"11", "due_time(3i)"=>"12", "due_time(4i)"=>"03", "due_time(5i)"=>"30", "due_date"=>"2009-11-12", "auth_sig"=>"0", "description"=>"this one should be false too", "ordered_by"=>"", "department_id"=>""}}
+WARNING: Can't mass-assign these protected attributes: step_needed
+WARNING: Can't mass-assign these protected attributes: step_needed
+  [4;35;1mJob Create (0.3ms)[0m   [0mINSERT INTO "jobs" ("name", "input_person", "created_at", "submit_date", "updated_at", "received_date", "account_id", "due_time", "due_date", "description", "auth_sig", "ordered_by", "department_id") VALUES('haml', 'tindrum', '2009-11-12 03:30:33', NULL, '2009-11-12 03:30:33', NULL, NULL, '2009-11-12 03:30:00', '2009-11-12 00:00:00', 'this one should be false too', 'f', '', NULL)[0m
+  [4;36;1mWorkflow Create (0.1ms)[0m   [0;1mINSERT INTO "workflows" ("name", "created_at", "completed", "completed_date", "updated_at", "note", "job_id", "step_needed") VALUES('Design', '2009-11-12 03:30:33', NULL, NULL, '2009-11-12 03:30:33', 'dan', 93, NULL)[0m
+  [4;35;1mWorkflow Create (0.1ms)[0m   [0mINSERT INTO "workflows" ("name", "created_at", "completed", "completed_date", "updated_at", "note", "job_id", "step_needed") VALUES('Ship', '2009-11-12 03:30:33', NULL, NULL, '2009-11-12 03:30:33', 'mail', 93, NULL)[0m
+Redirected to http://localhost:3000/jobs
+Completed in 22ms (DB: 1) | 302 Found [http://localhost/jobs]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 19:30:33) [GET]
+  [4;36;1mWorkflow Load (0.6ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows"."completed" IS NULL AND "workflows"."name" = 'Ship') [0m
+  [4;35;1mJob Load (0.3ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 92) [0m
+  [4;36;1mJob Load (0.3ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 93) [0m
+  [4;35;1mJob Load (0.4ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;36;1mDepartment Load (0.2ms)[0m   [0;1mSELECT * FROM "departments" WHERE ("departments"."id" = 4) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 123ms (View: 101, DB: 2) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 19:37:12) [GET]
+  [4;36;1mWorkflow Load (0.7ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows"."completed" IS NULL AND "workflows"."name" = 'Ship') [0m
+  [4;35;1mJob Load (0.3ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 92) [0m
+  [4;36;1mJob Load (0.2ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 93) [0m
+  [4;35;1mJob Load (0.5ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;36;1mDepartment Load (0.2ms)[0m   [0;1mSELECT * FROM "departments" WHERE ("departments"."id" = 4) [0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 87ms (View: 66, DB: 2) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 19:37:35) [GET]
+  [4;36;1mWorkflow Load (0.7ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows"."completed" IS NULL AND "workflows"."name" = 'Ship') [0m
+  [4;35;1mJob Load (0.3ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 92) [0m
+  [4;36;1mJob Load (0.2ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 93) [0m
+  [4;35;1mJob Load (0.5ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;36;1mDepartment Load (0.2ms)[0m   [0;1mSELECT * FROM "departments" WHERE ("departments"."id" = 4) [0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 57ms (View: 33, DB: 2) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 19:37:48) [GET]
+  [4;36;1mWorkflow Load (0.7ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows"."completed" IS NULL AND "workflows"."name" = 'Ship') [0m
+  [4;35;1mJob Load (0.3ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 92) [0m
+  [4;36;1mJob Load (0.2ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 93) [0m
+  [4;35;1mJob Load (0.5ms)[0m   [0mSELECT * FROM "jobs" [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;36;1mDepartment Load (0.2ms)[0m   [0;1mSELECT * FROM "departments" WHERE ("departments"."id" = 4) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 113ms (View: 33, DB: 2) | 200 OK [http://localhost/jobs]
+
+
+Processing JobsController#index (for 127.0.0.1 at 2009-11-11 19:38:41) [GET]
+  [4;36;1mWorkflow Load (0.6ms)[0m   [0;1mSELECT * FROM "workflows" WHERE ("workflows"."completed" IS NULL AND "workflows"."name" = 'Ship') [0m
+  [4;35;1mJob Load (0.3ms)[0m   [0mSELECT * FROM "jobs" WHERE ("jobs"."id" = 92) [0m
+  [4;36;1mJob Load (0.2ms)[0m   [0;1mSELECT * FROM "jobs" WHERE ("jobs"."id" = 93) [0m
+Rendering template within layouts/application
+Rendering jobs/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 109ms (View: 92, DB: 1) | 200 OK [http://localhost/jobs]

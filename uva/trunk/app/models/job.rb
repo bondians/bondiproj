@@ -10,19 +10,20 @@ class Job < ActiveRecord::Base
   
   accepts_nested_attributes_for :workflows, :allow_destroy => true, :reject_if => proc { |attributes| attributes["step_needed"] == "0" } 
   
-  #named_scope :not_shipped, :conditions => self.shipping.completed == false
+  #named_scope :not_shipped, lambda { { :job => self, :name => 'Ship', :completed => false}}
   
-  def after_save
-    #params.each do |key, value|
-    
-    #end
-  end
-  
-  def before_delete
-    
-  end
-  
-  def shipping
-     Workflow.find(:all, :conditions => {:job_id => self, :name => 'Ship' } )
+  def not_shipped
+     Workflow.find(:all, :conditions => {"job_id = ?" => self, "name = ?" => "Ship", "completed = ? " => false } )
   end
 end
+
+def after_save
+  #params.each do |key, value|
+  
+  #end
+end
+
+def before_delete
+  
+end
+
