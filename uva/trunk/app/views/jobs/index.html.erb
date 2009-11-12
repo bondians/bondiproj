@@ -11,7 +11,7 @@
         <p>Received Date (date we received/input it): <%=h job.received_date unless nil %></p>
         <p>Due Date: <%=h job.due_date %></p>
         <p>Due Time: <%=h job.due_time unless nil %></p>
-        <p>Department (select one, or use 'other'): <%=h job.department_id unless nil %></p>
+        <p>Department (select one, or use 'other'): <%=h job.department.name unless ( job.department == nil) %></p>
         <p>Account Number (select one, or use 'other'): <%=h job.account_id unless nil %></p>
         <p>Ordered By Name: <%=h job.ordered_by %></p>
         <p>Check if has Authorized signature (needed for shipping): <%=h job.auth_sig %></p>

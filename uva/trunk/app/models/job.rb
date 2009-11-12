@@ -5,6 +5,8 @@ class Job < ActiveRecord::Base
   validates_presence_of :name, :due_date #, :ordered_by, :submit_date, :received_date, :description, :department_id
 
   has_many :workflows, :dependent => :destroy
+  belongs_to :department
+  belongs_to :account
   
   accepts_nested_attributes_for :workflows, :allow_destroy => true, :reject_if => proc { |attributes| attributes["step_needed"] == "0" } 
   

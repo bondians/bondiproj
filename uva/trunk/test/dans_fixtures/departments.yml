@@ -1,0 +1,219 @@
+'dept_1':
+  'id': '1'
+  'name': 'ACCOUNTING'
+'dept_2':
+  'id': '2'
+  'name': 'ADMIN'
+'dept_3':
+  'id': '3'
+  'name': 'ADULT ED'
+'dept_4':
+  'id': '4'
+  'name': 'AFSCME'
+'dept_5':
+  'id': '5'
+  'name': 'ALT ED'
+'dept_6':
+  'id': '6'
+  'name': 'ALTA'
+'dept_7':
+  'id': '7'
+  'name': 'ANAHEIM'
+'dept_8':
+  'id': '8'
+  'name': 'ANAHEIM PUBLIC LIBRARY'
+'dept_9':
+  'id': '9'
+  'name': 'ATHLETICS'
+'dept_10':
+  'id': '10'
+  'name': 'AUDIO VISUAL DEPT'
+'dept_11':
+  'id': '11'
+  'name': 'BALL'
+'dept_12':
+  'id': '12'
+  'name': 'BAND SPECTACULAR'
+'dept_13':
+  'id': '13'
+  'name': 'BOARD OF TRUSTEES'
+'dept_14':
+  'id': '14'
+  'name': 'BROOKHURST'
+'dept_15':
+  'id': '15'
+  'name': 'BUSINESS'
+'dept_16':
+  'id': '16'
+  'name': 'CENTRALIA SCHOOL DISTRICT'
+'dept_17':
+  'id': '17'
+  'name': 'COMMUNITY DAY SCHOOL'
+'dept_18':
+  'id': '18'
+  'name': 'CSADA'
+'dept_19':
+  'id': '19'
+  'name': 'CSEA'
+'dept_20':
+  'id': '20'
+  'name': 'CYPRESS'
+'dept_21':
+  'id': '21'
+  'name': 'DALE'
+'dept_22':
+  'id': '22'
+  'name': 'DISTRICT HONOR BAND'
+'dept_23':
+  'id': '23'
+  'name': 'EDUCATION DIV'
+'dept_24':
+  'id': '24'
+  'name': 'EDUCATIONAL RESOURCES'
+'dept_25':
+  'id': '25'
+  'name': 'ELDTRIDENT'
+'dept_26':
+  'id': '26'
+  'name': 'FACILITIES'
+'dept_27':
+  'id': '27'
+  'name': 'FBLA'
+'dept_28':
+  'id': '28'
+  'name': 'FOOD SERVICE'
+'dept_29':
+  'id': '29'
+  'name': 'GARAGE'
+'dept_30':
+  'id': '30'
+  'name': 'GASELPA'
+'dept_31':
+  'id': '31'
+  'name': 'GILBERT EAST'
+'dept_32':
+  'id': '32'
+  'name': 'GILBERT SOUTH'
+'dept_33':
+  'id': '33'
+  'name': 'GILBERT WEST'
+'dept_34':
+  'id': '34'
+  'name': 'GRAPHIC ARTS'
+'dept_35':
+  'id': '35'
+  'name': 'HOME STUDIES'
+'dept_36':
+  'id': '36'
+  'name': 'HOPE'
+'dept_37':
+  'id': '37'
+  'name': 'HRCERT'
+'dept_38':
+  'id': '38'
+  'name': 'HRCLASS'
+'dept_39':
+  'id': '39'
+  'name': 'INFO SYSTEMS'
+'dept_40':
+  'id': '40'
+  'name': 'INSTR SERV'
+'dept_41':
+  'id': '41'
+  'name': 'KATELLA'
+'dept_42':
+  'id': '42'
+  'name': 'KENNEDY'
+'dept_43':
+  'id': '43'
+  'name': 'LEXINGTON'
+'dept_44':
+  'id': '44'
+  'name': 'LOARA'
+'dept_45':
+  'id': '45'
+  'name': 'LOS ALAMITOS HIGH SCHOOL'
+'dept_46':
+  'id': '46'
+  'name': 'MAGNOLIA'
+'dept_47':
+  'id': '47'
+  'name': 'MAINTENANCE'
+'dept_48':
+  'id': '48'
+  'name': 'OCADA'
+'dept_49':
+  'id': '49'
+  'name': 'ORANGEVIEW'
+'dept_50':
+  'id': '50'
+  'name': 'OXFORD'
+'dept_51':
+  'id': '51'
+  'name': 'PAYROLL'
+'dept_52':
+  'id': '52'
+  'name': 'PERSONAL'
+'dept_53':
+  'id': '53'
+  'name': 'POLARIS'
+'dept_54':
+  'id': '54'
+  'name': 'PREP SPORTS'
+'dept_55':
+  'id': '55'
+  'name': 'PROF DEV'
+'dept_56':
+  'id': '56'
+  'name': 'PUBLIC INFO OFFICE'
+'dept_57':
+  'id': '57'
+  'name': 'PURCHASING'
+'dept_58':
+  'id': '58'
+  'name': 'RESEARCH  EVALUATION'
+'dept_59':
+  'id': '59'
+  'name': 'RISK MGMT'
+'dept_60':
+  'id': '60'
+  'name': 'SAFE SCHOOLS'
+'dept_61':
+  'id': '61'
+  'name': 'SAVANNA'
+'dept_62':
+  'id': '62'
+  'name': 'SOUTH'
+'dept_63':
+  'id': '63'
+  'name': 'SPEC PROG'
+'dept_64':
+  'id': '64'
+  'name': 'SUMMER SCHOOL'
+'dept_65':
+  'id': '65'
+  'name': 'SUPERINTENDENT'
+'dept_66':
+  'id': '66'
+  'name': 'SYCAMORE'
+'dept_67':
+  'id': '67'
+  'name': 'SYS'
+'dept_68':
+  'id': '68'
+  'name': 'TIGER WOODS FOUNDATION'
+'dept_69':
+  'id': '69'
+  'name': 'TRANSPORTATION'
+'dept_70':
+  'id': '70'
+  'name': 'VISTA'
+'dept_71':
+  'id': '71'
+  'name': 'WALKER'
+'dept_72':
+  'id': '72'
+  'name': 'WAREHOUSE'
+'dept_73':
+  'id': '73'
+  'name': 'WESTERN '
