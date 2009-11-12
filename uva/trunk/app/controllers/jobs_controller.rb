@@ -1,6 +1,9 @@
 class JobsController < ApplicationController
   def index
-    @jobs = Workflow.unshipped.collect { |flow| Job.find(flow.job_id) }
+    #flows = Workflow.newunshipped.merge(Workflow.unshipped)
+    #@jobs = flows.collect { |flow| Job.find(flow.job_id) }
+    
+    @jobs = Workflow.newunshipped.concat(Workflow.unshipped).collect { |flow| Job.find(flow.job_id) }
     #puts "these: " + theses.to_yaml
     #@jobs = Job.all
    # puts @jobs.to_yaml
@@ -15,11 +18,11 @@ class JobsController < ApplicationController
   def new
     @job = Job.new
     @job[:input_person] = current_user.username
-    @job.workflows.build :name => "Design", :completed => false
-    @job.workflows.build :name => "Copy" , :completed => false
-    @job.workflows.build :name => "Press", :completed => false
-    @job.workflows.build :name => "Bindry", :completed => false
-    @job.workflows.build :name => "Ship", :completed => false
+    @job.workflows.build :name => "Design", :completed => "0"
+    @job.workflows.build :name => "Copy" , :completed => "0"
+    @job.workflows.build :name => "Press", :completed => "0"
+    @job.workflows.build :name => "Bindry", :completed => "0"
+    @job.workflows.build :name => "Ship" , :step_needed => "1"
    # @job.department.build
   end
   

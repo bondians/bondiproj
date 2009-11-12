@@ -3,6 +3,7 @@ class Workflow < ActiveRecord::Base
   belongs_to :job #, :dependent => :destroy
   validates_presence_of :name 
   
-  named_scope :unshipped, :conditions => {:name => 'Ship', :completed => nil || false }
-  named_scope :shipped, :conditions => {:name => 'Ship', :completed =>  true }
+  named_scope :unshipped, :conditions => {:name => 'Ship', :completed => false }
+  named_scope :newunshipped, :conditions => {:name => 'Ship', :completed => nil }
+  named_scope :shipped, :conditions => {:name => 'Ship', :completed =>  '1' }
 end
