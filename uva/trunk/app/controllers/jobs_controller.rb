@@ -3,7 +3,7 @@ class JobsController < ApplicationController
     @jobs = Workflow.unshipped.collect { |flow| Job.find(flow.job_id) }
     #puts "these: " + theses.to_yaml
     #@jobs = Job.all
-    puts @jobs.to_yaml
+   # puts @jobs.to_yaml
   end
   
   def show
@@ -15,15 +15,17 @@ class JobsController < ApplicationController
   def new
     @job = Job.new
     @job[:input_person] = current_user.username
-    @job.workflows.build :name => "Design"
-    @job.workflows.build :name => "Copy"
-    @job.workflows.build :name => "Press"
-    @job.workflows.build :name => "Bindry"
-    @job.workflows.build :name => "Ship"
+    @job.workflows.build :name => "Design", :completed => false
+    @job.workflows.build :name => "Copy" , :completed => false
+    @job.workflows.build :name => "Press", :completed => false
+    @job.workflows.build :name => "Bindry", :completed => false
+    @job.workflows.build :name => "Ship", :completed => false
+   # @job.department.build
   end
   
   def create
    @job = Job.new(params[:job])
+    # raise @jobs.to_yaml
     if @job.save
       flash[:notice] = "Successfully created job."
       redirect_to jobs_path

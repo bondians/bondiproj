@@ -1,4 +1,4 @@
-<%= debug params %>
+                                       <%= debug params %>
 
 <% form_for @job do |f| %>
   <%= f.error_messages %>
@@ -68,10 +68,12 @@
         <div>
           <%= workflow_form.label :name, 'Task: ' %>
           <%= workflow_form.text_field :name %>
-          <%= workflow_form.label :step_needed, 'Task: ' %>
-          <%= workflow_form.check_box :step_needed %>
           <%= workflow_form.label :note, 'Note: ' %>
           <%= workflow_form.text_field :note %>
+          <%= workflow_form.label :completed %>
+          <%= workflow_form.check_box :completed %>
+          <%= workflow_form.label :completed_date %>
+          <%= workflow_form.date_select :completed_date %>
         </div>
       <% unless workflow_form.object.new_record? %>
         <div>

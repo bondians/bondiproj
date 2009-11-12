@@ -1,12 +1,13 @@
 <% title "Jobs" %>
-
 <div id="Accordion1" class="Accordion" tabindex="0">
   <% for job in @jobs %>
   <div class="AccordionPanel">
     <div class="AccordionPanelTab"><b><%=h job.name %></b> - <%=h job.due_date.strftime("Due: %a, %b %d") %></div>
       <div class="AccordionPanelContent">
-        <p>Job Name: <%=h job.name %></p>
-        <p>Long Description: <%=h job.description %></p>
+        <div id='jobinfo'>
+          <p>Job Name: <%=h job.name %></p>
+          <p>Long Description: <%=h job.description %></p>
+        </div>
         <p>Submit Date (on work order): <%=h job.submit_date unless nil %></p>
         <p>Received Date (date we received/input it): <%=h job.received_date unless nil %></p>
         <p>Due Date: <%=h job.due_date %></p>
