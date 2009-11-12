@@ -1,7 +1,13 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  name: MyString
+  id: 1
+  name: Oxford
 
 two:
-  name: MyString
+  id: 2
+  name: Athletics
+  
+three:
+  id: 3
+  name: Transportation
