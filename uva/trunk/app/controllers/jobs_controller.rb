@@ -1,12 +1,7 @@
 class JobsController < ApplicationController
   def index
-    #flows = Workflow.newunshipped.merge(Workflow.unshipped)
-    #@jobs = flows.collect { |flow| Job.find(flow.job_id) }
-    
-    @jobs = Workflow.newunshipped.concat(Workflow.unshipped).collect { |flow| Job.find(flow.job_id) }
-    #puts "these: " + theses.to_yaml
-    #@jobs = Job.all
-   # puts @jobs.to_yaml
+    # @jobs = Workflow.newunshipped.concat(Workflow.unshipped).collect { |flow| Job.find(flow.job_id) }
+    @jobs = Job.all :order => :due_date
   end
   
   def show
