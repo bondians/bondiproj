@@ -9,6 +9,9 @@ if defined?(ActiveRecord)
 
   # Store the full class name (including module namespace) in STI type column.
   ActiveRecord::Base.store_full_sti_class = true
+
+  # Set date format to United States style. Not sure I want to do this.
+  # ActiveRecord::Base.dhtml_db_date_format = '%m-%d-%Y'
 end
 
 ActionController::Routing.generate_best_match = false

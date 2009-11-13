@@ -18,10 +18,10 @@ class JobsController < ApplicationController
   def new
     @job = Job.new
     @job[:input_person] = current_user.username
-    @job.workflows.build :name => "Design", :completed => "0"
-    @job.workflows.build :name => "Copy" , :completed => "0"
-    @job.workflows.build :name => "Press", :completed => "0"
-    @job.workflows.build :name => "Bindry", :completed => "0"
+    @job.workflows.build :name => "Design"
+    @job.workflows.build :name => "Copy" 
+    @job.workflows.build :name => "Press"
+    @job.workflows.build :name => "Bindry"
     @job.workflows.build :name => "Ship" , :step_needed => "1"
    # @job.department.build
   end

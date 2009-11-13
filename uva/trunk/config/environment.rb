@@ -19,7 +19,7 @@ Rails::Initializer.run do |config|
   # config.gem "hpricot", :version => '0.6', :source => "http://code.whytheluckystiff.net"
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
-  config.gem "authlogic", :source => "git://github.com/binarylogic", :version => "2.1.2"
+  config.gem "authlogic", :source => "git://github.com/binarylogic/authlogic.git", :version => "2.1.2"
   # config.gem "haml"
   config.gem "be9-acl9", :source => "http://gems.github.com", :lib => "acl9"
 

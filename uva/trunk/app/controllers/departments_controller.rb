@@ -1,5 +1,6 @@
 class DepartmentsController < ApplicationController
   # auto_complete_for :department, :name
+  protect_from_forgery :only => [:update, :delete, :create]
   def index
     @departments = Department.all
   end

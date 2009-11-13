@@ -2,18 +2,18 @@
 <div id="Accordion1" class="Accordion" tabindex="0">
   <% for job in @jobs %>
   <div class="AccordionPanel">
-    <div class="AccordionPanelTab"><b><%=h job.name %></b> - <%=h job.due_date.strftime("Due: %a, %b %d") %> #<%= job.id.to_s %></div>
+    <div class="AccordionPanelTab"><b><%=h job.name %></b> - <%=h job.due_date.strftime("Due: %a, %b %d") %> #<%= job.id.to_s %> <%- job.workflow_steps_simple.each  do |wf|  -%> <%= wf.name.slice(0..0)  %><% end -%></div>
       <div class="AccordionPanelContent">
         <div id='jobinfo'>
           <p>Job Name: <%=h job.name %></p>
           <p>Long Description: <%=h job.description %></p>
         </div>
-        <p>Submit Date (on work order): <%=h job.submit_date unless nil %></p>
+        <p>Submit Date (on work order): <%=h job.submit_date.strftime("%m/%d/%Y") unless job.submit_date.nil? %></p>
         <p>Received Date (date we received/input it): <%=h job.received_date unless nil %></p>
         <p>Due Date: <%=h job.due_date %></p>
         <p>Due Time: <%=h job.due_time unless nil %></p>
-        <p>Department (select one, or use 'other'): <%=h job.department.name unless ( job.department == nil) %></p>
-        <p>Account Number (select one, or use 'other'): <%=h job.account_id unless nil %></p>
+        <p>Department (select one, or use 'other'): <%=h job.department.name unless  job.department.nil? %></p>
+        <p>Account Number (select one, or use 'other'): <%=h job.account_id unless job.account_id.nil? %></p>
         <p>Ordered By Name: <%=h job.ordered_by %></p>
         <p>Check if has Authorized signature (needed for shipping): <%=h job.auth_sig %></p>
         <p><%=h job.input_person %></p>
