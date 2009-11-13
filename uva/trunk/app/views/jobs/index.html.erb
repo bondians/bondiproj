@@ -2,7 +2,7 @@
 <div id="Accordion1" class="Accordion" tabindex="0">
   <% for job in @jobs %>
   <div class="AccordionPanel">
-    <div class="AccordionPanelTab"><b><%=h job.name %></b> - <%=h job.due_date.strftime("Due: %a, %b %d") %> #<%= job.id.to_s %> <%- job.workflow_steps_simple.each  do |wf|  -%> <%= wf.name.slice(0..0)  %><% end -%></div>
+    <div class="AccordionPanelTab"><b><%=h job.name %></b> - <%=h job.due_date.strftime("Due: %a, %b %d") %> #<%= workflow_step_display(job) %></div>
       <div class="AccordionPanelContent">
         <div id='jobinfo'>
           <p>Job Name: <%=h job.name %></p>
