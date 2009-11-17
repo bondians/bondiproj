@@ -52,3 +52,10 @@ class Job < ActiveRecord::Base
   end
 end
 
+def self.search(search, page)
+  paginate :per_page => 100, :page => page,
+           :conditions => ['name like ?', "%#{search}%"],
+           :include => :prices,
+           :order => :sort
+end
+

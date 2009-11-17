@@ -1,8 +1,32 @@
 class JobsController < ApplicationController
   def index
-    # @jobs = Workflow.newunshipped.concat(Workflow.unshipped).collect { |flow| Job.find(flow.job_id) }
-    @jobs = Job.all :order => :due_date
+    respond_to do |format|
+      format.html do
+        if params[:show] == "all"
+          @jobs = Job.all :order => :due_date       
+        else 
+          @jobs = Workflow.newunshipped.concat(Workflow.unshipped).collect { |flow| Job.find(flow.job_id) }          
+        end
+      end
+    end 
+
+    #@jobs = Workflow.newunshipped.concat(Workflow.unshipped).collect { |flow| Job.find(flow.job_id) }
+    #@jobs = Job.all :order => :due_date 
+    @jobs
   end
+
+#  def index
+#    respond_to do |format|
+#      format.html do
+#        @page = params[:page] || 1
+#        @items = Item.search(params[:search], @page)
+#      end
+#      format.pdf do
+#        @items = Item.all :order => :itemtype_id, :include => :prices
+#      end
+#    end
+#  end
+
   
   def show
     @job = Job.find(params[:id])

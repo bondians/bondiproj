@@ -29,8 +29,8 @@
           <h1><%=h yield(:title) %></h1>
         <%- end -%>
       <div id="sidebar1">
-        <%= link_to "Show Jobs In Process", jobs_path %><br />
-        Show shipped jobs
+        <%= link_to "Show Jobs In Process", :controller => "jobs", :action => "index", :show => "incomplete"  %><br />
+        <%= link_to "Show all jobs", :controller => "jobs", :action => "index", :show => "all" %>
       </div>
       <div id="mainContent">
         <%= yield %>
