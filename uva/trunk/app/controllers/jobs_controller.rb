@@ -5,7 +5,8 @@ class JobsController < ApplicationController
         if params[:show] == "all"
           @jobs = Job.all :order => :due_date       
         else 
-          @jobs = Workflow.newunshipped.concat(Workflow.unshipped).collect { |flow| Job.find(flow.job_id) }          
+          @jobs = Workflow.newunshipped.concat(Workflow.unshipped).collect { |flow| Job.find(flow.job_id) }
+          @jobs.sort! { |a,b| a.due_date <=> b.due_date }          
         end
       end
     end 
