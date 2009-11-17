@@ -31,6 +31,11 @@
       <div id="sidebar1">
         <%= link_to "Show Jobs In Process", :controller => "jobs", :action => "index", :show => "incomplete"  %><br />
         <%= link_to "Show all jobs", :controller => "jobs", :action => "index", :show => "all" %>
+        <% form_tag ( :controller => "jobs", :action => "search", :method => "get" ) do %>
+          <%= label_tag :search %><br />
+          <%= text_field_tag :search %><br />
+          <%= submit_tag("Search Jobs") %>
+        <% end %>
       </div>
       <div id="mainContent">
         <%= yield %>
