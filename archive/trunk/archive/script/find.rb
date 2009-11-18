@@ -7,6 +7,12 @@ require 'find'
 require 'id3lib'
 require 'mp4info'
 require 'ruby-debug'
+require "getopt/long"
+    opt = Getopt::Long.getopts(
+        ["--foo", "-f", Getopt::BOOLEAN],
+        ["--bar", "-b", Getopt::REQUIRED]
+    )
+
 
 @genres = Genre.all
 @artists = Artist.all
