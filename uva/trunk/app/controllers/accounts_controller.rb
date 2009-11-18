@@ -1,4 +1,9 @@
 class AccountsController < ApplicationController
+  access_control do   
+     allow logged_in
+     allow anonymous, :to => [:index]
+  end
+
   def index
     @accounts = Account.all
   end

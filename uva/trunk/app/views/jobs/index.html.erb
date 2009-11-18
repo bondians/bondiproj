@@ -5,21 +5,16 @@
     <div class="AccordionPanelTab"><b><%=h job.name %></b> - <%=h job.due_date.strftime("Due: %a, %b %d") %><br /> db#<%= job.id.to_s %> Ticket#<%= job.ticket.to_s %> <%= workflow_step_display(job) %></div>
       <div class="AccordionPanelContent">
         <div id='jobinfo'>
-          <p>Job Name: <%=h job.name %></p>
-          <p>Long Description: <%=h job.description %></p>
-        </div>
-        <p>Submit Date (on work order): <%=h job.submit_date.strftime("%m/%d/%Y") unless job.submit_date.nil? %></p>
-        <p>Received Date (date we received/input it): <%=h job.received_date unless nil %></p>
-        <p>Due Date: <%=h job.due_date %></p>
-        <p>Due Time: <%=h job.due_time unless nil %></p>
-        <p>Department (select one, or use 'other'): <%=h job.department.name unless  job.department.nil? %></p>
-        <p>Account Number (select one, or use 'other'): <%=h job.account_id unless job.account_id.nil? %></p>
-        <p>Ordered By Name: <%=h job.ordered_by %></p>
-        <p>Check if has Authorized signature (needed for shipping): <%=h job.auth_sig %></p>
+        <%= link_to "Edit", edit_job_path(job) %><br />
+          <p>Long Description:<br /><%=h job.description %></p>
+        <p>Submit Date: <%=h job.submit_date.strftime("%m/%d/%Y") unless job.submit_date.nil? %></p>
+        <p>Received Date: <%=h job.received_date unless nil %></p>
+        <p>Department: <%=h job.department.name unless  job.department.nil? %></p>
+        <p>Account Number: <%=h job.account_id unless job.account_id.nil? %></p>
+        <p>Ordered By: <%=h job.ordered_by %></p>
+        <p>Authorized Signature: <%=h job.auth_sig %></p>
         <p><%=h job.input_person %></p>
-        <%= link_to "Show", job %>
-        <%= link_to "Edit", edit_job_path(job) %>
-        <%= link_to "Destroy", job, :confirm => 'Are you sure?', :method => :delete %>
+        </div>
       </div>
     </div>
    <% end %>

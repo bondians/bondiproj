@@ -63,6 +63,28 @@
 	-khtml-user-select: none;
 }
 
+.AccordionPanelTabD {
+	background-color: #CCCCFF;
+	border-top: solid 1px black;
+	border-bottom: solid 1px gray;
+	margin: 0px;
+	padding: 2px;
+	cursor: pointer;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+}
+
+.AccordionPanelTabC {
+	background-color: #CCCC00;
+	border-top: solid 1px black;
+	border-bottom: solid 1px gray;
+	margin: 0px;
+	padding: 2px;
+	cursor: pointer;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+}
+
 /* This is the selector for a Panel's Content area. It's important to note that
  * you should never put any padding on the panel's content area if you plan to
  * use the Accordions panel animations. Placing a non-zero padding on the content

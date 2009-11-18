@@ -1,5 +1,5 @@
 class Workflow < ActiveRecord::Base
-  attr_accessible :name, :note, :completed, :completed_date, :job_id, :step_needed 
+  attr_accessible :name, :note, :completed, :completed_date, :job_id, :step_needed, :order 
   belongs_to :job #, :dependent => :destroy
   validates_presence_of :name 
   

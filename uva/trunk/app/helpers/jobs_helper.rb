@@ -6,6 +6,22 @@ module JobsHelper
     end
     stepString << "]"
   end
+
+  def index_accordion_color(job)
+    stepString = "["
+    job.workflow_steps_simple.each  do |wf|  
+      stepString << (wf.completed ? wf.name.slice(0..0).downcase : wf.name.slice(0..0))
+    end
+    stepString << "]"
+  end
+  
+  def last_completed_task_category(job)
+    
+  end
+  
+  def next_incomplete_task_category(job)
+    
+  end
 end
  
 

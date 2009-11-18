@@ -1,6 +1,12 @@
 class DepartmentsController < ApplicationController
   # auto_complete_for :department, :name
   protect_from_forgery :only => [:update, :delete, :create]
+
+  access_control do   
+     allow logged_in
+     allow anonymous, :to => [:index]
+  end
+
   def index
     @departments = Department.all
   end

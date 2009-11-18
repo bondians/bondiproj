@@ -1,13 +1,8 @@
-<%= debug params %>
+<%#= debug params %>
 
 <% form_for @job do |f| %>
-  <%= f.error_messages %>
+  <%#= f.error_messages %>
   <div id='jobinfo'>
-    <p>
-    <%= f.label :input_person %><br />
-    <%= @job.input_person %>
-    <%= f.hidden_field :input_person %>
-  </p>
   <p>
     <%= f.label :name %><br />
     <%= f.text_field :name %>
@@ -68,12 +63,12 @@
     <% f.fields_for :workflows do |workflow_form| %>
       <p>
         <div>
-          <%= workflow_form.label :name, 'Task: ' %>
-          <%= workflow_form.text_field :name %>
-          <%= workflow_form.label :step_needed, 'Task: ' %>
-          <%= workflow_form.check_box :step_needed %>
+          Task: <%= workflow_form.text_field :name, 'disabled' => 'true' %><%= workflow_form.hidden_field :name %><br />
+          <%#= workflow_form.label :step_needed%>
+          Check if step needed: <%= workflow_form.check_box :step_needed  %><br />
           <%= workflow_form.label :note, 'Note: ' %>
           <%= workflow_form.text_field :note %>
+          <%= workflow_form.hidden_field :order %>
         </div>
       <% unless workflow_form.object.new_record? %>
         <div>
@@ -84,6 +79,11 @@
     </p>
   <% end %>
    </div>
+    <p>
+    <%= f.label :input_person %><br />
+    <%= @job.input_person %>
+    <%= f.hidden_field :input_person %>
+  </p>
   <p><%= f.submit "Create/Update Job" %></p>
 <% end %>
 

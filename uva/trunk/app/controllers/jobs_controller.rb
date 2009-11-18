@@ -1,4 +1,9 @@
 class JobsController < ApplicationController
+  access_control do   
+     allow logged_in
+     allow anonymous, :to => [:index]
+  end
+
   def index
         if params[:show] == "all"
           @jobs = Job.all :order => :due_date       
@@ -34,11 +39,11 @@ class JobsController < ApplicationController
   def new
     @job = Job.new
     @job[:input_person] = current_user.username
-    @job.workflows.build :name => "Design"
-    @job.workflows.build :name => "Copy" 
-    @job.workflows.build :name => "Press"
-    @job.workflows.build :name => "Bindry"
-    @job.workflows.build :name => "Ship" , :step_needed => "1"
+    @job.workflows.build :name => "Design", :order => 1
+    @job.workflows.build :name => "Copy" , :order => 2
+    @job.workflows.build :name => "Press", :order => 3
+    @job.workflows.build :name => "Bindry", :order => 4
+    @job.workflows.build :name => "Ship", :order => 5, :step_needed => "1"
    # @job.department.build
   end
   
