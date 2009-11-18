@@ -1,13 +1,8 @@
-                                       <%= debug params %>
+<%#= debug params %>
 
 <% form_for @job do |f| %>
-  <%= f.error_messages %>
+  <%#= f.error_messages %>
   <div id='jobinfo'>
-    <p>
-    <%= f.label :input_person %><br />
-    <%= @job.input_person %>
-    <%= f.hidden_field :input_person %>
-  </p>
   <p>
     <%= f.label :name %><br />
     <%= f.text_field :name %>
@@ -67,26 +62,31 @@
    <div id='workflowinfo'>
    <!-- Here we call fields_for on the job_form builder instance.
         The block is called for each member of the workflows collection. -->
-    <% f.fields_for :workflows do |workflow_form| %>
-      <p>
-        <div>
-          <%= workflow_form.label :name, 'Task: ' %>
-          <%= workflow_form.text_field :name %>
-          <%= workflow_form.label :note, 'Note: ' %>
-          <%= workflow_form.text_field :note %>
-          <%= workflow_form.label :completed %>
-          <%= workflow_form.check_box :completed %>
-          <%= workflow_form.label :completed_date %>
-          <%= workflow_form.date_select :completed_date %>
-        </div>
-      <% unless workflow_form.object.new_record? %>
-        <div>
-          <%= workflow_form.label :_delete, 'Remove:' %>
-          <%= workflow_form.check_box :_delete %>
-        </div>
-      <% end %>
-    </p>
-  <% end %>
+		    <% f.fields_for :workflows do |workflow_form| %>
+		      <p>
+		        <div>
+		          Task: <%= workflow_form.text_field :name, 'disabled' => 'true' %>
+		<%= workflow_form.hidden_field :name %><br />
+		          <%= workflow_form.label :note, 'Note: ' %>
+		          <%= workflow_form.text_field :note %>
+		          <%= workflow_form.hidden_field :order %><br />
+		          <%= workflow_form.label :completed %>
+		          <%= workflow_form.check_box :completed %><br />
+		          <%= workflow_form.label :completed_date %><br />
+		          <%= workflow_form.date_select :completed_date %><br />
+		        </div>
+		      <% unless workflow_form.object.new_record? %>
+		        <div>
+		          <%= workflow_form.label :_delete, 'Remove:' %>
+		          <%= workflow_form.check_box :_delete %>
+		        </div>
+		    <% end %>
+		<% end %>
+    <p>
+    <%= f.label :input_person %><br />
+    <%= @job.input_person %>
+    <%= f.hidden_field :input_person %>
+  </p>
    </div>
   <p><%= f.submit "Create/Update Job" %></p>
 <% end %>
