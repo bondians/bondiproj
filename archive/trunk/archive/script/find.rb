@@ -9,10 +9,11 @@ require 'mp4info'
 require 'ruby-debug'
 require "getopt/long"
     opt = Getopt::Long.getopts(
-        ["--foo", "-f", Getopt::BOOLEAN],
-        ["--bar", "-b", Getopt::REQUIRED]
+        ["--full", "-f", Getopt::BOOLEAN],
+        ["--path", "-p", Getopt::REQUIRED],
+        ["--cull", "-c", Getopt::BOOLEAN]
     )
-
+return "You Must Specify a path \"--path=\" " unless opt[:path]
 
 @genres = Genre.all
 @artists = Artist.all
@@ -31,7 +32,7 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
 #        volume: float, fade_in: boolean, user_id: integer, archive_number: integer, file: text)
 ###
 
-  Find.find(ARGV.shift) do |path|
+  Find.find(opt[:path]) do |path|
       if FileTest.file?(path) && !path.match(".AppleDouble")
         kind = path.split(".")
         case kind.last.downcase
