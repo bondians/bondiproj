@@ -39,11 +39,11 @@ class JobsController < ApplicationController
   def new
     @job = Job.new
     @job[:input_person] = current_user.username
-    @job.workflows.build :name => "Design", :order => 1
-    @job.workflows.build :name => "Copy" , :order => 2
-    @job.workflows.build :name => "Press", :order => 3
-    @job.workflows.build :name => "Bindry", :order => 4
-    @job.workflows.build :name => "Ship", :order => 5, :step_needed => "1"
+    @job.workflows.build :name => "Design", :order => 10
+    @job.workflows.build :name => "Copy" , :order => 70
+    @job.workflows.build :name => "Press", :order => 80
+    @job.workflows.build :name => "Bindry", :order => 90
+    @job.workflows.build :name => "Ship", :order => 100, :step_needed => "1"
    # @job.department.build
   end
   
