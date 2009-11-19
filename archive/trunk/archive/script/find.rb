@@ -46,7 +46,7 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
   Find.find(opt[:path]) do |path|
       ########### This currently sucks, becaus i eventually want to modify files.. however, this is no problem
       ########### Currently as that is not implemented it <should> be fixd when file modding becomes possible
-      next if (!opt[:full] && (@finder.started < File.ctime path))
+      next if (!opt[:full] && (@finder.started < File.ctime(path)))
       if FileTest.file?(path) && !path.match(".AppleDouble")
         kind = path.split(".")
         case kind.last.downcase
