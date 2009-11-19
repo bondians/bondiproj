@@ -37,11 +37,10 @@ OptionParser.new do |opts|
     opts.on("-d", "--dev", "Development Environment") do |d|
         options.dev = d
     end
-
-RAILS_ENV = (options.dev ? "development" : "production")
     
 end.parse!
 
+RAILS_ENV = (options.dev ? "development" : "production")
 
 @genres = Genre.all
 @artists = Artist.all
