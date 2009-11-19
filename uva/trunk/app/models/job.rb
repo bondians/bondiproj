@@ -5,9 +5,7 @@ class Job < ActiveRecord::Base
     indexes ordered_by
     
     has due_date
-    
   end
-  
   attr_accessible :name, :ticket, :description, :due_date, :due_time, :submit_date, :ordered_by, :auth_sig, :department_id, :account_id, :input_person, :received_date,  :workflows_attributes #, :department_attributes
   # :name_attributes, :note_attributes, :completed_attributes, :completed_date_attributes, :job_id_attributes, :workflow, :workflows,
   

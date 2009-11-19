@@ -32,11 +32,13 @@
         <%= link_to "Show Jobs In Process", :controller => "jobs", :action => "index", :show => "incomplete"  %><br />
         <%= link_to "Show all jobs", :controller => "jobs", :action => "index", :show => "all" %><br />
         <hr />
-				<% form_tag (jobs_path, :method => "get" ) do %>
-          <%= label_tag :search %><br />
-          <%= text_field_tag (:search) %><br />
-          <%= submit_tag("Search Jobs", :controller => "jobs", :action => "index", :name => nil ) %>
-        <% end %>
+
+					<p>
+						<% form_tag (jobs_path, :method => "get" ) do %>
+							<%= text_field_tag :search, params[:search] %>
+							<%= submit_tag "Search", :name => nil, :controller => "jobs", :action => "index" %>
+						<% end %>
+					</p>
 				<hr />
 				<h3>Workflow:</h3>
 				<h5>Show only jobs with the next step of:</h5>
