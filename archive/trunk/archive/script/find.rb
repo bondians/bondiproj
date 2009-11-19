@@ -191,5 +191,5 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
     @currun.success = true
     @currun.save
     
-    system "rake thinking_sphinx:start RAILS_ENV=production"
+    system "rake thinking_sphinx:index RAILS_ENV=production"
     system "rake thinking_sphinx:restart RAILS_ENV=production"
