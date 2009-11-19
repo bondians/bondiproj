@@ -7,12 +7,9 @@ require 'find'
 require 'id3lib'
 require 'mp4info'
 require 'ruby-debug'
-require "getopt/long"
-    opt = Getopt::Long.getopts(
-        ["--full", "-f", Getopt::BOOLEAN],
-        ["--path", "-p", Getopt::REQUIRED],
-        ["--cull", "-c", Getopt::BOOLEAN]
-    )
+require 'getopt/long'
+
+opt = Getopt::Long.getopts(["--full", "-f", Getopt::BOOLEAN], ["--path", "-p", Getopt::REQUIRED], ["--cull", "-c", Getopt::BOOLEAN] )
 
 puts "Options are
 --path=<base path> (required)
