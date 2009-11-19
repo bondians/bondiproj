@@ -1,4 +1,13 @@
 class Job < ActiveRecord::Base
+  # thinking sphinx 
+  define_index do
+    indexes [name, description], :as => :name
+    indexes ordered_by
+    
+    has due_date
+    
+  end
+  
   attr_accessible :name, :ticket, :description, :due_date, :due_time, :submit_date, :ordered_by, :auth_sig, :department_id, :account_id, :input_person, :received_date,  :workflows_attributes #, :department_attributes
   # :name_attributes, :note_attributes, :completed_attributes, :completed_date_attributes, :job_id_attributes, :workflow, :workflows,
   
@@ -8,8 +17,8 @@ class Job < ActiveRecord::Base
   belongs_to :department
   belongs_to :account
   
-  accepts_nested_attributes_for :workflows, :allow_destroy => true, :reject_if => proc { |attributes| attributes["step_needed"] == "0" } 
-
+  accepts_nested_attributes_for :workflows, :allow_destroy => true, :reject_if => proc { |attributes| attributes["step_needed"] == "0" }
+  
  # accepts_nested_attributes_for :department #, :allow_destroy => false #, :reject_if => proc { |attributes| attributes["step_needed"] == "0" } 
   
   #named_scope :not_shipped, lambda { { :job => self, :name => 'Ship', :completed => false}}
