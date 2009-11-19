@@ -13,7 +13,11 @@ require "getopt/long"
         ["--path", "-p", Getopt::REQUIRED],
         ["--cull", "-c", Getopt::BOOLEAN]
     )
-return "You Must Specify a path \"--path=\" " unless opt[:path]
+
+puts "Options are --full (ignore dates)  --path (required base of search path) --cull (not implemented) "
+
+raise "You Must Specify a path \"--path=\" " unless opt[:path]
+
 
 @genres = Genre.all
 @artists = Artist.all
