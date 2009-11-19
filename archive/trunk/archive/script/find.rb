@@ -33,6 +33,13 @@ OptionParser.new do |opts|
       options.full = f
     end
     
+    #environment
+    opts.on("-d", "--dev", "Development Environment") do |d|
+        options.dev = d
+    end
+
+RAILS_ENV = (options.dev ? "development", "production")
+    
 end.parse!
 
 
