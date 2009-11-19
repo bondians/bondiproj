@@ -21,6 +21,7 @@ OptionParser.new do |opts|
     opts.banner = "Usage: find.rb [options]"
     options.path = DEFAULT_PATH
     options.full = false
+    options.dev  = false
 
     # Mandatory argument.
     opts.on("-p", "--path \"<path>\"",
