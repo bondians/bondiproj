@@ -17,6 +17,7 @@ require 'optparse'
 options = OpenStruct.new
 
 OptionParser.new do |opts|
+    opts.banner = "Usage: find.rb [options]"
     options.path = "/Volumes/MajorTuneage/"
     options.full = false
 
