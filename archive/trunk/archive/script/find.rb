@@ -13,12 +13,13 @@ require 'ostruct'
 require 'pp'
 require 'optparse'
 
+DEFAULT_PATH = "/Volumes/MajorTuneage/"
 ##########################  Parse Options and all that crap
 options = OpenStruct.new
 
 OptionParser.new do |opts|
     opts.banner = "Usage: find.rb [options]"
-    options.path = "/Volumes/MajorTuneage/"
+    options.path = DEFAULT_PATH
     options.full = false
 
     # Mandatory argument.
@@ -188,7 +189,7 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
   end
     
     @currun.completed = Time.now
-    @currun.success = true
+    @currun.success = true if options.path == DEFAULT_PATH
     @currun.save
     
     system "rake thinking_sphinx:index RAILS_ENV=production"
