@@ -124,6 +124,8 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
                         end
                     else
                         puts "Song in DB #{attributes[:title]}"
+                        @currun.added += 1
+                        @currun.save
                     end
         
                 when "m4a", "m4p"
