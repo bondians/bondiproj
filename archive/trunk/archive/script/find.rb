@@ -14,7 +14,10 @@ require "getopt/long"
         ["--cull", "-c", Getopt::BOOLEAN]
     )
 
-puts "Options are --full (ignore dates)  --path (required base of search path) --cull (not implemented) "
+puts "Options are
+--path=<base path> (required)
+--full (ignore dates)
+--cull (not implemented) "
 
 raise "You Must Specify a path \"--path=\" " unless opt[:path]
 
@@ -24,7 +27,8 @@ raise "You Must Specify a path \"--path=\" " unless opt[:path]
 @albums = Album.all
 @songs = Song.all
 @types = Songtype.all
-
+@lastrun = Finder.lastrun
+@currentrun = Finder.new
 DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
 
 ### Important models, all have Timestamps plus whatever is below.
@@ -37,6 +41,7 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
 ###
 
   Find.find(opt[:path]) do |path|
+      next if !opt[:full] && 
       if FileTest.file?(path) && !path.match(".AppleDouble")
         kind = path.split(".")
         case kind.last.downcase
