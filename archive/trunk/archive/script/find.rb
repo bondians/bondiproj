@@ -188,7 +188,7 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
   end
     
     @currun.completed = Time.now
-    @currun.success = True
+    @currun.success = true
     @currun.save
     
     system "rake thinking_sphinx:start RAILS_ENV=production"
