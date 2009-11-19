@@ -15,21 +15,22 @@ require 'optparse'
 
 ##########################  Parse Options and all that crap
 options = OpenStruct.new
-options.path = "/Volumes/MajorTuneage/"
-options.full = false
 
+OptionParser.new do |opts|
+    options.path = "/Volumes/MajorTuneage/"
+    options.full = false
 
-# Mandatory argument.
-opts.on("-p", "--path \"<path>\"",
-        "Specify the path to start searching") do |pth|
-  options.path = pth
-end
+    # Mandatory argument.
+    opts.on("-p", "--path \"<path>\"",
+            "Specify the path to start searching") do |pth|
+      options.path = pth
+    end
 
-# Boolean switch.
-opts.on("-f", "--[no-]full", "Ignore Dates") do |f|
-  options.verbose = f
-end
-
+    # Boolean switch.
+    opts.on("-f", "--[no-]full", "Ignore Dates") do |f|
+      options.verbose = f
+    end
+    
 end.parse!
 
 
