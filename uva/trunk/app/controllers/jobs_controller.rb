@@ -6,14 +6,18 @@ class JobsController < ApplicationController
 
   def index
     if params[:show] == "all"
+      @thisView = "Jobs: All"
       @jobs = Job.all :order => :due_date
     elsif params[:show] == "shipped"
+      @thisView = "Jobs: Completed"
       @jobs = Workflow.shipped.collect { |flow| Job.find(flow.job_id) }       
       @jobs.sort! { |a,b| a.due_date <=> b.due_date }
     elsif params[:search] != nil
+      @thisView = "Jobs: Search Results - #{params[:search]}"
       @jobs = Job.search(params[:search])
       #@items = Item.search(params[:search]
-    else 
+    else
+      @thisView = "Jobs: In Process" 
       @jobs = Workflow.newunshipped.concat(Workflow.unshipped).collect { |flow| Job.find(flow.job_id) }
       @jobs.sort! { |a,b| a.due_date <=> b.due_date }          
     end
