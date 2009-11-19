@@ -29,7 +29,7 @@ OptionParser.new do |opts|
 
     # Boolean switch.
     opts.on("-f", "--[no-]full", "Ignore Dates") do |f|
-      options.verbose = f
+      options.full = f
     end
     
 end.parse!
