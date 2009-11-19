@@ -5,6 +5,7 @@ class JobsController < ApplicationController
   end
 
   def index
+    # FIXME remove this stuff when you're satisfied it's not the way to go, probably real soon
 #   if params[:show] == "all"
 #     @thisView = "Jobs: All"
 #     @jobs = Job.all :order => :due_date
