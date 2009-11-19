@@ -27,8 +27,11 @@ raise "You Must Specify a path \"--path=\" " unless opt[:path]
 @albums = Album.all
 @songs = Song.all
 @types = Songtype.all
+
 @lastrun = Finder.lastrun
-@currentrun = Finder.new
+puts "\n\nWas last run #{@lastrun.started} and #{@lastrun.added} songs were processed\n\n"
+@currun = Finder.fresh
+
 DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
 
 ### Important models, all have Timestamps plus whatever is below.
@@ -41,7 +44,9 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
 ###
 
   Find.find(opt[:path]) do |path|
-      next if !opt[:full] && 
+      ########### This currently sucks, becaus i eventually want to modify files.. however, this is no problem
+      ########### Currently as that is not implemented it <should> be fixd when file modding becomes possible
+      next if !opt[:full] && (@finder.started < File.ctime path)
       if FileTest.file?(path) && !path.match(".AppleDouble")
         kind = path.split(".")
         case kind.last.downcase
@@ -162,7 +167,14 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
         end
       else
         puts "."
+        @currun.added += 1
+        @currun.save
     end
   end
     
- 
+    @currun.completed = Time.now
+    @currun.success = True
+    @currun.save
+    
+    system "rake thinking_sphinx:start RAILS_ENV=production"
+    system "rake thinking_sphinx:restart RAILS_ENV=production"
