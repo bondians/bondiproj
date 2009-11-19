@@ -2,6 +2,7 @@
 
 require File.expand_path(__FILE__ + "/../../config/environment")
 require "#{RAILS_ROOT}/lib/tagger"
+require "#{RAILS_ROOT}/lib/dbconst"
 
 require 'find'
 require 'id3lib'
@@ -104,7 +105,7 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
                         genre_tag  =  tag.genre ? Iconv.conv('UTF-8', 'LATIN1', tag.genre) : "Unclassifiable"
                         if genre_tag.match(/^\(\d+\)$/)
                             num = genre_tag.gsub("(","").gsub(")","").to_i
-                            genre_tag = Tagger::GENRES[num]
+                            genre_tag = DBConstant::GENRES[num]
                         end
                         genre = @genres.find{|g| g.name == genre_tag} || Genre.new({:name=>genre_tag})
                         if genre.new_record?
