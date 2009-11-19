@@ -38,7 +38,7 @@ OptionParser.new do |opts|
         options.dev = d
     end
 
-RAILS_ENV = (options.dev ? "development", "production")
+RAILS_ENV = (options.dev ? "development" : "production")
     
 end.parse!
 
