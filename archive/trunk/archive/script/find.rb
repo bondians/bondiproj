@@ -7,16 +7,30 @@ require 'find'
 require 'id3lib'
 require 'mp4info'
 require 'ruby-debug'
-require 'getopt/long'
+require 'optparse'
+require 'optparse/time'
+require 'ostruct'
+require 'pp'
+require 'optparse'
 
-opt = Getopt::Long.getopts(["--full", "-f", Getopt::BOOLEAN], ["--path", "-p", Getopt::REQUIRED], ["--cull", "-c", Getopt::BOOLEAN] )
+##########################  Parse Options and all that crap
+options = OpenStruct.new
+options.path = "/Volumes/MajorTuneage/"
+options.full = false
 
-puts "Options are
---path=<base path> (required)
---full (ignore dates)
---cull (not implemented) "
 
-raise "You Must Specify a path \"--path=\" " unless opt[:path]
+# Mandatory argument.
+opts.on("-p", "--path \"<path>\"",
+        "Specify the path to start searching") do |pth|
+  options.path = pth
+end
+
+# Boolean switch.
+opts.on("-f", "--[no-]full", "Ignore Dates") do |f|
+  options.verbose = f
+end
+
+end.parse!
 
 
 @genres = Genre.all
@@ -40,10 +54,10 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
 #        volume: float, fade_in: boolean, user_id: integer, archive_number: integer, file: text)
 ###
 
-  Find.find(opt[:path]) do |path|
+  Find.find(options.path) do |path|
       ########### This currently sucks, becaus i eventually want to modify files.. however, this is no problem
       ########### Currently as that is not implemented it <should> be fixd when file modding becomes possible
-      next if (!opt[:full] && (@finder.started < File.ctime(path)))
+      next if (!options.full && (@finder.started < File.ctime(path)))
       if FileTest.file?(path) && !path.match(".AppleDouble")
         kind = path.split(".")
         case kind.last.downcase
