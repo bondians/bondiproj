@@ -30,12 +30,22 @@
         <%- end -%>
       <div id="sidebar1">
         <%= link_to "Show Jobs In Process", :controller => "jobs", :action => "index", :show => "incomplete"  %><br />
-        <%= link_to "Show all jobs", :controller => "jobs", :action => "index", :show => "all" %>
-        <%# form_tag (search_path, :method => "get" ) do %>
-          <%#= label_tag :search %><br />
-          <%#= text_field_tag (:s) %><br />
-          <%#= submit_tag("Search Jobs", :name => nil) %>
-        <%# end %>
+        <%= link_to "Show all jobs", :controller => "jobs", :action => "index", :show => "all" %><br />
+        <hr />
+				<% form_tag (jobs_path, :method => "get" ) do %>
+          <%= label_tag :search %><br />
+          <%= text_field_tag (:search) %><br />
+          <%= submit_tag("Search Jobs", :controller => "jobs", :action => "index", :name => nil ) %>
+        <% end %>
+				<hr />
+				<h3>Workflow:</h3>
+				<h5>Show only jobs with the next step of:</h5>
+				<%= link_to "Design", :controller => "jobs", :action => "index", :show => "design" %><br />
+				<%= link_to "Copy", :controller => "jobs", :action => "index", :show => "copy" %><br />
+				<%= link_to "Press", :controller => "jobs", :action => "index", :show => "press" %><br />
+				<%= link_to "Bindry", :controller => "jobs", :action => "index", :show => "bindry" %><br />
+				<%= link_to "Ship", :controller => "jobs", :action => "index", :show => "ship" %><br />
+				<%= link_to "Shipped", :controller => "jobs", :action => "index", :show => "shipped" %><br />
       </div>
       <div id="mainContent">
         <%= yield %>

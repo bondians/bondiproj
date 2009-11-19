@@ -5,5 +5,5 @@ class Workflow < ActiveRecord::Base
   
   named_scope :unshipped, :conditions => {:name => 'Ship', :completed => false }
   named_scope :newunshipped, :conditions => {:name => 'Ship', :completed => nil }
-  named_scope :shipped, :conditions => {:name => 'Ship', :completed =>  '1' }
+  named_scope :shipped, :conditions => {:name => 'Ship', :completed =>  true }
 end

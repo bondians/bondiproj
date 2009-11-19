@@ -13,7 +13,12 @@ class Job < ActiveRecord::Base
  # accepts_nested_attributes_for :department #, :allow_destroy => false #, :reject_if => proc { |attributes| attributes["step_needed"] == "0" } 
   
   #named_scope :not_shipped, lambda { { :job => self, :name => 'Ship', :completed => false}}
-  
+  public
+    def self.search(search)
+     Job.all :conditions => ['name like ?', "%#{search}%"],
+               :order => :due_date
+    end
+
   def not_shipped
      Workflow.find(:all, :conditions => {"job_id = ?" => self, "name = ?" => "Ship", "completed = ? " => false } )
   end
@@ -52,10 +57,4 @@ class Job < ActiveRecord::Base
   end
 end
 
-def self.search(search)
-  paginate :per_page => 100, :page => 1,
-           :conditions => ['name like ?', "%#{search}%"],
-           :include => :prices,
-           :order => :sort
-end
 
