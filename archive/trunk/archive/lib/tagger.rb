@@ -86,6 +86,10 @@ class Tagger
     return nil
   end
   
+  def type
+    return @type
+  end
+  
   def size
     File.size(@filename)
   end
