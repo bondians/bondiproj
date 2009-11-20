@@ -87,7 +87,7 @@ class Tagger
   end
   
   def type
-    return @type
+    return @filename.split(".").downcase
   end
   
   def size
