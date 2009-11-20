@@ -149,7 +149,7 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
                             puts "Failed to save MP3 Titled #{attributes[:title]}"
                         end
                     else
-                        puts "Song in DB #{attributes[:title]}"
+                    puts "Song in DB #{attributes[:title]} #{@songs.find{|s| s.file == attributes[:file]}.id}"
                         @currun.added += 1
                         @currun.save
                     end
@@ -222,7 +222,7 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
                         puts "Failed to save MP3 Titled #{attributes[:title]}"
                     end
                   else
-                    puts "Song in DB #{attributes[:title]}"
+                    puts "Song in DB #{attributes[:title]} #{@songs.find{|s| s.file == attributes[:file]}.id}"
                   end
             else
                 puts "unknown"
