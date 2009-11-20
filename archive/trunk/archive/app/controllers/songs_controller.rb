@@ -28,7 +28,7 @@ class SongsController < ApplicationController
         format.send(@song.songtype.identifier) { send_song_file @song }
       end
       
-      format.cover {send_song_cover @tags} if @tags.cover
+      format.jpg {send_song_cover @tags} if @tags.cover
     end
   end
 
