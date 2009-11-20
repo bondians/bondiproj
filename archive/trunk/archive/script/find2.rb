@@ -80,7 +80,7 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
                 attributes[:size] = tag.size
                 attributes[:year] = tag.year
                 attributes[:track] = tag.track || 0
-                attributes[:songtype] = @types.find{|t| t.identifier == tag.kind}
+                attributes[:songtype] = @types.find{|t| t.identifier == tag.type}
             
                 ## Try to find old archive _id
                 ##### Relegated to legacy
