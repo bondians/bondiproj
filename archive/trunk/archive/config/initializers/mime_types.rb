@@ -6,6 +6,8 @@
 
     Mime::Type.register "audio/x-mpegurl", :m3u
     Mime::Type.register "image/jpeg", :cover
+    Mime::Type.register "image/jpeg", :jpg
+
     
     Songtype.all.each do |type|
       Mime::Type.register type.mime_type, type.identifier
