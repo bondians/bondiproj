@@ -9,7 +9,7 @@ class Song < ActiveRecord::Base
   attr_accessor :form_idx
   
   def <=> (other)
-    track <=> other.track
+    track.to_i <=> other.track.to_i
   end
   
   def formatted_id
