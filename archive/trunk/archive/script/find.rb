@@ -159,7 +159,7 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
     @currun.success = true if options.path == DEFAULT_PATH
     @currun.save
     
-    system "rake thinking_sphinx:index RAILS_ENV=production"
-    system "rake thinking_sphinx:restart RAILS_ENV=production"
+    system "rake thinking_sphinx:index RAILS_ENV=\"#{RAILS_ENV}\""
+    system "rake thinking_sphinx:restart RAILS_ENV=\"#{RAILS_ENV}\""
     
     
