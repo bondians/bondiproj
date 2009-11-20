@@ -17,6 +17,7 @@ class SongsController < ApplicationController
   # GET /songs/1.xml
   def show
     @song = Song.find(params[:id])
+    @tags = Tagger.new @song.file
     respond_to do |format|
       format.html
       format.m3u
@@ -27,7 +28,7 @@ class SongsController < ApplicationController
         format.send(@song.songtype.identifier) { send_song_file @song }
       end
       
-      format.cover {send_song_cover @song}
+      format.cover {send_song_cover @tags} if @tags.cover
     end
   end
 
@@ -51,7 +52,7 @@ class SongsController < ApplicationController
   # POST /songs.xml
   def create
     @song = Song.new(params[:song])
-
+    
     respond_to do |format|
       if @song.save
         flash[:note] = 'Song was successfully created.'
@@ -99,8 +100,7 @@ class SongsController < ApplicationController
     send_file song.file, :type => song.songtype.mime_type, :disposition => "inline", :x_sendfile => true
   end
   
-  def send_song_cover(song)
-    tags = Tagger.new(song.file)
+  def send_song_cover(tags)
     if tags.cover
       send_data tags.cover, :type => tags.covertype, :disposition => 'inline'
     end

@@ -63,8 +63,9 @@
   <%=h @song.fade_in %>
 </p>
 
-<IMG SRC="<%= "#{@song.id}.cover" %>">
-
+<% if @tags.cover %>
+  <IMG SRC="<%= "#{@song.id}.cover" %>">
+<% end %>
 <br />
 Your Selection:
 <br />
