@@ -134,9 +134,6 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
                 attributes[:album] = album
                 
                 song = Song.new(attributes)
-                debugger
-                1
-                1
                 if song.save
                     puts "Saved #{tag.type.upcase} Titled #{attributes[:title]}"
                     @songs.unshift(song)
