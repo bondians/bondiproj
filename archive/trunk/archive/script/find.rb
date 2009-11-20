@@ -189,7 +189,10 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
                         if !new 
                             album = choices.find { |a| a.artist == artist }
                             while !album
-                                puts "\n Album Doesn't match artist plese select an action\n"
+                                puts "\n Album Doesn't match artist plese select an action for:
+Title:  #{attribues[:title]}
+Artist: #{artist.name}
+File:   #{attributes[:file]}"
                                 choices.each_index { |i| puts "enter #{i} to select #{choices[i].name} by #{choices[i].artist.name}\n" }
                                 puts "enter n for new\n"
                                 a = gets.upcase.chomp
