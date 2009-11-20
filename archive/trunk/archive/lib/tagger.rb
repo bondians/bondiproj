@@ -105,6 +105,10 @@ class Tagger
   
   #{:textenc=>0, :data=>"###############scads of data###########", :description=>"", :imageformat=>"", :mimetype=>"image/jpeg", :id=>:APIC, :picturetype=>3}
   def cover
+    debugger
+    1
+    1
+    
     return @tag.cover if @tag.cover
     cov = @tag.find {|f| f[:id] == :APIC }
     return cov[:data] if cov
