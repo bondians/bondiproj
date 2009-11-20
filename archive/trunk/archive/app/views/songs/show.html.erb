@@ -64,7 +64,7 @@
 </p>
 
 <% if @tags.cover %>
-  <p> <img src="http://archive.deepbondi.net/songs/<%= @song.id %>.jpg", alt="Picture"> </p>
+  <%= image_tag formatted_song_path(@song, :jpg) %> 
 <% end %>
 <br />
 Your Selection:
