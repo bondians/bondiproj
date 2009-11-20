@@ -42,6 +42,10 @@ class MP4Fixer
     @tag.COVR
   end
   
+  def covertype
+    "image/jpeg"
+  end
+  
 end
 
 class Tagger
