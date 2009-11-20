@@ -116,8 +116,23 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
                         
                         ##Album
                         album_tag  =  tag.album ? Iconv.conv('UTF-8', 'LATIN1', tag.album) : "<no album>"
-                        album = @albums.find{|a| a.name == album_tag} || Album.new({:name=>album_tag, :genre=> genre, :artist=>artist})
-                        if album.new_record?
+                        choices = @albums.select{|a| a.name == album_tag}
+                        new = (choices.empty? ? true : false)
+                        if !new 
+                            album = choices.find { |a| a.artist == artist }
+                            while !album
+                                puts "\n Album Doesn't match artist plese select an action\n"
+                                choices.each_index { |i| puts "enter #{i} to select #{choices[i].name} by #{choices[i].artist.name}\n" }
+                                puts "enter n for new\n"
+                                a = gets.upcase.chomp
+                                break if a == "N"
+                                album = choices[a.to_i]
+                                new = false
+                            end
+                        end
+                        
+                        if new
+                            album = Album.new({:name=>album_tag, :genre=> genre, :artist=>artist})
                             album.save
                             @albums.unshift(album)
                         end
