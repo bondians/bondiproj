@@ -18,3 +18,4 @@ config.action_mailer.raise_delivery_errors = false
 
 require 'will_paginate'
 require 'ruby-debug'
+require 'lib/tagger'

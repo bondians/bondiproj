@@ -17,7 +17,7 @@ class SongsController < ApplicationController
   # GET /songs/1.xml
   def show
     @song = Song.find(params[:id])
-    
+    @tags = Tagger.new(@song.file)
     respond_to do |format|
       format.html
       format.m3u
