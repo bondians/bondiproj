@@ -105,18 +105,14 @@ class Tagger
   
   #{:textenc=>0, :data=>"###############scads of data###########", :description=>"", :imageformat=>"", :mimetype=>"image/jpeg", :id=>:APIC, :picturetype=>3}
   def cover
-    debugger
-    1
-    1
-    
-    return @tag.cover if @tag.cover
+    return @tag.cover if @tag.respond_to?('cover')
     cov = @tag.find {|f| f[:id] == :APIC }
     return cov[:data] if cov
     nil
   end
   
   def covertype
-    return @tag.covertype if @tag.covertype
+    return @tag.covertype if @tag.respond_to?('covertype')
     cov = @tag.find {|f| f[:id] == :APIC }
     return cov[:mimetype] if cov
     nil
