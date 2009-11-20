@@ -5,6 +5,7 @@
 # Mime::Type.register_alias "text/html", :iphone
 
     Mime::Type.register "audio/x-mpegurl", :m3u
+    Mime::Type.register "image/jpeg", :cover
     
     Songtype.all.each do |type|
       Mime::Type.register type.mime_type, type.identifier
