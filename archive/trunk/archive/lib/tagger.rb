@@ -98,6 +98,14 @@ class Tagger
     File.size(@filename)
   end
   
+  #{:textenc=>0, :data=>"###############scads of data###########", :description=>"", :imageformat=>"", :mimetype=>"image/jpeg", :id=>:APIC, :picturetype=>3}
+  def cover
+    @tag.find {|f| f[:id] == :APIC }[:data]
+  end
+  
+  def covertype
+    @tag.find {|f| f[:id] == :APIC }[:mimetype]
+  end
   
   def lookup_genre
     genre_tag = self.genre
