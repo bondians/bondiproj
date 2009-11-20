@@ -135,12 +135,12 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
                 
                 song = Song.new(attributes)
                 if song.save
-                    puts "Saved #{tag.kind.upcase} Titled #{attributes[:title]}"
+                    puts "Saved #{tag.type.upcase} Titled #{attributes[:title]}"
                     @songs.unshift(song)
                     @currun.added += 1
                     @currun.save
                 else
-                    puts "Failed to save #{tag.kind.upcase} Titled #{attributes[:title]}"
+                    puts "Failed to save #{tag.type.upcase} Titled #{attributes[:title]}"
                 end
             else
                 puts "Song in DB #{attributes[:title]} #{@songs.find{|s| s.file == attributes[:file]}.id}"
