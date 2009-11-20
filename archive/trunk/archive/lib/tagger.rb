@@ -38,6 +38,10 @@ class MP4Fixer
     @tag.TRKN
   end
   
+  def cover
+    @tag.COVR
+  end
+  
 end
 
 class Tagger
