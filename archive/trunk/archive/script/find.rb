@@ -1,9 +1,5 @@
 #!/usr/bin/env ruby
 
-require File.expand_path(__FILE__ + "/../../config/environment")
-require "#{RAILS_ROOT}/lib/tagger"
-
-
 require 'find'
 require 'id3lib'
 require 'mp4info'
@@ -36,13 +32,20 @@ OptionParser.new do |opts|
     end
     
     #environment
-#    opts.on("-d", "--dev", "Development Environment") do |d|
-#        options.dev = d
-#    end
+    opts.on("-d", "--dev", "Development Environment") do |d|
+        options.dev = d
+    end
     
 end.parse!
 
-#RAILS_ENV = (options.dev ? "development" : "production")
+RAILS_ENV = (options.dev ? "development" : "production")
+
+require File.expand_path(__FILE__ + "/../../config/environment")
+require "#{RAILS_ROOT}/lib/tagger"
+
+
+
+
 
 @genres = Genre.all
 @artists = Artist.all
