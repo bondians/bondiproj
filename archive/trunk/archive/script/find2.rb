@@ -70,21 +70,16 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
       ########### This currently sucks, becaus i eventually want to modify files.. however, this is no problem
       ########### Currently as that is not implemented it <should> be fixd when file modding becomes possible
       if (options.full || (@lastrun.started < File.ctime(path)))
-          if FileTest.file?(path) && !path.match(".AppleDouble")
-            kind = path.split(".")
-            case kind.last.downcase
-                when "mp3"
-                  tag = ID3Lib::Tag.new(path)
-                  
+          if FileTest.file?(path) && tag = Tagger.new(path)
                     ##Build a song object, while working with the rest
                     attributes = DEFAULTS
                     attributes[:file] = Iconv.conv('UTF-8', 'LATIN1', path)
                     ## Shortcircuit if its already present
                     if !@songs.find{|s| s.file == attributes[:file]}
-                        attributes[:title] = !!tag.title ? Iconv.conv('UTF-8', 'LATIN1', tag.title) : "<no title>"
-                        attributes[:size] = File.size(path)
+                        attributes[:title] = tag.title
+                        attributes[:size] = tag.size
                         attributes[:year] = tag.year
-                        attributes[:track] = tag.track ? tag.track.split("/").first.to_i : nil
+                        attributes[:track] = tag.track || 0
                         attributes[:songtype] = @types.find{|t| t.identifier == kind.last.downcase}
                     
                         ## Try to find old archive _id
@@ -154,80 +149,6 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
                         @currun.save
                     end
         
-                when "m4a", "m4p"
-                  tag = MP4Info.open(path)
-                  ##Build a song object, while working with the rest
-                  attributes = DEFAULTS
-                  attributes[:file] = Iconv.conv('UTF-8', 'LATIN1', path)
-                  if !@songs.find{|s| s.file == attributes[:file]}
-                    attributes[:title] = !!tag.NAM ? Iconv.conv('UTF-8', 'LATIN1', tag.NAM) : "<no title>"
-                    attributes[:size] = File.size(path)
-                    attributes[:year] = tag.DAY.to_i
-                    attributes[:track] = tag.TRKN ? tag.TRKN.first : nil
-            	attributes[:songtype] = @types.find{|t| t.identifier == kind.last.downcase}
-        
-                    #### Try to find each of the rest of the important fields
-                    ##Artist
-                    artist_tag = tag.ART ? Iconv.conv('UTF-8', 'LATIN1', tag.ART) : "<no artist>"
-                    artist = @artists.find{|a| a.name == artist_tag} || Artist.new({:name=>artist_tag})
-                    if artist.new_record?
-                        artist.save
-                        @artists.unshift(artist)
-                    end
-                    attributes[:artist] = artist
-                    
-                    ##Genre
-                    genre_tag  =  tag.GNRE ? Iconv.conv('UTF-8', 'LATIN1', tag.GNRE) : "Unclassifiable"
-                    genre = @genres.find{|g| g.name == genre_tag} || Genre.new({:name=>genre_tag})
-                    if genre.new_record?
-                        genre.save
-                        @genres.unshift(genre)
-                    end
-                    attributes[:genre] = genre
-                    
-                    ##Album
-                    album_tag  =  tag.ALB ? Iconv.conv('UTF-8', 'LATIN1', tag.ALB) : "<no album>"
-                        choices = @albums.select{|a| a.name == album_tag}
-                        new = (choices.empty? ? true : false)
-                        if !new 
-                            album = choices.find { |a| a.artist == artist }
-                            while !album
-                                puts "\n Album Doesn't match artist plese select an action for:\nTitle:  #{attributes[:title]}\nArtist: #{artist.name}\nFile:   #{attributes[:file]}"
-                                choices.each_index { |i| puts "enter #{i} to select #{choices[i].name} by #{choices[i].artist.name}\n" }
-                                puts "enter n for new\n"
-                                a = gets.upcase.chomp
-                                if a == "N"
-                                    new = true
-                                    break
-                                end
-                                album = choices[a.to_i]
-                                new = false
-                            end
-                        end
-                        
-                        if new
-                            album = Album.new({:name=>album_tag, :genre=> genre, :artist=>artist})
-                            album.save
-                            @albums.unshift(album)
-                        end
-                    attributes[:album] = album
-                    
-                    song = Song.new(attributes)
-                    if song.save
-                        puts "Saved MP3 Titled #{attributes[:title]}"
-                        @songs.unshift(song)
-                        @currun.added += 1
-                        @currun.save
-                    else
-                        puts "Failed to save MP3 Titled #{attributes[:title]}"
-                    end
-                  else
-                    puts "Song in DB #{attributes[:title]} #{@songs.find{|s| s.file == attributes[:file]}.id}"
-                  end
-            else
-                puts "unknown"
-                #puts "#{path} is some other shit!!"
-            end
           else
             puts "."
           end
