@@ -43,7 +43,8 @@ class MP4Fixer
   end
   
   def covertype
-    "image/jpeg"
+    return "image/jpeg" if @tag.COVR
+    nil
   end
   
 end
@@ -104,11 +105,15 @@ class Tagger
   
   #{:textenc=>0, :data=>"###############scads of data###########", :description=>"", :imageformat=>"", :mimetype=>"image/jpeg", :id=>:APIC, :picturetype=>3}
   def cover
-    @tag.find {|f| f[:id] == :APIC }[:data]
+    cov = @tag.find {|f| f[:id] == :APIC }
+    return cov[:data] if cov
+    nil
   end
   
   def covertype
-    @tag.find {|f| f[:id] == :APIC }[:mimetype]
+    cov = @tag.find {|f| f[:id] == :APIC }
+    return cov[:mimetype] if cov
+    nil
   end
   
   def lookup_genre
