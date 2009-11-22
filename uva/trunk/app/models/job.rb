@@ -1,33 +1,38 @@
 class Job < ActiveRecord::Base
-  # thinking sphinx 
-  define_index do
-    indexes [name, description], :as => :name
-    indexes ordered_by
-    
-    has due_date
-  end
-  attr_accessible :name, :ticket, :description, :due_date, :due_time, :submit_date, :ordered_by, :auth_sig, :department_id, :account_id, :input_person, :received_date,  :workflows_attributes #, :department_attributes
-  # :name_attributes, :note_attributes, :completed_attributes, :completed_date_attributes, :job_id_attributes, :workflow, :workflows,
-  
-  validates_presence_of :name, :due_date #, :ordered_by, :submit_date, :received_date, :description, :department_id
-
   has_many :workflows, :dependent => :destroy
   belongs_to :department
   belongs_to :account
   
-  accepts_nested_attributes_for :workflows, :allow_destroy => true, :reject_if => proc { |attributes| attributes["step_needed"] == "0" }
-  
+  attr_accessible :name, :ticket, :description, :due_date, :due_time, :submit_date, :ordered_by, :auth_sig, :department_id, :account_id, :input_person, :received_date,  :workflows_attributes #,
+   
+  validates_presence_of :name, :due_date #, :ordered_by, :submit_date, :received_date, :description, :department_id
+
+  :department_attributes
+    # :name_attributes, :note_attributes, :completed_attributes, :completed_date_attributes, :job_id_attributes, :workflow, :workflows,
+
+    accepts_nested_attributes_for :workflows, :allow_destroy => true, :reject_if => proc { |attributes| attributes["step_needed"] == "0" }
+
+# thinking sphinx 
+  define_index do
+    indexes [name, description], :as => :description
+    # indexes description #], :as => :name
+    indexes ordered_by, :as => :customer
+    indexes  [workflows.note, workflows.name], :as => :workflow_note #added
+    #indexes workflow.name #, :as => :workflow_name #added
+    
+    has due_date
+  end
  # accepts_nested_attributes_for :department #, :allow_destroy => false #, :reject_if => proc { |attributes| attributes["step_needed"] == "0" } 
   
   #named_scope :not_shipped, lambda { { :job => self, :name => 'Ship', :completed => false}}
   public
-    def self.search(search)
+ #   def self.search(search)
       #  (Job.all(:conditions => ['description like ?', "%#{search}%"]).concat(Job.all(:conditions => ['name like ?',"%#{search}%"])).concat(Job.all(:conditions => ['ordered_by like ?',"%#{search}%"])))  #.uniq!.sort! { |a,b| a.due_date <=> b.due_date }
-      (Job.all(:conditions => ['description like ?', "%#{search}%"]).concat(Job.all(:conditions => ['name like ?',"%#{search}%"])).concat(Job.all(:conditions => ['ordered_by like ?',"%#{search}%"]))).uniq.sort { |a,b| a.due_date <=> b.due_date }
+   #   (Job.all(:conditions => ['description like ?', "%#{search}%"]).concat(Job.all(:conditions => ['name like ?',"%#{search}%"])).concat(Job.all(:conditions => ['ordered_by like ?',"%#{search}%"]))).uniq.sort { |a,b| a.due_date <=> b.due_date }
       
       #Job.all(:conditions => ['name like ?', "%#{search}%"]).concat(Job.all(:conditions => ['description like ?', "%#{search}%"])).uniq!.sort! { |a,b| a.due_date <=> b.due_date }
    # Job.all :conditions => ['name like ?', "%#{search}%"] & ['description like ?' "%#{search}"]
-    end
+  #  end
 
   def not_shipped
      Workflow.find(:all, :conditions => {"job_id = ?" => self, "name = ?" => "Ship", "completed = ? " => false } )

@@ -26,7 +26,9 @@ class JobsController < ApplicationController
     #@jobs = Workflow.newunshipped.concat(Workflow.unshipped).collect { |flow| Job.find(flow.job_id) }
     #@jobs = Job.all :order => :due_date 
 #    @jobs
-    @jobs = Job.search params[:search]
+  #  @jobs = ThinkingSphinx.search params[:search] #, :include => :workflow_note
+    @jobs = Job.search params[:search] #, :include => :workflow_note
+  #  @jobs = Job.all
   end
 
 #  def index
