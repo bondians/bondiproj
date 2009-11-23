@@ -43,7 +43,7 @@ class MP4Fixer
   end
   
   def covertype
-    return "image/png" if @tag.cover
+    return "image/jpeg" if @tag.cover
     nil
   end
   
@@ -112,10 +112,9 @@ class Tagger
   end
   
   def covertype
-    return "image/jpeg"
     return @tag.covertype if @tag.respond_to?('covertype')
     cov = @tag.find {|f| f[:id] == :APIC }
-    return cov[:mimetype] if cov
+    return "image/png" if cov
     nil
   end
   
