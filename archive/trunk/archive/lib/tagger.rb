@@ -112,7 +112,7 @@ class Tagger
   end
   
   def covertype
-    return "image/png"
+    return "application/octet-stream"
     return @tag.covertype if @tag.respond_to?('covertype')
     cov = @tag.find {|f| f[:id] == :APIC }
     return cov[:mimetype] if cov
