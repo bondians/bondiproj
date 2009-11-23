@@ -114,7 +114,7 @@ class Tagger
   def covertype
     return @tag.covertype if @tag.respond_to?('covertype')
     cov = @tag.find {|f| f[:id] == :APIC }
-    return "image/png" if cov
+    return cov[:mimetype] if cov
     nil
   end
   
