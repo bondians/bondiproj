@@ -29,6 +29,8 @@ class SongsController < ApplicationController
       end
       
       format.jpg {send_song_cover @tags} if @tags.cover
+      format.png {send_song_cover @tags} if @tags.cover
+
     end
   end
 
