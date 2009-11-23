@@ -64,7 +64,7 @@
 </p>
 
 <% if @tags.cover %>
-  <%= image_tag( formatted_song_path(@song, :jpg), :size => "100x100") %> 
+  <%= link_to (image_tag( formatted_song_path(@song, :jpg), :size => "100x100"), song_path(:jpg)) %> 
 <% end %>
 <br />
 Your Selection:
