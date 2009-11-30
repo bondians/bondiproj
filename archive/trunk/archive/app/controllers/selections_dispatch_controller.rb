@@ -9,6 +9,10 @@ class SelectionsDispatchController < ApplicationController
       Playlist.add_songs_to_playlist(songs, playlist)
       redirect_to(playlist)
 
+    when "Tar"
+      send_data( system( "/bin/tar cvhfs - #{songs}" ), :filename => 'songs.tar', :type => :tar)
+      redirect_to(playlist)
+      
     when "Remove from Playlist"
       Playlist.remove_songs_from_playlist(songs, playlist)
       redirect_to(playlist)
