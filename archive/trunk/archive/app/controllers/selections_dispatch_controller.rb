@@ -3,6 +3,7 @@ class SelectionsDispatchController < ApplicationController
     ## i need these, make sure you pull yours out safely
     songs = params[:songs]
     playlist = Playlist.find(params[:playlist][:id]) if params[:playlist]
+    playlist ||= Playlist.first
     
     case params[:submit]
     when "Add to Playlist"
@@ -12,8 +13,7 @@ class SelectionsDispatchController < ApplicationController
     when "Tar"
       files = songs.collect {|s| s.file.gsub(/^[\/]/,"")}
       data = IO.popen("cd / ; /bin/tar cvhfs - \"#{files.join "\" \""}\"" )
-      render :text => data
-      #send_data( data, :filename => 'songs.tar', :type => :tar)
+      send_data( data, :filename => 'songs.tar', :type => :tar)
       redirect_to(playlist)
       
     when "Remove from Playlist"
