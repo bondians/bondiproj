@@ -104,7 +104,7 @@ class SongsController < ApplicationController
   
   def send_song_cover(tags)
     if tags.cover
-      send_data tags.cover, :type => tags.covertype, :disposition => 'inline'
+      send_data tags.cover, :type => tags.covertype, :disposition => "inline"
     end
   end
   
