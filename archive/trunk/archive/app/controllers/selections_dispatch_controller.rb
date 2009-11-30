@@ -14,7 +14,7 @@ class SelectionsDispatchController < ApplicationController
       data = IO.popen("cd / ; /bin/tar cvhfs - \"#{files.join "\" \""}\"" )
       render :text => data
       #send_data( data, :filename => 'songs.tar', :type => :tar)
-      #redirect_to(playlist)
+      redirect_to(playlist)
       
     when "Remove from Playlist"
       Playlist.remove_songs_from_playlist(songs, playlist)
