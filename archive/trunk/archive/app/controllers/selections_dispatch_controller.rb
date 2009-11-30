@@ -11,7 +11,8 @@ class SelectionsDispatchController < ApplicationController
 
     when "Tar"
       files = songs.each {|s| print '#{s.file}'}
-      send_data( system( "/bin/tar cvhfs - #{files}" ), :filename => 'songs.tar', :type => :tar)
+      data = system( "/bin/tar cvhfs - #{files}" )
+      send_data( data, :filename => 'songs.tar', :type => :tar)
       redirect_to(playlist)
       
     when "Remove from Playlist"
