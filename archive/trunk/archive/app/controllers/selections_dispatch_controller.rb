@@ -11,7 +11,7 @@ class SelectionsDispatchController < ApplicationController
 
     when "Tar"
       files = songs.each {|s| print '#{s.file}'}
-      data = system( "/bin/tar cvhfs - \"#{files.join "\" \""}\"" )
+      data = IO.popen("/bin/tar cvhfs - \"#{files.join "\" \""}\"" )
       send_data( data, :filename => 'songs.tar', :type => :tar)
       redirect_to(playlist)
       
