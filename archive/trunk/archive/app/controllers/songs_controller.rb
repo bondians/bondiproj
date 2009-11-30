@@ -18,6 +18,8 @@ class SongsController < ApplicationController
   def show
     @song = Song.find(params[:id])
     @tags = Tagger.new @song.file
+    @songs = params[:songs]
+    
     respond_to do |format|
       format.html
       format.m3u
@@ -30,6 +32,7 @@ class SongsController < ApplicationController
       
       format.jpg {send_song_cover @tags} if @tags.cover
       format.png {send_song_cover @tags} if @tags.cover
+      format.tar {send_song_tar @songs}
 
     end
   end
@@ -106,6 +109,12 @@ class SongsController < ApplicationController
     if tags.cover
       send_data tags.cover, :type => tags.covertype, :disposition => "inline"
     end
+  end
+  
+  def send_song_tar(songs)
+      files = songs.collect {|s| Song.find(s).file.gsub(/^[\/]/,"")}
+      data = IO.popen("cd / ; /bin/tar cvhfs - \"#{files.join "\" \""}\"" ).close
+      send_data( data, :filename => 'songs.tar', :type => :tar)
   end
   
   def order_with_default(column, direction)
