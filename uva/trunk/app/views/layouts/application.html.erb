@@ -29,7 +29,7 @@
           <h1><%=h yield(:title) %></h1>
         <%- end -%>
       <div id="sidebar1">
-        <%= link_to "Show Jobs In Process", :controller => "jobs", :action => "index", :search => "nuvera"  %><br />
+        <%= link_to "Show Jobs In Process", :controller => "jobs", :action => "index"  %><br />
         <%= link_to "Show all jobs", jobs_path %><%#= link_to "Show all jobs", :controller => "jobs", :action => "index" %><br />
         <hr />
 					<p>

@@ -27,7 +27,11 @@ class JobsController < ApplicationController
     #@jobs = Job.all :order => :due_date 
 #    @jobs
   #  @jobs = ThinkingSphinx.search params[:search] #, :include => :workflow_note
+  if params[:search].nil?
+    @jobs = Job.all :order => :due_date
+  else
     @jobs = Job.search params[:search] #, :include => :workflow_note
+  end
   #  @jobs = Job.all
   end
 
