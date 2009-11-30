@@ -114,6 +114,7 @@ class SongsController < ApplicationController
   def send_song_tar(songs)
       files = songs.collect {|s| Song.find(s).file.gsub(/^[\/]/,"")}
       data = IO.popen("cd / ; /bin/tar cvhfs - \"#{files.join "\" \""}\"" ).readlines
+      Process.wait
       send_data( data, :filename => 'songs.tar', :type => :tar)
   end
   
