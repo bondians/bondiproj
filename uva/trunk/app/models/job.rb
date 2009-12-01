@@ -14,7 +14,7 @@ class Job < ActiveRecord::Base
 
 # thinking sphinx 
   define_index do
-    indexes [name, description], :as => :description
+    indexes [name, description, ticket], :as => :description
     # indexes description #], :as => :name
     indexes ordered_by, :as => :customer
     indexes  [workflows.note, workflows.name], :as => :workflow_note #added
