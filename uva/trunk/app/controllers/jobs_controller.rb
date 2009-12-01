@@ -60,7 +60,7 @@ class JobsController < ApplicationController
     @job.workflows.build :name => "Design", :order => 10
     @job.workflows.build :name => "Copy" , :order => 70
     @job.workflows.build :name => "Press", :order => 80
-    @job.workflows.build :name => "Bindry", :order => 90
+    @job.workflows.build :name => "Bindery", :order => 90
     @job.workflows.build :name => "Ship", :order => 100, :step_needed => "1"
    # @job.department.build
   end
