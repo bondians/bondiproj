@@ -85,6 +85,39 @@
 	-khtml-user-select: none;
 }
 
+.AccordionPanelTabP {
+	background-color: #CCCC00;
+	border-top: solid 1px black;
+	border-bottom: solid 1px gray;
+	margin: 0px;
+	padding: 2px;
+	cursor: pointer;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+}
+
+.AccordionPanelTabB {
+	background-color: #CCCC00;
+	border-top: solid 1px black;
+	border-bottom: solid 1px gray;
+	margin: 0px;
+	padding: 2px;
+	cursor: pointer;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+}
+
+.AccordionPanelTabS {
+	background-color: #CCCC00;
+	border-top: solid 1px black;
+	border-bottom: solid 1px gray;
+	margin: 0px;
+	padding: 2px;
+	cursor: pointer;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+}
+
 /* This is the selector for a Panel's Content area. It's important to note that
  * you should never put any padding on the panel's content area if you plan to
  * use the Accordions panel animations. Placing a non-zero padding on the content
@@ -109,7 +142,27 @@
  * from panels as the user clicks on the tabs within the Accordion.
  */
 .AccordionPanelOpen .AccordionPanelTab {
-	background-color: #EEEEEE;
+	background-color: #00FF00;
+}
+
+.AccordionPanelOpen .AccordionPanelTabD {
+	background-color: #00FF00;
+}
+
+.AccordionPanelOpen .AccordionPanelTabC {
+	background-color: #00FF00;
+}
+
+.AccordionPanelOpen .AccordionPanelTabP {
+	background-color: #00FF00;
+}
+
+.AccordionPanelOpen .AccordionPanelTabB {
+	background-color: #00FF00;
+}
+
+.AccordionPanelOpen .AccordionPanelTabS {
+	background-color: #00FF00;
 }
 
 /* This is an example of how to change the appearance of the panel tab as the
@@ -131,9 +184,50 @@
 	background-color: #3399FF;
 }
 
+.AccordionFocused .AccordionPanelTabD {
+	background-color: #1111EE;
+}
+
+.AccordionFocused .AccordionPanelTabC {
+	background-color: #11EEEE;
+}
+
+.AccordionFocused .AccordionPanelTabP {
+	background-color: #EEEE11;
+}
+
+.AccordionFocused .AccordionPanelTabB {
+	background-color: #EE5511;
+}
+
+.AccordionFocused .AccordionPanelTabS {
+	background-color: #EE1111;
+}
+
 /* This is an example of how to change the appearance of the panel tab that is
  * currently open when the Accordion has focus.
  */
 .AccordionFocused .AccordionPanelOpen .AccordionPanelTab {
 	background-color: #33CCFF;
 }
+
+.AccordionFocused .AccordionPanelOpen .AccordionPanelTabD {
+	background-color: #0000FF;
+}
+
+.AccordionFocused .AccordionPanelOpen .AccordionPanelTabC {
+	background-color: #00FFFF;
+}
+
+.AccordionFocused .AccordionPanelOpen .AccordionPanelTabP {
+	background-color: #FFFF00;
+}
+
+.AccordionFocused .AccordionPanelOpen .AccordionPanelTabB {
+	background-color: #FF5500;
+}
+
+.AccordionFocused .AccordionPanelOpen .AccordionPanelTabS {
+	background-color: #FF0000;
+}
+
