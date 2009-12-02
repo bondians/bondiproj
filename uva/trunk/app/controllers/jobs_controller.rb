@@ -5,47 +5,12 @@ class JobsController < ApplicationController
   end
 
   def index
-    # FIXME remove this stuff when you're satisfied it's not the way to go, probably real soon
-#   if params[:show] == "all"
-#     @thisView = "Jobs: All"
-#     @jobs = Job.all :order => :due_date
-#   elsif params[:show] == "shipped"
-#     @thisView = "Jobs: Completed"
-#     @jobs = Workflow.shipped.collect { |flow| Job.find(flow.job_id) }       
-#     @jobs.sort! { |a,b| a.due_date <=> b.due_date }
-#   elsif params[:search] != nil
-#     @thisView = "Jobs: Search Results - #{params[:search]}"
-#     @jobs = Job.search(params[:search])
-#     #@items = Item.search(params[:search]
-#   else
-#     @thisView = "Jobs: In Process" 
-#     @jobs = Workflow.newunshipped.concat(Workflow.unshipped).collect { |flow| Job.find(flow.job_id) }
-#      @jobs.sort! { |a,b| a.due_date <=> b.due_date }          
-#    end
-
-    #@jobs = Workflow.newunshipped.concat(Workflow.unshipped).collect { |flow| Job.find(flow.job_id) }
-    #@jobs = Job.all :order => :due_date 
-#    @jobs
-  #  @jobs = ThinkingSphinx.search params[:search] #, :include => :workflow_note
-  if params[:search].nil?
-    @jobs = Job.all :order => :due_date
-  else
-    @jobs = Job.search params[:search] #, :include => :workflow_note
+    if params[:search].nil?
+      @jobs = Job.all :order => :due_date
+    else
+      @jobs = Job.search params[:search] #, :include => :workflow_note
+    end
   end
-  #  @jobs = Job.all
-  end
-
-#  def index
-#    respond_to do |format|
-#      format.html do
-#        @page = params[:page] || 1
-#        @items = Item.search(params[:search], @page)
-#      end
-#      format.pdf do
-#        @items = Item.all :order => :itemtype_id, :include => :prices
-#      end
-#    end
-#  end
 
   
   def show
