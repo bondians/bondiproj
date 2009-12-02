@@ -21,6 +21,8 @@ class JobsController < ApplicationController
   
   def new
     @job = Job.new
+    @accounts = Account.all
+    @departments = Department.all
     @job[:input_person] = current_user.username
     @job.workflows.build :name => "Design", :order => 10
     @job.workflows.build :name => "Copy" , :order => 70
