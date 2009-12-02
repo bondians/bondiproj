@@ -44,6 +44,8 @@ class JobsController < ApplicationController
   end
   
   def edit
+    @accounts = Account.all
+    @departments = Department.all
     @job = Job.find(params[:id])
    # @workflows = Workflow.find(:all, :conditions => ['job_id = ?', @job.id])
     

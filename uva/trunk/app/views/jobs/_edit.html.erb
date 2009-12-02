@@ -49,14 +49,16 @@
      <%= f.check_box :auth_sig %>
    </p>
    <p>
-     <%= f.label :department_name %><br />
-     <%= f.text_field :department_name %>
-     <%#= f.text_field :department_id, :id => "depts", :name => 'depts' %>
-     <%#= div id="departmentChoices" class="autocomplete"></div %>
+     <%= f.label :department_id %><br />
+     <!-- old way of doing it -->
+     <%#= select(:job , :department_id , Department.find(:all).collect {|p| [ p.name, p.id ] }, { :include_blank => true } ) %>
+     <!-- the new hotness -->
+     <%= select(:job , :department_id, options_from_collection_for_select(@departments, :id, :name), { :include_blank => true } ) %>
    </p>
    <p>
      <%= f.label :account_id %><br />
-     <%= f.text_field :account_id %>
+     <!-- really need to javascript these two, to limit what we see in the second (below) based on what's selected in the first (above) -->
+     <%= select(:job, :account_id, options_from_collection_for_select(@accounts, :id, :number), { :include_blank => true } ) %>
    </p>
    </div>
    <div id='workflowinfo'>
