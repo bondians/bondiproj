@@ -23,10 +23,9 @@
      <%= calendar_box 'job', 'due_date', {}, { :daFormat => "%m %d %Y" } %>
    </p>
    <p>
-     <%= f.label :due_time %><br />
-     <%= calendar_box 'job', 'due_time',  { :showsTime => true } %>
-     <%#= calendar_select 'job', 'due_time',
-      {:class => 'datetime'}  %>
+     <%#= f.label :due_time %><br />
+     <%#= calendar_box 'job', 'due_time',  { :showsTime => true } %>
+     <%= time_select 'job', 'due_time'  %>
    </p>
    <p>
      <%= f.label :submit_date %><br />
