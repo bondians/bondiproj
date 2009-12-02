@@ -35,10 +35,13 @@ class JobsController < ApplicationController
   def create
    @job = Job.new(params[:job])
     # raise @jobs.to_yaml
+    @job.department_id = nil if @job.department_id == ""
+    @job.account_id = nil if @job.account_id == ""
     if @job.save
       flash[:notice] = "Successfully created job."
       redirect_to jobs_path
     else
+      flash[:error] = "You must have a 'Name' and a 'Due date' set."
       render :action => 'new'
     end
   end

@@ -51,8 +51,8 @@ class Job < ActiveRecord::Base
   end
   
   def before_save
-   # self.department_id = Department.find_or_create_by_name(self.department_name) unless self.department_name.blank?
-    #raise self.to_yaml
+
+
   end
 
   def after_save
