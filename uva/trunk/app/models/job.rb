@@ -33,14 +33,14 @@ class Job < ActiveRecord::Base
   end
 
 
-   def department_name
-     department.name if department
-   end
-  
-  def department_name=(name)
-    self.department = Department.find_or_create_by_name(name) unless name.blank?
-  end
-  
+#   def department_name
+#     department.name if department
+#   end
+#  
+#  def department_name=(name)
+#    self.department = Department.find_or_create_by_name(name) unless name.blank?
+#  end
+#  
   def workflow_steps_simple
     # this is a read-only display of workflow steps needed or completed
     # D - C - P - B - S
@@ -51,7 +51,7 @@ class Job < ActiveRecord::Base
   end
   
   def before_save
-    self.department_id = Department.find_or_create_by_name(self.department_name) unless self.department_name.blank?
+   # self.department_id = Department.find_or_create_by_name(self.department_name) unless self.department_name.blank?
     #raise self.to_yaml
   end
 

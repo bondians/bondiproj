@@ -48,8 +48,8 @@
      <%= f.check_box :auth_sig %>
    </p>
    <p>
-     <%= f.label :department_name %><br />
-     <%= f.text_field :department_name %>
+     <%= f.label :department_id %><br />
+     <%= select(:job , :department_id , Department.find(:all).collect {|p| [ p.name, p.id ] }, { :include_blank => true } ) %>
    </p>
    <p>
      <%= f.label :account_id %><br />
