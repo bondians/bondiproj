@@ -26,13 +26,7 @@ class Job < ActiveRecord::Base
   
   #named_scope :not_shipped, lambda { { :job => self, :name => 'Ship', :completed => false}}
   public
- #   def self.search(search)
-      #  (Job.all(:conditions => ['description like ?', "%#{search}%"]).concat(Job.all(:conditions => ['name like ?',"%#{search}%"])).concat(Job.all(:conditions => ['ordered_by like ?',"%#{search}%"])))  #.uniq!.sort! { |a,b| a.due_date <=> b.due_date }
-   #   (Job.all(:conditions => ['description like ?', "%#{search}%"]).concat(Job.all(:conditions => ['name like ?',"%#{search}%"])).concat(Job.all(:conditions => ['ordered_by like ?',"%#{search}%"]))).uniq.sort { |a,b| a.due_date <=> b.due_date }
-      
-      #Job.all(:conditions => ['name like ?', "%#{search}%"]).concat(Job.all(:conditions => ['description like ?', "%#{search}%"])).uniq!.sort! { |a,b| a.due_date <=> b.due_date }
-   # Job.all :conditions => ['name like ?', "%#{search}%"] & ['description like ?' "%#{search}"]
-  #  end
+
 
   def not_shipped
      Workflow.find(:all, :conditions => {"job_id = ?" => self, "name = ?" => "Ship", "completed = ? " => false } )
