@@ -22,7 +22,6 @@
 <hr>
   <% unless toggledraws.include?(:no_playlist_sel) %><p><%= collection_select :playlist, :id, Playlist.find_all_by_user_id(Goldberg.user.id), :id, :name %></p> <% end %>
   <% unless toggledraws.include?(:no_playlist_add) %><p><%= submit_tag "Add to Playlist",      :name => "submit" %></p> <% end %>
-  <%= submit_tag "Tar",      :name => "submit" %></p>
   <%     if toggledraws.include?(:playlist_del)    %><p><%= submit_tag "Remove from Playlist", :name => "submit" %></p> <% end %>
   <%     if toggledraws.include?(:playlist_del)    %><p><%= submit_tag "Set Order", :name => "submit"            %></p> <% end %>
   <% unless toggledraws.include?(:no_stream)       %><p><%= submit_tag "Get Streaming List",   :name => "submit", :format=> :m3u %></p> <% end %>
