@@ -1,56 +1,56 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
-  <head>
-    <title><%= h(yield(:title) || "Untitled") %></title>
-    <%= stylesheet_link_tag 'application', 'SpryAccordion', 'autocomplete' %>
-    <%#= javascript_include_tag 'prototype', 'application', 'controls', 'dragdrop', 'effects', 'SpryAccordion' %>
-    <%= javascript_include_tag :all %>
-    <%= dhtml_calendar_includes %>
-    <%= yield(:head) %>
-  </head>
-  <body class="twoColFixLtHdr">
-    <div id="container">
+<head>
+  <title><%= h(yield(:title) || "Untitled") %></title>
+  <%= stylesheet_link_tag 'application', 'SpryAccordion', 'autocomplete' %>
+  <%#= javascript_include_tag 'prototype', 'application', 'controls', 'dragdrop', 'effects', 'SpryAccordion' %>
+  <%= javascript_include_tag :all %>
+  <%= dhtml_calendar_includes %>
+  <%= yield(:head) %>
+</head>
+<body class="twoColFixLtHdr">
+  <div id="container">
+    <div id="sidebar1">
       <div id="user_nav">
         <% if current_user %>
-          <%= link_to "Edit Profile", edit_user_path(:current) %>
-          <%= link_to "Logout", logout_path %>
+        <%= link_to "Edit Profile", edit_user_path(:current) %>
+        <%= link_to "Logout", logout_path %>
         <% else %>
-          <%= link_to "Register",  new_user_path %>
-          <%= link_to "Login",  login_path %>
+        <%= link_to "Register",  new_user_path %>
+        <%= link_to "Login",  login_path %>
         <% end %>
       </div>
-      
-      <%- flash.each do |name, msg| -%>
-        <%= content_tag :div, msg, :id => "flash_#{name}" %>
+      <%- if show_title? -%>
+      <h1><%=h yield(:title) %></h1>
+      <hr />
       <%- end -%>
-      
-        <%- if show_title? -%>
-          <h1><%=h yield(:title) %></h1>
-        <%- end -%>
-      <div id="sidebar1">
+      <div id="steps_buttons">
+        <h5>Show jobs with the next step of:</h5>
+        <%= link_to "Design", :controller => "jobs", :action => "index", :show => "design" %><br />
+        <%= link_to "Copy", :controller => "jobs", :action => "index", :show => "copy" %><br />
+        <%= link_to "Press", :controller => "jobs", :action => "index", :show => "press" %><br />
+        <%= link_to "Bindery", :controller => "jobs", :action => "index", :show => "bindery" %><br />
+        <%= link_to "Ship", :controller => "jobs", :action => "index", :show => "ship" %><br />
+        <%= link_to "Shipped", :controller => "jobs", :action => "index", :show => "shipped" %><br />
+      </div>
+      <div id="jobs_sort">
         <%= link_to "Show Jobs In Process", :controller => "jobs", :action => "index"  %><br />
         <%= link_to "Show all jobs", jobs_path %><%#= link_to "Show all jobs", :controller => "jobs", :action => "index" %><br />
-        <hr />
-					<p>
-						<% form_tag (jobs_path, :method => "get" ) do %>
-							<%= text_field_tag :search, params[:search] %>
-							<%= submit_tag "Search", :name => nil, :controller => "jobs", :action => "index" %>
-						<% end %>
-					</p>
-				<hr />
-				<h3>Workflow:</h3>
-				<h5>Show only jobs with the next step of:</h5>
-				<%= link_to "Design", :controller => "jobs", :action => "index", :show => "design" %><br />
-				<%= link_to "Copy", :controller => "jobs", :action => "index", :show => "copy" %><br />
-				<%= link_to "Press", :controller => "jobs", :action => "index", :show => "press" %><br />
-				<%= link_to "Bindry", :controller => "jobs", :action => "index", :show => "bindry" %><br />
-				<%= link_to "Ship", :controller => "jobs", :action => "index", :show => "ship" %><br />
-				<%= link_to "Shipped", :controller => "jobs", :action => "index", :show => "shipped" %><br />
       </div>
-      <div id="mainContent">
-        <%= yield %>
+      <div id="quick_search">
+        <% form_tag (jobs_path, :method => "get" ) do %>
+        <%= text_field_tag :search, params[:search] %>
+        <%= submit_tag "Search", :name => nil, :controller => "jobs", :action => "index" %>
+        <% end %>
       </div>
+      <%- flash.each do |name, msg| -%>
+      <%= content_tag :div, msg, :id => "flash_#{name}" %>
+      <%- end -%>
     </div>
-  </body>
+    <div id="mainContent">
+      <%= yield %>
+    </div>
+  </div>
+</body>
 </html>

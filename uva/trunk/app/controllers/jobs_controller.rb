@@ -7,8 +7,10 @@ class JobsController < ApplicationController
   def index
     if params[:search].nil?
       @jobs = Job.all :order => :due_date
+      @thisView = "Jobs - All"
     else
-      @jobs = Job.search params[:search] #, :include => :workflow_note
+      @jobs = Job.search params[:search] #, :include => :workflow_note 
+      @thisView = "Jobs - '#{params[:search]}'"
     end
   end
 

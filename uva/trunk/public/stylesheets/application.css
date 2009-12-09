@@ -29,12 +29,48 @@ body {
 .twoColFixLtHdr #sidebar1 {
 #	float: left; /* since this element is floated, a width must be given */
 #	width: 200px; /* the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
-	background: #6cc2af; /* the background color will be displayed for the length of the content in the column, but no further */
-	padding: 15px 10px 15px 20px;
+	background: #6cc2af;
+	padding-top: 15px;
+	padding-right: 10px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+	overflow: hidden;
 }
-.twoColFixLtHdr #mainContent { 
-	margin: 0 0 0 0px; /* the left margin on this div element creates the column down the left side of the page - no matter how much content the sidebar1 div contains, the column space will remain. You can remove this margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends. */
-	padding: 0 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+#quick_search {
+	width: 340px;
+	padding: 5px;
+	float: left;
+}
+#jobs_sort {
+	float: left;
+	width: 270px;
+	padding: 10px;
+}
+#steps_buttons {
+	float: right;
+	width: 250px;
+	text-align: right;
+	background-color: #539486;
+	margin: 5px;
+	padding: 10px;
+	border: 1px solid #000;
+}
+#sidebar1 h1 {
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 4px;
+	padding-left: 0px;
+}
+.twoColFixLtHdr #mainContent {
+	clear: both;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0px;
+	padding-top: 0;
+	padding-right: 20px;
+	padding-bottom: 0;
+	padding-left: 20px;
 } 
 .twoColFixLtHdr #mainContent h1 { 
 	color: #807cab;
@@ -88,8 +124,15 @@ a {
 }
 
 #flash_notice, #flash_error {
-  padding: 5px 8px;
-  margin: 10px 0;
+	clear: both;
+	margin-top: 10px;
+	margin-right: 0;
+	margin-bottom: 10px;
+	margin-left: 0;
+	padding-top: 5px;
+	padding-right: 8px;
+	padding-bottom: 5px;
+	padding-left: 8px;
 }
 
 #flash_notice {
@@ -141,9 +184,12 @@ a {
 }
 
 #user_nav {
-  float: right;
-  margin: 16px;
-  clear: both;
-  font-size: 12px;
+	float: right;
+	font-size: 12px;
+	width: 150px;
+	background-color: #4AA898;
+	padding: 10px;
+	margin: 8px;
+	border: 1px solid #000;
+	text-align: center;
 } 
-
