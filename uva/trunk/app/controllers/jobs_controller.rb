@@ -6,34 +6,34 @@ class JobsController < ApplicationController
 
   def index
     if params[:show] != nil
-      puts "entered show search***"
+      #puts "entered show search***"
       workflowClass = params[:show]
       if workflowClass =~ /design/ then
-        @jobs = Job.search :conditions => { :current_workflow => 'Design' }
+        @jobs = Job.search :conditions => { :current_workflow => 'Design' }, :order => :due_date
         @thisView = "Jobs - Design"
       elsif workflowClass =~ /copy/ then
-        @jobs = Job.search :conditions => { :current_workflow => "copy" }
+        @jobs = Job.search :conditions => { :current_workflow => "copy" }, :order => :due_date
         @thisView = "Jobs - Copy"
       elsif workflowClass =~ /press/ then
-        @jobs = Job.search :conditions => { :current_workflow => "press" }
+        @jobs = Job.search :conditions => { :current_workflow => "press" }, :order => :due_date
         @thisView = "Jobs - Press"
       elsif workflowClass =~ /bindery/ then
-        @jobs = Job.search :conditions => { :current_workflow => 'Bind' }
+        @jobs = Job.search :conditions => { :current_workflow => 'Bind' }, :order => :due_date
         @thisView = "Jobs - Bindery"
       elsif workflowClass =~ /ship/ then
-        @jobs = Job.search :conditions => { :current_workflow => "Ship" }
+        @jobs = Job.search :conditions => { :current_workflow => "Ship" }, :order => :due_date
         @thisView = "Jobs - Ship"
       elsif workflowClass =~ /in_process/ then
-        @jobs = Job.find(:all, :conditions => ["completed = ?", false])
+        @jobs = Job.find(:all, :conditions => ["completed = ?", false]).sort_by{ |m| m.due_date }
         @thisView = "Jobs - In Process"
       elsif workflowClass =~ /completed/ then
-        @jobs = Job.find(:all, :conditions => ["completed = ?", true])
+        @jobs = Job.find(:all, :conditions => ["completed = ?", true]).sort_by{ |m| m.due_date }
         @thisView = "Jobs - Completed"
       elsif workflowClass =~ /all/ then
-        @jobs = Job.all
+        @jobs = Job.all.sort_by{ |m| m.due_date }
         @thisView = "Jobs - All"
       else 
-        @jobs = Job.all
+        @jobs = Job.all.sort_by{ |m| m.due_date }
         @thisView = "Jobs - All"
       end 
 

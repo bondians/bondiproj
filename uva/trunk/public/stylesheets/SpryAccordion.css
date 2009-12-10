@@ -53,7 +53,7 @@
  * you can safely remove those properties without affecting the functionality of the widget.
  */
 .AccordionPanelTab {
-	background-color: #CCCCCC;
+	background-color: #BBBBBB;
 	border-top: solid 1px black;
 	border-bottom: solid 1px gray;
 	margin: 0px;
@@ -64,7 +64,7 @@
 }
 
 .AccordionPanelTabD {
-	background-color: #CCCCFF;
+	background-color: #6170ff;
 	border-top: solid 1px black;
 	border-bottom: solid 1px gray;
 	margin: 0px;
@@ -75,7 +75,7 @@
 }
 
 .AccordionPanelTabC {
-	background-color: #CCCC00;
+	background-color: #61ffdf;
 	border-top: solid 1px black;
 	border-bottom: solid 1px gray;
 	margin: 0px;
@@ -86,7 +86,7 @@
 }
 
 .AccordionPanelTabP {
-	background-color: #CCCC00;
+	background-color: #f6ff60;
 	border-top: solid 1px black;
 	border-bottom: solid 1px gray;
 	margin: 0px;
@@ -97,7 +97,7 @@
 }
 
 .AccordionPanelTabB {
-	background-color: #CCCC00;
+	background-color: #FFba61;
 	border-top: solid 1px black;
 	border-bottom: solid 1px gray;
 	margin: 0px;
@@ -108,7 +108,7 @@
 }
 
 .AccordionPanelTabS {
-	background-color: #CCCC00;
+	background-color: #ff6561;
 	border-top: solid 1px black;
 	border-bottom: solid 1px gray;
 	margin: 0px;
@@ -142,27 +142,27 @@
  * from panels as the user clicks on the tabs within the Accordion.
  */
 .AccordionPanelOpen .AccordionPanelTab {
-	background-color: #00FF00;
+	background-color: #CCCCCC;
 }
 
 .AccordionPanelOpen .AccordionPanelTabD {
-	background-color: #00FF00;
+	background-color: #a0a9ff;
 }
 
 .AccordionPanelOpen .AccordionPanelTabC {
-	background-color: #00FF00;
+	background-color: #a0ffec;
 }
 
 .AccordionPanelOpen .AccordionPanelTabP {
-	background-color: #00FF00;
+	background-color: #faffa2;
 }
 
 .AccordionPanelOpen .AccordionPanelTabB {
-	background-color: #00FF00;
+	background-color: #ffd6a1;
 }
 
 .AccordionPanelOpen .AccordionPanelTabS {
-	background-color: #00FF00;
+	background-color: #ffa4a2;
 }
 
 /* This is an example of how to change the appearance of the panel tab as the
@@ -181,53 +181,53 @@
  * whenever the Accordion gains or loses keyboard focus.
  */
 .AccordionFocused .AccordionPanelTab {
-	background-color: #3399FF;
+	background-color: #DDDDDD;
 }
 
 .AccordionFocused .AccordionPanelTabD {
-	background-color: #1111EE;
+	background-color: #ced3ff;
 }
 
 .AccordionFocused .AccordionPanelTabC {
-	background-color: #11EEEE;
+	background-color: #cdfff5;
 }
 
 .AccordionFocused .AccordionPanelTabP {
-	background-color: #EEEE11;
+	background-color: #fcffcd;
 }
 
 .AccordionFocused .AccordionPanelTabB {
-	background-color: #EE5511;
+	background-color: #ffe9cd;
 }
 
 .AccordionFocused .AccordionPanelTabS {
-	background-color: #EE1111;
+	background-color: #ffcfce;
 }
 
 /* This is an example of how to change the appearance of the panel tab that is
  * currently open when the Accordion has focus.
  */
 .AccordionFocused .AccordionPanelOpen .AccordionPanelTab {
-	background-color: #33CCFF;
+	background-color: #EEEEEE;
 }
 
 .AccordionFocused .AccordionPanelOpen .AccordionPanelTabD {
-	background-color: #0000FF;
+	background-color: #f1f2ff;
 }
 
 .AccordionFocused .AccordionPanelOpen .AccordionPanelTabC {
-	background-color: #00FFFF;
+	background-color: #f0fffc;
 }
 
 .AccordionFocused .AccordionPanelOpen .AccordionPanelTabP {
-	background-color: #FFFF00;
+	background-color: #fefff1;
 }
 
 .AccordionFocused .AccordionPanelOpen .AccordionPanelTabB {
-	background-color: #FF5500;
+	background-color: #fff9f1;
 }
 
 .AccordionFocused .AccordionPanelOpen .AccordionPanelTabS {
-	background-color: #FF0000;
+	background-color: #fff1f1;
 }
 
