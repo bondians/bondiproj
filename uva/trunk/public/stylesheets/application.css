@@ -48,11 +48,11 @@ body {
 }
 #steps_buttons {
 	float: right;
-	width: 250px;
+	width: 230px;
 	text-align: right;
 	background-color: #539486;
-	margin: 5px;
-	padding: 10px;
+	padding: 5px;
+	margin: 8px;
 	border: 1px solid #000;
 }
 #sidebar1 h1 {
@@ -186,9 +186,9 @@ a {
 #user_nav {
 	float: right;
 	font-size: 12px;
-	width: 150px;
+	width: 230px;
 	background-color: #4AA898;
-	padding: 10px;
+	padding: 5px;
 	margin: 8px;
 	border: 1px solid #000;
 	text-align: center;

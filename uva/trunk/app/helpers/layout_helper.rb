@@ -19,4 +19,14 @@ module LayoutHelper
   def javascript(*args)
     content_for(:head) { javascript_include_tag(*args) }
   end
+  
+  def current_user_name
+    if current_user.nil?
+      return "Guest"
+    else
+      return current_user.username
+    end
+  end
+
+  
 end
