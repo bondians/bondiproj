@@ -7,12 +7,21 @@ module JobsHelper
     stepString << "]"
   end
 
-  def index_accordion_color(job)
-    stepString = "["
-    job.workflow_steps_simple.each  do |wf|  
-      stepString << (wf.completed ? wf.name.slice(0..0).downcase : wf.name.slice(0..0))
+  def index_accordion_color(j)
+    if j.workflow == nil then 
+      return "AccordionPanelTab"
     end
-    stepString << "]"
+
+    colorTag = case j.workflow.name 
+    when  /Design/  then "AccordionPanelTabD"
+    when /Copy/    then "AccordionPanelTabC"
+    when  /Press/   then "AccordionPanelTabP"
+    when /Binde?ry/ then "AccordionPanelTabB"
+    when  /Ship/    then "AccordionPanelTabS"
+    else "AccordionPanelTab"
+    end
+    return colorTag
+    #   return "AccordionPanelTab"
   end
   
   def last_completed_task_category(job)

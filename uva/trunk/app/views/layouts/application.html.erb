@@ -3,7 +3,7 @@
 <html>
 <head>
   <title><%= h(yield(:title) || "Untitled") %></title>
-  <%= stylesheet_link_tag 'application', 'SpryAccordion', 'autocomplete' %>
+  <%= stylesheet_link_tag :all %>
   <%#= javascript_include_tag 'prototype', 'application', 'controls', 'dragdrop', 'effects', 'SpryAccordion' %>
   <%= javascript_include_tag :all %>
   <%= dhtml_calendar_includes %>
@@ -26,17 +26,17 @@
       <hr />
       <%- end -%>
       <div id="steps_buttons">
-        <h5>Show jobs with the next step of:</h5>
         <%= link_to "Design", :controller => "jobs", :action => "index", :show => "design" %><br />
         <%= link_to "Copy", :controller => "jobs", :action => "index", :show => "copy" %><br />
         <%= link_to "Press", :controller => "jobs", :action => "index", :show => "press" %><br />
         <%= link_to "Bindery", :controller => "jobs", :action => "index", :show => "bindery" %><br />
         <%= link_to "Ship", :controller => "jobs", :action => "index", :show => "ship" %><br />
-        <%= link_to "Shipped", :controller => "jobs", :action => "index", :show => "shipped" %><br />
+        <%#= link_to "Shipped", :controller => "jobs", :action => "index", :show => "shipped" %>
       </div>
       <div id="jobs_sort">
-        <%= link_to "Show Jobs In Process", :controller => "jobs", :action => "index"  %><br />
-        <%= link_to "Show all jobs", jobs_path %><%#= link_to "Show all jobs", :controller => "jobs", :action => "index" %><br />
+        <%= link_to "Show Jobs In Process", :controller => "jobs", :action => "index", :show => "in_process" %><br />
+        <%= link_to "Show Completed Jobs", :controller => "jobs", :action => "index", :show => "completed" %><br />
+        <%= link_to "Show all jobs", :controller => "jobs", :action => "index", :show => "all" %>
       </div>
       <div id="quick_search">
         <% form_tag (jobs_path, :method => "get" ) do %>

@@ -3,7 +3,9 @@
 <div id="Accordion1" class="Accordion" tabindex="0">
   <% for job in @jobs %>
   <div class="AccordionPanel">
-    <div class="AccordionPanelTab"><b><%=h job.name %></b> - <%=h job.due_date.strftime("Due: %a, %b %d") %><%= job.due_time.strftime(" at %H:%M") unless job.due_time.nil? %><br /> db#<%= job.id.to_s %> Ticket#<%= job.ticket.to_s %> <%= workflow_step_display(job) %></div>
+    <%= "<div class=\"#{index_accordion_color(job)}\"" %>
+<b><%=h job.name %></b> - <%=h job.due_date.strftime("Due: %a, %b %d") %><%= job.due_time.strftime(" at %H:%M") unless job.due_time.nil? %><br /> db#<%= job.id.to_s %> <%= "Ticket# " + job.ticket if /\d+/.match(job.ticket) %> <%= job.workflow.name unless job.workflow.nil? %> <%= job.workflow.note unless job.workflow.nil? %>  
+    </div>
       <div class="AccordionPanelContent">
         <div id='jobinfo'>
         <%= link_to "Edit", edit_job_path(job) %><br />

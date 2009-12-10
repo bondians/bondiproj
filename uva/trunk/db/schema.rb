@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091118034005) do
+ActiveRecord::Schema.define(:version => 20091209230803) do
 
   create_table "accounts", :force => true do |t|
     t.string   "number"
@@ -39,6 +39,8 @@ ActiveRecord::Schema.define(:version => 20091118034005) do
     t.datetime "updated_at"
     t.date     "received_date"
     t.string   "ticket"
+    t.integer  "workflow_id"
+    t.boolean  "completed"
   end
 
   create_table "tasks", :force => true do |t|

@@ -5,11 +5,44 @@ class JobsController < ApplicationController
   end
 
   def index
-    if params[:search].nil?
-      @jobs = Job.all :order => :due_date
-      @thisView = "Jobs - All"
+    if params[:show] != nil
+      puts "entered show search***"
+      workflowClass = params[:show]
+      if workflowClass =~ /design/ then
+        @jobs = Job.search :conditions => { :current_workflow => 'Design' }
+        @thisView = "Jobs - Design"
+      elsif workflowClass =~ /copy/ then
+        @jobs = Job.search :conditions => { :current_workflow => "copy" }
+        @thisView = "Jobs - Copy"
+      elsif workflowClass =~ /press/ then
+        @jobs = Job.search :conditions => { :current_workflow => "press" }
+        @thisView = "Jobs - Press"
+      elsif workflowClass =~ /bindery/ then
+        @jobs = Job.search :conditions => { :current_workflow => 'Bind' }
+        @thisView = "Jobs - Bindery"
+      elsif workflowClass =~ /ship/ then
+        @jobs = Job.search :conditions => { :current_workflow => "Ship" }
+        @thisView = "Jobs - Ship"
+      elsif workflowClass =~ /in_process/ then
+        @jobs = Job.find(:all, :conditions => ["completed = ?", false])
+        @thisView = "Jobs - In Process"
+      elsif workflowClass =~ /completed/ then
+        @jobs = Job.find(:all, :conditions => ["completed = ?", true])
+        @thisView = "Jobs - Completed"
+      elsif workflowClass =~ /all/ then
+        @jobs = Job.all
+        @thisView = "Jobs - All"
+      else 
+        @jobs = Job.all
+        @thisView = "Jobs - All"
+      end 
+
+
+    elsif   params[:search].nil?
+      @jobs = Job.search :with => { :completed => false }, :order => :due_date
+      @thisView = "Jobs - Incomplete"
     else
-      @jobs = Job.search params[:search] #, :include => :workflow_note 
+      @jobs = Job.search params[:search]
       @thisView = "Jobs - '#{params[:search]}'"
     end
   end

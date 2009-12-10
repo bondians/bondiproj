@@ -2,12 +2,15 @@ class Job < ActiveRecord::Base
   has_many :workflows, :dependent => :destroy
   belongs_to :department
   belongs_to :account
+  belongs_to :workflow
+ 
+ # after_save :set_current_workflow_step
   
-  attr_accessible :name, :ticket, :description, :due_date, :due_time, :submit_date, :ordered_by, :auth_sig, :department_id, :account_id, :input_person, :received_date,  :workflows_attributes #,
+  attr_accessible :name, :ticket, :description, :due_date, :due_time, :submit_date, :ordered_by, :auth_sig, :department_id, :account_id, :input_person, :received_date, :workflow_id, :completed, :workflows_attributes #,
    
   validates_presence_of :name, :due_date #, :ordered_by, :submit_date, :received_date, :description, :department_id
 
-  :department_attributes
+  #:department_attributes
     # :name_attributes, :note_attributes, :completed_attributes, :completed_date_attributes, :job_id_attributes, :workflow, :workflows,
 
     accepts_nested_attributes_for :workflows, :allow_destroy => true, :reject_if => proc { |attributes| attributes["step_needed"] == "0" }
@@ -17,10 +20,13 @@ class Job < ActiveRecord::Base
     indexes [name, description, ticket], :as => :description
     # indexes description #], :as => :name
     indexes ordered_by, :as => :customer
-    indexes  [workflows.note, workflows.name], :as => :workflow_note #added
-    #indexes workflow.name #, :as => :workflow_name #added
+    indexes workflows.note, :as => :workflow_note #added
+   indexes workflow.name, :as => :current_workflow
+
+   has due_date, completed
     
-    has due_date
+   # indexes workflow.name, :as => :workflow_name #added
+    
   end
  # accepts_nested_attributes_for :department #, :allow_destroy => false #, :reject_if => proc { |attributes| attributes["step_needed"] == "0" } 
   
@@ -50,20 +56,19 @@ class Job < ActiveRecord::Base
     #puts steps.class
   end
   
-  def before_save
-
-
-  end
-
-  def after_save
-    #params.each do |key, value|
   
-    #end
-  end
-
-  def before_delete
+ # private
   
-  end
+#  def set_current_workflow_step
+#    steps = Workflow.find_all_by_job_id(self).sort { |a, b| (a.order || 1) <=> (b.order || 1) }
+#    
+#    #completed = lambda { self.completed = true; nil }
+#    curstep = steps.detect { |i| i.completed != true }
+#    self.workflow_id = curstep.id
+#    #self.save
+#    puts "*************** SET current workflow step called "
+#  end
+  
 end
 
 
