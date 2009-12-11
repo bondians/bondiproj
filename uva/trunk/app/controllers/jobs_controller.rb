@@ -12,13 +12,13 @@ class JobsController < ApplicationController
         @jobs = Job.search :conditions => { :current_workflow => 'Design' }, :order => :due_date
         @thisView = "Jobs - Design"
       elsif workflowClass =~ /copy/ then
-        @jobs = Job.search :conditions => { :current_workflow => "copy" }, :order => :due_date
+        @jobs = Job.search :conditions => { :current_workflow => "Copy" }, :order => :due_date
         @thisView = "Jobs - Copy"
       elsif workflowClass =~ /press/ then
-        @jobs = Job.search :conditions => { :current_workflow => "press" }, :order => :due_date
+        @jobs = Job.search :conditions => { :current_workflow => "Press" }, :order => :due_date
         @thisView = "Jobs - Press"
       elsif workflowClass =~ /bindery/ then
-        @jobs = Job.search :conditions => { :current_workflow => 'Bind' }, :order => :due_date
+        @jobs = Job.search :conditions => { :current_workflow => 'Bindery' }, :order => :due_date
         @thisView = "Jobs - Bindery"
       elsif workflowClass =~ /ship/ then
         @jobs = Job.search :conditions => { :current_workflow => "Ship" }, :order => :due_date
