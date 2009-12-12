@@ -27,6 +27,10 @@
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 // POSSIBILITY OF SUCH DAMAGE.
 
+/*
+	TODO Alter code to use a different, sub-div, of the accordion, as the activator 
+*/
+
 var Spry;
 if (!Spry) Spry = {};
 if (!Spry.Widget) Spry.Widget = {};
