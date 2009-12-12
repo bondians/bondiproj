@@ -1,37 +1,19 @@
 <% title @thisView %>
 <p><%= link_to "New Job", new_job_path %></p>
+<%# div id="Accordion1" class="Accordion" tabindex="0" %>
 <div id="Accordion1" class="Accordion" tabindex="0">
-  <% for job in @jobs %>
-  <div class="AccordionPanel">
-    <%= "<div class=\"#{index_accordion_color(job)}\"" %>
-<b><%=h job.department.name unless job.department.nil? %> - <%=h job.name %></b> - <%=h job.due_date.strftime("Due: %a, %b %d") %><%= job.due_time.strftime(" at %H:%M") unless job.due_time.nil? %><br /> db#<%= job.id.to_s %> <%= "Ticket# " + job.ticket if /\d+/.match(job.ticket) %> <%= job.workflow.name unless job.workflow.nil? %> <%= job.workflow.note unless job.workflow.nil? %>  
-    </div>
-      <div class="AccordionPanelContent">
-        <div id='jobinfo'>
-        <%= link_to "Edit", edit_job_path(job) %><br />
-          <p>Long Description:<br /><%=h job.description %></p>
-        <p>Submit Date: <%=h job.submit_date.strftime("%m/%d/%Y") unless job.submit_date.nil? %></p>
-        <p>Received Date: <%=h job.received_date unless job.received_date.nil? %></p>
-        <p>Department: <%=h job.department.name unless  job.department.nil? %></p>
-        <p>Account Number: <%=h job.account_id unless job.account_id.nil? %></p>
-        <p>Ordered By: <%=h job.ordered_by %></p>
-        <p>Authorized Signature: <%=h job.auth_sig %></p>
-        <p><%=h job.input_person %></p>
-        </div>
-      </div>
-    </div>
-   <% end %>
- </div>
+<%= render :partial => 'job', :collection => @jobs %>
+</div>
 
- <script type="text/javascript">
- <!--
- var Accordion1 = new Spry.Widget.Accordion("Accordion1", { useFixedPanelHeights: false, defaultPanel: -1 });
- //-->
- </script>
+<script type="text/javascript">
+<!--
+var Accordion1 = new Spry.Widget.Accordion("Accordion1", { useFixedPanelHeights: false, defaultPanel: -1 });
+//-->
+</script>
 <script type="text/javascript">
 <!--	
-  var timer = setInterval("autoRefresh()", 1000 * 60 * 1);
-  function autoRefresh(){self.location.reload(true);}
+var timer = setInterval("autoRefresh()", 1000 * 60 * 1);
+function autoRefresh(){self.location.reload(true);}
 //--> 
 </script>
 

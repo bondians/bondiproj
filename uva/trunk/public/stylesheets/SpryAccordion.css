@@ -52,70 +52,38 @@
  * validate, and don't care if the user can select the text within an AccordionPanelTab,
  * you can safely remove those properties without affecting the functionality of the widget.
  */
+.AccordionPanelTab, .AccordionPanelTabD, .AccordionPanelTabC, .AccordionPanelTabP, .AccordionPanelTabB, .AccordionPanelTabS {
+	border-top: solid 1px black;
+	border-bottom: solid 1px gray;
+	margin: 0px;
+	padding: 2px;
+	cursor: pointer;
+/*	-moz-user-select: none; 
+	-khtml-user-select: none; */
+	overflow: hidden;
+	
+}
 .AccordionPanelTab {
 	background-color: #BBBBBB;
-	border-top: solid 1px black;
-	border-bottom: solid 1px gray;
-	margin: 0px;
-	padding: 2px;
-	cursor: pointer;
-	-moz-user-select: none;
-	-khtml-user-select: none;
 }
-
 .AccordionPanelTabD {
 	background-color: #6170ff;
-	border-top: solid 1px black;
-	border-bottom: solid 1px gray;
-	margin: 0px;
-	padding: 2px;
-	cursor: pointer;
-	-moz-user-select: none;
-	-khtml-user-select: none;
 }
 
 .AccordionPanelTabC {
 	background-color: #61ffdf;
-	border-top: solid 1px black;
-	border-bottom: solid 1px gray;
-	margin: 0px;
-	padding: 2px;
-	cursor: pointer;
-	-moz-user-select: none;
-	-khtml-user-select: none;
 }
 
 .AccordionPanelTabP {
 	background-color: #f6ff60;
-	border-top: solid 1px black;
-	border-bottom: solid 1px gray;
-	margin: 0px;
-	padding: 2px;
-	cursor: pointer;
-	-moz-user-select: none;
-	-khtml-user-select: none;
 }
 
 .AccordionPanelTabB {
 	background-color: #FFba61;
-	border-top: solid 1px black;
-	border-bottom: solid 1px gray;
-	margin: 0px;
-	padding: 2px;
-	cursor: pointer;
-	-moz-user-select: none;
-	-khtml-user-select: none;
 }
 
 .AccordionPanelTabS {
 	background-color: #ff6561;
-	border-top: solid 1px black;
-	border-bottom: solid 1px gray;
-	margin: 0px;
-	padding: 2px;
-	cursor: pointer;
-	-moz-user-select: none;
-	-khtml-user-select: none;
 }
 
 /* This is the selector for a Panel's Content area. It's important to note that
@@ -231,3 +199,29 @@
 	background-color: #fff1f1;
 }
 
+.jobdate {
+	background-color: #EEE;
+	width: 250px;
+	margin: 2px;
+	padding: 2px;
+	border: 1px solid #444;
+	float: right;
+	text-align: right;
+	-khtml-border-radius: 5px;	
+	-moz-user-select: none;
+	-khtml-user-select: none;
+}
+
+.currenttask {
+	background-color: #EEE;
+	width: 250px;
+	margin: 2px;
+	padding: 2px;
+	border: 1px solid #444;
+	float: right;
+	text-align: right;	
+	cursor: default;
+	-moz-user-select: auto;
+	-khtml-user-select: auto;
+	-khtml-border-radius: 5px;	
+}
