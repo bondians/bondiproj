@@ -14,7 +14,9 @@ body {
 	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
 	border: 1px solid #000000;
 	text-align: left; /* this overrides the text-align: center on the body element. */
-} 
+}	
+	/* IE hack */
+
 .twoColFixLtHdr #header {
 	background: #4f7b8a;
 	padding: 0 10px 0 20px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
@@ -27,8 +29,8 @@ body {
 	background-image: url(../images/2818877-533x800.jpg);
 }
 .twoColFixLtHdr #sidebar1 {
-#	float: left; /* since this element is floated, a width must be given */
-#	width: 200px; /* the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
+/*#	float: left;  since this element is floated, a width must be given */
+/*#	width: 200px;  the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
 	background: #6cc2af;
 	padding-top: 15px;
 	padding-right: 10px;
@@ -36,25 +38,46 @@ body {
 	padding-left: 20px;
 	overflow: hidden;
 }
+
+* html .twoColFixLtHdr #sidebar1 {
+	width: 710px;
+	margin-left: 20px;
+	
+}
 #quick_search {
 	width: 340px;
-	padding: 5px;
 	float: left;
 }
+
+* html #quick_search {
+	float: left;
+}
+
 #jobs_sort {
 	float: left;
 	width: 270px;
 	padding: 10px;
 }
+
+* html #jobs_sort {
+	float: left;
+}
+
 #steps_buttons {
 	float: right;
-	width: 230px;
+	width: 130px;
 	text-align: right;
 	background-color: #539486;
 	padding: 5px;
 	margin: 8px;
 	border: 1px solid #000;
 }
+
+* html #steps_buttons {
+	float: right;
+	width: 75px;
+}
+
 #sidebar1 h1 {
 	padding-top: 0px;
 	padding-right: 0px;
@@ -123,6 +146,9 @@ a {
   margin-top: 20px;
 }
 
+* html #container {
+	width: 800px;
+}
 #flash_notice, #flash_error {
 	clear: both;
 	margin-top: 10px;
@@ -193,3 +219,4 @@ a {
 	border: 1px solid #000;
 	text-align: center;
 } 
+
