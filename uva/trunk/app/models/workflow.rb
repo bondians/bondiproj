@@ -26,6 +26,7 @@ class Workflow < ActiveRecord::Base
 
     else
       curjob.workflow_id = curstep.id
+      curjob.completed = false
       curjob.save
     end
     #self.save
