@@ -28,22 +28,22 @@
       <hr />
       <%- end -%>
       <div id="steps_buttons">
-        <%= link_to "Design", :controller => "jobs", :action => "index", :show => "design" %><br />
-        <%= link_to "Copy", :controller => "jobs", :action => "index", :show => "copy" %><br />
-        <%= link_to "Press", :controller => "jobs", :action => "index", :show => "press" %><br />
-        <%= link_to "Bindery", :controller => "jobs", :action => "index", :show => "bindery" %><br />
-        <%= link_to "Ship", :controller => "jobs", :action => "index", :show => "ship" %><br />
+        <%= link_to "Design", :controller => "jobs", :action => "design" %><br />
+        <%= link_to "Copy", :controller => "jobs", :action => "copy" %><br />
+        <%= link_to "Press", :controller => "jobs", :action => "press" %><br />
+        <%= link_to "Bindery", :controller => "jobs", :action => "bindery" %><br />
+        <%= link_to "Ship", :controller => "jobs", :action => "ship" %><br />
         <%#= link_to "Shipped", :controller => "jobs", :action => "index", :show => "shipped" %>
       </div>
       <div id="jobs_sort">
-        <%= link_to "Show Jobs In Process", :controller => "jobs", :action => "index", :show => "in_process" %><br />
-        <%= link_to "Show Completed Jobs", :controller => "jobs", :action => "index", :show => "completed" %><br />
-        <%= link_to "Show all jobs", :controller => "jobs", :action => "index", :show => "all" %>
+        <%= link_to "Show Current Jobs", :controller => "jobs", :action => "current" %><br />
+        <%= link_to "Show Completed Jobs", :controller => "jobs", :action => "completed" %><br />
+        <%= link_to "Show all jobs", :controller => "jobs", :action => "index" %>
       </div>
       <div id="quick_search">
-        <% form_tag (jobs_path, :method => "get" ) do %>
+        <% form_tag (search_jobs_path, :method => "get" ) do %>
         <%= text_field_tag :search, params[:search] %>
-        <%= submit_tag "Search", :name => nil, :controller => "jobs", :action => "index" %>
+        <%= submit_tag "Search", :name => nil, :controller => "jobs", :action => "search" %>
         <% end %>
       </div>
       <%- flash.each do |name, msg| -%>

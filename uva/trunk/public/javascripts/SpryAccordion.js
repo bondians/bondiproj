@@ -39,14 +39,12 @@ Spry.Widget.Accordion = function(element, opts)
 {
 	this.element = this.getElement(element);
 	this.defaultPanel = 0;
- 	this.hoverClass = "AccordionPanelTabHover";
- 	this.openClass = "AccordionPanelOpen";
+
+  this.hoverClass = "AccordionPanelTabHover";
+  this.openClass = "AccordionPanelOpen";
  	this.closedClass = "AccordionPanelClosed";
  	this.focusedClass = "AccordionFocused";
-//   this.hoverClass = "jobdate";
-//   this.openClass = "jobdate";
-//   this.closedClass = "jobdate";
-//   this.focusedClass = "jobdate";
+
 	this.enableAnimation = true;
 	this.enableKeyboardNavigation = true;
 	this.currentPanel = null;

@@ -14,7 +14,9 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :users
 
-  map.resources :jobs
+  #map.resources :jobs 
+  map.resources :jobs, :collection => { :design => :get, :copy => :get, :press => :get, :bindery => :get, :ship => :get,
+      :completed => :get, :current => :get, :search => :get }, :member => { :complete_step => :put }
 
   # The priority is based upon order of creation: first created -> highest priority.
 
