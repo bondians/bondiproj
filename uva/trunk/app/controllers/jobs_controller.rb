@@ -131,7 +131,7 @@ class JobsController < ApplicationController
     step.completed = true
     step.completed_date = Time.now
     step.save
-    redirect_to jobs_path
+    redirect_to :back
 
   end
   

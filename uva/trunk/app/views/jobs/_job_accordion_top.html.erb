@@ -1,8 +1,8 @@
-    <div class="jobdate"><%=h "Due Date: " + job.due_date.strftime("%a, %b %d") %><br /><%= "Due Time: " + job.due_time.strftime("%H:%M") unless job.due_time.nil? %></div>
-    <b><%=h job.department.name unless job.department.nil? %> - <%=h job.name %></b><br />db#<%= job.id.to_s %> <%= "Ticket# " + job.ticket if /\d+/.match(job.ticket) %> 
-    <% unless (job.workflow.nil? || job.workflow.note.nil? || job.workflow.note =~ /^[:blank::space:]*$/ )%>
-    <div class="currenttask"><%= job.workflow.note %></div>
-    <% end %>  
+<span class="jobdate"><%=h "Due Date: " + job.due_date.strftime("%a, %b %d") %><br /><%= "Due Time: " + job.due_time.strftime("%H:%M") unless job.due_time.nil? %><br /></span>
+<b><%=h job.department.name unless job.department.nil? %> - <%=h job.name %></b><br />db#<%= job.id.to_s %> <%= "Ticket# " + job.ticket if /\d+/.match(job.ticket) %> 
+<% unless (job.workflow.nil? || job.workflow.note.nil? || job.workflow.note =~ /^[:blank::space:]*$/ )%>
+<span class="currenttask"><%= job.workflow.note %></span>
+<% end %>  
 <!--
-  TODO make a different div be the clickable one for spry accordion
+TODO make a different div be the clickable one for spry accordion
 -->

@@ -1,6 +1,6 @@
 <div class="AccordionPanel">
   <%= "<div class=\"#{index_accordion_color(job)}\"" %>
-<%= render :partial => 'job_accordion_top', :locals => { :job => job } %>
+    <%= render :partial => 'job_accordion_top', :locals => { :job => job } %>
   </div>
   <div class="AccordionPanelContent">
     <div id='jobinfo'>
@@ -12,7 +12,7 @@
         <%= job.workflow.name %><br />
         <%= job.workflow.note %><br />
         <%#= hidden_field :current_page => { :current_page => @current_page }  %>
-        
+
         <% end %>
       </p>
       <% end %>
