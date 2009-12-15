@@ -33,5 +33,8 @@ class Workflow < ActiveRecord::Base
     # puts "*** CALLED set_current_step_of_parent_job, a method of workflow "
   end
   
+  def <=> (other)
+    self.order <=> other.order
+  end
   
 end

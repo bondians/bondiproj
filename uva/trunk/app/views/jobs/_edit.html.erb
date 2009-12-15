@@ -24,7 +24,7 @@
    </p>
    <p>
      <%= f.label :due_time %><br />
-     <%= f.datetime_select :due_time %>
+     <%= f.time_select :due_time %>
      <%#= calendar_select 'job', 'due_time',
       {:class => 'datetime'}  %>
    </p>
@@ -70,8 +70,9 @@
 		          Task: <%= workflow_form.text_field :name, 'disabled' => 'true' %>
 		          <%= workflow_form.hidden_field :name %><br />
 		          <%= workflow_form.label :note, 'Note: ' %>
-		          <%= workflow_form.text_field :note %>
-		          <%= workflow_form.hidden_field :order %><br />
+		          <%= workflow_form.text_field :note %><br />
+		          <%= workflow_form.label :order, 'Workflow Step order: ' %>
+		          <%= workflow_form.text_field :order, 'disabled' => 'true' %><br />
 		          <%= workflow_form.label :completed %>
 		          <%= workflow_form.check_box :completed %><br />
 		          <%= workflow_form.label :completed_date %><br />

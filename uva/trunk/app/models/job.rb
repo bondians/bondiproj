@@ -22,6 +22,7 @@ class Job < ActiveRecord::Base
     indexes ordered_by, :as => :customer
     indexes workflows.note, :as => :workflow_note #added
    indexes workflow.name, :as => :current_workflow
+   indexes department.name, :as => :department
 
    has due_date, completed
     
