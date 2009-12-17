@@ -1,0 +1,83 @@
+// !$*UTF8*$!
+{
+	0867D690FE84028FC02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Deployment;
+		activeBuildStyle = 014CEA440018CDF011CA2923 /* Development */;
+		activeTarget = 8DC2EF4F0486A6940098B216 /* QuickLite */;
+		breakpoints = (
+			41A3EDDA09576DC100E8D915 /* insert.c:225 */,
+		);
+		codeSenseManager = 41A3EDD409576C2400E8D915 /* Code sense */;
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					243,
+					20,
+					48.1626,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 156724227;
+			PBXWorkspaceStateSaveDate = 156724227;
+		};
+		sourceControlManager = 41A3EDD309576C2400E8D915 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	41A3EDD309576C2400E8D915 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+		scmType = "";
+	};
+	41A3EDD409576C2400E8D915 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	41A3EDDA09576DC100E8D915 /* insert.c:225 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		continueAfterActions = 0;
+		delayBeforeContinue = 0;
+		fileReference = 74951DFC08853E3600A75C86 /* insert.c */;
+		functionName = "sqlite3Insert()";
+		hitCount = 0;
+		lineNumber = 225;
+		modificationTime = 156724673.781152;
+		state = 1;
+	};
+	74951DF208853E3600A75C86 /* btree.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {500, 81676}}";
+			sepNavSelRange = "{153657, 16}";
+			sepNavVisRect = "{{0, 65182}, {459, 186}}";
+		};
+	};
+	74951DFC08853E3600A75C86 /* insert.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {500, 15512}}";
+			sepNavSelRange = "{8096, 0}";
+			sepNavVisRect = "{{0, 3008}, {459, 186}}";
+		};
+	};
+	8DC2EF4F0486A6940098B216 /* QuickLite */ = {
+		activeExec = 0;
+	};
+}

@@ -1,0 +1,36 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                clearAndCreate = id; 
+                selectRecords = id; 
+                setCacheMethod = id; 
+                setDebugMode = id; 
+                setSendsSQLStatements = id; 
+            }; 
+            CLASS = Controller; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                mDebugButton = NSButton; 
+                mDrawer = NSDrawer; 
+                mGenerateMirrorButton = NSButton; 
+                mGenerateStatusField = NSTextField; 
+                mIndexOptions = NSPopUpButton; 
+                mProcessInfo = NSTextField; 
+                mProgressBar = NSProgressIndicator; 
+                mRecordsField = NSTextField; 
+                mSelectMatchType = NSMatrix; 
+                mSelectOptions = NSMatrix; 
+                mSelectStatusField = NSTextField; 
+                mSelectValueField = NSTextField; 
+                mSendSQLStatementButton = NSButton; 
+                mTableLineCount = NSTextField; 
+                mTableView = NSTableView; 
+                mWindow = NSWindow; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

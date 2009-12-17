@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'QuickLiteListener' target in the 'QuickLiteListener' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

@@ -1,0 +1,76 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = MyColumnsTableViewDelegate; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {mColumnsTableView = NSTableView; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                closeSQLiteDatabase = id; 
+                createNewDatabase = id; 
+                dropTable = id; 
+                executeSQLQuery = id; 
+                openDocument = id; 
+                openImportSheet = id; 
+                refreshUI = id; 
+                setDebugMode = id; 
+                setSendsSQLStatements = id; 
+            }; 
+            CLASS = MyDocument; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                mCloseButton = NSButton; 
+                mColumnsDelegate = MyColumnsTableViewDelegate; 
+                mDebugButton = NSButton; 
+                mDeleteButton = NSButton; 
+                mImportDataDelegate = MyImportDataDelegate; 
+                mImportPanel = NSPanel; 
+                mOpenButton = NSButton; 
+                mRefreshButton = NSButton; 
+                mResultsDelegate = MyResultsTableViewDelegate; 
+                mSQLQueryField = NSTextField; 
+                mSendSQLStatementButton = NSButton; 
+                mTablesDelegate = MyTablesTableViewDelegate; 
+            }; 
+            SUPERCLASS = NSDocument; 
+        }, 
+        {
+            ACTIONS = {
+                cancelImport = id; 
+                chooseImportFile = id; 
+                createTableButtonClicked = id; 
+                importFile = id; 
+            }; 
+            CLASS = MyImportDataDelegate; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                mColumnDelimiterField = NSTextField; 
+                mEncodingsPopup = NSPopUpButton; 
+                mEndOfRecordDelimiterField = NSTextField; 
+                mGenerateTableButton = NSButton; 
+                mImportButton = NSButton; 
+                mImportFilePathField = NSTextField; 
+                mProgressIndicator = NSProgressIndicator; 
+                mStatusField = NSTextField; 
+                mTableNameField = NSTextField; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = MyResultsTableViewDelegate; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {mResultsTableView = NSTableView; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = MyTablesTableViewDelegate; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {mTablesTableView = NSTableView; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

@@ -1,0 +1,734 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		74951E2308853E3600A75C86 /* QuickLiteDatabaseExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = 74951DDF08853E3600A75C86 /* QuickLiteDatabaseExtras.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74951E2408853E3600A75C86 /* QuickLiteDatabaseExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 74951DE008853E3600A75C86 /* QuickLiteDatabaseExtras.m */; };
+		74951E2508853E3600A75C86 /* QuickLiteCursor.h in Headers */ = {isa = PBXBuildFile; fileRef = 74951DE108853E3600A75C86 /* QuickLiteCursor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74951E2608853E3600A75C86 /* QuickLiteCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 74951DE208853E3600A75C86 /* QuickLiteCursor.m */; };
+		74951E2708853E3600A75C86 /* QuickLiteCursorPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 74951DE308853E3600A75C86 /* QuickLiteCursorPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74951E2808853E3600A75C86 /* QuickLiteDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 74951DE408853E3600A75C86 /* QuickLiteDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74951E2908853E3600A75C86 /* QuickLiteDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 74951DE508853E3600A75C86 /* QuickLiteDatabase.m */; };
+		74951E2A08853E3600A75C86 /* QuickLiteDatabasePrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 74951DE608853E3600A75C86 /* QuickLiteDatabasePrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74951E2B08853E3600A75C86 /* QuickLiteGlobals.h in Headers */ = {isa = PBXBuildFile; fileRef = 74951DE708853E3600A75C86 /* QuickLiteGlobals.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74951E2C08853E3600A75C86 /* QuickLiteGlobals.m in Sources */ = {isa = PBXBuildFile; fileRef = 74951DE808853E3600A75C86 /* QuickLiteGlobals.m */; };
+		74951E2D08853E3600A75C86 /* QuickLiteGlobalsPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 74951DE908853E3600A75C86 /* QuickLiteGlobalsPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74951E2E08853E3600A75C86 /* QuickLiteRow.h in Headers */ = {isa = PBXBuildFile; fileRef = 74951DEA08853E3600A75C86 /* QuickLiteRow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74951E2F08853E3600A75C86 /* QuickLiteRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 74951DEB08853E3600A75C86 /* QuickLiteRow.m */; };
+		74951E3008853E3600A75C86 /* QuickLiteRowPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 74951DEC08853E3600A75C86 /* QuickLiteRowPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74951E3108853E3600A75C86 /* alter.c in Sources */ = {isa = PBXBuildFile; fileRef = 74951DEF08853E3600A75C86 /* alter.c */; };
+		74951E3208853E3600A75C86 /* attach.c in Sources */ = {isa = PBXBuildFile; fileRef = 74951DF008853E3600A75C86 /* attach.c */; };
+		74951E3308853E3600A75C86 /* auth.c in Sources */ = {isa = PBXBuildFile; fileRef = 74951DF108853E3600A75C86 /* auth.c */; };
+		74951E3408853E3600A75C86 /* btree.c in Sources */ = {isa = PBXBuildFile; fileRef = 74951DF208853E3600A75C86 /* btree.c */; };
+		74951E3508853E3600A75C86 /* btree.h in Headers */ = {isa = PBXBuildFile; fileRef = 74951DF308853E3600A75C86 /* btree.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74951E3608853E3600A75C86 /* build.c in Sources */ = {isa = PBXBuildFile; fileRef = 74951DF408853E3600A75C86 /* build.c */; };
+		74951E3708853E3600A75C86 /* callback.c in Sources */ = {isa = PBXBuildFile; fileRef = 74951DF508853E3600A75C86 /* callback.c */; };
+		74951E3808853E3600A75C86 /* date.c in Sources */ = {isa = PBXBuildFile; fileRef = 74951DF608853E3600A75C86 /* date.c */; };
+		74951E3908853E3600A75C86 /* delete.c in Sources */ = {isa = PBXBuildFile; fileRef = 74951DF708853E3600A75C86 /* delete.c */; };
+		74951E3A08853E3600A75C86 /* expr.c in Sources */ = {isa = PBXBuildFile; fileRef = 74951DF808853E3600A75C86 /* expr.c */; };
+		74951E3B08853E3600A75C86 /* func.c in Sources */ = {isa = PBXBuildFile; fileRef = 74951DF908853E3600A75C86 /* func.c */; };
+		74951E3C08853E3600A75C86 /* hash.c in Sources */ = {isa = PBXBuildFile; fileRef = 74951DFA08853E3600A75C86 /* hash.c */; };
+		74951E3D08853E3600A75C86 /* hash.h in Headers */ = {isa = PBXBuildFile; fileRef = 74951DFB08853E3600A75C86 /* hash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74951E3E08853E3600A75C86 /* insert.c in Sources */ = {isa = PBXBuildFile; fileRef = 74951DFC08853E3600A75C86 /* insert.c */; };
+		74951E3F08853E3600A75C86 /* keywordhash.h in Headers */ = {isa = PBXBuildFile; fileRef = 74951DFD08853E3600A75C86 /* keywordhash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74951E4008853E3600A75C86 /* legacy.c in Sources */ = {isa = PBXBuildFile; fileRef = 74951DFE08853E3600A75C86 /* legacy.c */; };
+		74951E4108853E3600A75C86 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 74951DFF08853E3600A75C86 /* main.c */; };
+		74951E4208853E3600A75C86 /* opcodes.c in Sources */ = {isa = PBXBuildFile; fileRef = 74951E0008853E3600A75C86 /* opcodes.c */; };
+		74951E4308853E3600A75C86 /* opcodes.h in Headers */ = {isa = PBXBuildFile; fileRef = 74951E0108853E3600A75C86 /* opcodes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74951E4408853E3600A75C86 /* os.h in Headers */ = {isa = PBXBuildFile; fileRef = 74951E0208853E3600A75C86 /* os.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74951E4508853E3600A75C86 /* os_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 74951E0308853E3600A75C86 /* os_common.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74951E4608853E3600A75C86 /* os_test.c in Sources */ = {isa = PBXBuildFile; fileRef = 74951E0408853E3600A75C86 /* os_test.c */; };
+		74951E4708853E3600A75C86 /* os_test.h in Headers */ = {isa = PBXBuildFile; fileRef = 74951E0508853E3600A75C86 /* os_test.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74951E4808853E3600A75C86 /* os_unix.c in Sources */ = {isa = PBXBuildFile; fileRef = 74951E0608853E3600A75C86 /* os_unix.c */; };
+		74951E4908853E3600A75C86 /* os_unix.h in Headers */ = {isa = PBXBuildFile; fileRef = 74951E0708853E3600A75C86 /* os_unix.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74951E4A08853E3600A75C86 /* os_win.c in Sources */ = {isa = PBXBuildFile; fileRef = 74951E0808853E3600A75C86 /* os_win.c */; };
+		74951E4B08853E3600A75C86 /* os_win.h in Headers */ = {isa = PBXBuildFile; fileRef = 74951E0908853E3600A75C86 /* os_win.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74951E4C08853E3600A75C86 /* pager.c in Sources */ = {isa = PBXBuildFile; fileRef = 74951E0A08853E3600A75C86 /* pager.c */; };
+		74951E4D08853E3600A75C86 /* pager.h in Headers */ = {isa = PBXBuildFile; fileRef = 74951E0B08853E3600A75C86 /* pager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74951E4E08853E3600A75C86 /* parse.c in Sources */ = {isa = PBXBuildFile; fileRef = 74951E0C08853E3600A75C86 /* parse.c */; };
+		74951E4F08853E3600A75C86 /* parse.h in Headers */ = {isa = PBXBuildFile; fileRef = 74951E0D08853E3600A75C86 /* parse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74951E5008853E3600A75C86 /* pragma.c in Sources */ = {isa = PBXBuildFile; fileRef = 74951E0E08853E3600A75C86 /* pragma.c */; };
+		74951E5108853E3600A75C86 /* prepare.c in Sources */ = {isa = PBXBuildFile; fileRef = 74951E0F08853E3600A75C86 /* prepare.c */; };
+		74951E5208853E3600A75C86 /* printf.c in Sources */ = {isa = PBXBuildFile; fileRef = 74951E1008853E3600A75C86 /* printf.c */; };
+		74951E5308853E3600A75C86 /* random.c in Sources */ = {isa = PBXBuildFile; fileRef = 74951E1108853E3600A75C86 /* random.c */; };
+		74951E5408853E3600A75C86 /* select.c in Sources */ = {isa = PBXBuildFile; fileRef = 74951E1208853E3600A75C86 /* select.c */; };
+		74951E5508853E3600A75C86 /* sqlite3.h in Headers */ = {isa = PBXBuildFile; fileRef = 74951E1308853E3600A75C86 /* sqlite3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74951E5608853E3600A75C86 /* sqliteInt.h in Headers */ = {isa = PBXBuildFile; fileRef = 74951E1408853E3600A75C86 /* sqliteInt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74951E5708853E3600A75C86 /* table.c in Sources */ = {isa = PBXBuildFile; fileRef = 74951E1508853E3600A75C86 /* table.c */; };
+		74951E5808853E3600A75C86 /* tokenize.c in Sources */ = {isa = PBXBuildFile; fileRef = 74951E1608853E3600A75C86 /* tokenize.c */; };
+		74951E5908853E3600A75C86 /* trigger.c in Sources */ = {isa = PBXBuildFile; fileRef = 74951E1708853E3600A75C86 /* trigger.c */; };
+		74951E5A08853E3600A75C86 /* update.c in Sources */ = {isa = PBXBuildFile; fileRef = 74951E1808853E3600A75C86 /* update.c */; };
+		74951E5B08853E3600A75C86 /* utf.c in Sources */ = {isa = PBXBuildFile; fileRef = 74951E1908853E3600A75C86 /* utf.c */; };
+		74951E5C08853E3600A75C86 /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = 74951E1A08853E3600A75C86 /* util.c */; };
+		74951E5D08853E3600A75C86 /* vacuum.c in Sources */ = {isa = PBXBuildFile; fileRef = 74951E1B08853E3600A75C86 /* vacuum.c */; };
+		74951E5E08853E3600A75C86 /* vdbe.c in Sources */ = {isa = PBXBuildFile; fileRef = 74951E1C08853E3600A75C86 /* vdbe.c */; };
+		74951E5F08853E3600A75C86 /* vdbe.h in Headers */ = {isa = PBXBuildFile; fileRef = 74951E1D08853E3600A75C86 /* vdbe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74951E6008853E3600A75C86 /* vdbeapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 74951E1E08853E3600A75C86 /* vdbeapi.c */; };
+		74951E6108853E3600A75C86 /* vdbeaux.c in Sources */ = {isa = PBXBuildFile; fileRef = 74951E1F08853E3600A75C86 /* vdbeaux.c */; };
+		74951E6208853E3600A75C86 /* vdbeInt.h in Headers */ = {isa = PBXBuildFile; fileRef = 74951E2008853E3600A75C86 /* vdbeInt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74951E6308853E3600A75C86 /* vdbemem.c in Sources */ = {isa = PBXBuildFile; fileRef = 74951E2108853E3600A75C86 /* vdbemem.c */; };
+		74951E6408853E3600A75C86 /* where.c in Sources */ = {isa = PBXBuildFile; fileRef = 74951E2208853E3600A75C86 /* where.c */; };
+		7499CF0908BDEC7F0088F6C4 /* analyze.c in Sources */ = {isa = PBXBuildFile; fileRef = 7499CF0608BDEC7F0088F6C4 /* analyze.c */; };
+		7499CF0A08BDEC7F0088F6C4 /* complete.c in Sources */ = {isa = PBXBuildFile; fileRef = 7499CF0708BDEC7F0088F6C4 /* complete.c */; };
+		7499CF0B08BDEC7F0088F6C4 /* vdbefifo.c in Sources */ = {isa = PBXBuildFile; fileRef = 7499CF0808BDEC7F0088F6C4 /* vdbefifo.c */; };
+		74C76D300840D7FA000EB994 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0867D69BFE84028FC02AAC07 /* Foundation.framework */; };
+		8DC2EF510486A6940098B216 /* QuickLite_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32DBCF5E0370ADEE00C91783 /* QuickLite_Prefix.pch */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		014CEA440018CDF011CA2923 /* Development */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OPTIMIZATION_CFLAGS = "-O0";
+				ZERO_LINK = NO;
+			};
+			name = Development;
+		};
+		014CEA450018CDF011CA2923 /* Deployment */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXFileReference section */
+		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		32DBCF5E0370ADEE00C91783 /* QuickLite_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickLite_Prefix.pch; sourceTree = "<group>"; };
+		742F28BC085A60400070CAA9 /* QuickLiteUnitTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "QuickLiteUnitTest-Info.plist"; sourceTree = "<group>"; };
+		74951DDC08853E1400A75C86 /* QuickLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QuickLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74951DDF08853E3600A75C86 /* QuickLiteDatabaseExtras.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = QuickLiteDatabaseExtras.h; path = "../../QuickLite API/Extensions/QuickLiteDatabaseExtras.h"; sourceTree = SOURCE_ROOT; };
+		74951DE008853E3600A75C86 /* QuickLiteDatabaseExtras.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = QuickLiteDatabaseExtras.m; path = "../../QuickLite API/Extensions/QuickLiteDatabaseExtras.m"; sourceTree = SOURCE_ROOT; };
+		74951DE108853E3600A75C86 /* QuickLiteCursor.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = QuickLiteCursor.h; path = "../../QuickLite API/QuickLiteCursor.h"; sourceTree = SOURCE_ROOT; };
+		74951DE208853E3600A75C86 /* QuickLiteCursor.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = QuickLiteCursor.m; path = "../../QuickLite API/QuickLiteCursor.m"; sourceTree = SOURCE_ROOT; };
+		74951DE308853E3600A75C86 /* QuickLiteCursorPrivate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = QuickLiteCursorPrivate.h; path = "../../QuickLite API/QuickLiteCursorPrivate.h"; sourceTree = SOURCE_ROOT; };
+		74951DE408853E3600A75C86 /* QuickLiteDatabase.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = QuickLiteDatabase.h; path = "../../QuickLite API/QuickLiteDatabase.h"; sourceTree = SOURCE_ROOT; };
+		74951DE508853E3600A75C86 /* QuickLiteDatabase.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = QuickLiteDatabase.m; path = "../../QuickLite API/QuickLiteDatabase.m"; sourceTree = SOURCE_ROOT; };
+		74951DE608853E3600A75C86 /* QuickLiteDatabasePrivate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = QuickLiteDatabasePrivate.h; path = "../../QuickLite API/QuickLiteDatabasePrivate.h"; sourceTree = SOURCE_ROOT; };
+		74951DE708853E3600A75C86 /* QuickLiteGlobals.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = QuickLiteGlobals.h; path = "../../QuickLite API/QuickLiteGlobals.h"; sourceTree = SOURCE_ROOT; };
+		74951DE808853E3600A75C86 /* QuickLiteGlobals.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = QuickLiteGlobals.m; path = "../../QuickLite API/QuickLiteGlobals.m"; sourceTree = SOURCE_ROOT; };
+		74951DE908853E3600A75C86 /* QuickLiteGlobalsPrivate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = QuickLiteGlobalsPrivate.h; path = "../../QuickLite API/QuickLiteGlobalsPrivate.h"; sourceTree = SOURCE_ROOT; };
+		74951DEA08853E3600A75C86 /* QuickLiteRow.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = QuickLiteRow.h; path = "../../QuickLite API/QuickLiteRow.h"; sourceTree = SOURCE_ROOT; };
+		74951DEB08853E3600A75C86 /* QuickLiteRow.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = QuickLiteRow.m; path = "../../QuickLite API/QuickLiteRow.m"; sourceTree = SOURCE_ROOT; };
+		74951DEC08853E3600A75C86 /* QuickLiteRowPrivate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = QuickLiteRowPrivate.h; path = "../../QuickLite API/QuickLiteRowPrivate.h"; sourceTree = SOURCE_ROOT; };
+		74951DEF08853E3600A75C86 /* alter.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = alter.c; path = ../../SQLite/v3/alter.c; sourceTree = SOURCE_ROOT; };
+		74951DF008853E3600A75C86 /* attach.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = attach.c; path = ../../SQLite/v3/attach.c; sourceTree = SOURCE_ROOT; };
+		74951DF108853E3600A75C86 /* auth.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = auth.c; path = ../../SQLite/v3/auth.c; sourceTree = SOURCE_ROOT; };
+		74951DF208853E3600A75C86 /* btree.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = btree.c; path = ../../SQLite/v3/btree.c; sourceTree = SOURCE_ROOT; };
+		74951DF308853E3600A75C86 /* btree.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = btree.h; path = ../../SQLite/v3/btree.h; sourceTree = SOURCE_ROOT; };
+		74951DF408853E3600A75C86 /* build.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = build.c; path = ../../SQLite/v3/build.c; sourceTree = SOURCE_ROOT; };
+		74951DF508853E3600A75C86 /* callback.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = callback.c; path = ../../SQLite/v3/callback.c; sourceTree = SOURCE_ROOT; };
+		74951DF608853E3600A75C86 /* date.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = date.c; path = ../../SQLite/v3/date.c; sourceTree = SOURCE_ROOT; };
+		74951DF708853E3600A75C86 /* delete.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = delete.c; path = ../../SQLite/v3/delete.c; sourceTree = SOURCE_ROOT; };
+		74951DF808853E3600A75C86 /* expr.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = expr.c; path = ../../SQLite/v3/expr.c; sourceTree = SOURCE_ROOT; };
+		74951DF908853E3600A75C86 /* func.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = func.c; path = ../../SQLite/v3/func.c; sourceTree = SOURCE_ROOT; };
+		74951DFA08853E3600A75C86 /* hash.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = hash.c; path = ../../SQLite/v3/hash.c; sourceTree = SOURCE_ROOT; };
+		74951DFB08853E3600A75C86 /* hash.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = hash.h; path = ../../SQLite/v3/hash.h; sourceTree = SOURCE_ROOT; };
+		74951DFC08853E3600A75C86 /* insert.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = insert.c; path = ../../SQLite/v3/insert.c; sourceTree = SOURCE_ROOT; };
+		74951DFD08853E3600A75C86 /* keywordhash.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = keywordhash.h; path = ../../SQLite/v3/keywordhash.h; sourceTree = SOURCE_ROOT; };
+		74951DFE08853E3600A75C86 /* legacy.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = legacy.c; path = ../../SQLite/v3/legacy.c; sourceTree = SOURCE_ROOT; };
+		74951DFF08853E3600A75C86 /* main.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = main.c; path = ../../SQLite/v3/main.c; sourceTree = SOURCE_ROOT; };
+		74951E0008853E3600A75C86 /* opcodes.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = opcodes.c; path = ../../SQLite/v3/opcodes.c; sourceTree = SOURCE_ROOT; };
+		74951E0108853E3600A75C86 /* opcodes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = opcodes.h; path = ../../SQLite/v3/opcodes.h; sourceTree = SOURCE_ROOT; };
+		74951E0208853E3600A75C86 /* os.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = os.h; path = ../../SQLite/v3/os.h; sourceTree = SOURCE_ROOT; };
+		74951E0308853E3600A75C86 /* os_common.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = os_common.h; path = ../../SQLite/v3/os_common.h; sourceTree = SOURCE_ROOT; };
+		74951E0408853E3600A75C86 /* os_test.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = os_test.c; path = ../../SQLite/v3/os_test.c; sourceTree = SOURCE_ROOT; };
+		74951E0508853E3600A75C86 /* os_test.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = os_test.h; path = ../../SQLite/v3/os_test.h; sourceTree = SOURCE_ROOT; };
+		74951E0608853E3600A75C86 /* os_unix.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = os_unix.c; path = ../../SQLite/v3/os_unix.c; sourceTree = SOURCE_ROOT; };
+		74951E0708853E3600A75C86 /* os_unix.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = os_unix.h; path = ../../SQLite/v3/os_unix.h; sourceTree = SOURCE_ROOT; };
+		74951E0808853E3600A75C86 /* os_win.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = os_win.c; path = ../../SQLite/v3/os_win.c; sourceTree = SOURCE_ROOT; };
+		74951E0908853E3600A75C86 /* os_win.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = os_win.h; path = ../../SQLite/v3/os_win.h; sourceTree = SOURCE_ROOT; };
+		74951E0A08853E3600A75C86 /* pager.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = pager.c; path = ../../SQLite/v3/pager.c; sourceTree = SOURCE_ROOT; };
+		74951E0B08853E3600A75C86 /* pager.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = pager.h; path = ../../SQLite/v3/pager.h; sourceTree = SOURCE_ROOT; };
+		74951E0C08853E3600A75C86 /* parse.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = parse.c; path = ../../SQLite/v3/parse.c; sourceTree = SOURCE_ROOT; };
+		74951E0D08853E3600A75C86 /* parse.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = parse.h; path = ../../SQLite/v3/parse.h; sourceTree = SOURCE_ROOT; };
+		74951E0E08853E3600A75C86 /* pragma.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = pragma.c; path = ../../SQLite/v3/pragma.c; sourceTree = SOURCE_ROOT; };
+		74951E0F08853E3600A75C86 /* prepare.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = prepare.c; path = ../../SQLite/v3/prepare.c; sourceTree = SOURCE_ROOT; };
+		74951E1008853E3600A75C86 /* printf.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = printf.c; path = ../../SQLite/v3/printf.c; sourceTree = SOURCE_ROOT; };
+		74951E1108853E3600A75C86 /* random.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = random.c; path = ../../SQLite/v3/random.c; sourceTree = SOURCE_ROOT; };
+		74951E1208853E3600A75C86 /* select.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = select.c; path = ../../SQLite/v3/select.c; sourceTree = SOURCE_ROOT; };
+		74951E1308853E3600A75C86 /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = sqlite3.h; path = ../../SQLite/v3/sqlite3.h; sourceTree = SOURCE_ROOT; };
+		74951E1408853E3600A75C86 /* sqliteInt.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = sqliteInt.h; path = ../../SQLite/v3/sqliteInt.h; sourceTree = SOURCE_ROOT; };
+		74951E1508853E3600A75C86 /* table.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = table.c; path = ../../SQLite/v3/table.c; sourceTree = SOURCE_ROOT; };
+		74951E1608853E3600A75C86 /* tokenize.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = tokenize.c; path = ../../SQLite/v3/tokenize.c; sourceTree = SOURCE_ROOT; };
+		74951E1708853E3600A75C86 /* trigger.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = trigger.c; path = ../../SQLite/v3/trigger.c; sourceTree = SOURCE_ROOT; };
+		74951E1808853E3600A75C86 /* update.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = update.c; path = ../../SQLite/v3/update.c; sourceTree = SOURCE_ROOT; };
+		74951E1908853E3600A75C86 /* utf.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = utf.c; path = ../../SQLite/v3/utf.c; sourceTree = SOURCE_ROOT; };
+		74951E1A08853E3600A75C86 /* util.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = util.c; path = ../../SQLite/v3/util.c; sourceTree = SOURCE_ROOT; };
+		74951E1B08853E3600A75C86 /* vacuum.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = vacuum.c; path = ../../SQLite/v3/vacuum.c; sourceTree = SOURCE_ROOT; };
+		74951E1C08853E3600A75C86 /* vdbe.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = vdbe.c; path = ../../SQLite/v3/vdbe.c; sourceTree = SOURCE_ROOT; };
+		74951E1D08853E3600A75C86 /* vdbe.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = vdbe.h; path = ../../SQLite/v3/vdbe.h; sourceTree = SOURCE_ROOT; };
+		74951E1E08853E3600A75C86 /* vdbeapi.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = vdbeapi.c; path = ../../SQLite/v3/vdbeapi.c; sourceTree = SOURCE_ROOT; };
+		74951E1F08853E3600A75C86 /* vdbeaux.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = vdbeaux.c; path = ../../SQLite/v3/vdbeaux.c; sourceTree = SOURCE_ROOT; };
+		74951E2008853E3600A75C86 /* vdbeInt.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = vdbeInt.h; path = ../../SQLite/v3/vdbeInt.h; sourceTree = SOURCE_ROOT; };
+		74951E2108853E3600A75C86 /* vdbemem.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = vdbemem.c; path = ../../SQLite/v3/vdbemem.c; sourceTree = SOURCE_ROOT; };
+		74951E2208853E3600A75C86 /* where.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = where.c; path = ../../SQLite/v3/where.c; sourceTree = SOURCE_ROOT; };
+		7499CF0608BDEC7F0088F6C4 /* analyze.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = analyze.c; path = ../../SQLite/v3/analyze.c; sourceTree = SOURCE_ROOT; };
+		7499CF0708BDEC7F0088F6C4 /* complete.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = complete.c; path = ../../SQLite/v3/complete.c; sourceTree = SOURCE_ROOT; };
+		7499CF0808BDEC7F0088F6C4 /* vdbefifo.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = vdbefifo.c; path = ../../SQLite/v3/vdbefifo.c; sourceTree = SOURCE_ROOT; };
+		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DC2EF560486A6940098B216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74C76D300840D7FA000EB994 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74951DDC08853E1400A75C86 /* QuickLite.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* QuickLite */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DFFF38A50411DB9C8B /* Products */,
+				742F28BC085A60400070CAA9 /* QuickLiteUnitTest-Info.plist */,
+			);
+			name = QuickLite;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */,
+				1058C7B2FEA5585E11CA2CBB /* Other Frameworks */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5A0486A6940098B216 /* Info.plist */,
+				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				74951DDD08853E3600A75C86 /* QuickLite API */,
+				74951DED08853E3600A75C86 /* SQLite */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7B2FEA5585E11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF5E0370ADEE00C91783 /* QuickLite_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		74951DDD08853E3600A75C86 /* QuickLite API */ = {
+			isa = PBXGroup;
+			children = (
+				74951DDE08853E3600A75C86 /* Extensions */,
+				74951DE108853E3600A75C86 /* QuickLiteCursor.h */,
+				74951DE208853E3600A75C86 /* QuickLiteCursor.m */,
+				74951DE308853E3600A75C86 /* QuickLiteCursorPrivate.h */,
+				74951DE408853E3600A75C86 /* QuickLiteDatabase.h */,
+				74951DE508853E3600A75C86 /* QuickLiteDatabase.m */,
+				74951DE608853E3600A75C86 /* QuickLiteDatabasePrivate.h */,
+				74951DE708853E3600A75C86 /* QuickLiteGlobals.h */,
+				74951DE808853E3600A75C86 /* QuickLiteGlobals.m */,
+				74951DE908853E3600A75C86 /* QuickLiteGlobalsPrivate.h */,
+				74951DEA08853E3600A75C86 /* QuickLiteRow.h */,
+				74951DEB08853E3600A75C86 /* QuickLiteRow.m */,
+				74951DEC08853E3600A75C86 /* QuickLiteRowPrivate.h */,
+			);
+			name = "QuickLite API";
+			path = "../../QuickLite API";
+			sourceTree = SOURCE_ROOT;
+		};
+		74951DDE08853E3600A75C86 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				74951DDF08853E3600A75C86 /* QuickLiteDatabaseExtras.h */,
+				74951DE008853E3600A75C86 /* QuickLiteDatabaseExtras.m */,
+			);
+			name = Extensions;
+			path = "../../QuickLite API/Extensions";
+			sourceTree = SOURCE_ROOT;
+		};
+		74951DED08853E3600A75C86 /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				74951DEE08853E3600A75C86 /* v3 */,
+			);
+			name = SQLite;
+			path = ../../SQLite;
+			sourceTree = SOURCE_ROOT;
+		};
+		74951DEE08853E3600A75C86 /* v3 */ = {
+			isa = PBXGroup;
+			children = (
+				74951DEF08853E3600A75C86 /* alter.c */,
+				7499CF0608BDEC7F0088F6C4 /* analyze.c */,
+				74951DF008853E3600A75C86 /* attach.c */,
+				74951DF108853E3600A75C86 /* auth.c */,
+				74951DF208853E3600A75C86 /* btree.c */,
+				74951DF308853E3600A75C86 /* btree.h */,
+				74951DF408853E3600A75C86 /* build.c */,
+				74951DF508853E3600A75C86 /* callback.c */,
+				7499CF0708BDEC7F0088F6C4 /* complete.c */,
+				74951DF608853E3600A75C86 /* date.c */,
+				74951DF708853E3600A75C86 /* delete.c */,
+				74951DF808853E3600A75C86 /* expr.c */,
+				74951DF908853E3600A75C86 /* func.c */,
+				74951DFA08853E3600A75C86 /* hash.c */,
+				74951DFB08853E3600A75C86 /* hash.h */,
+				74951DFC08853E3600A75C86 /* insert.c */,
+				74951DFD08853E3600A75C86 /* keywordhash.h */,
+				74951DFE08853E3600A75C86 /* legacy.c */,
+				74951DFF08853E3600A75C86 /* main.c */,
+				74951E0008853E3600A75C86 /* opcodes.c */,
+				74951E0108853E3600A75C86 /* opcodes.h */,
+				74951E0208853E3600A75C86 /* os.h */,
+				74951E0308853E3600A75C86 /* os_common.h */,
+				74951E0408853E3600A75C86 /* os_test.c */,
+				74951E0508853E3600A75C86 /* os_test.h */,
+				74951E0608853E3600A75C86 /* os_unix.c */,
+				74951E0708853E3600A75C86 /* os_unix.h */,
+				74951E0808853E3600A75C86 /* os_win.c */,
+				74951E0908853E3600A75C86 /* os_win.h */,
+				74951E0A08853E3600A75C86 /* pager.c */,
+				74951E0B08853E3600A75C86 /* pager.h */,
+				74951E0C08853E3600A75C86 /* parse.c */,
+				74951E0D08853E3600A75C86 /* parse.h */,
+				74951E0E08853E3600A75C86 /* pragma.c */,
+				74951E0F08853E3600A75C86 /* prepare.c */,
+				74951E1008853E3600A75C86 /* printf.c */,
+				74951E1108853E3600A75C86 /* random.c */,
+				74951E1208853E3600A75C86 /* select.c */,
+				74951E1308853E3600A75C86 /* sqlite3.h */,
+				74951E1408853E3600A75C86 /* sqliteInt.h */,
+				74951E1508853E3600A75C86 /* table.c */,
+				74951E1608853E3600A75C86 /* tokenize.c */,
+				74951E1708853E3600A75C86 /* trigger.c */,
+				74951E1808853E3600A75C86 /* update.c */,
+				74951E1908853E3600A75C86 /* utf.c */,
+				74951E1A08853E3600A75C86 /* util.c */,
+				74951E1B08853E3600A75C86 /* vacuum.c */,
+				74951E1C08853E3600A75C86 /* vdbe.c */,
+				74951E1D08853E3600A75C86 /* vdbe.h */,
+				74951E1E08853E3600A75C86 /* vdbeapi.c */,
+				74951E1F08853E3600A75C86 /* vdbeaux.c */,
+				7499CF0808BDEC7F0088F6C4 /* vdbefifo.c */,
+				74951E2008853E3600A75C86 /* vdbeInt.h */,
+				74951E2108853E3600A75C86 /* vdbemem.c */,
+				74951E2208853E3600A75C86 /* where.c */,
+			);
+			name = v3;
+			path = ../../SQLite/v3;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8DC2EF500486A6940098B216 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF510486A6940098B216 /* QuickLite_Prefix.pch in Headers */,
+				74951E2308853E3600A75C86 /* QuickLiteDatabaseExtras.h in Headers */,
+				74951E2508853E3600A75C86 /* QuickLiteCursor.h in Headers */,
+				74951E2708853E3600A75C86 /* QuickLiteCursorPrivate.h in Headers */,
+				74951E2808853E3600A75C86 /* QuickLiteDatabase.h in Headers */,
+				74951E2A08853E3600A75C86 /* QuickLiteDatabasePrivate.h in Headers */,
+				74951E2B08853E3600A75C86 /* QuickLiteGlobals.h in Headers */,
+				74951E2D08853E3600A75C86 /* QuickLiteGlobalsPrivate.h in Headers */,
+				74951E2E08853E3600A75C86 /* QuickLiteRow.h in Headers */,
+				74951E3008853E3600A75C86 /* QuickLiteRowPrivate.h in Headers */,
+				74951E3508853E3600A75C86 /* btree.h in Headers */,
+				74951E3D08853E3600A75C86 /* hash.h in Headers */,
+				74951E3F08853E3600A75C86 /* keywordhash.h in Headers */,
+				74951E4308853E3600A75C86 /* opcodes.h in Headers */,
+				74951E4408853E3600A75C86 /* os.h in Headers */,
+				74951E4508853E3600A75C86 /* os_common.h in Headers */,
+				74951E4708853E3600A75C86 /* os_test.h in Headers */,
+				74951E4908853E3600A75C86 /* os_unix.h in Headers */,
+				74951E4B08853E3600A75C86 /* os_win.h in Headers */,
+				74951E4D08853E3600A75C86 /* pager.h in Headers */,
+				74951E4F08853E3600A75C86 /* parse.h in Headers */,
+				74951E5508853E3600A75C86 /* sqlite3.h in Headers */,
+				74951E5608853E3600A75C86 /* sqliteInt.h in Headers */,
+				74951E5F08853E3600A75C86 /* vdbe.h in Headers */,
+				74951E6208853E3600A75C86 /* vdbeInt.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8DC2EF4F0486A6940098B216 /* QuickLite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74DAB2C80855E2E2005DC9A2 /* Build configuration list for PBXNativeTarget "QuickLite" */;
+			buildPhases = (
+				8DC2EF500486A6940098B216 /* Headers */,
+				8DC2EF520486A6940098B216 /* Resources */,
+				8DC2EF540486A6940098B216 /* Sources */,
+				8DC2EF560486A6940098B216 /* Frameworks */,
+				8DC2EF580486A6940098B216 /* Rez */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QuickLite_Prefix.pch;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = Dynamic;
+				OTHER_LDFLAGS = (
+					"-seg1addr",
+					0xb0000000,
+				);
+				PRODUCT_NAME = QuickLite;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = framework;
+			};
+			dependencies = (
+			);
+			name = QuickLite;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = QuickLite;
+			productReference = 74951DDC08853E1400A75C86 /* QuickLite.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 74DAB2CC0855E2E2005DC9A2 /* Build configuration list for PBXProject "QuickLite" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				014CEA440018CDF011CA2923 /* Development */,
+				014CEA450018CDF011CA2923 /* Deployment */,
+			);
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* QuickLite */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			targets = (
+				8DC2EF4F0486A6940098B216 /* QuickLite */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DC2EF520486A6940098B216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		8DC2EF580486A6940098B216 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DC2EF540486A6940098B216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74951E2408853E3600A75C86 /* QuickLiteDatabaseExtras.m in Sources */,
+				74951E2608853E3600A75C86 /* QuickLiteCursor.m in Sources */,
+				74951E2908853E3600A75C86 /* QuickLiteDatabase.m in Sources */,
+				74951E2C08853E3600A75C86 /* QuickLiteGlobals.m in Sources */,
+				74951E2F08853E3600A75C86 /* QuickLiteRow.m in Sources */,
+				74951E3108853E3600A75C86 /* alter.c in Sources */,
+				74951E3208853E3600A75C86 /* attach.c in Sources */,
+				74951E3308853E3600A75C86 /* auth.c in Sources */,
+				74951E3408853E3600A75C86 /* btree.c in Sources */,
+				74951E3608853E3600A75C86 /* build.c in Sources */,
+				74951E3708853E3600A75C86 /* callback.c in Sources */,
+				74951E3808853E3600A75C86 /* date.c in Sources */,
+				74951E3908853E3600A75C86 /* delete.c in Sources */,
+				74951E3A08853E3600A75C86 /* expr.c in Sources */,
+				74951E3B08853E3600A75C86 /* func.c in Sources */,
+				74951E3C08853E3600A75C86 /* hash.c in Sources */,
+				74951E3E08853E3600A75C86 /* insert.c in Sources */,
+				74951E4008853E3600A75C86 /* legacy.c in Sources */,
+				74951E4108853E3600A75C86 /* main.c in Sources */,
+				74951E4208853E3600A75C86 /* opcodes.c in Sources */,
+				74951E4608853E3600A75C86 /* os_test.c in Sources */,
+				74951E4808853E3600A75C86 /* os_unix.c in Sources */,
+				74951E4A08853E3600A75C86 /* os_win.c in Sources */,
+				74951E4C08853E3600A75C86 /* pager.c in Sources */,
+				74951E4E08853E3600A75C86 /* parse.c in Sources */,
+				74951E5008853E3600A75C86 /* pragma.c in Sources */,
+				74951E5108853E3600A75C86 /* prepare.c in Sources */,
+				74951E5208853E3600A75C86 /* printf.c in Sources */,
+				74951E5308853E3600A75C86 /* random.c in Sources */,
+				74951E5408853E3600A75C86 /* select.c in Sources */,
+				74951E5708853E3600A75C86 /* table.c in Sources */,
+				74951E5808853E3600A75C86 /* tokenize.c in Sources */,
+				74951E5908853E3600A75C86 /* trigger.c in Sources */,
+				74951E5A08853E3600A75C86 /* update.c in Sources */,
+				74951E5B08853E3600A75C86 /* utf.c in Sources */,
+				74951E5C08853E3600A75C86 /* util.c in Sources */,
+				74951E5D08853E3600A75C86 /* vacuum.c in Sources */,
+				74951E5E08853E3600A75C86 /* vdbe.c in Sources */,
+				74951E6008853E3600A75C86 /* vdbeapi.c in Sources */,
+				74951E6108853E3600A75C86 /* vdbeaux.c in Sources */,
+				74951E6308853E3600A75C86 /* vdbemem.c in Sources */,
+				74951E6408853E3600A75C86 /* where.c in Sources */,
+				7499CF0908BDEC7F0088F6C4 /* analyze.c in Sources */,
+				7499CF0A08BDEC7F0088F6C4 /* complete.c in Sources */,
+				7499CF0B08BDEC7F0088F6C4 /* vdbefifo.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1667FE841158C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		74DAB2C90855E2E2005DC9A2 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QuickLite_Prefix.pch;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = Dynamic;
+				MACH_O_TYPE = mh_dylib;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_LDFLAGS = (
+					"-seg1addr",
+					0xb0000000,
+				);
+				PRODUCT_NAME = QuickLite;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = framework;
+				ZERO_LINK = NO;
+			};
+			name = Development;
+		};
+		74DAB2CA0855E2E2005DC9A2 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QuickLite_Prefix.pch;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = Dynamic;
+				MACH_O_TYPE = mh_dylib;
+				OTHER_LDFLAGS = (
+					"-seg1addr",
+					0xb0000000,
+				);
+				PRODUCT_NAME = QuickLite;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = framework;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		74DAB2CB0855E2E2005DC9A2 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QuickLite_Prefix.pch;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = Dynamic;
+				MACH_O_TYPE = mh_dylib;
+				OTHER_LDFLAGS = (
+					"-seg1addr",
+					0xb0000000,
+				);
+				PRODUCT_NAME = QuickLite;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Default;
+		};
+		74DAB2CD0855E2E2005DC9A2 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = NO;
+			};
+			name = Development;
+		};
+		74DAB2CE0855E2E2005DC9A2 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = NO;
+			};
+			name = Deployment;
+		};
+		74DAB2CF0855E2E2005DC9A2 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = NO;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		74DAB2C80855E2E2005DC9A2 /* Build configuration list for PBXNativeTarget "QuickLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74DAB2C90855E2E2005DC9A2 /* Development */,
+				74DAB2CA0855E2E2005DC9A2 /* Deployment */,
+				74DAB2CB0855E2E2005DC9A2 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		74DAB2CC0855E2E2005DC9A2 /* Build configuration list for PBXProject "QuickLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74DAB2CD0855E2E2005DC9A2 /* Development */,
+				74DAB2CE0855E2E2005DC9A2 /* Deployment */,
+				74DAB2CF0855E2E2005DC9A2 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

@@ -1,0 +1,36 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                closeSQLiteDatabase = id; 
+                createNewDatabase = id; 
+                dropTable = id; 
+                executeSQLQuery = id; 
+                openDocument = id; 
+                openImportSheet = id; 
+                refreshUI = id; 
+                setDebugMode = id; 
+                setSendsSQLStatements = id; 
+            }; 
+            CLASS = MyDocument; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                mCloseButton = NSButton; 
+                mColumnsDelegate = MyColumnsTableViewDelegate; 
+                mDebugButton = NSButton; 
+                mDeleteButton = NSButton; 
+                mImportDataDelegate = MyImportDataDelegate; 
+                mImportPanel = NSPanel; 
+                mOpenButton = NSButton; 
+                mRefreshButton = NSButton; 
+                mResultsDelegate = MyResultsTableViewDelegate; 
+                mSQLQueryField = NSTextField; 
+                mSendSQLStatementButton = NSButton; 
+                mTablesDelegate = MyTablesTableViewDelegate; 
+            }; 
+            SUPERCLASS = NSDocument; 
+        }
+    ); 
+    IBVersion = 1; 
+}

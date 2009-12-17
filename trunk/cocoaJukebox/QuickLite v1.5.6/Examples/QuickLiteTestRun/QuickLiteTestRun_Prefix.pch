@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'QuickLiteTestRun' target in the 'QuickLiteTestRun' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

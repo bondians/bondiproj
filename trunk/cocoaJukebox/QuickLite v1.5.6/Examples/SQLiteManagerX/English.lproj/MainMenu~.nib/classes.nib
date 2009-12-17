@@ -1,0 +1,30 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                closeSQLiteDatabase = id; 
+                executeSQLQuery = id; 
+                openDocument = id; 
+                openImportSheet = id; 
+                refreshUI = id; 
+            }; 
+            CLASS = MyDocument; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                mCloseButton = NSButton; 
+                mColumnsDelegate = MyColumnsTableViewDelegate; 
+                mImportButton = NSButton; 
+                mImportDataDelegate = MyImportDataDelegate; 
+                mImportPanel = NSPanel; 
+                mOpenButton = NSButton; 
+                mRefreshButton = NSButton; 
+                mResultsDelegate = MyResultsTableViewDelegate; 
+                mSQLQueryField = NSTextField; 
+                mTablesDelegate = MyTablesTableViewDelegate; 
+            }; 
+            SUPERCLASS = NSDocument; 
+        }
+    ); 
+    IBVersion = 1; 
+}

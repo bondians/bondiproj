@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXApplicationTarget section */
+		2A37F4C6FDCFA73011CA2CEA /* SQLiteManagerX */ = {
+			isa = PBXApplicationTarget;
+			buildConfigurationList = 74904F3D0867C1B700810912 /* Build configuration list for PBXApplicationTarget "SQLiteManagerX" */;
+			buildPhases = (
+				2A37F4C7FDCFA73011CA2CEA /* Headers */,
+				2A37F4C9FDCFA73011CA2CEA /* Resources */,
+				2A37F4CEFDCFA73011CA2CEA /* Sources */,
+				2A37F4D1FDCFA73011CA2CEA /* Frameworks */,
+				7476A23F086B9EC00087609A /* CopyFiles */,
+			);
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Users/tciuro/Documents/QuickLite/QuickLite v1.5/Examples/QuickLite Framework",
+					/Users/tciuro/Symbols,
+				);
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRECOMPILE_PREFIX_HEADER = YES;
+				PREFIX_HEADER = SQLiteManagerX_Prefix.h;
+				PRODUCT_NAME = SQLiteManagerX;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			dependencies = (
+			);
+			name = SQLiteManagerX;
+			productInstallPath = "$(HOME)/Applications";
+			productName = SQLiteManagerX;
+			productReference = 1758732AFF379DA111CA2CBB /* SQLiteManagerX.app */;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>????</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string></string>
+			<key>CFBundleTypeName</key>
+			<string>DocumentType</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>????</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>NSDocumentClass</key>
+			<string>MyDocument</string>
+		</dict>
+	</array>
+	<key>CFBundleExecutable</key>
+	<string>SQLiteManagerX</string>
+	<key>CFBundleIconFile</key>
+	<string></string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>0.1</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+</dict>
+</plist>
+";
+		};
+/* End PBXApplicationTarget section */
+
+/* Begin PBXBuildFile section */
+		080E96D9FE201CDB7F000001 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
+		080E96DAFE201CDB7F000001 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */; };
+		080E96DBFE201CDB7F000001 /* MyDocument.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B4FDCFA73011CA2CEA /* MyDocument.nib */; };
+		089C1661FE840EACC02AAC07 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
+		1058C7A9FEA54F5311CA2CBB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		2A37F4C8FDCFA73011CA2CEA /* MyDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A37F4AEFDCFA73011CA2CEA /* MyDocument.h */; };
+		2A37F4D0FDCFA73011CA2CEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		32DBCF760370BD2300C91783 /* SQLiteManagerX_Prefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 32DBCF750370BD2300C91783 /* SQLiteManagerX_Prefix.h */; };
+		386B31960501E99900A80104 /* MyImportDataDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 386B31940501E99900A80104 /* MyImportDataDelegate.h */; };
+		386B31970501E99900A80104 /* MyImportDataDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 386B31950501E99900A80104 /* MyImportDataDelegate.m */; };
+		7407CE8804F0335600ED5CB4 /* MyColumnsTableViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7407CE8604F0335600ED5CB4 /* MyColumnsTableViewDelegate.h */; };
+		7407CE8904F0335600ED5CB4 /* MyColumnsTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7407CE8704F0335600ED5CB4 /* MyColumnsTableViewDelegate.m */; };
+		7407CE8B04F035C100ED5CB4 /* Globals.h in Headers */ = {isa = PBXBuildFile; fileRef = 7407CE8A04F035C100ED5CB4 /* Globals.h */; };
+		7407CE9904F044F700ED5CB4 /* MyResultsTableViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7407CE9704F044F700ED5CB4 /* MyResultsTableViewDelegate.h */; };
+		7407CE9A04F044F700ED5CB4 /* MyResultsTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7407CE9804F044F700ED5CB4 /* MyResultsTableViewDelegate.m */; };
+		74319E90051A416300CB625E /* Globals.m in Sources */ = {isa = PBXBuildFile; fileRef = 74319E8F051A416300CB625E /* Globals.m */; };
+		743E496C0711518C0055FD73 /* create.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 743E496B0711518C0055FD73 /* create.tiff */; };
+		744B9F0604F00F1100586852 /* MyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 744B9F0504F00F1100586852 /* MyDocument.m */; };
+		744BA27904F0136500586852 /* MyTablesTableViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 744BA27704F0136500586852 /* MyTablesTableViewDelegate.h */; };
+		744BA27A04F0136500586852 /* MyTablesTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 744BA27804F0136500586852 /* MyTablesTableViewDelegate.m */; };
+		74951F71088540F000A75C86 /* QuickLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74951F70088540F000A75C86 /* QuickLite.framework */; };
+		74951F74088540F300A75C86 /* QuickLite.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 74951F70088540F000A75C86 /* QuickLite.framework */; };
+		7498847B064E757400DA1330 /* delete.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 74988474064E757400DA1330 /* delete.tiff */; };
+		7498847D064E757400DA1330 /* new.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 74988476064E757400DA1330 /* new.tiff */; };
+		7498847E064E757400DA1330 /* refresh.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 74988477064E757400DA1330 /* refresh.tiff */; };
+		7498847F064E757400DA1330 /* start.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 74988478064E757400DA1330 /* start.tiff */; };
+		74988480064E757400DA1330 /* stop.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 74988479064E757400DA1330 /* stop.tiff */; };
+		74988481064E757400DA1330 /* unknown.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 7498847A064E757400DA1330 /* unknown.tiff */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		4A9504D0FFE6A4CB11CA0CBA /* Development */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OPTIMIZATION_CFLAGS = "-O0";
+				ZERO_LINK = NO;
+			};
+			name = Development;
+		};
+		4A9504D1FFE6A4CB11CA0CBA /* Deployment */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7476A23F086B9EC00087609A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				74951F74088540F300A75C86 /* QuickLite.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C1660FE840EACC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		1758732AFF379DA111CA2CBB /* SQLiteManagerX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = SQLiteManagerX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A37F4AEFDCFA73011CA2CEA /* MyDocument.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MyDocument.h; sourceTree = "<group>"; };
+		2A37F4B0FDCFA73011CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A37F4B5FDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MyDocument.nib; sourceTree = "<group>"; };
+		2A37F4B7FDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		2A37F4BAFDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
+		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32DBCF750370BD2300C91783 /* SQLiteManagerX_Prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteManagerX_Prefix.h; sourceTree = "<group>"; };
+		386B31940501E99900A80104 /* MyImportDataDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyImportDataDelegate.h; sourceTree = "<group>"; };
+		386B31950501E99900A80104 /* MyImportDataDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyImportDataDelegate.m; sourceTree = "<group>"; };
+		7407CE8604F0335600ED5CB4 /* MyColumnsTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MyColumnsTableViewDelegate.h; sourceTree = "<group>"; };
+		7407CE8704F0335600ED5CB4 /* MyColumnsTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MyColumnsTableViewDelegate.m; sourceTree = "<group>"; };
+		7407CE8A04F035C100ED5CB4 /* Globals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Globals.h; sourceTree = "<group>"; };
+		7407CE9704F044F700ED5CB4 /* MyResultsTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MyResultsTableViewDelegate.h; sourceTree = "<group>"; };
+		7407CE9804F044F700ED5CB4 /* MyResultsTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MyResultsTableViewDelegate.m; sourceTree = "<group>"; };
+		74319E8F051A416300CB625E /* Globals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Globals.m; sourceTree = "<group>"; };
+		743E496B0711518C0055FD73 /* create.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = create.tiff; sourceTree = "<group>"; };
+		744B9F0504F00F1100586852 /* MyDocument.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MyDocument.m; sourceTree = "<group>"; };
+		744BA27704F0136500586852 /* MyTablesTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTablesTableViewDelegate.h; sourceTree = "<group>"; };
+		744BA27804F0136500586852 /* MyTablesTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTablesTableViewDelegate.m; sourceTree = "<group>"; };
+		74951F70088540F000A75C86 /* QuickLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLite.framework; path = "../QuickLite Framework/QuickLite.framework"; sourceTree = SOURCE_ROOT; };
+		74988474064E757400DA1330 /* delete.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = delete.tiff; sourceTree = "<group>"; };
+		74988476064E757400DA1330 /* new.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = new.tiff; sourceTree = "<group>"; };
+		74988477064E757400DA1330 /* refresh.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = refresh.tiff; sourceTree = "<group>"; };
+		74988478064E757400DA1330 /* start.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = start.tiff; sourceTree = "<group>"; };
+		74988479064E757400DA1330 /* stop.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = stop.tiff; sourceTree = "<group>"; };
+		7498847A064E757400DA1330 /* unknown.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = unknown.tiff; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A37F4D1FDCFA73011CA2CEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1058C7A9FEA54F5311CA2CBB /* Cocoa.framework in Frameworks */,
+				74951F71088540F000A75C86 /* QuickLite.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A8FEA54F5311CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74951F70088540F000A75C86 /* QuickLite.framework */,
+				2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */,
+				2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB0FE9D524F11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1758732AFF379DA111CA2CBB /* SQLiteManagerX.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A37F4AAFDCFA73011CA2CEA /* SQLiteManagerX */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4ABFDCFA73011CA2CEA /* Classes */,
+				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
+				2A37F4B8FDCFA73011CA2CEA /* Resources */,
+				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
+				19C28FB0FE9D524F11CA2CBB /* Products */,
+			);
+			name = SQLiteManagerX;
+			sourceTree = "<group>";
+		};
+		2A37F4ABFDCFA73011CA2CEA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7407CE8A04F035C100ED5CB4 /* Globals.h */,
+				74319E8F051A416300CB625E /* Globals.m */,
+				2A37F4AEFDCFA73011CA2CEA /* MyDocument.h */,
+				744B9F0504F00F1100586852 /* MyDocument.m */,
+				386B31940501E99900A80104 /* MyImportDataDelegate.h */,
+				386B31950501E99900A80104 /* MyImportDataDelegate.m */,
+				744BA27704F0136500586852 /* MyTablesTableViewDelegate.h */,
+				744BA27804F0136500586852 /* MyTablesTableViewDelegate.m */,
+				7407CE8604F0335600ED5CB4 /* MyColumnsTableViewDelegate.h */,
+				7407CE8704F0335600ED5CB4 /* MyColumnsTableViewDelegate.m */,
+				7407CE9704F044F700ED5CB4 /* MyResultsTableViewDelegate.h */,
+				7407CE9804F044F700ED5CB4 /* MyResultsTableViewDelegate.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		2A37F4AFFDCFA73011CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF750370BD2300C91783 /* SQLiteManagerX_Prefix.h */,
+				2A37F4B0FDCFA73011CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				74988473064E757400DA1330 /* images */,
+				2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */,
+				2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */,
+				2A37F4B4FDCFA73011CA2CEA /* MyDocument.nib */,
+				089C165FFE840EACC02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */,
+				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		74988473064E757400DA1330 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				74988474064E757400DA1330 /* delete.tiff */,
+				74988476064E757400DA1330 /* new.tiff */,
+				74988477064E757400DA1330 /* refresh.tiff */,
+				74988478064E757400DA1330 /* start.tiff */,
+				74988479064E757400DA1330 /* stop.tiff */,
+				7498847A064E757400DA1330 /* unknown.tiff */,
+				743E496B0711518C0055FD73 /* create.tiff */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2A37F4C7FDCFA73011CA2CEA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32DBCF760370BD2300C91783 /* SQLiteManagerX_Prefix.h in Headers */,
+				2A37F4C8FDCFA73011CA2CEA /* MyDocument.h in Headers */,
+				744BA27904F0136500586852 /* MyTablesTableViewDelegate.h in Headers */,
+				7407CE8804F0335600ED5CB4 /* MyColumnsTableViewDelegate.h in Headers */,
+				7407CE8B04F035C100ED5CB4 /* Globals.h in Headers */,
+				7407CE9904F044F700ED5CB4 /* MyResultsTableViewDelegate.h in Headers */,
+				386B31960501E99900A80104 /* MyImportDataDelegate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXProject section */
+		2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 74904F410867C1B700810912 /* Build configuration list for PBXProject "SQLiteManagerX" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				4A9504D0FFE6A4CB11CA0CBA /* Development */,
+				4A9504D1FFE6A4CB11CA0CBA /* Deployment */,
+			);
+			hasScannedForEncodings = 1;
+			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* SQLiteManagerX */;
+			projectDirPath = "";
+			targets = (
+				2A37F4C6FDCFA73011CA2CEA /* SQLiteManagerX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A37F4C9FDCFA73011CA2CEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				080E96D9FE201CDB7F000001 /* Credits.rtf in Resources */,
+				080E96DAFE201CDB7F000001 /* MainMenu.nib in Resources */,
+				080E96DBFE201CDB7F000001 /* MyDocument.nib in Resources */,
+				089C1661FE840EACC02AAC07 /* InfoPlist.strings in Resources */,
+				7498847B064E757400DA1330 /* delete.tiff in Resources */,
+				7498847D064E757400DA1330 /* new.tiff in Resources */,
+				7498847E064E757400DA1330 /* refresh.tiff in Resources */,
+				7498847F064E757400DA1330 /* start.tiff in Resources */,
+				74988480064E757400DA1330 /* stop.tiff in Resources */,
+				74988481064E757400DA1330 /* unknown.tiff in Resources */,
+				743E496C0711518C0055FD73 /* create.tiff in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A37F4CEFDCFA73011CA2CEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A37F4D0FDCFA73011CA2CEA /* main.m in Sources */,
+				744B9F0604F00F1100586852 /* MyDocument.m in Sources */,
+				744BA27A04F0136500586852 /* MyTablesTableViewDelegate.m in Sources */,
+				7407CE8904F0335600ED5CB4 /* MyColumnsTableViewDelegate.m in Sources */,
+				7407CE9A04F044F700ED5CB4 /* MyResultsTableViewDelegate.m in Sources */,
+				386B31970501E99900A80104 /* MyImportDataDelegate.m in Sources */,
+				74319E90051A416300CB625E /* Globals.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165FFE840EACC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1660FE840EACC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2A37F4B4FDCFA73011CA2CEA /* MyDocument.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4B5FDCFA73011CA2CEA /* English */,
+			);
+			name = MyDocument.nib;
+			sourceTree = "<group>";
+		};
+		2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4B7FDCFA73011CA2CEA /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4BAFDCFA73011CA2CEA /* English */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		74904F3E0867C1B700810912 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Users/tciuro/Documents/QuickLite/QuickLite v1.5/Examples/QuickLite Framework",
+					/Users/tciuro/Symbols,
+					"$(SRCROOT)/../QuickLite Framework",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRECOMPILE_PREFIX_HEADER = YES;
+				PREFIX_HEADER = SQLiteManagerX_Prefix.h;
+				PRODUCT_NAME = SQLiteManagerX;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Development;
+		};
+		74904F3F0867C1B700810912 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Users/tciuro/Documents/QuickLite/QuickLite v1.5/Examples/QuickLite Framework",
+					/Users/tciuro/Symbols,
+					"$(SRCROOT)/../QuickLite Framework",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRECOMPILE_PREFIX_HEADER = YES;
+				PREFIX_HEADER = SQLiteManagerX_Prefix.h;
+				PRODUCT_NAME = SQLiteManagerX;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		74904F400867C1B700810912 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Users/tciuro/Documents/QuickLite/QuickLite v1.5/Examples/QuickLite Framework",
+					/Users/tciuro/Symbols,
+					"$(SRCROOT)/../QuickLite Framework",
+				);
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRECOMPILE_PREFIX_HEADER = YES;
+				PREFIX_HEADER = SQLiteManagerX_Prefix.h;
+				PRODUCT_NAME = SQLiteManagerX;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+		74904F420867C1B700810912 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INSTALL_PATH = "@executable_path/../Frameworks";
+			};
+			name = Development;
+		};
+		74904F430867C1B700810912 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INSTALL_PATH = "@executable_path/../Frameworks";
+			};
+			name = Deployment;
+		};
+		74904F440867C1B700810912 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INSTALL_PATH = "@executable_path/../Frameworks";
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		74904F3D0867C1B700810912 /* Build configuration list for PBXApplicationTarget "SQLiteManagerX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74904F3E0867C1B700810912 /* Development */,
+				74904F3F0867C1B700810912 /* Deployment */,
+				74904F400867C1B700810912 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		74904F410867C1B700810912 /* Build configuration list for PBXProject "SQLiteManagerX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74904F420867C1B700810912 /* Development */,
+				74904F430867C1B700810912 /* Deployment */,
+				74904F440867C1B700810912 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+}
