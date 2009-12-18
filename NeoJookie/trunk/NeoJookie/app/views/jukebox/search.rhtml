@@ -1,0 +1,9 @@
+<% if @total_hits > 0 %>
+        <table width="100%" align="center" cellpadding=4 cellspacing="0">
+                <%= render(:partial => "song_header") %>
+                <%= render(:partial => "song", :collection => @results) %>
+        </table>
+<% else %>
+        Bummer, no songs!
+<% end %>
+<%= render :partial => "pagination" %>

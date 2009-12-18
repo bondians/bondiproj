@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+        <META HTTP-EQUIV="refresh" CONTENT="60">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        
+        <% if @page_title %>
+	<title><%= h(@jukebox_name || "The Jukebox") + ": " + h(@page_title) %></title>
+	<% else %>
+	<title><%= h(@jukebox_name || "The Jukebox") %></title>
+	<% end %>
+        
+        <style type="text/css">
+                <!--
+                .style1 {color: #FFFFFF}
+                a:link {
+                        color: #330099;
+                        text-decoration: none;
+                }
+                a:visited {
+                        text-decoration: none;
+                        color: #3300CC;
+                }
+                a:hover {
+                        text-decoration: underline;
+                        color: #6633FF;
+                }
+                a:active {
+                        text-decoration: none;
+                        color: #9900FF;
+                }
+                body,td,th {
+                        font-family: Times New Roman, Times, serif;
+                        font-size: 16px;
+                        color: #000000;
+                }
+                -->
+        </style>
+</head>
+
+<body topmargin=0 leftmargin=0 
+   marginwidth=0 marginheight=0>
+   <table width="100%" height="960" align="center" cellpadding=0 cellspacing="0">
+           <tr><td colspan="3" height="1">
+                <center>
+                <%= link_to "<img width=\"100%\" src=\"/images/wedding07.png\">", :action => :index %>
+                </center>
+           </td></tr>
+           <tr><td width="5%" /><td width="90%" valign="top">
+                <% form_tag :action => :search do %>
+                  <p>
+                          <label for="q">Search:</label>
+                          <%= text_field_tag :q, params[:q] %>
+                          <%= submit_tag "Search" %>
+                  </p>
+                <% end %>
+                
+                <%= yield :layout %>
+                
+                <br/>
+            </td><td width="5%" /</tr>
+            <tr><td colspan="3" height=40 background="/images/vert02.png">
+                 <center><img src="/images/vert02.png"></center>
+            </td></tr>
+    </table>
+</body>
+</html>

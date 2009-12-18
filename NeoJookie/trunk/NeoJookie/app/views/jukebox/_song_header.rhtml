@@ -1,0 +1,18 @@
+<tr align="center" bgcolor="#000066">
+        
+        <th nowrap="nowrap"><span class="style1">Song</span></th>
+        <th nowrap="nowrap"><span class="style1">Artist</span></th>
+        <th nowrap="nowrap"><span class="style1">Album</span></th>
+        <th nowrap="nowrap"><span class="style1">Genre</span></th>
+</tr>
+<% if @playing then %>
+        <tr align="left" bgcolor="#111188">
+                <th colspan=4 nowrap="nowrap"><span class="style1">Now Playing:</span></th>
+        </tr>
+        <tr bgcolor="#6699FF">
+                <%= render :partial => "song", :collection => @playingList %>
+        </tr>
+<% end %>
+<tr align="left" bgcolor="#111188">
+        <th colspan="4" nowrap="nowrap"><span class="style1">Coming Up:</span></th>
+</tr>

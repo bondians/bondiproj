@@ -1,0 +1,10 @@
+To get this running, you need:
+
+ruby, etc.
+rails (works with 1.2.3, which comes with Mac OS X.5)
+a database driver (I think the sqlite one comes with OSX.5)
+ferret (sudo gem install ferret)
+
+
+optional:
+plist (sudo gem install plist)

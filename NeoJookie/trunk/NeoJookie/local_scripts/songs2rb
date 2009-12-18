@@ -1,0 +1,80 @@
+#!/usr/bin/perl
+#
+#  <songs2rb>
+#    Copyright 2007 -n James Cook - All Rights Reserved.
+#    
+#    input for this script comes from:
+#    
+#    sqlite> .separator "\t"
+#    sqlite> .output songs1
+#    sqlite> select key, song, file, track, year, album, artist, genre, comments, fadein, fadeduration, volume from songs limit 10000 offset 0;
+#    sqlite> .output songs2sqlite> select key, song, file, track, year, album, artist, genre, comments, fadein, fadeduration, volume from songs limit 10000 offset 10000;
+#    sqlite> .output songs3sqlite> select key, song, file, track, year, album, artist, genre, comments, fadein, fadeduration, volume from songs limit 10000 offset 20000;
+#    sqlite> .output songs4sqlite> select key, song, file, track, year, album, artist, genre, comments, fadein, fadeduration, volume from songs limit 10000 offset 30000;
+#    
+#    or:
+#      sqlite3 -separator '     ' db/original.sqlite "select key, song, file, track, year, album, artist, genre, comments, fadein, fadeduration, volume from songs limit 5000 offset 0"
+#      (etc.)
+
+
+use strict;
+
+sub quote {
+  my ($str) = @_;
+  
+  if ($str eq "nil") {
+    return $str;
+  }
+  
+  $str =~ s/(["])/\\$1/g;
+  return qq/"$str"/;
+}
+
+sub toNil {
+  my ($str) = @_;
+  
+  if ($str eq "\\N" or $str eq "NULL") {
+    return "nil";
+  }
+  
+  return $str;
+}
+
+sub toBool {
+  my ($str) = @_;
+  
+  if ($str eq "nil") {
+    return $str;
+  }
+  
+  if ($str eq 't') {
+    return "true";
+  } elsif ($str eq 'f') {
+    return "false";
+  }
+  
+  die "unknown bool string $str";
+}
+
+while (<>) {
+  chomp;
+  
+  my ($id, $name, $filepath, $track, $year,
+    $album_id, $artist_id, $genre_id, $comments,
+    $fade_in, $fade_duration, $volume) = map {$_ = toNil $_} (split "\t");
+  
+  $name = quote($name);
+  $filepath = quote($filepath);
+  $comments = quote($comments);
+  
+  $fade_in = toBool($fade_in);
+  
+  print qq{{ :id => $id,	:name => $name,
+      :filepath => $filepath,
+      :track => $track,	:year => $year,
+      :album_id => $album_id,	:artist_id => $artist_id,	:genre_id => $genre_id,
+      :comments => $comments,
+      :fade_id => $fade_in,	:fade_duration => $fade_duration, :volume => $volume
+    },
+  }
+}

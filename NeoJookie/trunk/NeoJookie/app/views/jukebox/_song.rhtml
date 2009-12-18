@@ -1,0 +1,6 @@
+<%= cycle('<tr bgcolor="#6699FF">', '<tr bgcolor="#99CCFF">') %>
+        <td><%= link_to h(song.name), :action => :request_song, :id => song %></td>
+        <td><%= link_to h(song.artist.name), :action => :browse_artist, :id => song.artist %></td>
+        <td><%= link_to h(song.album.name), :action => :browse_album, :id => song.album %></td>
+        <td><%= link_to h(song.genre.name), :action => :browse_genre, :id => song.genre %></td>
+</tr>

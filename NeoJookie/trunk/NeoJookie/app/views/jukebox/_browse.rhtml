@@ -1,0 +1,6 @@
+<%= render :partial => "pagination" %>
+<table width="100%" align="center" cellpadding=4 cellspacing="0">
+        <%= render(:partial => "song_header") %>
+        <%= render(:partial => "song", :collection => @songs) %>
+</table>
+<%= render :partial => "pagination" %>

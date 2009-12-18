@@ -1,0 +1,11 @@
+<center>
+        <%= link_to_unless @first_page, "<<", :overwrite_params => { :o => 0 }%>
+        &nbsp;
+        <%= link_to_unless @first_page, "<", :overwrite_params => { :o => @offset - @per_page} %>
+        &nbsp;
+        Page <%= @current_page %> / <%= @total_pages %>
+        &nbsp;
+        <%= link_to_unless @last_page, ">", :overwrite_params => { :o => @offset + @per_page} %>
+        &nbsp;
+        <%= link_to_unless @last_page, ">>", :overwrite_params => { :o => (@total_pages - 1) * @per_page }%>
+</center>
