@@ -50,9 +50,11 @@
    <p>
      <%= f.label :department_id %><br />
      <!-- old way of doing it does a find in the view -->
-     <%= select(:job , :department_id , Department.find(:all).collect {|p| [ p.name, p.id ] }, { :include_blank => true } ) %>
+     <%#= select(:job , :department_id , Department.find(:all).collect {|p| [ p.name, p.id ] }, { :include_blank => true } ) %>
      <!-- the new hotness, but it is borked.  -->
      <%#= select("job" , :department_id, options_from_collection_for_select(@departments, :id, :name), { :include_blank => true } ) %>
+     <%# the ryan bates way of doing it %>
+     <%= text_field_with_auto_complete :job, :department_id, { :size => 25 }, { :url => formatted_departments_path(:js), :method => :get, :with => "'search=' + element.value" } %>
    </p>
    <p>
      <%= f.label :account_id %><br />

@@ -1,7 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :accounts
 
-  map.resources :departments #, :collection => { :auto_complete_for_department_name => :get }
+  map.resources :departments, :collection => { :auto_name => :get }  
 
   map.resources :workflows
 

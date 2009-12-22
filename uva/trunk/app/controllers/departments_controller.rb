@@ -7,8 +7,13 @@ class DepartmentsController < ApplicationController
      allow anonymous, :to => [:index]
   end
 
-  def index
-    @departments = Department.all
+  def index 
+    @departments = Department.find(:all, :conditions => ['name LIKE ?', "%#{params[:search]}%"])
+
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
   
   def show
@@ -48,5 +53,11 @@ class DepartmentsController < ApplicationController
     @department.destroy
     flash[:notice] = "Successfully destroyed department."
     redirect_to departments_url
+  end 
+  
+  def auto_name
+    @departments = Department.find(:all, :conditions => ['name LIKE ?', "%#{params[:search]}%"])
   end
+  
+  
 end
