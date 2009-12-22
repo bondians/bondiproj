@@ -1,7 +1,8 @@
 class JobsController < ApplicationController
   access_control do   
      allow logged_in
-     allow anonymous, :to => [:index]
+     allow anonymous, :to => [:index, :search]
+    # layout "standard"
   end
 
   def index
