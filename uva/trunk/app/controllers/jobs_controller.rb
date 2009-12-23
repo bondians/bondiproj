@@ -22,6 +22,7 @@ class JobsController < ApplicationController
     @accounts = Account.all
     @departments = Department.all
     @job[:input_person] = current_user.username
+    @job[:dept] = ""
     @job.workflows.build :name => "Design", :order => 10
     @job.workflows.build :name => "Copy" , :order => 70
     @job.workflows.build :name => "Press", :order => 80
@@ -31,9 +32,29 @@ class JobsController < ApplicationController
   end
   
   def create
-   @job = Job.new(params[:job])
-    # raise @jobs.to_yaml
-    @job.department_id = nil if @job.department_id == ""
+    depart = params[:job][:dept] 
+    puts depart
+    puts "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+    @job = Job.new(params[:job])
+   # puts @jobs.to_yaml
+    
+    #puts depart # + "----|||||----"
+    if depart == ""  then
+      @job.department_id = nil 
+      puts "nil -----"
+    elsif Department.find_by_name(depart).nil?
+      dept = Department.new
+      dept.name = depart.upcase
+      dept.save
+      @job.department_id = dept.id 
+      puts "NEW xxxxx"
+    else 
+      @job.department_id = Department.find_by_name(depart).id 
+      puts "Found +++++++++++++"
+    end 
+    
+     # raise @job.to_yaml
+    
     @job.account_id = nil if @job.account_id == ""
     if @job.save
       flash[:notice] = "Successfully created job."
@@ -43,7 +64,7 @@ class JobsController < ApplicationController
       render :action => 'new'
     end
   end
-  
+
   def edit
     @accounts = Account.all
     @departments = Department.all
