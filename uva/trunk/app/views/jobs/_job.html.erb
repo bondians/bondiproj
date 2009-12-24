@@ -14,14 +14,14 @@
       </p>
       <% end -%>
       <hr />
-      <%= link_to "Edit", edit_job_path(job) %><br />
       <p>Description:<br /><%=h job.description %></p>
       <p>Submit Date: <%=h job.submit_date.strftime("%m/%d/%Y") unless job.submit_date.nil? %></p>
       <p>Received Date: <%=h job.received_date.strftime("%m/%d/%Y") unless job.received_date.nil? %></p>
-      <p>Account Number: <%=h job.account_id unless job.account_id.nil? %></p>
+      <p>Account Number: <%=h job.account.number unless job.account_id.nil? %></p>
       <p>Ordered By: <%=h job.ordered_by %></p>
       <p>Authorized Signature: <%=h job.auth_sig %></p>
       <hr />
+      <%= link_to "Show", job %> | <%= link_to "Edit", edit_job_path(job) %> | <%= link_to "New Job using this Job as template", new_from_template_job_path(job) %> | <br />
       <p>Input by: <%=h job.input_person %></p>
     </div>
   </div>

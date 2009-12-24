@@ -30,7 +30,8 @@ module JobsHelper
   
   def next_incomplete_task_category(job)
     
-  end
+  end 
+  
 end
  
 

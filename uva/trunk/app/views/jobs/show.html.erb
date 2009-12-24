@@ -38,7 +38,7 @@
 </p>
 <p>
   <strong>Department:</strong>
-  <%=h @job.department_id %>
+  <%=h @job.department.name %>
 </p>
 <p>
   <strong>Account:</strong>
@@ -51,7 +51,6 @@
       </p>
 <% end %>
 <p>
-  <%= link_to "Edit", edit_job_path(@job) %> |
-  <%= link_to "Destroy", @job, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "Edit", edit_job_path(@job) %> |   <%= link_to "New Job using this Job as template", new_from_template_job_path(@job) %> | <%= link_to "Destroy", @job, :confirm => 'Are you sure?', :method => :delete %> |
   
 </p>
