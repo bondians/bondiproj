@@ -38,11 +38,11 @@
 </p>
 <p>
   <strong>Department:</strong>
-  <%=h @job.department.name %>
+  <%=h @job.department.name unless @job.department.nil? %>
 </p>
 <p>
   <strong>Account:</strong>
-  <%=h @job.account_id %>
+  <%=h @job.account.number unless @job.account.nil? %>
 </p>
 <% for workflow in @workflows %>
      <p>
