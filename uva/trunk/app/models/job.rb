@@ -34,7 +34,10 @@ class Job < ActiveRecord::Base
   #named_scope :not_shipped, lambda { { :job => self, :name => 'Ship', :completed => false}}
   public
 
-
+  def urgency
+     
+  end
+  
   def not_shipped
      Workflow.find(:all, :conditions => {"job_id = ?" => self, "name = ?" => "Ship", "completed = ? " => false } )
   end

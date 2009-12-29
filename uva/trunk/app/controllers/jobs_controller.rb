@@ -99,8 +99,8 @@ class JobsController < ApplicationController
     end 
     
     if @job.save
-      flash[:notice] = "Successfully created job."
-      redirect_to jobs_path
+      flash[:notice] = "Successfully created job \##{@job.id}."
+      redirect_to :action => 'show', :id => @job.id
     else
       flash[:error] = "You must have a 'Name' and a 'Due date' set."
       render :action => 'new'
@@ -147,7 +147,7 @@ class JobsController < ApplicationController
     end 
 
     if @job.update_attributes(params[:job])
-      flash[:notice] = "Successfully updated job."
+      flash[:notice] = "Successfully updated job \##{@job.id}."
       redirect_to job_path
     else
       render :action => 'edit'

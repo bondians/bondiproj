@@ -14,15 +14,15 @@
 </p>
 <p>
   <strong>Due Date:</strong>
-  <%=h @job.due_date %>
+  <%=h @job.due_date.strftime("%b %d, %Y") %>
 </p>
 <p>
   <strong>Due Time:</strong>
-  <%=h @job.due_time %>
+  <%=h @job.due_time.strftime("%H:%M") unless @job.submit_date.nil? %>
 </p>
 <p>
   <strong>Submit Date:</strong>
-  <%=h @job.submit_date.strftime("%m %d %y") unless @job.submit_date.nil? -%>
+  <%=h @job.submit_date.strftime("%b %d, %Y") unless @job.submit_date.nil? %>
 </p>
 <p>
   <strong>Ordered By:</strong>
@@ -51,6 +51,4 @@
       </p>
 <% end %>
 <p>
-  <%= link_to "Edit", edit_job_path(@job) %> |   <%= link_to "New Job using this Job as template", new_from_template_job_path(@job) %> | <%= link_to "Destroy", @job, :confirm => 'Are you sure?', :method => :delete %> |
-  
-</p>
+  <%= link_to "Edit", edit_job_path(@job) %> |   <%= link_to "New Job using this Job as template", new_from_template_job_path(@job) %> | <%= link_to "New Job", new_job_path %> | <%= link_to "Destroy", @job, :confirm => 'Are you sure?', :method => :delete %> | </p>

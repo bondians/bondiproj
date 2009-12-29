@@ -19,22 +19,16 @@
   <div id='dateinfo'>
    <p>
      <%= f.label :due_date %><br />
-     <%#= f.date_select :due_date %>
-     <%= calendar_box 'job', 'due_date', {}, { :daFormat => "%m %d %Y" } %>
-   </p>
-   <p>
-     <%#= f.label :due_time %><br />
-     <%#= calendar_box 'job', 'due_time',  { :showsTime => true } %>
-     <%= time_select 'job', 'due_time'  %>
+     <%= calendar_box 'job', 'due_date' %><br />
+     <%= f.label :due_time %>
+     <%= f.time_select :due_time, { :minute_step => 15 }  %>                  <%#  , { :ignore_date => true, :minute_step => 15 }    %>
    </p>
    <p>
      <%= f.label :submit_date %><br />
-     <%#= f.date_select :submit_date %>
      <%= calendar_box 'job', 'submit_date' %>
    </p>
    <p>
      <%= f.label :received_date %><br />
-     <%#= f.date_select :received_date %>
      <%= calendar_box 'job', 'received_date' %>
    </p>
    </div>

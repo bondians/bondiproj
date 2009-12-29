@@ -1,3 +1,4 @@
+<span class="jobdate"><%= "Due: " + job.due.strftime("%a, %b %d, %y") unless job.due.nil? %><br /><%= job.due.strftime("%H:%M (%I:%M %p)") unless job.due.nil? %></span>
 <span class="jobdate"><%=h "Due Date: " + job.due_date.strftime("%a, %b %d") %><br /><%= "Due Time: " + job.due_date.strftime("%H:%M") unless job.due_date.nil? %><br /></span>
 <b><%=h job.department.name unless job.department.nil? %> - <%=h job.name %></b><br />db#<%= job.id.to_s %> <%= "Ticket# " + job.ticket if /\d+/.match(job.ticket) %> 
 <% unless (job.workflow.nil? || job.workflow.note.nil? || job.workflow.note =~ /^[:blank::space:]*$/ )%>

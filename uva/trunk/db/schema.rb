@@ -9,10 +9,10 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091209230803) do
+ActiveRecord::Schema.define(:version => 20091228224008) do
 
   create_table "accounts", :force => true do |t|
-    t.string   "number"
+    t.string   "number",        :limit => 15
     t.integer  "department_id"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(:version => 20091209230803) do
     t.string   "ticket"
     t.integer  "workflow_id"
     t.boolean  "completed"
+    t.datetime "due"
   end
 
   create_table "tasks", :force => true do |t|
