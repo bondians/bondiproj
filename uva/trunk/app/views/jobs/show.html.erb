@@ -14,11 +14,11 @@
 </p>
 <p>
   <strong>Due Date:</strong>
-  <%=h @job.due_date.strftime("%b %d, %Y") %>
+  <%=h @job.due.strftime("%b %d, %Y") %>
 </p>
 <p>
   <strong>Due Time:</strong>
-  <%=h @job.due_time.strftime("%H:%M") unless @job.submit_date.nil? %>
+  <%=h @job.due.strftime("%H:%M") %>
 </p>
 <p>
   <strong>Submit Date:</strong>

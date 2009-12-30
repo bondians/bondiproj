@@ -1,0 +1,18 @@
+<% fields_for "job[workflows][]", step do |q| %>
+<div id="workflow_<%= q.id %>">
+  <hr />
+  <%= q.id %>
+  <div>
+    Task: <%= q.text_field :name, 'disabled' => 'true' %>
+    <%= q.hidden_field :name %><br />
+    <%= q.label :note, 'Note: ' %>
+    <%= q.text_field :note %><br />
+    <%= q.label :order, 'Workflow Step order: ' %>
+    <%= q.text_field :order, 'disabled' => 'true' %><br />
+    <%= q.label :completed %>
+    <%= q.check_box :completed %><br />
+    <%= q.label :completed_date %><br />
+    <%#= q.date_select :completed_date %> 
+    <%= calendar_field('step', 'completed_date', { }, { :firstDay => 1 }) %><br />
+  </div>
+<% end %>

@@ -6,7 +6,7 @@ class JobsController < ApplicationController
   end
 
   def index
-        @jobs = Job.all.sort_by{ |m| m.due_date }
+        @jobs = Job.all.sort_by{ |m| m.due }
         @thisView = "Jobs - All"
   end
 
@@ -38,8 +38,8 @@ class JobsController < ApplicationController
 
     @job[:name] = job_template[:name]
     @job[:description] = job_template[:description]
-    @job[:due_date] = job_template[:due_date]
-    @job[:due_time] = job_template[:due_time]
+    @job[:due] = job_template[:due]
+    # @job[:due_time] = job_template[:due_time]
     @job[:submit_date] = job_template[:submit_date]
     @job[:received_date] = job_template[:received_date]
     @job[:ordered_by] = job_template[:ordered_by]
@@ -100,6 +100,7 @@ class JobsController < ApplicationController
     
     if @job.save
       flash[:notice] = "Successfully created job \##{@job.id}."
+      raise @job.to_yaml
       redirect_to :action => 'show', :id => @job.id
     else
       flash[:error] = "You must have a 'Name' and a 'Due date' set."
@@ -120,6 +121,8 @@ class JobsController < ApplicationController
   
   def update
     @job = Job.find(params[:id])
+   # raise @job.to_yaml
+    
     depart = params[:job][:dept]
     acnt = params[:job][:acct]
 
@@ -145,7 +148,7 @@ class JobsController < ApplicationController
     else 
       params[:job][:account_id] = Account.find_by_number(acnt).id
     end 
-
+     
     if @job.update_attributes(params[:job])
       flash[:notice] = "Successfully updated job \##{@job.id}."
       redirect_to job_path
@@ -163,56 +166,56 @@ class JobsController < ApplicationController
   
   def design
     
-    @jobs = Job.search :conditions => { :current_workflow => 'Design' }, :order => :due_date
+    @jobs = Job.search :conditions => { :current_workflow => 'Design' }, :order => :due
     @thisView = "Jobs - Design"
     render :template => "jobs/index"
   end
 
   def copy
 
-    @jobs = Job.search :conditions => { :current_workflow => "Copy" }, :order => :due_date
+    @jobs = Job.search :conditions => { :current_workflow => "Copy" }, :order => :due
     @thisView = "Jobs - Copy"
     render :template => "jobs/index"
   end
 
   def press
 
-    @jobs = Job.search :conditions => { :current_workflow => "Press" }, :order => :due_date
+    @jobs = Job.search :conditions => { :current_workflow => "Press" }, :order => :due
     @thisView = "Jobs - Press"
     render :template => "jobs/index"
   end
 
   def bindery
 
-    @jobs = Job.search :conditions => { :current_workflow => 'Bindery' }, :order => :due_date
+    @jobs = Job.search :conditions => { :current_workflow => 'Bindery' }, :order => :due
     @thisView = "Jobs - Bindery"
     render :template => "jobs/index"
   end
 
   def ship
 
-    @jobs = Job.search :conditions => { :current_workflow => "Ship" }, :order => :due_date
+    @jobs = Job.search :conditions => { :current_workflow => "Ship" }, :order => :due
     @thisView = "Jobs - Ship"
     render :template => "jobs/index"
   end
 
   def current
 
-    @jobs = Job.find(:all, :conditions => ["completed = ?", false]).sort_by{ |m| m.due_date }
+    @jobs = Job.find(:all, :conditions => ["completed = ?", false]).sort_by{ |m| m.due }
     @thisView = "Jobs - Current"
     render :template => "jobs/index"
   end
 
   def completed 
 
-    @jobs = Job.find(:all, :conditions => ["completed = ?", true]).sort_by{ |m| m.due_date }
+    @jobs = Job.find(:all, :conditions => ["completed = ?", true]).sort_by{ |m| m.due }
     @thisView = "Jobs - Complete"
     render :template => "jobs/index"
   end
 
   def search
 
-    @jobs = Job.search params[:search], :order => :due_date
+    @jobs = Job.search params[:search], :order => :due
     @thisView = "Jobs - '#{params[:search]}'"
     render :template => "jobs/index"
   end

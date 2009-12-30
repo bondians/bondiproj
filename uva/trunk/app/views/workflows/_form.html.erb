@@ -18,7 +18,7 @@
   </p>
   <p>
     <%= f.label :completed_date %><br />
-    <%= f.date_select :completed_date %>
+    <%= calendar_field 'workflow', 'completed_date', { :width => 75 }, { :firstDay => 1 } %>
   </p>
   <p>
     <%= f.label :job_id %><br />

@@ -6,9 +6,9 @@ class Job < ActiveRecord::Base
  
  # after_save :set_current_workflow_step
   
-  attr_accessible :name, :ticket, :description, :due_date, :due_time, :submit_date, :ordered_by, :auth_sig, :department_id, :account_id, :input_person, :received_date, :workflow_id, :completed, :workflows_attributes #,
+  attr_accessible :name, :ticket, :description, :due_date, :due_time, :due, :submit_date, :ordered_by, :auth_sig, :department_id, :account_id, :input_person, :received_date, :workflow_id, :completed, :workflows_attributes, :workflows #, :workflow #,
    
-  validates_presence_of :name, :due_date #, :ordered_by, :submit_date, :received_date, :description, :department_id
+  validates_presence_of :name, :due #, :ordered_by, :submit_date, :received_date, :description, :department_id
 
   #:department_attributes
     # :name_attributes, :note_attributes, :completed_attributes, :completed_date_attributes, :job_id_attributes, :workflow, :workflows,
@@ -21,10 +21,10 @@ class Job < ActiveRecord::Base
     # indexes description #], :as => :name
     indexes ordered_by, :as => :customer
     indexes workflows.note, :as => :workflow_note #added
-   indexes workflow.name, :as => :current_workflow
-   indexes department.name, :as => :department
+    indexes workflow.name, :as => :current_workflow
+    indexes department.name, :as => :department
 
-   has due_date, completed
+    has due, completed
     
    # indexes workflow.name, :as => :workflow_name #added
     
