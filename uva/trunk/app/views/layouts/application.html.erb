@@ -12,7 +12,10 @@
 <body class="twoColFixLtHdr">
   <div id="container">
     <div id="sidebar1">
-      <div id="user_nav">
+<!--
+  TODO Remove variable CSS, calculations may be slow
+-->
+      <div id=<%= "development == RAILS_ENV" ? "user_nav_dev" : "user_nav_prod" %> >
         <% if current_user %>
         <%= current_user_name + ": " %>
         <%= link_to "Edit Profile", edit_user_path(:current) %>
