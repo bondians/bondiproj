@@ -1,22 +1,23 @@
 class JobsController < ApplicationController
   access_control do   
-     allow logged_in
-     allow anonymous, :to => [:index, :search]
+    allow logged_in
+    allow anonymous, :to => [:index, :search]
     # layout "standard"
   end
 
   def index
-        @jobs = Job.all.sort_by{ |m| m.due }
-        @thisView = "Jobs - All"
+    @jobs = Job.all.sort_by{ |m| m.due }
+    @thisView = "Jobs - All"
   end
 
-  
+
   def show
     @job = Job.find(params[:id])
     @workflows = Workflow.find(:all, :conditions => ['job_id = ?', @job.id])
-   # @tasks = Task.find(:all)
+    @thisView = "Job - #{@job.id.to_s}"
+    # @tasks = Task.find(:all)
   end
-  
+
   def new
     @job = Job.new
     @accounts = Account.all
@@ -29,9 +30,9 @@ class JobsController < ApplicationController
     @job.workflows.build :name => "Press", :order => 80
     @job.workflows.build :name => "Bindery", :order => 90
     @job.workflows.build :name => "Ship", :order => 100, :step_needed => "1"
-   # @job.department.build
+    # @job.department.build
   end
-  
+
   def new_from_template 
     job_template = Job.find(params[:id])
     @job = Job.new 
@@ -39,13 +40,10 @@ class JobsController < ApplicationController
     @job[:name] = job_template[:name]
     @job[:description] = job_template[:description]
     @job[:due] = job_template[:due]
-    # @job[:due_time] = job_template[:due_time]
     @job[:submit_date] = job_template[:submit_date]
     @job[:received_date] = job_template[:received_date]
     @job[:ordered_by] = job_template[:ordered_by]
     @job[:auth_sig] = job_template[:auth_sig]
-    #@job[:department_id] = job_template[:department_id]
-    #@job[:account_id] = job_template[:account_id]
 
     @job[:dept] = dept2deptName(job_template.department)
     @job[:acct] = acct2acctNumber(job_template.account)
@@ -57,15 +55,8 @@ class JobsController < ApplicationController
 
     workflowSteps = Workflow.find(:all, :conditions => ["job_id = ?", job_template.id])
     workflowSteps.each do |step|
-       # puts "how does .each work? ******************" 
-        @job.workflows.build :name => step.name, :order => step.order, :note => step.note, :step_needed => "1"
+      @job.workflows.build :name => step.name, :order => step.order, :note => step.note, :step_needed => "1"
     end
-    #   @job.workflows.build :name => "Design", :order => 10
-    #   @job.workflows.build :name => "Copy" , :order => 70
-    #   @job.workflows.build :name => "Press", :order => 80
-    #   @job.workflows.build :name => "Bindery", :order => 90
-    #   @job.workflows.build :name => "Ship", :order => 100, :step_needed => "1"
-    # @job.department.build 
     render :template => "jobs/edit"
 
   end
@@ -74,8 +65,12 @@ class JobsController < ApplicationController
     depart = params[:job][:dept]
     acnt = params[:job][:acct] 
     @job = Job.new(params[:job])
-    
-    
+
+    # this is lame, but the only way I can get it to work the way I want
+    # THE WAY I WANT: a javascript popdown with a list of department names the user selects. 
+    # Without editing the javascript, it returns the NAME of the dept, not the ID, so 
+    # I made a virtual attribute (methods that get and set values, based on real attributes) for "depart" to be the name of the department
+    # Then I look up the ID by the name, with nil checking, and creation of previously non-existent departments.
     if depart == ( "" || nil )  then
       @job.department_id = nil 
     elsif Department.find_by_name(depart).nil?
@@ -86,7 +81,8 @@ class JobsController < ApplicationController
     else 
       @job.department_id = Department.find_by_name(depart).id
     end 
-    
+
+    # I do the same lame thing for accounts
     if acnt == ( "" || nil )  then
       @job.account_id = nil 
     elsif Account.find_by_number(acnt).nil?
@@ -97,10 +93,9 @@ class JobsController < ApplicationController
     else 
       @job.account_id = Account.find_by_number(acnt).id
     end 
-    
+
     if @job.save
       flash[:notice] = "Successfully created job \##{@job.id}."
-      raise @job.to_yaml
       redirect_to :action => 'show', :id => @job.id
     else
       flash[:error] = "You must have a 'Name' and a 'Due date' set."
@@ -114,30 +109,27 @@ class JobsController < ApplicationController
     @job = Job.find(params[:id])
     @job[:dept] = ( @job.department_id.nil? ? "" : @job.department.name )
     @job[:acct] = ( @job.account_id.nil? ? "" : @job.account.number )
-  #  @workflows = Workflows.find_by_job_id(params[:id])
-   # @workflows = Workflow.find(:all, :conditions => ['job_id = ?', @job.id])
-    
   end
-  
+
   def update
     @job = Job.find(params[:id])
-   # raise @job.to_yaml
-    
+    # raise @job.to_yaml
+
     depart = params[:job][:dept]
     acnt = params[:job][:acct]
 
-     if depart == ( "" || nil )  then
-       params[:job][:department_id] = nil 
-     elsif Department.find_by_name(depart).nil?
-       dept = Department.new
-       dept.name = depart.upcase
-       dept.save
-       params[:job][:department_id] = dept.id 
-     else 
-       params[:job][:department_id] = Department.find_by_name(depart).id   
-     end 
+    if depart == ( "" || nil )  then
+      params[:job][:department_id] = nil 
+    elsif Department.find_by_name(depart).nil?
+      dept = Department.new
+      dept.name = depart.upcase
+      dept.save
+      params[:job][:department_id] = dept.id 
+    else 
+      params[:job][:department_id] = Department.find_by_name(depart).id   
+    end 
 
-    
+
     if acnt == ( "" || nil )  then
       params[:job][:account_id] = nil 
     elsif Account.find_by_number(acnt).nil?
@@ -148,7 +140,7 @@ class JobsController < ApplicationController
     else 
       params[:job][:account_id] = Account.find_by_number(acnt).id
     end 
-     
+
     if @job.update_attributes(params[:job])
       flash[:notice] = "Successfully updated job \##{@job.id}."
       redirect_to job_path
@@ -156,24 +148,24 @@ class JobsController < ApplicationController
       render :action => 'edit'
     end
   end
-  
+
   def destroy
     @job = Job.find(params[:id])
     @job.destroy
     flash[:notice] = "Successfully destroyed job."
     redirect_to jobs_url
   end 
-  
+
   def design
-    
+
     @jobs = Job.search :conditions => { :current_workflow => 'Design' }, :order => :due
     @thisView = "Jobs - Design"
     render :template => "jobs/index"
   end
 
-  def copy
+  def copier
 
-    @jobs = Job.search :conditions => { :current_workflow => "Copy" }, :order => :due
+    @jobs = Job.search :conditions => { :current_workflow => 'Copy' }, :order => :due
     @thisView = "Jobs - Copy"
     render :template => "jobs/index"
   end
@@ -223,35 +215,33 @@ class JobsController < ApplicationController
   def complete_step
     job = Job.find(params[:id])
     step = Workflow.find(job.workflow_id)
-    step.completed = true
-    step.completed_date = Time.now
-    step.save
+    step.complete_step
     redirect_to :back
 
   end  
-  
+
   private
-  
+
   def dept2deptName(deptID)
-       #  
-       dept = deptID.nil? ? "" : Department.find(deptID).name 
+    #  
+    dept = deptID.nil? ? "" : Department.find(deptID).name 
   end
-  
+
   def deptName2dept(department)
-       # 
-        dept_id = department.nil? ? nil : Department.find_by_name(department)
+    # 
+    dept_id = department.nil? ? nil : Department.find_by_name(department)
   end 
-  
+
   def acct2acctNumber(actID)
-       #  
-       act = actID.nil? ? "" : Account.find(actID).number 
+    #  
+    act = actID.nil? ? "" : Account.find(actID).number 
   end
-  
+
   def acctNumber2acct(account)
-       # 
-        acct_id = account.nil? ? nil : Account.find_by_number(account)
+    # 
+    acct_id = account.nil? ? nil : Account.find_by_number(account)
   end 
-  
-  
-  
+
+
+
 end

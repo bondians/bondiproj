@@ -1,4 +1,4 @@
-<% title "Job" %>
+<% title @thisView %>
 
 <p>
   <strong>Name:</strong>
@@ -48,7 +48,8 @@
      <p>
       <%=h workflow.name %>:
       <%=h workflow.note %>
+      <%= ("<br />Completed on: " + workflow.completed_date.strftime("%b %d %Y")) unless ((workflow.completed == false) || workflow.completed.nil?) %>
       </p>
 <% end %>
 <p>
-  <%= link_to "Edit", edit_job_path(@job) %> |   <%= link_to "New Job using this Job as template", new_from_template_job_path(@job) %> | <%= link_to "New Job", new_job_path %> | <%= link_to "Destroy", @job, :confirm => 'Are you sure?', :method => :delete %> | </p>
+  <%= link_to "Edit Details", edit_job_path(@job) %> |   <%= link_to "New Job with same info", new_from_template_job_path(@job) %> | <%= link_to "New Job", new_job_path %> | <%= link_to "Destroy", @job, :confirm => 'Are you sure?', :method => :delete %> | </p>
