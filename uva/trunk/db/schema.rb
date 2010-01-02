@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091228224008) do
+ActiveRecord::Schema.define(:version => 20100102042741) do
 
   create_table "accounts", :force => true do |t|
     t.string   "number",        :limit => 15
@@ -42,16 +42,13 @@ ActiveRecord::Schema.define(:version => 20091228224008) do
     t.integer  "workflow_id"
     t.boolean  "completed"
     t.datetime "due"
+    t.integer  "task_id"
   end
 
   create_table "tasks", :force => true do |t|
     t.string   "name"
-    t.string   "note"
-    t.boolean  "completed"
-    t.date     "completed_date"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "job_id"
   end
 
   create_table "users", :force => true do |t|
