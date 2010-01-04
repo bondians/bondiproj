@@ -7,8 +7,8 @@
       <% unless job.workflow_id.nil? -%>
       <p>
         <% form_tag complete_step_job_path(job), :method => :put do %>
-        <%= job.workflow.name %><br />
-        <%= job.workflow.note %><br />
+        <%= job.workflow.nil? ? "" : job.task.name %> | <%= (job.workflow.nil?) ? "" : ((job.workflow.name == job.task.name) ? "" : job.task.name) %><br />
+        <%= job.workflow.nil? ? "" : job.workflow.note %><br />
         <%= submit_tag "Mark as Complete" %><br />
         <% end %>
       </p>
