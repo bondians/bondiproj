@@ -57,11 +57,11 @@
     <% f.fields_for :workflows do |workflow_form| %>
     <p>
       <div>
-        Task: <%= workflow_form.text_field :name, 'disabled' => 'true' %><%= workflow_form.hidden_field :name %><br />
+        Task: <%= workflow_form.text_field :name %><%= workflow_form.hidden_field :task_id %><br />
         <%#= workflow_form.label :step_needed%>
-        Check if step needed: <%= workflow_form.check_box :step_needed  %><br />
+        Needed: <%= workflow_form.check_box :step_needed  %><br />
         <%= workflow_form.label :note, 'Note: ' %>
-        <%= workflow_form.text_field :note %>
+        <%= workflow_form.text_field :note %><br >
         <%= workflow_form.text_field :order, 'disabled' => 'true' %><%= workflow_form.hidden_field :order %><br />
         <%= workflow_form.label :completed %>
         <%= workflow_form.check_box :completed %><br />
@@ -72,7 +72,7 @@
       </div>
       <% unless workflow_form.object.new_record? %>
       <div>
-        <%= workflow_form.label :_delete, 'Remove:' %>
+        <%= workflow_form.label :_delete, 'Remove Step:' %>
         <%= workflow_form.check_box :_delete %>
       </div>
       <% end %>

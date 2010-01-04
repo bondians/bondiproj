@@ -1,4 +1,5 @@
 class Task < ActiveRecord::Base
-  attr_accessible :name, :note, :completed, :completed_date, :job_id 
-  belongs_to :job, :dependent => :destroy
+  attr_accessible :name 
+  has_many :jobs
+  has_many :workflows
 end

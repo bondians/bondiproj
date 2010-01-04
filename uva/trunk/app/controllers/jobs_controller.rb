@@ -6,7 +6,7 @@ class JobsController < ApplicationController
   end
 
   def index
-        @jobs = Job.all.sort_by{ |m| m.due_date }
+        @jobs = Job.all.sort_by{ |m| m.due }
         @thisView = "Jobs - All"
   end
 
@@ -24,11 +24,11 @@ class JobsController < ApplicationController
     @job[:input_person] = current_user.username
     @job[:dept] = ""
     @job[:acct] = ""
-    @job.workflows.build :name => "Design", :order => 10, :step_needed => "0", :completed => false
-    @job.workflows.build :name => "Copy" , :order => 70, :step_needed => "0", :completed => false
-    @job.workflows.build :name => "Press", :order => 80, :step_needed => "0", :completed => false
-    @job.workflows.build :name => "Bindery", :order => 90, :step_needed => "0", :completed => false
-    @job.workflows.build :name => "Ship", :order => 100, :step_needed => "1", :completed => false
+    @job.workflows.build :name => "Design", :order => 10, :step_needed => "0", :completed => false, :task_id => 44
+    @job.workflows.build :name => "Copy" , :order => 70, :step_needed => "0", :completed => false, :task_id => 45
+    @job.workflows.build :name => "Press", :order => 80, :step_needed => "0", :completed => false, :task_id => 46
+    @job.workflows.build :name => "Bindery", :order => 90, :step_needed => "0", :completed => false, :task_id => 47
+    @job.workflows.build :name => "Ship", :order => 100, :step_needed => "1", :completed => false, :task_id => 48
    # @job.department.build
   end
   
@@ -38,6 +38,7 @@ class JobsController < ApplicationController
 
     @job[:name] = job_template[:name]
     @job[:description] = job_template[:description]
+    @job[:due] = job_template[:due]
     @job[:due_date] = job_template[:due_date]
     @job[:due_time] = job_template[:due_time]
     @job[:submit_date] = job_template[:submit_date]
@@ -100,7 +101,7 @@ class JobsController < ApplicationController
     
     if @job.save
       flash[:notice] = "Successfully created job."
-      redirect_to jobs_path
+      redirect_to job_path(@job)
     else
       flash[:error] = "You must have a 'Name' and a 'Due date' set."
       render :action => 'new'
@@ -148,7 +149,7 @@ class JobsController < ApplicationController
 
     if @job.update_attributes(params[:job])
       flash[:notice] = "Successfully updated job."
-      redirect_to job_path
+      redirect_to job_path(@job)
     else
       render :action => 'edit'
     end
@@ -162,7 +163,9 @@ class JobsController < ApplicationController
   end 
   
   def design
-     @jobs = (Workflow.find_by_sql("SELECT * FROM workflows WHERE name = 'Design' AND (completed IS NULL OR completed = 0)")).collect{|w| Job.find(w.job_id)}.sort{|a, b| b.due_date <=> a.due_date }
+    d = Task.find_by_name("Design").id
+    @jobs = Job.find(:all, :conditions => { :task_id => d }).sort_by{ |m| m.due }
+   #  @jobs = (Workflow.find_by_sql("SELECT * FROM workflows WHERE name = 'Design' AND (completed IS NULL OR completed = 0)")).collect{|w| Job.find(w.job_id)}.sort{|a, b| b.due_date <=> a.due_date }
     # @jobs.sort_by(:due_date => DESC)
     # w.collect{|i| Job.find(i.job_id)}
     # @jobs = Job.search :conditions => { :current_workflow => 'Design' }, :order => :due_date
@@ -171,7 +174,9 @@ class JobsController < ApplicationController
   end
 
   def copy
-    @jobs = (Workflow.find_by_sql("SELECT * FROM workflows WHERE name = 'Copy' AND (completed IS NULL OR completed = 0)")).collect{|w| Job.find(w.job_id)}.sort{|a, b| b.due_date <=> a.due_date }
+    d = Task.find_by_name("Copy").id
+    @jobs = Job.find(:all, :conditions => { :task_id => d }).sort_by{ |m| m.due }
+#    @jobs = (Workflow.find_by_sql("SELECT * FROM workflows WHERE name = 'Copy' AND (completed IS NULL OR completed = 0)")).collect{|w| Job.find(w.job_id)}.sort{|a, b| b.due_date <=> a.due_date }
 
   #  @jobs = Job.search :conditions => { :current_workflow => "Copy" }, :order => :due_date
     @thisView = "Jobs - Copy"
@@ -179,7 +184,9 @@ class JobsController < ApplicationController
   end
 
   def press
-    @jobs = (Workflow.find_by_sql("SELECT * FROM workflows WHERE name = 'Press' AND (completed IS NULL OR completed = 0)")).collect{|w| Job.find(w.job_id)}.sort{|a, b| b.due_date <=> a.due_date }
+    d = Task.find_by_name("Press").id
+    @jobs = Job.find(:all, :conditions => { :task_id => d }).sort_by{ |m| m.due }
+#    @jobs = (Workflow.find_by_sql("SELECT * FROM workflows WHERE name = 'Press' AND (completed IS NULL OR completed = 0)")).collect{|w| Job.find(w.job_id)}.sort{|a, b| b.due_date <=> a.due_date }
 
    # @jobs = Job.search :conditions => { :current_workflow => "Press" }, :order => :due_date
     @thisView = "Jobs - Press"
@@ -187,7 +194,9 @@ class JobsController < ApplicationController
   end
 
   def bindery
-    @jobs = (Workflow.find_by_sql("SELECT * FROM workflows WHERE name = 'Bindery' AND (completed IS NULL OR completed = 0)")).collect{|w| Job.find(w.job_id)}.sort{|a, b| b.due_date <=> a.due_date }
+    d = Task.find_by_name("Bindery").id
+    @jobs = Job.find(:all, :conditions => { :task_id => d }).sort_by{ |m| m.due }
+#    @jobs = (Workflow.find_by_sql("SELECT * FROM workflows WHERE name = 'Bindery' AND (completed IS NULL OR completed = 0)")).collect{|w| Job.find(w.job_id)}.sort{|a, b| b.due_date <=> a.due_date }
 
   #  @jobs = Job.search :conditions => { :current_workflow => 'Bindery' }, :order => :due_date
     @thisView = "Jobs - Bindery"
@@ -195,7 +204,9 @@ class JobsController < ApplicationController
   end
 
   def ship
-    @jobs = (Workflow.find_by_sql("SELECT * FROM workflows WHERE name = 'Ship' AND (completed IS NULL OR completed = 0)")).collect{|w| Job.find(w.job_id)}.sort{|a, b| b.due_date <=> a.due_date }
+    d = Task.find_by_name("Ship").id
+    @jobs = Job.find(:all, :conditions => { :task_id => d }).sort_by{ |m| m.due }
+#    @jobs = (Workflow.find_by_sql("SELECT * FROM workflows WHERE name = 'Ship' AND (completed IS NULL OR completed = 0)")).collect{|w| Job.find(w.job_id)}.sort{|a, b| b.due_date <=> a.due_date }
 
   #  @jobs = Job.search :conditions => { :current_workflow => "Ship" }, :order => :due_date
     @thisView = "Jobs - Ship"
@@ -204,21 +215,21 @@ class JobsController < ApplicationController
 
   def current
 
-    @jobs = Job.find(:all, :conditions => ["completed = ?", false]).sort_by{ |m| m.due_date }
+    @jobs = Job.find(:all, :conditions => ["completed = ?", false]).sort_by{ |m| m.due }
     @thisView = "Jobs - Current"
     render :template => "jobs/index"
   end
 
   def completed 
 
-    @jobs = Job.find(:all, :conditions => ["completed = ?", true]).sort_by{ |m| m.due_date }
+    @jobs = Job.find(:all, :conditions => ["completed = ?", true]).sort_by{ |m| m.due }
     @thisView = "Jobs - Complete"
     render :template => "jobs/index"
   end
 
   def search
 
-    @jobs = Job.search params[:search], :order => :due_date
+    @jobs = Job.search params[:search], :order => :due
     @thisView = "Jobs - '#{params[:search]}'"
     render :template => "jobs/index"
   end
@@ -226,9 +237,10 @@ class JobsController < ApplicationController
   def complete_step
     job = Job.find(params[:id])
     step = Workflow.find(job.workflow_id)
-    step.completed = true
-    step.completed_date = Time.now
-    step.save
+    step.complete_step
+ #   step.completed = true
+ #   step.completed_date = Time.now
+ #   step.save
     redirect_to :back
 
   end  

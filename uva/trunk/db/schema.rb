@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100102042741) do
+ActiveRecord::Schema.define(:version => 20100102045530) do
 
   create_table "accounts", :force => true do |t|
     t.string   "number",        :limit => 15
@@ -70,6 +70,7 @@ ActiveRecord::Schema.define(:version => 20100102042741) do
     t.datetime "updated_at"
     t.boolean  "step_needed"
     t.integer  "order"
+    t.integer  "task_id"
   end
 
 end

@@ -3,10 +3,11 @@ class Job < ActiveRecord::Base
   belongs_to :department
   belongs_to :account
   belongs_to :workflow
+  belongs_to :task
  
  # after_save :set_current_workflow_step
   
-  attr_accessible :name, :ticket, :description, :due_date, :due_time, :due, :submit_date, :ordered_by, :auth_sig, :department_id, :account_id, :input_person, :received_date, :workflow_id, :completed, :workflows_attributes, :workflows #, :workflow #,
+  attr_accessible :name, :ticket, :description, :due_date, :due_time, :due, :submit_date, :ordered_by, :auth_sig, :department_id, :account_id, :input_person, :received_date, :workflow_id, :completed, :workflows_attributes, :workflows, :task_id #, :workflow #,
    
   validates_presence_of :name, :due #, :ordered_by, :submit_date, :received_date, :description, :department_id
 
@@ -21,7 +22,7 @@ class Job < ActiveRecord::Base
     # indexes description #], :as => :name
     indexes ordered_by, :as => :customer
     indexes workflows.note, :as => :workflow_note #added
-    indexes workflow.name, :as => :current_workflow
+    indexes workflow.name, :as => :current_workflow    # removed as part of Task refactor
     indexes department.name, :as => :department
 
     has due, completed
@@ -38,8 +39,9 @@ class Job < ActiveRecord::Base
      
   end
   
-  def not_shipped
-     Workflow.find(:all, :conditions => {"job_id = ?" => self, "name = ?" => "Ship", "completed = ? " => false } )
+  def not_shipped 
+    d = Task.find_by_name("Ship")
+     Job.find(:all, :conditions => {"job_id = ?" => self, :task_id => d }).sort_by{ |m| m.due}
   end
 
 

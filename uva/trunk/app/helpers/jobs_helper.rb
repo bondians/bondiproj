@@ -8,16 +8,17 @@ module JobsHelper
   end
 
   def index_accordion_color(j)
-    if j.workflow == nil then 
+    if j.task == 43 then 
       return "AccordionPanelTab"
     end
 
-    colorTag = case j.workflow.name 
+    colorTag = case j.task.name 
     when  /Design/  then "AccordionPanelTabD"
-    when /Copy/    then "AccordionPanelTabC"
+    when /Copy/     then "AccordionPanelTabC"
     when  /Press/   then "AccordionPanelTabP"
     when /Binde?ry/ then "AccordionPanelTabB"
     when  /Ship/    then "AccordionPanelTabS"
+    when  /Other/   then "AccordionPanelTabO"
     else "AccordionPanelTab"
     end
     return colorTag

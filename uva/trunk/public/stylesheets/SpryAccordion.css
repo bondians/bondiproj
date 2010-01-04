@@ -52,7 +52,7 @@
  * validate, and don't care if the user can select the text within an AccordionPanelTab,
  * you can safely remove those properties without affecting the functionality of the widget.
  */
-.AccordionPanelTab, .AccordionPanelTabD, .AccordionPanelTabC, .AccordionPanelTabP, .AccordionPanelTabB, .AccordionPanelTabS {
+.AccordionPanelTab, .AccordionPanelTabD, .AccordionPanelTabC, .AccordionPanelTabP, .AccordionPanelTabB, .AccordionPanelTabS, .AccordionPanelTabO {
 	border-top: solid 1px black;
 	border-bottom: solid 1px gray;
 	margin: 0px;
@@ -84,6 +84,10 @@
 
 .AccordionPanelTabS {
 	background-color: #ff6561;
+}
+
+.AccordionPanelTabO {
+	background-color: #338833;
 }
 
 /* This is the selector for a Panel's Content area. It's important to note that

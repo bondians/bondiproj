@@ -1,5 +1,5 @@
 class Workflow < ActiveRecord::Base
-  attr_accessible :name, :note, :completed, :completed_date, :job_id, :step_needed, :order 
+  attr_accessible :name, :note, :completed, :completed_date, :job_id, :step_needed, :order, :task_id 
   belongs_to :job #, :dependent => :destroy
   has_one :job
   validates_presence_of :name 
@@ -28,10 +28,12 @@ class Workflow < ActiveRecord::Base
     if curstep == nil then
       curjob.workflow_id = nil
       curjob.completed = true
+      curjob.task_id = Task.find_by_name("Complete")
       curjob.save
 
     else
       curjob.workflow_id = curstep.id
+      curjob.task_id = curstep.task_id
       curjob.completed = false
       curjob.save
    end 
