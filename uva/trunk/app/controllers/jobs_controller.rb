@@ -172,7 +172,7 @@ class JobsController < ApplicationController
     # @jobs.sort_by(:due_date => DESC)
     # w.collect{|i| Job.find(i.job_id)}
     # @jobs = Job.search :conditions => { :current_workflow => 'Design' }, :order => :due_date
-    @thisView = "Jobs - Design"
+    @thisView = "Jobs - Design:#{@jobs.count} records"
     render :template => "jobs/index"
   end
 
@@ -182,7 +182,7 @@ class JobsController < ApplicationController
 #    @jobs = (Workflow.find_by_sql("SELECT * FROM workflows WHERE name = 'Copy' AND (completed IS NULL OR completed = 0)")).collect{|w| Job.find(w.job_id)}.sort{|a, b| b.due_date <=> a.due_date }
 
   #  @jobs = Job.search :conditions => { :current_workflow => "Copy" }, :order => :due_date
-    @thisView = "Jobs - Copy"
+    @thisView = "Jobs - Copy:#{@jobs.count} records"
     render :template => "jobs/index"
   end
 
@@ -192,7 +192,7 @@ class JobsController < ApplicationController
 #    @jobs = (Workflow.find_by_sql("SELECT * FROM workflows WHERE name = 'Press' AND (completed IS NULL OR completed = 0)")).collect{|w| Job.find(w.job_id)}.sort{|a, b| b.due_date <=> a.due_date }
 
    # @jobs = Job.search :conditions => { :current_workflow => "Press" }, :order => :due_date
-    @thisView = "Jobs - Press"
+    @thisView = "Jobs - Press:#{@jobs.count} records"
     render :template => "jobs/index"
   end
 
@@ -202,7 +202,7 @@ class JobsController < ApplicationController
 #    @jobs = (Workflow.find_by_sql("SELECT * FROM workflows WHERE name = 'Bindery' AND (completed IS NULL OR completed = 0)")).collect{|w| Job.find(w.job_id)}.sort{|a, b| b.due_date <=> a.due_date }
 
   #  @jobs = Job.search :conditions => { :current_workflow => 'Bindery' }, :order => :due_date
-    @thisView = "Jobs - Bindery"
+    @thisView = "Jobs - Bindery:#{@jobs.count} records"
     render :template => "jobs/index"
   end
 
@@ -212,28 +212,28 @@ class JobsController < ApplicationController
 #    @jobs = (Workflow.find_by_sql("SELECT * FROM workflows WHERE name = 'Ship' AND (completed IS NULL OR completed = 0)")).collect{|w| Job.find(w.job_id)}.sort{|a, b| b.due_date <=> a.due_date }
 
   #  @jobs = Job.search :conditions => { :current_workflow => "Ship" }, :order => :due_date
-    @thisView = "Jobs - Ship"
+    @thisView = "Jobs - Ship:#{@jobs.count} records"
     render :template => "jobs/index"
   end
 
   def current
 
     @jobs = Job.find(:all, :conditions => ["completed = ?", false]).sort_by{ |m| m.due }
-    @thisView = "Jobs - Current"
+    @thisView = "Jobs - Current:#{@jobs.count} records"
     render :template => "jobs/index"
   end
 
   def completed 
 
     @jobs = Job.find(:all, :conditions => ["completed = ?", true]).sort_by{ |m| m.due }
-    @thisView = "Jobs - Complete"
+    @thisView = "Jobs - Complete:#{@jobs.count} records"
     render :template => "jobs/index"
   end
 
   def search
 
     @jobs = Job.search params[:search], :order => :due
-    @thisView = "Jobs - '#{params[:search]}'"
+    @thisView = "Jobs - '#{params[:search]}':#{@jobs.count} found"
     render :template => "jobs/index"
   end
 

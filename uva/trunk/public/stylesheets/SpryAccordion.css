@@ -203,8 +203,7 @@
 	background-color: #fff1f1;
 }
 
-.jobdate {
-	background-color: #EEE;
+.jobdate, .jobdate_notdue, .jobdate_due, .jobdate_pastdue {
 	width: 250px;
 	margin: 2px;
 	padding: 2px;
@@ -214,6 +213,24 @@
 	-khtml-border-radius: 5px;	
 	-moz-user-select: none;
 	-khtml-user-select: none;
+}
+.jobdate {
+	background-color: #EEE;
+}
+
+.jobdate_notdue {
+	background-color: #AFA;
+	
+}
+
+.jobdate_due {
+	background-color: #FF8;
+	
+}
+
+.jobdate_pastdue {
+	background-color: #FAA;
+	
 }
 
 .currenttask {

@@ -26,7 +26,8 @@ class Workflow < ActiveRecord::Base
     curstep = steps.detect { |i| i.completed != true }
     curjob = Job.find(self.job_id)
     if curstep == nil then
-      curjob.workflow_id = nil
+      curjob.workflow_id = self.id # rather than leaving a hanging nil,
+                    # set the job.workflow to self (the calling workflow step)
       curjob.completed = true
       curjob.task_id = Task.find_by_name("Complete")
       curjob.save
