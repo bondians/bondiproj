@@ -8,6 +8,7 @@ module JobsHelper
   end
 
   def index_accordion_color(j)
+    d = Task.find_by_name("Complete")
     if j.task == 43 then 
       return "AccordionPanelTab"
     end

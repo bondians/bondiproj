@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100102045530) do
+ActiveRecord::Schema.define(:version => 20100105181929) do
 
   create_table "accounts", :force => true do |t|
     t.string   "number",        :limit => 15
@@ -43,6 +43,7 @@ ActiveRecord::Schema.define(:version => 20100102045530) do
     t.boolean  "completed"
     t.datetime "due"
     t.integer  "task_id"
+    t.decimal  "total_cost",    :precision => 9, :scale => 2
   end
 
   create_table "tasks", :force => true do |t|

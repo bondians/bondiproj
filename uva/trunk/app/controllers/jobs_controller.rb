@@ -13,7 +13,7 @@ class JobsController < ApplicationController
   
   def show
     @job = Job.find(params[:id])
-    @workflows = Workflow.find(:all, :conditions => ['job_id = ?', @job.id])
+    @workflows = Workflow.find(:all, :conditions => ['job_id = ?', @job.id]).sort_by{ |m| m.order }
    # @tasks = Task.find(:all)
   end
   
@@ -24,11 +24,16 @@ class JobsController < ApplicationController
     @job[:input_person] = current_user.username
     @job[:dept] = ""
     @job[:acct] = ""
-    @job.workflows.build :name => "Design", :order => 10, :step_needed => "0", :completed => false, :task_id => 44
-    @job.workflows.build :name => "Copy" , :order => 70, :step_needed => "0", :completed => false, :task_id => 45
-    @job.workflows.build :name => "Press", :order => 80, :step_needed => "0", :completed => false, :task_id => 46
-    @job.workflows.build :name => "Bindery", :order => 90, :step_needed => "0", :completed => false, :task_id => 47
-    @job.workflows.build :name => "Ship", :order => 100, :step_needed => "1", :completed => false, :task_id => 48
+    d = Task.find_by_name("Design")
+    c = Task.find_by_name("Copy")
+    p = Task.find_by_name("Press")
+    b = Task.find_by_name("Bindery")
+    s = Task.find_by_name("Ship")
+    @job.workflows.build :name => "Design", :order => 10, :step_needed => "0", :completed => false, :task_id => d.id
+    @job.workflows.build :name => "Copy" , :order => 70, :step_needed => "0", :completed => false, :task_id => c.id
+    @job.workflows.build :name => "Press", :order => 80, :step_needed => "0", :completed => false, :task_id => p.id
+    @job.workflows.build :name => "Bindery", :order => 90, :step_needed => "0", :completed => false, :task_id => b.id
+    @job.workflows.build :name => "Ship", :order => 100, :step_needed => "1", :completed => false, :task_id => s.id
    # @job.department.build
   end
   
@@ -39,8 +44,6 @@ class JobsController < ApplicationController
     @job[:name] = job_template[:name]
     @job[:description] = job_template[:description]
     @job[:due] = job_template[:due]
-    @job[:due_date] = job_template[:due_date]
-    @job[:due_time] = job_template[:due_time]
     @job[:submit_date] = job_template[:submit_date]
     @job[:received_date] = job_template[:received_date]
     @job[:ordered_by] = job_template[:ordered_by]
@@ -59,7 +62,7 @@ class JobsController < ApplicationController
     workflowSteps = Workflow.find(:all, :conditions => ["job_id = ?", job_template.id])
     workflowSteps.each do |step|
        # puts "how does .each work? ******************" 
-        @job.workflows.build :name => step.name, :order => step.order, :note => step.note, :step_needed => "1"
+        @job.workflows.build :name => step.name, :order => step.order, :note => step.note, :step_needed => "1", :task_id => step.task_id
     end
     #   @job.workflows.build :name => "Design", :order => 10
     #   @job.workflows.build :name => "Copy" , :order => 70

@@ -84,6 +84,11 @@
     <%= render :partial => 'step', :collection => @job.workflows %>   
    -->           
   <p>
+    <%= f.label :total_cost %><br />
+    <%= f.text_field :total_cost %>
+</p>
+
+  <p>
     <%= f.label :input_person %><br />
     <%= @job.input_person %>
     <%= f.hidden_field :input_person %>

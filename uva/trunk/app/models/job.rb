@@ -7,7 +7,7 @@ class Job < ActiveRecord::Base
  
  # after_save :set_current_workflow_step
   
-  attr_accessible :name, :ticket, :description, :due_date, :due_time, :due, :submit_date, :ordered_by, :auth_sig, :department_id, :account_id, :input_person, :received_date, :workflow_id, :completed, :workflows_attributes, :workflows, :task_id #, :workflow #,
+  attr_accessible :name, :ticket, :description, :due_date, :due_time, :due, :submit_date, :ordered_by, :auth_sig, :department_id, :account_id, :input_person, :received_date, :workflow_id, :completed, :workflows_attributes, :workflows, :task_id, :total_cost #, :workflow #,
    
   validates_presence_of :name, :due #, :ordered_by, :submit_date, :received_date, :description, :department_id
 
