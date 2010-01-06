@@ -1,0 +1,25 @@
+var accounts = new Array();
+<% for account in @accounts -%>
+  accounts.push(new Array(<%= account.department_id %>, '<%=h account.number %>', <%= account.id %>));
+<% end -%>
+
+function departmentSelected() {
+  department_id = $('job_department_id').getValue();
+  options = $('job_account_id').options;
+  options.length = 1;
+  accounts.each(function(account) {
+    if (account[0] == department_id) {
+      options[options.length] = new Option(account[1], account[2]);
+    }
+  });
+  if (options.length == 1) {
+    $('account_field').hide();
+  } else {
+    $('account_field').show();
+  }
+}
+
+document.observe('dom:loaded', function() {
+  $('account_field').hide();
+  $('job_department_id').observe('change', accountSelected);
+});

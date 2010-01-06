@@ -4,6 +4,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :departments #, :collection => { :auto_name => :get }  
 
   map.resources :workflows
+#  map.resources :javascripts, :collection => { :dynamic_accounts => :get }
 
   
   # routes added for authlogic user sessions (RB podcast #160)
@@ -58,6 +59,7 @@ ActionController::Routing::Routes.draw do |map|
   # Note: These default routes make all actions in every controller accessible via GET requests. You should
   # consider removing or commenting them out if you're using named routes and resources.
   map.connect ':controller/:action/:id'
+  map.connect ':controller/:action/.:format'
   map.connect ':controller/:action/:id.:format'
   
   map.root :controller => "jobs", :action => "index" #, :show => "incomplete" 
