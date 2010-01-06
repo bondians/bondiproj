@@ -1,5 +1,5 @@
 <%= "<span class=\"" + (job.completed ? "jobdate" : (job.due < Time.now ? "jobdate_pastdue" : (job.due > Time.now ? "jobdate_notdue" : "jobdate_due" )))    + "\" >"%><%= "Due: " + job.due.strftime("%a, %b %d, %y")  %><br /><%= job.due.strftime("%I:%M %p") %></span>
-<b><%=h job.department.name unless job.department.nil? %> - <%=h job.name %></b><br /><%= "\#" + job.id.to_s %> <%= "Ticket# " + job.ticket if /\d+/.match(job.ticket) %><%= (" $" + job.total_cost.to_s) unless job.total_cost.nil? %> 
+<b><%=h job.department.name unless job.department.nil? %> - <%=h job.name %></b><br /><%= "\#" + job.id.to_s %> <%= "Ticket# " + job.ticket if /\d+/.match(job.ticket) %><%= (number_to_currency(job.total_cost, :unit => "$")) unless job.total_cost.nil? %> 
 <% unless (job.workflow.nil? || job.workflow.note.nil? || job.workflow.note =~ /^[:blank::space:]*$/ )%>
 <span class="currenttask"><%= snippet(job.workflow.note.lstrip, 27) %><br /></span>
 <% end %>  
