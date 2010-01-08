@@ -56,4 +56,9 @@
   <%= number_to_currency(@job.total_cost, :unit => "$") %>
 </p>
 <p>
+  <strong>Completed:</strong>
+  <%= @job.completed %>
+</p>
+
+<p>
   <%= link_to "Edit Details", edit_job_path(@job) %> |   <%= link_to "New Job with same info", new_from_template_job_path(@job) %> | <%= link_to "New Job", new_job_path %> | <%= link_to "Destroy", @job, :confirm => 'Are you sure?', :method => :delete %> | </p>

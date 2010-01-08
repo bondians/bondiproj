@@ -204,7 +204,7 @@
 }
 
 .jobdate, .jobdate_notdue, .jobdate_due, .jobdate_pastdue {
-	width: 250px;
+	width: 200px;
 	margin: 2px;
 	padding: 2px;
 	border: 1px solid #111;
