@@ -1,0 +1,28 @@
+<% title "Workflow" %>
+
+<p>
+  <strong>Name:</strong>
+  <%=h @workflow.name %>
+</p>
+<p>
+  <strong>Note:</strong>
+  <%=h @workflow.note %>
+</p>
+<p>
+  <strong>Completed:</strong>
+  <%=h @workflow.completed %>
+</p>
+<p>
+  <strong>Completed Date:</strong>
+  <%=h @workflow.completed_date %>
+</p>
+<p>
+  <strong>Job:</strong>
+  <%=h @workflow.job_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_workflow_path(@workflow) %> |
+  <%= link_to "Destroy", @workflow, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", workflows_path %>
+</p>

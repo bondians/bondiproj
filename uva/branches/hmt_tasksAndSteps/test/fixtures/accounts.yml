@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  number: 01420300105712
+  department_id: 1
+
+two:
+  number: 01515080405712
+  department_id: 2
+  
+tree:
+  number: 01132018365712
+  department_id: 3
+
+fore: 
+  number: 01132018385712
+  department_id: 3

@@ -1,0 +1,20 @@
+<% title @thisView %>
+<p><%= link_to "New Job", new_job_path %></p>
+<%# div id="Accordion1" class="Accordion" tabindex="0" %>
+<div id="Accordion1" class="Accordion" tabindex="0">
+<%= render :partial => 'job', :collection => @jobs %>
+</div>
+
+<script type="text/javascript">
+<!--
+var Accordion1 = new Spry.Widget.Accordion("Accordion1", { useFixedPanelHeights: false, defaultPanel: -1 });
+//-->
+</script>
+<script type="text/javascript">
+<!--	
+  var timer = setInterval("autoRefresh()", 1000 * 60 * 14);
+  function autoRefresh(){self.location.reload(true);}
+//--> 
+</script>
+
+<p><%= link_to "New Job", new_job_path %></p>
