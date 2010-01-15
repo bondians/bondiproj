@@ -4,7 +4,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.1.40-log)
 # Database: jobs_development
-# Generation Time: 2010-01-15 13:26:06 -0800
+# Generation Time: 2010-01-15 15:55:39 -0800
 # ************************************************************
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -1079,8 +1079,8 @@ VALUES
 	(522,'Worksheets - Math','',NULL,NULL,'2010-01-11','Wohlgetogen, rm 465','tindrum',1,44,1832053019,'2010-01-14 22:26:12','2010-01-14 22:26:35','2010-01-13','',1255,1,'2010-01-13 19:25:01',1,7.16),
 	(523,'BC - Julia Cook Muneer - 500','',NULL,NULL,'2010-01-14','J. Taurman x3602','tindrum',1,57,NULL,'2010-01-14 23:01:24','2010-01-14 23:01:42','2010-01-14','',1256,0,'2010-01-15 19:00:41',2,22.00),
 	(524,'BC - Pam Chant - 100','',NULL,NULL,'2009-12-09','Pamela Chant','tindrum',1,41,NULL,'2010-01-14 23:13:47','2010-01-14 23:16:36','2010-01-08','',1260,0,'2010-01-28 23:13:15',2,14.00),
-	(525,'Apple Award program','40 copies of 4 single sides\r\n\r\n/Volumes/Uno/Bank/Departments/Human Resources/Classified/Brochures/Apple Awards.qxp\r\n\r\nred cover, white inside',NULL,NULL,'2010-01-14','Shelley Durieux   x2576','dnramsay',0,81,1415628845,'2010-01-14 23:32:44','2010-01-14 23:32:44','2010-01-14','',1264,0,'2010-01-19 23:26:51',3,NULL),
-	(526,'Apple Award program','40 copies of 4 single sides\r\n\r\n/Volumes/Uno/Bank/Departments/Human Resources/Classified/Brochures/Apple Awards.qxp\r\n\r\nred cover, white inside',NULL,NULL,'2010-01-14','Shelley Durieux   x2576','dnramsay',0,82,906183274,'2010-01-14 23:34:03','2010-01-14 23:34:04','2010-01-14','',1267,0,'2010-01-19 23:26:51',3,NULL);
+	(525,'Apple Award program','40 copies of 4 single sides\r\n\r\n/Volumes/Uno/Bank/Departments/Human Resources/Classified/Brochures/Apple Awards.qxp\r\n\r\nred cover, white inside',NULL,NULL,'2010-01-14','Shelley Durieux   x2576','dnramsay',0,81,1415628845,'2010-01-14 23:32:44','2010-01-15 22:39:19','2010-01-14','',1270,0,'2010-01-19 23:26:51',2,NULL),
+	(526,'Apple Award program','40 copies of 4 single sides\r\n\r\n/Volumes/Uno/Bank/Departments/Human Resources/Classified/Brochures/Apple Awards.qxp\r\n\r\nred cover, white inside',NULL,NULL,'2010-01-14','Shelley Durieux   x2576','dnramsay',0,82,906183274,'2010-01-14 23:34:03','2010-01-15 22:40:00','2010-01-14','',1271,0,'2010-01-19 23:26:51',2,NULL);
 
 /*!40000 ALTER TABLE `jobs` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -1202,7 +1202,7 @@ CREATE TABLE `workflows` (
   `order` int(11) DEFAULT NULL,
   `task_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1270 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1272 DEFAULT CHARSET=utf8;
 
 LOCK TABLES `workflows` WRITE;
 /*!40000 ALTER TABLE `workflows` DISABLE KEYS */;
@@ -2134,12 +2134,14 @@ VALUES
 	(1261,'Copy','',0,'2010-01-14',524,'2010-01-14 23:13:48','2010-01-14 23:16:36',1,70,3),
 	(1262,'Bindery','cut',0,'2010-01-14',524,'2010-01-14 23:13:48','2010-01-14 23:16:36',1,90,5),
 	(1263,'Ship','',0,'2010-01-14',524,'2010-01-14 23:13:48','2010-01-14 23:16:36',1,100,6),
-	(1264,'Copy','',NULL,NULL,525,'2010-01-14 23:32:44','2010-01-14 23:32:44',1,70,3),
-	(1265,'Bindery','one staple',NULL,NULL,525,'2010-01-14 23:32:44','2010-01-14 23:32:44',1,90,5),
-	(1266,'Ship','call when ready',NULL,NULL,525,'2010-01-14 23:32:44','2010-01-14 23:32:44',1,100,6),
+	(1264,'Copy','',0,'2010-01-15',525,'2010-01-14 23:32:44','2010-01-15 22:39:19',1,70,3),
+	(1265,'Bindery','one staple',0,'2010-01-15',525,'2010-01-14 23:32:44','2010-01-15 22:39:19',1,90,5),
+	(1266,'Ship','call when ready',0,'2010-01-15',525,'2010-01-14 23:32:44','2010-01-15 22:39:19',1,100,6),
 	(1267,'Copy','',0,'2010-01-14',526,'2010-01-14 23:34:03','2010-01-14 23:34:03',1,70,3),
 	(1268,'Bindery','one staple',0,'2010-01-14',526,'2010-01-14 23:34:03','2010-01-14 23:34:03',1,90,5),
-	(1269,'Ship','call when ready',0,'2010-01-14',526,'2010-01-14 23:34:04','2010-01-14 23:34:04',1,100,6);
+	(1269,'Ship','call when ready',0,'2010-01-14',526,'2010-01-14 23:34:04','2010-01-14 23:34:04',1,100,6),
+	(1270,'Design','',0,NULL,525,'2010-01-15 22:39:07','2010-01-15 22:39:19',NULL,10,2),
+	(1271,'Design','',0,NULL,526,'2010-01-15 22:40:00','2010-01-15 22:40:00',NULL,10,2);
 
 /*!40000 ALTER TABLE `workflows` ENABLE KEYS */;
 UNLOCK TABLES;
