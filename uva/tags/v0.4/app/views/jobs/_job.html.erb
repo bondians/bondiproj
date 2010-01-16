@@ -1,0 +1,28 @@
+<div class="AccordionPanel">
+  <%= "<div class=\"#{index_accordion_color(job)}\"" %>
+    <%= render :partial => 'job_accordion_top', :locals => { :job => job } %>
+  </div>
+  <div class="AccordionPanelContent">
+    <div id='jobinfo'>
+      <% unless job.workflow_id.nil? -%>
+      <p>
+        <% form_tag complete_step_job_path(job), :method => :put do %>
+        <%= job.workflow.nil? ? "" : job.task.name %> | <%= (job.workflow.nil?) ? "" : ((job.workflow.name == job.task.name) ? "" : job.workflow.name) %><br />
+        <%= job.workflow.nil? ? "" : job.workflow.note %><br />
+        <%= submit_tag "Mark as Complete" %><br />
+        <% end %>
+      </p>
+      <% end -%>
+      <hr />
+      <p>Description:<br /><%=h job.description %></p>
+      <p>Submit Date: <%=h job.submit_date.strftime("%m/%d/%Y") unless job.submit_date.nil? %></p>
+      <p>Received Date: <%=h job.received_date.strftime("%m/%d/%Y") unless job.received_date.nil? %></p>
+      <p>Account Number: <%=h job.account.number unless job.account_id.nil? %></p>
+      <p>Ordered By: <%=h job.ordered_by %></p>
+      <p>Authorized Signature: <%=h job.auth_sig %></p>
+      <hr />
+      <%= link_to "Show Details", job %> | <%= link_to "Edit Details", edit_job_path(job) %> | <%= link_to "New Job with same info", new_from_template_job_path(job) %> | <br />
+      <p>Input by: <%=h job.input_person %></p>
+    </div>
+  </div>
+</div>

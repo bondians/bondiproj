@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+  <title><%= h(yield(:title) || "Untitled") %></title>
+  <%= stylesheet_link_tag :all %>
+  <%#= javascript_include_tag 'prototype', 'application', 'controls', 'dragdrop', 'effects', 'SpryAccordion' %>
+  <%= javascript_include_tag :all %>
+  <%= dhtml_calendar_includes %>
+  <%= yield(:head) %>
+</head>
+<body class="twoColFixLtHdr">
+  <div id="container">
+    <div id="sidebar1">
+<!--
+  TODO Remove variable CSS, calculations may be slow
+-->
+      <div id=<%= "development == RAILS_ENV" ? "user_nav_dev" : "user_nav_prod" %> >
+        <% if current_user %>
+        <%= current_user_name + ": " %>
+        <%= link_to "Edit Profile", edit_user_path(:current) %>
+        <%= link_to "Logout", logout_path %>
+        <% else %>
+        <%= current_user_name + ": " %>
+        <%= link_to "Register",  new_user_path %>
+        <%= link_to "Login",  login_path %>
+        <% end %>
+      </div>
+      <%- if show_title? -%>
+      <h1><%=h yield(:title) %></h1>
+      <hr />
+      <%- end -%>
+      <div id="steps_buttons">
+        <%= link_to "Design", :controller => "jobs", :action => "design" %> <%= image_tag("Design.gif") %><br />
+        <%= link_to "Copy", :controller => "jobs", :action => "copy" %> <%= image_tag("Copy.gif") %><br />
+        <%= link_to "Press", :controller => "jobs", :action => "press" %> <%= image_tag("Press.gif") %><br />
+        <%= link_to "Bindery", :controller => "jobs", :action => "bindery" %> <%= image_tag("Bindery.gif") %><br />
+        <%= link_to "Ship", :controller => "jobs", :action => "ship" %> <%= image_tag("Ship.gif") %><br />
+        <%#= link_to "Shipped", :controller => "jobs", :action => "index", :show => "shipped" %>
+      </div>
+      <div id="jobs_sort">
+        <%= link_to "Show Current Jobs", :controller => "jobs", :action => "current" %><br />
+        <%= link_to "Show Completed Jobs", :controller => "jobs", :action => "completed" %><br />
+        <%= link_to "Show all jobs", :controller => "jobs", :action => "index" %>
+      </div>
+      <div id="quick_search">
+        <% form_tag (search_jobs_path, :method => "get" ) do %>
+        <%= text_field_tag :search, params[:search] %>
+        <%= submit_tag "Search", :name => nil, :controller => "jobs", :action => "search" %>
+        <% end %>
+      </div>
+      <%- flash.each do |name, msg| -%>
+      <%= content_tag :div, msg, :id => "flash_#{name}" %>
+      <%- end -%>
+    </div>
+    <div id="mainContent">
+      <%= yield %>
+    </div>
+  </div>
+</body>
+</html>

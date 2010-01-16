@@ -1,0 +1,64 @@
+<% title @thisView %>
+
+<p>
+  <strong>Name:</strong>
+  <%=h @job.name %>
+</p>
+<p>
+  <strong>Job Ticket:</strong>
+  <%=h @job.ticket %>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%=h @job.description %>
+</p>
+<p>
+  <strong>Due Date:</strong>
+  <%=h @job.due.strftime("%b %d, %Y") %>
+</p>
+<p>
+  <strong>Due Time:</strong>
+  <%=h @job.due.strftime("%H:%M") %>
+</p>
+<p>
+  <strong>Submit Date:</strong>
+  <%=h @job.submit_date.strftime("%b %d, %Y") unless @job.submit_date.nil? %>
+</p>
+<p>
+  <strong>Ordered By:</strong>
+  <%=h @job.ordered_by %>
+</p>
+<p>
+  <strong>Input Person:</strong>
+  <%=h @job.input_person %>
+</p>
+<p>
+  <strong>Auth Sig:</strong>
+  <%=h @job.auth_sig %>
+</p>
+<p>
+  <strong>Department:</strong>
+  <%=h @job.department.name unless @job.department.nil? %>
+</p>
+<p>
+  <strong>Account:</strong>
+  <%=h @job.account.number unless @job.account.nil? %>
+</p>
+<% for workflow in @workflows %>
+     <p>
+      <%=h workflow.name %>:
+      <%=h workflow.note %>
+      <%= ("<br />Completed on: " + workflow.completed_date.strftime("%b %d %Y")) unless ((workflow.completed == false) || workflow.completed.nil?) %>
+      </p>
+<% end %>
+<p>
+  <strong>Total Cost:</strong>
+  <%= number_to_currency(@job.total_cost, :unit => "$") %>
+</p>
+<p>
+  <strong>Completed:</strong>
+  <%= @job.completed %>
+</p>
+
+<p>
+  <%= link_to "Edit Details", edit_job_path(@job) %> |   <%= link_to "New Job with same info", new_from_template_job_path(@job) %> | <%= link_to "New Job", new_job_path %> | <%= link_to "Destroy", @job, :confirm => 'Are you sure?', :method => :delete %> | </p>

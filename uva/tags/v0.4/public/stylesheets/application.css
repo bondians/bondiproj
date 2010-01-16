@@ -1,0 +1,244 @@
+body {
+  background-color: #5d3579;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  /* font-size: 14px; */
+  margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+  padding: 0;
+  text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+
+.twoColFixLtHdr #container { 
+	width: 780px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 1px solid #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+}	
+	/* IE hack */
+
+.twoColFixLtHdr #header {
+	background: #4f7b8a;
+	padding: 0 10px 0 20px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+	color: #EDEDED;
+} 
+.twoColFixLtHdr #header h1 {
+	color: #FFF;
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+	background-image: url(../images/2818877-533x800.jpg);
+}
+.twoColFixLtHdr #sidebar1 {
+/*#	float: left;  since this element is floated, a width must be given */
+/*#	width: 200px;  the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
+	background: #6cc2af;
+	padding-top: 15px;
+	padding-right: 10px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+	overflow: hidden;
+}
+
+* html .twoColFixLtHdr #sidebar1 {
+	width: 710px;
+	margin-left: 20px;
+	
+}
+#quick_search {
+	width: 340px;
+	float: left;
+}
+
+* html #quick_search {
+	float: left;
+}
+
+#jobs_sort {
+	float: left;
+	width: 270px;
+	padding: 10px;
+}
+
+* html #jobs_sort {
+	float: left;
+}
+
+#steps_buttons {
+	float: right;
+	width: 130px;
+	text-align: right;
+	background-color: #539486;
+	padding: 5px;
+	margin: 8px;
+	border: 1px solid #000;
+}
+
+* html #steps_buttons {
+	float: right;
+}
+
+#sidebar1 h1 {
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 4px;
+	padding-left: 0px;
+}
+.twoColFixLtHdr #mainContent {
+	clear: both;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0px;
+	padding-top: 0;
+	padding-right: 20px;
+	padding-bottom: 0;
+	padding-left: 20px;
+} 
+.twoColFixLtHdr #mainContent h1 { 
+	color: #807cab;
+}
+.twoColFixLtHdr #footer {
+	padding: 0 10px 0 20px;
+	background-color: #DDDDDD;
+	background-image: url(../images/2818877-533x800.jpg);
+} 
+.twoColFixLtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+	color: #FFF;
+}
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+
+a img {
+  border: none;
+}
+
+a {
+  color: #0000FF;
+}
+
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+#container {
+  width: 75%;
+  margin: 0 auto;
+  background-color: #FFF;
+  padding: 20px 40px;
+  border: solid 1px black;
+  margin-top: 20px;
+}
+
+* html #container {
+	width: 800px;
+}
+#flash_notice, #flash_error {
+	clear: both;
+	margin-top: 10px;
+	margin-right: 0;
+	margin-bottom: 10px;
+	margin-left: 0;
+	padding-top: 5px;
+	padding-right: 8px;
+	padding-bottom: 5px;
+	padding-left: 8px;
+}
+
+#flash_notice {
+  background-color: #CFC;
+  border: solid 1px #6C6;
+}
+
+#flash_error {
+  background-color: #FCC;
+  border: solid 1px #C66;
+}
+
+.fieldWithErrors {
+  display: inline;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid #CF0000;
+  padding: 0px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: 0;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 8px;
+}
+
+#errorExplanation ul {
+  margin: 2px 24px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: disc;
+}
+
+#user_nav {
+	float: right;
+	font-size: 12px;
+	width: 230px;
+	background-color: #4AA898;
+	padding: 5px;
+	margin: 8px;
+	border: 1px solid #000;
+	text-align: center;
+} 
+
+#user_nav_dev {
+	float: right;
+	font-size: 12px;
+	width: 230px;
+	background-color: #CCA898;
+	padding: 5px;
+	margin: 8px;
+	border: 1px solid #000;
+	text-align: center;
+} 
+
+#user_nav_prod {
+	float: right;
+	font-size: 12px;
+	width: 230px;
+	background-color: #4AA898;
+	padding: 5px;
+	margin: 8px;
+	border: 1px solid #000;
+	text-align: center;
+} 
+
+
