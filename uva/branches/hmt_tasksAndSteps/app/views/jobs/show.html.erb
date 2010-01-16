@@ -44,11 +44,11 @@
   <strong>Account:</strong>
   <%=h @job.account.number unless @job.account.nil? %>
 </p>
-<% for workflow in @workflows %>
+<% for task in @tasks %>
      <p>
-      <%=h workflow.name %>:
-      <%=h workflow.note %>
-      <%= ("<br />Completed on: " + workflow.completed_date.strftime("%b %d %Y")) unless ((workflow.completed == false) || workflow.completed.nil?) %>
+      <%=h task.name %>:
+      <%=h task.note %>
+      <%= ("<br />Completed on: " + task.completed_date.strftime("%b %d %Y")) unless ((task.completed == false) || task.completed.nil?) %>
       </p>
 <% end %>
 <p>

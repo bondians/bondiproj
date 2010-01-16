@@ -3,7 +3,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :departments #, :collection => { :auto_name => :get }  
 
-  map.resources :workflows
+  map.resources :tasks
 #  map.resources :javascripts, :collection => { :dynamic_accounts => :get }
 
   

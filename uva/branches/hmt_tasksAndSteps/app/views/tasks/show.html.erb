@@ -1,0 +1,28 @@
+<% title "Task" %>
+
+<p>
+  <strong>Name:</strong>
+  <%=h @task.name %>
+</p>
+<p>
+  <strong>Note:</strong>
+  <%=h @task.note %>
+</p>
+<p>
+  <strong>Completed:</strong>
+  <%=h @task.completed %>
+</p>
+<p>
+  <strong>Completed Date:</strong>
+  <%=h @task.completed_date %>
+</p>
+<p>
+  <strong>Job:</strong>
+  <%=h @task.job_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_task_path(@task) %> |
+  <%= link_to "Destroy", @task, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", tasks_path %>
+</p>

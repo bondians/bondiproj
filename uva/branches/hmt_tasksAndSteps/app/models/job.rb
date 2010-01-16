@@ -1,29 +1,29 @@
 class Job < ActiveRecord::Base
-  has_many :workflows, :dependent => :destroy
+  has_many :tasks, :dependent => :destroy
   belongs_to :department
   belongs_to :account
-  belongs_to :workflow
   belongs_to :task
+  belongs_to :task_type
  
  # after_save :set_current_workflow_step
   
-  attr_accessible :name, :ticket, :description, :due_date, :due_time, :due, :submit_date, :ordered_by, :auth_sig, :department_id, :account_id, :input_person, :received_date, :workflow_id, :completed, :workflows_attributes, :workflows, :task_id, :total_cost #, :workflow #,
+  attr_accessible :name, :ticket, :description, :due_date, :due_time, :due, :submit_date, :ordered_by, :auth_sig, :department_id, :account_id, :input_person, :received_date, :task_id, :completed, :tasks_attributes, :tasks, :task_type_id, :total_cost
    
   validates_presence_of :name, :due #, :ordered_by, :submit_date, :received_date, :description, :department_id
 
   #:department_attributes
     # :name_attributes, :note_attributes, :completed_attributes, :completed_date_attributes, :job_id_attributes, :workflow, :workflows,
 
-    accepts_nested_attributes_for :workflows, :allow_destroy => true, :reject_if => proc { |attributes| attributes["step_needed"] == "0" }
+    accepts_nested_attributes_for :tasks, :allow_destroy => true, :reject_if => proc { |attributes| attributes["step_needed"] == "0" }
 
 # thinking sphinx 
   define_index do
     indexes [name, description, ticket], :as => :description
     # indexes description #], :as => :name
     indexes ordered_by, :as => :customer
-    indexes workflows.note, :as => :workflow_note #added
-    indexes workflow.name, :as => :current_workflow    # removed as part of Task refactor
-    indexes department.name, :as => :department
+    indexes tasks.note, :as => :task_note #added
+  #  indexes task.name, :as => :current_task    # removed as part of Task refactor
+  #  indexes department.name, :as => :department
 
     has due, completed
     
@@ -40,8 +40,8 @@ class Job < ActiveRecord::Base
   end
   
   def not_shipped 
-    d = Task.find_by_name("Ship")
-     Job.find(:all, :conditions => {"job_id = ?" => self, :task_id => d }).sort_by{ |m| m.due}
+    d = Task_type.find_by_name("Ship")
+     Job.find(:all, :conditions => {"job_id = ?" => self, :task_type_id => d }).sort_by{ |m| m.due}
   end
 
 
@@ -53,11 +53,11 @@ class Job < ActiveRecord::Base
 #    self.department = Department.find_or_create_by_name(name) unless name.blank?
 #  end
 #  
-  def workflow_steps_simple
+  def task_steps_simple
     # this is a read-only display of workflow steps needed or completed
     # D - C - P - B - S
     # maybe it'll contain a id of the related item
-    steps = Workflow.find_all_by_job_id(self).sort { |a, b| (a.order || 1) <=> (b.order || 1) } 
+    steps = Task.find_all_by_job_id(self).sort { |a, b| (a.order || 1) <=> (b.order || 1) } 
     
     #puts steps.class
   end

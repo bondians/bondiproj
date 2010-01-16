@@ -8,12 +8,9 @@ module JobsHelper
   end
 
   def index_accordion_color(j)
-    d = Task.find_by_name("Complete")
-    if j.task == 43 then 
-      return "AccordionPanelTab"
-    end
+    d = TaskType.find_by_name("Complete")
 
-    colorTag = case j.task.name 
+    colorTag = case j.task_type.name 
     when  /Design/  then "AccordionPanelTabD"
     when /Copy/     then "AccordionPanelTabC"
     when  /Press/   then "AccordionPanelTabP"

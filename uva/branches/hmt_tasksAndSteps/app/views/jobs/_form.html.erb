@@ -55,23 +55,23 @@
     <%#= select(:job , :account_id , Account.find(:all).collect{|p| [ p.number, p.id ] }.sort, { :include_blank => true } ) %>
   </p>
 </div>
-<div id='workflowinfo'>
+<div id='taskinfo'>
   <!-- Here we call fields_for on the job_form builder instance.
-  The block is called for each member of the workflows collection. -->
-  <% f.fields_for :workflows do |workflow_form| %>
+  The block is called for each member of the tasks collection. -->
+  <% f.fields_for :tasks do |task_form| %>
   <p>
     <div>
-      Task: <%= workflow_form.text_field :name %><%= workflow_form.hidden_field :task_id %><br />
-      <%#= workflow_form.label :step_needed%>
-      Check if step needed: <%= workflow_form.check_box :step_needed  %><br />
-      <%= workflow_form.label :note, 'Note: ' %>
-      <%= workflow_form.text_field :note %>
-      <%= workflow_form.hidden_field :order %>
+      Task_type: <%= task_form.text_field :name %><%= task_form.hidden_field :task_type_id %><br />
+      <%#= task_form.label :step_needed%>
+      Check if step needed: <%= task_form.check_box :step_needed  %><br />
+      <%= task_form.label :note, 'Note: ' %>
+      <%= task_form.text_field :note %>
+      <%= task_form.hidden_field :order %>
     </div>
-    <% unless workflow_form.object.new_record? %>
+    <% unless task_form.object.new_record? %>
     <div>
-      <%= workflow_form.label :_delete, 'Remove:' %>
-      <%= workflow_form.check_box :_delete %>
+      <%= task_form.label :_delete, 'Remove:' %>
+      <%= task_form.check_box :_delete %>
     </div>
     <% end %>
   </p>

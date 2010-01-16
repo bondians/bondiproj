@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100105181929) do
+ActiveRecord::Schema.define(:version => 20100116214241) do
 
   create_table "accounts", :force => true do |t|
     t.string   "number",        :limit => 15
@@ -39,29 +39,20 @@ ActiveRecord::Schema.define(:version => 20100105181929) do
     t.datetime "updated_at"
     t.date     "received_date"
     t.string   "ticket"
-    t.integer  "workflow_id"
+    t.integer  "task_id"
     t.boolean  "completed"
     t.datetime "due"
-    t.integer  "task_id"
+    t.integer  "task_type_id"
     t.decimal  "total_cost",    :precision => 9, :scale => 2
   end
 
-  create_table "tasks", :force => true do |t|
+  create_table "task_types", :force => true do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "users", :force => true do |t|
-    t.string   "username"
-    t.string   "crypted_password"
-    t.string   "password_salt"
-    t.string   "persistence_token"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "workflows", :force => true do |t|
+  create_table "tasks", :force => true do |t|
     t.string   "name"
     t.string   "note"
     t.boolean  "completed"
@@ -71,7 +62,16 @@ ActiveRecord::Schema.define(:version => 20100105181929) do
     t.datetime "updated_at"
     t.boolean  "step_needed"
     t.integer  "order"
-    t.integer  "task_id"
+    t.integer  "task_type_id"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "username"
+    t.string   "crypted_password"
+    t.string   "password_salt"
+    t.string   "persistence_token"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

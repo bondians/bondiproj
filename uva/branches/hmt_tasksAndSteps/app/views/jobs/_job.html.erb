@@ -4,11 +4,11 @@
   </div>
   <div class="AccordionPanelContent">
     <div id='jobinfo'>
-      <% unless job.workflow_id.nil? -%>
+      <% unless job.task_id.nil? -%>
       <p>
         <% form_tag complete_step_job_path(job), :method => :put do %>
-        <%= job.workflow.nil? ? "" : job.task.name %> | <%= (job.workflow.nil?) ? "" : ((job.workflow.name == job.task.name) ? "" : job.workflow.name) %><br />
-        <%= job.workflow.nil? ? "" : job.workflow.note %><br />
+        <%= job.task.nil? ? "" : job.task_type.name %> | <%= (job.task.nil?) ? "" : ((job.task.name == job.task_type.name) ? "" : job.task.name) %><br />
+        <%= job.task.nil? ? "" : job.task.note %><br />
         <%= submit_tag "Mark as Complete" %><br />
         <% end %>
       </p>

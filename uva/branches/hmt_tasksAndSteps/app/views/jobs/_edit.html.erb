@@ -50,30 +50,30 @@
     <%#= select(:job , :account_id , Account.find(:all).collect{|p| [ p.number, p.id ] }.sort, { :include_blank => true } ) %>
   </p>
 </div>
-<div id='workflowinfo'>
+<div id='taskinfo'>
   <!-- Here we call fields_for on the job_form builder instance.
-  The block is called for each member of the workflows collection. --> 
+  The block is called for each member of the tasks collection. --> 
   <!-- the old way          -->        
-    <% f.fields_for :workflows do |workflow_form| %>
+    <% f.fields_for :tasks do |task_form| %>
     <p>
       <div>
-        Task: <%= workflow_form.text_field :name %><%= workflow_form.hidden_field :task_id %><br />
-        <%#= workflow_form.label :step_needed%>
-        Needed: <%= workflow_form.check_box :step_needed  %><br />
-        <%= workflow_form.label :note, 'Note: ' %>
-        <%= workflow_form.text_field :note %><br >
-        <%= workflow_form.text_field :order, 'disabled' => 'true' %><%= workflow_form.hidden_field :order %><br />
-        <%= workflow_form.label :completed %>
-        <%= workflow_form.check_box :completed %><br />
-        <%= workflow_form.label :completed_date %>
-        <%= workflow_form.date_select :completed_date %>
-        <%#= calendar_field(job[workflows][], 'completed_date', { }, { :firstDay => 1 }) %><br />
+        Task_type: <%= task_form.text_field :name %><%= task_form.hidden_field :task_type_id %><br />
+        <%#= task_form.label :step_needed%>
+        Needed: <%= task_form.check_box :step_needed  %><br />
+        <%= task_form.label :note, 'Note: ' %>
+        <%= task_form.text_field :note %><br >
+        <%= task_form.text_field :order, 'disabled' => 'true' %><%= task_form.hidden_field :order %><br />
+        <%= task_form.label :completed %>
+        <%= task_form.check_box :completed %><br />
+        <%= task_form.label :completed_date %>
+        <%= task_form.date_select :completed_date %>
+        <%#= calendar_field(job[tasks][], 'completed_date', { }, { :firstDay => 1 }) %><br />
         
       </div>
-      <% unless workflow_form.object.new_record? %>
+      <% unless task_form.object.new_record? %>
       <div>
-        <%= workflow_form.label :_delete, 'Remove Step:' %>
-        <%= workflow_form.check_box :_delete %>
+        <%= task_form.label :_delete, 'Remove Step:' %>
+        <%= task_form.check_box :_delete %>
       </div>
       <% end %>
     </p>
@@ -81,7 +81,7 @@
   </div>  
     
   <!-- I want the NEW way to work  
-    <%= render :partial => 'step', :collection => @job.workflows %>   
+    <%= render :partial => 'step', :collection => @job.tasks %>   
    -->           
   <p>
     <%= f.label :total_cost %><br />
