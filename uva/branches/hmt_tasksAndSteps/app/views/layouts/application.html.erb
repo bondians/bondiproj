@@ -5,7 +5,15 @@
   <title><%= h(yield(:title) || "Untitled") %></title>
   <%= stylesheet_link_tag :all %>
   <%#= javascript_include_tag 'prototype', 'application', 'controls', 'dragdrop', 'effects', 'SpryAccordion' %>
-  <%= javascript_include_tag :all %>
+  <%= javascript_include_tag 'jquery', 'SpryAccordion', 'application' %>
+  <%#= javascript_include_tag 'SpryAccordion' %>
+  <%#= javascript_include_tag 'dhtml/calendar-setup' %>
+  <%#= javascript_include_tag 'dhtml/calendar' %>
+  <%#= javascript_include_tag 'dhtml/datebox_engine' %>
+  <%#= javascript_include_tag 'dhtml/lang/calendar-en.js' %>
+  <%#= javascript_include_tag 'dhtml/lang/calendar-en-latin' %>
+  <%#= javascript_include_tag 'dhtml/lang/cn_utf8' %>
+  
   <%= dhtml_calendar_includes %>
   <%= yield(:head) %>
 </head>

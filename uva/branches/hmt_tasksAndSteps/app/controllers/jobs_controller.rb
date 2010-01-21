@@ -4,6 +4,8 @@ class JobsController < ApplicationController
      allow anonymous, :to => [:index, :search]
     # layout "standard"
   end
+  
+  auto_complete_for :job, :department_id
 
   def index
         @jobs = Job.all :order => 'due', :include => [:tasks, :department, :account]

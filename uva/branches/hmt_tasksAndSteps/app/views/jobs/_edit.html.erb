@@ -41,8 +41,10 @@
   </p>
   <p>
     <%= f.label :department_id %><br />
+    <%# The jquery way of doing it %>
+    <%= f.text_field :department_id, :autocomplete => "off", :html => { :id => 'job_department_id'} %>
     <%# the ryan bates way of doing it %>
-    <%= text_field_with_auto_complete :job, :dept, { :size => 25 }, { :url => formatted_departments_path(:js), :method => :get, :with => "'search=' + element.value" } %>
+    <%#= text_field_with_auto_complete :job, :dept, { :size => 25 }, { :url => formatted_departments_path(:js), :method => :get, :with => "'search=' + element.value" } %>
   </p>
   <p>
     <%= f.label :account_id %><br />
