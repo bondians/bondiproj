@@ -1,0 +1,3 @@
+SELECT jobs.name, jobs.due, jobs.completed, jobs.total_cost, accounts.number FROM jobs 
+LEFT JOIN accounts   ON jobs.account_id=accounts.id
+WHERE (due BETWEEN "2010-01-01 00:00:00" AND  "2010-01-31 23:59:59") AND (completed = '1')
