@@ -1,5 +1,6 @@
 class Task < ActiveRecord::Base
-  attr_accessible :name, :note, :completed, :completed_date, :job_id, :step_needed, :order, :task_type_id 
+  attr_accessible :name, :note, :completed, :completed_date, :job_id, \
+    :step_needed, :order, :task_type_id, :item_cost, :type_name, :billable_minutes 
   belongs_to :job #, :dependent => :destroy
   has_one :job
   validates_presence_of :name 
@@ -15,6 +16,15 @@ class Task < ActiveRecord::Base
     self.completed = true
     self.completed_date = Time.now
     self.save
+  end
+  
+  def self.model_name
+    name = "task"
+    name.instance_eval do
+      def plural; pluralize; end
+      def singular; singularize; end
+    end
+    return name
   end
   
   private
