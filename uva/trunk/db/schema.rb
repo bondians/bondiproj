@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100105181929) do
+ActiveRecord::Schema.define(:version => 20100109070805) do
 
   create_table "accounts", :force => true do |t|
     t.string   "number",        :limit => 15
@@ -22,6 +22,19 @@ ActiveRecord::Schema.define(:version => 20100105181929) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "job_steps", :force => true do |t|
+    t.string   "name"
+    t.string   "note"
+    t.boolean  "completed"
+    t.date     "completed_date"
+    t.integer  "job_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.boolean  "step_needed"
+    t.integer  "order"
+    t.integer  "task_id"
   end
 
   create_table "jobs", :force => true do |t|
@@ -46,7 +59,7 @@ ActiveRecord::Schema.define(:version => 20100105181929) do
     t.decimal  "total_cost",    :precision => 9, :scale => 2
   end
 
-  create_table "tasks", :force => true do |t|
+  create_table "steps", :force => true do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -59,19 +72,6 @@ ActiveRecord::Schema.define(:version => 20100105181929) do
     t.string   "persistence_token"
     t.datetime "created_at"
     t.datetime "updated_at"
-  end
-
-  create_table "workflows", :force => true do |t|
-    t.string   "name"
-    t.string   "note"
-    t.boolean  "completed"
-    t.date     "completed_date"
-    t.integer  "job_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.boolean  "step_needed"
-    t.integer  "order"
-    t.integer  "task_id"
   end
 
 end
