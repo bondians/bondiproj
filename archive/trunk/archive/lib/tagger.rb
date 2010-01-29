@@ -53,7 +53,7 @@ class Tagger
 
   TAG_FOR_NAME = { "mp3" => "id3", "m4a" => "aac", "m4p" => "aac"}
   
-  def valid?(filename)
+  def self.valid?(filename)
     return Tagger:TAG_FOR_NAME[namechunks.last.downcase]
   end
   
