@@ -56,7 +56,7 @@ class Tagger
   def self.valid?(filename)
     @filename = filename
     namechunks = @filename.split(".")
-    return Tagger:TAG_FOR_NAME[namechunks.last.downcase]
+    return Tagger::TAG_FOR_NAME[namechunks.last.downcase]
   end
   
   def initialize(filename)
