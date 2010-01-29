@@ -5,15 +5,15 @@
 <div id='jobinfo'>
   <p>
     <%= f.label :name %><br />
-    <%= f.text_field :name %>
+    <%= f.text_field :name, :autocomplete => "off" %>
   </p>
   <p>
     <%= f.label :ticket %><br />
-    <%= f.text_field :ticket %>
+    <%= f.text_field :ticket, :autocomplete => "off" %>
   </p>
   <p>
     <%= f.label :description %><br />
-    <%= f.text_area :description %>
+    <%= f.text_area :description, :autocomplete => "off" %>
   </p>
 </div>
 <div id='dateinfo'>
@@ -33,7 +33,7 @@
 <div id='billinginfo'>
   <p>
     <%= f.label :ordered_by %><br />
-    <%= f.text_field :ordered_by %>
+    <%= f.text_field :ordered_by, :autocomplete => "off" %>
   </p>
   <p>
     <%= f.label :auth_sig %><br />
@@ -65,7 +65,7 @@
       <%#= workflow_form.label :step_needed%>
       Check if step needed: <%= workflow_form.check_box :step_needed  %><br />
       <%= workflow_form.label :note, 'Note: ' %>
-      <%= workflow_form.text_field :note %>
+      <%= workflow_form.text_field :note, :autocomplete => "off" %>
       <%= workflow_form.hidden_field :order %>
     </div>
     <% unless workflow_form.object.new_record? %>

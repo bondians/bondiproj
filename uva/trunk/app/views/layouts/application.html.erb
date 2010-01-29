@@ -45,13 +45,13 @@
       </div>
       <div id="quick_search">Keyword Search<br />
         <% form_tag (search_jobs_path, :method => "get" ) do %>
-        <%= text_field_tag :search, params[:search] %>
+        <%= text_field_tag :search, params[:search], :autocomplete => "off" %>
         <%= submit_tag "Search", :name => nil, :controller => "jobs", :action => "search" %>
         <% end %>
       </div>
       <div id="quick_search">School/Department Search<br />
         <% form_tag (search_by_school_jobs_path, :method => "get" ) do %>
-        <%= text_field_tag :search, params[:search] %>
+        <%= text_field_tag :search, params[:search],:autocomplete => "off" %>
         <%= submit_tag "Search", :name => nil, :controller => "jobs", :action => "search_by_school" %>
         <% end %>
       </div>
