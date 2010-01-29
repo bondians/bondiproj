@@ -53,12 +53,18 @@ class Tagger
 
   TAG_FOR_NAME = { "mp3" => "id3", "m4a" => "aac", "m4p" => "aac"}
   
+  def valid?(filename)
+    @filename = filename
+    namechunks = @filename.split(".")
+    @type = Tagger:TAG_FOR_NAME[namechunks.last.downcase]
+  end
+  
   def initialize(filename)
     @filename = filename
     namechunks = @filename.split(".")
     @type = Tagger::TAG_FOR_NAME[namechunks.last.downcase]
     
-    return nil unless @type
+    fail "Unregistered Filetype" unless @type
     
     read_frames
   end
