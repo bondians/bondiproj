@@ -70,6 +70,7 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
 ###
 
   Find.find(options.path) do |path|
+  begin
       ########### This currently sucks, becaus i eventually want to modify files.. however, this is no problem
       ########### Currently as that is not implemented it <should> be fixd when file modding becomes possible
       if (options.full || (@lastrun.started < File.ctime(path)))
@@ -78,7 +79,6 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
             attributes = DEFAULTS
             attributes[:file] = Iconv.conv('UTF-8', 'LATIN1', path)
             ## Shortcircuit if its already present
-            puts "about to look at #{attributes[:file]}"
             wassong = @songs.find{|s| s.file == attributes[:file]}
             unless !!wassong
                 tag = Tagger.new(path)
@@ -148,13 +148,14 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
                 else
                     puts "Failed to save #{tag.type.upcase} Titled #{attributes[:title]}"
                 end
-            else
-                puts "Song in DB #{wassong.title} #{wassong.id}"
             end
         
           else
             puts "."
           end
+    rescue
+      puts "choked on #{path}"
+    end
     end
   end
     
