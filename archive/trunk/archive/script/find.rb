@@ -78,7 +78,8 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
             attributes = DEFAULTS
             attributes[:file] = Iconv.conv('UTF-8', 'LATIN1', path)
             ## Shortcircuit if its already present
-            if !@songs.find{|s| s.file == attributes[:file]}
+            wassong = @songs.find{|s| s.file == attributes[:file]}
+            unless wassong
                 attributes[:title] = tag.title
                 attributes[:size] = tag.size
                 attributes[:year] = tag.year
@@ -152,7 +153,7 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
 	    ## another new song gets found
 	    	attributes[:title] = tag.title
 	    ## 
-                puts "Song in DB #{attributes[:title]} #{@songs.find{|s| s.file == attributes[:file]}.id}"
+                puts "Song in DB #{wassong.title} #{wassong.id}"
             end
         
           else
