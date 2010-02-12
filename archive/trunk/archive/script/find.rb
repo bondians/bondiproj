@@ -69,95 +69,95 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
 #        volume: float, fade_in: boolean, user_id: integer, archive_number: integer, file: text)
 ###
 
-  Find.find(options.path) do |path|
-   begin
-      ########### This currently sucks, becaus i eventually want to modify files.. however, this is no problem
-      ########### Currently as that is not implemented it <should> be fixd when file modding becomes possible
-      if (options.full || (@lastrun.started < File.ctime(path)))
-          if FileTest.file?(path) && Tagger.valid?(path)
-            ##Build a song object, while working with the rest
-            attributes = DEFAULTS
-            attributes[:file] = Iconv.conv('UTF-8', 'LATIN1', path)
-            ## Shortcircuit if its already present
-            wassong = @songs.find{|s| s.file == attributes[:file]}
-            unless !!wassong
-                tag = Tagger.new(path)
-                attributes[:title] = tag.title
-                attributes[:size] = tag.size
-                attributes[:year] = tag.year
-                attributes[:track] = tag.track || 0
-                attributes[:songtype] = @types.find{|t| t.identifier == tag.type}
+Find.find(options.path) do |path|
+    begin
+        ########### This currently sucks, becaus i eventually want to modify files.. however, this is no problem
+        ########### Currently as that is not implemented it <should> be fixd when file modding becomes possible
+        if (options.full || (@lastrun.started < File.ctime(path)))
+            if FileTest.file?(path) && Tagger.valid?(path)
+                ##Build a song object, while working with the rest
+                attributes = DEFAULTS
+                attributes[:file] = Iconv.conv('UTF-8', 'LATIN1', path)
+                ## Shortcircuit if its already present
+                wassong = @songs.find{|s| s.file == attributes[:file]}
+                unless !!wassong
+                    tag = Tagger.new(path)
+                    attributes[:title] = tag.title
+                    attributes[:size] = tag.size
+                    attributes[:year] = tag.year
+                    attributes[:track] = tag.track || 0
+                    attributes[:songtype] = @types.find{|t| t.identifier == tag.type}
             
-                ## Try to find old archive _id
-                ##### Relegated to legacy
-                #tag_text = tag.find{|t| t[:id]==:TXXX}
-                #attributes[:archive_number] = tag_text[:text] if tag_text
+                    ## Try to find old archive _id
+                    ##### Relegated to legacy
+                    #tag_text = tag.find{|t| t[:id]==:TXXX}
+                    #attributes[:archive_number] = tag_text[:text] if tag_text
+                    
+                    #### Try to find each of the rest of the important fields
+                    ##Artist
+                    artist_tag = tag.artist
+                    artist = @artists.find{|a| a.name == artist_tag} || Artist.new({:name=>artist_tag})
+                    if artist.new_record?
+                        artist.save
+                        @artists.unshift(artist)
+                    end
+                    attributes[:artist] = artist
                 
-                #### Try to find each of the rest of the important fields
-                ##Artist
-                artist_tag = tag.artist
-                artist = @artists.find{|a| a.name == artist_tag} || Artist.new({:name=>artist_tag})
-                if artist.new_record?
-                    artist.save
-                    @artists.unshift(artist)
-                end
-                attributes[:artist] = artist
+                    ##Genre
+                    genre_tag  =  tag.lookup_genre
+                    genre = @genres.find{|g| g.name == genre_tag} || Genre.new({:name=>genre_tag})
+                    if genre.new_record?
+                        genre.save
+                        @genres.unshift(genre)
+                    end
+                    attributes[:genre] = genre
                 
-                ##Genre
-                genre_tag  =  tag.lookup_genre
-                genre = @genres.find{|g| g.name == genre_tag} || Genre.new({:name=>genre_tag})
-                if genre.new_record?
-                    genre.save
-                    @genres.unshift(genre)
-                end
-                attributes[:genre] = genre
-                
-                ##Album
-                album_tag  =  tag.album
-                choices = @albums.select{|a| a.name == album_tag}
-                new = (choices.empty? ? true : false)
-                if !new 
-                    album = choices.find { |a| a.artist == artist }
-                    while !album
-                        puts "\n Album Doesn't match artist please select an action for:\nTitle:  #{attributes[:title]}\nArtist: #{artist.name}\nFile:   #{attributes[:file]}"
-                        choices.each_index { |i| puts "enter #{i} to select #{choices[i].name} by #{choices[i].artist.name}\n" }
-                        puts "enter n for new\n"
-                        a = gets.upcase.chomp
-                        if a == "N"
-                            new = true
-                            break
+                    ##Album
+                    album_tag  =  tag.album
+                    choices = @albums.select{|a| a.name == album_tag}
+                    new = (choices.empty? ? true : false)
+                    if !new 
+                        album = choices.find { |a| a.artist == artist }
+                        while !album
+                            puts "\n Album Doesn't match artist please select an action for:\nTitle:  #{attributes[:title]}\nArtist: #{artist.name}\nFile:   #{attributes[:file]}"
+                            choices.each_index { |i| puts "enter #{i} to select #{choices[i].name} by #{choices[i].artist.name}\n" }
+                            puts "enter n for new\n"
+                            a = gets.upcase.chomp
+                            if a == "N"
+                                new = true
+                                break
+                            end
+                            album = choices[a.to_i]
+                            new = false
                         end
-                        album = choices[a.to_i]
-                        new = false
+                    end
+                
+                    if new
+                        album = Album.new({:name=>album_tag, :genre=> genre, :artist=>artist})
+                        album.save
+                        @albums.unshift(album)
+                    end
+                    attributes[:album] = album
+                
+                    song = Song.new(attributes)
+                    if song.save
+                        puts "Saved #{tag.type.upcase} Titled #{attributes[:title]}"
+                        @songs.unshift(song)
+                        @currun.added += 1
+                        @currun.save
+                    else
+                        puts "Failed to save #{tag.type.upcase} Titled #{attributes[:title]}"
                     end
                 end
-                
-                if new
-                    album = Album.new({:name=>album_tag, :genre=> genre, :artist=>artist})
-                    album.save
-                    @albums.unshift(album)
-                end
-                attributes[:album] = album
-                
-                song = Song.new(attributes)
-                if song.save
-                    puts "Saved #{tag.type.upcase} Titled #{attributes[:title]}"
-                    @songs.unshift(song)
-                    @currun.added += 1
-                    @currun.save
-                else
-                    puts "Failed to save #{tag.type.upcase} Titled #{attributes[:title]}"
-                end
-            end
         
-          else
-            puts "."
-          end
+            else
+                puts "."
+            end
         end
-   end
-   rescue
-      puts "choked on #{path}"
-  end
+    rescue
+        puts "choked on #{path}"
+    end
+end
     
     @currun.completed = Time.now
     @currun.success = true if options.path == DEFAULT_PATH
