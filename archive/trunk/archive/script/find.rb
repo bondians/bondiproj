@@ -116,7 +116,7 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
                 if !new 
                     album = choices.find { |a| a.artist == artist }
                     while !album
-                        puts "\n Album Doesn't match artist plese select an action for:\nTitle:  #{attributes[:title]}\nArtist: #{artist.name}\nFile:   #{attributes[:file]}"
+                        puts "\n Album Doesn't match artist please select an action for:\nTitle:  #{attributes[:title]}\nArtist: #{artist.name}\nFile:   #{attributes[:file]}"
                         choices.each_index { |i| puts "enter #{i} to select #{choices[i].name} by #{choices[i].artist.name}\n" }
                         puts "enter n for new\n"
                         a = gets.upcase.chomp
@@ -146,6 +146,12 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
                     puts "Failed to save #{tag.type.upcase} Titled #{attributes[:title]}"
                 end
             else
+	    ## Added to show correct song name when the song is already in the db
+	    ## else any time a new song is found, the title of the last one found
+	    ## gets listed for every subsequent song that's already in the db until
+	    ## another new song gets found
+	    	attributes[:title] = tag.title
+	    ## 
                 puts "Song in DB #{attributes[:title]} #{@songs.find{|s| s.file == attributes[:file]}.id}"
             end
         

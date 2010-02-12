@@ -86,7 +86,7 @@ class Tagger
   
   def genre
     return @tag.genre if @tag.genre
-    return DBCONSTANT::NO_GENRE
+    return DBConstant::NO_GENRE
   end
   
   def year
@@ -137,7 +137,8 @@ class Tagger
   private
 
   def convert(string)
-    out = Iconv.conv('UTF-8', 'LATIN1', string)
+    out = Iconv.conv('UTF-8', 'ISO-8859-1', string)
+   ## This line is causing a failure processing the "0xF3" character in song number 911
     out = Iconv.conv('UTF-8', 'UTF-16', string) unless !!out.match(/[a-zA-Z][a-zA-Z]/)
     return out
   end

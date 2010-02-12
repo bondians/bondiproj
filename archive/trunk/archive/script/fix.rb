@@ -37,7 +37,7 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
         ##Build a song object, while working with the rest
         attributes = DEFAULTS
         ## Shortcircuit if its already present
-            attributes[:title] = !!tag.title ? Iconv.conv('UTF-8', 'LATIN1', tag.title) : "<no ttle>"
+            attributes[:title] = !!tag.title ? Iconv.conv('UTF-8', 'LATIN1', tag.title) : "<no title>"
             attributes[:title] = Iconv.conv('UTF-8', 'UTF-16', tag.title) unless !!attributes[:title].match(/[a-zA-Z][a-zA-Z]/)
             
             #### Try to find each of the rest of the important fields
