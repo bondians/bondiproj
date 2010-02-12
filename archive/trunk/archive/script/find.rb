@@ -104,7 +104,7 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
                 attributes[:artist] = artist
                 
                 ##Genre
-                genre_tag  =  tag.genre
+                genre_tag  =  tag.lookup_genre
                 genre = @genres.find{|g| g.name == genre_tag} || Genre.new({:name=>genre_tag})
                 if genre.new_record?
                     genre.save

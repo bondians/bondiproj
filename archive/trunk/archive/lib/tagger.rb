@@ -55,8 +55,9 @@ class Tagger
   
   def self.valid?(filename)
     @filename = filename
+    return false if filename.match(".AppleDouble")
     namechunks = @filename.split(".")
-    return Tagger::TAG_FOR_NAME[namechunks.last.downcase]
+    return !!Tagger::TAG_FOR_NAME[namechunks.last.downcase]
   end
   
   def initialize(filename)
@@ -85,8 +86,9 @@ class Tagger
   end
   
   def genre
-    return @tag.genre if @tag.genre
-    return DBConstant::NO_GENRE
+    mygenre = @tag.genre
+    return DBConstant::NO_GENRE if !!mygenre
+    found = lookup_genre mygenre
   end
   
   def year
@@ -131,7 +133,7 @@ class Tagger
         genre_tag = DBConstant::GENRES[num]
     end
     
-    return genre_tag
+    return convert(genre_tag)
   end
   
   private
