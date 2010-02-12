@@ -151,7 +151,7 @@ Find.find(options.path) do |path|
                 end
         
             else
-                puts "."
+                print "."
             end
         end
     rescue
