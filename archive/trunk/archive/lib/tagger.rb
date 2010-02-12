@@ -138,7 +138,7 @@ class Tagger
 
   def convert(string)
     out = Iconv.conv('UTF-8', 'LATIN1', string)
-    out = Iconv.conv('UTF-8', 'UTF-16', string) unless !!out.match(/[:print:]{2,}/)
+    out = Iconv.conv('UTF-8', 'UTF-16', string) unless !!out.match(/[[:print:]]{2,}/)
     return out
   end
   

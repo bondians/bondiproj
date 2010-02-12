@@ -80,10 +80,8 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
             ## Shortcircuit if its already present
             puts "about to look at #{attributes[:file]}"
             wassong = @songs.find{|s| s.file == attributes[:file]}
-            unless wassong
-                debugger
-                1
-                1
+            unless !!wassong
+
                 attributes[:title] = tag.title
                 attributes[:size] = tag.size
                 attributes[:year] = tag.year
