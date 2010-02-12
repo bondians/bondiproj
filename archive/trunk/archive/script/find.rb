@@ -149,12 +149,6 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
                     puts "Failed to save #{tag.type.upcase} Titled #{attributes[:title]}"
                 end
             else
-	    ## Added to show correct song name when the song is already in the db
-	    ## else any time a new song is found, the title of the last one found
-	    ## gets listed for every subsequent song that's already in the db until
-	    ## another new song gets found
-	    	attributes[:title] = tag.title
-	    ## 
                 puts "Song in DB #{wassong.title} #{wassong.id}"
             end
         
