@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
-
+#broken don't use
+return
+#broken don't use
 require File.expand_path(__FILE__ + "/../../config/environment")
 require "#{RAILS_ROOT}/lib/tagger"
 
