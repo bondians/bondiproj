@@ -78,6 +78,7 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
             attributes = DEFAULTS
             attributes[:file] = Iconv.conv('UTF-8', 'LATIN1', path)
             ## Shortcircuit if its already present
+            puts "about to look at #{attributes[:file]}"
             wassong = @songs.find{|s| s.file == attributes[:file]}
             unless wassong
                 attributes[:title] = tag.title
