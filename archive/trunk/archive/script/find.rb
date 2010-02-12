@@ -73,7 +73,7 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
       ########### This currently sucks, becaus i eventually want to modify files.. however, this is no problem
       ########### Currently as that is not implemented it <should> be fixd when file modding becomes possible
       if (options.full || (@lastrun.started < File.ctime(path)))
-          if FileTest.file?(path) && Tagger.valid?(path) && tag = Tagger.new(path)
+          if FileTest.file?(path) && Tagger.valid?(path)
             ##Build a song object, while working with the rest
             attributes = DEFAULTS
             attributes[:file] = Iconv.conv('UTF-8', 'LATIN1', path)
@@ -81,7 +81,7 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
             puts "about to look at #{attributes[:file]}"
             wassong = @songs.find{|s| s.file == attributes[:file]}
             unless !!wassong
-
+                tag = Tagger.new(path)
                 attributes[:title] = tag.title
                 attributes[:size] = tag.size
                 attributes[:year] = tag.year
