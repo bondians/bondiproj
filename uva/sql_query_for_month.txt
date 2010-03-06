@@ -1,3 +1,21 @@
 SELECT jobs.name, jobs.due, jobs.completed, jobs.total_cost, accounts.number FROM jobs 
 LEFT JOIN accounts   ON jobs.account_id=accounts.id
 WHERE (due BETWEEN "2010-01-01 00:00:00" AND  "2010-01-31 23:59:59") AND (completed = '1')
+
+SELECT jobs.name, departments.name, jobs.due, workflows.completed_date, jobs.completed, jobs.total_cost, accounts.number FROM workflows
+LEFT JOIN jobs ON  workflows.job_id=jobs.id
+LEFT JOIN accounts   ON jobs.account_id=accounts.id
+LEFT JOIN departments ON departments.id=jobs.department_id
+WHERE (workflows.completed_date BETWEEN "2010-01-01 00:00:00" AND  "2010-01-31 23:59:59") AND (workflows.completed = '1') AND (workflows.task_id = '6')
+
+SELECT jobs.id, jobs.name, departments.name, jobs.due, workflows.completed_date, jobs.completed, jobs.total_cost, accounts.number FROM workflows
+LEFT JOIN jobs ON  workflows.job_id=jobs.id
+LEFT JOIN accounts   ON jobs.account_id=accounts.id
+LEFT JOIN departments ON departments.id=jobs.department_id
+WHERE (workflows.completed_date BETWEEN "2010-01-01" AND  "2010-02-01") AND (workflows.completed != '1') AND (workflows.task_id = '6')
+
+SELECT jobs.id, jobs.name, departments.name, jobs.due, workflows.completed_date, jobs.completed, jobs.total_cost, accounts.number FROM workflows
+LEFT JOIN jobs ON  workflows.job_id=jobs.id
+LEFT JOIN accounts   ON jobs.account_id=accounts.id
+LEFT JOIN departments ON departments.id=jobs.department_id
+WHERE (workflows.completed_date <  "2010-02-01") AND (workflows.task_id = '6') AND (workflows.completed = '1')
