@@ -4,40 +4,8 @@
 <%#= f.error_messages %>
 <div id='jobinfo'>
   <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name, :autocomplete => "off" %>
-  </p>
-  <p>
-    <%= f.label :ticket %><br />
-    <%= f.text_field :ticket, :autocomplete => "off" %>
-  </p>
-  <p>
-    <%= f.label :description %><br />
-    <%= f.text_area :description, :autocomplete => "off" %>
-  </p>
-</div>
-<div id='dateinfo'>
-  <p>
-    <%= f.label :due %><br />
-    <%= calendar_field 'job', 'due', {}, { :showsTime => true, :timeFormat => "12", :firstDay => 1 } %><br />
-  </p>
-  <p>
     <%= f.label :submit_date %><br />
     <%= calendar_field 'job', 'submit_date', { :width => 75 }, { :firstDay => 1 }  %>
-  </p>
-  <p>
-    <%= f.label :received_date %><br />
-    <%= calendar_field 'job', 'received_date', { :width => 75 }, { :firstDay => 1 }  %>
-  </p>
-</div>
-<div id='billinginfo'>
-  <p>
-    <%= f.label :ordered_by %><br />
-    <%= f.text_field :ordered_by, :autocomplete => "off" %>
-  </p>
-  <p>
-    <%= f.label :auth_sig %><br />
-    <%= f.check_box :auth_sig %>
   </p>
   <p id="job_department_id">
     <label for="job_department_id">School or Department</label><br />
@@ -46,6 +14,11 @@
     <%# the ryan bates way of doing it %>
     <%= text_field_with_auto_complete :job, :dept, { :size => 25 }, { :url => formatted_departments_path(:js), :method => :get, :with => "'search=' + element.value" } %>
   </p>
+  <p>
+    For now, put NCR form's Department info, if any, in description field.
+    <br />
+    Use Department on web form for School name or, if a non-school department (eg. AVID, Food Service), Department name
+  </p>
   <p id="account_field">
     <label for="job_account_id">Account</label><br />
     <%# going to try auto complete based on selected department %> 
@@ -53,6 +26,39 @@
     <%# the ryan bates way of doing it %>
     <%= text_field_with_auto_complete :job, :acct, { :size => 40 }, { :url => formatted_accounts_path(:js), :method => :get, :with => "'search=' + element.value" } %>
     <%#= select(:job , :account_id , Account.find(:all).collect{|p| [ p.number, p.id ] }.sort, { :include_blank => true } ) %>
+  </p>
+  <div id='billinginfo'>
+    <p>
+      <%= f.label :ordered_by %><br />
+      <%= f.text_field :ordered_by, :autocomplete => "off" %>
+    </p>
+    <p>
+      <%= f.label :auth_sig %><br />
+      <%= f.check_box :auth_sig %>
+    </p>
+  </div>
+  <hr />
+  <p>
+    <%= f.label :name %><br />Description of Materials to be Copied<br />
+    <%= f.text_field :name, :autocomplete => "off" %>
+  </p>
+  <p>
+    <%= f.label :ticket %><br />
+    <%= f.text_field :ticket, :autocomplete => "off" %>
+  </p>
+  <p>
+    <%= f.label :due %><br />
+    <%= calendar_field 'job', 'due', {}, { :showsTime => true, :timeFormat => "12", :firstDay => 1 } %><br />
+  </p>
+  <p>
+    <%= f.label :description %><br />Additional info, including number of originals, number of copies, paper type(s), single sided or back to back, collate, staple, hole punch, etc.<br />
+    <%= f.text_area :description, :autocomplete => "off" %>
+  </p>
+</div>
+<div id='dateinfo'>
+  <p>
+    <%= f.label :received_date %><br />
+    <%= calendar_field 'job', 'received_date', { :width => 75 }, { :firstDay => 1 }  %>
   </p>
 </div>
 <div id='workflowinfo'>
@@ -66,7 +72,11 @@
       Check if step needed: <%= workflow_form.check_box :step_needed  %><br />
       <%= workflow_form.label :note, 'Note: ' %>
       <%= workflow_form.text_field :note, :autocomplete => "off" %>
-      <%= workflow_form.hidden_field :order %>
+      <%= workflow_form.hidden_field :order %><br />
+      <%= workflow_form.label :completed %>
+      <%= workflow_form.check_box :completed %><br />
+      <%= workflow_form.label :completed_date %>
+      <%= workflow_form.date_select :completed_date %>
     </div>
     <% unless workflow_form.object.new_record? %>
     <div>
@@ -75,8 +85,13 @@
     </div>
     <% end %>
   </p>
+  <hr />
   <% end %>
 </div>
+  <p>
+    <%= f.label :total_cost %><br />
+    <%= f.text_field :total_cost, :autocomplete => "off" %>
+</p>
 <p>
   <%= f.label :input_person %><br />
   <%= @job.input_person %>
