@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/sheet.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-sheet.xml">
+  <tabInfo subTab="profile" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Flathoof&amp;gn=Alliance+Pwners+II"/>
+  <characterInfo>
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Flathoof" class="Shaman" classId="7" classUrl="c=Shaman" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 17, 2010" level="80" name="Flathoof" points="4480" prefix="" race="Tauren" raceId="6" realm="Coilfang" suffix=" of the Ashen Verdict" titleId="141">
+      <modelBasePath value="http://us.media.battle.net.edgesuite.net/"/>
+    </character>
+    <characterTab>
+      <talentSpecs>
+        <talentSpec group="2" icon="spell_nature_lightning" prim="Elemental" treeOne="57" treeThree="0" treeTwo="14"/>
+        <talentSpec active="1" group="1" icon="spell_nature_magicimmunity" prim="Restoration" treeOne="0" treeThree="55" treeTwo="16"/>
+      </talentSpecs>
+      <buffs/>
+      <debuffs/>
+      <pvp>
+        <lifetimehonorablekills value="1273"/>
+        <arenacurrency value="25"/>
+      </pvp>
+      <professions>
+        <skill id="171" key="alchemy" max="450" name="Alchemy" value="450"/>
+        <skill id="182" key="herbalism" max="450" name="Herbalism" value="465"/>
+      </professions>
+      <characterBars>
+        <health effective="20168"/>
+        <secondBar casting="301" effective="26136" notCasting="432" type="m"/>
+      </characterBars>
+      <baseStats>
+        <strength attack="250" base="125" block="6" effective="135"/>
+        <agility armor="160" attack="-1" base="70" critHitPercent="3.88" effective="80"/>
+        <stamina base="137" effective="1304" health="12860" petBonus="-1"/>
+        <intellect base="136" critHitPercent="11.01" effective="1468" mana="21740" petBonus="-1"/>
+        <spirit base="145" effective="205" healthRegen="19" manaRegen="131"/>
+        <armor base="15086" effective="15086" percent="49.76" petBonus="-1"/>
+      </baseStats>
+      <resistances>
+        <arcane petBonus="-1" value="0"/>
+        <fire petBonus="-1" value="0"/>
+        <frost petBonus="-1" value="0"/>
+        <holy petBonus="-1" value="0"/>
+        <nature petBonus="-1" value="0"/>
+        <shadow petBonus="-1" value="0"/>
+      </resistances>
+      <melee>
+        <mainHandDamage dps="192.7" max="371" min="148" percent="0" speed="1.35"/>
+        <offHandDamage dps="0.0" max="0" min="0" percent="0" speed="1.49"/>
+        <mainHandSpeed hastePercent="33.86" hasteRating="854" value="1.35"/>
+        <offHandSpeed hastePercent="33.86" hasteRating="854" value="1.49"/>
+        <power base="355" effective="355" increasedDps="25.0"/>
+        <hitRating increasedHitPercent="0.00" penetration="0" reducedArmorPercent="0.00" value="0"/>
+        <critChance percent="18.73" plusPercent="9.85" rating="452"/>
+        <expertise additional="0" percent="0.00" rating="0" value="0"/>
+      </melee>
+      <ranged>
+        <weaponSkill rating="0" value="0"/>
+        <damage dps="0.0" max="0" min="0" percent="0" speed="0.00"/>
+        <speed hastePercent="33.86" hasteRating="854" value="0.00"/>
+        <power base="70" effective="70" increasedDps="5.0" petAttack="-1.00" petSpell="-1.00"/>
+        <hitRating increasedHitPercent="0.00" penetration="0" reducedArmorPercent="0.00" value="0"/>
+        <critChance percent="18.73" plusPercent="9.85" rating="452"/>
+      </ranged>
+      <spell>
+        <bonusDamage>
+          <arcane value="2483"/>
+          <fire value="2483"/>
+          <frost value="2483"/>
+          <holy value="2483"/>
+          <nature value="2483"/>
+          <shadow value="2483"/>
+          <petBonus attack="-1" damage="-1" fromType=""/>
+        </bonusDamage>
+        <bonusHealing value="2898"/>
+        <hitRating increasedHitPercent="0.00" penetration="0" reducedResist="0" value="0"/>
+        <critChance rating="452">
+          <arcane percent="29.86"/>
+          <fire percent="29.86"/>
+          <frost percent="29.86"/>
+          <holy percent="29.86"/>
+          <nature percent="29.86"/>
+          <shadow percent="29.86"/>
+        </critChance>
+        <penetration value="0"/>
+        <manaRegen casting="301.00" notCasting="432.00"/>
+        <hasteRating hastePercent="33.86" hasteRating="854"/>
+      </spell>
+      <defenses>
+        <armor base="15086" effective="15086" percent="49.76" petBonus="-1"/>
+        <defense decreasePercent="0.00" increasePercent="0.00" plusDefense="0" rating="0" value="400.00"/>
+        <dodge increasePercent="0.00" percent="3.45" rating="0"/>
+        <parry increasePercent="0.00" percent="0.00" rating="0"/>
+        <block increasePercent="0.00" percent="5.00" rating="0"/>
+        <resilience damagePercent="1.40" hitPercent="0.64" value="60.00"/>
+      </defenses>
+      <items>
+        <item displayInfoId="65227" durability="85" gem0Id="41401" gem1Id="40128" gem2Id="0" gemIcon0="inv_jewelcrafting_shadowspirit_02" gemIcon1="inv_jewelcrafting_gem_38" icon="inv_helmet_169" id="50797" level="251" maxDurability="85" name="Ice-Reinforced Vrykul Helm" permanentEnchantIcon="ability_warrior_shieldmastery" permanentEnchantItemId="44152" permanentenchant="3819" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="1452304000" slot="0"/>
+        <item displayInfoId="64207" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_spiritshard_02" id="50196" level="232" maxDurability="0" name="Love's Prisoner" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="351870544" slot="1"/>
+        <item displayInfoId="65033" durability="85" gem0Id="40128" gem1Id="40113" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_38" gemIcon1="inv_jewelcrafting_gem_37" icon="inv_shoulder_133" id="50059" level="264" maxDurability="85" name="Horrific Flesh Epaulets" permanentEnchantIcon="spell_arcane_teleportorgrimmar" permanentEnchantItemId="44872" permanentenchant="3809" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="2127801600" slot="2"/>
+        <item displayInfoId="30605" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shirt_12" id="18231" level="1" maxDurability="0" name="Sleeveless T-Shirt" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="1" seed="1361255360" slot="3"/>
+        <item displayInfoId="65228" durability="140" gem0Id="40113" gem1Id="40128" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_37" gemIcon1="inv_jewelcrafting_gem_38" icon="inv_chest_mail_15" id="50835" level="251" maxDurability="140" name="Frost Witch's Tunic" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44465" permanentenchant="3832" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="0" slot="4"/>
+        <item displayInfoId="65226" durability="50" gem0Id="40155" gem1Id="40155" gem2Id="40113" gemIcon0="inv_jewelcrafting_gem_39" gemIcon1="inv_jewelcrafting_gem_39" gemIcon2="inv_jewelcrafting_gem_37" icon="inv_belt_83" id="50784" level="251" maxDurability="50" name="Deathspeaker Disciple's Belt" permanentenchant="0" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="1032872320" slot="5"/>
+        <item displayInfoId="61252" durability="90" gem0Id="40113" gem1Id="40169" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_37" gemIcon1="inv_jewelcrafting_gem_41" icon="inv_pants_leather_30a" id="47318" level="245" maxDurability="90" name="Leggings of the Awakening" permanentEnchantIcon="spell_nature_astralrecalgroup" permanentEnchantItemId="41604" permanentenchant="3721" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="6"/>
+        <item displayInfoId="64469" durability="60" gem0Id="40169" gem1Id="40113" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_41" gemIcon1="inv_jewelcrafting_gem_37" icon="inv_boots_leather_8" id="50783" level="251" maxDurability="60" name="Boots of the Frozen Seed" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="39006" permanentenchant="3232" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="641595136" slot="7"/>
+        <item displayInfoId="65224" durability="50" gem0Id="40155" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_39" icon="inv_bracer_60" id="50774" level="251" maxDurability="50" name="Coldwraith Bracers" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44470" permanentenchant="2332" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="1601126720" slot="8"/>
+        <item displayInfoId="65230" durability="50" gem0Id="40155" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_39" icon="inv_gauntlets_104" id="50836" level="251" maxDurability="50" name="Frost Witch's Handguards" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="38979" permanentenchant="3246" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="0" slot="9"/>
+        <item displayInfoId="39123" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_57" id="47733" level="245" maxDurability="0" name="Heartmender Circle" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="0" slot="10"/>
+        <item displayInfoId="43095" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_54" id="47732" level="245" maxDurability="0" name="Band of the Invoker" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="0" slot="11"/>
+        <item displayInfoId="48009" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_rune_11" id="47880" level="232" maxDurability="0" name="Binding Stone" permanentenchant="0" pickUp="PickUpWand" putDown="PutDownWand" randomPropertiesId="0" rarity="4" seed="1680734272" slot="12"/>
+        <item displayInfoId="59322" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_gem_bloodstone_03" id="48724" level="245" maxDurability="0" name="Talisman of Resurgence" permanentenchant="0" pickUp="PickUpWand" putDown="PutDownWand" randomPropertiesId="0" rarity="4" seed="0" slot="13"/>
+        <item displayInfoId="61563" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_cape_16" id="51332" level="264" maxDurability="0" name="Wrathful Gladiator's Cloak of Subjugation" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="39003" permanentenchant="3831" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="14"/>
+        <item displayInfoId="64675" durability="75" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_weapon_shortblade_103" id="50793" level="251" maxDurability="75" name="Midnight Sun" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44467" permanentenchant="3834" pickUp="PickUpMetalSmall" putDown="PutDownSmallMEtal" randomPropertiesId="0" rarity="4" seed="0" slot="15"/>
+        <item displayInfoId="64881" durability="120" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shield_55" id="49821" level="219" maxDurability="120" name="Protector of Frigid Souls" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44455" permanentenchant="1128" pickUp="PickUpMetalLArge" putDown="PutDownLArgeMEtal" randomPropertiesId="0" rarity="4" seed="1064777408" slot="16"/>
+        <item displayInfoId="46045" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="spell_frost_summonwaterelemental" id="50464" level="264" maxDurability="0" name="Totem of the Surging Sea" permanentenchant="0" pickUp="PickUpWoodSmall" putDown="PutDownWoodSmall" randomPropertiesId="0" rarity="4" seed="0" slot="17"/>
+        <item displayInfoId="20621" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shirt_guildtabard_01" id="5976" level="1" maxDurability="0" name="Guild Tabard" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="1" seed="0" slot="18"/>
+      </items>
+      <glyphs>
+        <glyph effect="Increases the duration of Riptide by 6 sec." icon="ui-glyph-rune-8" id="737" name="Glyph of Riptide" type="major"/>
+        <glyph effect="Your Reincarnation spell no longer requires a reagent." icon="ui-glyph-rune-20" id="473" name="Glyph of Renewed Life" type="minor"/>
+        <glyph effect="Cooldown of your Astral Recall spell reduced by 7.5 min." icon="ui-glyph-rune-17" id="470" name="Glyph of Astral Recall" type="minor"/>
+        <glyph effect="Your Chain Heal heals 1 additional target." icon="ui-glyph-rune-17" id="212" name="Glyph of Chain Heal" type="major"/>
+        <glyph effect="Increases the number of charges on your Water Shield spell by 1." icon="ui-glyph-rune-11" id="475" name="Glyph of Water Shield" type="minor"/>
+        <glyph effect="Increases the amount healed by your Earth Shield by 20%." icon="ui-glyph-rune-9" id="751" name="Glyph of Earth Shield" type="major"/>
+      </glyphs>
+    </characterTab>
+    <summary>
+      <c earned="429" points="4480" total="1054" totalPoints="11635"/>
+      <category id="92" name="General">
+        <c earned="32" earnedPoints="335" total="54" totalPoints="570"/>
+      </category>
+      <category id="96" name="Quests">
+        <c earned="22" earnedPoints="220" total="49" totalPoints="530"/>
+      </category>
+      <category id="97" name="Exploration">
+        <c earned="68" earnedPoints="780" total="70" totalPoints="830"/>
+      </category>
+      <category id="95" name="Player vs. Player">
+        <c earned="38" earnedPoints="390" total="166" totalPoints="1930"/>
+      </category>
+      <category id="168" name="Dungeons &amp; Raids">
+        <c earned="150" earnedPoints="1510" total="454" totalPoints="4915"/>
+      </category>
+      <category id="169" name="Professions">
+        <c earned="33" earnedPoints="330" total="75" totalPoints="760"/>
+      </category>
+      <category id="201" name="Reputation">
+        <c earned="13" earnedPoints="165" total="45" totalPoints="560"/>
+      </category>
+      <category id="155" name="World Events">
+        <c earned="73" earnedPoints="750" total="141" totalPoints="1540"/>
+      </category>
+      <category id="81" name="Feats of Strength">
+        <c earned="4"/>
+      </category>
+    </summary>
+  </characterInfo>
+</page>

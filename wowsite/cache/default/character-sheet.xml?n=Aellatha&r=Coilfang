@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/sheet.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-sheet.xml">
+  <tabInfo subTab="profile" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Aellatha&amp;gn=Alliance+Pwners+II"/>
+  <characterInfo>
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Aellatha" class="Rogue" classId="4" classUrl="c=Rogue" faction="Horde" factionId="1" gender="Female" genderId="1" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 17, 2010" level="80" name="Aellatha" points="2415" prefix="" race="Blood Elf" raceId="10" realm="Coilfang" suffix=" the Patient" titleId="137">
+      <modelBasePath value="http://us.media.battle.net.edgesuite.net/"/>
+    </character>
+    <characterTab>
+      <talentSpecs>
+        <talentSpec group="2" icon="ability_rogue_eviscerate" prim="Assassination" treeOne="51" treeThree="2" treeTwo="18"/>
+        <talentSpec active="1" group="1" icon="ability_rogue_eviscerate" prim="Assassination" treeOne="41" treeThree="25" treeTwo="5"/>
+      </talentSpecs>
+      <buffs/>
+      <debuffs/>
+      <pvp>
+        <lifetimehonorablekills value="17876"/>
+        <arenacurrency value="46"/>
+      </pvp>
+      <professions>
+        <skill id="171" key="alchemy" max="450" name="Alchemy" value="450"/>
+        <skill id="165" key="leatherworking" max="150" name="Leatherworking" value="55"/>
+      </professions>
+      <characterBars>
+        <health effective="24614"/>
+        <secondBar casting="-1" effective="120" notCasting="-1" type="e"/>
+      </characterBars>
+      <baseStats>
+        <strength attack="110" base="110" block="-1" effective="120"/>
+        <agility armor="2510" attack="1245" base="191" critHitPercent="14.77" effective="1255"/>
+        <stamina base="105" effective="1719" health="17010" petBonus="-1"/>
+        <intellect base="46" critHitPercent="-1.00" effective="56" mana="-1" petBonus="-1"/>
+        <spirit base="65" effective="75" healthRegen="26" manaRegen="-1"/>
+        <armor base="6306" effective="6306" percent="29.28" petBonus="-1"/>
+      </baseStats>
+      <resistances>
+        <arcane petBonus="-1" value="0"/>
+        <fire petBonus="-1" value="0"/>
+        <frost petBonus="-1" value="0"/>
+        <holy petBonus="-1" value="0"/>
+        <nature petBonus="-1" value="0"/>
+        <shadow petBonus="-1" value="0"/>
+      </resistances>
+      <melee>
+        <mainHandDamage dps="482.6" max="927" min="791" percent="0" speed="1.78"/>
+        <offHandDamage dps="375.9" max="564" min="477" percent="0" speed="1.38"/>
+        <mainHandSpeed hastePercent="1.13" hasteRating="37" value="1.78"/>
+        <offHandSpeed hastePercent="1.13" hasteRating="37" value="1.38"/>
+        <power base="1515" effective="3920" increasedDps="280.0"/>
+        <hitRating increasedHitPercent="11.80" penetration="206" reducedArmorPercent="14.72" value="387"/>
+        <critChance percent="32.25" plusPercent="12.48" rating="573"/>
+        <expertise additional="3" percent="0.75" rating="28" value="3"/>
+      </melee>
+      <ranged>
+        <weaponSkill rating="0" value="0"/>
+        <damage dps="549.0" max="1073" min="881" percent="0" speed="1.78"/>
+        <speed hastePercent="1.13" hasteRating="37" value="1.78"/>
+        <power base="1325" effective="3730" increasedDps="266.0" petAttack="-1.00" petSpell="-1.00"/>
+        <hitRating increasedHitPercent="11.80" penetration="206" reducedArmorPercent="14.72" value="387"/>
+        <critChance percent="31.69" plusPercent="12.48" rating="573"/>
+      </ranged>
+      <spell>
+        <bonusDamage>
+          <arcane value="0"/>
+          <fire value="0"/>
+          <frost value="0"/>
+          <holy value="0"/>
+          <nature value="0"/>
+          <shadow value="0"/>
+          <petBonus attack="-1" damage="-1" fromType=""/>
+        </bonusDamage>
+        <bonusHealing value="0"/>
+        <hitRating increasedHitPercent="14.75" penetration="0" reducedResist="0" value="387"/>
+        <critChance rating="573">
+          <arcane percent="12.48"/>
+          <fire percent="12.48"/>
+          <frost percent="12.48"/>
+          <holy percent="12.48"/>
+          <nature percent="12.48"/>
+          <shadow percent="12.48"/>
+        </critChance>
+        <penetration value="0"/>
+        <manaRegen casting="0.00" notCasting="0.00"/>
+        <hasteRating hastePercent="1.13" hasteRating="37"/>
+      </spell>
+      <defenses>
+        <armor base="6306" effective="6306" percent="29.28" petBonus="-1"/>
+        <defense decreasePercent="0.00" increasePercent="0.00" plusDefense="0" rating="0" value="400.00"/>
+        <dodge increasePercent="0.00" percent="25.58" rating="0"/>
+        <parry increasePercent="0.00" percent="5.00" rating="0"/>
+        <block increasePercent="0.00" percent="0.00" rating="0"/>
+        <resilience damagePercent="20.47" hitPercent="9.30" value="877.00"/>
+      </defenses>
+      <items>
+        <item displayInfoId="61210" durability="63" gem0Id="41398" gem1Id="40148" gem2Id="0" gemIcon0="inv_jewelcrafting_shadowspirit_02" gemIcon1="inv_jewelcrafting_gem_39" icon="inv_helmet_145a" id="47688" level="245" maxDurability="70" name="Mask of Lethal Intent" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="0"/>
+        <item displayInfoId="39162" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_necklace_36" id="42042" level="245" maxDurability="0" name="Relentless Gladiator's Pendant of Victory" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="0" slot="1"/>
+        <item displayInfoId="60929" durability="70" gem0Id="40114" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_37" icon="inv_shoulder_89" id="51576" level="251" maxDurability="70" name="Titan-Forged Spaulders of Triumph" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="2"/>
+        <item displayInfoId="61208" durability="107" gem0Id="40114" gem1Id="40114" gem2Id="40114" gemIcon0="inv_jewelcrafting_gem_37" gemIcon1="inv_jewelcrafting_gem_37" gemIcon2="inv_jewelcrafting_gem_37" icon="inv_chest_leather_18a" id="47600" level="245" maxDurability="120" name="Knightbane Carapace" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44465" permanentenchant="3832" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="523055360" slot="4"/>
+        <item displayInfoId="62215" durability="40" gem0Id="40114" gem1Id="40114" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_37" gemIcon1="inv_jewelcrafting_gem_37" icon="inv_belt_43c" id="41833" level="245" maxDurability="40" name="Relentless Gladiator's Belt of Triumph" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="5"/>
+        <item displayInfoId="62213" durability="90" gem0Id="40114" gem1Id="40136" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_37" gemIcon1="inv_jewelcrafting_gem_40" icon="inv_pants_leather_30a" id="41656" level="251" maxDurability="90" name="Relentless Gladiator's Leather Legguards" permanentEnchantIcon="inv_misc_armorkit_33" permanentEnchantItemId="38374" permanentenchant="3823" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="1952856864" slot="6"/>
+        <item displayInfoId="62216" durability="54" gem0Id="40114" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_37" icon="inv_boots_cloth_05" id="41837" level="245" maxDurability="60" name="Relentless Gladiator's Boots of Triumph" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="7"/>
+        <item displayInfoId="65199" durability="40" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_bracer_53" id="51370" level="264" maxDurability="40" name="Wrathful Gladiator's Armwraps of Triumph" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44815" permanentenchant="3845" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="8"/>
+        <item displayInfoId="62211" durability="40" gem0Id="40114" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_37" icon="inv_gauntlets_49" id="41768" level="251" maxDurability="40" name="Relentless Gladiator's Leather Gloves" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44458" permanentenchant="1603" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="9"/>
+        <item displayInfoId="39129" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_60" id="42119" level="245" maxDurability="0" name="Relentless Gladiator's Band of Victory" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="0" slot="10"/>
+        <item displayInfoId="39129" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_60" id="42117" level="226" maxDurability="0" name="Furious Gladiator's Band of Triumph" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="0" slot="11"/>
+        <item displayInfoId="37841" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_trinketpvp_02" id="51378" level="264" maxDurability="0" name="Medallion of the Horde" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="0" slot="12"/>
+        <item displayInfoId="64254" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_qirajidol_onyx" id="50198" level="232" maxDurability="0" name="Needle-Encrusted Scorpion" permanentenchant="0" pickUp="PickUpWand" putDown="PutDownWand" randomPropertiesId="0" rarity="4" seed="0" slot="13"/>
+        <item displayInfoId="42615" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_cape_16" id="42082" level="245" maxDurability="0" name="Relentless Gladiator's Cloak of Victory" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44457" permanentenchant="1099" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="14"/>
+        <item displayInfoId="64768" durability="65" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_weapon_shortblade_77" id="50203" level="232" maxDurability="75" name="Blood Weeper" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44493" permanentenchant="3789" pickUp="PickUpMetalSmall" putDown="PutDownSmallMEtal" randomPropertiesId="0" rarity="4" seed="437938336" slot="15"/>
+        <item displayInfoId="60591" durability="68" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_weapon_shortblade_94" id="47255" level="245" maxDurability="75" name="Stygian Bladebreaker" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44493" permanentenchant="3789" pickUp="PickUpMetalSmall" putDown="PutDownSmallMEtal" randomPropertiesId="0" rarity="4" seed="1487120096" slot="16"/>
+        <item displayInfoId="60590" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_throwingknife_07" id="47659" level="245" maxDurability="0" name="Crimson Star" permanentenchant="0" pickUp="PickUpMetalSmall" putDown="PutDownSmallMEtal" randomPropertiesId="0" rarity="4" seed="0" slot="17"/>
+        <item displayInfoId="35396" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shirt_guildtabard_01" id="22999" level="60" maxDurability="0" name="Tabard of the Argent Dawn" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="1" seed="0" slot="18"/>
+      </items>
+      <glyphs>
+        <glyph effect="Vigor grants an additional 10 maximum energy." icon="ui-glyph-rune-19" id="408" name="Glyph of Vigor" type="major"/>
+        <glyph effect="Enables you to walk on water while your Sprint ability is active." icon="ui-glyph-rune1" id="468" name="Glyph of Blurred Speed" type="minor"/>
+        <glyph effect="Increases the range of your Pick Pocket ability by 5 yards." icon="ui-glyph-rune-14" id="466" name="Glyph of Pick Pocket" type="minor"/>
+        <glyph effect="Reduces the cost of Mutilate by 5 energy." icon="ui-glyph-rune-4" id="733" name="Glyph of Mutilate" type="major"/>
+        <glyph effect="Increases your movement speed by 30% while the Vanish effect is active." icon="ui-glyph-rune-15" id="469" name="Glyph of Vanish" type="minor"/>
+        <glyph effect="Increases the duration of Rupture by 4 sec." icon="ui-glyph-rune-20" id="406" name="Glyph of Rupture" type="major"/>
+      </glyphs>
+    </characterTab>
+    <summary>
+      <c earned="238" points="2415" total="1054" totalPoints="11635"/>
+      <category id="92" name="General">
+        <c earned="22" earnedPoints="235" total="54" totalPoints="570"/>
+      </category>
+      <category id="96" name="Quests">
+        <c earned="11" earnedPoints="110" total="49" totalPoints="530"/>
+      </category>
+      <category id="97" name="Exploration">
+        <c earned="12" earnedPoints="120" total="70" totalPoints="830"/>
+      </category>
+      <category id="95" name="Player vs. Player">
+        <c earned="58" earnedPoints="590" total="166" totalPoints="1930"/>
+      </category>
+      <category id="168" name="Dungeons &amp; Raids">
+        <c earned="86" earnedPoints="860" total="454" totalPoints="4915"/>
+      </category>
+      <category id="169" name="Professions">
+        <c earned="35" earnedPoints="350" total="75" totalPoints="760"/>
+      </category>
+      <category id="201" name="Reputation">
+        <c earned="2" earnedPoints="30" total="45" totalPoints="560"/>
+      </category>
+      <category id="155" name="World Events">
+        <c earned="12" earnedPoints="120" total="141" totalPoints="1540"/>
+      </category>
+      <category id="81" name="Feats of Strength">
+        <c earned="5"/>
+      </category>
+    </summary>
+  </characterInfo>
+</page>

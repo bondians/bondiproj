@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/sheet.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-sheet.xml">
+  <tabInfo subTab="profile" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Gallithe&amp;gn=Alliance+Pwners+II"/>
+  <characterInfo>
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Gallithe" class="Mage" classId="8" classUrl="c=Mage" faction="Horde" factionId="1" gender="Female" genderId="1" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 17, 2010" level="80" name="Gallithe" points="4295" prefix="" race="Blood Elf" raceId="10" realm="Coilfang" suffix=" the Noble" titleId="122">
+      <modelBasePath value="http://us.media.battle.net.edgesuite.net/"/>
+    </character>
+    <characterTab>
+      <talentSpecs>
+        <talentSpec group="2" icon="spell_fire_firebolt02" prim="Fire" treeOne="18" treeThree="0" treeTwo="53"/>
+        <talentSpec active="1" group="1" icon="spell_holy_magicalsentry" prim="Arcane" treeOne="57" treeThree="11" treeTwo="3"/>
+      </talentSpecs>
+      <buffs/>
+      <debuffs/>
+      <pvp>
+        <lifetimehonorablekills value="5099"/>
+        <arenacurrency value="25"/>
+      </pvp>
+      <professions>
+        <skill id="333" key="enchanting" max="450" name="Enchanting" value="460"/>
+        <skill id="755" key="jewelcrafting" max="450" name="Jewelcrafting" value="450"/>
+      </professions>
+      <characterBars>
+        <health effective="17943"/>
+        <secondBar casting="145" effective="25983" notCasting="290" type="m"/>
+      </characterBars>
+      <baseStats>
+        <strength attack="33" base="33" block="-1" effective="43"/>
+        <agility armor="110" attack="-1" base="45" critHitPercent="4.53" effective="55"/>
+        <stamina base="59" effective="1116" health="10980" petBonus="-1"/>
+        <intellect base="211" critHitPercent="10.11" effective="1533" mana="22715" petBonus="-1"/>
+        <spirit base="189" effective="444" healthRegen="22" manaRegen="290"/>
+        <armor base="2175" effective="2175" percent="12.49" petBonus="-1"/>
+      </baseStats>
+      <resistances>
+        <arcane petBonus="-1" value="40"/>
+        <fire petBonus="-1" value="40"/>
+        <frost petBonus="-1" value="40"/>
+        <holy petBonus="-1" value="0"/>
+        <nature petBonus="-1" value="40"/>
+        <shadow petBonus="-1" value="40"/>
+      </resistances>
+      <melee>
+        <mainHandDamage dps="135.8" max="367" min="122" percent="0" speed="1.80"/>
+        <offHandDamage dps="0.0" max="0" min="0" percent="0" speed="1.64"/>
+        <mainHandSpeed hastePercent="22.08" hasteRating="724" value="1.80"/>
+        <offHandSpeed hastePercent="22.08" hasteRating="724" value="1.64"/>
+        <power base="66" effective="66" increasedDps="4.0"/>
+        <hitRating increasedHitPercent="10.83" penetration="0" reducedArmorPercent="0.00" value="355"/>
+        <critChance percent="16.88" plusPercent="12.98" rating="596"/>
+        <expertise additional="0" percent="0.00" rating="0" value="0"/>
+      </melee>
+      <ranged>
+        <weaponSkill rating="0" value="0"/>
+        <damage dps="468.2" max="898" min="482" percent="0" speed="1.47"/>
+        <speed hastePercent="22.08" hasteRating="724" value="1.47"/>
+        <power base="45" effective="45" increasedDps="3.0" petAttack="-1.00" petSpell="-1.00"/>
+        <hitRating increasedHitPercent="10.83" penetration="0" reducedArmorPercent="0.00" value="355"/>
+        <critChance percent="3.08" plusPercent="12.98" rating="596"/>
+      </ranged>
+      <spell>
+        <bonusDamage>
+          <arcane value="2706"/>
+          <fire value="2706"/>
+          <frost value="2706"/>
+          <holy value="2706"/>
+          <nature value="2706"/>
+          <shadow value="2706"/>
+          <petBonus attack="-1" damage="-1" fromType=""/>
+        </bonusDamage>
+        <bonusHealing value="2477"/>
+        <hitRating increasedHitPercent="13.53" penetration="0" reducedResist="0" value="355"/>
+        <critChance rating="596">
+          <arcane percent="26.09"/>
+          <fire percent="26.09"/>
+          <frost percent="26.09"/>
+          <holy percent="26.09"/>
+          <nature percent="26.09"/>
+          <shadow percent="26.09"/>
+        </critChance>
+        <penetration value="0"/>
+        <manaRegen casting="145.00" notCasting="290.00"/>
+        <hasteRating hastePercent="22.08" hasteRating="724"/>
+      </spell>
+      <defenses>
+        <armor base="2175" effective="2175" percent="12.49" petBonus="-1"/>
+        <defense decreasePercent="0.00" increasePercent="0.00" plusDefense="0" rating="0" value="400.00"/>
+        <dodge increasePercent="0.00" percent="4.60" rating="0"/>
+        <parry increasePercent="0.00" percent="0.00" rating="0"/>
+        <block increasePercent="0.00" percent="0.00" rating="0"/>
+        <resilience damagePercent="0.00" hitPercent="0.00" value="0.00"/>
+      </defenses>
+      <items>
+        <item displayInfoId="62073" durability="60" gem0Id="41395" gem1Id="42144" gem2Id="0" gemIcon0="inv_jewelcrafting_shadowspirit_02" gemIcon1="inv_jewelcrafting_dragonseye05" icon="inv_helmet_139" id="47692" level="245" maxDurability="60" name="Hood of Smoldering Aftermath" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="0"/>
+        <item displayInfoId="43085" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_necklace_39" id="50211" level="232" maxDurability="0" name="Arcane Loops of Anger" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="667625544" slot="1"/>
+        <item displayInfoId="64893" durability="60" gem0Id="40155" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_39" icon="inv_shoulder_116purple" id="50279" level="251" maxDurability="60" name="Bloodmage Shoulderpads" permanentEnchantIcon="spell_nature_lightning" permanentEnchantItemId="44129" permanentenchant="3806" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="2"/>
+        <item displayInfoId="13115" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shirt_08" id="6833" level="25" maxDurability="0" name="White Tuxedo Shirt" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="1" seed="1240792768" slot="3"/>
+        <item displayInfoId="61866" durability="100" gem0Id="40133" gem1Id="40155" gem2Id="42144" gemIcon0="inv_jewelcrafting_gem_40" gemIcon1="inv_jewelcrafting_gem_39" gemIcon2="inv_jewelcrafting_dragonseye05" icon="inv_chest_cloth_64" id="47604" level="245" maxDurability="100" name="Merlin's Robe" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44465" permanentenchant="3832" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="478445568" slot="4"/>
+        <item displayInfoId="64347" durability="35" gem0Id="40113" gem1Id="40113" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_37" gemIcon1="inv_jewelcrafting_gem_37" icon="inv_belt_66" id="49978" level="264" maxDurability="35" name="Crushing Coldwraith Belt" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="5"/>
+        <item displayInfoId="62075" durability="75" gem0Id="42144" gem1Id="40133" gem2Id="0" gemIcon0="inv_jewelcrafting_dragonseye05" gemIcon1="inv_jewelcrafting_gem_40" icon="inv_pants_cloth_20" id="47775" level="232" maxDurability="75" name="Sunstrider's Leggings of Conquest" permanentEnchantIcon="spell_nature_astralrecal" permanentEnchantItemId="41603" permanentenchant="3720" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="6"/>
+        <item displayInfoId="60568" durability="50" gem0Id="40155" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_39" icon="inv_boots_cloth_22" id="47560" level="219" maxDurability="50" name="Boots of the Crackling Flame" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="7"/>
+        <item displayInfoId="61827" durability="35" gem0Id="40113" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_37" icon="inv_bracer_32a" id="47586" level="245" maxDurability="35" name="Bejeweled Wizard's Bracers" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44470" permanentenchant="2332" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="681608128" slot="8"/>
+        <item displayInfoId="62066" durability="35" gem0Id="40113" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_37" icon="inv_gauntlets_56" id="47773" level="232" maxDurability="35" name="Sunstrider's Gauntlets of Conquest" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="38979" permanentenchant="3246" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="9"/>
+        <item displayInfoId="43095" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_54" id="47732" level="245" maxDurability="0" name="Band of the Invoker" permanentEnchantIcon="trade_engraving" permanentEnchantSpellDesc="Permanently enchant a ring to increase spell power by 23.  Only the Enchanter's rings can be enchanted, and enchanting a ring will cause it to become soulbound." permanentEnchantSpellName="Enchant Ring - Greater Spellpower" permanentenchant="3840" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="0" slot="10"/>
+        <item displayInfoId="63960" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_83" id="50377" level="251" maxDurability="0" name="Ashen Band of Destruction" permanentEnchantIcon="trade_engraving" permanentEnchantSpellDesc="Permanently enchant a ring to increase spell power by 23.  Only the Enchanter's rings can be enchanted, and enchanting a ring will cause it to become soulbound." permanentEnchantSpellName="Enchant Ring - Greater Spellpower" permanentenchant="3840" pickUp="PickUpMetalSmall" putDown="PutDownSmallMEtal" randomPropertiesId="0" rarity="4" seed="1172529664" slot="11"/>
+        <item displayInfoId="59320" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_spiritshard_01" id="48722" level="245" maxDurability="0" name="Shard of the Crystal Heart" permanentenchant="0" pickUp="PickUpWand" putDown="PutDownWand" randomPropertiesId="0" rarity="4" seed="0" slot="12"/>
+        <item displayInfoId="59322" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_gem_bloodstone_03" id="48724" level="245" maxDurability="0" name="Talisman of Resurgence" permanentenchant="0" pickUp="PickUpWand" putDown="PutDownWand" randomPropertiesId="0" rarity="4" seed="0" slot="13"/>
+        <item displayInfoId="58977" durability="0" gem0Id="40113" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_37" icon="inv_misc_cape_16" id="50469" level="264" maxDurability="0" name="Volde's Cloak of the Night Sky" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="39003" permanentenchant="3831" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="14"/>
+        <item displayInfoId="64767" durability="105" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_sword_120" id="50210" level="232" maxDurability="105" name="Seethe" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44467" permanentenchant="3834" pickUp="PickUpMetalSmall" putDown="PutDownSmallMEtal" randomPropertiesId="0" rarity="4" seed="1771428096" slot="15"/>
+        <item displayInfoId="64447" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_ore_feliron_01" id="50309" level="232" maxDurability="0" name="Shriveled Heart" permanentenchant="0" pickUp="PickUpBook" putDown="PutDownBook" randomPropertiesId="0" rarity="4" seed="578116196" slot="16"/>
+        <item displayInfoId="60586" durability="75" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_wand_32" id="47658" level="245" maxDurability="75" name="Brimstone Igniter" permanentenchant="0" pickUp="PickUpWand" putDown="PutDownWand" randomPropertiesId="0" rarity="4" seed="0" slot="17"/>
+        <item displayInfoId="48709" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_tabardsummer02" id="35279" level="1" maxDurability="0" name="Tabard of Summer Skies" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="3" seed="2134578432" slot="18"/>
+      </items>
+      <glyphs>
+        <glyph effect="Increases the damage from your Arcane Blast buff by 3%." icon="ui-glyph-rune-6" id="651" name="Glyph of Arcane Blast" type="major"/>
+        <glyph effect="Your Polymorph: Sheep spell polymorphs the target into a penguin instead." icon="ui-glyph-rune-16" id="450" name="Glyph of the Penguin" type="minor"/>
+        <glyph effect="Your Slow Fall spell no longer requires a reagent." icon="ui-glyph-rune-20" id="451" name="Glyph of Slow Fall" type="minor"/>
+        <glyph effect="Increases the critical strike damage bonus of Arcane Missiles by 25%." icon="ui-glyph-rune-14" id="312" name="Glyph of Arcane Missiles" type="major"/>
+        <glyph effect="Your Molten Armor grants an additional 20% of your spirit as critical strike rating." icon="ui-glyph-rune-17" id="328" name="Glyph of Molten Armor" type="major"/>
+      </glyphs>
+    </characterTab>
+    <summary>
+      <c earned="408" points="4295" total="1054" totalPoints="11635"/>
+      <category id="92" name="General">
+        <c earned="28" earnedPoints="295" total="54" totalPoints="570"/>
+      </category>
+      <category id="96" name="Quests">
+        <c earned="15" earnedPoints="150" total="49" totalPoints="530"/>
+      </category>
+      <category id="97" name="Exploration">
+        <c earned="67" earnedPoints="770" total="70" totalPoints="830"/>
+      </category>
+      <category id="95" name="Player vs. Player">
+        <c earned="53" earnedPoints="560" total="166" totalPoints="1930"/>
+      </category>
+      <category id="168" name="Dungeons &amp; Raids">
+        <c earned="106" earnedPoints="1085" total="454" totalPoints="4915"/>
+      </category>
+      <category id="169" name="Professions">
+        <c earned="49" earnedPoints="490" total="75" totalPoints="760"/>
+      </category>
+      <category id="201" name="Reputation">
+        <c earned="9" earnedPoints="115" total="45" totalPoints="560"/>
+      </category>
+      <category id="155" name="World Events">
+        <c earned="81" earnedPoints="830" total="141" totalPoints="1540"/>
+      </category>
+      <category id="81" name="Feats of Strength">
+        <c earned="5"/>
+      </category>
+    </summary>
+  </characterInfo>
+</page>

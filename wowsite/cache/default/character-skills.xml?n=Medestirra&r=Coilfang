@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character-skills.xsl"?><page globalSearch="1" lang="en_us">
+  <characterInfo>
+	<character battleGroup="Internal" battleGroupId="48" class="Warlock" classId="9" faction="Alliance" factionId="0" gender="Male" genderId="0" guild="" guildId="0" lastLoginDate="2006-10-31 09:45:45.0" level="65" name="Lowe" race="Gnome" raceId="7" realm="Hellfire" url="r=Hellfire&amp;n=Lowe"/>
+	<skillTab>
+		<skillCategory key="classskills" name="Class Skills">
+			<skill key="affliction" name="Affliction"/>
+			<skill key="demonology" name="Demonology"/>
+			<skill key="destruction" name="Destruction"/>
+		</skillCategory>
+		<skillCategory key="professions" name="Professions">
+			<skill key="mining" max="75" name="Mining" value="40"/>
+			<skill key="tailoring" max="375" name="Tailoring" value="300"/>
+		</skillCategory>
+	</skillTab>
+  </characterInfo>
+</page>
