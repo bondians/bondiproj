@@ -1,0 +1,47 @@
+
+
+        require 'wowr'
+        api = Wowr::API.new(:character_name => 'Cayuse',
+                            :guild_name => "Alliance Pwners II",
+                            :realm => 'Coilfang',
+                            :debug => true)
+    
+    guild = api.get_guild
+
+                    
+cayuse = api.get_character("Cayuse", :realm => "Coilfang", :caching => false)
+
+
+Name Level Race Class Guild Health Armor STR STA AGI SPI INT
+
+
+guild.members.keys[(23 .. 33)].each do |dude|
+    mem = api.get_character(dude)
+    a = Member.new
+    a.name = mem.name
+    a.level = mem.level
+    a.racepic = mem.race_icon
+    a.classpic = mem.class_icon
+    a.guild = mem.guild
+    a.health = mem.health
+    a.armor = mem.defenses.armor.effective
+    a.strength = mem.str.effective
+    a.stamina = mem.sta.effective
+    a.agility = mem.agi.effective
+    a.spirit = mem.spi.effective
+    a.intellect = mem.int.effective
+    a.save
+end
+
+      t.string :name
+      t.integer :level
+      t.string :race
+      t.string :class
+      t.string :guild
+      t.integer :health
+      t.integer :armor
+      t.integer :strength
+      t.integer :stamina
+      t.integer :agility
+      t.integer :spirit
+      t.integer :intellect

@@ -1,0 +1,101 @@
+@charset "UTF-8";
+.surplusheader  {
+	clear: both;
+	padding-bottom: 4px;
+}
+
+.surplusadd  {
+	float: left;
+	clear: left;
+	height: 24px;
+}
+
+.surplus  {
+	background-color: #EE9;
+	padding-bottom: 4px;
+	clear: left;
+}
+
+.surplus span {
+	border-right-width: thin;
+	border-right-color: #6FE;
+	border-right-style:	solid;
+	border-left-width: thin;
+	border-left-color: #6FE;
+	border-left-style:	solid;
+	height: 34px;
+}
+
+.surplusheader span {
+	float: left;
+	text-align: center;
+	border-right-width: thin;
+	border-right-color: #666;
+	border-right-style: groove;
+	height: 60px;
+	background-color: #FFC;
+}
+
+.surplusdesc {
+	margin-left: 8px;
+	width: 17%;
+}
+
+.surplusmake {
+	width: 17%;
+}
+
+.surplusidtag {
+	width: 17%;
+}
+
+.surplusqty {
+	width: 8%;
+}
+
+.surpluscondition {
+	width: 10%;
+}
+
+.surplusspacer {
+	padding: 10px;
+	width: 100px;
+	height: 4px;
+	border-left-style: none;
+	border-right-style: none;
+}
+.surplusremove {
+	width: 10%;
+}
+
+.sdesc {
+	width: 16%;
+}
+
+.smake {
+	width: 16%;
+}
+
+.sidtag {
+	width: 16%;
+}
+
+.sqty {
+	width: 7%;
+}
+
+.scondition {
+	width: 10%;
+	margin-left: 4%;
+	margin-right: 4%;
+}
+
+.sremove {
+	width: 10%;
+}
+
+
+.surplusd {
+	width: 18%;
+	float: left;
+}

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/sheet.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-sheet.xml">
+  <tabInfo subTab="profile" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Soulblight&amp;gn=Alliance+Pwners+II"/>
+  <characterInfo>
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Soulblight" class="Shaman" classId="7" classUrl="c=Shaman" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 17, 2010" level="80" name="Soulblight" points="4515" prefix="" race="Tauren" raceId="6" realm="Coilfang" suffix=" of the Nightfall" titleId="107">
+      <modelBasePath value="http://us.media.battle.net.edgesuite.net/"/>
+    </character>
+    <characterTab>
+      <talentSpecs>
+        <talentSpec group="2" icon="spell_nature_magicimmunity" prim="Restoration" treeOne="0" treeThree="56" treeTwo="15"/>
+        <talentSpec active="1" group="1" icon="spell_nature_lightning" prim="Elemental" treeOne="60" treeThree="0" treeTwo="11"/>
+      </talentSpecs>
+      <buffs/>
+      <debuffs/>
+      <pvp>
+        <lifetimehonorablekills value="6548"/>
+        <arenacurrency value="50"/>
+      </pvp>
+      <professions>
+        <skill id="182" key="herbalism" max="450" name="Herbalism" value="465"/>
+        <skill id="393" key="skinning" max="450" name="Skinning" value="450"/>
+      </professions>
+      <characterBars>
+        <health effective="19888"/>
+        <secondBar casting="523" effective="23571" notCasting="689" type="m"/>
+      </characterBars>
+      <baseStats>
+        <strength attack="250" base="125" block="6" effective="135"/>
+        <agility armor="160" attack="-1" base="70" critHitPercent="3.88" effective="80"/>
+        <stamina base="137" effective="1276" health="12580" petBonus="-1"/>
+        <intellect base="136" critHitPercent="9.98" effective="1297" mana="19175" petBonus="-1"/>
+        <spirit base="145" effective="275" healthRegen="24" manaRegen="165"/>
+        <armor base="17206" effective="17206" percent="53.04" petBonus="-1"/>
+      </baseStats>
+      <resistances>
+        <arcane petBonus="-1" value="0"/>
+        <fire petBonus="-1" value="0"/>
+        <frost petBonus="-1" value="0"/>
+        <holy petBonus="-1" value="0"/>
+        <nature petBonus="-1" value="0"/>
+        <shadow petBonus="-1" value="0"/>
+      </resistances>
+      <melee>
+        <mainHandDamage dps="158.4" max="329" min="134" percent="0" speed="1.46"/>
+        <offHandDamage dps="0.0" max="0" min="0" percent="0" speed="1.62"/>
+        <mainHandSpeed hastePercent="23.11" hasteRating="583" value="1.46"/>
+        <offHandSpeed hastePercent="23.11" hasteRating="583" value="1.62"/>
+        <power base="355" effective="355" increasedDps="25.0"/>
+        <hitRating increasedHitPercent="0.98" penetration="0" reducedArmorPercent="0.00" value="32"/>
+        <critChance percent="22.98" plusPercent="14.09" rating="647"/>
+        <expertise additional="0" percent="0.00" rating="0" value="0"/>
+      </melee>
+      <ranged>
+        <weaponSkill rating="0" value="0"/>
+        <damage dps="0.0" max="0" min="0" percent="0" speed="0.00"/>
+        <speed hastePercent="23.11" hasteRating="583" value="0.00"/>
+        <power base="70" effective="70" increasedDps="5.0" petAttack="-1.00" petSpell="-1.00"/>
+        <hitRating increasedHitPercent="0.98" penetration="0" reducedArmorPercent="0.00" value="32"/>
+        <critChance percent="22.98" plusPercent="14.09" rating="647"/>
+      </ranged>
+      <spell>
+        <bonusDamage>
+          <arcane value="2397"/>
+          <fire value="2397"/>
+          <frost value="2397"/>
+          <holy value="2397"/>
+          <nature value="2397"/>
+          <shadow value="2397"/>
+          <petBonus attack="-1" damage="-1" fromType=""/>
+        </bonusDamage>
+        <bonusHealing value="2397"/>
+        <hitRating increasedHitPercent="1.22" penetration="0" reducedResist="0" value="32"/>
+        <critChance rating="647">
+          <arcane percent="34.08"/>
+          <fire percent="34.08"/>
+          <frost percent="34.08"/>
+          <holy percent="34.08"/>
+          <nature percent="34.08"/>
+          <shadow percent="34.08"/>
+        </critChance>
+        <penetration value="0"/>
+        <manaRegen casting="523.00" notCasting="689.00"/>
+        <hasteRating hastePercent="23.11" hasteRating="583"/>
+      </spell>
+      <defenses>
+        <armor base="17206" effective="17206" percent="53.04" petBonus="-1"/>
+        <defense decreasePercent="0.00" increasePercent="0.00" plusDefense="0" rating="0" value="400.00"/>
+        <dodge increasePercent="0.00" percent="3.45" rating="0"/>
+        <parry increasePercent="0.00" percent="0.00" rating="0"/>
+        <block increasePercent="0.00" percent="5.00" rating="0"/>
+        <resilience damagePercent="3.06" hitPercent="1.39" value="131.00"/>
+      </defenses>
+      <items>
+        <item displayInfoId="62053" durability="85" gem0Id="41395" gem1Id="40133" gem2Id="0" gemIcon0="inv_jewelcrafting_shadowspirit_02" gemIcon1="inv_jewelcrafting_gem_40" icon="inv_helmet_100" id="47687" level="245" maxDurability="85" name="Headguard of Inner Warmth" permanentEnchantIcon="spell_fire_masterofelements" permanentEnchantItemId="44159" permanentenchant="3820" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="0" slot="0"/>
+        <item displayInfoId="39162" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_necklace_36" id="51349" level="264" maxDurability="0" name="Wrathful Gladiator's Pendant of Deliverance" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="0" slot="1"/>
+        <item displayInfoId="61226" durability="85" gem0Id="40133" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_40" icon="inv_shoulder_67" id="48299" level="232" maxDurability="85" name="Thrall's Spaulders of Conquest" permanentEnchantIcon="spell_nature_lightningoverload" permanentEnchantItemId="44874" permanentenchant="3810" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="0" slot="2"/>
+        <item displayInfoId="65228" durability="140" gem0Id="40113" gem1Id="40133" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_37" gemIcon1="inv_jewelcrafting_gem_40" icon="inv_chest_mail_15" id="50835" level="251" maxDurability="140" name="Frost Witch's Tunic" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44465" permanentenchant="3832" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="0" slot="4"/>
+        <item displayInfoId="65035" durability="50" gem0Id="40128" gem1Id="45883" gem2Id="40133" gemIcon0="inv_jewelcrafting_gem_38" gemIcon1="inv_jewelcrafting_gem_37" gemIcon2="inv_jewelcrafting_gem_40" icon="inv_belt_83" id="50992" level="264" maxDurability="50" name="Waistband of Despair" permanentenchant="0" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="0" slot="5"/>
+        <item displayInfoId="65232" durability="105" gem0Id="40113" gem1Id="40128" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_37" gemIcon1="inv_jewelcrafting_gem_38" icon="inv_kilt_mail_01" id="50838" level="251" maxDurability="105" name="Frost Witch's Legguards" permanentEnchantIcon="spell_nature_astralrecalgroup" permanentEnchantItemId="41602" permanentenchant="3719" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="0" slot="6"/>
+        <item displayInfoId="61466" durability="70" gem0Id="40128" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_38" icon="inv_boots_chain_07" id="41056" level="245" maxDurability="70" name="Relentless Gladiator's Sabatons of Salvation" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="38986" permanentenchant="3826" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="0" slot="7"/>
+        <item displayInfoId="65224" durability="50" gem0Id="40134" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_40" icon="inv_bracer_60" id="50774" level="251" maxDurability="50" name="Coldwraith Bracers" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44470" permanentenchant="2332" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="0" slot="8"/>
+        <item displayInfoId="62095" durability="50" gem0Id="40128" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_38" icon="inv_gauntlets_53" id="48296" level="232" maxDurability="50" name="Thrall's Handguards of Conquest" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="38979" permanentenchant="3246" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="0" slot="9"/>
+        <item displayInfoId="39123" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_57" id="47733" level="245" maxDurability="0" name="Heartmender Circle" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="0" slot="10"/>
+        <item displayInfoId="63949" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_85" id="50399" level="268" maxDurability="0" name="Ashen Band of Unmatched Wisdom" permanentenchant="0" pickUp="PickUpMetalSmall" putDown="PutDownSmallMEtal" randomPropertiesId="0" rarity="4" seed="859865856" slot="11"/>
+        <item displayInfoId="59311" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="ability_druid_typhoon" id="45292" level="219" maxDurability="0" name="Energy Siphon" permanentenchant="0" pickUp="PickUpWand" putDown="PutDownWand" randomPropertiesId="0" rarity="4" seed="1964328704" slot="12"/>
+        <item displayInfoId="59524" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_eye_02" id="45308" level="219" maxDurability="0" name="Eye of the Broodmother" permanentenchant="0" pickUp="PickUpWand" putDown="PutDownWand" randomPropertiesId="0" rarity="4" seed="1954075264" slot="13"/>
+        <item displayInfoId="59028" durability="0" gem0Id="40125" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_38" icon="inv_misc_cape_16" id="50468" level="264" maxDurability="0" name="Drape of the Violet Tower" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="39003" permanentenchant="3831" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="14"/>
+        <item displayInfoId="64766" durability="75" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_weapon_shortblade_100" id="50227" level="232" maxDurability="75" name="Surgeon's Needle" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="38991" permanentenchant="3830" pickUp="PickUpMetalSmall" putDown="PutDownSmallMEtal" randomPropertiesId="0" rarity="4" seed="0" slot="15"/>
+        <item displayInfoId="65030" durability="120" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shield_72" id="49976" level="264" maxDurability="120" name="Bulwark of Smouldering Steel" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44455" permanentenchant="1128" pickUp="PickUpMetalLArge" putDown="PutDownLArgeMEtal" randomPropertiesId="0" rarity="4" seed="1224814208" slot="16"/>
+        <item displayInfoId="25246" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="spell_nature_slowingtotem" id="47665" level="245" maxDurability="0" name="Totem of Calming Tides" permanentenchant="0" pickUp="PickUpWoodSmall" putDown="PutDownWoodSmall" randomPropertiesId="0" rarity="4" seed="0" slot="17"/>
+        <item displayInfoId="54177" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shirt_guildtabard_01" id="43156" level="75" maxDurability="0" name="Tabard of the Wyrmrest Accord" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="1" seed="0" slot="18"/>
+      </items>
+      <glyphs>
+        <glyph effect="Your Lava Burst spell gains an additional 10% of your spellpower." icon="ui-glyph-rune-15" id="214" name="Glyph of Lava" type="major"/>
+        <glyph effect="Your Reincarnation spell no longer requires a reagent." icon="ui-glyph-rune-20" id="473" name="Glyph of Renewed Life" type="minor"/>
+        <glyph effect="Your Water Walking spell no longer requires a reagent." icon="ui-glyph-rune-2" id="476" name="Glyph of Water Walking" type="minor"/>
+        <glyph effect="When you cast Totem of Wrath, you gain 30% of the totem's bonus spell power for 5 min." icon="ui-glyph-rune1" id="752" name="Glyph of Totem of Wrath" type="major"/>
+        <glyph effect="Your Water Breathing spell no longer requires a reagent." icon="ui-glyph-rune-16" id="474" name="Glyph of Water Breathing" type="minor"/>
+        <glyph effect="Increases the damage dealt by Lightning Bolt by 4%." icon="ui-glyph-rune-18" id="226" name="Glyph of Lightning Bolt" type="major"/>
+      </glyphs>
+    </characterTab>
+    <summary>
+      <c earned="436" points="4515" total="1054" totalPoints="11635"/>
+      <category id="92" name="General">
+        <c earned="29" earnedPoints="320" total="54" totalPoints="570"/>
+      </category>
+      <category id="96" name="Quests">
+        <c earned="16" earnedPoints="160" total="49" totalPoints="530"/>
+      </category>
+      <category id="97" name="Exploration">
+        <c earned="54" earnedPoints="570" total="70" totalPoints="830"/>
+      </category>
+      <category id="95" name="Player vs. Player">
+        <c earned="45" earnedPoints="460" total="166" totalPoints="1930"/>
+      </category>
+      <category id="168" name="Dungeons &amp; Raids">
+        <c earned="144" earnedPoints="1480" total="454" totalPoints="4915"/>
+      </category>
+      <category id="169" name="Professions">
+        <c earned="55" earnedPoints="550" total="75" totalPoints="760"/>
+      </category>
+      <category id="201" name="Reputation">
+        <c earned="9" earnedPoints="105" total="45" totalPoints="560"/>
+      </category>
+      <category id="155" name="World Events">
+        <c earned="84" earnedPoints="870" total="141" totalPoints="1540"/>
+      </category>
+      <category id="81" name="Feats of Strength">
+        <c earned="3"/>
+      </category>
+    </summary>
+  </characterInfo>
+</page>

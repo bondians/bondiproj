@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/sheet.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-sheet.xml">
+  <tabInfo subTab="profile" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Rigellus&amp;gn=Alliance+Pwners+II"/>
+  <characterInfo>
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Rigellus" class="Paladin" classId="2" classUrl="c=Paladin" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 16, 2010" level="80" name="Rigellus" points="2425" prefix="" race="Blood Elf" raceId="10" realm="Coilfang" suffix="" titleId="0">
+      <modelBasePath value="http://us.media.battle.net.edgesuite.net/"/>
+    </character>
+    <characterTab>
+      <talentSpecs>
+        <talentSpec group="2" icon="spell_holy_devotionaura" prim="Protection" treeOne="6" treeThree="12" treeTwo="53"/>
+        <talentSpec active="1" group="1" icon="spell_holy_auraoflight" prim="Retribution" treeOne="5" treeThree="57" treeTwo="9"/>
+      </talentSpecs>
+      <buffs/>
+      <debuffs/>
+      <pvp>
+        <lifetimehonorablekills value="3223"/>
+        <arenacurrency value="0"/>
+      </pvp>
+      <professions>
+        <skill id="755" key="jewelcrafting" max="450" name="Jewelcrafting" value="450"/>
+        <skill id="186" key="mining" max="450" name="Mining" value="450"/>
+      </professions>
+      <characterBars>
+        <health effective="25484"/>
+        <secondBar casting="0" effective="5929" notCasting="22" type="m"/>
+      </characterBars>
+      <baseStats>
+        <strength attack="3694" base="170" block="92" effective="1857"/>
+        <agility armor="564" attack="-1" base="92" critHitPercent="8.68" effective="282"/>
+        <stamina base="203" effective="1873" health="18550" petBonus="-1"/>
+        <intellect base="101" critHitPercent="4.06" effective="121" mana="1535" petBonus="-1"/>
+        <spirit base="103" effective="123" healthRegen="22" manaRegen="22"/>
+        <armor base="15537" effective="15537" percent="50.49" petBonus="-1"/>
+      </baseStats>
+      <resistances>
+        <arcane petBonus="-1" value="0"/>
+        <fire petBonus="-1" value="0"/>
+        <frost petBonus="-1" value="0"/>
+        <holy petBonus="-1" value="0"/>
+        <nature petBonus="-1" value="0"/>
+        <shadow petBonus="-1" value="0"/>
+      </resistances>
+      <melee>
+        <mainHandDamage dps="697.5" max="2520" min="2097" percent="0" speed="3.31"/>
+        <offHandDamage dps="179.6" max="331" min="330" percent="0" speed="1.84"/>
+        <mainHandSpeed hastePercent="8.76" hasteRating="221" value="3.31"/>
+        <offHandSpeed hastePercent="8.76" hasteRating="221" value="1.84"/>
+        <power base="3934" effective="4482" increasedDps="320.0"/>
+        <hitRating increasedHitPercent="17.17" penetration="160" reducedArmorPercent="11.43" value="563"/>
+        <critChance percent="34.76" plusPercent="18.08" rating="830"/>
+        <expertise additional="8" percent="2.00" rating="72" value="8"/>
+      </melee>
+      <ranged>
+        <weaponSkill rating="0" value="0"/>
+        <damage dps="0.0" max="0" min="0" percent="0" speed="0.00"/>
+        <speed hastePercent="8.76" hasteRating="221" value="0.00"/>
+        <power base="272" effective="820" increasedDps="58.0" petAttack="-1.00" petSpell="-1.00"/>
+        <hitRating increasedHitPercent="17.17" penetration="160" reducedArmorPercent="11.43" value="563"/>
+        <critChance percent="20.68" plusPercent="18.08" rating="830"/>
+      </ranged>
+      <spell>
+        <bonusDamage>
+          <arcane value="1344"/>
+          <fire value="1344"/>
+          <frost value="1344"/>
+          <holy value="1344"/>
+          <nature value="1344"/>
+          <shadow value="1344"/>
+          <petBonus attack="-1" damage="-1" fromType=""/>
+        </bonusDamage>
+        <bonusHealing value="1344"/>
+        <hitRating increasedHitPercent="21.46" penetration="0" reducedResist="0" value="563"/>
+        <critChance rating="830">
+          <arcane percent="30.14"/>
+          <fire percent="30.14"/>
+          <frost percent="30.14"/>
+          <holy percent="30.14"/>
+          <nature percent="30.14"/>
+          <shadow percent="30.14"/>
+        </critChance>
+        <penetration value="0"/>
+        <manaRegen casting="0.00" notCasting="22.00"/>
+        <hasteRating hastePercent="8.76" hasteRating="221"/>
+      </spell>
+      <defenses>
+        <armor base="15537" effective="15537" percent="50.49" petBonus="-1"/>
+        <defense decreasePercent="0.32" increasePercent="0.32" plusDefense="8" rating="40" value="400.00"/>
+        <dodge increasePercent="0.88" percent="9.38" rating="40"/>
+        <parry increasePercent="0.00" percent="5.33" rating="0"/>
+        <block increasePercent="0.00" percent="5.32" rating="0"/>
+        <resilience damagePercent="3.43" hitPercent="1.56" value="147.00"/>
+      </defenses>
+      <items>
+        <item displayInfoId="62116" durability="100" gem0Id="41339" gem1Id="40142" gem2Id="0" gemIcon0="inv_jewelcrafting_icediamond_02" gemIcon1="inv_jewelcrafting_gem_39" icon="inv_helmet_98" id="48629" level="232" maxDurability="100" name="Liadrin's Helm of Conquest" permanentEnchantIcon="ability_warrior_shieldmastery" permanentEnchantItemId="44069" permanentenchant="3795" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="0"/>
+        <item displayInfoId="53560" durability="0" gem0Id="40143" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_39" icon="inv_jewelry_ring_78" id="50852" level="251" maxDurability="0" name="Precious's Putrid Collar" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="0" slot="1"/>
+        <item displayInfoId="62132" durability="100" gem0Id="40111" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_37" icon="inv_shoulder_62" id="48627" level="232" maxDurability="100" name="Liadrin's Shoulderplates of Conquest" permanentEnchantIcon="inv_axe_85" permanentEnchantItemId="44871" permanentenchant="3808" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="2"/>
+        <item displayInfoId="36789" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_chest_chain_13" id="24143" level="1" maxDurability="0" name="Initiate's Shirt" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="0" seed="0" slot="3"/>
+        <item displayInfoId="64569" durability="165" gem0Id="42142" gem1Id="40129" gem2Id="40142" gemIcon0="inv_jewelcrafting_dragonseye05" gemIcon1="inv_jewelcrafting_gem_40" gemIcon2="inv_jewelcrafting_gem_39" icon="inv_chest_plate_25" id="50965" level="264" maxDurability="165" name="Castle Breaker's Battleplate" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44465" permanentenchant="3832" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="4"/>
+        <item displayInfoId="64784" durability="55" gem0Id="40129" gem1Id="40111" gem2Id="49110" gemIcon0="inv_jewelcrafting_gem_40" gemIcon1="inv_jewelcrafting_gem_37" gemIcon2="inv_misc_gem_pearl_12" icon="inv_belt_62" id="50987" level="264" maxDurability="55" name="Malevolent Girdle" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="5"/>
+        <item displayInfoId="62124" durability="120" gem0Id="40142" gem1Id="42142" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_39" gemIcon1="inv_jewelcrafting_dragonseye05" icon="inv_pants_plate_30" id="48628" level="232" maxDurability="120" name="Liadrin's Legplates of Conquest" permanentEnchantIcon="inv_misc_armorkit_33" permanentEnchantItemId="38374" permanentenchant="3823" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="6"/>
+        <item displayInfoId="62208" durability="75" gem0Id="40111" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_37" icon="inv_boots_plate_08" id="40884" level="245" maxDurability="75" name="Relentless Gladiator's Greaves of Triumph" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44469" permanentenchant="1597" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="7"/>
+        <item displayInfoId="65245" durability="55" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_bracer_17" id="51364" level="264" maxDurability="55" name="Wrathful Gladiator's Bracers of Triumph" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44815" permanentenchant="3845" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="8"/>
+        <item displayInfoId="62111" durability="55" gem0Id="42156" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_dragonseye03" icon="inv_gauntlets_65" id="48630" level="232" maxDurability="55" name="Liadrin's Gauntlets of Conquest" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="38964" permanentenchant="3829" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="9"/>
+        <item displayInfoId="44841" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_71" id="47729" level="245" maxDurability="0" name="Bloodshed Band" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="0" slot="10"/>
+        <item displayInfoId="35313" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_50naxxramas" id="47731" level="245" maxDurability="0" name="Clutch of Fortification" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="0" slot="11"/>
+        <item displayInfoId="59322" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_gem_bloodstone_03" id="47734" level="245" maxDurability="0" name="Mark of Supremacy" permanentenchant="0" pickUp="PickUpWand" putDown="PutDownWand" randomPropertiesId="0" rarity="4" seed="0" slot="12"/>
+        <item displayInfoId="59320" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_spiritshard_01" id="48722" level="245" maxDurability="0" name="Shard of the Crystal Heart" permanentenchant="0" pickUp="PickUpWand" putDown="PutDownWand" randomPropertiesId="0" rarity="4" seed="0" slot="13"/>
+        <item displayInfoId="64326" durability="0" gem0Id="40129" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_40" icon="inv_misc_cape_14" id="50470" level="264" maxDurability="0" name="Recovered Scarlet Onslaught Cape" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="39003" permanentenchant="3831" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="14"/>
+        <item displayInfoId="64152" durability="120" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_sword_155" id="50048" level="251" maxDurability="120" name="Quel'Delar, Might of the Faithful" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44493" permanentenchant="3789" pickUp="PickUpMetalLArge" putDown="PutDownLArgeMEtal" randomPropertiesId="0" rarity="4" seed="564345088" slot="15"/>
+        <item displayInfoId="54524" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_scroll_15" id="50455" level="264" maxDurability="0" name="Libram of Three Truths" permanentenchant="0" pickUp="PickUpBook" putDown="PutDownBook" randomPropertiesId="0" rarity="4" seed="0" slot="17"/>
+        <item displayInfoId="54171" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shirt_guildtabard_01" id="43154" level="75" maxDurability="0" name="Tabard of the Argent Crusade" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="1" seed="0" slot="18"/>
+      </items>
+      <glyphs>
+        <glyph effect="Reduces the mana cost of Hammer of Wrath by 100%." icon="ui-glyph-rune-16" id="187" name="Glyph of Hammer of Wrath" type="major"/>
+        <glyph effect="Increases the duration of your Blessing of Might spell by 20 min when cast on yourself." icon="ui-glyph-rune-2" id="453" name="Glyph of Blessing of Might" type="minor"/>
+        <glyph effect="Reduces the mana cost of your Blessing of Kings and Greater Blessing of Kings spells by 50%." icon="ui-glyph-rune-4" id="452" name="Glyph of Blessing of Kings" type="minor"/>
+        <glyph effect="Your Judgements deal 10% more damage." icon="ui-glyph-rune-8" id="183" name="Glyph of Judgement" type="major"/>
+        <glyph effect="Reduces the cooldown of your Lay on Hands spell by 5 min." icon="ui-glyph-rune-11" id="455" name="Glyph of Lay on Hands" type="minor"/>
+        <glyph effect="Your Divine Storm now heals for an additional 15% of the damage it causes." icon="ui-glyph-rune-9" id="703" name="Glyph of Divine Storm" type="major"/>
+      </glyphs>
+    </characterTab>
+    <summary>
+      <c earned="237" points="2425" total="1054" totalPoints="11635"/>
+      <category id="92" name="General">
+        <c earned="24" earnedPoints="270" total="54" totalPoints="570"/>
+      </category>
+      <category id="96" name="Quests">
+        <c earned="12" earnedPoints="120" total="49" totalPoints="530"/>
+      </category>
+      <category id="97" name="Exploration">
+        <c earned="13" earnedPoints="130" total="70" totalPoints="830"/>
+      </category>
+      <category id="95" name="Player vs. Player">
+        <c earned="37" earnedPoints="370" total="166" totalPoints="1930"/>
+      </category>
+      <category id="168" name="Dungeons &amp; Raids">
+        <c earned="103" earnedPoints="1040" total="454" totalPoints="4915"/>
+      </category>
+      <category id="169" name="Professions">
+        <c earned="30" earnedPoints="300" total="75" totalPoints="760"/>
+      </category>
+      <category id="201" name="Reputation">
+        <c earned="6" earnedPoints="75" total="45" totalPoints="560"/>
+      </category>
+      <category id="155" name="World Events">
+        <c earned="12" earnedPoints="120" total="141" totalPoints="1540"/>
+      </category>
+      <category id="81" name="Feats of Strength">
+        <c earned="2"/>
+      </category>
+    </summary>
+  </characterInfo>
+</page>

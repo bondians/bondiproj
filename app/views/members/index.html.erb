@@ -1,0 +1,42 @@
+<h1>Listing members</h1>
+
+<table>
+  <tr>
+    <th width="25%"><%= default_sortable_header("name", 'desc') %></th>
+    <th width="5%" >Level</th>
+    <th width="5%"><%= sortable_header("racepic", 'asc') %></th>
+    <th width="5%"><%= sortable_header("classpic",  'asc') %></th>
+    <th width="20%"><%= sortable_header("guild",  'asc') %></th>
+    <th width="10%"><%= sortable_header("health",  'asc') %></th>
+    <th width="5%"><%= sortable_header("armor",  'asc') %></th>
+    <th width="5%"><%= sortable_header("strength",  'asc') %></th>
+    <th width="5%"><%= sortable_header("stamina",  'asc') %></th>
+    <th width="5%"><%= sortable_header("agility",  'asc') %></th>
+    <th width="5%"><%= sortable_header("spirit",  'asc') %></th>
+    <th width="5%"><%= sortable_header("intellect",  'asc') %></th>
+  </tr>
+
+<% @members.each do |member| %>
+  <tr>
+    <td><%=h member.name %></td>
+    <td><%=h member.level %></td>
+    <td><%=image_tag(member.racepic) %></td>
+    <td><%=image_tag(member.classpic) %></td>
+    <td><%=h member.guild %></td>
+    <td><%=h member.health %></td>
+    <td><%=h member.armor %></td>
+    <td><%=h member.strength %></td>
+    <td><%=h member.stamina %></td>
+    <td><%=h member.agility %></td>
+    <td><%=h member.spirit %></td>
+    <td><%=h member.intellect %></td>
+    <td><%= link_to 'Show', member %></td>
+    <td><%= link_to 'Edit', edit_member_path(member) %></td>
+    <td><%= link_to 'Destroy', member, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New member', new_member_path %>
