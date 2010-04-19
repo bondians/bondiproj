@@ -2,7 +2,7 @@
 
         require 'wowr'
         api = Wowr::API.new(:character_name => 'Cayuse',
-                            :guild_name => "Alliance Pwners",
+                            :guild_name => "Alliance Pwners II",
                             :realm => 'Coilfang',
                             :debug => true)
     
@@ -32,6 +32,14 @@ guild.members.keys.each do |dude|
         a.spirit = mem.spi.effective
         a.intellect = mem.int.effective
         a.save
+   end
+end
+
+guild.members.keys.each do |dude|
+    unless guild.members[dude].level < 80
+        mem = api.get_character(dude)
+        a = Member.find_by_name dude
+        puts a
    end
 end
 
