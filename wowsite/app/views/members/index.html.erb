@@ -18,7 +18,7 @@
 
 <% @members.each do |member| %>
   <tr>
-    <td><%=link_to member.name, Member::MEMBER_URL_PREFIX + member.url, :popup => true %></td>
+    <td><%=link_to member.name, Member::MEMBER_URL_PREFIX + member.url.to_s, :popup => true %></td>
     <td><%=h member.level %></td>
     <td><%=image_tag(member.racepic) %></td>
     <td><%=image_tag(member.classpic) %></td>
