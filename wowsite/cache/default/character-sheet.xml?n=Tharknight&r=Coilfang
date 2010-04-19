@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/sheet.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-sheet.xml">
+  <tabInfo subTab="profile" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Tharknight&amp;gn=Alliance+Pwners"/>
+  <characterInfo>
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Tharknight" class="Death Knight" classId="6" classUrl="c=Death+Knight" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners" lastModified="April 4, 2010" level="80" name="Tharknight" points="1240" prefix="" race="Blood Elf" raceId="10" realm="Coilfang" suffix=" Jenkins" titleId="110">
+      <arenaTeams>
+        <arenaTeam battleGroup="Retaliation" created="1266537600000" faction="Horde" factionId="1" gamesPlayed="0" gamesWon="0" lastSeasonRanking="0" name="TroopaPoopaDoupityDoo" ranking="0" rating="1139" realm="Coilfang" realmUrl="b=Retaliation&amp;r=Coilfang&amp;ts=2&amp;t=TroopaPoopaDoupityDoo&amp;ff=realm&amp;fv=Coilfang&amp;select=TroopaPoopaDoupityDoo" season="0" seasonGamesPlayed="84" seasonGamesWon="42" size="2" teamSize="2" teamUrl="r=Coilfang&amp;ts=2&amp;t=TroopaPoopaDoupityDoo&amp;select=TroopaPoopaDoupityDoo" url="r=Coilfang&amp;ts=2&amp;t=TroopaPoopaDoupityDoo&amp;select=TroopaPoopaDoupityDoo">
+          <emblem background="ff03032c" borderColor="ff1ccf22" borderStyle="5" iconColor="ff2ac717" iconStyle="8"/>
+          <members>
+            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Tharknight" class="Death Knight" classId="6" contribution="981" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners" guildId="3585075" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners" name="Tharknight" race="Blood Elf" raceId="10" seasonGamesPlayed="6" seasonGamesWon="0" teamRank="0"/>
+            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Fishmarven" class="Death Knight" classId="6" contribution="999" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners" guildId="3585075" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners" name="Fishmarven" race="Troll" raceId="8" seasonGamesPlayed="2" seasonGamesWon="0" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Maskedblack" class="Hunter" classId="3" contribution="987" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners" guildId="3585075" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners" name="Maskedblack" race="Tauren" raceId="6" seasonGamesPlayed="4" seasonGamesWon="0" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Dethnightt" class="Death Knight" classId="6" contribution="994" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="MANIFOLDS FIVE" guildId="21430" guildUrl="r=Coilfang&amp;gn=MANIFOLDS+FIVE" name="Dethnightt" race="Blood Elf" raceId="10" seasonGamesPlayed="2" seasonGamesWon="0" teamRank="1"/>
+          </members>
+        </arenaTeam>
+      </arenaTeams>
+      <modelBasePath value="http://us.media.battle.net.edgesuite.net/"/>
+    </character>
+    <characterTab>
+      <talentSpecs>
+        <talentSpec active="1" group="1" icon="spell_deathknight_bloodpresence" prim="Blood" treeOne="51" treeThree="20" treeTwo="0"/>
+      </talentSpecs>
+      <buffs/>
+      <debuffs/>
+      <pvp>
+        <lifetimehonorablekills value="1491"/>
+        <arenacurrency value="75"/>
+      </pvp>
+      <professions>
+        <skill id="333" key="enchanting" max="150" name="Enchanting" value="88"/>
+        <skill id="202" key="engineering" max="225" name="Engineering" value="170"/>
+      </professions>
+      <characterBars>
+        <health effective="21876"/>
+        <secondBar casting="-1" effective="100" notCasting="-1" perFive="-1" type="p"/>
+      </characterBars>
+      <baseStats>
+        <strength attack="2178" base="187" block="-1" effective="1099"/>
+        <agility armor="466" attack="-1" base="114" critHitPercent="6.92" effective="233"/>
+        <stamina base="164" effective="1392" health="13740" petBonus="-1"/>
+        <intellect base="38" critHitPercent="-1.00" effective="38" mana="-1" petBonus="-1"/>
+        <spirit base="57" effective="57" healthRegen="34" manaRegen="-1"/>
+        <armor base="13678" effective="13678" percent="47.31" petBonus="-1"/>
+      </baseStats>
+      <resistances>
+        <arcane petBonus="-1" value="1"/>
+        <fire petBonus="-1" value="1"/>
+        <frost petBonus="-1" value="1"/>
+        <holy petBonus="-1" value="0"/>
+        <nature petBonus="-1" value="1"/>
+        <shadow petBonus="-1" value="1"/>
+      </resistances>
+      <melee>
+        <mainHandDamage dps="587.9" max="2051" min="1709" percent="0" speed="3.20"/>
+        <offHandDamage dps="155.1" max="284" min="283" percent="0" speed="1.83"/>
+        <mainHandSpeed hastePercent="9.48" hasteRating="239" value="3.20"/>
+        <offHandSpeed hastePercent="9.48" hasteRating="239" value="1.83"/>
+        <power base="3077" effective="3601" increasedDps="257.0"/>
+        <hitRating increasedHitPercent="7.04" penetration="159" reducedArmorPercent="11.36" value="231"/>
+        <critChance percent="19.91" plusPercent="7.99" rating="367"/>
+        <expertise additional="5" percent="2.75" rating="46" value="11"/>
+      </melee>
+      <ranged>
+        <weaponSkill rating="0" value="0"/>
+        <damage dps="0.0" max="0" min="0" percent="0" speed="0.00"/>
+        <speed hastePercent="9.48" hasteRating="239" value="0.00"/>
+        <power base="245" effective="769" increasedDps="54.0" petAttack="-1.00" petSpell="-1.00"/>
+        <hitRating increasedHitPercent="7.04" penetration="159" reducedArmorPercent="11.36" value="231"/>
+        <critChance percent="10.75" plusPercent="7.99" rating="367"/>
+      </ranged>
+      <spell>
+        <bonusDamage>
+          <arcane value="0"/>
+          <fire value="0"/>
+          <frost value="0"/>
+          <holy value="0"/>
+          <nature value="0"/>
+          <shadow value="0"/>
+          <petBonus attack="-1" damage="-1" fromType=""/>
+        </bonusDamage>
+        <bonusHealing value="0"/>
+        <hitRating increasedHitPercent="8.81" penetration="0" reducedResist="0" value="231"/>
+        <critChance rating="367">
+          <arcane percent="12.99"/>
+          <fire percent="12.99"/>
+          <frost percent="12.99"/>
+          <holy percent="12.99"/>
+          <nature percent="12.99"/>
+          <shadow percent="12.99"/>
+        </critChance>
+        <penetration value="0"/>
+        <manaRegen casting="0.00" notCasting="0.00"/>
+        <hasteRating hastePercent="9.48" hasteRating="239"/>
+      </spell>
+      <defenses>
+        <armor base="13678" effective="13678" percent="47.31" petBonus="-1"/>
+        <defense decreasePercent="0.00" increasePercent="0.00" plusDefense="0" rating="0" value="399.00"/>
+        <dodge increasePercent="1.64" percent="8.04" rating="74"/>
+        <parry increasePercent="7.51" percent="11.69" rating="340"/>
+        <block increasePercent="0.00" percent="0.00" rating="0"/>
+        <resilience damagePercent="2.82" hitPercent="1.28" value="121.00"/>
+      </defenses>
+      <items>
+        <item displayInfoId="53653" durability="77" gem0Id="41381" gem1Id="40029" gem2Id="0" gemIcon0="inv_jewelcrafting_shadowspirit_02" gemIcon1="inv_jewelcrafting_gem_29" icon="inv_helmet_110" id="39403" level="200" maxDurability="100" name="Helm of the Unsubmissive" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="0"/>
+        <item displayInfoId="39162" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_necklace_36" id="47494" level="219" maxDurability="0" name="Ancient Pendant of Arathor" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="676826624" slot="1"/>
+        <item displayInfoId="51927" durability="52" gem0Id="39906" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_22" icon="inv_shoulder_92" id="43387" level="175" maxDurability="80" name="Shoulderplates of the Beholder" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="3" seed="556033824" slot="2"/>
+        <item displayInfoId="10834" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shirt_white_01" id="16060" level="20" maxDurability="0" name="Common White Shirt" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="1" seed="0" slot="3"/>
+        <item displayInfoId="64854" durability="127" gem0Id="40029" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_29" icon="inv_chest_plate23" id="49816" level="219" maxDurability="165" name="Scourgelord's Frigid Chestplate" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="38773" permanentenchant="242" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="912645184" slot="4"/>
+        <item displayInfoId="64847" durability="42" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_belt_70" id="49808" level="219" maxDurability="55" name="Bent Gold Belt" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="1363193856" slot="5"/>
+        <item displayInfoId="64844" durability="92" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_pants_plate_34" id="49784" level="219" maxDurability="120" name="Minister's Number One Legplates" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="6"/>
+        <item displayInfoId="62208" durability="57" gem0Id="40014" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_26" icon="inv_boots_plate_08" id="40884" level="245" maxDurability="75" name="Relentless Gladiator's Greaves of Triumph" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44469" permanentenchant="1597" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="7"/>
+        <item displayInfoId="61477" durability="40" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_bracer_17" id="40890" level="245" maxDurability="55" name="Relentless Gladiator's Bracers of Triumph" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="38777" permanentenchant="247" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="8"/>
+        <item displayInfoId="52406" durability="35" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_gauntlets_28" id="44399" level="187" maxDurability="45" name="Gauntlets of The Culling" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="3" seed="1451675392" slot="9"/>
+        <item displayInfoId="51279" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_28" id="38749" level="154" maxDurability="0" name="Thane-Reaper's Signet" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="2" seed="1900529792" slot="10"/>
+        <item displayInfoId="33808" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_ahnqiraj_01" id="47730" level="245" maxDurability="0" name="Dexterous Brightstone Ring" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="0" slot="11"/>
+        <item displayInfoId="6337" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_talisman_01" id="43829" level="174" maxDurability="0" name="Crusader's Locket" permanentenchant="0" pickUp="PickUpGems" putDown="PutDownGems" randomPropertiesId="0" rarity="2" seed="440002464" slot="12"/>
+        <item displayInfoId="56514" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_ahnqirajtrinket_03" id="44014" level="174" maxDurability="0" name="Fezzik's Pocketwatch" permanentenchant="0" pickUp="PickUpGems" putDown="PutDownGems" randomPropertiesId="0" rarity="3" seed="1336396544" slot="13"/>
+        <item displayInfoId="23018" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_cape_18" id="37647" level="200" maxDurability="0" name="Cloak of Bloodied Waters" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="38770" permanentenchant="65" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="3" seed="0" slot="14"/>
+        <item displayInfoId="60562" durability="94" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_axe_76" id="47493" level="219" maxDurability="120" name="Edge of Ruin" permanentenchant="0" pickUp="PickUpMetalLArge" putDown="PutDownLArgeMEtal" randomPropertiesId="0" rarity="4" seed="622033216" slot="15"/>
+        <item displayInfoId="51913" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shield_56" id="47673" level="245" maxDurability="0" name="Sigil of Virulence" permanentenchant="0" pickUp="PickUpWoodSmall" putDown="PutDownWoodSmall" randomPropertiesId="0" rarity="4" seed="0" slot="17"/>
+        <item displayInfoId="20621" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shirt_guildtabard_01" id="5976" level="1" maxDurability="0" name="Guild Tabard" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="1" seed="0" slot="18"/>
+      </items>
+      <glyphs>
+        <glyph effect="Increases your Death Strike's damage by 1% for every 1 runic power you currently have (up to a maximum of 25%).  The runic power is not consumed by this effect." icon="ui-glyph-rune-8" id="558" name="Glyph of Death Strike" type="major"/>
+        <glyph effect="Your Raise Dead spell no longer requires a reagent." icon="ui-glyph-rune-7" id="555" name="Glyph of Raise Dead" type="minor"/>
+        <glyph effect="Increases the radius of your Pestilence effect by 5 yards." icon="ui-glyph-rune-12" id="553" name="Glyph of Pestilence" type="minor"/>
+        <glyph effect="Increases the duration of Dancing Rune Weapon by 5 sec." icon="ui-glyph-rune-5" id="768" name="Glyph of Dancing Rune Weapon" type="major"/>
+        <glyph effect="Increases the duration of your Horn of Winter ability by 1 min." icon="ui-glyph-rune-15" id="522" name="Glyph of Horn of Winter" type="minor"/>
+        <glyph effect="Your Pestilence ability now refreshes disease durations and secondary effects of diseases on your primary target back to their maximum duration." icon="ui-glyph-rune-9" id="772" name="Glyph of Disease" type="major"/>
+      </glyphs>
+    </characterTab>
+    <summary>
+      <c earned="121" points="1240" total="1054" totalPoints="11635"/>
+      <category id="92" name="General">
+        <c earned="15" earnedPoints="150" total="54" totalPoints="570"/>
+      </category>
+      <category id="96" name="Quests">
+        <c earned="6" earnedPoints="60" total="49" totalPoints="530"/>
+      </category>
+      <category id="97" name="Exploration">
+        <c earned="4" earnedPoints="40" total="70" totalPoints="830"/>
+      </category>
+      <category id="95" name="Player vs. Player">
+        <c earned="35" earnedPoints="370" total="166" totalPoints="1930"/>
+      </category>
+      <category id="168" name="Dungeons &amp; Raids">
+        <c earned="37" earnedPoints="370" total="454" totalPoints="4915"/>
+      </category>
+      <category id="169" name="Professions">
+        <c earned="14" earnedPoints="140" total="75" totalPoints="760"/>
+      </category>
+      <category id="201" name="Reputation">
+        <c earned="2" earnedPoints="30" total="45" totalPoints="560"/>
+      </category>
+      <category id="155" name="World Events">
+        <c earned="8" earnedPoints="80" total="141" totalPoints="1540"/>
+      </category>
+      <category id="81" name="Feats of Strength">
+        <c earned="3"/>
+      </category>
+    </summary>
+  </characterInfo>
+</page>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/sheet.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-sheet.xml">
+  <tabInfo subTab="profile" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Fishmarven&amp;gn=Alliance+Pwners"/>
+  <characterInfo>
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Fishmarven" class="Death Knight" classId="6" classUrl="c=Death+Knight" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners" lastModified="April 10, 2010" level="80" name="Fishmarven" points="860" prefix="" race="Troll" raceId="8" realm="Coilfang" suffix="" titleId="0">
+      <arenaTeams>
+        <arenaTeam battleGroup="Retaliation" created="1266537600000" faction="Horde" factionId="1" gamesPlayed="0" gamesWon="0" lastSeasonRanking="0" name="TroopaPoopaDoupityDoo" ranking="0" rating="1139" realm="Coilfang" realmUrl="b=Retaliation&amp;r=Coilfang&amp;ts=2&amp;t=TroopaPoopaDoupityDoo&amp;ff=realm&amp;fv=Coilfang&amp;select=TroopaPoopaDoupityDoo" season="0" seasonGamesPlayed="84" seasonGamesWon="42" size="2" teamSize="2" teamUrl="r=Coilfang&amp;ts=2&amp;t=TroopaPoopaDoupityDoo&amp;select=TroopaPoopaDoupityDoo" url="r=Coilfang&amp;ts=2&amp;t=TroopaPoopaDoupityDoo&amp;select=TroopaPoopaDoupityDoo">
+          <emblem background="ff03032c" borderColor="ff1ccf22" borderStyle="5" iconColor="ff2ac717" iconStyle="8"/>
+          <members>
+            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Tharknight" class="Death Knight" classId="6" contribution="981" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners" guildId="3585075" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners" name="Tharknight" race="Blood Elf" raceId="10" seasonGamesPlayed="6" seasonGamesWon="0" teamRank="0"/>
+            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Fishmarven" class="Death Knight" classId="6" contribution="999" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners" guildId="3585075" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners" name="Fishmarven" race="Troll" raceId="8" seasonGamesPlayed="2" seasonGamesWon="0" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Maskedblack" class="Hunter" classId="3" contribution="987" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners" guildId="3585075" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners" name="Maskedblack" race="Tauren" raceId="6" seasonGamesPlayed="4" seasonGamesWon="0" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Dethnightt" class="Death Knight" classId="6" contribution="994" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="MANIFOLDS FIVE" guildId="21430" guildUrl="r=Coilfang&amp;gn=MANIFOLDS+FIVE" name="Dethnightt" race="Blood Elf" raceId="10" seasonGamesPlayed="2" seasonGamesWon="0" teamRank="1"/>
+          </members>
+        </arenaTeam>
+      </arenaTeams>
+      <modelBasePath value="http://us.media.battle.net.edgesuite.net/"/>
+    </character>
+    <characterTab>
+      <talentSpecs>
+        <talentSpec active="1" group="1" icon="spell_deathknight_unholypresence" prim="Unholy" treeOne="20" treeThree="51" treeTwo="0"/>
+      </talentSpecs>
+      <buffs/>
+      <debuffs/>
+      <pvp>
+        <lifetimehonorablekills value="558"/>
+        <arenacurrency value="25"/>
+      </pvp>
+      <professions/>
+      <characterBars>
+        <health effective="17851"/>
+        <secondBar casting="-1" effective="100" notCasting="-1" perFive="-1" type="p"/>
+      </characterBars>
+      <baseStats>
+        <strength attack="1182" base="181" block="-1" effective="601"/>
+        <agility armor="322" attack="-1" base="114" critHitPercent="5.77" effective="161"/>
+        <stamina base="160" effective="991" health="9730" petBonus="-1"/>
+        <intellect base="31" critHitPercent="-1.00" effective="31" mana="-1" petBonus="-1"/>
+        <spirit base="60" effective="60" healthRegen="36" manaRegen="-1"/>
+        <armor base="12478" effective="12478" percent="45.03" petBonus="-1"/>
+      </baseStats>
+      <resistances>
+        <arcane petBonus="-1" value="0"/>
+        <fire petBonus="-1" value="0"/>
+        <frost petBonus="-1" value="0"/>
+        <holy petBonus="-1" value="0"/>
+        <nature petBonus="-1" value="0"/>
+        <shadow petBonus="-1" value="0"/>
+      </resistances>
+      <melee>
+        <mainHandDamage dps="300.4" max="1156" min="957" percent="0" speed="3.52"/>
+        <offHandDamage dps="76.7" max="150" min="149" percent="0" speed="1.95"/>
+        <mainHandSpeed hastePercent="2.38" hasteRating="60" value="3.52"/>
+        <offHandSpeed hastePercent="2.38" hasteRating="60" value="1.95"/>
+        <power base="1629" effective="2093" increasedDps="149.0"/>
+        <hitRating increasedHitPercent="5.46" penetration="61" reducedArmorPercent="4.36" value="179"/>
+        <critChance percent="19.01" plusPercent="5.25" rating="241"/>
+        <expertise additional="0" percent="1.25" rating="0" value="5"/>
+      </melee>
+      <ranged>
+        <weaponSkill rating="0" value="0"/>
+        <damage dps="0.0" max="0" min="0" percent="0" speed="0.00"/>
+        <speed hastePercent="2.38" hasteRating="60" value="0.00"/>
+        <power base="151" effective="615" increasedDps="43.0" petAttack="-1.00" petSpell="-1.00"/>
+        <hitRating increasedHitPercent="5.46" penetration="61" reducedArmorPercent="4.36" value="179"/>
+        <critChance percent="10.69" plusPercent="5.25" rating="241"/>
+      </ranged>
+      <spell>
+        <bonusDamage>
+          <arcane value="0"/>
+          <fire value="0"/>
+          <frost value="0"/>
+          <holy value="0"/>
+          <nature value="0"/>
+          <shadow value="0"/>
+          <petBonus attack="-1" damage="-1" fromType=""/>
+        </bonusDamage>
+        <bonusHealing value="0"/>
+        <hitRating increasedHitPercent="6.82" penetration="0" reducedResist="0" value="179"/>
+        <critChance rating="241">
+          <arcane percent="13.25"/>
+          <fire percent="13.25"/>
+          <frost percent="13.25"/>
+          <holy percent="13.25"/>
+          <nature percent="13.25"/>
+          <shadow percent="13.25"/>
+        </critChance>
+        <penetration value="0"/>
+        <manaRegen casting="0.00" notCasting="0.00"/>
+        <hasteRating hastePercent="2.38" hasteRating="60"/>
+      </spell>
+      <defenses>
+        <armor base="12478" effective="12478" percent="45.03" petBonus="-1"/>
+        <defense decreasePercent="1.20" increasePercent="1.20" plusDefense="31" rating="155" value="399.00"/>
+        <dodge increasePercent="0.00" percent="6.81" rating="0"/>
+        <parry increasePercent="3.31" percent="9.29" rating="150"/>
+        <block increasePercent="0.00" percent="0.00" rating="0"/>
+        <resilience damagePercent="0.00" hitPercent="0.00" value="0.00"/>
+      </defenses>
+      <items>
+        <item displayInfoId="52302" durability="70" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_helmet_130" id="44412" level="187" maxDurability="80" name="Faceguard of Punishment" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="3" seed="834209216" slot="0"/>
+        <item displayInfoId="34318" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_necklace_20" id="39484" level="162" maxDurability="0" name="Spiked Collar of Servitude" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="3" seed="976382848" slot="1"/>
+        <item displayInfoId="51927" durability="76" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shoulder_92" id="44352" level="163" maxDurability="80" name="Shoulderplates of the Abolished" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="3" seed="397632064" slot="2"/>
+        <item displayInfoId="30605" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shirt_12" id="18231" level="1" maxDurability="0" name="Sleeveless T-Shirt" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="1" seed="0" slot="3"/>
+        <item displayInfoId="56789" durability="123" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_chest_plate05" id="44407" level="187" maxDurability="135" name="Silver-Plated Battlechest" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="3" seed="686752384" slot="4"/>
+        <item displayInfoId="56018" durability="34" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_belt_35" id="42826" level="174" maxDurability="40" name="Goblin Damage Absorber" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="2" seed="943948352" slot="5"/>
+        <item displayInfoId="53286" durability="113" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_pants_plate_21" id="43500" level="200" maxDurability="120" name="Bolstered Legplates" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="1279457376" slot="6"/>
+        <item displayInfoId="56542" durability="59" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_boots_plate_08" id="44031" level="174" maxDurability="65" name="The Darkspeaker's Iron Walkers" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="3" seed="784829248" slot="7"/>
+        <item displayInfoId="50994" durability="41" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_bracer_09" id="39680" level="155" maxDurability="45" name="Vambraces of the Vengeance Bringer" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="38771" permanentenchant="66" pickUp="PickUpMetalSmall" putDown="PutDownSmallMEtal" randomPropertiesId="0" rarity="3" seed="773945152" slot="8"/>
+        <item displayInfoId="51932" durability="43" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_gauntlets_26" id="36995" level="187" maxDurability="45" name="Fists of Loken" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="3" seed="0" slot="9"/>
+        <item displayInfoId="56874" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_ahnqiraj_01" id="43178" level="175" maxDurability="0" name="Ring of Foul Mojo" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="3" seed="1606370944" slot="10"/>
+        <item displayInfoId="44841" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_71" id="43277" level="167" maxDurability="0" name="Jedoga's Greatring" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="3" seed="663130592" slot="11"/>
+        <item displayInfoId="56514" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_ahnqirajtrinket_03" id="44014" level="174" maxDurability="0" name="Fezzik's Pocketwatch" permanentenchant="0" pickUp="PickUpGems" putDown="PutDownGems" randomPropertiesId="0" rarity="3" seed="1972174464" slot="12"/>
+        <item displayInfoId="6337" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_talisman_01" id="43829" level="174" maxDurability="0" name="Crusader's Locket" permanentenchant="0" pickUp="PickUpGems" putDown="PutDownGems" randomPropertiesId="0" rarity="2" seed="217465584" slot="13"/>
+        <item displayInfoId="51531" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_cape_13" id="38614" level="183" maxDurability="0" name="Embrace of Sorrow" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="3" seed="1657645952" slot="14"/>
+        <item displayInfoId="50326" durability="84" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_sword_113" id="43832" level="174" maxDurability="85" name="The Argent Resolve" permanentEnchantIcon="spell_holy_retributionaura" permanentEnchantSpellDesc="Affixes your rune weapon with a rune that has a chance to heal you for 3% and increase total Strength by 15% for 15 sec.  Modifying your rune weapon requires a Rune Forge in Ebon Hold." permanentEnchantSpellName="Rune of the Fallen Crusader" permanentenchant="3368" pickUp="PickUpMetalLArge" putDown="PutDownLArgeMEtal" randomPropertiesId="0" rarity="2" seed="153733024" slot="15"/>
+        <item displayInfoId="51913" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shield_56" id="45254" level="226" maxDurability="0" name="Sigil of the Vengeful Heart" permanentenchant="0" pickUp="PickUpWoodSmall" putDown="PutDownWoodSmall" randomPropertiesId="0" rarity="4" seed="0" slot="17"/>
+      </items>
+      <glyphs/>
+    </characterTab>
+    <summary>
+      <c earned="85" points="860" total="1054" totalPoints="11635"/>
+      <category id="92" name="General">
+        <c earned="17" earnedPoints="170" total="54" totalPoints="570"/>
+      </category>
+      <category id="96" name="Quests">
+        <c earned="6" earnedPoints="60" total="49" totalPoints="530"/>
+      </category>
+      <category id="97" name="Exploration">
+        <c earned="2" earnedPoints="20" total="70" totalPoints="830"/>
+      </category>
+      <category id="95" name="Player vs. Player">
+        <c earned="24" earnedPoints="250" total="166" totalPoints="1930"/>
+      </category>
+      <category id="168" name="Dungeons &amp; Raids">
+        <c earned="24" earnedPoints="240" total="454" totalPoints="4915"/>
+      </category>
+      <category id="169" name="Professions">
+        <c earned="5" earnedPoints="50" total="75" totalPoints="760"/>
+      </category>
+      <category id="201" name="Reputation">
+        <c earned="0" earnedPoints="0" total="45" totalPoints="560"/>
+      </category>
+      <category id="155" name="World Events">
+        <c earned="7" earnedPoints="70" total="141" totalPoints="1540"/>
+      </category>
+      <category id="81" name="Feats of Strength">
+        <c earned="2"/>
+      </category>
+    </summary>
+  </characterInfo>
+</page>

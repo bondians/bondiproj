@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/reputation.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-reputation.xml">
+  <tabInfo subTab="reputation" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Fishmarven&amp;gn=Alliance+Pwners"/>
+  <characterInfo>
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Fishmarven" class="Death Knight" classId="6" classUrl="c=Death+Knight" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners" lastModified="April 10, 2010" level="80" name="Fishmarven" points="860" prefix="" race="Troll" raceId="8" realm="Coilfang" suffix="" titleId="0">
+      <arenaTeams>
+        <arenaTeam battleGroup="Retaliation" created="1266537600000" faction="Horde" factionId="1" gamesPlayed="0" gamesWon="0" lastSeasonRanking="0" name="TroopaPoopaDoupityDoo" ranking="0" rating="1139" realm="Coilfang" realmUrl="b=Retaliation&amp;r=Coilfang&amp;ts=2&amp;t=TroopaPoopaDoupityDoo&amp;ff=realm&amp;fv=Coilfang&amp;select=TroopaPoopaDoupityDoo" season="0" seasonGamesPlayed="84" seasonGamesWon="42" size="2" teamSize="2" teamUrl="r=Coilfang&amp;ts=2&amp;t=TroopaPoopaDoupityDoo&amp;select=TroopaPoopaDoupityDoo" url="r=Coilfang&amp;ts=2&amp;t=TroopaPoopaDoupityDoo&amp;select=TroopaPoopaDoupityDoo">
+          <emblem background="ff03032c" borderColor="ff1ccf22" borderStyle="5" iconColor="ff2ac717" iconStyle="8"/>
+          <members>
+            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Tharknight" class="Death Knight" classId="6" contribution="981" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners" guildId="3585075" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners" name="Tharknight" race="Blood Elf" raceId="10" seasonGamesPlayed="6" seasonGamesWon="0" teamRank="0"/>
+            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Fishmarven" class="Death Knight" classId="6" contribution="999" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners" guildId="3585075" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners" name="Fishmarven" race="Troll" raceId="8" seasonGamesPlayed="2" seasonGamesWon="0" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Maskedblack" class="Hunter" classId="3" contribution="987" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners" guildId="3585075" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners" name="Maskedblack" race="Tauren" raceId="6" seasonGamesPlayed="4" seasonGamesWon="0" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Dethnightt" class="Death Knight" classId="6" contribution="994" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="MANIFOLDS FIVE" guildId="21430" guildUrl="r=Coilfang&amp;gn=MANIFOLDS+FIVE" name="Dethnightt" race="Blood Elf" raceId="10" seasonGamesPlayed="2" seasonGamesWon="0" teamRank="1"/>
+          </members>
+        </arenaTeam>
+      </arenaTeams>
+      <modelBasePath value="http://us.media.battle.net.edgesuite.net/"/>
+    </character>
+    <reputationTab>
+      <faction header="1" iconKey="theburningcrusade" id="980" key="theburningcrusade" name="The Burning Crusade">
+        <faction id="933" key="theconsortium" name="The Consortium" reputation="3092"/>
+        <faction id="947" key="thrallmar" name="Thrallmar" reputation="9727"/>
+        <faction id="941" key="themag'har" name="The Mag'har" reputation="11070"/>
+        <faction id="970" key="sporeggar" name="Sporeggar" reputation="-130"/>
+        <faction header="1" iconKey="theburningcrusade" id="936" key="shattrathcity" name="Shattrath City">
+          <faction id="934" key="thescryers" name="The Scryers" reputation="0"/>
+          <faction id="935" key="thesha'tar" name="The Sha'tar" reputation="2524"/>
+          <faction id="1011" key="lowercity" name="Lower City" reputation="4577"/>
+          <faction id="1077" key="shatteredsunoffensive" name="Shattered Sun Offensive" reputation="1499"/>
+        </faction>
+        <faction id="942" key="cenarionexpedition" name="Cenarion Expedition" reputation="11969"/>
+      </faction>
+      <faction header="1" iconKey="wrathofthelichking" id="1097" key="wrathofthelichking" name="Wrath of the Lich King">
+        <faction id="1098" key="knightsoftheebonblade" name="Knights of the Ebon Blade" reputation="8575"/>
+        <faction header="1" iconKey="wrathofthelichking" id="1052" key="hordeexpedition" name="Horde Expedition" reputation="20471">
+          <faction id="1124" key="thesunreavers" name="The Sunreavers" reputation="9940"/>
+          <faction id="1085" key="warsongoffensive" name="Warsong Offensive" reputation="17072"/>
+          <faction id="1067" key="thehandofvengeance" name="The Hand of Vengeance" reputation="12051"/>
+          <faction id="1064" key="thetaunka" name="The Taunka" reputation="10112"/>
+        </faction>
+        <faction id="1073" key="thekalu'ak" name="The Kalu'ak" reputation="14040"/>
+        <faction header="1" iconKey="wrathofthelichking" id="1117" key="sholazarbasin" name="Sholazar Basin">
+          <faction id="1104" key="frenzyhearttribe" name="Frenzyheart Tribe" reputation="10200"/>
+          <faction id="1105" key="theoracles" name="The Oracles" reputation="-15706"/>
+        </faction>
+        <faction id="1119" key="thesonsofhodir" name="The Sons of Hodir" reputation="-13400"/>
+        <faction id="1090" key="kirintor" name="Kirin Tor" reputation="351"/>
+        <faction id="1091" key="thewyrmrestaccord" name="The Wyrmrest Accord" reputation="0"/>
+        <faction id="1106" key="argentcrusade" name="Argent Crusade" reputation="15148"/>
+      </faction>
+      <faction header="1" iconKey="classic" id="1118" key="classic" name="Classic">
+        <faction header="1" iconKey="classic" id="892" key="hordeforces" name="Horde Forces">
+          <faction id="729" key="frostwolfclan" name="Frostwolf Clan" reputation="6016"/>
+          <faction id="510" key="thedefilers" name="The Defilers" reputation="70"/>
+          <faction id="889" key="warsongoutriders" name="Warsong Outriders" reputation="210"/>
+        </faction>
+        <faction id="609" key="cenarioncircle" name="Cenarion Circle" reputation="360"/>
+        <faction id="270" key="zandalartribe" name="Zandalar Tribe" reputation="0"/>
+        <faction header="1" iconKey="classic" id="67" key="horde" name="Horde" reputation="6710">
+          <faction id="911" key="silvermooncity" name="Silvermoon City" reputation="3797"/>
+          <faction id="68" key="undercity" name="Undercity" reputation="3710"/>
+          <faction id="81" key="thunderbluff" name="Thunder Bluff" reputation="6310"/>
+          <faction id="76" key="orgrimmar" name="Orgrimmar" reputation="11170"/>
+          <faction id="530" key="darkspeartrolls" name="Darkspear Trolls" reputation="11342"/>
+        </faction>
+        <faction id="529" key="argentdawn" name="Argent Dawn" reputation="360"/>
+        <faction header="1" iconKey="classic" id="169" key="steamwheedlecartel" name="Steamwheedle Cartel">
+          <faction id="369" key="gadgetzan" name="Gadgetzan" reputation="575"/>
+          <faction id="21" key="bootybay" name="Booty Bay" reputation="650"/>
+          <faction id="577" key="everlook" name="Everlook" reputation="575"/>
+          <faction id="470" key="ratchet" name="Ratchet" reputation="550"/>
+        </faction>
+        <faction id="910" key="broodofnozdormu" name="Brood of Nozdormu" reputation="-36300"/>
+      </faction>
+    </reputationTab>
+  </characterInfo>
+</page>

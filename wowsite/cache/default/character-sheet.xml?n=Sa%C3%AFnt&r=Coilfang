@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/sheet.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-sheet.xml">
+  <tabInfo subTab="profile" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Sa%C3%AFnt&amp;gn=Alliance+Pwners"/>
+  <characterInfo>
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Sa%C3%AFnt" class="Paladin" classId="2" classUrl="c=Paladin" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners" lastModified="March 14, 2010" level="80" name="Saïnt" points="2860" prefix="Flame Keeper " race="Blood Elf" raceId="10" realm="Coilfang" suffix="" titleId="45">
+      <modelBasePath value="http://us.media.battle.net.edgesuite.net/"/>
+    </character>
+    <characterTab>
+      <talentSpecs>
+        <talentSpec active="1" group="2" icon="spell_holy_auraoflight" prim="Retribution" treeOne="11" treeThree="52" treeTwo="8"/>
+        <talentSpec group="1" icon="spell_holy_devotionaura" prim="Protection" treeOne="0" treeThree="18" treeTwo="53"/>
+      </talentSpecs>
+      <buffs/>
+      <debuffs/>
+      <pvp>
+        <lifetimehonorablekills value="10130"/>
+        <arenacurrency value="0"/>
+      </pvp>
+      <professions>
+        <skill id="755" key="jewelcrafting" max="150" name="Jewelcrafting" value="81"/>
+        <skill id="186" key="mining" max="300" name="Mining" value="267"/>
+      </professions>
+      <characterBars>
+        <health effective="25774"/>
+        <secondBar casting="0" effective="5929" notCasting="22" type="m"/>
+      </characterBars>
+      <baseStats>
+        <strength attack="2960" base="170" block="74" effective="1490"/>
+        <agility armor="224" attack="-1" base="92" critHitPercent="5.42" effective="112"/>
+        <stamina base="150" effective="1902" health="18840" petBonus="-1"/>
+        <intellect base="101" critHitPercent="4.06" effective="121" mana="1535" petBonus="-1"/>
+        <spirit base="103" effective="123" healthRegen="22" manaRegen="22"/>
+        <armor base="14084" effective="14084" percent="48.04" petBonus="-1"/>
+      </baseStats>
+      <resistances>
+        <arcane petBonus="-1" value="0"/>
+        <fire petBonus="-1" value="0"/>
+        <frost petBonus="-1" value="0"/>
+        <holy petBonus="-1" value="0"/>
+        <nature petBonus="-1" value="0"/>
+        <shadow petBonus="-1" value="0"/>
+      </resistances>
+      <melee>
+        <mainHandDamage dps="646.3" max="2457" min="2035" percent="0" speed="3.47"/>
+        <offHandDamage dps="162.6" max="314" min="313" percent="0" speed="1.93"/>
+        <mainHandSpeed hastePercent="3.61" hasteRating="91" value="3.47"/>
+        <offHandSpeed hastePercent="3.61" hasteRating="91" value="1.93"/>
+        <power base="3200" effective="4259" increasedDps="304.0"/>
+        <hitRating increasedHitPercent="6.10" penetration="0" reducedArmorPercent="0.00" value="200"/>
+        <critChance percent="26.84" plusPercent="13.42" rating="616"/>
+        <expertise additional="0" percent="0.00" rating="0" value="0"/>
+      </melee>
+      <ranged>
+        <weaponSkill rating="0" value="0"/>
+        <damage dps="0.0" max="0" min="0" percent="0" speed="0.00"/>
+        <speed hastePercent="3.61" hasteRating="91" value="0.00"/>
+        <power base="102" effective="1161" increasedDps="82.0" petAttack="-1.00" petSpell="-1.00"/>
+        <hitRating increasedHitPercent="6.10" penetration="0" reducedArmorPercent="0.00" value="200"/>
+        <critChance percent="24.72" plusPercent="13.42" rating="616"/>
+      </ranged>
+      <spell>
+        <bonusDamage>
+          <arcane value="1277"/>
+          <fire value="1277"/>
+          <frost value="1277"/>
+          <holy value="1277"/>
+          <nature value="1277"/>
+          <shadow value="1277"/>
+          <petBonus attack="-1" damage="-1" fromType=""/>
+        </bonusDamage>
+        <bonusHealing value="1277"/>
+        <hitRating increasedHitPercent="7.62" penetration="35" reducedResist="35" value="200"/>
+        <critChance rating="616">
+          <arcane percent="25.48"/>
+          <fire percent="25.48"/>
+          <frost percent="25.48"/>
+          <holy percent="25.48"/>
+          <nature percent="25.48"/>
+          <shadow percent="25.48"/>
+        </critChance>
+        <penetration value="35"/>
+        <manaRegen casting="0.00" notCasting="22.00"/>
+        <hasteRating hastePercent="3.61" hasteRating="91"/>
+      </spell>
+      <defenses>
+        <armor base="14084" effective="14084" percent="48.04" petBonus="-1"/>
+        <defense decreasePercent="0.00" increasePercent="0.00" plusDefense="0" rating="0" value="400.00"/>
+        <dodge increasePercent="0.00" percent="5.38" rating="0"/>
+        <parry increasePercent="0.00" percent="5.00" rating="0"/>
+        <block increasePercent="0.00" percent="5.00" rating="0"/>
+        <resilience damagePercent="19.88" hitPercent="9.04" value="852.00"/>
+      </defenses>
+      <items>
+        <item displayInfoId="59568" durability="98" gem0Id="41285" gem1Id="40111" gem2Id="0" gemIcon0="inv_jewelcrafting_icediamond_02" gemIcon1="inv_jewelcrafting_gem_37" icon="inv_helmet_133" id="40828" level="232" maxDurability="100" name="Furious Gladiator's Scaled Helm" permanentEnchantIcon="ability_warrior_shieldmastery" permanentEnchantItemId="44069" permanentenchant="3795" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="0"/>
+        <item displayInfoId="39162" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_necklace_36" id="42034" level="226" maxDurability="0" name="Furious Gladiator's Pendant of Triumph" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="0" slot="1"/>
+        <item displayInfoId="61831" durability="99" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shoulder_62" id="51580" level="251" maxDurability="100" name="Titan-Forged Shoulderplates of Triumph" permanentEnchantIcon="spell_holy_weaponmastery" permanentEnchantItemId="44067" permanentenchant="3793" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="2"/>
+        <item displayInfoId="58539" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shirt_grey_01" id="45672" level="1" maxDurability="0" name="Orgrimmar Doublet" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="1" seed="0" slot="3"/>
+        <item displayInfoId="58853" durability="162" gem0Id="40111" gem1Id="40111" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_37" gemIcon1="inv_jewelcrafting_gem_37" icon="inv_chest_plate_25" id="40788" level="232" maxDurability="165" name="Furious Gladiator's Scaled Chestpiece" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44465" permanentenchant="3832" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="4"/>
+        <item displayInfoId="59245" durability="54" gem0Id="49110" gem1Id="40111" gem2Id="0" gemIcon0="inv_misc_gem_pearl_12" gemIcon1="inv_jewelcrafting_gem_37" icon="inv_belt_14" id="40881" level="226" maxDurability="55" name="Furious Gladiator's Girdle of Triumph" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="5"/>
+        <item displayInfoId="58854" durability="119" gem0Id="40111" gem1Id="40129" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_37" gemIcon1="inv_jewelcrafting_gem_40" icon="inv_pants_plate_25" id="40849" level="232" maxDurability="120" name="Furious Gladiator's Scaled Legguards" permanentEnchantIcon="inv_misc_armorkit_33" permanentEnchantItemId="38374" permanentenchant="3823" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="6"/>
+        <item displayInfoId="59251" durability="72" gem0Id="40111" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_37" icon="inv_boots_plate_01" id="40882" level="226" maxDurability="75" name="Furious Gladiator's Greaves of Triumph" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44469" permanentenchant="1597" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="7"/>
+        <item displayInfoId="48664" durability="55" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_bracer_17" id="48978" level="226" maxDurability="55" name="Titan-Forged Bracers of Triumph" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44815" permanentenchant="3845" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="8"/>
+        <item displayInfoId="58855" durability="54" gem0Id="40111" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_37" icon="inv_gauntlets_72" id="40808" level="232" maxDurability="55" name="Furious Gladiator's Scaled Gauntlets" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44458" permanentenchant="1603" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="9"/>
+        <item displayInfoId="39129" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_60" id="42117" level="226" maxDurability="0" name="Furious Gladiator's Band of Triumph" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="0" slot="10"/>
+        <item displayInfoId="63958" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_81" id="52569" level="251" maxDurability="0" name="Ashen Band of Might" permanentenchant="0" pickUp="PickUpMetalSmall" putDown="PutDownSmallMEtal" randomPropertiesId="0" rarity="4" seed="230493168" slot="11"/>
+        <item displayInfoId="58819" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_rune_11" id="46082" level="213" maxDurability="0" name="Titan-Forged Rune of Determination" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="0" slot="12"/>
+        <item displayInfoId="58824" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_platnumdisks" id="46086" level="213" maxDurability="0" name="Platinum Disks of Battle" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="0" slot="13"/>
+        <item displayInfoId="49738" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_cape_19" id="42075" level="226" maxDurability="0" name="Furious Gladiator's Cloak of Victory" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="38973" permanentenchant="3243" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="14"/>
+        <item displayInfoId="64152" durability="120" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_sword_155" id="50048" level="251" maxDurability="120" name="Quel'Delar, Might of the Faithful" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44493" permanentenchant="3789" pickUp="PickUpMetalLArge" putDown="PutDownLArgeMEtal" randomPropertiesId="0" rarity="4" seed="1625547776" slot="15"/>
+        <item displayInfoId="54524" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_scroll_15" id="50455" level="264" maxDurability="0" name="Libram of Three Truths" permanentenchant="0" pickUp="PickUpBook" putDown="PutDownBook" randomPropertiesId="0" rarity="4" seed="0" slot="17"/>
+        <item displayInfoId="48709" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_tabardsummer02" id="35279" level="1" maxDurability="0" name="Tabard of Summer Skies" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="3" seed="1105872768" slot="18"/>
+      </items>
+      <glyphs>
+        <glyph effect="Your Judgements deal 10% more damage." icon="ui-glyph-rune-8" id="183" name="Glyph of Judgement" type="major"/>
+        <glyph effect="Reduces the cooldown of your Lay on Hands spell by 5 min." icon="ui-glyph-rune-11" id="455" name="Glyph of Lay on Hands" type="minor"/>
+        <glyph effect="Increases the duration of your Blessing of Might spell by 20 min when cast on yourself." icon="ui-glyph-rune-2" id="453" name="Glyph of Blessing of Might" type="minor"/>
+        <glyph effect="When you cast Hand of Salvation on yourself, it also reduces damage taken by 20%." icon="ui-glyph-rune-11" id="707" name="Glyph of Salvation" type="major"/>
+        <glyph effect="Damage against Undead increased by 1% while your Sense Undead ability is active." icon="ui-glyph-rune-9" id="456" name="Glyph of Sense Undead" type="minor"/>
+        <glyph effect="Increases the damage done by Seal of Righteousness by 10%." icon="ui-glyph-rune-19" id="560" name="Glyph of Seal of Righteousness" type="major"/>
+      </glyphs>
+    </characterTab>
+    <summary>
+      <c earned="273" points="2860" total="1054" totalPoints="11635"/>
+      <category id="92" name="General">
+        <c earned="25" earnedPoints="280" total="54" totalPoints="570"/>
+      </category>
+      <category id="96" name="Quests">
+        <c earned="11" earnedPoints="110" total="49" totalPoints="530"/>
+      </category>
+      <category id="97" name="Exploration">
+        <c earned="24" earnedPoints="255" total="70" totalPoints="830"/>
+      </category>
+      <category id="95" name="Player vs. Player">
+        <c earned="64" earnedPoints="680" total="166" totalPoints="1930"/>
+      </category>
+      <category id="168" name="Dungeons &amp; Raids">
+        <c earned="94" earnedPoints="950" total="454" totalPoints="4915"/>
+      </category>
+      <category id="169" name="Professions">
+        <c earned="10" earnedPoints="100" total="75" totalPoints="760"/>
+      </category>
+      <category id="201" name="Reputation">
+        <c earned="8" earnedPoints="105" total="45" totalPoints="560"/>
+      </category>
+      <category id="155" name="World Events">
+        <c earned="37" earnedPoints="380" total="141" totalPoints="1540"/>
+      </category>
+      <category id="81" name="Feats of Strength">
+        <c earned="2"/>
+      </category>
+    </summary>
+  </characterInfo>
+</page>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/sheet.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-sheet.xml">
+  <tabInfo subTab="profile" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Maskedblack&amp;gn=Alliance+Pwners"/>
+  <characterInfo>
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Maskedblack" class="Hunter" classId="3" classUrl="c=Hunter" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners" lastModified="April 19, 2010" level="80" name="Maskedblack" points="1250" prefix="" race="Tauren" raceId="6" realm="Coilfang" suffix="" titleId="0">
+      <arenaTeams>
+        <arenaTeam battleGroup="Retaliation" created="1266537600000" faction="Horde" factionId="1" gamesPlayed="0" gamesWon="0" lastSeasonRanking="0" name="TroopaPoopaDoupityDoo" ranking="0" rating="1139" realm="Coilfang" realmUrl="b=Retaliation&amp;r=Coilfang&amp;ts=2&amp;t=TroopaPoopaDoupityDoo&amp;ff=realm&amp;fv=Coilfang&amp;select=TroopaPoopaDoupityDoo" season="0" seasonGamesPlayed="84" seasonGamesWon="42" size="2" teamSize="2" teamUrl="r=Coilfang&amp;ts=2&amp;t=TroopaPoopaDoupityDoo&amp;select=TroopaPoopaDoupityDoo" url="r=Coilfang&amp;ts=2&amp;t=TroopaPoopaDoupityDoo&amp;select=TroopaPoopaDoupityDoo">
+          <emblem background="ff03032c" borderColor="ff1ccf22" borderStyle="5" iconColor="ff2ac717" iconStyle="8"/>
+          <members>
+            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Tharknight" class="Death Knight" classId="6" contribution="981" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners" guildId="3585075" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners" name="Tharknight" race="Blood Elf" raceId="10" seasonGamesPlayed="6" seasonGamesWon="0" teamRank="0"/>
+            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Fishmarven" class="Death Knight" classId="6" contribution="999" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners" guildId="3585075" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners" name="Fishmarven" race="Troll" raceId="8" seasonGamesPlayed="2" seasonGamesWon="0" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Maskedblack" class="Hunter" classId="3" contribution="987" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners" guildId="3585075" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners" name="Maskedblack" race="Tauren" raceId="6" seasonGamesPlayed="4" seasonGamesWon="0" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Dethnightt" class="Death Knight" classId="6" contribution="994" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="MANIFOLDS FIVE" guildId="21430" guildUrl="r=Coilfang&amp;gn=MANIFOLDS+FIVE" name="Dethnightt" race="Blood Elf" raceId="10" seasonGamesPlayed="2" seasonGamesWon="0" teamRank="1"/>
+          </members>
+        </arenaTeam>
+      </arenaTeams>
+      <modelBasePath value="http://us.media.battle.net.edgesuite.net/"/>
+    </character>
+    <characterTab>
+      <talentSpecs>
+        <talentSpec active="1" group="1" icon="ability_hunter_swiftstrike" prim="Survival" treeOne="0" treeThree="53" treeTwo="18"/>
+      </talentSpecs>
+      <buffs/>
+      <debuffs/>
+      <pvp>
+        <lifetimehonorablekills value="2605"/>
+        <arenacurrency value="0"/>
+      </pvp>
+      <professions>
+        <skill id="165" key="leatherworking" max="225" name="Leatherworking" value="146"/>
+        <skill id="393" key="skinning" max="300" name="Skinning" value="270"/>
+      </professions>
+      <characterBars>
+        <health effective="16190"/>
+        <secondBar casting="0" effective="10061" notCasting="31" type="m"/>
+      </characterBars>
+      <baseStats>
+        <strength attack="69" base="79" block="-1" effective="79"/>
+        <agility armor="1736" attack="858" base="203" critHitPercent="8.88" effective="868"/>
+        <stamina base="141" effective="868" health="8500" petBonus="260"/>
+        <intellect base="86" critHitPercent="5.72" effective="353" mana="5015" petBonus="-1"/>
+        <spirit base="99" effective="99" healthRegen="16" manaRegen="31"/>
+        <armor base="8221" effective="8229" percent="35.07" petBonus="2880"/>
+      </baseStats>
+      <resistances>
+        <arcane petBonus="0" value="0"/>
+        <fire petBonus="0" value="0"/>
+        <frost petBonus="0" value="0"/>
+        <holy petBonus="0" value="0"/>
+        <nature petBonus="0" value="0"/>
+        <shadow petBonus="0" value="0"/>
+      </resistances>
+      <melee>
+        <mainHandDamage dps="351.4" max="1321" min="1138" percent="0" speed="3.50"/>
+        <offHandDamage dps="111.0" max="223" min="222" percent="0" speed="2.00"/>
+        <mainHandSpeed hastePercent="0.00" hasteRating="0" value="3.50"/>
+        <offHandSpeed hastePercent="0.00" hasteRating="0" value="2.00"/>
+        <power base="1347" effective="3103" increasedDps="221.0"/>
+        <hitRating increasedHitPercent="5.55" penetration="63" reducedArmorPercent="4.50" value="182"/>
+        <critChance percent="21.29" plusPercent="9.89" rating="454"/>
+        <expertise additional="3" percent="0.75" rating="32" value="3"/>
+      </melee>
+      <ranged>
+        <weaponSkill rating="0" value="0"/>
+        <damage dps="394.3" max="1009" min="843" percent="0" speed="2.35"/>
+        <speed hastePercent="0.00" hasteRating="0" value="2.35"/>
+        <power base="1631" effective="3387" increasedDps="241.0" petAttack="745.14" petSpell="435.91"/>
+        <hitRating increasedHitPercent="5.55" penetration="63" reducedArmorPercent="4.50" value="182"/>
+        <critChance percent="26.77" plusPercent="9.89" rating="454"/>
+      </ranged>
+      <spell>
+        <bonusDamage>
+          <arcane value="0"/>
+          <fire value="0"/>
+          <frost value="0"/>
+          <holy value="0"/>
+          <nature value="0"/>
+          <shadow value="0"/>
+          <petBonus attack="-1" damage="-1" fromType=""/>
+        </bonusDamage>
+        <bonusHealing value="0"/>
+        <hitRating increasedHitPercent="6.94" penetration="0" reducedResist="0" value="182"/>
+        <critChance rating="454">
+          <arcane percent="15.61"/>
+          <fire percent="15.61"/>
+          <frost percent="15.61"/>
+          <holy percent="15.61"/>
+          <nature percent="15.61"/>
+          <shadow percent="15.61"/>
+        </critChance>
+        <penetration value="0"/>
+        <manaRegen casting="0.00" notCasting="31.00"/>
+        <hasteRating hastePercent="0.00" hasteRating="0"/>
+      </spell>
+      <defenses>
+        <armor base="8221" effective="8229" percent="35.07" petBonus="2880"/>
+        <defense decreasePercent="0.00" increasePercent="0.00" plusDefense="0" rating="0" value="399.00"/>
+        <dodge increasePercent="0.00" percent="5.61" rating="0"/>
+        <parry increasePercent="0.00" percent="7.96" rating="0"/>
+        <block increasePercent="0.00" percent="0.00" rating="0"/>
+        <resilience damagePercent="1.17" hitPercent="0.53" value="50.00"/>
+      </defenses>
+      <items>
+        <item displayInfoId="59543" durability="41" gem0Id="44087" gem1Id="39999" gem2Id="0" gemIcon0="inv_jewelcrafting_shadowspirit_02" gemIcon1="inv_jewelcrafting_gem_28" icon="inv_helmet_121" id="37188" level="200" maxDurability="70" name="Plunderer's Helmet" permanentenchant="0" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="3" seed="1496311936" slot="0"/>
+        <item displayInfoId="39162" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_necklace_36" id="42041" level="245" maxDurability="0" name="Relentless Gladiator's Pendant of Triumph" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="0" slot="1"/>
+        <item displayInfoId="62107" durability="52" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shoulder_100" id="48279" level="232" maxDurability="85" name="Windrunner's Spaulders of Conquest" permanentenchant="0" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="0" slot="2"/>
+        <item displayInfoId="52960" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shirt_13" id="41253" level="1" maxDurability="0" name="Blue Workman's Shirt" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="1" seed="1721021056" slot="3"/>
+        <item displayInfoId="51310" durability="56" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_chest_chain_05" id="39064" level="154" maxDurability="100" name="Hide-Lined Chestguard" permanentEnchantIcon="inv_misc_armorkit_17" permanentEnchantItemId="2304" permanentenchant="15" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="2" seed="2040103552" slot="4"/>
+        <item displayInfoId="52343" durability="24" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_belt_26" id="37095" level="187" maxDurability="40" name="Waistband of the Thuzadin" permanentenchant="0" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="3" seed="1232879680" slot="5"/>
+        <item displayInfoId="62101" durability="62" gem0Id="0" gem1Id="39999" gem2Id="0" gemIcon1="inv_jewelcrafting_gem_28" icon="inv_pants_mail_24" id="48278" level="232" maxDurability="105" name="Windrunner's Legguards of Conquest" permanentenchant="0" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="849276688" slot="6"/>
+        <item displayInfoId="52342" durability="35" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_boots_chain_08" id="36999" level="187" maxDurability="60" name="Boots of the Terrestrial Guardian" permanentenchant="0" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="3" seed="1867580032" slot="7"/>
+        <item displayInfoId="61253" durability="29" gem0Id="39999" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_28" icon="inv_bracer_38" id="47577" level="245" maxDurability="50" name="Crusader's Dragonscale Bracers" permanentenchant="0" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="98997056" slot="8"/>
+        <item displayInfoId="53819" durability="24" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_gauntlets_18" id="37409" level="200" maxDurability="40" name="Gilt-Edged Leather Gauntlets" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="2084543488" slot="9"/>
+        <item displayInfoId="44841" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_71" id="43277" level="167" maxDurability="0" name="Jedoga's Greatring" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="3" seed="1082828672" slot="10"/>
+        <item displayInfoId="49005" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_79" id="47222" level="200" maxDurability="0" name="Uruka's Band of Zeal" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="1257483136" slot="11"/>
+        <item displayInfoId="52572" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_bone_08" id="37723" level="200" maxDurability="0" name="Incisor Fragment" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="3" seed="2035116544" slot="12"/>
+        <item displayInfoId="16283" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_horn_02" id="37557" level="138" maxDurability="0" name="Warsong's Fervor" permanentenchant="0" pickUp="PickUpGems" putDown="PutDownGems" randomPropertiesId="0" rarity="2" seed="1189427968" slot="13"/>
+        <item displayInfoId="51531" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_cape_13" id="38614" level="183" maxDurability="0" name="Embrace of Sorrow" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="3" seed="1164399424" slot="14"/>
+        <item displayInfoId="50345" durability="53" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_staff_75" id="36553" level="170" maxDurability="85" name="Desecrated Staff" permanentenchant="0" pickUp="PickUpMetalLArge" putDown="PutDownLArgeMEtal" randomPropertiesId="-20" rarity="2" seed="1191575649" slot="15"/>
+        <item displayInfoId="54997" durability="46" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_weapon_rifle_21" id="35645" level="175" maxDurability="75" name="Prison Warden's Shotgun" permanentenchant="0" pickUp="PickUpMetalSmall" putDown="PutDownSmallMEtal" randomPropertiesId="0" rarity="3" seed="1878924416" slot="17"/>
+        <item displayInfoId="20621" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shirt_guildtabard_01" id="5976" level="1" maxDurability="0" name="Guild Tabard" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="1" seed="0" slot="18"/>
+        <item displayInfoId="40524" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_ammo_bullet_06" id="41584" level="154" maxDurability="0" name="Frostbite Bullets" permanentenchant="0" pickUp="PickUpMetalSmall" putDown="PutDownSmallMEtal" randomPropertiesId="0" rarity="1" seed="0" slot="-1"/>
+      </items>
+      <glyphs/>
+    </characterTab>
+    <summary>
+      <c earned="123" points="1250" total="1054" totalPoints="11635"/>
+      <category id="92" name="General">
+        <c earned="17" earnedPoints="170" total="54" totalPoints="570"/>
+      </category>
+      <category id="96" name="Quests">
+        <c earned="5" earnedPoints="50" total="49" totalPoints="530"/>
+      </category>
+      <category id="97" name="Exploration">
+        <c earned="7" earnedPoints="70" total="70" totalPoints="830"/>
+      </category>
+      <category id="95" name="Player vs. Player">
+        <c earned="34" earnedPoints="360" total="166" totalPoints="1930"/>
+      </category>
+      <category id="168" name="Dungeons &amp; Raids">
+        <c earned="44" earnedPoints="440" total="454" totalPoints="4915"/>
+      </category>
+      <category id="169" name="Professions">
+        <c earned="8" earnedPoints="80" total="75" totalPoints="760"/>
+      </category>
+      <category id="201" name="Reputation">
+        <c earned="0" earnedPoints="0" total="45" totalPoints="560"/>
+      </category>
+      <category id="155" name="World Events">
+        <c earned="8" earnedPoints="80" total="141" totalPoints="1540"/>
+      </category>
+      <category id="81" name="Feats of Strength">
+        <c earned="4"/>
+      </category>
+    </summary>
+  </characterInfo>
+</page>

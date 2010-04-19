@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/sheet.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-sheet.xml">
+  <tabInfo subTab="profile" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Cowpatti&amp;gn=Alliance+Pwners"/>
+  <characterInfo>
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Cowpatti" class="Death Knight" classId="6" classUrl="c=Death+Knight" faction="Horde" factionId="1" gender="Female" genderId="1" guildName="Alliance Pwners" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners" lastModified="April 19, 2010" level="80" name="Cowpatti" points="1200" prefix="" race="Tauren" raceId="6" realm="Coilfang" suffix="" titleId="0">
+      <modelBasePath value="http://us.media.battle.net.edgesuite.net/"/>
+    </character>
+    <characterTab>
+      <talentSpecs>
+        <talentSpec active="1" group="1" icon="spell_deathknight_unholypresence" prim="Unholy" treeOne="0" treeThree="71" treeTwo="0"/>
+      </talentSpecs>
+      <buffs/>
+      <debuffs/>
+      <pvp>
+        <lifetimehonorablekills value="14080"/>
+        <arenacurrency value="0"/>
+      </pvp>
+      <professions>
+        <skill id="164" key="blacksmithing" max="150" name="Blacksmithing" value="84"/>
+        <skill id="186" key="mining" max="150" name="Mining" value="97"/>
+      </professions>
+      <characterBars>
+        <health effective="17767"/>
+        <secondBar casting="-1" effective="100" notCasting="-1" perFive="-1" type="p"/>
+      </characterBars>
+      <baseStats>
+        <strength attack="1326" base="185" block="-1" effective="673"/>
+        <agility armor="376" attack="-1" base="108" critHitPercent="6.20" effective="188"/>
+        <stamina base="167" effective="942" health="9240" petBonus="-1"/>
+        <intellect base="31" critHitPercent="-1.00" effective="31" mana="-1" petBonus="-1"/>
+        <spirit base="61" effective="61" healthRegen="36" manaRegen="-1"/>
+        <armor base="10883" effective="10883" percent="41.67" petBonus="-1"/>
+      </baseStats>
+      <resistances>
+        <arcane petBonus="-1" value="0"/>
+        <fire petBonus="-1" value="0"/>
+        <frost petBonus="-1" value="10"/>
+        <holy petBonus="-1" value="0"/>
+        <nature petBonus="-1" value="0"/>
+        <shadow petBonus="-1" value="0"/>
+      </resistances>
+      <melee>
+        <mainHandDamage dps="282.8" max="1088" min="892" percent="0" speed="3.50"/>
+        <offHandDamage dps="0.0" max="0" min="0" percent="0" speed="2.00"/>
+        <mainHandSpeed hastePercent="0.00" hasteRating="0" value="3.50"/>
+        <offHandSpeed hastePercent="0.00" hasteRating="0" value="2.00"/>
+        <power base="1566" effective="2017" increasedDps="144.0"/>
+        <hitRating increasedHitPercent="2.20" penetration="113" reducedArmorPercent="8.07" value="72"/>
+        <critChance percent="11.53" plusPercent="5.34" rating="245"/>
+        <expertise additional="9" percent="3.50" rating="78" value="14"/>
+      </melee>
+      <ranged>
+        <weaponSkill rating="0" value="0"/>
+        <damage dps="0.0" max="0" min="0" percent="0" speed="0.00"/>
+        <speed hastePercent="0.00" hasteRating="0" value="0.00"/>
+        <power base="178" effective="629" increasedDps="44.0" petAttack="-1.00" petSpell="-1.00"/>
+        <hitRating increasedHitPercent="2.20" penetration="113" reducedArmorPercent="8.07" value="72"/>
+        <critChance percent="6.81" plusPercent="5.34" rating="245"/>
+      </ranged>
+      <spell>
+        <bonusDamage>
+          <arcane value="0"/>
+          <fire value="0"/>
+          <frost value="0"/>
+          <holy value="0"/>
+          <nature value="0"/>
+          <shadow value="0"/>
+          <petBonus attack="-1" damage="-1" fromType=""/>
+        </bonusDamage>
+        <bonusHealing value="0"/>
+        <hitRating increasedHitPercent="2.74" penetration="0" reducedResist="0" value="72"/>
+        <critChance rating="245">
+          <arcane percent="5.34"/>
+          <fire percent="5.34"/>
+          <frost percent="5.34"/>
+          <holy percent="5.34"/>
+          <nature percent="5.34"/>
+          <shadow percent="5.34"/>
+        </critChance>
+        <penetration value="0"/>
+        <manaRegen casting="0.00" notCasting="0.00"/>
+        <hasteRating hastePercent="0.00" hasteRating="0"/>
+      </spell>
+      <defenses>
+        <armor base="10883" effective="10883" percent="41.67" petBonus="-1"/>
+        <defense decreasePercent="1.44" increasePercent="1.44" plusDefense="11" rating="56" value="425.00"/>
+        <dodge increasePercent="0.53" percent="12.90" rating="24"/>
+        <parry increasePercent="3.71" percent="9.98" rating="168"/>
+        <block increasePercent="0.00" percent="0.00" rating="0"/>
+        <resilience damagePercent="5.06" hitPercent="2.30" value="217.00"/>
+      </defenses>
+      <items>
+        <item displayInfoId="57535" durability="100" gem0Id="0" gem1Id="28362" gem2Id="0" gemIcon1="inv_misc_gem_ruby_02" icon="inv_helmet_135" id="40824" level="213" maxDurability="100" name="Deadly Gladiator's Dreadplate Helm" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="0"/>
+        <item displayInfoId="9860" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_necklace_09" id="38226" level="138" maxDurability="0" name="Chain of the Tolling Bell" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="3" seed="855870592" slot="1"/>
+        <item displayInfoId="55733" durability="100" gem0Id="28363" gem1Id="0" gem2Id="0" gemIcon0="inv_misc_gem_opal_01" icon="inv_shoulder_99" id="40863" level="213" maxDurability="100" name="Deadly Gladiator's Dreadplate Shoulders" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="2"/>
+        <item displayInfoId="13115" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shirt_08" id="6833" level="25" maxDurability="0" name="White Tuxedo Shirt" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="1" seed="0" slot="3"/>
+        <item displayInfoId="51901" durability="115" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_chest_plate04" id="39461" level="162" maxDurability="115" name="Muck-Stained Carapace" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="2" seed="2097784832" slot="4"/>
+        <item displayInfoId="52509" durability="45" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_belt_27" id="37785" level="146" maxDurability="45" name="Girdle of the Howling Berserker" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="3" seed="0" slot="5"/>
+        <item displayInfoId="51572" durability="100" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_pants_plate_10" id="39174" level="154" maxDurability="100" name="Legguards of Dissolved Hope" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="3" seed="1606419584" slot="6"/>
+        <item displayInfoId="52045" durability="55" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_boots_plate_02" id="36388" level="178" maxDurability="55" name="Revenant Greaves" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="-43" rarity="2" seed="748027982" slot="7"/>
+        <item displayInfoId="48664" durability="55" gem0Id="28363" gem1Id="0" gem2Id="0" gemIcon0="inv_misc_gem_opal_01" icon="inv_bracer_17" id="35176" level="154" maxDurability="55" name="Guardian's Plate Bracers" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="8"/>
+        <item displayInfoId="51895" durability="40" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_gauntlets_29" id="39459" level="162" maxDurability="40" name="Preservative-Stained Gauntlets" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="2" seed="519947328" slot="9"/>
+        <item displayInfoId="49005" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_79" id="47222" level="200" maxDurability="0" name="Uruka's Band of Zeal" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="2049144192" slot="10"/>
+        <item displayInfoId="26391" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_27" id="38251" level="138" maxDurability="0" name="Ring of Indignant Rage" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="3" seed="416649472" slot="11"/>
+        <item displayInfoId="47095" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="ability_warrior_endlessrage" id="41589" level="156" maxDurability="0" name="Battlemaster's Resolve" permanentenchant="0" pickUp="PickUpWand" putDown="PutDownWand" randomPropertiesId="0" rarity="4" seed="0" slot="12"/>
+        <item displayInfoId="31479" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_frostwolftrinket_05" id="17909" level="60" maxDurability="0" name="Frostwolf Insignia Rank 6" permanentenchant="0" pickUp="PickUpMetalSmall" putDown="PutDownSmallMEtal" randomPropertiesId="0" rarity="4" seed="1633911808" slot="13"/>
+        <item displayInfoId="56190" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_cape_21" id="39478" level="162" maxDurability="0" name="Cloak of the Deadliest Game" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="3" seed="1319767808" slot="14"/>
+        <item displayInfoId="50326" durability="85" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_sword_113" id="36542" level="182" maxDurability="85" name="Invasion Blade" permanentEnchantIcon="inv_sword_130" permanentEnchantSpellDesc="Affixes your two-handed rune weapon with a rune that increases Defense by 25 and total Stamina by 2%.  Modifying your rune weapon requires a Rune Forge in Ebon Hold." permanentEnchantSpellName="Rune of the Stoneskin Gargoyle" permanentenchant="3847" pickUp="PickUpMetalLArge" putDown="PutDownLArgeMEtal" randomPropertiesId="-45" rarity="2" seed="1116340332" slot="15"/>
+        <item displayInfoId="31527" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shirt_guildtabard_01" id="19031" level="20" maxDurability="0" name="Frostwolf Battle Tabard" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="1" seed="0" slot="18"/>
+      </items>
+      <glyphs>
+        <glyph effect="Your Raise Dead spell no longer requires a reagent." icon="ui-glyph-rune-7" id="555" name="Glyph of Raise Dead" type="minor"/>
+      </glyphs>
+    </characterTab>
+    <summary>
+      <c earned="117" points="1200" total="1054" totalPoints="11635"/>
+      <category id="92" name="General">
+        <c earned="15" earnedPoints="150" total="54" totalPoints="570"/>
+      </category>
+      <category id="96" name="Quests">
+        <c earned="7" earnedPoints="70" total="49" totalPoints="530"/>
+      </category>
+      <category id="97" name="Exploration">
+        <c earned="13" earnedPoints="130" total="70" totalPoints="830"/>
+      </category>
+      <category id="95" name="Player vs. Player">
+        <c earned="33" earnedPoints="350" total="166" totalPoints="1930"/>
+      </category>
+      <category id="168" name="Dungeons &amp; Raids">
+        <c earned="10" earnedPoints="100" total="454" totalPoints="4915"/>
+      </category>
+      <category id="169" name="Professions">
+        <c earned="8" earnedPoints="80" total="75" totalPoints="760"/>
+      </category>
+      <category id="201" name="Reputation">
+        <c earned="1" earnedPoints="10" total="45" totalPoints="560"/>
+      </category>
+      <category id="155" name="World Events">
+        <c earned="30" earnedPoints="310" total="141" totalPoints="1540"/>
+      </category>
+      <category id="81" name="Feats of Strength">
+        <c earned="2"/>
+      </category>
+    </summary>
+  </characterInfo>
+</page>

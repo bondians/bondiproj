@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/sheet.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-sheet.xml">
+  <tabInfo subTab="profile" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Riverweasel&amp;gn=Alliance+Pwners"/>
+  <characterInfo>
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Riverweasel" class="Druid" classId="11" classUrl="c=Druid" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners" lastModified="April 16, 2010" level="80" name="Riverweasel" points="2650" prefix="" race="Tauren" raceId="6" realm="Coilfang" suffix=" the Explorer" titleId="47">
+      <modelBasePath value="http://us.media.battle.net.edgesuite.net/"/>
+    </character>
+    <characterTab>
+      <talentSpecs>
+        <talentSpec active="1" group="2" icon="ability_racial_bearform" prim="Feral Combat" treeOne="0" treeThree="11" treeTwo="60"/>
+        <talentSpec group="1" icon="spell_nature_healingtouch" prim="Restoration" treeOne="1" treeThree="70" treeTwo="0"/>
+      </talentSpecs>
+      <buffs/>
+      <debuffs/>
+      <pvp>
+        <lifetimehonorablekills value="4159"/>
+        <arenacurrency value="0"/>
+      </pvp>
+      <professions>
+        <skill id="182" key="herbalism" max="450" name="Herbalism" value="465"/>
+        <skill id="393" key="skinning" max="450" name="Skinning" value="450"/>
+      </professions>
+      <characterBars>
+        <health effective="21527"/>
+        <secondBar casting="0" effective="6096" notCasting="42" type="m"/>
+      </characterBars>
+      <baseStats>
+        <strength attack="526" base="101" block="-1" effective="273"/>
+        <agility armor="1782" attack="-1" base="84" critHitPercent="18.17" effective="891"/>
+        <stamina base="107" effective="1392" health="13740" petBonus="-1"/>
+        <intellect base="180" critHitPercent="3.00" effective="192" mana="2600" petBonus="-1"/>
+        <spirit base="174" effective="184" healthRegen="15" manaRegen="42"/>
+        <armor base="6150" effective="6150" percent="28.76" petBonus="-1"/>
+      </baseStats>
+      <resistances>
+        <arcane petBonus="-1" value="0"/>
+        <fire petBonus="-1" value="0"/>
+        <frost petBonus="-1" value="0"/>
+        <holy petBonus="-1" value="0"/>
+        <nature petBonus="-1" value="0"/>
+        <shadow petBonus="-1" value="0"/>
+      </resistances>
+      <melee>
+        <mainHandDamage dps="316.2" max="809" min="645" percent="0" speed="2.30"/>
+        <offHandDamage dps="70.0" max="135" min="134" percent="0" speed="1.92"/>
+        <mainHandSpeed hastePercent="4.36" hasteRating="110" value="2.30"/>
+        <offHandSpeed hastePercent="4.36" hasteRating="110" value="1.92"/>
+        <power base="526" effective="1871" increasedDps="133.0"/>
+        <hitRating increasedHitPercent="7.87" penetration="116" reducedArmorPercent="8.29" value="258"/>
+        <critChance percent="23.60" plusPercent="7.52" rating="345"/>
+        <expertise additional="12" percent="5.50" rating="99" value="22"/>
+      </melee>
+      <ranged>
+        <weaponSkill rating="0" value="0"/>
+        <damage dps="0.0" max="0" min="0" percent="0" speed="0.00"/>
+        <speed hastePercent="4.36" hasteRating="110" value="0.00"/>
+        <power base="881" effective="2226" increasedDps="159.0" petAttack="-1.00" petSpell="-1.00"/>
+        <hitRating increasedHitPercent="7.87" penetration="116" reducedArmorPercent="8.29" value="258"/>
+        <critChance percent="24.72" plusPercent="7.52" rating="345"/>
+      </ranged>
+      <spell>
+        <bonusDamage>
+          <arcane value="0"/>
+          <fire value="0"/>
+          <frost value="0"/>
+          <holy value="0"/>
+          <nature value="0"/>
+          <shadow value="0"/>
+          <petBonus attack="-1" damage="-1" fromType=""/>
+        </bonusDamage>
+        <bonusHealing value="0"/>
+        <hitRating increasedHitPercent="9.84" penetration="0" reducedResist="0" value="258"/>
+        <critChance rating="345">
+          <arcane percent="10.52"/>
+          <fire percent="10.52"/>
+          <frost percent="10.52"/>
+          <holy percent="10.52"/>
+          <nature percent="10.52"/>
+          <shadow percent="10.52"/>
+        </critChance>
+        <penetration value="0"/>
+        <manaRegen casting="0.00" notCasting="42.00"/>
+        <hasteRating hastePercent="4.36" hasteRating="110"/>
+      </spell>
+      <defenses>
+        <armor base="6150" effective="6150" percent="28.76" petBonus="-1"/>
+        <defense decreasePercent="0.40" increasePercent="0.40" plusDefense="10" rating="50" value="400.00"/>
+        <dodge increasePercent="0.00" percent="22.76" rating="0"/>
+        <parry increasePercent="0.00" percent="0.00" rating="0"/>
+        <block increasePercent="0.00" percent="0.00" rating="0"/>
+        <resilience damagePercent="2.68" hitPercent="1.22" value="115.00"/>
+      </defenses>
+      <items>
+        <item displayInfoId="61210" durability="60" gem0Id="41380" gem1Id="40013" gem2Id="0" gemIcon0="inv_jewelcrafting_shadowspirit_02" gemIcon1="inv_jewelcrafting_gem_26" icon="inv_helmet_145a" id="47688" level="245" maxDurability="70" name="Mask of Lethal Intent" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="0"/>
+        <item displayInfoId="48508" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_necklace_42" id="45819" level="226" maxDurability="0" name="Spiked Battleguard Choker" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="0" slot="1"/>
+        <item displayInfoId="49369" durability="51" gem0Id="40029" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_29" icon="inv_shoulder_78" id="37139" level="200" maxDurability="60" name="Spaulders of the Careless Thief" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="3" seed="0" slot="2"/>
+        <item displayInfoId="10840" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shirt_red_01" id="2575" level="10" maxDurability="0" name="Red Linen Shirt" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="1" seed="1763982720" slot="3"/>
+        <item displayInfoId="59442" durability="104" gem0Id="40112" gem1Id="40013" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_37" gemIcon1="inv_jewelcrafting_gem_26" icon="inv_chest_cloth_70" id="41661" level="232" maxDurability="120" name="Furious Gladiator's Dragonhide Robes" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44465" permanentenchant="3832" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="4"/>
+        <item displayInfoId="58747" durability="34" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_belt_15" id="45829" level="226" maxDurability="40" name="Belt of the Twilight Assassin" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="5"/>
+        <item displayInfoId="55007" durability="64" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_pants_mail_21" id="37890" level="200" maxDurability="75" name="Chain Gang Legguards" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="3" seed="0" slot="6"/>
+        <item displayInfoId="60642" durability="51" gem0Id="40112" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_37" icon="inv_boots_mail_01" id="47248" level="219" maxDurability="60" name="Treads of Dismal Fortune" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="277099446" slot="7"/>
+        <item displayInfoId="61175" durability="35" gem0Id="40086" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_25" icon="inv_bracer_36a" id="47582" level="245" maxDurability="40" name="Bracers of Swift Death" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="521083264" slot="8"/>
+        <item displayInfoId="51613" durability="30" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_gauntlets_21" id="37678" level="200" maxDurability="35" name="Bile-Cured Gloves" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="3" seed="778347456" slot="9"/>
+        <item displayInfoId="45948" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_72" id="45809" level="200" maxDurability="0" name="Scarlet Signet" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="3" seed="1475958528" slot="10"/>
+        <item displayInfoId="54513" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_ahnqiraj_01" id="37591" level="200" maxDurability="0" name="Nerubian Shield Ring" permanentenchant="0" pickUp="PickUpGems" putDown="PutDownGems" randomPropertiesId="0" rarity="3" seed="1799005184" slot="11"/>
+        <item displayInfoId="56514" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_ahnqirajtrinket_03" id="44014" level="174" maxDurability="0" name="Fezzik's Pocketwatch" permanentenchant="0" pickUp="PickUpGems" putDown="PutDownGems" randomPropertiesId="0" rarity="3" seed="1367949184" slot="12"/>
+        <item displayInfoId="6337" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_talisman_01" id="43829" level="174" maxDurability="0" name="Crusader's Locket" permanentenchant="0" pickUp="PickUpGems" putDown="PutDownGems" randomPropertiesId="0" rarity="2" seed="1461989376" slot="13"/>
+        <item displayInfoId="51374" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_cape_02" id="37197" level="200" maxDurability="0" name="Tattered Castle Drape" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="3" seed="817730952" slot="14"/>
+        <item displayInfoId="51938" durability="89" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_staff_71" id="37848" level="200" maxDurability="100" name="Lightning Giant Staff" permanentenchant="0" pickUp="PutDownWoodSmall" putDown="PutDownWoodLarge" randomPropertiesId="0" rarity="3" seed="0" slot="15"/>
+        <item displayInfoId="39635" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="spell_nature_spiritwolf" id="28064" level="93" maxDurability="0" name="Idol of the Wild" permanentenchant="0" pickUp="PickUpWoodSmall" putDown="PutDownWoodSmall" randomPropertiesId="0" rarity="2" seed="179096112" slot="17"/>
+        <item displayInfoId="32031" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shirt_guildtabard_01" id="19505" level="20" maxDurability="0" name="Warsong Battle Tabard" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="1" seed="0" slot="18"/>
+      </items>
+      <glyphs>
+        <glyph effect="Your Savage Roar ability grants an additional 3% bonus damage done." icon="ui-glyph-rune-12" id="674" name="Glyph of Savage Roar" type="major"/>
+        <glyph effect="Increases your swim speed by 50% while in Aquatic Form." icon="ui-glyph-rune-3" id="431" name="Glyph of Aquatic Form" type="minor"/>
+        <glyph effect="Increases the duration of Berserk by 5 sec." icon="ui-glyph-rune-1" id="671" name="Glyph of Berserk" type="major"/>
+      </glyphs>
+    </characterTab>
+    <summary>
+      <c earned="252" points="2650" total="1054" totalPoints="11635"/>
+      <category id="92" name="General">
+        <c earned="24" earnedPoints="240" total="54" totalPoints="570"/>
+      </category>
+      <category id="96" name="Quests">
+        <c earned="9" earnedPoints="90" total="49" totalPoints="530"/>
+      </category>
+      <category id="97" name="Exploration">
+        <c earned="66" earnedPoints="760" total="70" totalPoints="830"/>
+      </category>
+      <category id="95" name="Player vs. Player">
+        <c earned="38" earnedPoints="390" total="166" totalPoints="1930"/>
+      </category>
+      <category id="168" name="Dungeons &amp; Raids">
+        <c earned="77" earnedPoints="780" total="454" totalPoints="4915"/>
+      </category>
+      <category id="169" name="Professions">
+        <c earned="23" earnedPoints="230" total="75" totalPoints="760"/>
+      </category>
+      <category id="201" name="Reputation">
+        <c earned="2" earnedPoints="30" total="45" totalPoints="560"/>
+      </category>
+      <category id="155" name="World Events">
+        <c earned="13" earnedPoints="130" total="141" totalPoints="1540"/>
+      </category>
+      <category id="81" name="Feats of Strength">
+        <c earned="3"/>
+      </category>
+    </summary>
+  </characterInfo>
+</page>

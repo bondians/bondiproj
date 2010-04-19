@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/sheet.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-sheet.xml">
+  <tabInfo subTab="profile" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Kellybab&amp;gn=Alliance+Pwners"/>
+  <characterInfo>
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Kellybab" class="Hunter" classId="3" classUrl="c=Hunter" faction="Horde" factionId="1" gender="Female" genderId="1" guildName="Alliance Pwners" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners" lastModified="April 18, 2010" level="80" name="Kellybab" points="930" prefix="" race="Troll" raceId="8" realm="Coilfang" suffix="" titleId="0">
+      <modelBasePath value="http://us.media.battle.net.edgesuite.net/"/>
+    </character>
+    <characterTab>
+      <talentSpecs>
+        <talentSpec active="1" group="1" icon="ability_marksmanship" prim="Marksmanship" treeOne="22" treeThree="0" treeTwo="49"/>
+      </talentSpecs>
+      <buffs/>
+      <debuffs/>
+      <pvp>
+        <lifetimehonorablekills value="11822"/>
+        <arenacurrency value="0"/>
+      </pvp>
+      <professions>
+        <skill id="165" key="leatherworking" max="225" name="Leatherworking" value="140"/>
+        <skill id="393" key="skinning" max="375" name="Skinning" value="310"/>
+      </professions>
+      <characterBars>
+        <health effective="15229"/>
+        <secondBar casting="14" effective="8711" notCasting="40" type="m"/>
+      </characterBars>
+      <baseStats>
+        <strength attack="65" base="75" block="-1" effective="75"/>
+        <agility armor="786" attack="383" base="183" critHitPercent="3.18" effective="393"/>
+        <stamina base="128" effective="736" health="7180" petBonus="221"/>
+        <intellect base="86" critHitPercent="5.18" effective="263" mana="3665" petBonus="-1"/>
+        <spirit base="98" effective="98" healthRegen="16" manaRegen="26"/>
+        <armor base="7477" effective="7477" percent="32.92" petBonus="2617"/>
+      </baseStats>
+      <resistances>
+        <arcane petBonus="0" value="0"/>
+        <fire petBonus="0" value="0"/>
+        <frost petBonus="0" value="0"/>
+        <holy petBonus="0" value="0"/>
+        <nature petBonus="0" value="0"/>
+        <shadow petBonus="0" value="0"/>
+      </resistances>
+      <melee>
+        <mainHandDamage dps="233.3" max="894" min="739" percent="0" speed="3.50"/>
+        <offHandDamage dps="61.8" max="124" min="123" percent="0" speed="2.00"/>
+        <mainHandSpeed hastePercent="0.00" hasteRating="0" value="3.50"/>
+        <offHandSpeed hastePercent="0.00" hasteRating="0" value="2.00"/>
+        <power base="608" effective="1724" increasedDps="123.0"/>
+        <hitRating increasedHitPercent="3.20" penetration="18" reducedArmorPercent="1.29" value="105"/>
+        <critChance percent="15.91" plusPercent="7.93" rating="364"/>
+        <expertise additional="0" percent="0.00" rating="0" value="0"/>
+      </melee>
+      <ranged>
+        <weaponSkill rating="0" value="0"/>
+        <damage dps="266.3" max="702" min="548" percent="0" speed="2.35"/>
+        <speed hastePercent="0.00" hasteRating="0" value="2.35"/>
+        <power base="806" effective="1922" increasedDps="137.0" petAttack="422.84" petSpell="247.36"/>
+        <hitRating increasedHitPercent="3.20" penetration="18" reducedArmorPercent="1.29" value="105"/>
+        <critChance percent="21.11" plusPercent="7.93" rating="364"/>
+      </ranged>
+      <spell>
+        <bonusDamage>
+          <arcane value="99"/>
+          <fire value="99"/>
+          <frost value="99"/>
+          <holy value="99"/>
+          <nature value="99"/>
+          <shadow value="99"/>
+          <petBonus attack="-1" damage="-1" fromType=""/>
+        </bonusDamage>
+        <bonusHealing value="99"/>
+        <hitRating increasedHitPercent="4.00" penetration="0" reducedResist="0" value="105"/>
+        <critChance rating="364">
+          <arcane percent="13.11"/>
+          <fire percent="13.11"/>
+          <frost percent="13.11"/>
+          <holy percent="13.11"/>
+          <nature percent="13.11"/>
+          <shadow percent="13.11"/>
+        </critChance>
+        <penetration value="0"/>
+        <manaRegen casting="14.00" notCasting="40.00"/>
+        <hasteRating hastePercent="0.00" hasteRating="0"/>
+      </spell>
+      <defenses>
+        <armor base="7477" effective="7477" percent="32.92" petBonus="2617"/>
+        <defense decreasePercent="0.00" increasePercent="0.00" plusDefense="0" rating="0" value="398.00"/>
+        <dodge increasePercent="0.00" percent="0.38" rating="0"/>
+        <parry increasePercent="0.00" percent="4.92" rating="0"/>
+        <block increasePercent="0.00" percent="0.00" rating="0"/>
+        <resilience damagePercent="3.78" hitPercent="1.72" value="162.00"/>
+      </defenses>
+      <items>
+        <item displayInfoId="51238" durability="60" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_helmet_104" id="38057" level="146" maxDurability="60" name="Rodent-Proof Headguard" permanentenchant="0" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="2" seed="272541376" slot="0"/>
+        <item displayInfoId="39162" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_necklace_36" id="42041" level="245" maxDurability="0" name="Relentless Gladiator's Pendant of Triumph" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="0" slot="1"/>
+        <item displayInfoId="51576" durability="70" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shoulder_95" id="35616" level="167" maxDurability="70" name="Spored Tendrils Spaulders" permanentenchant="0" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="3" seed="0" slot="2"/>
+        <item displayInfoId="16557" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shirt_12" id="5107" level="14" maxDurability="0" name="Deckhand's Shirt" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="1" seed="1519857216" slot="3"/>
+        <item displayInfoId="52502" durability="120" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_chest_chain_14" id="37780" level="170" maxDurability="120" name="Condor-Bone Chestguard" permanentenchant="0" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="3" seed="0" slot="4"/>
+        <item displayInfoId="48671" durability="50" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_belt_13" id="35151" level="159" maxDurability="50" name="Guardian's Chain Girdle" permanentenchant="0" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="0" slot="5"/>
+        <item displayInfoId="52481" durability="90" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_pants_mail_08" id="37774" level="142" maxDurability="90" name="Leggings of Aqueous Dissolution" permanentenchant="0" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="3" seed="0" slot="6"/>
+        <item displayInfoId="48675" durability="70" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_boots_plate_09" id="35142" level="159" maxDurability="70" name="Guardian's Linked Sabatons" permanentenchant="0" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="0" slot="7"/>
+        <item displayInfoId="61468" durability="50" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_bracer_28" id="41226" level="245" maxDurability="50" name="Relentless Gladiator's Wristguards of Triumph" permanentenchant="0" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="0" slot="8"/>
+        <item displayInfoId="52487" durability="40" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_gauntlets_28" id="37781" level="174" maxDurability="40" name="Grips of the Warming Heart" permanentenchant="0" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="3" seed="998370048" slot="9"/>
+        <item displayInfoId="51279" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_28" id="38749" level="154" maxDurability="0" name="Thane-Reaper's Signet" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="2" seed="657646592" slot="10"/>
+        <item displayInfoId="24646" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_31" id="36419" level="138" maxDurability="0" name="Glass Ring" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="-20" rarity="2" seed="969343016" slot="11"/>
+        <item displayInfoId="16283" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_horn_02" id="38081" level="146" maxDurability="0" name="Scarab of Isanoth" permanentenchant="0" pickUp="PickUpGems" putDown="PutDownGems" randomPropertiesId="0" rarity="2" seed="1369458176" slot="12"/>
+        <item displayInfoId="47095" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="ability_warrior_endlessrage" id="41589" level="156" maxDurability="0" name="Battlemaster's Resolve" permanentenchant="0" pickUp="PickUpWand" putDown="PutDownWand" randomPropertiesId="0" rarity="4" seed="0" slot="13"/>
+        <item displayInfoId="27088" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_cape_07" id="41592" level="156" maxDurability="0" name="The Gladiator's Resolution" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="14"/>
+        <item displayInfoId="49227" durability="85" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_axe_87" id="35870" level="138" maxDurability="85" name="Stoneground Cleaver" permanentenchant="0" pickUp="PickUpMetalLArge" putDown="PutDownLArgeMEtal" randomPropertiesId="0" rarity="2" seed="1237347840" slot="15"/>
+        <item displayInfoId="50152" durability="65" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_weapon_bow_33" id="36625" level="178" maxDurability="65" name="Massive Recurved Bow" permanentenchant="0" pickUp="PickUpWoodSmall" putDown="PutDownWoodSmall" randomPropertiesId="-40" rarity="2" seed="1049100321" slot="17"/>
+        <item displayInfoId="31255" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_tabardpvp_02" id="15197" level="20" maxDurability="0" name="Scout's Tabard" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="1" seed="0" slot="18"/>
+        <item displayInfoId="40200" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_ammo_arrow_01" id="41586" level="154" maxDurability="0" name="Terrorshaft Arrow" permanentenchant="0" pickUp="PickUpWoodSmall" putDown="PutDownWoodSmall" randomPropertiesId="0" rarity="1" seed="0" slot="-1"/>
+      </items>
+      <glyphs/>
+    </characterTab>
+    <summary>
+      <c earned="90" points="930" total="1054" totalPoints="11635"/>
+      <category id="92" name="General">
+        <c earned="17" earnedPoints="170" total="54" totalPoints="570"/>
+      </category>
+      <category id="96" name="Quests">
+        <c earned="7" earnedPoints="70" total="49" totalPoints="530"/>
+      </category>
+      <category id="97" name="Exploration">
+        <c earned="10" earnedPoints="100" total="70" totalPoints="830"/>
+      </category>
+      <category id="95" name="Player vs. Player">
+        <c earned="35" earnedPoints="380" total="166" totalPoints="1930"/>
+      </category>
+      <category id="168" name="Dungeons &amp; Raids">
+        <c earned="0" earnedPoints="0" total="454" totalPoints="4915"/>
+      </category>
+      <category id="169" name="Professions">
+        <c earned="8" earnedPoints="80" total="75" totalPoints="760"/>
+      </category>
+      <category id="201" name="Reputation">
+        <c earned="1" earnedPoints="10" total="45" totalPoints="560"/>
+      </category>
+      <category id="155" name="World Events">
+        <c earned="12" earnedPoints="120" total="141" totalPoints="1540"/>
+      </category>
+      <category id="81" name="Feats of Strength">
+        <c earned="1"/>
+      </category>
+    </summary>
+  </characterInfo>
+</page>

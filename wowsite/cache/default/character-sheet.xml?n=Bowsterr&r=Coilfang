@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/sheet.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-sheet.xml">
+  <tabInfo subTab="profile" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Bowsterr&amp;gn=Alliance+Pwners"/>
+  <characterInfo>
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Bowsterr" class="Death Knight" classId="6" classUrl="c=Death+Knight" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners" lastModified="April 19, 2010" level="80" name="Bowsterr" points="2860" prefix="" race="Tauren" raceId="6" realm="Coilfang" suffix=" the Noble" titleId="122">
+      <modelBasePath value="http://us.media.battle.net.edgesuite.net/"/>
+    </character>
+    <characterTab>
+      <talentSpecs>
+        <talentSpec active="1" group="1" icon="spell_deathknight_unholypresence" prim="Unholy" treeOne="12" treeThree="59" treeTwo="0"/>
+      </talentSpecs>
+      <buffs/>
+      <debuffs/>
+      <pvp>
+        <lifetimehonorablekills value="5445"/>
+        <arenacurrency value="0"/>
+      </pvp>
+      <professions>
+        <skill id="186" key="mining" max="75" name="Mining" value="1"/>
+      </professions>
+      <characterBars>
+        <health effective="28097"/>
+        <secondBar casting="-1" effective="100" notCasting="-1" perFive="-1" type="p"/>
+      </characterBars>
+      <baseStats>
+        <strength attack="2718" base="185" block="-1" effective="1369"/>
+        <agility armor="280" attack="-1" base="108" critHitPercent="5.43" effective="140"/>
+        <stamina base="161" effective="1975" health="19570" petBonus="-1"/>
+        <intellect base="31" critHitPercent="-1.00" effective="41" mana="-1" petBonus="-1"/>
+        <spirit base="61" effective="71" healthRegen="41" manaRegen="-1"/>
+        <armor base="14699" effective="14699" percent="49.11" petBonus="-1"/>
+      </baseStats>
+      <resistances>
+        <arcane petBonus="-1" value="0"/>
+        <fire petBonus="-1" value="0"/>
+        <frost petBonus="-1" value="0"/>
+        <holy petBonus="-1" value="0"/>
+        <nature petBonus="-1" value="0"/>
+        <shadow petBonus="-1" value="0"/>
+      </resistances>
+      <melee>
+        <mainHandDamage dps="576.6" max="2117" min="1777" percent="0" speed="3.38"/>
+        <offHandDamage dps="156.9" max="303" min="302" percent="0" speed="1.93"/>
+        <mainHandSpeed hastePercent="3.65" hasteRating="92" value="3.38"/>
+        <offHandSpeed hastePercent="3.65" hasteRating="92" value="1.93"/>
+        <power base="3366" effective="4233" increasedDps="302.0"/>
+        <hitRating increasedHitPercent="11.47" penetration="209" reducedArmorPercent="14.93" value="376"/>
+        <critChance percent="29.43" plusPercent="21.00" rating="964"/>
+        <expertise additional="0" percent="1.25" rating="0" value="5"/>
+      </melee>
+      <ranged>
+        <weaponSkill rating="0" value="0"/>
+        <damage dps="0.0" max="0" min="0" percent="0" speed="0.00"/>
+        <speed hastePercent="3.65" hasteRating="92" value="0.00"/>
+        <power base="130" effective="997" increasedDps="71.0" petAttack="-1.00" petSpell="-1.00"/>
+        <hitRating increasedHitPercent="11.47" penetration="209" reducedArmorPercent="14.93" value="376"/>
+        <critChance percent="29.43" plusPercent="21.00" rating="964"/>
+      </ranged>
+      <spell>
+        <bonusDamage>
+          <arcane value="0"/>
+          <fire value="0"/>
+          <frost value="0"/>
+          <holy value="0"/>
+          <nature value="0"/>
+          <shadow value="0"/>
+          <petBonus attack="-1" damage="-1" fromType=""/>
+        </bonusDamage>
+        <bonusHealing value="0"/>
+        <hitRating increasedHitPercent="14.33" penetration="0" reducedResist="0" value="376"/>
+        <critChance rating="964">
+          <arcane percent="24.00"/>
+          <fire percent="24.00"/>
+          <frost percent="24.00"/>
+          <holy percent="24.00"/>
+          <nature percent="24.00"/>
+          <shadow percent="24.00"/>
+        </critChance>
+        <penetration value="0"/>
+        <manaRegen casting="0.00" notCasting="0.00"/>
+        <hasteRating hastePercent="3.65" hasteRating="92"/>
+      </spell>
+      <defenses>
+        <armor base="14699" effective="14699" percent="49.11" petBonus="-1"/>
+        <defense decreasePercent="0.00" increasePercent="0.00" plusDefense="0" rating="0" value="400.00"/>
+        <dodge increasePercent="0.00" percent="5.33" rating="0"/>
+        <parry increasePercent="7.56" percent="11.77" rating="342"/>
+        <block increasePercent="0.00" percent="0.00" rating="0"/>
+        <resilience damagePercent="11.13" hitPercent="5.06" value="477.00"/>
+      </defenses>
+      <items>
+        <item displayInfoId="62115" durability="99" gem0Id="41285" gem1Id="40125" gem2Id="0" gemIcon0="inv_jewelcrafting_icediamond_02" gemIcon1="inv_jewelcrafting_gem_38" icon="inv_helmet_130" id="47675" level="245" maxDurability="100" name="Faceplate of Thunderous Rampage" permanentEnchantIcon="ability_warrior_shieldmastery" permanentEnchantItemId="44069" permanentenchant="3795" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="0"/>
+        <item displayInfoId="39162" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_necklace_36" id="51355" level="264" maxDurability="0" name="Wrathful Gladiator's Pendant of Triumph" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="0" slot="1"/>
+        <item displayInfoId="61731" durability="99" gem0Id="40125" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_38" icon="inv_shoulder_88" id="47696" level="245" maxDurability="100" name="Shoulderplates of Trembling Rage" permanentEnchantIcon="spell_holy_weaponmastery" permanentEnchantItemId="44067" permanentenchant="3793" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="2"/>
+        <item displayInfoId="13115" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shirt_08" id="6833" level="25" maxDurability="0" name="White Tuxedo Shirt" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="1" seed="0" slot="3"/>
+        <item displayInfoId="61485" durability="162" gem0Id="40129" gem1Id="40114" gem2Id="40143" gemIcon0="inv_jewelcrafting_gem_40" gemIcon1="inv_jewelcrafting_gem_37" gemIcon2="inv_jewelcrafting_gem_39" icon="inv_chest_plate_24" id="47590" level="245" maxDurability="165" name="Titanium Razorplate" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44465" permanentenchant="3832" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="526035200" slot="4"/>
+        <item displayInfoId="65240" durability="55" gem0Id="40136" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_40" icon="inv_belt_48c" id="51362" level="264" maxDurability="55" name="Wrathful Gladiator's Girdle of Triumph" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="1176271744" slot="5"/>
+        <item displayInfoId="58721" durability="120" gem0Id="40114" gem1Id="40136" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_37" gemIcon1="inv_jewelcrafting_gem_40" icon="inv_pants_plate_27" id="40848" level="232" maxDurability="120" name="Furious Gladiator's Dreadplate Legguards" permanentEnchantIcon="inv_misc_armorkit_33" permanentEnchantItemId="38374" permanentenchant="3823" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="6"/>
+        <item displayInfoId="59251" durability="72" gem0Id="40124" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_38" icon="inv_boots_plate_01" id="40882" level="226" maxDurability="75" name="Furious Gladiator's Greaves of Triumph" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="38986" permanentenchant="3826" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="7"/>
+        <item displayInfoId="65245" durability="55" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_bracer_17" id="51364" level="264" maxDurability="55" name="Wrathful Gladiator's Bracers of Triumph" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44815" permanentenchant="3845" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="8"/>
+        <item displayInfoId="64593" durability="53" gem0Id="40124" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_38" icon="inv_gauntlets_87" id="50095" level="251" maxDurability="55" name="Scourgelord Gauntlets" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44458" permanentenchant="1603" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="9"/>
+        <item displayInfoId="44841" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_71" id="47729" level="245" maxDurability="0" name="Bloodshed Band" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="0" slot="10"/>
+        <item displayInfoId="39129" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_60" id="42117" level="226" maxDurability="0" name="Furious Gladiator's Band of Triumph" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="0" slot="11"/>
+        <item displayInfoId="64254" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_qirajidol_onyx" id="50198" level="232" maxDurability="0" name="Needle-Encrusted Scorpion" permanentenchant="0" pickUp="PickUpWand" putDown="PutDownWand" randomPropertiesId="0" rarity="4" seed="1595022208" slot="12"/>
+        <item displayInfoId="59322" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_gem_bloodstone_03" id="47734" level="245" maxDurability="0" name="Mark of Supremacy" permanentenchant="0" pickUp="PickUpWand" putDown="PutDownWand" randomPropertiesId="0" rarity="4" seed="0" slot="13"/>
+        <item displayInfoId="61564" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_cape_18" id="51354" level="264" maxDurability="0" name="Wrathful Gladiator's Cloak of Triumph" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44457" permanentenchant="1099" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="14"/>
+        <item displayInfoId="64764" durability="119" gem0Id="40125" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_38" icon="inv_axe_96" id="50267" level="232" maxDurability="120" name="Tyrannical Beheader" permanentEnchantIcon="spell_holy_retributionaura" permanentEnchantSpellDesc="Affixes your rune weapon with a rune that has a chance to heal you for 3% and increase total Strength by 15% for 15 sec.  Modifying your rune weapon requires a Rune Forge in Ebon Hold." permanentEnchantSpellName="Rune of the Fallen Crusader" permanentenchant="3368" pickUp="PickUpMetalLArge" putDown="PutDownLArgeMEtal" randomPropertiesId="0" rarity="4" seed="1813146880" slot="15"/>
+        <item displayInfoId="51913" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shield_56" id="47673" level="245" maxDurability="0" name="Sigil of Virulence" permanentenchant="0" pickUp="PickUpWoodSmall" putDown="PutDownWoodSmall" randomPropertiesId="0" rarity="4" seed="0" slot="17"/>
+      </items>
+      <glyphs>
+        <glyph effect="Your Ghoul receives an additional 40% of your Strength and 40% of your Stamina." icon="ui-glyph-rune-3" id="527" name="Glyph of the Ghoul" type="major"/>
+        <glyph effect="Your Death Coil refunds 20 runic power when used to heal." icon="ui-glyph-rune-9" id="518" name="Glyph of Death's Embrace" type="minor"/>
+        <glyph effect="Your Raise Dead spell no longer requires a reagent." icon="ui-glyph-rune-7" id="555" name="Glyph of Raise Dead" type="minor"/>
+        <glyph effect="Your Scourge Strike increases the duration of your diseases on the target by 3 sec, up to a maximum of 9 additional seconds." icon="ui-glyph-rune-1" id="529" name="Glyph of Scourge Strike" type="major"/>
+        <glyph effect="Increases the duration of your Horn of Winter ability by 1 min." icon="ui-glyph-rune-15" id="522" name="Glyph of Horn of Winter" type="minor"/>
+        <glyph effect="Increases the damage done by Unholy Blight by 40%." icon="ui-glyph-rune-7" id="770" name="Glyph of Unholy Blight" type="major"/>
+      </glyphs>
+    </characterTab>
+    <summary>
+      <c earned="279" points="2860" total="1054" totalPoints="11635"/>
+      <category id="92" name="General">
+        <c earned="22" earnedPoints="250" total="54" totalPoints="570"/>
+      </category>
+      <category id="96" name="Quests">
+        <c earned="13" earnedPoints="130" total="49" totalPoints="530"/>
+      </category>
+      <category id="97" name="Exploration">
+        <c earned="19" earnedPoints="190" total="70" totalPoints="830"/>
+      </category>
+      <category id="95" name="Player vs. Player">
+        <c earned="43" earnedPoints="450" total="166" totalPoints="1930"/>
+      </category>
+      <category id="168" name="Dungeons &amp; Raids">
+        <c earned="103" earnedPoints="1040" total="454" totalPoints="4915"/>
+      </category>
+      <category id="169" name="Professions">
+        <c earned="26" earnedPoints="260" total="75" totalPoints="760"/>
+      </category>
+      <category id="201" name="Reputation">
+        <c earned="4" earnedPoints="50" total="45" totalPoints="560"/>
+      </category>
+      <category id="155" name="World Events">
+        <c earned="49" earnedPoints="490" total="141" totalPoints="1540"/>
+      </category>
+      <category id="81" name="Feats of Strength">
+        <c earned="3"/>
+      </category>
+    </summary>
+  </characterInfo>
+</page>

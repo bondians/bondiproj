@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/sheet.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-sheet.xml">
+  <tabInfo subTab="profile" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Rahdeath&amp;gn=Alliance+Pwners"/>
+  <characterInfo>
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Rahdeath" class="Death Knight" classId="6" classUrl="c=Death+Knight" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners" lastModified="April 14, 2010" level="80" name="Rahdeath" points="830" prefix="" race="Undead" raceId="5" realm="Coilfang" suffix="" titleId="0">
+      <modelBasePath value="http://us.media.battle.net.edgesuite.net/"/>
+    </character>
+    <characterTab>
+      <talentSpecs>
+        <talentSpec group="2" icon="spell_deathknight_frostpresence" prim="Frost" treeOne="0" treeThree="12" treeTwo="59"/>
+        <talentSpec active="1" group="1" icon="spell_deathknight_bloodpresence" prim="Blood" treeOne="61" treeThree="10" treeTwo="0"/>
+      </talentSpecs>
+      <buffs/>
+      <debuffs/>
+      <pvp>
+        <lifetimehonorablekills value="51"/>
+        <arenacurrency value="0"/>
+      </pvp>
+      <professions>
+        <skill id="186" key="mining" max="300" name="Mining" value="273"/>
+        <skill id="393" key="skinning" max="450" name="Skinning" value="450"/>
+      </professions>
+      <characterBars>
+        <health effective="18061"/>
+        <secondBar casting="-1" effective="100" notCasting="-1" perFive="-1" type="p"/>
+      </characterBars>
+      <baseStats>
+        <strength attack="1258" base="184" block="-1" effective="639"/>
+        <agility armor="498" attack="-1" base="110" critHitPercent="7.17" effective="249"/>
+        <stamina base="172" effective="1012" health="9940" petBonus="-1"/>
+        <intellect base="33" critHitPercent="-1.00" effective="33" mana="-1" petBonus="-1"/>
+        <spirit base="64" effective="64" healthRegen="38" manaRegen="-1"/>
+        <armor base="11527" effective="11527" percent="43.08" petBonus="-1"/>
+      </baseStats>
+      <resistances>
+        <arcane petBonus="-1" value="0"/>
+        <fire petBonus="-1" value="0"/>
+        <frost petBonus="-1" value="0"/>
+        <holy petBonus="-1" value="0"/>
+        <nature petBonus="-1" value="0"/>
+        <shadow petBonus="-1" value="0"/>
+      </resistances>
+      <melee>
+        <mainHandDamage dps="351.5" max="1329" min="1095" percent="0" speed="3.45"/>
+        <offHandDamage dps="88.3" max="174" min="173" percent="0" speed="1.97"/>
+        <mainHandSpeed hastePercent="1.51" hasteRating="38" value="3.45"/>
+        <offHandSpeed hastePercent="1.51" hasteRating="38" value="1.97"/>
+        <power base="1818" effective="2206" increasedDps="157.0"/>
+        <hitRating increasedHitPercent="10.58" penetration="0" reducedArmorPercent="0.00" value="347"/>
+        <critChance percent="18.45" plusPercent="6.27" rating="288"/>
+        <expertise additional="2" percent="2.00" rating="21" value="8"/>
+      </melee>
+      <ranged>
+        <weaponSkill rating="0" value="0"/>
+        <damage dps="0.0" max="0" min="0" percent="0" speed="0.00"/>
+        <speed hastePercent="1.51" hasteRating="38" value="0.00"/>
+        <power base="239" effective="627" increasedDps="44.0" petAttack="-1.00" petSpell="-1.00"/>
+        <hitRating increasedHitPercent="10.58" penetration="0" reducedArmorPercent="0.00" value="347"/>
+        <critChance percent="8.37" plusPercent="6.27" rating="288"/>
+      </ranged>
+      <spell>
+        <bonusDamage>
+          <arcane value="0"/>
+          <fire value="0"/>
+          <frost value="0"/>
+          <holy value="0"/>
+          <nature value="0"/>
+          <shadow value="0"/>
+          <petBonus attack="-1" damage="-1" fromType=""/>
+        </bonusDamage>
+        <bonusHealing value="0"/>
+        <hitRating increasedHitPercent="13.23" penetration="0" reducedResist="0" value="347"/>
+        <critChance rating="288">
+          <arcane percent="11.27"/>
+          <fire percent="11.27"/>
+          <frost percent="11.27"/>
+          <holy percent="11.27"/>
+          <nature percent="11.27"/>
+          <shadow percent="11.27"/>
+        </critChance>
+        <penetration value="0"/>
+        <manaRegen casting="0.00" notCasting="0.00"/>
+        <hasteRating hastePercent="1.51" hasteRating="38"/>
+      </spell>
+      <defenses>
+        <armor base="11527" effective="11527" percent="43.08" petBonus="-1"/>
+        <defense decreasePercent="0.00" increasePercent="0.00" plusDefense="0" rating="0" value="400.00"/>
+        <dodge increasePercent="0.00" percent="6.64" rating="0"/>
+        <parry increasePercent="3.51" percent="8.41" rating="159"/>
+        <block increasePercent="0.00" percent="0.00" rating="0"/>
+        <resilience damagePercent="0.00" hitPercent="0.00" value="0.00"/>
+      </defenses>
+      <items>
+        <item displayInfoId="51288" durability="61" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_helmet_106" id="38104" level="146" maxDurability="70" name="Stonepath Helm" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="2" seed="1405698560" slot="0"/>
+        <item displayInfoId="9860" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_necklace_09" id="38231" level="138" maxDurability="0" name="Choker of Forceful Redemption" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="3" seed="275849472" slot="1"/>
+        <item displayInfoId="51927" durability="67" gem0Id="39999" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_28" icon="inv_shoulder_92" id="43387" level="175" maxDurability="80" name="Shoulderplates of the Beholder" permanentEnchantIcon="inv_misc_armorkit_30" permanentEnchantItemId="38376" permanentenchant="3330" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="3" seed="1385324032" slot="2"/>
+        <item displayInfoId="53241" durability="120" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_chest_plate02" id="41932" level="158" maxDurability="135" name="Links of the Terrified Deity" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="3" seed="1250622464" slot="4"/>
+        <item displayInfoId="55004" durability="39" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_belt_28" id="35653" level="175" maxDurability="45" name="Girdle of the Mystical Prison" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="3" seed="907948608" slot="5"/>
+        <item displayInfoId="50609" durability="87" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_pants_plate_21" id="37263" level="200" maxDurability="100" name="Legplates of the Oculus Guardian" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="3" seed="0" slot="6"/>
+        <item displayInfoId="51131" durability="55" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_boots_plate_01" id="44361" level="159" maxDurability="65" name="Greaves of the Traitor" permanentEnchantIcon="inv_misc_armorkit_30" permanentEnchantItemId="38376" permanentenchant="3330" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="3" seed="167957744" slot="7"/>
+        <item displayInfoId="55008" durability="39" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_bracer_07" id="37891" level="200" maxDurability="45" name="Cast Iron Shackles" permanentenchant="0" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="3" seed="1141814144" slot="8"/>
+        <item displayInfoId="52406" durability="45" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_gauntlets_28" id="44399" level="187" maxDurability="45" name="Gauntlets of The Culling" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="3" seed="1768571520" slot="9"/>
+        <item displayInfoId="56035" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_57" id="43191" level="174" maxDurability="0" name="Jagged Ice Band" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="3" seed="312763680" slot="10"/>
+        <item displayInfoId="24022" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_16" id="38218" level="155" maxDurability="0" name="Executioner's Band" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="3" seed="371299552" slot="11"/>
+        <item displayInfoId="52326" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="spell_shadow_bloodboil" id="37166" level="200" maxDurability="0" name="Sphere of Red Dragon's Blood" permanentenchant="0" pickUp="PickUpGems" putDown="PutDownGems" randomPropertiesId="0" rarity="3" seed="950339840" slot="12"/>
+        <item displayInfoId="7371" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_pocketwatch_02" id="38259" level="138" maxDurability="0" name="First Mate's Pocketwatch" permanentenchant="0" pickUp="PickUpGems" putDown="PutDownGems" randomPropertiesId="0" rarity="3" seed="688931840" slot="13"/>
+        <item displayInfoId="56738" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_cape_13" id="43566" level="200" maxDurability="0" name="Ice Striker's Cloak" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="977133824" slot="14"/>
+        <item displayInfoId="53200" durability="87" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_axe_82" id="41816" level="175" maxDurability="100" name="De-Raged Waraxe" permanentEnchantIcon="spell_shadow_chilltouch" permanentEnchantSpellDesc="Affixes your rune weapon with a rune that has a chance to increase the damage by 20% for your next 2 attacks that deal Frost or Shadow damage.  Modifying your rune weapon requires a Rune Forge in Ebon Hold." permanentEnchantSpellName="Rune of Cinderglacier" permanentenchant="3369" pickUp="PickUpMetalLArge" putDown="PutDownLArgeMEtal" randomPropertiesId="0" rarity="3" seed="1600898304" slot="15"/>
+        <item displayInfoId="51913" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shield_56" id="39208" level="70" maxDurability="0" name="Sigil of the Dark Rider" permanentenchant="0" pickUp="PickUpWoodSmall" putDown="PutDownWoodSmall" randomPropertiesId="0" rarity="3" seed="1259694096" slot="17"/>
+        <item displayInfoId="54177" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shirt_guildtabard_01" id="43156" level="75" maxDurability="0" name="Tabard of the Wyrmrest Accord" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="1" seed="0" slot="18"/>
+      </items>
+      <glyphs/>
+    </characterTab>
+    <summary>
+      <c earned="83" points="830" total="1054" totalPoints="11635"/>
+      <category id="92" name="General">
+        <c earned="19" earnedPoints="190" total="54" totalPoints="570"/>
+      </category>
+      <category id="96" name="Quests">
+        <c earned="21" earnedPoints="210" total="49" totalPoints="530"/>
+      </category>
+      <category id="97" name="Exploration">
+        <c earned="7" earnedPoints="70" total="70" totalPoints="830"/>
+      </category>
+      <category id="95" name="Player vs. Player">
+        <c earned="5" earnedPoints="50" total="166" totalPoints="1930"/>
+      </category>
+      <category id="168" name="Dungeons &amp; Raids">
+        <c earned="18" earnedPoints="180" total="454" totalPoints="4915"/>
+      </category>
+      <category id="169" name="Professions">
+        <c earned="11" earnedPoints="110" total="75" totalPoints="760"/>
+      </category>
+      <category id="201" name="Reputation">
+        <c earned="1" earnedPoints="10" total="45" totalPoints="560"/>
+      </category>
+      <category id="155" name="World Events">
+        <c earned="1" earnedPoints="10" total="141" totalPoints="1540"/>
+      </category>
+      <category id="81" name="Feats of Strength">
+        <c earned="5"/>
+      </category>
+    </summary>
+  </characterInfo>
+</page>
