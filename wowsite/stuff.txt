@@ -21,8 +21,8 @@ guild.members.keys.each do |dude|
         a = Member.new
         a.name = mem.name
         a.level = mem.level
-        a.racepic = mem.race_icon
-        a.classpic = mem.class_icon
+        a.racepic = mem.race_icon.gsub("images","_images")
+        a.classpic = mem.class_icon.gsub("images","_images")
         a.guild = mem.guild
         a.health = mem.health
         a.armor = mem.defenses.armor.effective
@@ -55,3 +55,12 @@ end
       t.integer :agility
       t.integer :spirit
       t.integer :intellect
+      
+Member.all.each do |mem|
+    unless mem.racepic.include? "_images"
+        mem.racepic = mem.racepic.gsub("images","_images")
+        mem.classpic = mem.classpic.gsub("images","_images")
+        mem.save
+    end
+end
+
