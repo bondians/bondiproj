@@ -6,7 +6,7 @@ class WowInterface
   
   
   def initialize
-    @api = Wowr::API.new (:realm => WowInterface::Realm)
+    @api = Wowr::API.new (:realm => WowInterface::REALM)
   end
   
   def search(name)
