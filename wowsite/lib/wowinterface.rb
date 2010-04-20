@@ -34,7 +34,7 @@ class WowInterface
   def updateMembers
     results = {:added => 0, :removed => 0, :moved => 0}
     armoryData = {}
-    #@api.caching = false
+
     WowInterface::GUILDS.each do |guild|
       @api.guild_name = guild
       g = @api.get_guild
@@ -54,8 +54,16 @@ class WowInterface
     
     members.each {|mem| mem.destroy}
     
-    @api.caching = true
+
     
+  end
+  
+  def caching
+    @api.caching
+  end
+  
+  def caching=(swap)
+    @api.caching = swap
   end
   
 end
