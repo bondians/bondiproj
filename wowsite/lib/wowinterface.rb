@@ -43,15 +43,18 @@ class WowInterface
     
     members = Member.all
     
-    debugger
-    1
-    1
     armoryData.each do |key,value|
-      attributes = getAttributes value
+      dude = @api.get_character key
+      attributes = getAttributes dude
       member = members.find {|mem| mem.name == key} || Member.new
       members.delete member
       member.update_attributes attributes
+      member.save
     end
+    
+    members.each {|mem| mem.destroy}
+    
+    @api.caching = true
     
   end
   
