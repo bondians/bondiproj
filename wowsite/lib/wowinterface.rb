@@ -42,6 +42,7 @@ class WowInterface
     
     members = Member.all
     
+    caching = false
     armoryData.each do |key,value|
       dude = @api.get_character key
       attributes = getAttributes dude
@@ -51,6 +52,7 @@ class WowInterface
       member.save
       sleep 1.5
     end
+    caching = true
     
     members.each {|mem| mem.destroy}
     
