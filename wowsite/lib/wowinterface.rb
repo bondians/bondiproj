@@ -34,13 +34,18 @@ class WowInterface
   def updateMembers
     results = {:added => 0, :removed => 0, :moved => 0}
     armoryData = {}
+    @api.caching = false
     WowInterface::GUILDS.each do |guild|
       @api.guild_name = guild
-      g = api.get_guild guild, :options => {:cache => false}
+      g = @api.get_guild
       armoryData.merge!(g.members.reject {|k,v| v.level < WowInterface::MINIMUMLEVEL})
     end
     
     members = Member.all
+    
+    debugger
+    1
+    1
     armoryData.each do |key,value|
       attributes = getAttributes value
       member = members.find {|mem| mem.name == key} || Member.new
