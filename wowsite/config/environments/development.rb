@@ -18,3 +18,4 @@ config.action_mailer.raise_delivery_errors = false
 
 require 'ruby-debug'
 require 'wowr'
+require 'lib/wowinterface'

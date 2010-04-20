@@ -28,3 +28,4 @@ config.action_view.cache_template_loading            = true
 # config.threadsafe!
 
 require 'wowr'
+require 'lib/wowinterface'
