@@ -30,9 +30,8 @@ class WowInterface
     attributes[:intellect] = data.int.effective
     return attributes
   end
-  
+
   def updateMembers
-    results = {:added => 0, :removed => 0, :moved => 0}
     armoryData = {}
 
     WowInterface::GUILDS.each do |guild|
@@ -50,14 +49,13 @@ class WowInterface
       members.delete member
       member.update_attributes attributes
       member.save
+      sleep 1.5
     end
     
     members.each {|mem| mem.destroy}
     
-
-    
   end
-  
+
   def caching
     @api.caching
   end
