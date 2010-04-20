@@ -3,7 +3,7 @@ class WowInterface
   REALM = 'Coilfang'
   
   def initialize
-    @api = Wowr::API.new)
+    @api = Wowr::API.new
   end
   
   def search(name)
