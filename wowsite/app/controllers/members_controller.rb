@@ -25,7 +25,6 @@ class MembersController < ApplicationController
   # GET /members/new
   # GET /members/new.xml
   def new
-    end
   end
 
   # GET /members/1/edit
