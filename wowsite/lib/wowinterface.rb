@@ -1,4 +1,4 @@
-class WowrInterface << Wowr::API  
+class WowrInterface < Wowr::API  
   
   def initialize
   return super(:character_name => 'Cayuse',
