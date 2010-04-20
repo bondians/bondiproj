@@ -1,9 +1,14 @@
-class WowrInterface < Wowr::API  
+class WowInterface < Wowr::API  
+  
+  REALM = 'Coilfang'
   
   def initialize
-  return super(:character_name => 'Cayuse',
-                            :guild_name => "Alliance Pwners II",
-                            :realm => 'Coilfang')
+    return super
+  end
+  
+  def search(name)
+    results = self.search_charachter name
+    results.select {|dude| dude.realm == WowInterface::REALM}
   end
   
 end
