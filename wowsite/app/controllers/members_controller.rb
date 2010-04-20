@@ -25,11 +25,6 @@ class MembersController < ApplicationController
   # GET /members/new
   # GET /members/new.xml
   def new
-    @member = Member.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @member }
     end
   end
 
