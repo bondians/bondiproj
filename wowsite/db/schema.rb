@@ -9,7 +9,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100421160947) do
+ActiveRecord::Schema.define(:version => 20100421214553) do
+
+  create_table "capabilities", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "goldberg_content_pages", :force => true do |t|
     t.string   "title"
@@ -125,6 +131,13 @@ ActiveRecord::Schema.define(:version => 20100421160947) do
 
   add_index "goldberg_users", ["role_id"], :name => "fk_user_role_id"
 
+  create_table "membercapabilities", :force => true do |t|
+    t.integer  "member_id"
+    t.integer  "capabilities_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "members", :force => true do |t|
     t.string   "name"
     t.integer  "level"
@@ -156,6 +169,21 @@ ActiveRecord::Schema.define(:version => 20100421160947) do
     t.string   "bldg"
     t.integer  "status_id"
     t.integer  "summary_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "teammembers", :force => true do |t|
+    t.integer  "team_id"
+    t.integer  "member_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "teams", :force => true do |t|
+    t.integer  "number"
+    t.integer  "size"
+    t.string   "identity"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

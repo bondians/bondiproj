@@ -1,0 +1,16 @@
+<h1>Editing capability</h1>
+
+<% form_for(@capability) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @capability %> |
+<%= link_to 'Back', capabilities_path %>
