@@ -32,6 +32,11 @@ class WowInterface
   end
 
   def updateMembers
+    system "rm #{RAILS_ROOT}/cache/default/*"
+    
+    debugger
+    1
+    1
     armoryData = {}
 
     WowInterface::GUILDS.each do |guild|
@@ -42,9 +47,8 @@ class WowInterface
     
     members = Member.all
     
-    caching = false
     armoryData.each do |key,value|
-      dude = @api.get_character key, :options => {:caching => false}
+      dude = @api.get_character key
       attributes = getAttributes dude
       member = members.find {|mem| mem.name == key} || Member.new
       members.delete member
@@ -54,7 +58,6 @@ class WowInterface
       puts member.name
       sleep 1.5
     end
-    caching = true
     
     members.each {|mem| mem.destroy}
     
