@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/reputation.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-reputation.xml">
   <tabInfo subTab="reputation" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Zanzamar&amp;gn=Alliance+Pwners+II"/>
   <characterInfo>
-    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Zanzamar" class="Paladin" classId="2" classUrl="c=Paladin" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 17, 2010" level="80" name="Zanzamar" points="2270" prefix="" race="Blood Elf" raceId="10" realm="Coilfang" suffix=" the Patient" titleId="137">
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Zanzamar" class="Paladin" classId="2" classUrl="c=Paladin" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 21, 2010" level="80" name="Zanzamar" points="2280" prefix="" race="Blood Elf" raceId="10" realm="Coilfang" suffix=" the Patient" titleId="137">
       <arenaTeams>
-        <arenaTeam battleGroup="Retaliation" created="1266019200000" faction="Horde" factionId="1" gamesPlayed="0" gamesWon="0" lastSeasonRanking="0" name="SKILLZ" ranking="5596" rating="694" realm="Coilfang" realmUrl="b=Retaliation&amp;r=Coilfang&amp;ts=2&amp;t=SKILLZ&amp;ff=realm&amp;fv=Coilfang&amp;select=SKILLZ" season="0" seasonGamesPlayed="77" seasonGamesWon="26" size="2" teamSize="2" teamUrl="r=Coilfang&amp;ts=2&amp;t=SKILLZ&amp;select=SKILLZ" url="r=Coilfang&amp;ts=2&amp;t=SKILLZ&amp;select=SKILLZ">
+        <arenaTeam battleGroup="Retaliation" created="1266019200000" faction="Horde" factionId="1" gamesPlayed="0" gamesWon="0" lastSeasonRanking="0" name="SKILLZ" ranking="5907" rating="694" realm="Coilfang" realmUrl="b=Retaliation&amp;r=Coilfang&amp;ts=2&amp;t=SKILLZ&amp;ff=realm&amp;fv=Coilfang&amp;select=SKILLZ" season="0" seasonGamesPlayed="77" seasonGamesWon="26" size="2" teamSize="2" teamUrl="r=Coilfang&amp;ts=2&amp;t=SKILLZ&amp;select=SKILLZ" url="r=Coilfang&amp;ts=2&amp;t=SKILLZ&amp;select=SKILLZ">
           <emblem background="ff636ba3" borderColor="ff0fb800" borderStyle="4" iconColor="ffc41100" iconStyle="11"/>
           <members>
             <character battleGroup="" charUrl="r=Coilfang&amp;cn=%C3%90razz" class="Paladin" classId="2" contribution="348" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Crypt Fever" guildId="9162050" guildUrl="r=Coilfang&amp;gn=Crypt+Fever" name="Ðrazz" race="Blood Elf" raceId="10" seasonGamesPlayed="28" seasonGamesWon="8" teamRank="0"/>
@@ -21,7 +21,7 @@
         <faction id="990" key="thescaleofthesands" name="The Scale of the Sands" reputation="1032"/>
         <faction id="933" key="theconsortium" name="The Consortium" reputation="6242"/>
         <faction id="989" key="keepersoftime" name="Keepers of Time" reputation="10"/>
-        <faction id="947" key="thrallmar" name="Thrallmar" reputation="20140"/>
+        <faction id="947" key="thrallmar" name="Thrallmar" reputation="24786"/>
         <faction id="967" key="thevioleteye" name="The Violet Eye" reputation="37879"/>
         <faction id="1012" key="ashtonguedeathsworn" name="Ashtongue Deathsworn" reputation="1108"/>
         <faction id="941" key="themag'har" name="The Mag'har" reputation="11258"/>
@@ -47,7 +47,7 @@
         </faction>
         <faction id="1073" key="thekalu'ak" name="The Kalu'ak" reputation="8900"/>
         <faction id="1119" key="thesonsofhodir" name="The Sons of Hodir" reputation="21082"/>
-        <faction id="1090" key="kirintor" name="Kirin Tor" reputation="9509"/>
+        <faction id="1090" key="kirintor" name="Kirin Tor" reputation="9834"/>
         <faction id="1091" key="thewyrmrestaccord" name="The Wyrmrest Accord" reputation="42999"/>
         <faction id="1106" key="argentcrusade" name="Argent Crusade" reputation="42369"/>
         <faction id="1156" key="theashenverdict" name="The Ashen Verdict" reputation="4615"/>

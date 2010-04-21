@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/sheet.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-sheet.xml">
   <tabInfo subTab="profile" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Truli&amp;gn=Alliance+Pwners"/>
   <characterInfo>
-    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Truli" class="Paladin" classId="2" classUrl="c=Paladin" faction="Horde" factionId="1" gender="Female" genderId="1" guildName="Alliance Pwners" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners" lastModified="April 17, 2010" level="80" name="Truli" points="2300" prefix="" race="Blood Elf" raceId="10" realm="Coilfang" suffix=" the Noble" titleId="122">
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Truli" class="Paladin" classId="2" classUrl="c=Paladin" faction="Horde" factionId="1" gender="Female" genderId="1" guildName="Alliance Pwners" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners" lastModified="April 21, 2010" level="80" name="Truli" points="2330" prefix="" race="Blood Elf" raceId="10" realm="Coilfang" suffix=" the Noble" titleId="122">
       <modelBasePath value="http://us.media.battle.net.edgesuite.net/"/>
     </character>
     <characterTab>
@@ -12,7 +12,7 @@
       <buffs/>
       <debuffs/>
       <pvp>
-        <lifetimehonorablekills value="1047"/>
+        <lifetimehonorablekills value="1097"/>
         <arenacurrency value="25"/>
       </pvp>
       <professions>
@@ -20,16 +20,16 @@
         <skill id="182" key="herbalism" max="450" name="Herbalism" value="450"/>
       </professions>
       <characterBars>
-        <health effective="22884"/>
+        <health effective="15824"/>
         <secondBar casting="0" effective="6304" notCasting="20" type="m"/>
       </characterBars>
       <baseStats>
-        <strength attack="2816" base="170" block="70" effective="1418"/>
+        <strength attack="1430" base="170" block="36" effective="725"/>
         <agility armor="266" attack="-1" base="92" critHitPercent="5.82" effective="133"/>
-        <stamina base="143" effective="1613" health="15950" petBonus="-1"/>
+        <stamina base="143" effective="907" health="8890" petBonus="-1"/>
         <intellect base="101" critHitPercent="4.21" effective="146" mana="1910" petBonus="-1"/>
         <spirit base="103" effective="103" healthRegen="19" manaRegen="20"/>
-        <armor base="14027" effective="14027" percent="47.94" petBonus="-1"/>
+        <armor base="5498" effective="5498" percent="26.52" petBonus="-1"/>
       </baseStats>
       <resistances>
         <arcane petBonus="-1" value="0"/>
@@ -40,71 +40,66 @@
         <shadow petBonus="-1" value="0"/>
       </resistances>
       <melee>
-        <mainHandDamage dps="555.6" max="1932" min="1575" percent="0" speed="3.16"/>
-        <offHandDamage dps="129.6" max="234" min="233" percent="0" speed="1.80"/>
-        <mainHandSpeed hastePercent="10.90" hasteRating="275" value="3.16"/>
-        <offHandSpeed hastePercent="10.90" hasteRating="275" value="1.80"/>
-        <power base="3056" effective="3168" increasedDps="226.0"/>
-        <hitRating increasedHitPercent="12.29" penetration="194" reducedArmorPercent="13.86" value="403"/>
-        <critChance percent="25.37" plusPercent="11.55" rating="530"/>
+        <mainHandDamage dps="140.9" max="271" min="270" percent="0" speed="1.92"/>
+        <offHandDamage dps="70.4" max="136" min="135" percent="0" speed="1.92"/>
+        <mainHandSpeed hastePercent="4.12" hasteRating="104" value="1.92"/>
+        <offHandSpeed hastePercent="4.12" hasteRating="104" value="1.92"/>
+        <power base="1670" effective="1832" increasedDps="130.0"/>
+        <hitRating increasedHitPercent="10.34" penetration="82" reducedArmorPercent="5.86" value="339"/>
+        <critChance percent="10.58" plusPercent="7.04" rating="323"/>
         <expertise additional="0" percent="0.00" rating="0" value="0"/>
       </melee>
       <ranged>
         <weaponSkill rating="0" value="0"/>
         <damage dps="0.0" max="0" min="0" percent="0" speed="0.00"/>
-        <speed hastePercent="10.90" hasteRating="275" value="0.00"/>
-        <power base="123" effective="235" increasedDps="16.0" petAttack="-1.00" petSpell="-1.00"/>
-        <hitRating increasedHitPercent="12.29" penetration="194" reducedArmorPercent="13.86" value="403"/>
-        <critChance percent="15.09" plusPercent="11.55" rating="530"/>
+        <speed hastePercent="4.12" hasteRating="104" value="0.00"/>
+        <power base="123" effective="285" increasedDps="20.0" petAttack="-1.00" petSpell="-1.00"/>
+        <hitRating increasedHitPercent="10.34" penetration="82" reducedArmorPercent="5.86" value="339"/>
+        <critChance percent="10.58" plusPercent="7.04" rating="323"/>
       </ranged>
       <spell>
         <bonusDamage>
-          <arcane value="1070"/>
-          <fire value="1070"/>
-          <frost value="1070"/>
-          <holy value="1070"/>
-          <nature value="1070"/>
-          <shadow value="1070"/>
+          <arcane value="669"/>
+          <fire value="669"/>
+          <frost value="669"/>
+          <holy value="669"/>
+          <nature value="669"/>
+          <shadow value="669"/>
           <petBonus attack="-1" damage="-1" fromType=""/>
         </bonusDamage>
-        <bonusHealing value="1070"/>
-        <hitRating increasedHitPercent="15.36" penetration="0" reducedResist="0" value="403"/>
-        <critChance rating="530">
-          <arcane percent="23.76"/>
-          <fire percent="23.76"/>
-          <frost percent="23.76"/>
-          <holy percent="23.76"/>
-          <nature percent="23.76"/>
-          <shadow percent="23.76"/>
+        <bonusHealing value="669"/>
+        <hitRating increasedHitPercent="12.92" penetration="0" reducedResist="0" value="339"/>
+        <critChance rating="323">
+          <arcane percent="19.25"/>
+          <fire percent="19.25"/>
+          <frost percent="19.25"/>
+          <holy percent="19.25"/>
+          <nature percent="19.25"/>
+          <shadow percent="19.25"/>
         </critChance>
         <penetration value="0"/>
         <manaRegen casting="0.00" notCasting="20.00"/>
-        <hasteRating hastePercent="10.90" hasteRating="275"/>
+        <hasteRating hastePercent="4.12" hasteRating="104"/>
       </spell>
       <defenses>
-        <armor base="14027" effective="14027" percent="47.94" petBonus="-1"/>
-        <defense decreasePercent="0.64" increasePercent="0.64" plusDefense="16" rating="83" value="400.00"/>
-        <dodge increasePercent="1.22" percent="7.61" rating="55"/>
-        <parry increasePercent="1.17" percent="6.82" rating="53"/>
-        <block increasePercent="0.00" percent="5.64" rating="0"/>
-        <resilience damagePercent="0.35" hitPercent="0.16" value="15.00"/>
+        <armor base="5498" effective="5498" percent="26.52" petBonus="-1"/>
+        <defense decreasePercent="0.00" increasePercent="0.00" plusDefense="0" rating="0" value="400.00"/>
+        <dodge increasePercent="0.00" percent="5.74" rating="0"/>
+        <parry increasePercent="0.00" percent="5.00" rating="0"/>
+        <block increasePercent="0.00" percent="5.00" rating="0"/>
+        <resilience damagePercent="0.00" hitPercent="0.00" value="0.00"/>
       </defenses>
       <items>
-        <item displayInfoId="62115" durability="100" gem0Id="41285" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_icediamond_02" icon="inv_helmet_130" id="47675" level="245" maxDurability="100" name="Faceplate of Thunderous Rampage" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="0"/>
+        <item displayInfoId="62115" durability="100" gem0Id="41285" gem1Id="40143" gem2Id="0" gemIcon0="inv_jewelcrafting_icediamond_02" gemIcon1="inv_jewelcrafting_gem_39" icon="inv_helmet_130" id="47675" level="245" maxDurability="100" name="Faceplate of Thunderous Rampage" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="0"/>
         <item displayInfoId="54999" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_necklace_45" id="51808" level="226" maxDurability="0" name="Choker of the Pure Heart" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="1918978432" slot="1"/>
-        <item displayInfoId="62134" durability="100" gem0Id="40160" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_39" icon="inv_shoulder_62" id="47699" level="245" maxDurability="100" name="Shoulderguards of Enduring Order" permanentEnchantIcon="inv_shoulder_61" permanentEnchantItemId="44957" permanentenchant="3852" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="2"/>
-        <item displayInfoId="64845" durability="165" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_chest_plate23" id="49791" level="219" maxDurability="165" name="Lost Reliquary Chestguard" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="805312192" slot="4"/>
-        <item displayInfoId="64847" durability="54" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_belt_70" id="49808" level="219" maxDurability="55" name="Bent Gold Belt" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="427601536" slot="5"/>
+        <item displayInfoId="62893" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_chest_cloth_53" id="21541" level="1" maxDurability="0" name="Festive Black Pant Suit" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="1" seed="0" slot="4"/>
         <item displayInfoId="60555" durability="120" gem0Id="40008" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_27" icon="inv_pants_plate_27" id="47495" level="219" maxDurability="120" name="Legplates of Relentless Onslaught" permanentEnchantIcon="spell_nature_astralrecalgroup" permanentEnchantItemId="41604" permanentenchant="3721" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="521625376" slot="6"/>
-        <item displayInfoId="63410" durability="75" gem0Id="40126" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_38" icon="inv_boots_plate_11" id="47511" level="219" maxDurability="75" name="Plated Greaves of Providence" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="39006" permanentenchant="3232" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="790060832" slot="7"/>
-        <item displayInfoId="64833" durability="55" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_bracer_49" id="50230" level="232" maxDurability="55" name="Malykriss Vambraces" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="1189216064" slot="8"/>
-        <item displayInfoId="64843" durability="55" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_gauntlets_94" id="49855" level="219" maxDurability="55" name="Plated Grips of Korth'azz" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="1780605312" slot="9"/>
+        <item displayInfoId="64833" durability="55" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_bracer_49" id="50230" level="232" maxDurability="55" name="Malykriss Vambraces" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44815" permanentenchant="3845" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="1189216064" slot="8"/>
         <item displayInfoId="53560" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_78" id="40474" level="213" maxDurability="0" name="Surge Needle Ring" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="716109632" slot="10"/>
         <item displayInfoId="33534" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_44" id="47512" level="219" maxDurability="0" name="Sinner's Confession" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="1265911424" slot="11"/>
         <item displayInfoId="61415" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_gem_bloodstone_02" id="47216" level="200" maxDurability="0" name="The Black Heart" permanentenchant="0" pickUp="PickUpWand" putDown="PutDownWand" randomPropertiesId="0" rarity="4" seed="1251388288" slot="12"/>
         <item displayInfoId="59322" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_gem_bloodstone_03" id="47734" level="245" maxDurability="0" name="Mark of Supremacy" permanentenchant="0" pickUp="PickUpWand" putDown="PutDownWand" randomPropertiesId="0" rarity="4" seed="0" slot="13"/>
-        <item displayInfoId="64648" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_cape_16" id="49842" level="219" maxDurability="0" name="Tapestry of the Frozen Throne" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="905397568" slot="14"/>
-        <item displayInfoId="64764" durability="119" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_axe_96" id="50267" level="232" maxDurability="120" name="Tyrannical Beheader" permanentenchant="0" pickUp="PickUpMetalLArge" putDown="PutDownLArgeMEtal" randomPropertiesId="0" rarity="4" seed="1821904896" slot="15"/>
+        <item displayInfoId="64648" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_cape_16" id="49842" level="219" maxDurability="0" name="Tapestry of the Frozen Throne" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="39003" permanentenchant="3831" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="905397568" slot="14"/>
         <item displayInfoId="34960" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_relics_libramofhope" id="47664" level="245" maxDurability="0" name="Libram of Defiance" permanentenchant="0" pickUp="PickUpBook" putDown="PutDownBook" randomPropertiesId="0" rarity="4" seed="0" slot="17"/>
       </items>
       <glyphs>
@@ -114,9 +109,9 @@
       </glyphs>
     </characterTab>
     <summary>
-      <c earned="223" points="2300" total="1054" totalPoints="11635"/>
+      <c earned="226" points="2330" total="1054" totalPoints="11635"/>
       <category id="92" name="General">
-        <c earned="28" earnedPoints="310" total="54" totalPoints="570"/>
+        <c earned="29" earnedPoints="320" total="54" totalPoints="570"/>
       </category>
       <category id="96" name="Quests">
         <c earned="11" earnedPoints="110" total="49" totalPoints="530"/>
@@ -125,10 +120,10 @@
         <c earned="9" earnedPoints="90" total="70" totalPoints="830"/>
       </category>
       <category id="95" name="Player vs. Player">
-        <c earned="29" earnedPoints="310" total="166" totalPoints="1930"/>
+        <c earned="30" earnedPoints="320" total="166" totalPoints="1930"/>
       </category>
       <category id="168" name="Dungeons &amp; Raids">
-        <c earned="84" earnedPoints="850" total="454" totalPoints="4915"/>
+        <c earned="85" earnedPoints="860" total="454" totalPoints="4915"/>
       </category>
       <category id="169" name="Professions">
         <c earned="22" earnedPoints="220" total="75" totalPoints="760"/>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/sheet.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-sheet.xml">
   <tabInfo subTab="profile" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Billyjoebull&amp;gn=Alliance+Pwners+II"/>
   <characterInfo>
-    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Billyjoebull" class="Death Knight" classId="6" classUrl="c=Death+Knight" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 16, 2010" level="80" name="Billyjoebull" points="1955" prefix="" race="Undead" raceId="5" realm="Coilfang" suffix=" the Noble" titleId="122">
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Billyjoebull" class="Death Knight" classId="6" classUrl="c=Death+Knight" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 21, 2010" level="80" name="Billyjoebull" points="1965" prefix="" race="Undead" raceId="5" realm="Coilfang" suffix=" the Noble" titleId="122">
       <modelBasePath value="http://us.media.battle.net.edgesuite.net/"/>
     </character>
     <characterTab>
       <talentSpecs>
-        <talentSpec active="1" group="2" icon="spell_deathknight_frostpresence" prim="Frost" treeOne="11" treeThree="7" treeTwo="53"/>
-        <talentSpec group="1" icon="spell_deathknight_bloodpresence" prim="Blood" treeOne="51" treeThree="20" treeTwo="0"/>
+        <talentSpec group="2" icon="spell_deathknight_frostpresence" prim="Frost" treeOne="11" treeThree="7" treeTwo="53"/>
+        <talentSpec active="1" group="1" icon="spell_deathknight_bloodpresence" prim="Blood" treeOne="51" treeThree="20" treeTwo="0"/>
       </talentSpecs>
       <buffs/>
       <debuffs/>
@@ -20,16 +20,16 @@
         <skill id="186" key="mining" max="450" name="Mining" value="450"/>
       </professions>
       <characterBars>
-        <health effective="35996"/>
+        <health effective="37956"/>
         <secondBar casting="-1" effective="100" notCasting="-1" perFive="-1" type="p"/>
       </characterBars>
       <baseStats>
-        <strength attack="2466" base="180" block="-1" effective="1243"/>
+        <strength attack="2734" base="189" block="-1" effective="1377"/>
         <agility armor="264" attack="-1" base="110" critHitPercent="5.30" effective="132"/>
-        <stamina base="224" effective="2778" health="27600" petBonus="-1"/>
+        <stamina base="231" effective="2974" health="29560" petBonus="-1"/>
         <intellect base="33" critHitPercent="-1.00" effective="33" mana="-1" petBonus="-1"/>
         <spirit base="64" effective="64" healthRegen="38" manaRegen="-1"/>
-        <armor base="17062" effective="17287" percent="53.16" petBonus="-1"/>
+        <armor base="15890" effective="16115" percent="51.41" petBonus="-1"/>
       </baseStats>
       <resistances>
         <arcane petBonus="-1" value="0"/>
@@ -40,21 +40,21 @@
         <shadow petBonus="-1" value="0"/>
       </resistances>
       <melee>
-        <mainHandDamage dps="545.5" max="841" min="630" percent="0" speed="1.35"/>
-        <offHandDamage dps="320.3" max="490" min="374" percent="0" speed="1.35"/>
-        <mainHandSpeed hastePercent="0.00" hasteRating="0" value="1.35"/>
-        <offHandSpeed hastePercent="0.00" hasteRating="0" value="1.35"/>
-        <power base="3186" effective="3186" increasedDps="227.0"/>
-        <hitRating increasedHitPercent="9.73" penetration="0" reducedArmorPercent="0.00" value="319"/>
-        <critChance percent="5.30" plusPercent="0.00" rating="0"/>
-        <expertise additional="8" percent="3.25" rating="69" value="13"/>
+        <mainHandDamage dps="521.5" max="1003" min="771" percent="0" speed="1.70"/>
+        <offHandDamage dps="246.3" max="470" min="368" percent="0" speed="1.70"/>
+        <mainHandSpeed hastePercent="0.00" hasteRating="0" value="1.70"/>
+        <offHandSpeed hastePercent="0.00" hasteRating="0" value="1.70"/>
+        <power base="3763" effective="3763" increasedDps="268.0"/>
+        <hitRating increasedHitPercent="8.36" penetration="0" reducedArmorPercent="0.00" value="274"/>
+        <critChance percent="10.30" plusPercent="0.00" rating="0"/>
+        <expertise additional="17" percent="5.75" rating="142" value="23"/>
       </melee>
       <ranged>
         <weaponSkill rating="0" value="0"/>
         <damage dps="0.0" max="0" min="0" percent="0" speed="0.00"/>
         <speed hastePercent="0.00" hasteRating="0" value="0.00"/>
-        <power base="122" effective="122" increasedDps="8.0" petAttack="-1.00" petSpell="-1.00"/>
-        <hitRating increasedHitPercent="9.73" penetration="0" reducedArmorPercent="0.00" value="319"/>
+        <power base="134" effective="134" increasedDps="9.0" petAttack="-1.00" petSpell="-1.00"/>
+        <hitRating increasedHitPercent="8.36" penetration="0" reducedArmorPercent="0.00" value="274"/>
         <critChance percent="0.74" plusPercent="0.00" rating="0"/>
       </ranged>
       <spell>
@@ -68,24 +68,24 @@
           <petBonus attack="-1" damage="-1" fromType=""/>
         </bonusDamage>
         <bonusHealing value="0"/>
-        <hitRating increasedHitPercent="12.16" penetration="0" reducedResist="0" value="319"/>
+        <hitRating increasedHitPercent="10.45" penetration="0" reducedResist="0" value="274"/>
         <critChance rating="0">
-          <arcane percent="0.00"/>
-          <fire percent="0.00"/>
-          <frost percent="0.00"/>
-          <holy percent="0.00"/>
-          <nature percent="0.00"/>
-          <shadow percent="0.00"/>
+          <arcane percent="5.00"/>
+          <fire percent="5.00"/>
+          <frost percent="5.00"/>
+          <holy percent="5.00"/>
+          <nature percent="5.00"/>
+          <shadow percent="5.00"/>
         </critChance>
         <penetration value="0"/>
         <manaRegen casting="0.00" notCasting="0.00"/>
         <hasteRating hastePercent="0.00" hasteRating="0"/>
       </spell>
       <defenses>
-        <armor base="17062" effective="17287" percent="53.16" petBonus="-1"/>
-        <defense decreasePercent="7.72" increasePercent="7.72" plusDefense="167" rating="822" value="426.00"/>
-        <dodge increasePercent="14.85" percent="29.11" rating="672"/>
-        <parry increasePercent="10.92" percent="19.27" rating="494"/>
+        <armor base="15890" effective="16115" percent="51.41" petBonus="-1"/>
+        <defense decreasePercent="7.84" increasePercent="7.84" plusDefense="170" rating="837" value="426.00"/>
+        <dodge increasePercent="16.40" percent="25.20" rating="742"/>
+        <parry increasePercent="11.67" percent="19.73" rating="528"/>
         <block increasePercent="0.00" percent="0.00" rating="0"/>
         <resilience damagePercent="0.00" hitPercent="0.00" value="0.00"/>
       </defenses>
@@ -96,7 +96,7 @@
         <item displayInfoId="13115" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shirt_08" id="6833" level="25" maxDurability="0" name="White Tuxedo Shirt" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="1" seed="1474217899" slot="3"/>
         <item displayInfoId="62052" durability="165" gem0Id="40111" gem1Id="40119" gem2Id="40126" gemIcon0="inv_jewelcrafting_gem_37" gemIcon1="inv_jewelcrafting_gem_42" gemIcon2="inv_jewelcrafting_gem_38" icon="inv_chest_plate20" id="47592" level="245" maxDurability="165" name="Breastplate of the White Knight" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="39005" permanentenchant="3297" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="1720240256" slot="4"/>
         <item displayInfoId="58770" durability="55" gem0Id="40119" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_42" icon="inv_belt_48a" id="45825" level="226" maxDurability="55" name="Shieldwarder Girdle" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="5"/>
-        <item displayInfoId="53286" durability="120" gem0Id="40138" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_40" icon="inv_pants_plate_21" id="43500" level="200" maxDurability="120" name="Bolstered Legplates" permanentEnchantIcon="inv_misc_armorkit_32" permanentEnchantItemId="38373" permanentenchant="3822" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="1409281152" slot="6"/>
+        <item displayInfoId="64595" durability="120" gem0Id="40119" gem1Id="40119" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_42" gemIcon1="inv_jewelcrafting_gem_42" icon="inv_pants_plate_31" id="50854" level="251" maxDurability="120" name="Scourgelord Legguards" permanentEnchantIcon="inv_misc_armorkit_32" permanentEnchantItemId="38373" permanentenchant="3822" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="6"/>
         <item displayInfoId="64721" durability="75" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_boots_plate_15" id="50207" level="232" maxDurability="75" name="Black Spire Sabatons" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="38966" permanentenchant="1075" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="2100251008" slot="7"/>
         <item displayInfoId="62141" durability="55" gem0Id="40119" gem1Id="40119" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_42" gemIcon1="inv_jewelcrafting_gem_42" icon="inv_bracer_30b" id="47571" level="245" maxDurability="55" name="Saronite Swordbreakers" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44947" permanentenchant="3850" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="1818409728" slot="8"/>
         <item displayInfoId="58750" durability="55" gem0Id="45880" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_42" icon="inv_gauntlets_62" id="45834" level="226" maxDurability="55" name="Gauntlets of the Royal Watch" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="9"/>
@@ -111,15 +111,15 @@
         <item displayInfoId="20621" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shirt_guildtabard_01" id="5976" level="1" maxDurability="0" name="Guild Tabard" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="1" seed="0" slot="18"/>
       </items>
       <glyphs>
-        <glyph effect="Increases the total armor granted by Unbreakable Armor to 30%." icon="ui-glyph-rune-2" id="531" name="Glyph of Unbreakable Armor" type="major"/>
+        <glyph effect="Damage of your Death and Decay spell increased by 20%." icon="ui-glyph-rune-3" id="520" name="Glyph of Death and Decay" type="major"/>
+        <glyph effect="Your Raise Dead spell no longer requires a reagent." icon="ui-glyph-rune-7" id="555" name="Glyph of Raise Dead" type="minor"/>
+        <glyph effect="Increases the damage of your Obliterate ability by 25%." icon="ui-glyph-rune-4" id="525" name="Glyph of Obliterate" type="major"/>
         <glyph effect="Increases the duration of your Horn of Winter ability by 1 min." icon="ui-glyph-rune-15" id="522" name="Glyph of Horn of Winter" type="minor"/>
-        <glyph effect="Increases the chance for your Dark Command ability to work successfully by 8%." icon="ui-glyph-rune-11" id="511" name="Glyph of Dark Command" type="major"/>
-        <glyph effect="Your Blood Tap no longer causes damage to you." icon="ui-glyph-rune-13" id="514" name="Glyph of Blood Tap" type="minor"/>
-        <glyph effect="When you deal a killing blow that grants honor or experience, the cooldown of your Death Grip is refreshed." icon="ui-glyph-rune-6" id="519" name="Glyph of Death Grip" type="major"/>
+        <glyph effect="Your Plague Strike does 20% additional damage." icon="ui-glyph-rune-18" id="526" name="Glyph of Plague Strike" type="major"/>
       </glyphs>
     </characterTab>
     <summary>
-      <c earned="189" points="1955" total="1054" totalPoints="11635"/>
+      <c earned="190" points="1965" total="1054" totalPoints="11635"/>
       <category id="92" name="General">
         <c earned="23" earnedPoints="260" total="54" totalPoints="570"/>
       </category>
@@ -133,7 +133,7 @@
         <c earned="15" earnedPoints="150" total="166" totalPoints="1930"/>
       </category>
       <category id="168" name="Dungeons &amp; Raids">
-        <c earned="77" earnedPoints="780" total="454" totalPoints="4915"/>
+        <c earned="78" earnedPoints="790" total="454" totalPoints="4915"/>
       </category>
       <category id="169" name="Professions">
         <c earned="13" earnedPoints="130" total="75" totalPoints="760"/>

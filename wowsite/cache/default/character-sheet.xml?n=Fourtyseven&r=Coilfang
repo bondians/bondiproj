@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/sheet.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-sheet.xml">
   <tabInfo subTab="profile" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Fourtyseven&amp;gn=Alliance+Pwners"/>
   <characterInfo>
-    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Fourtyseven" class="Hunter" classId="3" classUrl="c=Hunter" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners" lastModified="April 19, 2010" level="80" name="Fourtyseven" points="2300" prefix="" race="Blood Elf" raceId="10" realm="Coilfang" suffix=" the Explorer" titleId="47">
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Fourtyseven" class="Hunter" classId="3" classUrl="c=Hunter" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners" lastModified="April 21, 2010" level="80" name="Fourtyseven" points="2310" prefix="" race="Blood Elf" raceId="10" realm="Coilfang" suffix=" the Explorer" titleId="47">
       <modelBasePath value="http://us.media.battle.net.edgesuite.net/"/>
     </character>
     <characterTab>
@@ -45,7 +45,7 @@
         <offHandSpeed hastePercent="0.00" hasteRating="0" value="2.00"/>
         <power base="1148" effective="2816" increasedDps="201.0"/>
         <hitRating increasedHitPercent="3.39" penetration="90" reducedArmorPercent="6.43" value="111"/>
-        <critChance percent="24.62" plusPercent="10.85" rating="498"/>
+        <critChance percent="24.86" plusPercent="10.85" rating="498"/>
         <expertise additional="3" percent="0.75" rating="31" value="3"/>
       </melee>
       <ranged>
@@ -89,23 +89,23 @@
         <resilience damagePercent="6.70" hitPercent="3.04" value="287.00"/>
       </defenses>
       <items>
-        <item displayInfoId="64946" durability="44" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_helmet_157" id="49824" level="219" maxDurability="85" name="Horns of the Spurned Val'kyr" permanentenchant="0" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="1034418688" slot="0"/>
+        <item displayInfoId="64946" durability="80" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_helmet_157" id="49824" level="219" maxDurability="85" name="Horns of the Spurned Val'kyr" permanentenchant="0" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="1034418688" slot="0"/>
         <item displayInfoId="39162" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_necklace_36" id="51355" level="264" maxDurability="0" name="Wrathful Gladiator's Pendant of Triumph" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="0" slot="1"/>
-        <item displayInfoId="62107" durability="43" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shoulder_100" id="47705" level="245" maxDurability="85" name="Pauldrons of the Devourer" permanentenchant="0" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="0" slot="2"/>
+        <item displayInfoId="62107" durability="84" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shoulder_100" id="47705" level="245" maxDurability="85" name="Pauldrons of the Devourer" permanentenchant="0" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="0" slot="2"/>
         <item displayInfoId="10834" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shirt_white_01" id="16060" level="20" maxDurability="0" name="Common White Shirt" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="1" seed="0" slot="3"/>
-        <item displayInfoId="58802" durability="66" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_chest_mail_02" id="41087" level="232" maxDurability="140" name="Furious Gladiator's Chain Armor" permanentenchant="0" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="0" slot="4"/>
-        <item displayInfoId="52343" durability="19" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_belt_26" id="37095" level="187" maxDurability="40" name="Waistband of the Thuzadin" permanentenchant="0" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="3" seed="313307636" slot="5"/>
-        <item displayInfoId="52336" durability="48" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_pants_mail_16" id="35585" level="179" maxDurability="90" name="Cannibal's Legguards" permanentenchant="0" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="3" seed="1817391104" slot="6"/>
-        <item displayInfoId="55011" durability="29" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_boots_chain_12" id="37870" level="200" maxDurability="60" name="Twin-Headed Boots" permanentenchant="0" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="3" seed="1770464384" slot="7"/>
-        <item displayInfoId="53811" durability="26" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_bracer_09" id="37170" level="200" maxDurability="50" name="Interwoven Scale Bracers" permanentenchant="0" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="1713932224" slot="8"/>
-        <item displayInfoId="59681" durability="27" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_gauntlets_73" id="41143" level="232" maxDurability="50" name="Furious Gladiator's Chain Gauntlets" permanentenchant="0" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="0" slot="9"/>
+        <item displayInfoId="58802" durability="139" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_chest_mail_02" id="41087" level="232" maxDurability="140" name="Furious Gladiator's Chain Armor" permanentenchant="0" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="0" slot="4"/>
+        <item displayInfoId="52343" durability="40" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_belt_26" id="37095" level="187" maxDurability="40" name="Waistband of the Thuzadin" permanentenchant="0" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="3" seed="313307636" slot="5"/>
+        <item displayInfoId="52336" durability="88" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_pants_mail_16" id="35585" level="179" maxDurability="90" name="Cannibal's Legguards" permanentenchant="0" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="3" seed="1817391104" slot="6"/>
+        <item displayInfoId="55011" durability="59" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_boots_chain_12" id="37870" level="200" maxDurability="60" name="Twin-Headed Boots" permanentenchant="0" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="3" seed="1770464384" slot="7"/>
+        <item displayInfoId="53811" durability="48" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_bracer_09" id="37170" level="200" maxDurability="50" name="Interwoven Scale Bracers" permanentenchant="0" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="1713932224" slot="8"/>
+        <item displayInfoId="59681" durability="50" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_gauntlets_73" id="41143" level="232" maxDurability="50" name="Furious Gladiator's Chain Gauntlets" permanentenchant="0" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="0" slot="9"/>
         <item displayInfoId="44841" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_71" id="37685" level="200" maxDurability="0" name="Mobius Band" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="3" seed="1173590272" slot="10"/>
         <item displayInfoId="33728" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_47" id="37151" level="200" maxDurability="0" name="Band of Frosted Thorns" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="3" seed="1835522560" slot="11"/>
         <item displayInfoId="31282" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="spell_fire_fire" id="37660" level="200" maxDurability="0" name="Forge Ember" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="3" seed="0" slot="12"/>
         <item displayInfoId="6337" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_talisman_01" id="43829" level="174" maxDurability="0" name="Crusader's Locket" permanentenchant="0" pickUp="PickUpGems" putDown="PutDownGems" randomPropertiesId="0" rarity="2" seed="1469919232" slot="13"/>
         <item displayInfoId="43086" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_cape_06" id="37840" level="200" maxDurability="0" name="Shroud of Reverberation" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="3" seed="624946304" slot="14"/>
-        <item displayInfoId="54903" durability="71" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_staff_84" id="37883" level="200" maxDurability="120" name="Staff of Trickery" permanentenchant="0" pickUp="PutDownWoodSmall" putDown="PutDownWoodLarge" randomPropertiesId="0" rarity="4" seed="901368952" slot="15"/>
-        <item displayInfoId="51692" durability="37" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_weapon_crossbow_28" id="37191" level="200" maxDurability="90" name="Drake-Mounted Crossbow" permanentenchant="0" pickUp="PickUpWoodSmall" putDown="PutDownWoodSmall" randomPropertiesId="0" rarity="4" seed="0" slot="17"/>
+        <item displayInfoId="54903" durability="120" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_staff_84" id="37883" level="200" maxDurability="120" name="Staff of Trickery" permanentenchant="0" pickUp="PutDownWoodSmall" putDown="PutDownWoodLarge" randomPropertiesId="0" rarity="4" seed="901368952" slot="15"/>
+        <item displayInfoId="51692" durability="88" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_weapon_crossbow_28" id="37191" level="200" maxDurability="90" name="Drake-Mounted Crossbow" permanentenchant="0" pickUp="PickUpWoodSmall" putDown="PutDownWoodSmall" randomPropertiesId="0" rarity="4" seed="0" slot="17"/>
         <item displayInfoId="40200" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_ammo_arrow_01" id="41586" level="154" maxDurability="0" name="Terrorshaft Arrow" permanentenchant="0" pickUp="PickUpWoodSmall" putDown="PutDownWoodSmall" randomPropertiesId="0" rarity="1" seed="0" slot="-1"/>
       </items>
       <glyphs>
@@ -114,12 +114,12 @@
       </glyphs>
     </characterTab>
     <summary>
-      <c earned="219" points="2300" total="1054" totalPoints="11635"/>
+      <c earned="220" points="2310" total="1054" totalPoints="11635"/>
       <category id="92" name="General">
         <c earned="17" earnedPoints="170" total="54" totalPoints="570"/>
       </category>
       <category id="96" name="Quests">
-        <c earned="6" earnedPoints="60" total="49" totalPoints="530"/>
+        <c earned="7" earnedPoints="70" total="49" totalPoints="530"/>
       </category>
       <category id="97" name="Exploration">
         <c earned="66" earnedPoints="760" total="70" totalPoints="830"/>

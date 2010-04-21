@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/sheet.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-sheet.xml">
   <tabInfo subTab="profile" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Safeara&amp;gn=Alliance+Pwners+II"/>
   <characterInfo>
-    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Safeara" class="Warlock" classId="9" classUrl="c=Warlock" faction="Horde" factionId="1" gender="Female" genderId="1" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 17, 2010" level="80" name="Safeara" points="4005" prefix="Twilight Vanquisher " race="Undead" raceId="5" realm="Coilfang" suffix="" titleId="89">
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Safeara" class="Warlock" classId="9" classUrl="c=Warlock" faction="Horde" factionId="1" gender="Female" genderId="1" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 21, 2010" level="80" name="Safeara" points="4015" prefix="Twilight Vanquisher " race="Undead" raceId="5" realm="Coilfang" suffix="" titleId="89">
       <modelBasePath value="http://us.media.battle.net.edgesuite.net/"/>
     </character>
     <characterTab>
@@ -12,7 +12,7 @@
       <buffs/>
       <debuffs/>
       <pvp>
-        <lifetimehonorablekills value="5401"/>
+        <lifetimehonorablekills value="5404"/>
         <arenacurrency value="0"/>
       </pvp>
       <professions>
@@ -69,13 +69,13 @@
         </bonusDamage>
         <bonusHealing value="2755"/>
         <hitRating increasedHitPercent="18.26" penetration="0" reducedResist="0" value="479"/>
-        <critChance rating="934">
-          <arcane percent="33.75"/>
-          <fire percent="33.75"/>
-          <frost percent="33.75"/>
-          <holy percent="33.75"/>
-          <nature percent="33.75"/>
-          <shadow percent="33.75"/>
+        <critChance rating="885">
+          <arcane percent="32.68"/>
+          <fire percent="32.68"/>
+          <frost percent="32.68"/>
+          <holy percent="32.68"/>
+          <nature percent="32.68"/>
+          <shadow percent="32.68"/>
         </critChance>
         <penetration value="0"/>
         <manaRegen casting="0.00" notCasting="331.00"/>
@@ -119,7 +119,7 @@
       </glyphs>
     </characterTab>
     <summary>
-      <c earned="391" points="4005" total="1054" totalPoints="11635"/>
+      <c earned="392" points="4015" total="1054" totalPoints="11635"/>
       <category id="92" name="General">
         <c earned="31" earnedPoints="340" total="54" totalPoints="570"/>
       </category>
@@ -127,7 +127,7 @@
         <c earned="13" earnedPoints="130" total="49" totalPoints="530"/>
       </category>
       <category id="97" name="Exploration">
-        <c earned="22" earnedPoints="220" total="70" totalPoints="830"/>
+        <c earned="23" earnedPoints="230" total="70" totalPoints="830"/>
       </category>
       <category id="95" name="Player vs. Player">
         <c earned="55" earnedPoints="570" total="166" totalPoints="1930"/>

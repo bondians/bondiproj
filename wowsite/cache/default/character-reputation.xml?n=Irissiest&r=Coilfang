@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/reputation.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-reputation.xml">
   <tabInfo subTab="reputation" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Irissiest&amp;gn=Alliance+Pwners+II"/>
   <characterInfo>
-    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Irissiest" class="Priest" classId="5" classUrl="c=Priest" faction="Horde" factionId="1" gender="Female" genderId="1" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 16, 2010" level="80" name="Irissiest" points="3500" prefix="" race="Blood Elf" raceId="10" realm="Coilfang" suffix=" the Noble" titleId="122">
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Irissiest" class="Priest" classId="5" classUrl="c=Priest" faction="Horde" factionId="1" gender="Female" genderId="1" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 21, 2010" level="80" name="Irissiest" points="3540" prefix="" race="Blood Elf" raceId="10" realm="Coilfang" suffix=" the Noble" titleId="122">
       <arenaTeams>
-        <arenaTeam battleGroup="Retaliation" created="1257638400000" faction="Horde" factionId="1" gamesPlayed="0" gamesWon="0" lastSeasonRanking="0" name="Steamwheedle" ranking="7149" rating="239" realm="Coilfang" realmUrl="b=Retaliation&amp;r=Coilfang&amp;ts=2&amp;t=Steamwheedle&amp;ff=realm&amp;fv=Coilfang&amp;select=Steamwheedle" season="0" seasonGamesPlayed="21" seasonGamesWon="5" size="2" teamSize="2" teamUrl="r=Coilfang&amp;ts=2&amp;t=Steamwheedle&amp;select=Steamwheedle" url="r=Coilfang&amp;ts=2&amp;t=Steamwheedle&amp;select=Steamwheedle">
+        <arenaTeam battleGroup="Retaliation" created="1257638400000" faction="Horde" factionId="1" gamesPlayed="0" gamesWon="0" lastSeasonRanking="0" name="Steamwheedle" ranking="7526" rating="239" realm="Coilfang" realmUrl="b=Retaliation&amp;r=Coilfang&amp;ts=2&amp;t=Steamwheedle&amp;ff=realm&amp;fv=Coilfang&amp;select=Steamwheedle" season="0" seasonGamesPlayed="21" seasonGamesWon="5" size="2" teamSize="2" teamUrl="r=Coilfang&amp;ts=2&amp;t=Steamwheedle&amp;select=Steamwheedle" url="r=Coilfang&amp;ts=2&amp;t=Steamwheedle&amp;select=Steamwheedle">
           <emblem background="fff5d7fd" borderColor="ff030708" borderStyle="5" iconColor="ff02030d" iconStyle="71"/>
           <members>
             <character battleGroup="" charUrl="r=Coilfang&amp;cn=Cronixx" class="Death Knight" classId="6" contribution="239" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners II" guildId="9452058" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" name="Cronixx" race="Orc" raceId="2" seasonGamesPlayed="21" seasonGamesWon="5" teamRank="0"/>
@@ -52,17 +52,17 @@
           <faction id="1104" key="frenzyhearttribe" name="Frenzyheart Tribe" reputation="-14227"/>
           <faction id="1105" key="theoracles" name="The Oracles" reputation="11101"/>
         </faction>
-        <faction id="1119" key="thesonsofhodir" name="The Sons of Hodir" reputation="23290"/>
+        <faction id="1119" key="thesonsofhodir" name="The Sons of Hodir" reputation="26540"/>
         <faction id="1090" key="kirintor" name="Kirin Tor" reputation="42999"/>
         <faction id="1091" key="thewyrmrestaccord" name="The Wyrmrest Accord" reputation="42678"/>
         <faction id="1106" key="argentcrusade" name="Argent Crusade" reputation="42999"/>
-        <faction id="1156" key="theashenverdict" name="The Ashen Verdict" reputation="11579"/>
+        <faction id="1156" key="theashenverdict" name="The Ashen Verdict" reputation="14121"/>
       </faction>
       <faction header="1" iconKey="classic" id="1118" key="classic" name="Classic">
         <faction header="1" iconKey="classic" id="892" key="hordeforces" name="Horde Forces">
           <faction id="729" key="frostwolfclan" name="Frostwolf Clan" reputation="24748"/>
           <faction id="510" key="thedefilers" name="The Defilers" reputation="2720"/>
-          <faction id="889" key="warsongoutriders" name="Warsong Outriders" reputation="1140"/>
+          <faction id="889" key="warsongoutriders" name="Warsong Outriders" reputation="1560"/>
         </faction>
         <faction id="749" key="hydraxianwaterlords" name="Hydraxian Waterlords" reputation="114"/>
         <faction id="909" key="darkmoonfaire" name="Darkmoon Faire" reputation="0"/>

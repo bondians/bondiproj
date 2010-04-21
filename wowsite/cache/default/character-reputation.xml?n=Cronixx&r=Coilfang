@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/reputation.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-reputation.xml">
   <tabInfo subTab="reputation" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Cronixx&amp;gn=Alliance+Pwners+II"/>
   <characterInfo>
-    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Cronixx" class="Death Knight" classId="6" classUrl="c=Death+Knight" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 17, 2010" level="80" name="Cronixx" points="2930" prefix="" race="Orc" raceId="2" realm="Coilfang" suffix="" titleId="0">
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Cronixx" class="Death Knight" classId="6" classUrl="c=Death+Knight" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 21, 2010" level="80" name="Cronixx" points="2930" prefix="" race="Orc" raceId="2" realm="Coilfang" suffix="" titleId="0">
       <arenaTeams>
-        <arenaTeam battleGroup="Retaliation" created="1257638400000" faction="Horde" factionId="1" gamesPlayed="0" gamesWon="0" lastSeasonRanking="0" name="Steamwheedle" ranking="7149" rating="239" realm="Coilfang" realmUrl="b=Retaliation&amp;r=Coilfang&amp;ts=2&amp;t=Steamwheedle&amp;ff=realm&amp;fv=Coilfang&amp;select=Steamwheedle" season="0" seasonGamesPlayed="21" seasonGamesWon="5" size="2" teamSize="2" teamUrl="r=Coilfang&amp;ts=2&amp;t=Steamwheedle&amp;select=Steamwheedle" url="r=Coilfang&amp;ts=2&amp;t=Steamwheedle&amp;select=Steamwheedle">
+        <arenaTeam battleGroup="Retaliation" created="1257638400000" faction="Horde" factionId="1" gamesPlayed="0" gamesWon="0" lastSeasonRanking="0" name="Steamwheedle" ranking="7526" rating="239" realm="Coilfang" realmUrl="b=Retaliation&amp;r=Coilfang&amp;ts=2&amp;t=Steamwheedle&amp;ff=realm&amp;fv=Coilfang&amp;select=Steamwheedle" season="0" seasonGamesPlayed="21" seasonGamesWon="5" size="2" teamSize="2" teamUrl="r=Coilfang&amp;ts=2&amp;t=Steamwheedle&amp;select=Steamwheedle" url="r=Coilfang&amp;ts=2&amp;t=Steamwheedle&amp;select=Steamwheedle">
           <emblem background="fff5d7fd" borderColor="ff030708" borderStyle="5" iconColor="ff02030d" iconStyle="71"/>
           <members>
             <character battleGroup="" charUrl="r=Coilfang&amp;cn=Cronixx" class="Death Knight" classId="6" contribution="239" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners II" guildId="9452058" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" name="Cronixx" race="Orc" raceId="2" seasonGamesPlayed="21" seasonGamesWon="5" teamRank="0"/>
@@ -12,13 +12,13 @@
             <character battleGroup="" charUrl="r=Coilfang&amp;cn=Irissi" class="Death Knight" classId="6" contribution="0" gamesPlayed="0" gamesWon="0" gender="Female" genderId="1" guild="Alliance Pwners II" guildId="9452058" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" name="Irissi" race="Blood Elf" raceId="10" seasonGamesPlayed="0" seasonGamesWon="0" teamRank="1"/>
           </members>
         </arenaTeam>
-        <arenaTeam battleGroup="Retaliation" created="1257638400000" faction="Horde" factionId="1" gamesPlayed="0" gamesWon="0" lastSeasonRanking="0" name="Bringers of Death" ranking="2059" rating="704" realm="Coilfang" realmUrl="b=Retaliation&amp;r=Coilfang&amp;ts=3&amp;t=Bringers+of+Death&amp;ff=realm&amp;fv=Coilfang&amp;select=Bringers+of+Death" season="0" seasonGamesPlayed="59" seasonGamesWon="17" size="3" teamSize="3" teamUrl="r=Coilfang&amp;ts=3&amp;t=Bringers+of+Death&amp;select=Bringers+of+Death" url="r=Coilfang&amp;ts=3&amp;t=Bringers+of+Death&amp;select=Bringers+of+Death">
+        <arenaTeam battleGroup="Retaliation" created="1257638400000" faction="Horde" factionId="1" gamesPlayed="0" gamesWon="0" lastSeasonRanking="0" name="Bringers of Death" ranking="2015" rating="819" realm="Coilfang" realmUrl="b=Retaliation&amp;r=Coilfang&amp;ts=3&amp;t=Bringers+of+Death&amp;ff=realm&amp;fv=Coilfang&amp;select=Bringers+of+Death" season="0" seasonGamesPlayed="85" seasonGamesWon="28" size="3" teamSize="3" teamUrl="r=Coilfang&amp;ts=3&amp;t=Bringers+of+Death&amp;select=Bringers+of+Death" url="r=Coilfang&amp;ts=3&amp;t=Bringers+of+Death&amp;select=Bringers+of+Death">
           <emblem background="ff040a0b" borderColor="ffcd1216" borderStyle="4" iconColor="ffa35f14" iconStyle="58"/>
           <members>
-            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Sulair" class="Warlock" classId="9" contribution="704" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners II" guildId="9452058" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" name="Sulair" race="Orc" raceId="2" seasonGamesPlayed="59" seasonGamesWon="17" teamRank="0"/>
+            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Sulair" class="Warlock" classId="9" contribution="819" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners II" guildId="9452058" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" name="Sulair" race="Orc" raceId="2" seasonGamesPlayed="85" seasonGamesWon="28" teamRank="0"/>
             <character battleGroup="" charUrl="r=Coilfang&amp;cn=Calvana" class="Mage" classId="8" contribution="285" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners" guildId="3585075" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners" name="Calvana" race="Blood Elf" raceId="10" seasonGamesPlayed="0" seasonGamesWon="0" teamRank="1"/>
-            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Cronixx" class="Death Knight" classId="6" contribution="704" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners II" guildId="9452058" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" name="Cronixx" race="Orc" raceId="2" seasonGamesPlayed="59" seasonGamesWon="17" teamRank="1"/>
-            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Grumbel" class="Hunter" classId="3" contribution="704" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners II" guildId="9452058" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" name="Grumbel" race="Troll" raceId="8" seasonGamesPlayed="59" seasonGamesWon="17" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Cronixx" class="Death Knight" classId="6" contribution="819" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners II" guildId="9452058" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" name="Cronixx" race="Orc" raceId="2" seasonGamesPlayed="85" seasonGamesWon="28" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Grumbel" class="Hunter" classId="3" contribution="819" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners II" guildId="9452058" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" name="Grumbel" race="Troll" raceId="8" seasonGamesPlayed="85" seasonGamesWon="28" teamRank="1"/>
           </members>
         </arenaTeam>
         <arenaTeam battleGroup="Retaliation" created="1257638400000" faction="Horde" factionId="1" gamesPlayed="0" gamesWon="0" lastSeasonRanking="0" name="Alliance Pwners" ranking="0" rating="0" realm="Coilfang" realmUrl="b=Retaliation&amp;r=Coilfang&amp;ts=5&amp;t=Alliance+Pwners&amp;ff=realm&amp;fv=Coilfang&amp;select=Alliance+Pwners" season="0" seasonGamesPlayed="0" seasonGamesWon="0" size="5" teamSize="5" teamUrl="r=Coilfang&amp;ts=5&amp;t=Alliance+Pwners&amp;select=Alliance+Pwners" url="r=Coilfang&amp;ts=5&amp;t=Alliance+Pwners&amp;select=Alliance+Pwners">
@@ -69,12 +69,12 @@
         <faction id="1090" key="kirintor" name="Kirin Tor" reputation="42999"/>
         <faction id="1091" key="thewyrmrestaccord" name="The Wyrmrest Accord" reputation="42682"/>
         <faction id="1106" key="argentcrusade" name="Argent Crusade" reputation="9945"/>
-        <faction id="1156" key="theashenverdict" name="The Ashen Verdict" reputation="36394"/>
+        <faction id="1156" key="theashenverdict" name="The Ashen Verdict" reputation="38954"/>
       </faction>
       <faction header="1" iconKey="classic" id="1118" key="classic" name="Classic">
         <faction header="1" iconKey="classic" id="892" key="hordeforces" name="Horde Forces">
           <faction id="729" key="frostwolfclan" name="Frostwolf Clan" reputation="42999"/>
-          <faction id="510" key="thedefilers" name="The Defilers" reputation="9160"/>
+          <faction id="510" key="thedefilers" name="The Defilers" reputation="9200"/>
           <faction id="889" key="warsongoutriders" name="Warsong Outriders" reputation="6895"/>
         </faction>
         <faction id="909" key="darkmoonfaire" name="Darkmoon Faire" reputation="0"/>

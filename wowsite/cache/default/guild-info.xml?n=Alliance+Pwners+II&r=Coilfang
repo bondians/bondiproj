@@ -1,66 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/guild/roster.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/guild-info.xml">
   <tabInfo subTab="guildRoster" tab="guild" tabGroup="guild" tabUrl="r=Coilfang&amp;gn=Alliance+Pwners+II"/>
   <guildInfo>
-    <guildHeader battleGroup="Retaliation" count="55" faction="1" name="Alliance Pwners II" nameUrl="Alliance+Pwners+II" realm="Coilfang" realmUrl="Coilfang" url="r=Coilfang&amp;gn=Alliance+Pwners+II">
+    <guildHeader battleGroup="Retaliation" count="58" faction="1" name="Alliance Pwners II" nameUrl="Alliance+Pwners+II" realm="Coilfang" realmUrl="Coilfang" url="r=Coilfang&amp;gn=Alliance+Pwners+II">
       <emblem emblemBackground="44" emblemBorderColor="14" emblemBorderStyle="0" emblemIconColor="14" emblemIconStyle="39"/>
     </guildHeader>
     <guild>
-      <members memberCount="55">
-        <character achPoints="3435" classId="6" genderId="1" level="80" name="Irissi" raceId="10" rank="4" url="r=Coilfang&amp;cn=Irissi"/>
+      <members memberCount="58">
+        <character achPoints="4420" classId="2" genderId="1" level="80" name="Darksuray" raceId="10" rank="8" url="r=Coilfang&amp;cn=Darksuray"/>
+        <character achPoints="5265" classId="9" genderId="0" level="80" name="Avathars" raceId="10" rank="9" url="r=Coilfang&amp;cn=Avathars"/>
         <character achPoints="2415" classId="4" genderId="1" level="80" name="Aellatha" raceId="10" rank="8" url="r=Coilfang&amp;cn=Aellatha"/>
-        <character achPoints="2735" classId="5" genderId="0" level="80" name="Wisejoshx" raceId="10" rank="8" url="r=Coilfang&amp;cn=Wisejoshx"/>
+        <character achPoints="3445" classId="6" genderId="1" level="80" name="Irissi" raceId="10" rank="4" url="r=Coilfang&amp;cn=Irissi"/>
+        <character achPoints="2185" classId="3" genderId="0" level="80" name="Aintsicknomo" raceId="8" rank="9" url="r=Coilfang&amp;cn=Aintsicknomo"/>
+        <character achPoints="770" classId="8" genderId="1" level="80" name="Azumikan" raceId="10" rank="8" url="r=Coilfang&amp;cn=Azumikan"/>
         <character achPoints="340" classId="7" genderId="0" level="80" name="Nagarich" raceId="8" rank="8" url="r=Coilfang&amp;cn=Nagarich"/>
         <character achPoints="2115" classId="4" genderId="0" level="80" name="Dyonloker" raceId="10" rank="5" url="r=Coilfang&amp;cn=Dyonloker"/>
         <character achPoints="2720" classId="2" genderId="1" level="80" name="Fermentia" raceId="10" rank="8" url="r=Coilfang&amp;cn=Fermentia"/>
-        <character achPoints="290" classId="6" genderId="0" level="80" name="Corvintheus" raceId="10" rank="8" url="r=Coilfang&amp;cn=Corvintheus"/>
         <character achPoints="2585" classId="11" genderId="1" level="80" name="Elyril" raceId="6" rank="8" url="r=Coilfang&amp;cn=Elyril"/>
-        <character achPoints="2050" classId="3" genderId="0" level="80" name="Littlecal" raceId="10" rank="4" url="r=Coilfang&amp;cn=Littlecal"/>
+        <character achPoints="330" classId="6" genderId="0" level="80" name="Corvintheus" raceId="10" rank="8" url="r=Coilfang&amp;cn=Corvintheus"/>
+        <character achPoints="2085" classId="3" genderId="0" level="80" name="Littlecal" raceId="10" rank="4" url="r=Coilfang&amp;cn=Littlecal"/>
         <character achPoints="0" classId="8" genderId="1" level="80" name="Gallithe" raceId="10" rank="9" url="r=Coilfang&amp;cn=Gallithe"/>
-        <character achPoints="4515" classId="7" genderId="0" level="80" name="Soulblight" raceId="6" rank="2" url="r=Coilfang&amp;cn=Soulblight"/>
-        <character achPoints="3080" classId="5" genderId="0" level="80" name="Ingwe" raceId="10" rank="5" url="r=Coilfang&amp;cn=Ingwe"/>
-        <character achPoints="1955" classId="6" genderId="0" level="80" name="Billyjoebull" raceId="5" rank="7" url="r=Coilfang&amp;cn=Billyjoebull"/>
+        <character achPoints="1845" classId="8" genderId="1" level="80" name="Tessa" raceId="10" rank="9" url="r=Coilfang&amp;cn=Tessa"/>
+        <character achPoints="4535" classId="7" genderId="0" level="80" name="Soulblight" raceId="6" rank="2" url="r=Coilfang&amp;cn=Soulblight"/>
+        <character achPoints="3090" classId="5" genderId="0" level="80" name="Ingwe" raceId="10" rank="5" url="r=Coilfang&amp;cn=Ingwe"/>
         <character achPoints="700" classId="3" genderId="0" level="80" name="Evilrjay" raceId="10" rank="8" url="r=Coilfang&amp;cn=Evilrjay"/>
-        <character achPoints="2650" classId="11" genderId="1" level="80" name="Psychoriot" raceId="6" rank="4" url="r=Coilfang&amp;cn=Psychoriot"/>
-        <character achPoints="4050" classId="7" genderId="0" level="80" name="Flathoof" raceId="6" rank="2" url="r=Coilfang&amp;cn=Flathoof"/>
-        <character achPoints="3835" classId="3" genderId="1" level="80" name="Heyyou" raceId="6" rank="8" url="r=Coilfang&amp;cn=Heyyou"/>
-        <character achPoints="3800" classId="3" genderId="0" level="80" name="Grumbel" raceId="8" rank="1" url="r=Coilfang&amp;cn=Grumbel"/>
-        <character achPoints="1525" classId="2" genderId="1" level="80" name="Saralas" raceId="10" rank="7" url="r=Coilfang&amp;cn=Saralas"/>
-        <character achPoints="2910" classId="9" genderId="0" level="80" name="Fdubulous" raceId="5" rank="5" url="r=Coilfang&amp;cn=Fdubulous"/>
-        <character achPoints="3985" classId="11" genderId="0" level="80" name="Arosh" raceId="6" rank="7" url="r=Coilfang&amp;cn=Arosh"/>
+        <character achPoints="1965" classId="6" genderId="0" level="80" name="Billyjoebull" raceId="5" rank="7" url="r=Coilfang&amp;cn=Billyjoebull"/>
+        <character achPoints="2670" classId="11" genderId="1" level="80" name="Psychoriot" raceId="6" rank="4" url="r=Coilfang&amp;cn=Psychoriot"/>
+        <character achPoints="4095" classId="7" genderId="0" level="80" name="Flathoof" raceId="6" rank="2" url="r=Coilfang&amp;cn=Flathoof"/>
+        <character achPoints="3845" classId="3" genderId="1" level="80" name="Heyyou" raceId="6" rank="8" url="r=Coilfang&amp;cn=Heyyou"/>
+        <character achPoints="3820" classId="3" genderId="0" level="80" name="Grumbel" raceId="8" rank="1" url="r=Coilfang&amp;cn=Grumbel"/>
+        <character achPoints="1535" classId="2" genderId="1" level="80" name="Saralas" raceId="10" rank="7" url="r=Coilfang&amp;cn=Saralas"/>
+        <character achPoints="2950" classId="9" genderId="0" level="80" name="Fdubulous" raceId="5" rank="5" url="r=Coilfang&amp;cn=Fdubulous"/>
+        <character achPoints="3995" classId="11" genderId="0" level="80" name="Arosh" raceId="6" rank="7" url="r=Coilfang&amp;cn=Arosh"/>
         <character achPoints="5395" classId="3" genderId="0" level="80" name="Mokuu" raceId="8" rank="5" url="r=Coilfang&amp;cn=Mokuu"/>
-        <character achPoints="1955" classId="9" genderId="0" level="80" name="Orcslayerz" raceId="2" rank="9" url="r=Coilfang&amp;cn=Orcslayerz"/>
-        <character achPoints="1675" classId="11" genderId="0" level="80" name="Thaid" raceId="6" rank="1" url="r=Coilfang&amp;cn=Thaid"/>
+        <character achPoints="2010" classId="9" genderId="0" level="80" name="Orcslayerz" raceId="2" rank="9" url="r=Coilfang&amp;cn=Orcslayerz"/>
+        <character achPoints="1705" classId="11" genderId="0" level="80" name="Thaid" raceId="6" rank="1" url="r=Coilfang&amp;cn=Thaid"/>
         <character achPoints="160" classId="7" genderId="1" level="80" name="Medestirra" raceId="8" rank="9" url="r=Coilfang&amp;cn=Medestirra"/>
-        <character achPoints="180" classId="2" genderId="0" level="80" name="Unclebadtuch" raceId="10" rank="5" url="r=Coilfang&amp;cn=Unclebadtuch"/>
-        <character achPoints="5380" classId="6" genderId="1" level="80" name="Leavoxs" raceId="10" rank="8" url="r=Coilfang&amp;cn=Leavoxs"/>
-        <character achPoints="2880" classId="3" genderId="0" level="80" name="Chevchelios" raceId="10" rank="7" url="r=Coilfang&amp;cn=Chevchelios"/>
         <character achPoints="1440" classId="5" genderId="0" level="80" name="Thunderstuc" raceId="10" rank="5" url="r=Coilfang&amp;cn=Thunderstuc"/>
-        <character achPoints="3975" classId="9" genderId="1" level="80" name="Safeara" raceId="5" rank="5" url="r=Coilfang&amp;cn=Safeara"/>
+        <character achPoints="2880" classId="3" genderId="0" level="80" name="Chevchelios" raceId="10" rank="7" url="r=Coilfang&amp;cn=Chevchelios"/>
+        <character achPoints="5380" classId="6" genderId="1" level="80" name="Leavoxs" raceId="10" rank="8" url="r=Coilfang&amp;cn=Leavoxs"/>
         <character achPoints="360" classId="7" genderId="0" level="80" name="Allìpwñer" raceId="6" rank="7" url="r=Coilfang&amp;cn=All%C3%ACpw%C3%B1er"/>
-        <character achPoints="1895" classId="8" genderId="0" level="80" name="Mageoflife" raceId="10" rank="8" url="r=Coilfang&amp;cn=Mageoflife"/>
-        <character achPoints="3415" classId="2" genderId="0" level="80" name="Billykid" raceId="10" rank="7" url="r=Coilfang&amp;cn=Billykid"/>
+        <character achPoints="4015" classId="9" genderId="1" level="80" name="Safeara" raceId="5" rank="5" url="r=Coilfang&amp;cn=Safeara"/>
+        <character achPoints="3435" classId="2" genderId="0" level="80" name="Billykid" raceId="10" rank="7" url="r=Coilfang&amp;cn=Billykid"/>
         <character achPoints="1570" classId="5" genderId="0" level="80" name="Fixyougood" raceId="8" rank="8" url="r=Coilfang&amp;cn=Fixyougood"/>
-        <character achPoints="935" classId="9" genderId="0" level="80" name="Dethlokor" raceId="5" rank="7" url="r=Coilfang&amp;cn=Dethlokor"/>
+        <character achPoints="1895" classId="8" genderId="0" level="80" name="Mageoflife" raceId="10" rank="8" url="r=Coilfang&amp;cn=Mageoflife"/>
+        <character achPoints="945" classId="9" genderId="0" level="80" name="Dethlokor" raceId="5" rank="7" url="r=Coilfang&amp;cn=Dethlokor"/>
         <character achPoints="2425" classId="6" genderId="0" level="80" name="Deathhoof" raceId="6" rank="9" url="r=Coilfang&amp;cn=Deathhoof"/>
         <character achPoints="2930" classId="6" genderId="0" level="80" name="Cronixx" raceId="2" rank="7" url="r=Coilfang&amp;cn=Cronixx"/>
-        <character achPoints="3855" classId="5" genderId="1" level="80" name="Rabellious" raceId="5" rank="5" url="r=Coilfang&amp;cn=Rabellious"/>
-        <character achPoints="2355" classId="2" genderId="0" level="80" name="Rajreb" raceId="10" rank="9" url="r=Coilfang&amp;cn=Rajreb"/>
-        <character achPoints="3000" classId="9" genderId="0" level="80" name="Sulair" raceId="2" rank="0" url="r=Coilfang&amp;cn=Sulair"/>
-        <character achPoints="2295" classId="6" genderId="0" level="80" name="Thedis" raceId="10" rank="7" url="r=Coilfang&amp;cn=Thedis"/>
-        <character achPoints="2270" classId="2" genderId="0" level="80" name="Zanzamar" raceId="10" rank="8" url="r=Coilfang&amp;cn=Zanzamar"/>
+        <character achPoints="3920" classId="5" genderId="1" level="80" name="Rabellious" raceId="5" rank="5" url="r=Coilfang&amp;cn=Rabellious"/>
+        <character achPoints="3810" classId="11" genderId="1" level="80" name="Ravalah" raceId="6" rank="7" url="r=Coilfang&amp;cn=Ravalah"/>
+        <character achPoints="3020" classId="9" genderId="0" level="80" name="Sulair" raceId="2" rank="0" url="r=Coilfang&amp;cn=Sulair"/>
+        <character achPoints="2365" classId="6" genderId="0" level="80" name="Thedis" raceId="10" rank="9" url="r=Coilfang&amp;cn=Thedis"/>
+        <character achPoints="2280" classId="2" genderId="0" level="80" name="Zanzamar" raceId="10" rank="8" url="r=Coilfang&amp;cn=Zanzamar"/>
         <character achPoints="700" classId="8" genderId="1" level="80" name="Pristaah" raceId="5" rank="8" url="r=Coilfang&amp;cn=Pristaah"/>
-        <character achPoints="465" classId="8" genderId="0" level="80" name="Vallinmagi" raceId="10" rank="7" url="r=Coilfang&amp;cn=Vallinmagi"/>
+        <character achPoints="485" classId="8" genderId="0" level="80" name="Vallinmagi" raceId="10" rank="7" url="r=Coilfang&amp;cn=Vallinmagi"/>
         <character achPoints="3130" classId="1" genderId="0" level="80" name="Draal" raceId="6" rank="9" url="r=Coilfang&amp;cn=Draal"/>
-        <character achPoints="2425" classId="2" genderId="0" level="80" name="Rigellus" raceId="10" rank="7" url="r=Coilfang&amp;cn=Rigellus"/>
         <character achPoints="1175" classId="8" genderId="0" level="80" name="Dlanod" raceId="5" rank="8" url="r=Coilfang&amp;cn=Dlanod"/>
-        <character achPoints="3475" classId="2" genderId="1" level="80" name="Syriantha" raceId="10" rank="8" url="r=Coilfang&amp;cn=Syriantha"/>
+        <character achPoints="2425" classId="2" genderId="0" level="80" name="Rigellus" raceId="10" rank="7" url="r=Coilfang&amp;cn=Rigellus"/>
+        <character achPoints="3485" classId="2" genderId="1" level="80" name="Syriantha" raceId="10" rank="8" url="r=Coilfang&amp;cn=Syriantha"/>
         <character achPoints="855" classId="2" genderId="0" level="80" name="Daholytank" raceId="10" rank="9" url="r=Coilfang&amp;cn=Daholytank"/>
-        <character achPoints="3560" classId="7" genderId="1" level="80" name="Tepeecreeper" raceId="8" rank="7" url="r=Coilfang&amp;cn=Tepeecreeper"/>
         <character achPoints="3150" classId="2" genderId="0" level="80" name="Trìvíum" raceId="10" rank="8" url="r=Coilfang&amp;cn=Tr%C3%ACv%C3%ADum"/>
+        <character achPoints="3560" classId="7" genderId="1" level="80" name="Tepeecreeper" raceId="8" rank="7" url="r=Coilfang&amp;cn=Tepeecreeper"/>
         <character achPoints="1880" classId="9" genderId="0" level="80" name="Dunbandora" raceId="5" rank="7" url="r=Coilfang&amp;cn=Dunbandora"/>
-        <character achPoints="915" classId="5" genderId="1" level="80" name="Irissiest" raceId="10" rank="6" url="r=Coilfang&amp;cn=Irissiest"/>
-        <character achPoints="3450" classId="1" genderId="0" level="80" name="Cayuse" raceId="5" rank="1" url="r=Coilfang&amp;cn=Cayuse"/>
-        <character achPoints="1550" classId="5" genderId="1" level="80" name="Elini" raceId="10" rank="8" url="r=Coilfang&amp;cn=Elini"/>
+        <character achPoints="955" classId="5" genderId="1" level="80" name="Irissiest" raceId="10" rank="6" url="r=Coilfang&amp;cn=Irissiest"/>
+        <character achPoints="1560" classId="5" genderId="1" level="80" name="Elini" raceId="10" rank="8" url="r=Coilfang&amp;cn=Elini"/>
+        <character achPoints="3470" classId="1" genderId="0" level="80" name="Cayuse" raceId="5" rank="1" url="r=Coilfang&amp;cn=Cayuse"/>
       </members>
     </guild>
   </guildInfo>

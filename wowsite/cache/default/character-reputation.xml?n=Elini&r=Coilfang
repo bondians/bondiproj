@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/reputation.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-reputation.xml">
   <tabInfo subTab="reputation" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Elini&amp;gn=Alliance+Pwners+II"/>
   <characterInfo>
-    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Elini" class="Priest" classId="5" classUrl="c=Priest" faction="Horde" factionId="1" gender="Female" genderId="1" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 16, 2010" level="80" name="Elini" points="1550" prefix="" race="Blood Elf" raceId="10" realm="Coilfang" suffix=" the Patient" titleId="137">
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Elini" class="Priest" classId="5" classUrl="c=Priest" faction="Horde" factionId="1" gender="Female" genderId="1" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 21, 2010" level="80" name="Elini" points="1560" prefix="" race="Blood Elf" raceId="10" realm="Coilfang" suffix=" the Patient" titleId="137">
       <modelBasePath value="http://us.media.battle.net.edgesuite.net/"/>
     </character>
     <reputationTab>
@@ -22,10 +22,10 @@
       <faction header="1" iconKey="wrathofthelichking" id="1097" key="wrathofthelichking" name="Wrath of the Lich King">
         <faction id="1098" key="knightsoftheebonblade" name="Knights of the Ebon Blade" reputation="2158"/>
         <faction header="1" iconKey="wrathofthelichking" id="1052" key="hordeexpedition" name="Horde Expedition" reputation="42999">
-          <faction id="1124" key="thesunreavers" name="The Sunreavers" reputation="28791"/>
-          <faction id="1085" key="warsongoffensive" name="Warsong Offensive" reputation="37330"/>
-          <faction id="1067" key="thehandofvengeance" name="The Hand of Vengeance" reputation="35938"/>
-          <faction id="1064" key="thetaunka" name="The Taunka" reputation="34303"/>
+          <faction id="1124" key="thesunreavers" name="The Sunreavers" reputation="34308"/>
+          <faction id="1085" key="warsongoffensive" name="Warsong Offensive" reputation="42847"/>
+          <faction id="1067" key="thehandofvengeance" name="The Hand of Vengeance" reputation="41456"/>
+          <faction id="1064" key="thetaunka" name="The Taunka" reputation="39821"/>
         </faction>
         <faction id="1073" key="thekalu'ak" name="The Kalu'ak" reputation="5000"/>
         <faction header="1" iconKey="wrathofthelichking" id="1117" key="sholazarbasin" name="Sholazar Basin">
@@ -36,7 +36,7 @@
         <faction id="1090" key="kirintor" name="Kirin Tor" reputation="42370"/>
         <faction id="1091" key="thewyrmrestaccord" name="The Wyrmrest Accord" reputation="7046"/>
         <faction id="1106" key="argentcrusade" name="Argent Crusade" reputation="14872"/>
-        <faction id="1156" key="theashenverdict" name="The Ashen Verdict" reputation="1636"/>
+        <faction id="1156" key="theashenverdict" name="The Ashen Verdict" reputation="3748"/>
       </faction>
       <faction header="1" iconKey="classic" id="1118" key="classic" name="Classic">
         <faction header="1" iconKey="classic" id="892" key="hordeforces" name="Horde Forces">

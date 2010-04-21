@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/sheet.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-sheet.xml">
   <tabInfo subTab="profile" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Mokuu&amp;gn=Alliance+Pwners+II"/>
   <characterInfo>
-    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Mokuu" class="Hunter" classId="3" classUrl="c=Hunter" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 17, 2010" level="80" name="Mokuu" points="5395" prefix="Loremaster " race="Troll" raceId="8" realm="Coilfang" suffix="" titleId="93">
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Mokuu" class="Hunter" classId="3" classUrl="c=Hunter" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 21, 2010" level="80" name="Mokuu" points="5395" prefix="Loremaster " race="Troll" raceId="8" realm="Coilfang" suffix="" titleId="93">
       <modelBasePath value="http://us.media.battle.net.edgesuite.net/"/>
     </character>
     <characterTab>
@@ -12,7 +12,7 @@
       <buffs/>
       <debuffs/>
       <pvp>
-        <lifetimehonorablekills value="882"/>
+        <lifetimehonorablekills value="906"/>
         <arenacurrency value="0"/>
       </pvp>
       <professions>
@@ -20,16 +20,16 @@
         <skill id="202" key="engineering" max="450" name="Engineering" value="450"/>
       </professions>
       <characterBars>
-        <health effective="20114"/>
-        <secondBar casting="10" effective="13976" notCasting="54" type="m"/>
+        <health effective="20794"/>
+        <secondBar casting="10" effective="14051" notCasting="54" type="m"/>
       </characterBars>
       <baseStats>
         <strength attack="75" base="75" block="-1" effective="85"/>
-        <agility armor="3892" attack="1936" base="190" critHitPercent="21.82" effective="1946"/>
-        <stamina base="128" effective="1297" health="12790" petBonus="389"/>
-        <intellect base="89" critHitPercent="7.29" effective="614" mana="8930" petBonus="-1"/>
+        <agility armor="4058" attack="2019" base="190" critHitPercent="22.82" effective="2029"/>
+        <stamina base="128" effective="1365" health="13470" petBonus="410"/>
+        <intellect base="89" critHitPercent="7.32" effective="619" mana="9005" petBonus="-1"/>
         <spirit base="98" effective="108" healthRegen="17" manaRegen="44"/>
-        <armor base="13055" effective="13055" percent="46.15" petBonus="4569"/>
+        <armor base="13253" effective="13253" percent="46.53" petBonus="4639"/>
       </baseStats>
       <resistances>
         <arcane petBonus="0" value="0"/>
@@ -40,22 +40,22 @@
         <shadow petBonus="0" value="0"/>
       </resistances>
       <melee>
-        <mainHandDamage dps="585.4" max="1491" min="1163" percent="0" speed="2.27"/>
-        <offHandDamage dps="172.7" max="302" min="301" percent="0" speed="1.74"/>
-        <mainHandSpeed hastePercent="14.70" hasteRating="482" value="2.27"/>
-        <offHandSpeed hastePercent="14.70" hasteRating="482" value="1.74"/>
-        <power base="2171" effective="4128" increasedDps="294.0"/>
-        <hitRating increasedHitPercent="12.75" penetration="477" reducedArmorPercent="34.08" value="418"/>
-        <critChance percent="40.35" plusPercent="13.53" rating="621"/>
+        <mainHandDamage dps="596.6" max="1525" min="1196" percent="0" speed="2.28"/>
+        <offHandDamage dps="298.2" max="440" min="344" percent="0" speed="1.32"/>
+        <mainHandSpeed hastePercent="14.03" hasteRating="460" value="2.28"/>
+        <offHandSpeed hastePercent="14.03" hasteRating="460" value="1.32"/>
+        <power base="2254" effective="4303" increasedDps="307.0"/>
+        <hitRating increasedHitPercent="12.75" penetration="524" reducedArmorPercent="37.44" value="418"/>
+        <critChance percent="43.04" plusPercent="15.23" rating="699"/>
         <expertise additional="0" percent="0.00" rating="0" value="0"/>
       </melee>
       <ranged>
         <weaponSkill rating="0" value="0"/>
-        <damage dps="788.5" max="1907" min="1560" percent="0" speed="2.20"/>
-        <speed hastePercent="14.70" hasteRating="482" value="2.20"/>
-        <power base="2710" effective="4667" increasedDps="333.0" petAttack="1026.74" petSpell="600.64"/>
-        <hitRating increasedHitPercent="12.75" penetration="477" reducedArmorPercent="34.08" value="418"/>
-        <critChance percent="47.22" plusPercent="14.40" rating="661"/>
+        <damage dps="802.3" max="1947" min="1600" percent="0" speed="2.21"/>
+        <speed hastePercent="14.03" hasteRating="460" value="2.21"/>
+        <power base="2798" effective="4847" increasedDps="346.0" petAttack="1066.34" petSpell="623.81"/>
+        <hitRating increasedHitPercent="12.75" penetration="524" reducedArmorPercent="37.44" value="418"/>
+        <critChance percent="49.91" plusPercent="16.10" rating="739"/>
       </ranged>
       <spell>
         <bonusDamage>
@@ -69,44 +69,45 @@
         </bonusDamage>
         <bonusHealing value="0"/>
         <hitRating increasedHitPercent="15.93" penetration="0" reducedResist="0" value="418"/>
-        <critChance rating="621">
-          <arcane percent="20.81"/>
-          <fire percent="20.81"/>
-          <frost percent="20.81"/>
-          <holy percent="20.81"/>
-          <nature percent="20.81"/>
-          <shadow percent="20.81"/>
+        <critChance rating="699">
+          <arcane percent="22.54"/>
+          <fire percent="22.54"/>
+          <frost percent="22.54"/>
+          <holy percent="22.54"/>
+          <nature percent="22.54"/>
+          <shadow percent="22.54"/>
         </critChance>
         <penetration value="0"/>
         <manaRegen casting="10.00" notCasting="54.00"/>
-        <hasteRating hastePercent="14.70" hasteRating="482"/>
+        <hasteRating hastePercent="14.03" hasteRating="460"/>
       </spell>
       <defenses>
-        <armor base="13055" effective="13055" percent="46.15" petBonus="4569"/>
+        <armor base="13253" effective="13253" percent="46.53" petBonus="4639"/>
         <defense decreasePercent="0.00" increasePercent="0.00" plusDefense="0" rating="0" value="400.00"/>
-        <dodge increasePercent="0.00" percent="16.16" rating="0"/>
+        <dodge increasePercent="0.00" percent="16.90" rating="0"/>
         <parry increasePercent="0.00" percent="5.00" rating="0"/>
         <block increasePercent="0.00" percent="0.00" rating="0"/>
         <resilience damagePercent="0.00" hitPercent="0.00" value="0.00"/>
       </defenses>
       <items>
-        <item displayInfoId="62098" durability="85" gem0Id="41398" gem1Id="40147" gem2Id="0" gemIcon0="inv_jewelcrafting_shadowspirit_02" gemIcon1="inv_jewelcrafting_gem_39" icon="inv_helmet_100" id="47684" level="245" maxDurability="85" name="Coif of the Brooding Dragon" permanentEnchantIcon="ability_warrior_rampage" permanentEnchantItemId="44149" permanentenchant="3817" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="0" slot="0"/>
+        <item displayInfoId="62098" durability="43" gem0Id="41398" gem1Id="40147" gem2Id="0" gemIcon0="inv_jewelcrafting_shadowspirit_02" gemIcon1="inv_jewelcrafting_gem_39" icon="inv_helmet_100" id="47684" level="245" maxDurability="85" name="Coif of the Brooding Dragon" permanentEnchantIcon="ability_warrior_rampage" permanentEnchantItemId="44149" permanentenchant="3817" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="0" slot="0"/>
         <item displayInfoId="53560" durability="0" gem0Id="40112" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_37" icon="inv_jewelry_ring_78" id="50852" level="251" maxDurability="0" name="Precious's Putrid Collar" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="0" slot="1"/>
-        <item displayInfoId="64804" durability="85" gem0Id="45879" gem1Id="40131" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_37" gemIcon1="inv_jewelcrafting_gem_40" icon="inv_shoulder_113" id="50792" level="251" maxDurability="85" name="Pauldrons of Lost Hope" permanentEnchantIcon="inv_axe_85" permanentEnchantItemId="44871" permanentenchant="3808" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="1320343552" slot="2"/>
-        <item displayInfoId="61219" durability="140" gem0Id="40112" gem1Id="40130" gem2Id="40147" gemIcon0="inv_jewelcrafting_gem_37" gemIcon1="inv_jewelcrafting_gem_40" gemIcon2="inv_jewelcrafting_gem_39" icon="inv_chest_mail_03" id="47596" level="245" maxDurability="140" name="Crusader's Dragonscale Breastplate" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44465" permanentenchant="3832" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="1201340032" slot="4"/>
-        <item displayInfoId="64820" durability="50" gem0Id="40147" gem1Id="40147" gem2Id="40112" gemIcon0="inv_jewelcrafting_gem_39" gemIcon1="inv_jewelcrafting_gem_39" gemIcon2="inv_jewelcrafting_gem_37" icon="inv_belt_60" id="50993" level="264" maxDurability="50" name="Band of the Night Raven" permanentenchant="0" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="0" slot="5"/>
-        <item displayInfoId="64812" durability="105" gem0Id="40147" gem1Id="40130" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_39" gemIcon1="inv_jewelcrafting_gem_40" icon="inv_pants_mail_32" id="50116" level="251" maxDurability="105" name="Ahn'Kahar Blood Hunter's Legguards" permanentEnchantIcon="inv_misc_armorkit_33" permanentEnchantItemId="38374" permanentenchant="3823" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="0" slot="6"/>
-        <item displayInfoId="65410" durability="70" gem0Id="40112" gem1Id="40140" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_37" gemIcon1="inv_jewelcrafting_gem_40" icon="inv_boots_mail_06" id="49897" level="264" maxDurability="70" name="Rock-Steady Treads" permanentEnchantIcon="inv_gizmo_rocketbootextreme" permanentEnchantItemId="41118" permanentenchant="3606" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="2132599168" slot="7"/>
-        <item displayInfoId="64818" durability="50" gem0Id="40112" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_37" icon="inv_bracer_40" id="50789" level="251" maxDurability="50" name="Icecrown Rampart Bracers" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44815" permanentenchant="3845" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="1287361472" slot="8"/>
-        <item displayInfoId="64810" durability="50" gem0Id="40112" gem1Id="40112" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_37" gemIcon1="inv_jewelcrafting_gem_37" icon="inv_gauntlets_84" id="50777" level="251" maxDurability="50" name="Handgrips of Frost and Sleet" permanentEnchantIcon="inv_weapon_shortblade_06" permanentEnchantItemId="35453" permanentenchant="3222" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="1706201088" slot="9"/>
+        <item displayInfoId="64804" durability="43" gem0Id="45879" gem1Id="40131" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_37" gemIcon1="inv_jewelcrafting_gem_40" icon="inv_shoulder_113" id="50792" level="251" maxDurability="85" name="Pauldrons of Lost Hope" permanentEnchantIcon="inv_axe_85" permanentEnchantItemId="44871" permanentenchant="3808" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="1320343552" slot="2"/>
+        <item displayInfoId="64814" durability="67" gem0Id="40117" gem1Id="40130" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_37" gemIcon1="inv_jewelcrafting_gem_40" icon="inv_chest_mail_11" id="50118" level="251" maxDurability="140" name="Ahn'Kahar Blood Hunter's Tunic" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44465" permanentenchant="3832" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="0" slot="4"/>
+        <item displayInfoId="64820" durability="24" gem0Id="40147" gem1Id="40147" gem2Id="40112" gemIcon0="inv_jewelcrafting_gem_39" gemIcon1="inv_jewelcrafting_gem_39" gemIcon2="inv_jewelcrafting_gem_37" icon="inv_belt_60" id="50993" level="264" maxDurability="50" name="Band of the Night Raven" permanentenchant="0" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="0" slot="5"/>
+        <item displayInfoId="64812" durability="54" gem0Id="40147" gem1Id="40130" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_39" gemIcon1="inv_jewelcrafting_gem_40" icon="inv_pants_mail_32" id="50116" level="251" maxDurability="105" name="Ahn'Kahar Blood Hunter's Legguards" permanentEnchantIcon="inv_misc_armorkit_33" permanentEnchantItemId="38374" permanentenchant="3823" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="0" slot="6"/>
+        <item displayInfoId="65410" durability="34" gem0Id="40112" gem1Id="40140" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_37" gemIcon1="inv_jewelcrafting_gem_40" icon="inv_boots_mail_06" id="49897" level="264" maxDurability="70" name="Rock-Steady Treads" permanentEnchantIcon="inv_gizmo_rocketbootextreme" permanentEnchantItemId="41118" permanentenchant="3606" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="2132599168" slot="7"/>
+        <item displayInfoId="64818" durability="24" gem0Id="40112" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_37" icon="inv_bracer_40" id="50789" level="251" maxDurability="50" name="Icecrown Rampart Bracers" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44815" permanentenchant="3845" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="1287361472" slot="8"/>
+        <item displayInfoId="64810" durability="22" gem0Id="40112" gem1Id="40112" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_37" gemIcon1="inv_jewelcrafting_gem_37" icon="inv_gauntlets_84" id="50777" level="251" maxDurability="50" name="Handgrips of Frost and Sleet" permanentEnchantIcon="inv_weapon_shortblade_06" permanentEnchantItemId="35453" permanentenchant="3222" pickUp="PickUpSmallChain" putDown="PutDownSmallChain" randomPropertiesId="0" rarity="4" seed="1706201088" slot="9"/>
         <item displayInfoId="63958" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_81" id="50401" level="268" maxDurability="0" name="Ashen Band of Unmatched Vengeance" permanentenchant="0" pickUp="PickUpMetalSmall" putDown="PutDownSmallMEtal" randomPropertiesId="0" rarity="4" seed="19038750" slot="10"/>
         <item displayInfoId="33808" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_ahnqiraj_01" id="47730" level="245" maxDurability="0" name="Dexterous Brightstone Ring" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="0" slot="11"/>
         <item displayInfoId="59322" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_gem_bloodstone_03" id="47734" level="245" maxDurability="0" name="Mark of Supremacy" permanentenchant="0" pickUp="PickUpWand" putDown="PutDownWand" randomPropertiesId="0" rarity="4" seed="0" slot="12"/>
         <item displayInfoId="48008" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_rune_12" id="50355" level="264" maxDurability="0" name="Herkuml War Token" permanentenchant="0" pickUp="PickUpWand" putDown="PutDownWand" randomPropertiesId="0" rarity="4" seed="0" slot="13"/>
         <item displayInfoId="64326" durability="0" gem0Id="40176" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_41" icon="inv_misc_cape_14" id="50470" level="264" maxDurability="0" name="Recovered Scarlet Onslaught Cape" permanentEnchantIcon="inv_misc_cape_22" permanentEnchantItemId="41111" permanentenchant="3605" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="14"/>
-        <item displayInfoId="64472" durability="105" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_axe_113" id="50787" level="251" maxDurability="105" name="Frost Giant's Cleaver" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="38995" permanentenchant="1103" pickUp="PickUpMetalSmall" putDown="PutDownSmallMEtal" randomPropertiesId="0" rarity="4" seed="2128834304" slot="15"/>
-        <item displayInfoId="64354" durability="90" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_weapon_bow_56" id="50776" level="251" maxDurability="90" name="Njorndar Bone Bow" permanentEnchantIcon="inv_misc_spyglass_02" permanentEnchantItemId="41167" permanentenchant="3608" pickUp="PickUpWoodSmall" putDown="PutDownWoodSmall" randomPropertiesId="0" rarity="4" seed="1586488576" slot="17"/>
-        <item displayInfoId="64928" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_ammo_arrow_03" id="52021" level="230" maxDurability="0" name="Iceblade Arrow" permanentenchant="0" pickUp="PickUpWoodSmall" putDown="PutDownWoodSmall" randomPropertiesId="0" rarity="4" seed="1749792512" slot="-1"/>
+        <item displayInfoId="64472" durability="55" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_axe_113" id="50787" level="251" maxDurability="105" name="Frost Giant's Cleaver" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="38995" permanentenchant="1103" pickUp="PickUpMetalSmall" putDown="PutDownSmallMEtal" randomPropertiesId="0" rarity="4" seed="2128834304" slot="15"/>
+        <item displayInfoId="64471" durability="55" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_axe_113" id="50759" level="251" maxDurability="105" name="Bone Warden's Splitter" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="38995" permanentenchant="1103" pickUp="PickUpMetalSmall" putDown="PutDownSmallMEtal" randomPropertiesId="0" rarity="4" seed="0" slot="16"/>
+        <item displayInfoId="64354" durability="44" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_weapon_bow_56" id="50776" level="251" maxDurability="90" name="Njorndar Bone Bow" permanentEnchantIcon="inv_misc_spyglass_02" permanentEnchantItemId="41167" permanentenchant="3608" pickUp="PickUpWoodSmall" putDown="PutDownWoodSmall" randomPropertiesId="0" rarity="4" seed="1586488576" slot="17"/>
+        <item displayInfoId="64928" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_ammo_arrow_03" id="52021" level="230" maxDurability="0" name="Iceblade Arrow" permanentenchant="0" pickUp="PickUpWoodSmall" putDown="PutDownWoodSmall" randomPropertiesId="0" rarity="4" seed="17091716" slot="-1"/>
       </items>
       <glyphs>
         <glyph effect="Increases the duration of your Serpent Sting by 6 sec." icon="ui-glyph-rune-3" id="366" name="Glyph of Serpent Sting" type="major"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/sheet.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-sheet.xml">
   <tabInfo subTab="profile" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Fdubulous&amp;gn=Alliance+Pwners+II"/>
   <characterInfo>
-    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Fdubulous" class="Warlock" classId="9" classUrl="c=Warlock" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 17, 2010" level="80" name="Fdubulous" points="2950" prefix="Twilight Vanquisher " race="Undead" raceId="5" realm="Coilfang" suffix="" titleId="89">
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Fdubulous" class="Warlock" classId="9" classUrl="c=Warlock" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 21, 2010" level="80" name="Fdubulous" points="2950" prefix="Twilight Vanquisher " race="Undead" raceId="5" realm="Coilfang" suffix="" titleId="89">
       <modelBasePath value="http://us.media.battle.net.edgesuite.net/"/>
     </character>
     <characterTab>
@@ -12,7 +12,7 @@
       <buffs/>
       <debuffs/>
       <pvp>
-        <lifetimehonorablekills value="8722"/>
+        <lifetimehonorablekills value="8725"/>
         <arenacurrency value="0"/>
       </pvp>
       <professions>
@@ -20,15 +20,15 @@
         <skill id="197" key="tailoring" max="450" name="Tailoring" value="450"/>
       </professions>
       <characterBars>
-        <health effective="22211"/>
-        <secondBar casting="0" effective="24541" notCasting="379" type="m"/>
+        <health effective="22335"/>
+        <secondBar casting="0" effective="24711" notCasting="387" type="m"/>
       </characterBars>
       <baseStats>
         <strength attack="58" base="58" block="-1" effective="68"/>
         <agility armor="150" attack="-1" base="65" critHitPercent="4.11" effective="75"/>
-        <stamina base="97" effective="1458" health="14400" petBonus="437"/>
-        <intellect base="157" critHitPercent="9.80" effective="1350" mana="19970" petBonus="405"/>
-        <spirit base="171" effective="618" healthRegen="32" manaRegen="379"/>
+        <stamina base="97" effective="1470" health="14520" petBonus="441"/>
+        <intellect base="157" critHitPercent="9.87" effective="1361" mana="20135" petBonus="408"/>
+        <spirit base="171" effective="628" healthRegen="32" manaRegen="387"/>
         <armor base="2342" effective="2342" percent="13.33" petBonus="820"/>
       </baseStats>
       <resistances>
@@ -40,46 +40,46 @@
         <shadow petBonus="4" value="10"/>
       </resistances>
       <melee>
-        <mainHandDamage dps="158.4" max="374" min="127" percent="0" speed="1.58"/>
-        <offHandDamage dps="0.0" max="0" min="0" percent="0" speed="1.76"/>
-        <mainHandSpeed hastePercent="13.85" hasteRating="454" value="1.58"/>
-        <offHandSpeed hastePercent="13.85" hasteRating="454" value="1.76"/>
+        <mainHandDamage dps="156.3" max="374" min="127" percent="0" speed="1.60"/>
+        <offHandDamage dps="0.0" max="0" min="0" percent="0" speed="1.78"/>
+        <mainHandSpeed hastePercent="12.32" hasteRating="404" value="1.60"/>
+        <offHandSpeed hastePercent="12.32" hasteRating="404" value="1.78"/>
         <power base="116" effective="116" increasedDps="8.0"/>
         <hitRating increasedHitPercent="14.39" penetration="0" reducedArmorPercent="0.00" value="472"/>
-        <critChance percent="26.89" plusPercent="22.79" rating="1046"/>
+        <critChance percent="25.39" plusPercent="21.28" rating="977"/>
         <expertise additional="0" percent="0.00" rating="0" value="0"/>
       </melee>
       <ranged>
         <weaponSkill rating="0" value="0"/>
-        <damage dps="411.4" max="846" min="455" percent="0" speed="1.58"/>
-        <speed hastePercent="13.85" hasteRating="454" value="1.58"/>
+        <damage dps="405.8" max="846" min="455" percent="0" speed="1.60"/>
+        <speed hastePercent="12.32" hasteRating="404" value="1.60"/>
         <power base="65" effective="65" increasedDps="4.0" petAttack="-1.00" petSpell="-1.00"/>
         <hitRating increasedHitPercent="14.39" penetration="0" reducedArmorPercent="0.00" value="472"/>
-        <critChance percent="26.89" plusPercent="22.79" rating="1046"/>
+        <critChance percent="25.39" plusPercent="21.28" rating="977"/>
       </ranged>
       <spell>
         <bonusDamage>
-          <arcane value="2879"/>
-          <fire value="2879"/>
-          <frost value="2879"/>
-          <holy value="2879"/>
-          <nature value="2879"/>
-          <shadow value="2879"/>
-          <petBonus attack="1641" damage="432" fromType="fire"/>
+          <arcane value="3083"/>
+          <fire value="3083"/>
+          <frost value="3083"/>
+          <holy value="3083"/>
+          <nature value="3083"/>
+          <shadow value="3083"/>
+          <petBonus attack="1757" damage="462" fromType="fire"/>
         </bonusDamage>
-        <bonusHealing value="2879"/>
+        <bonusHealing value="3083"/>
         <hitRating increasedHitPercent="17.99" penetration="0" reducedResist="0" value="472"/>
-        <critChance rating="1046">
-          <arcane percent="35.59"/>
-          <fire percent="35.59"/>
-          <frost percent="35.59"/>
-          <holy percent="35.59"/>
-          <nature percent="35.59"/>
-          <shadow percent="35.59"/>
+        <critChance rating="977">
+          <arcane percent="34.15"/>
+          <fire percent="34.15"/>
+          <frost percent="34.15"/>
+          <holy percent="34.15"/>
+          <nature percent="34.15"/>
+          <shadow percent="34.15"/>
         </critChance>
         <penetration value="0"/>
-        <manaRegen casting="0.00" notCasting="379.00"/>
-        <hasteRating hastePercent="13.85" hasteRating="454"/>
+        <manaRegen casting="0.00" notCasting="387.00"/>
+        <hasteRating hastePercent="12.32" hasteRating="404"/>
       </spell>
       <defenses>
         <armor base="2342" effective="2342" percent="13.33" petBonus="820"/>
@@ -101,9 +101,9 @@
         <item displayInfoId="64345" durability="35" gem0Id="40124" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_38" icon="inv_bracer_45" id="49994" level="264" maxDurability="35" name="The Lady's Brittle Bracers" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44470" permanentenchant="2332" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="1750384128" slot="8"/>
         <item displayInfoId="65002" durability="35" gem0Id="40152" gem1Id="40152" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_39" gemIcon1="inv_jewelcrafting_gem_39" icon="inv_gauntlets_90" id="50983" level="264" maxDurability="35" name="Gloves of False Gestures" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="38979" permanentenchant="3246" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="9"/>
         <item displayInfoId="63960" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_83" id="50397" level="268" maxDurability="0" name="Ashen Band of Unmatched Destruction" permanentEnchantIcon="trade_engraving" permanentEnchantSpellDesc="Permanently enchant a ring to increase spell power by 23.  Only the Enchanter's rings can be enchanted, and enchanting a ring will cause it to become soulbound." permanentEnchantSpellName="Enchant Ring - Greater Spellpower" permanentenchant="3840" pickUp="PickUpMetalSmall" putDown="PutDownSmallMEtal" randomPropertiesId="0" rarity="4" seed="282447840" slot="10"/>
-        <item displayInfoId="43095" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_54" id="47732" level="245" maxDurability="0" name="Band of the Invoker" permanentEnchantIcon="trade_engraving" permanentEnchantSpellDesc="Permanently enchant a ring to increase spell power by 23.  Only the Enchanter's rings can be enchanted, and enchanting a ring will cause it to become soulbound." permanentEnchantSpellName="Enchant Ring - Greater Spellpower" permanentenchant="3840" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="0" slot="11"/>
+        <item displayInfoId="33864" durability="0" gem0Id="40152" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_39" icon="inv_jewelry_ring_ahnqiraj_05" id="49990" level="264" maxDurability="0" name="Ring of Maddening Whispers" permanentEnchantIcon="trade_engraving" permanentEnchantSpellDesc="Permanently enchant a ring to increase spell power by 23.  Only the Enchanter's rings can be enchanted, and enchanting a ring will cause it to become soulbound." permanentEnchantSpellName="Enchant Ring - Greater Spellpower" permanentenchant="3840" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="0" slot="11"/>
         <item displayInfoId="64236" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_trinket_02" id="50357" level="264" maxDurability="0" name="Maghia's Misguided Quill" permanentenchant="0" pickUp="PickUpWand" putDown="PutDownWand" randomPropertiesId="0" rarity="4" seed="0" slot="12"/>
-        <item displayInfoId="43609" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_spyglass_02" id="50340" level="251" maxDurability="0" name="Muradin's Spyglass" permanentenchant="0" pickUp="PickUpWand" putDown="PutDownWand" randomPropertiesId="0" rarity="4" seed="1340795904" slot="13"/>
+        <item displayInfoId="64631" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_ammo_gunpowder_05" id="50358" level="264" maxDurability="0" name="Purified Lunar Dust" permanentenchant="0" pickUp="PickUpWand" putDown="PutDownWand" randomPropertiesId="0" rarity="4" seed="0" slot="13"/>
         <item displayInfoId="58977" durability="0" gem0Id="40124" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_38" icon="inv_misc_cape_16" id="50469" level="264" maxDurability="0" name="Volde's Cloak of the Night Sky" permanentEnchantIcon="inv_misc_thread_01" permanentEnchantSpellDesc="Embroiders a subtle pattern of light into your cloak, giving you a chance to increase your spell power by 295 for 15 sec when casting a spell.&#10;&#10;&#10;&#10;Embroidering your cloak will cause it to become soulbound.  Requires 400 Tailoring to use." permanentEnchantSpellName="Lightweave Embroidery" permanentenchant="3722" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="14"/>
         <item displayInfoId="64646" durability="75" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_weapon_shortblade_101" id="49968" level="264" maxDurability="75" name="Frozen Bonespike" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44467" permanentenchant="3834" pickUp="PickUpMetalSmall" putDown="PutDownSmallMEtal" randomPropertiesId="0" rarity="4" seed="0" slot="15"/>
         <item displayInfoId="64433" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_bone_elfskull_01" id="50781" level="251" maxDurability="0" name="Scourgelord's Baton" permanentenchant="0" pickUp="PickUpWand" putDown="PutDownWand" randomPropertiesId="0" rarity="4" seed="1254076864" slot="16"/>

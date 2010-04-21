@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/reputation.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-reputation.xml">
   <tabInfo subTab="reputation" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Cayuse&amp;gn=Alliance+Pwners+II"/>
   <characterInfo>
-    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Cayuse" class="Warrior" classId="1" classUrl="c=Warrior" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 17, 2010" level="80" name="Cayuse" points="3450" prefix="Elder " race="Undead" raceId="5" realm="Coilfang" suffix="" titleId="43">
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Cayuse" class="Warrior" classId="1" classUrl="c=Warrior" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 21, 2010" level="80" name="Cayuse" points="3470" prefix="Elder " race="Undead" raceId="5" realm="Coilfang" suffix="" titleId="43">
       <modelBasePath value="http://us.media.battle.net.edgesuite.net/"/>
     </character>
     <reputationTab>
@@ -12,7 +12,7 @@
         <faction id="990" key="thescaleofthesands" name="The Scale of the Sands" reputation="0"/>
         <faction id="933" key="theconsortium" name="The Consortium" reputation="21155"/>
         <faction id="989" key="keepersoftime" name="Keepers of Time" reputation="9111"/>
-        <faction id="947" key="thrallmar" name="Thrallmar" reputation="11654"/>
+        <faction id="947" key="thrallmar" name="Thrallmar" reputation="14225"/>
         <faction id="967" key="thevioleteye" name="The Violet Eye" reputation="8424"/>
         <faction id="941" key="themag'har" name="The Mag'har" reputation="20570"/>
         <faction id="1038" key="ogri'la" name="Ogri'la" reputation="500"/>
@@ -41,10 +41,10 @@
           <faction id="1105" key="theoracles" name="The Oracles" reputation="-4510"/>
         </faction>
         <faction id="1119" key="thesonsofhodir" name="The Sons of Hodir" reputation="-11840"/>
-        <faction id="1090" key="kirintor" name="Kirin Tor" reputation="41744"/>
+        <faction id="1090" key="kirintor" name="Kirin Tor" reputation="42069"/>
         <faction id="1091" key="thewyrmrestaccord" name="The Wyrmrest Accord" reputation="28665"/>
         <faction id="1106" key="argentcrusade" name="Argent Crusade" reputation="42999"/>
-        <faction id="1156" key="theashenverdict" name="The Ashen Verdict" reputation="33009"/>
+        <faction id="1156" key="theashenverdict" name="The Ashen Verdict" reputation="35516"/>
       </faction>
       <faction header="1" iconKey="classic" id="1118" key="classic" name="Classic">
         <faction header="1" iconKey="classic" id="892" key="hordeforces" name="Horde Forces">

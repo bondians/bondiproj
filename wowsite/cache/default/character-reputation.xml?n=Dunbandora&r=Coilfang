@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/reputation.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-reputation.xml">
   <tabInfo subTab="reputation" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Dunbandora&amp;gn=Alliance+Pwners+II"/>
   <characterInfo>
-    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Dunbandora" class="Warlock" classId="9" classUrl="c=Warlock" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 17, 2010" level="80" name="Dunbandora" points="1980" prefix="" race="Undead" raceId="5" realm="Coilfang" suffix=" of the Undercity" titleId="121">
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Dunbandora" class="Warlock" classId="9" classUrl="c=Warlock" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 20, 2010" level="80" name="Dunbandora" points="1980" prefix="" race="Undead" raceId="5" realm="Coilfang" suffix=" of the Undercity" titleId="121">
       <modelBasePath value="http://us.media.battle.net.edgesuite.net/"/>
     </character>
     <reputationTab>
@@ -39,10 +39,10 @@
           <faction id="1104" key="frenzyhearttribe" name="Frenzyheart Tribe" reputation="3100"/>
           <faction id="1105" key="theoracles" name="The Oracles" reputation="-3410"/>
         </faction>
-        <faction id="1090" key="kirintor" name="Kirin Tor" reputation="23458"/>
+        <faction id="1090" key="kirintor" name="Kirin Tor" reputation="26283"/>
         <faction id="1091" key="thewyrmrestaccord" name="The Wyrmrest Accord" reputation="8614"/>
-        <faction id="1106" key="argentcrusade" name="Argent Crusade" reputation="32201"/>
-        <faction id="1156" key="theashenverdict" name="The Ashen Verdict" reputation="4225"/>
+        <faction id="1106" key="argentcrusade" name="Argent Crusade" reputation="33501"/>
+        <faction id="1156" key="theashenverdict" name="The Ashen Verdict" reputation="6512"/>
       </faction>
       <faction header="1" iconKey="classic" id="1118" key="classic" name="Classic">
         <faction header="1" iconKey="classic" id="892" key="hordeforces" name="Horde Forces">
@@ -58,11 +58,11 @@
         <faction id="576" key="timbermawhold" name="Timbermaw Hold" reputation="6000"/>
         <faction id="92" key="gelkisclancentaur" name="Gelkis Clan Centaur" reputation="4383"/>
         <faction header="1" iconKey="classic" id="67" key="horde" name="Horde" reputation="21374">
-          <faction id="911" key="silvermooncity" name="Silvermoon City" reputation="34187"/>
+          <faction id="911" key="silvermooncity" name="Silvermoon City" reputation="34437"/>
           <faction id="68" key="undercity" name="Undercity" reputation="42999"/>
-          <faction id="81" key="thunderbluff" name="Thunder Bluff" reputation="35330"/>
-          <faction id="76" key="orgrimmar" name="Orgrimmar" reputation="37205"/>
-          <faction id="530" key="darkspeartrolls" name="Darkspear Trolls" reputation="38087"/>
+          <faction id="81" key="thunderbluff" name="Thunder Bluff" reputation="35580"/>
+          <faction id="76" key="orgrimmar" name="Orgrimmar" reputation="38205"/>
+          <faction id="530" key="darkspeartrolls" name="Darkspear Trolls" reputation="38337"/>
         </faction>
         <faction id="87" key="bloodsailbuccaneers" name="Bloodsail Buccaneers" reputation="-20025"/>
         <faction id="529" key="argentdawn" name="Argent Dawn" reputation="12790"/>

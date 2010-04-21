@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/reputation.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-reputation.xml">
   <tabInfo subTab="reputation" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Elyril&amp;gn=Alliance+Pwners+II"/>
   <characterInfo>
-    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Elyril" class="Druid" classId="11" classUrl="c=Druid" faction="Horde" factionId="1" gender="Female" genderId="1" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 16, 2010" level="80" name="Elyril" points="2585" prefix="" race="Tauren" raceId="6" realm="Coilfang" suffix=" the Noble" titleId="122">
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Elyril" class="Druid" classId="11" classUrl="c=Druid" faction="Horde" factionId="1" gender="Female" genderId="1" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 21, 2010" level="80" name="Elyril" points="2585" prefix="" race="Tauren" raceId="6" realm="Coilfang" suffix=" the Noble" titleId="122">
       <arenaTeams>
         <arenaTeam battleGroup="Retaliation" created="1265328000000" faction="Horde" factionId="1" gamesPlayed="0" gamesWon="0" lastSeasonRanking="0" name="Bunnyz are fwendz" ranking="0" rating="1222" realm="Coilfang" realmUrl="b=Retaliation&amp;r=Coilfang&amp;ts=2&amp;t=Bunnyz+are+fwendz&amp;ff=realm&amp;fv=Coilfang&amp;select=Bunnyz+are+fwendz" season="0" seasonGamesPlayed="222" seasonGamesWon="115" size="2" teamSize="2" teamUrl="r=Coilfang&amp;ts=2&amp;t=Bunnyz+are+fwendz&amp;select=Bunnyz+are+fwendz" url="r=Coilfang&amp;ts=2&amp;t=Bunnyz+are+fwendz&amp;select=Bunnyz+are+fwendz">
           <emblem background="ff3f16ba" borderColor="ffe0cd50" borderStyle="6" iconColor="ffb5a800" iconStyle="90"/>
@@ -29,7 +29,7 @@
           <faction id="934" key="thescryers" name="The Scryers" reputation="-10323"/>
           <faction id="932" key="thealdor" name="The Aldor" reputation="9385"/>
           <faction id="935" key="thesha'tar" name="The Sha'tar" reputation="5437"/>
-          <faction id="1011" key="lowercity" name="Lower City" reputation="10052"/>
+          <faction id="1011" key="lowercity" name="Lower City" reputation="10072"/>
           <faction id="1031" key="sha'tariskyguard" name="Sha'tari Skyguard" reputation="0"/>
           <faction id="1077" key="shatteredsunoffensive" name="Shattered Sun Offensive" reputation="0"/>
         </faction>
@@ -48,10 +48,10 @@
           <faction id="1104" key="frenzyhearttribe" name="Frenzyheart Tribe" reputation="-27537"/>
           <faction id="1105" key="theoracles" name="The Oracles" reputation="23201"/>
         </faction>
-        <faction id="1090" key="kirintor" name="Kirin Tor" reputation="33503"/>
+        <faction id="1090" key="kirintor" name="Kirin Tor" reputation="34153"/>
         <faction id="1091" key="thewyrmrestaccord" name="The Wyrmrest Accord" reputation="7553"/>
         <faction id="1106" key="argentcrusade" name="Argent Crusade" reputation="12535"/>
-        <faction id="1156" key="theashenverdict" name="The Ashen Verdict" reputation="8387"/>
+        <faction id="1156" key="theashenverdict" name="The Ashen Verdict" reputation="12666"/>
       </faction>
       <faction header="1" iconKey="classic" id="1118" key="classic" name="Classic">
         <faction header="1" iconKey="classic" id="892" key="hordeforces" name="Horde Forces">

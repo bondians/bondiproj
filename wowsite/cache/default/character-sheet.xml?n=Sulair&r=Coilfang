@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/sheet.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-sheet.xml">
   <tabInfo subTab="profile" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Sulair&amp;gn=Alliance+Pwners+II"/>
   <characterInfo>
-    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Sulair" class="Warlock" classId="9" classUrl="c=Warlock" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 17, 2010" level="80" name="Sulair" points="3010" prefix="" race="Orc" raceId="2" realm="Coilfang" suffix="" titleId="0">
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Sulair" class="Warlock" classId="9" classUrl="c=Warlock" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 21, 2010" level="80" name="Sulair" points="3020" prefix="" race="Orc" raceId="2" realm="Coilfang" suffix=" of the Ashen Verdict" titleId="141">
       <arenaTeams>
-        <arenaTeam battleGroup="Retaliation" created="1265068800000" faction="Horde" factionId="1" gamesPlayed="0" gamesWon="0" lastSeasonRanking="0" name="OwnD" ranking="3789" rating="1067" realm="Coilfang" realmUrl="b=Retaliation&amp;r=Coilfang&amp;ts=2&amp;t=OwnD&amp;ff=realm&amp;fv=Coilfang&amp;select=OwnD" season="0" seasonGamesPlayed="140" seasonGamesWon="67" size="2" teamSize="2" teamUrl="r=Coilfang&amp;ts=2&amp;t=OwnD&amp;select=OwnD" url="r=Coilfang&amp;ts=2&amp;t=OwnD&amp;select=OwnD">
+        <arenaTeam battleGroup="Retaliation" created="1265068800000" faction="Horde" factionId="1" gamesPlayed="0" gamesWon="0" lastSeasonRanking="0" name="OwnD" ranking="3801" rating="1091" realm="Coilfang" realmUrl="b=Retaliation&amp;r=Coilfang&amp;ts=2&amp;t=OwnD&amp;ff=realm&amp;fv=Coilfang&amp;select=OwnD" season="0" seasonGamesPlayed="143" seasonGamesWon="69" size="2" teamSize="2" teamUrl="r=Coilfang&amp;ts=2&amp;t=OwnD&amp;select=OwnD" url="r=Coilfang&amp;ts=2&amp;t=OwnD&amp;select=OwnD">
           <emblem background="ff3565fa" borderColor="ff96c413" borderStyle="3" iconColor="ff30fc12" iconStyle="82"/>
           <members>
-            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Grumbel" class="Hunter" classId="3" contribution="1067" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners II" guildId="9452058" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" name="Grumbel" race="Troll" raceId="8" seasonGamesPlayed="140" seasonGamesWon="67" teamRank="0"/>
-            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Sulair" class="Warlock" classId="9" contribution="1066" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners II" guildId="9452058" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" name="Sulair" race="Orc" raceId="2" seasonGamesPlayed="140" seasonGamesWon="67" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Grumbel" class="Hunter" classId="3" contribution="1091" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners II" guildId="9452058" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" name="Grumbel" race="Troll" raceId="8" seasonGamesPlayed="143" seasonGamesWon="69" teamRank="0"/>
+            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Sulair" class="Warlock" classId="9" contribution="1090" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners II" guildId="9452058" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" name="Sulair" race="Orc" raceId="2" seasonGamesPlayed="143" seasonGamesWon="69" teamRank="1"/>
           </members>
         </arenaTeam>
-        <arenaTeam battleGroup="Retaliation" created="1257638400000" faction="Horde" factionId="1" gamesPlayed="0" gamesWon="0" lastSeasonRanking="0" name="Bringers of Death" ranking="2059" rating="704" realm="Coilfang" realmUrl="b=Retaliation&amp;r=Coilfang&amp;ts=3&amp;t=Bringers+of+Death&amp;ff=realm&amp;fv=Coilfang&amp;select=Bringers+of+Death" season="0" seasonGamesPlayed="59" seasonGamesWon="17" size="3" teamSize="3" teamUrl="r=Coilfang&amp;ts=3&amp;t=Bringers+of+Death&amp;select=Bringers+of+Death" url="r=Coilfang&amp;ts=3&amp;t=Bringers+of+Death&amp;select=Bringers+of+Death">
+        <arenaTeam battleGroup="Retaliation" created="1257638400000" faction="Horde" factionId="1" gamesPlayed="0" gamesWon="0" lastSeasonRanking="0" name="Bringers of Death" ranking="2015" rating="819" realm="Coilfang" realmUrl="b=Retaliation&amp;r=Coilfang&amp;ts=3&amp;t=Bringers+of+Death&amp;ff=realm&amp;fv=Coilfang&amp;select=Bringers+of+Death" season="0" seasonGamesPlayed="85" seasonGamesWon="28" size="3" teamSize="3" teamUrl="r=Coilfang&amp;ts=3&amp;t=Bringers+of+Death&amp;select=Bringers+of+Death" url="r=Coilfang&amp;ts=3&amp;t=Bringers+of+Death&amp;select=Bringers+of+Death">
           <emblem background="ff040a0b" borderColor="ffcd1216" borderStyle="4" iconColor="ffa35f14" iconStyle="58"/>
           <members>
-            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Sulair" class="Warlock" classId="9" contribution="704" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners II" guildId="9452058" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" name="Sulair" race="Orc" raceId="2" seasonGamesPlayed="59" seasonGamesWon="17" teamRank="0"/>
+            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Sulair" class="Warlock" classId="9" contribution="819" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners II" guildId="9452058" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" name="Sulair" race="Orc" raceId="2" seasonGamesPlayed="85" seasonGamesWon="28" teamRank="0"/>
             <character battleGroup="" charUrl="r=Coilfang&amp;cn=Calvana" class="Mage" classId="8" contribution="285" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners" guildId="3585075" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners" name="Calvana" race="Blood Elf" raceId="10" seasonGamesPlayed="0" seasonGamesWon="0" teamRank="1"/>
-            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Cronixx" class="Death Knight" classId="6" contribution="704" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners II" guildId="9452058" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" name="Cronixx" race="Orc" raceId="2" seasonGamesPlayed="59" seasonGamesWon="17" teamRank="1"/>
-            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Grumbel" class="Hunter" classId="3" contribution="704" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners II" guildId="9452058" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" name="Grumbel" race="Troll" raceId="8" seasonGamesPlayed="59" seasonGamesWon="17" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Cronixx" class="Death Knight" classId="6" contribution="819" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners II" guildId="9452058" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" name="Cronixx" race="Orc" raceId="2" seasonGamesPlayed="85" seasonGamesWon="28" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Grumbel" class="Hunter" classId="3" contribution="819" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners II" guildId="9452058" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" name="Grumbel" race="Troll" raceId="8" seasonGamesPlayed="85" seasonGamesWon="28" teamRank="1"/>
           </members>
         </arenaTeam>
       </arenaTeams>
@@ -24,121 +24,121 @@
     </character>
     <characterTab>
       <talentSpecs>
-        <talentSpec group="2" icon="spell_shadow_metamorphosis" prim="Demonology" treeOne="0" treeThree="14" treeTwo="57"/>
-        <talentSpec active="1" group="1" icon="spell_shadow_deathcoil" prim="Affliction" treeOne="54" treeThree="0" treeTwo="17"/>
+        <talentSpec active="1" group="2" icon="spell_shadow_metamorphosis" prim="Demonology" treeOne="0" treeThree="14" treeTwo="57"/>
+        <talentSpec group="1" icon="spell_shadow_rainoffire" prim="Destruction" treeOne="0" treeThree="55" treeTwo="16"/>
       </talentSpecs>
       <buffs/>
       <debuffs/>
       <pvp>
         <lifetimehonorablekills value="5902"/>
-        <arenacurrency value="714"/>
+        <arenacurrency value="1017"/>
       </pvp>
       <professions>
         <skill id="171" key="alchemy" max="450" name="Alchemy" value="450"/>
         <skill id="197" key="tailoring" max="450" name="Tailoring" value="450"/>
       </professions>
       <characterBars>
-        <health effective="27670"/>
-        <secondBar casting="0" effective="19010" notCasting="146" type="m"/>
+        <health effective="21408"/>
+        <secondBar casting="0" effective="24093" notCasting="265" type="m"/>
       </characterBars>
       <baseStats>
-        <strength attack="62" base="62" block="-1" effective="72"/>
-        <agility armor="148" attack="-1" base="64" critHitPercent="4.09" effective="74"/>
-        <stamina base="99" effective="1988" health="19700" petBonus="596"/>
-        <intellect base="156" critHitPercent="7.65" effective="992" mana="14600" petBonus="298"/>
-        <spirit base="168" effective="279" healthRegen="16" manaRegen="146"/>
-        <armor base="2267" effective="2267" percent="12.95" petBonus="793"/>
+        <strength attack="72" base="62" block="-1" effective="82"/>
+        <agility armor="168" attack="-1" base="64" critHitPercent="4.29" effective="84"/>
+        <stamina base="99" effective="1380" health="13620" petBonus="414"/>
+        <intellect base="156" critHitPercent="9.63" effective="1321" mana="19535" petBonus="396"/>
+        <spirit base="168" effective="437" healthRegen="24" manaRegen="265"/>
+        <armor base="2298" effective="2298" percent="13.11" petBonus="804"/>
       </baseStats>
       <resistances>
         <arcane petBonus="0" value="0"/>
-        <fire petBonus="0" value="0"/>
+        <fire petBonus="4" value="10"/>
         <frost petBonus="0" value="0"/>
         <holy petBonus="0" value="0"/>
         <nature petBonus="0" value="0"/>
         <shadow petBonus="0" value="0"/>
       </resistances>
       <melee>
-        <mainHandDamage dps="136.1" max="341" min="118" percent="0" speed="1.69"/>
-        <offHandDamage dps="0.0" max="0" min="0" percent="0" speed="1.87"/>
-        <mainHandSpeed hastePercent="6.71" hasteRating="220" value="1.69"/>
-        <offHandSpeed hastePercent="6.71" hasteRating="220" value="1.87"/>
-        <power base="124" effective="124" increasedDps="8.0"/>
-        <hitRating increasedHitPercent="5.64" penetration="0" reducedArmorPercent="0.00" value="185"/>
-        <critChance percent="6.22" plusPercent="13.29" rating="610"/>
+        <mainHandDamage dps="151.5" max="344" min="121" percent="0" speed="1.53"/>
+        <offHandDamage dps="0.0" max="0" min="0" percent="0" speed="1.70"/>
+        <mainHandSpeed hastePercent="17.47" hasteRating="573" value="1.53"/>
+        <offHandSpeed hastePercent="17.47" hasteRating="573" value="1.70"/>
+        <power base="144" effective="144" increasedDps="10.0"/>
+        <hitRating increasedHitPercent="16.77" penetration="0" reducedArmorPercent="0.00" value="550"/>
+        <critChance percent="19.83" plusPercent="16.71" rating="767"/>
         <expertise additional="0" percent="0.00" rating="0" value="0"/>
       </melee>
       <ranged>
         <weaponSkill rating="0" value="0"/>
-        <damage dps="393.3" max="863" min="464" percent="0" speed="1.69"/>
-        <speed hastePercent="6.71" hasteRating="220" value="1.69"/>
-        <power base="64" effective="64" increasedDps="4.0" petAttack="-1.00" petSpell="-1.00"/>
-        <hitRating increasedHitPercent="5.64" penetration="0" reducedArmorPercent="0.00" value="185"/>
-        <critChance percent="17.38" plusPercent="13.29" rating="610"/>
+        <damage dps="424.6" max="846" min="455" percent="0" speed="1.53"/>
+        <speed hastePercent="17.47" hasteRating="573" value="1.53"/>
+        <power base="74" effective="74" increasedDps="5.0" petAttack="-1.00" petSpell="-1.00"/>
+        <hitRating increasedHitPercent="16.77" penetration="0" reducedArmorPercent="0.00" value="550"/>
+        <critChance percent="30.99" plusPercent="16.71" rating="767"/>
       </ranged>
       <spell>
         <bonusDamage>
-          <arcane value="2686"/>
-          <fire value="2686"/>
-          <frost value="2686"/>
-          <holy value="2686"/>
-          <nature value="2686"/>
-          <shadow value="2686"/>
-          <petBonus attack="1531" damage="403" fromType="fire"/>
+          <arcane value="2837"/>
+          <fire value="2837"/>
+          <frost value="2837"/>
+          <holy value="2837"/>
+          <nature value="2837"/>
+          <shadow value="2837"/>
+          <petBonus attack="1617" damage="426" fromType="fire"/>
         </bonusDamage>
-        <bonusHealing value="2686"/>
-        <hitRating increasedHitPercent="7.05" penetration="25" reducedResist="25" value="185"/>
-        <critChance rating="659">
-          <arcane percent="22.01"/>
-          <fire percent="22.01"/>
-          <frost percent="22.01"/>
-          <holy percent="22.01"/>
-          <nature percent="22.01"/>
-          <shadow percent="22.01"/>
+        <bonusHealing value="2837"/>
+        <hitRating increasedHitPercent="20.97" penetration="0" reducedResist="0" value="550"/>
+        <critChance rating="767">
+          <arcane percent="36.33"/>
+          <fire percent="36.33"/>
+          <frost percent="36.33"/>
+          <holy percent="36.33"/>
+          <nature percent="36.33"/>
+          <shadow percent="36.33"/>
         </critChance>
-        <penetration value="25"/>
-        <manaRegen casting="0.00" notCasting="146.00"/>
-        <hasteRating hastePercent="6.71" hasteRating="220"/>
+        <penetration value="0"/>
+        <manaRegen casting="0.00" notCasting="265.00"/>
+        <hasteRating hastePercent="17.47" hasteRating="573"/>
       </spell>
       <defenses>
-        <armor base="2267" effective="2267" percent="12.95" petBonus="793"/>
+        <armor base="2298" effective="2298" percent="13.11" petBonus="804"/>
         <defense decreasePercent="0.00" increasePercent="0.00" plusDefense="0" rating="0" value="400.00"/>
-        <dodge increasePercent="0.00" percent="3.66" rating="0"/>
+        <dodge increasePercent="0.00" percent="3.83" rating="0"/>
         <parry increasePercent="0.00" percent="0.00" rating="0"/>
         <block increasePercent="0.00" percent="0.00" rating="0"/>
-        <resilience damagePercent="23.76" hitPercent="10.80" value="1018.00"/>
+        <resilience damagePercent="0.00" hitPercent="0.00" value="0.00"/>
       </defenses>
       <items>
-        <item displayInfoId="60183" durability="60" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_helmet_137" id="41994" level="251" maxDurability="60" name="Relentless Gladiator's Felweave Cowl" permanentEnchantIcon="spell_fire_masterofelements" permanentEnchantItemId="44159" permanentenchant="3820" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="0"/>
-        <item displayInfoId="39162" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_necklace_36" id="51331" level="264" maxDurability="0" name="Wrathful Gladiator's Pendant of Dominance" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="0" slot="1"/>
-        <item displayInfoId="61425" durability="60" gem0Id="44066" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_26" icon="inv_shoulder_106" id="42012" level="251" maxDurability="60" name="Relentless Gladiator's Felweave Amice" permanentEnchantIcon="spell_holy_powerinfusion" permanentEnchantItemId="44068" permanentenchant="3794" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="2"/>
+        <item displayInfoId="62073" durability="0" gem0Id="41285" gem1Id="40133" gem2Id="0" gemIcon0="inv_jewelcrafting_icediamond_02" gemIcon1="inv_jewelcrafting_gem_40" icon="inv_helmet_139" id="47692" level="245" maxDurability="60" name="Hood of Smoldering Aftermath" permanentEnchantIcon="spell_fire_masterofelements" permanentEnchantItemId="44159" permanentenchant="3820" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="0"/>
+        <item displayInfoId="64219" durability="0" gem0Id="40124" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_38" icon="item_icecrownnecklaced" id="50005" level="264" maxDurability="0" name="Amulet of the Silent Eulogy" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="1420836864" slot="1"/>
+        <item displayInfoId="62092" durability="0" gem0Id="40124" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_38" icon="inv_shoulder_35" id="47714" level="245" maxDurability="60" name="Pauldrons of Catastrophic Emanation" permanentEnchantIcon="spell_nature_lightningoverload" permanentEnchantItemId="44874" permanentenchant="3810" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="2"/>
         <item displayInfoId="13055" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shirt_black_01" id="4336" level="40" maxDurability="0" name="Black Swashbuckler's Shirt" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="1" seed="706034048" slot="3"/>
-        <item displayInfoId="58785" durability="100" gem0Id="40113" gem1Id="40168" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_37" gemIcon1="inv_jewelcrafting_gem_41" icon="inv_chest_cloth_63" id="41998" level="232" maxDurability="100" name="Furious Gladiator's Felweave Raiment" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44465" permanentenchant="3832" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="4"/>
-        <item displayInfoId="65443" durability="35" gem0Id="40008" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_27" icon="inv_belt_78" id="51365" level="264" maxDurability="35" name="Wrathful Gladiator's Cord of Salvation" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="5"/>
-        <item displayInfoId="65283" durability="74" gem0Id="40113" gem1Id="40119" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_37" gemIcon1="inv_jewelcrafting_gem_42" icon="inv_pants_cloth_35" id="51539" level="270" maxDurability="75" name="Wrathful Gladiator's Felweave Trousers" permanentEnchantIcon="spell_nature_astralrecalgroup" permanentEnchantSpellDesc="Permanently embroiders your pants with master's spellthread, increasing spell power by 50 and Stamina by 30.&#10;&#10;&#10;&#10;Only the tailor's pants can be embroidered, and doing so will cause them to become soulbound." permanentEnchantSpellName="Master's Spellthread" permanentenchant="3873" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="1061007296" slot="6"/>
-        <item displayInfoId="61479" durability="49" gem0Id="40124" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_38" icon="inv_boots_cloth_23" id="41904" level="245" maxDurability="50" name="Relentless Gladiator's Treads of Dominance" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="39006" permanentenchant="3232" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="7"/>
-        <item displayInfoId="65296" durability="35" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_bracer_50" id="51329" level="264" maxDurability="35" name="Wrathful Gladiator's Cuffs of Dominance" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="8"/>
-        <item displayInfoId="58786" durability="35" gem0Id="40122" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_42" icon="inv_gauntlets_72" id="42017" level="232" maxDurability="35" name="Furious Gladiator's Felweave Handguards" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="38979" permanentenchant="3246" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="9"/>
-        <item displayInfoId="63960" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_83" id="50398" level="277" maxDurability="0" name="Ashen Band of Endless Destruction" permanentenchant="0" pickUp="PickUpMetalSmall" putDown="PutDownSmallMEtal" randomPropertiesId="0" rarity="4" seed="1064486656" slot="10"/>
-        <item displayInfoId="39129" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_60" id="48999" level="226" maxDurability="0" name="Titan-Forged Band of Ascendancy" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="0" slot="11"/>
-        <item displayInfoId="58820" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_rune_10" id="46081" level="213" maxDurability="0" name="Titan-Forged Rune of Audacity" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="0" slot="12"/>
-        <item displayInfoId="37841" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_trinketpvp_02" id="42126" level="226" maxDurability="0" name="Medallion of the Horde" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="0" slot="13"/>
-        <item displayInfoId="61563" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_cape_16" id="51332" level="264" maxDurability="0" name="Wrathful Gladiator's Cloak of Subjugation" permanentEnchantIcon="inv_misc_thread_01" permanentEnchantSpellDesc="Embroiders a subtle pattern of light into your cloak, giving you a chance to increase your spell power by 295 for 15 sec when casting a spell.&#10;&#10;&#10;&#10;Embroidering your cloak will cause it to become soulbound.  Requires 400 Tailoring to use." permanentEnchantSpellName="Lightweave Embroidery" permanentenchant="3722" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="14"/>
-        <item displayInfoId="64544" durability="105" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_sword_152" id="50771" level="251" maxDurability="105" name="Frost Needle" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44467" permanentenchant="3834" pickUp="PickUpMetalSmall" putDown="PutDownSmallMEtal" randomPropertiesId="0" rarity="4" seed="710616896" slot="15"/>
+        <item displayInfoId="64350" durability="0" gem0Id="40113" gem1Id="40124" gem2Id="40133" gemIcon0="inv_jewelcrafting_gem_37" gemIcon1="inv_jewelcrafting_gem_38" gemIcon2="inv_jewelcrafting_gem_40" icon="inv_chest_cloth_78" id="50974" level="264" maxDurability="100" name="Meteor Chaser's Raiment" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44465" permanentenchant="3832" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="4"/>
+        <item displayInfoId="64208" durability="5" gem0Id="40133" gem1Id="45883" gem2Id="49110" gemIcon0="inv_jewelcrafting_gem_40" gemIcon1="inv_jewelcrafting_gem_37" gemIcon2="inv_misc_gem_pearl_12" icon="inv_belt_68" id="50997" level="264" maxDurability="35" name="Circle of Ossus" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="5"/>
+        <item displayInfoId="64287" durability="2" gem0Id="40133" gem1Id="40124" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_40" gemIcon1="inv_jewelcrafting_gem_38" icon="inv_kilt_cloth_02" id="50242" level="251" maxDurability="75" name="Dark Coven Leggings" permanentEnchantIcon="spell_nature_astralrecalgroup" permanentEnchantSpellDesc="Permanently embroiders your pants with sanctified spellthread, increasing spell power by 50 and Spirit by 20.&#10;&#10;&#10;&#10;Only the tailor's pants can be embroidered, and doing so will cause them to become soulbound." permanentEnchantSpellName="Sanctified Spellthread" permanentenchant="3872" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="692850688" slot="6"/>
+        <item displayInfoId="62108" durability="0" gem0Id="40124" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_38" icon="inv_boots_cloth_17" id="47873" level="232" maxDurability="50" name="Sunreaver Magus' Sandals" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="38986" permanentenchant="3826" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="7"/>
+        <item displayInfoId="64294" durability="5" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_bracer_45purple" id="51007" level="251" maxDurability="35" name="Ether-Soaked Bracers" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44470" permanentenchant="2332" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="1194389888" slot="8"/>
+        <item displayInfoId="65002" durability="5" gem0Id="40124" gem1Id="40124" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_38" gemIcon1="inv_jewelcrafting_gem_38" icon="inv_gauntlets_90" id="50983" level="264" maxDurability="35" name="Gloves of False Gestures" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="38979" permanentenchant="3246" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="9"/>
+        <item displayInfoId="26391" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_27" id="49486" level="245" maxDurability="0" name="Polished Dragonslayer's Signet" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="1736806400" slot="10"/>
+        <item displayInfoId="63960" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_83" id="50398" level="277" maxDurability="0" name="Ashen Band of Endless Destruction" permanentenchant="0" pickUp="PickUpMetalSmall" putDown="PutDownSmallMEtal" randomPropertiesId="0" rarity="4" seed="1064486656" slot="11"/>
+        <item displayInfoId="64256" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_datacrystal09" id="50259" level="232" maxDurability="0" name="Nevermelting Ice Crystal" permanentenchant="0" pickUp="PickUpWand" putDown="PutDownWand" randomPropertiesId="0" rarity="4" seed="1209889280" slot="12"/>
+        <item displayInfoId="64631" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_ammo_gunpowder_05" id="50358" level="264" maxDurability="0" name="Purified Lunar Dust" permanentenchant="0" pickUp="PickUpWand" putDown="PutDownWand" randomPropertiesId="0" rarity="4" seed="0" slot="13"/>
+        <item displayInfoId="58977" durability="0" gem0Id="40124" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_38" icon="inv_misc_cape_16" id="50469" level="264" maxDurability="0" name="Volde's Cloak of the Night Sky" permanentEnchantIcon="inv_misc_thread_01" permanentEnchantSpellDesc="Embroiders a subtle pattern of light into your cloak, giving you a chance to increase your spell power by 295 for 15 sec when casting a spell.&#10;&#10;&#10;&#10;Embroidering your cloak will cause it to become soulbound.  Requires 400 Tailoring to use." permanentEnchantSpellName="Lightweave Embroidery" permanentenchant="3722" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="14"/>
+        <item displayInfoId="64544" durability="5" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_sword_152" id="50771" level="251" maxDurability="105" name="Frost Needle" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44467" permanentenchant="3834" pickUp="PickUpMetalSmall" putDown="PutDownSmallMEtal" randomPropertiesId="0" rarity="4" seed="710616896" slot="15"/>
         <item displayInfoId="64433" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_bone_elfskull_01" id="50781" level="251" maxDurability="0" name="Scourgelord's Baton" permanentenchant="0" pickUp="PickUpWand" putDown="PutDownWand" randomPropertiesId="0" rarity="4" seed="874279360" slot="16"/>
-        <item displayInfoId="60586" durability="75" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_wand_32" id="47658" level="245" maxDurability="75" name="Brimstone Igniter" permanentenchant="0" pickUp="PickUpWand" putDown="PutDownWand" randomPropertiesId="0" rarity="4" seed="0" slot="17"/>
+        <item displayInfoId="60586" durability="5" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_wand_32" id="47658" level="245" maxDurability="75" name="Brimstone Igniter" permanentenchant="0" pickUp="PickUpWand" putDown="PutDownWand" randomPropertiesId="0" rarity="4" seed="0" slot="17"/>
         <item displayInfoId="20621" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shirt_guildtabard_01" id="5976" level="1" maxDurability="0" name="Guild Tabard" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="1" seed="0" slot="18"/>
       </items>
       <glyphs>
-        <glyph effect="Your haste now reduces the time between periodic damage ticks of your Corruption spell." icon="ui-glyph-rune-9" id="911" name="Glyph of Quick Decay" type="major"/>
-        <glyph effect="Increases the range of your Curse of Exhaustion spell by 5 yards." icon="ui-glyph-rune-14" id="480" name="Glyph of Curse of Exhausion" type="minor"/>
-        <glyph effect="Your Drain Soul ability occasionally creates an additional soul shard." icon="ui-glyph-rune-7" id="478" name="Glyph of Drain Soul" type="minor"/>
-        <glyph effect="Increases the damage your Fear target can take before the Fear effect is removed by 20%." icon="ui-glyph-rune-14" id="277" name="Glyph of Fear" type="major"/>
+        <glyph effect="When you use Life Tap or Dark Pact, you gain 20% of your Spirit as spell power for 40 sec." icon="ui-glyph-rune-16" id="760" name="Glyph of Life Tap" type="major"/>
         <glyph effect="Reduces the mana cost of your Ritual of Souls spell by 70%." icon="ui-glyph-rune-17" id="482" name="Glyph of Souls" type="minor"/>
-        <glyph effect="Increases the percentage of damage shared via your Soul Link by an additional 5%." icon="ui-glyph-rune-17" id="761" name="Glyph of Soul Link" type="major"/>
+        <glyph effect="Your Drain Soul ability occasionally creates an additional soul shard." icon="ui-glyph-rune-7" id="478" name="Glyph of Drain Soul" type="minor"/>
+        <glyph effect="Increases the periodic damage of your Immolate by 10%." icon="ui-glyph-rune-9" id="283" name="Glyph of Immolate" type="major"/>
+        <glyph effect="Reduces the cast time of your Enslave Demon spell by 50%." icon="ui-glyph-rune-6" id="481" name="Glyph of Enslave Demon" type="minor"/>
+        <glyph effect="Increases the damage done by Incinerate by 5%." icon="ui-glyph-rune-8" id="272" name="Glyph of Incinerate" type="major"/>
       </glyphs>
     </characterTab>
     <summary>
-      <c earned="292" points="3010" total="1054" totalPoints="11635"/>
+      <c earned="293" points="3020" total="1054" totalPoints="11635"/>
       <category id="92" name="General">
         <c earned="27" earnedPoints="285" total="54" totalPoints="570"/>
       </category>
@@ -152,7 +152,7 @@
         <c earned="54" earnedPoints="570" total="166" totalPoints="1930"/>
       </category>
       <category id="168" name="Dungeons &amp; Raids">
-        <c earned="128" earnedPoints="1305" total="454" totalPoints="4915"/>
+        <c earned="129" earnedPoints="1315" total="454" totalPoints="4915"/>
       </category>
       <category id="169" name="Professions">
         <c earned="40" earnedPoints="400" total="75" totalPoints="760"/>

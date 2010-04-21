@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/sheet.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-sheet.xml">
   <tabInfo subTab="profile" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Corvintheus&amp;gn=Alliance+Pwners+II"/>
   <characterInfo>
-    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Corvintheus" class="Death Knight" classId="6" classUrl="c=Death+Knight" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 17, 2010" level="80" name="Corvintheus" points="3680" prefix="" race="Blood Elf" raceId="10" realm="Coilfang" suffix=" the Noble" titleId="122">
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Corvintheus" class="Death Knight" classId="6" classUrl="c=Death+Knight" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 21, 2010" level="80" name="Corvintheus" points="3720" prefix="" race="Blood Elf" raceId="10" realm="Coilfang" suffix=" the Noble" titleId="122">
       <modelBasePath value="http://us.media.battle.net.edgesuite.net/"/>
     </character>
     <characterTab>
@@ -11,7 +11,7 @@
       <buffs/>
       <debuffs/>
       <pvp>
-        <lifetimehonorablekills value="6151"/>
+        <lifetimehonorablekills value="6155"/>
         <arenacurrency value="0"/>
       </pvp>
       <professions>
@@ -19,16 +19,16 @@
         <skill id="186" key="mining" max="450" name="Mining" value="450"/>
       </professions>
       <characterBars>
-        <health effective="24561"/>
+        <health effective="25121"/>
         <secondBar casting="-1" effective="100" notCasting="-1" perFive="-1" type="p"/>
       </characterBars>
       <baseStats>
-        <strength attack="2296" base="184" block="-1" effective="1158"/>
+        <strength attack="2356" base="184" block="-1" effective="1188"/>
         <agility armor="512" attack="-1" base="114" critHitPercent="7.29" effective="256"/>
-        <stamina base="220" effective="1662" health="16440" petBonus="-1"/>
+        <stamina base="220" effective="1718" health="17000" petBonus="-1"/>
         <intellect base="38" critHitPercent="-1.00" effective="38" mana="-1" petBonus="-1"/>
         <spirit base="57" effective="57" healthRegen="34" manaRegen="-1"/>
-        <armor base="14115" effective="14115" percent="48.10" petBonus="-1"/>
+        <armor base="14303" effective="14303" percent="48.43" petBonus="-1"/>
       </baseStats>
       <resistances>
         <arcane petBonus="-1" value="0"/>
@@ -39,22 +39,22 @@
         <shadow petBonus="-1" value="0"/>
       </resistances>
       <melee>
-        <mainHandDamage dps="485.3" max="1728" min="1401" percent="0" speed="3.22"/>
-        <offHandDamage dps="116.7" max="215" min="214" percent="0" speed="1.84"/>
+        <mainHandDamage dps="486.1" max="1731" min="1404" percent="0" speed="3.22"/>
+        <offHandDamage dps="117.1" max="216" min="215" percent="0" speed="1.84"/>
         <mainHandSpeed hastePercent="8.56" hasteRating="216" value="3.22"/>
         <offHandSpeed hastePercent="8.56" hasteRating="216" value="1.84"/>
-        <power base="2536" effective="3003" increasedDps="214.0"/>
-        <hitRating increasedHitPercent="8.60" penetration="199" reducedArmorPercent="14.22" value="282"/>
-        <critChance percent="22.05" plusPercent="11.76" rating="540"/>
+        <power base="2596" effective="3013" increasedDps="215.0"/>
+        <hitRating increasedHitPercent="8.60" penetration="218" reducedArmorPercent="15.58" value="282"/>
+        <critChance percent="22.42" plusPercent="12.13" rating="557"/>
         <expertise additional="0" percent="1.25" rating="0" value="5"/>
       </melee>
       <ranged>
         <weaponSkill rating="0" value="0"/>
         <damage dps="0.0" max="0" min="0" percent="0" speed="0.00"/>
         <speed hastePercent="8.56" hasteRating="216" value="0.00"/>
-        <power base="246" effective="713" increasedDps="50.0" petAttack="-1.00" petSpell="-1.00"/>
-        <hitRating increasedHitPercent="8.60" penetration="199" reducedArmorPercent="14.22" value="282"/>
-        <critChance percent="22.05" plusPercent="11.76" rating="540"/>
+        <power base="246" effective="663" increasedDps="47.0" petAttack="-1.00" petSpell="-1.00"/>
+        <hitRating increasedHitPercent="8.60" penetration="218" reducedArmorPercent="15.58" value="282"/>
+        <critChance percent="22.42" plusPercent="12.13" rating="557"/>
       </ranged>
       <spell>
         <bonusDamage>
@@ -68,28 +68,28 @@
         </bonusDamage>
         <bonusHealing value="0"/>
         <hitRating increasedHitPercent="10.75" penetration="0" reducedResist="0" value="282"/>
-        <critChance rating="540">
-          <arcane percent="14.76"/>
-          <fire percent="14.76"/>
-          <frost percent="14.76"/>
-          <holy percent="14.76"/>
-          <nature percent="14.76"/>
-          <shadow percent="14.76"/>
+        <critChance rating="557">
+          <arcane percent="15.13"/>
+          <fire percent="15.13"/>
+          <frost percent="15.13"/>
+          <holy percent="15.13"/>
+          <nature percent="15.13"/>
+          <shadow percent="15.13"/>
         </critChance>
         <penetration value="0"/>
         <manaRegen casting="0.00" notCasting="0.00"/>
         <hasteRating hastePercent="8.56" hasteRating="216"/>
       </spell>
       <defenses>
-        <armor base="14115" effective="14115" percent="48.10" petBonus="-1"/>
+        <armor base="14303" effective="14303" percent="48.43" petBonus="-1"/>
         <defense decreasePercent="0.56" increasePercent="0.56" plusDefense="14" rating="70" value="400.00"/>
         <dodge increasePercent="1.90" percent="9.13" rating="86"/>
-        <parry increasePercent="6.39" percent="11.29" rating="289"/>
+        <parry increasePercent="6.56" percent="11.43" rating="297"/>
         <block increasePercent="0.00" percent="0.00" rating="0"/>
-        <resilience damagePercent="4.71" hitPercent="2.14" value="202.00"/>
+        <resilience damagePercent="4.25" hitPercent="1.93" value="182.00"/>
       </defenses>
       <items>
-        <item displayInfoId="53653" durability="100" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_helmet_110" id="40428" level="200" maxDurability="100" name="Titan's Outlook" permanentEnchantIcon="ability_warrior_shieldmastery" permanentEnchantItemId="44069" permanentenchant="3795" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="1255071658" slot="0"/>
+        <item displayInfoId="62115" durability="100" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_helmet_130" id="47675" level="245" maxDurability="100" name="Faceplate of Thunderous Rampage" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="0"/>
         <item displayInfoId="39162" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_necklace_36" id="47494" level="219" maxDurability="0" name="Ancient Pendant of Arathor" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="1441553152" slot="1"/>
         <item displayInfoId="61731" durability="100" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shoulder_88" id="47696" level="245" maxDurability="100" name="Shoulderplates of Trembling Rage" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="2"/>
         <item displayInfoId="30605" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shirt_12" id="18231" level="1" maxDurability="0" name="Sleeveless T-Shirt" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="1" seed="0" slot="3"/>
@@ -117,27 +117,27 @@
       </glyphs>
     </characterTab>
     <summary>
-      <c earned="343" points="3680" total="1054" totalPoints="11635"/>
+      <c earned="347" points="3720" total="1054" totalPoints="11635"/>
       <category id="92" name="General">
         <c earned="24" earnedPoints="255" total="54" totalPoints="570"/>
       </category>
       <category id="96" name="Quests">
-        <c earned="20" earnedPoints="200" total="49" totalPoints="530"/>
+        <c earned="21" earnedPoints="210" total="49" totalPoints="530"/>
       </category>
       <category id="97" name="Exploration">
         <c earned="68" earnedPoints="780" total="70" totalPoints="830"/>
       </category>
       <category id="95" name="Player vs. Player">
-        <c earned="63" earnedPoints="660" total="166" totalPoints="1930"/>
+        <c earned="64" earnedPoints="670" total="166" totalPoints="1930"/>
       </category>
       <category id="168" name="Dungeons &amp; Raids">
-        <c earned="104" earnedPoints="1120" total="454" totalPoints="4915"/>
+        <c earned="105" earnedPoints="1130" total="454" totalPoints="4915"/>
       </category>
       <category id="169" name="Professions">
         <c earned="20" earnedPoints="200" total="75" totalPoints="760"/>
       </category>
       <category id="201" name="Reputation">
-        <c earned="8" earnedPoints="105" total="45" totalPoints="560"/>
+        <c earned="9" earnedPoints="115" total="45" totalPoints="560"/>
       </category>
       <category id="155" name="World Events">
         <c earned="36" earnedPoints="360" total="141" totalPoints="1540"/>

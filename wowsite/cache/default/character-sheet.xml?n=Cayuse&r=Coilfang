@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/sheet.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-sheet.xml">
   <tabInfo subTab="profile" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Cayuse&amp;gn=Alliance+Pwners+II"/>
   <characterInfo>
-    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Cayuse" class="Warrior" classId="1" classUrl="c=Warrior" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 17, 2010" level="80" name="Cayuse" points="3450" prefix="Elder " race="Undead" raceId="5" realm="Coilfang" suffix="" titleId="43">
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Cayuse" class="Warrior" classId="1" classUrl="c=Warrior" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 21, 2010" level="80" name="Cayuse" points="3470" prefix="Elder " race="Undead" raceId="5" realm="Coilfang" suffix="" titleId="43">
       <modelBasePath value="http://us.media.battle.net.edgesuite.net/"/>
     </character>
     <characterTab>
@@ -12,7 +12,7 @@
       <buffs/>
       <debuffs/>
       <pvp>
-        <lifetimehonorablekills value="1555"/>
+        <lifetimehonorablekills value="1562"/>
         <arenacurrency value="75"/>
       </pvp>
       <professions>
@@ -20,16 +20,16 @@
         <skill id="186" key="mining" max="450" name="Mining" value="450"/>
       </professions>
       <characterBars>
-        <health effective="41146"/>
+        <health effective="41646"/>
         <secondBar casting="-1" effective="100" notCasting="-1" perFive="-1" type="r"/>
       </characterBars>
       <baseStats>
-        <strength attack="2946" base="183" block="74" effective="1483"/>
+        <strength attack="2970" base="183" block="74" effective="1495"/>
         <agility armor="266" attack="-1" base="111" critHitPercent="5.32" effective="133"/>
-        <stamina base="238" effective="3293" health="32750" petBonus="-1"/>
+        <stamina base="238" effective="3343" health="33250" petBonus="-1"/>
         <intellect base="34" critHitPercent="-1.00" effective="34" mana="-1" petBonus="-1"/>
         <spirit base="64" effective="64" healthRegen="38" manaRegen="-1"/>
-        <armor base="27999" effective="29109" percent="65.65" petBonus="-1"/>
+        <armor base="28767" effective="29877" percent="66.23" petBonus="-1"/>
       </baseStats>
       <resistances>
         <arcane petBonus="-1" value="0"/>
@@ -40,13 +40,13 @@
         <shadow petBonus="-1" value="0"/>
       </resistances>
       <melee>
-        <mainHandDamage dps="510.4" max="912" min="722" percent="0" speed="1.60"/>
+        <mainHandDamage dps="543.2" max="1039" min="807" percent="0" speed="1.70"/>
         <offHandDamage dps="0.0" max="0" min="0" percent="0" speed="2.00"/>
-        <mainHandSpeed hastePercent="0.00" hasteRating="0" value="1.60"/>
+        <mainHandSpeed hastePercent="0.00" hasteRating="0" value="1.70"/>
         <offHandSpeed hastePercent="0.00" hasteRating="0" value="2.00"/>
-        <power base="3994" effective="3994" increasedDps="285.0"/>
-        <hitRating increasedHitPercent="5.95" penetration="0" reducedArmorPercent="0.00" value="195"/>
-        <critChance percent="5.32" plusPercent="0.00" rating="0"/>
+        <power base="4039" effective="4039" increasedDps="288.0"/>
+        <hitRating increasedHitPercent="7.14" penetration="0" reducedArmorPercent="0.00" value="234"/>
+        <critChance percent="0.00" plusPercent="0.00" rating="0"/>
         <expertise additional="8" percent="3.50" rating="69" value="14"/>
       </melee>
       <ranged>
@@ -54,7 +54,7 @@
         <damage dps="297.1" max="636" min="433" percent="0" speed="1.80"/>
         <speed hastePercent="0.00" hasteRating="0" value="1.80"/>
         <power base="203" effective="203" increasedDps="14.0" petAttack="-1.00" petSpell="-1.00"/>
-        <hitRating increasedHitPercent="5.95" penetration="0" reducedArmorPercent="0.00" value="195"/>
+        <hitRating increasedHitPercent="7.14" penetration="0" reducedArmorPercent="0.00" value="234"/>
         <critChance percent="5.32" plusPercent="0.00" rating="0"/>
       </ranged>
       <spell>
@@ -68,7 +68,7 @@
           <petBonus attack="-1" damage="-1" fromType=""/>
         </bonusDamage>
         <bonusHealing value="0"/>
-        <hitRating increasedHitPercent="7.43" penetration="0" reducedResist="0" value="195"/>
+        <hitRating increasedHitPercent="8.92" penetration="0" reducedResist="0" value="234"/>
         <critChance rating="0">
           <arcane percent="0.00"/>
           <fire percent="0.00"/>
@@ -82,18 +82,17 @@
         <hasteRating hastePercent="0.00" hasteRating="0"/>
       </spell>
       <defenses>
-        <armor base="27999" effective="29109" percent="65.65" petBonus="-1"/>
-        <defense decreasePercent="7.24" increasePercent="7.24" plusDefense="181" rating="891" value="400.00"/>
-        <dodge increasePercent="11.98" percent="26.52" rating="542"/>
-        <parry increasePercent="7.03" percent="21.33" rating="318"/>
-        <block increasePercent="3.78" percent="21.02" rating="62"/>
+        <armor base="28767" effective="29877" percent="66.23" petBonus="-1"/>
+        <defense decreasePercent="7.36" increasePercent="7.36" plusDefense="184" rating="908" value="400.00"/>
+        <dodge increasePercent="12.95" percent="27.27" rating="586"/>
+        <parry increasePercent="6.94" percent="21.35" rating="314"/>
+        <block increasePercent="2.26" percent="19.62" rating="37"/>
         <resilience damagePercent="0.35" hitPercent="0.16" value="15.00"/>
       </defenses>
       <items>
         <item displayInfoId="62117" durability="100" gem0Id="41380" gem1Id="40126" gem2Id="0" gemIcon0="inv_jewelcrafting_shadowspirit_02" gemIcon1="inv_jewelcrafting_gem_38" icon="inv_helmet_98" id="47678" level="245" maxDurability="100" name="Headplate of the Honorbound" permanentEnchantIcon="trade_engineering" permanentEnchantSpellDesc="Attaches a tiny mind amplification dish to your helmet, increasing Stamina by 45 and allowing you to engage in mental battle with your enemies to, hopefully, control them.  Can be used every 10 min.&#10;&#10;&#10;&#10;Enchanting your helm binds it to you.  Requires 350 engineering to use." permanentEnchantSpellName="Mind Amplification Dish" permanentenchant="3878" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="0"/>
         <item displayInfoId="64199" durability="0" gem0Id="40119" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_42" icon="inv_jewelry_necklace_52" id="50763" level="251" maxDurability="0" name="Marrowgar's Scratching Choker" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="329681728" slot="1"/>
         <item displayInfoId="62134" durability="100" gem0Id="40160" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_39" icon="inv_shoulder_62" id="47699" level="245" maxDurability="100" name="Shoulderguards of Enduring Order" permanentEnchantIcon="inv_shoulder_61" permanentEnchantItemId="44957" permanentenchant="3852" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="2"/>
-        <item displayInfoId="10834" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shirt_white_01" id="2576" level="7" maxDurability="0" name="White Linen Shirt" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="1" seed="1190060160" slot="3"/>
         <item displayInfoId="62052" durability="165" gem0Id="40160" gem1Id="40119" gem2Id="40126" gemIcon0="inv_jewelcrafting_gem_39" gemIcon1="inv_jewelcrafting_gem_42" gemIcon2="inv_jewelcrafting_gem_38" icon="inv_chest_plate20" id="47592" level="245" maxDurability="165" name="Breastplate of the White Knight" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="39005" permanentenchant="3297" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="1652691584" slot="4"/>
         <item displayInfoId="64784" durability="55" gem0Id="40160" gem1Id="40119" gem2Id="40119" gemIcon0="inv_jewelcrafting_gem_39" gemIcon1="inv_jewelcrafting_gem_42" gemIcon2="inv_jewelcrafting_gem_42" icon="inv_belt_62" id="50991" level="264" maxDurability="55" name="Verdigris Chain Belt" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="5"/>
         <item displayInfoId="62127" durability="120" gem0Id="40111" gem1Id="40119" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_37" gemIcon1="inv_jewelcrafting_gem_42" icon="inv_pants_plate_30" id="48459" level="232" maxDurability="120" name="Hellscream's Legguards of Conquest" permanentEnchantIcon="inv_misc_armorkit_32" permanentEnchantItemId="38373" permanentenchant="3822" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="6"/>
@@ -105,8 +104,8 @@
         <item displayInfoId="49650" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_drink_08" id="49118" level="200" maxDurability="0" name="Bubbling Brightbrew Charm" permanentenchant="0" pickUp="PickUpWand" putDown="PutDownWand" randomPropertiesId="0" rarity="4" seed="1912003712" slot="12"/>
         <item displayInfoId="64264" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_key_15" id="50356" level="264" maxDurability="0" name="Corroded Skeleton Key" permanentenchant="0" pickUp="PickUpWand" putDown="PutDownWand" randomPropertiesId="0" rarity="4" seed="0" slot="13"/>
         <item displayInfoId="64328" durability="0" gem0Id="40126" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_38" icon="inv_misc_cape_13" id="50466" level="264" maxDurability="0" name="Sentinel's Winter Cloak" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="39001" permanentenchant="3294" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="14"/>
-        <item displayInfoId="64761" durability="105" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_axe_89" id="50290" level="232" maxDurability="105" name="Falric's Wrist-Chopper" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="46026" permanentenchant="3869" pickUp="PickUpMetalSmall" putDown="PutDownSmallMEtal" randomPropertiesId="0" rarity="4" seed="967772736" slot="15"/>
-        <item displayInfoId="64882" durability="120" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shield_63" id="49835" level="219" maxDurability="120" name="Splintered Door of the Citadel" permanentEnchantIcon="inv_shield_20" permanentEnchantItemId="35449" permanentenchant="1071" pickUp="PickUpMetalLArge" putDown="PutDownLArgeMEtal" randomPropertiesId="0" rarity="4" seed="0" slot="16"/>
+        <item displayInfoId="64516" durability="105" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_mace_117" id="50760" level="251" maxDurability="105" name="Bonebreaker Scepter" permanentenchant="0" pickUp="PickUpMetalSmall" putDown="PutDownSmallMEtal" randomPropertiesId="0" rarity="4" seed="1715889024" slot="15"/>
+        <item displayInfoId="64409" durability="120" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shield_73" id="50794" level="251" maxDurability="120" name="Neverending Winter" permanentEnchantIcon="inv_shield_20" permanentEnchantItemId="35449" permanentenchant="1071" pickUp="PickUpMetalLArge" putDown="PutDownLArgeMEtal" randomPropertiesId="0" rarity="4" seed="0" slot="16"/>
         <item displayInfoId="60588" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_throwingaxepvp320_07" id="47660" level="245" maxDurability="0" name="Blades of the Sable Cross" permanentenchant="0" pickUp="PickUpMetalSmall" putDown="PutDownSmallMEtal" randomPropertiesId="0" rarity="4" seed="0" slot="17"/>
         <item displayInfoId="54175" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shirt_guildtabard_01" id="43155" level="75" maxDurability="0" name="Tabard of the Ebon Blade" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="1" seed="0" slot="18"/>
         <item displayInfoId="64928" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_ammo_arrow_03" id="52021" level="230" maxDurability="0" name="Iceblade Arrow" permanentenchant="0" pickUp="PickUpWoodSmall" putDown="PutDownWoodSmall" randomPropertiesId="0" rarity="4" seed="1442307200" slot="-1"/>
@@ -121,7 +120,7 @@
       </glyphs>
     </characterTab>
     <summary>
-      <c earned="334" points="3450" total="1054" totalPoints="11635"/>
+      <c earned="336" points="3470" total="1054" totalPoints="11635"/>
       <category id="92" name="General">
         <c earned="29" earnedPoints="320" total="54" totalPoints="570"/>
       </category>
@@ -135,13 +134,13 @@
         <c earned="42" earnedPoints="440" total="166" totalPoints="1930"/>
       </category>
       <category id="168" name="Dungeons &amp; Raids">
-        <c earned="137" earnedPoints="1395" total="454" totalPoints="4915"/>
+        <c earned="138" earnedPoints="1405" total="454" totalPoints="4915"/>
       </category>
       <category id="169" name="Professions">
         <c earned="28" earnedPoints="280" total="75" totalPoints="760"/>
       </category>
       <category id="201" name="Reputation">
-        <c earned="5" earnedPoints="65" total="45" totalPoints="560"/>
+        <c earned="6" earnedPoints="75" total="45" totalPoints="560"/>
       </category>
       <category id="155" name="World Events">
         <c earned="54" earnedPoints="560" total="141" totalPoints="1540"/>

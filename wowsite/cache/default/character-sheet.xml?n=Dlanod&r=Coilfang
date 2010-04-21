@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/sheet.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-sheet.xml">
   <tabInfo subTab="profile" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Dlanod&amp;gn=Alliance+Pwners+II"/>
   <characterInfo>
-    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Dlanod" class="Mage" classId="8" classUrl="c=Mage" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 12, 2010" level="80" name="Dlanod" points="1445" prefix="" race="Undead" raceId="5" realm="Coilfang" suffix=" the Patient" titleId="137">
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Dlanod" class="Mage" classId="8" classUrl="c=Mage" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 20, 2010" level="80" name="Dlanod" points="1445" prefix="" race="Undead" raceId="5" realm="Coilfang" suffix=" the Patient" titleId="137">
       <arenaTeams>
         <arenaTeam battleGroup="Retaliation" created="1268697600000" faction="Horde" factionId="1" gamesPlayed="0" gamesWon="0" lastSeasonRanking="0" name="Lemony Toast" ranking="0" rating="48" realm="Coilfang" realmUrl="b=Retaliation&amp;r=Coilfang&amp;ts=2&amp;t=Lemony+Toast&amp;ff=realm&amp;fv=Coilfang&amp;select=Lemony+Toast" season="0" seasonGamesPlayed="10" seasonGamesWon="1" size="2" teamSize="2" teamUrl="r=Coilfang&amp;ts=2&amp;t=Lemony+Toast&amp;select=Lemony+Toast" url="r=Coilfang&amp;ts=2&amp;t=Lemony+Toast&amp;select=Lemony+Toast">
           <emblem background="fffcc70d" borderColor="ff000000" borderStyle="4" iconColor="ffcf00b1" iconStyle="68"/>
@@ -15,8 +15,8 @@
     </character>
     <characterTab>
       <talentSpecs>
-        <talentSpec active="1" group="2" icon="spell_holy_magicalsentry" prim="Arcane" treeOne="57" treeThree="11" treeTwo="3"/>
-        <talentSpec group="1" icon="spell_frost_frostbolt02" prim="Frost" treeOne="20" treeThree="51" treeTwo="0"/>
+        <talentSpec group="2" icon="spell_holy_magicalsentry" prim="Arcane" treeOne="57" treeThree="11" treeTwo="3"/>
+        <talentSpec active="1" group="1" icon="spell_frost_frostbolt02" prim="Frost" treeOne="20" treeThree="51" treeTwo="0"/>
       </talentSpecs>
       <buffs/>
       <debuffs/>
@@ -30,26 +30,26 @@
       </professions>
       <characterBars>
         <health effective="21343"/>
-        <secondBar casting="68" effective="18513" notCasting="136" type="m"/>
+        <secondBar casting="0" effective="16503" notCasting="115" type="m"/>
       </characterBars>
       <baseStats>
         <strength attack="45" base="35" block="-1" effective="55"/>
         <agility armor="122" attack="-1" base="41" critHitPercent="4.65" effective="61"/>
         <stamina base="59" effective="1456" health="14380" petBonus="-1"/>
-        <intellect base="205" critHitPercent="7.12" effective="1035" mana="15245" petBonus="-1"/>
-        <spirit base="196" effective="253" healthRegen="14" manaRegen="136"/>
-        <armor base="2179" effective="2179" percent="12.51" petBonus="-1"/>
+        <intellect base="179" critHitPercent="6.31" effective="901" mana="13235" petBonus="-1"/>
+        <spirit base="179" effective="231" healthRegen="13" manaRegen="115"/>
+        <armor base="3530" effective="3530" percent="18.81" petBonus="-1"/>
       </baseStats>
       <resistances>
-        <arcane petBonus="-1" value="0"/>
-        <fire petBonus="-1" value="0"/>
-        <frost petBonus="-1" value="0"/>
+        <arcane petBonus="-1" value="80"/>
+        <fire petBonus="-1" value="80"/>
+        <frost petBonus="-1" value="80"/>
         <holy petBonus="-1" value="0"/>
-        <nature petBonus="-1" value="0"/>
-        <shadow petBonus="-1" value="0"/>
+        <nature petBonus="-1" value="80"/>
+        <shadow petBonus="-1" value="80"/>
       </resistances>
       <melee>
-        <mainHandDamage dps="129.5" max="371" min="126" percent="0" speed="1.92"/>
+        <mainHandDamage dps="125.7" max="360" min="122" percent="0" speed="1.92"/>
         <offHandDamage dps="0.0" max="0" min="0" percent="0" speed="1.75"/>
         <mainHandSpeed hastePercent="14.61" hasteRating="479" value="1.92"/>
         <offHandSpeed hastePercent="14.61" hasteRating="479" value="1.75"/>
@@ -60,7 +60,7 @@
       </melee>
       <ranged>
         <weaponSkill rating="0" value="0"/>
-        <damage dps="439.3" max="898" min="482" percent="0" speed="1.57"/>
+        <damage dps="414.1" max="846" min="455" percent="0" speed="1.57"/>
         <speed hastePercent="14.61" hasteRating="479" value="1.57"/>
         <power base="51" effective="51" increasedDps="3.0" petAttack="-1.00" petSpell="-1.00"/>
         <hitRating increasedHitPercent="6.19" penetration="0" reducedArmorPercent="0.00" value="203"/>
@@ -68,30 +68,30 @@
       </ranged>
       <spell>
         <bonusDamage>
-          <arcane value="2561"/>
-          <fire value="2561"/>
-          <frost value="2561"/>
-          <holy value="2561"/>
-          <nature value="2561"/>
-          <shadow value="2561"/>
+          <arcane value="2406"/>
+          <fire value="2406"/>
+          <frost value="2406"/>
+          <holy value="2406"/>
+          <nature value="2406"/>
+          <shadow value="2406"/>
           <petBonus attack="-1" damage="-1" fromType=""/>
         </bonusDamage>
         <bonusHealing value="2406"/>
         <hitRating increasedHitPercent="7.74" penetration="39" reducedResist="39" value="203"/>
         <critChance rating="247">
-          <arcane percent="15.50"/>
-          <fire percent="15.50"/>
-          <frost percent="15.50"/>
-          <holy percent="15.50"/>
-          <nature percent="15.50"/>
-          <shadow percent="15.50"/>
+          <arcane percent="11.69"/>
+          <fire percent="11.69"/>
+          <frost percent="11.69"/>
+          <holy percent="11.69"/>
+          <nature percent="11.69"/>
+          <shadow percent="11.69"/>
         </critChance>
         <penetration value="39"/>
-        <manaRegen casting="68.00" notCasting="136.00"/>
+        <manaRegen casting="0.00" notCasting="115.00"/>
         <hasteRating hastePercent="14.61" hasteRating="479"/>
       </spell>
       <defenses>
-        <armor base="2179" effective="2179" percent="12.51" petBonus="-1"/>
+        <armor base="3530" effective="3530" percent="18.81" petBonus="-1"/>
         <defense decreasePercent="0.00" increasePercent="0.00" plusDefense="0" rating="0" value="399.00"/>
         <dodge increasePercent="0.00" percent="4.66" rating="0"/>
         <parry increasePercent="0.00" percent="0.00" rating="0"/>
@@ -118,12 +118,11 @@
         <item displayInfoId="60586" durability="61" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_wand_32" id="47658" level="245" maxDurability="75" name="Brimstone Igniter" permanentenchant="0" pickUp="PickUpWand" putDown="PutDownWand" randomPropertiesId="0" rarity="4" seed="0" slot="17"/>
       </items>
       <glyphs>
-        <glyph effect="Increases the damage from your Arcane Blast buff by 3%." icon="ui-glyph-rune-6" id="651" name="Glyph of Arcane Blast" type="major"/>
+        <glyph effect="Your Evocation ability also causes you to regain 60% of your health over its duration." icon="ui-glyph-rune-1" id="315" name="Glyph of Evocation" type="major"/>
         <glyph effect="Your Slow Fall spell no longer requires a reagent." icon="ui-glyph-rune-20" id="451" name="Glyph of Slow Fall" type="minor"/>
-        <glyph effect="Reduces the mana cost of your Arcane Intellect and Arcane Brilliance spells by 50%." icon="ui-glyph-rune1" id="445" name="Glyph of Arcane Intellect" type="minor"/>
-        <glyph effect="Increases the critical strike damage bonus of Arcane Missiles by 25%." icon="ui-glyph-rune-14" id="312" name="Glyph of Arcane Missiles" type="major"/>
         <glyph effect="Your Polymorph: Sheep spell polymorphs the target into a penguin instead." icon="ui-glyph-rune-16" id="450" name="Glyph of the Penguin" type="minor"/>
-        <glyph effect="Your Molten Armor grants an additional 20% of your spirit as critical strike rating." icon="ui-glyph-rune-17" id="328" name="Glyph of Molten Armor" type="major"/>
+        <glyph effect="Your Ice Armor and Frost Armor spells grant an additional 50% armor and resistance." icon="ui-glyph-rune-6" id="320" name="Glyph of Ice Armor" type="major"/>
+        <glyph effect="Increases the amount of damage absorbed by your Ice Barrier by 30%." icon="ui-glyph-rune-6" id="700" name="Glyph of Ice Barrier" type="major"/>
       </glyphs>
     </characterTab>
     <summary>

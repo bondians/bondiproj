@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/reputation.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-reputation.xml">
   <tabInfo subTab="reputation" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Corvintheus&amp;gn=Alliance+Pwners+II"/>
   <characterInfo>
-    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Corvintheus" class="Death Knight" classId="6" classUrl="c=Death+Knight" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 17, 2010" level="80" name="Corvintheus" points="3680" prefix="" race="Blood Elf" raceId="10" realm="Coilfang" suffix=" the Noble" titleId="122">
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Corvintheus" class="Death Knight" classId="6" classUrl="c=Death+Knight" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 21, 2010" level="80" name="Corvintheus" points="3720" prefix="" race="Blood Elf" raceId="10" realm="Coilfang" suffix=" the Noble" titleId="122">
       <modelBasePath value="http://us.media.battle.net.edgesuite.net/"/>
     </character>
     <reputationTab>
@@ -27,7 +27,7 @@
       <faction header="1" iconKey="wrathofthelichking" id="1097" key="wrathofthelichking" name="Wrath of the Lich King">
         <faction id="1098" key="knightsoftheebonblade" name="Knights of the Ebon Blade" reputation="42999"/>
         <faction header="1" iconKey="wrathofthelichking" id="1052" key="hordeexpedition" name="Horde Expedition" reputation="42999">
-          <faction id="1124" key="thesunreavers" name="The Sunreavers" reputation="39107"/>
+          <faction id="1124" key="thesunreavers" name="The Sunreavers" reputation="42999"/>
           <faction id="1085" key="warsongoffensive" name="Warsong Offensive" reputation="42999"/>
           <faction id="1067" key="thehandofvengeance" name="The Hand of Vengeance" reputation="42999"/>
           <faction id="1064" key="thetaunka" name="The Taunka" reputation="42999"/>
@@ -41,6 +41,7 @@
         <faction id="1090" key="kirintor" name="Kirin Tor" reputation="42999"/>
         <faction id="1091" key="thewyrmrestaccord" name="The Wyrmrest Accord" reputation="42999"/>
         <faction id="1106" key="argentcrusade" name="Argent Crusade" reputation="42999"/>
+        <faction id="1156" key="theashenverdict" name="The Ashen Verdict" reputation="299"/>
       </faction>
       <faction header="1" iconKey="classic" id="1118" key="classic" name="Classic">
         <faction header="1" iconKey="classic" id="892" key="hordeforces" name="Horde Forces">
@@ -55,12 +56,12 @@
         <faction id="59" key="thoriumbrotherhood" name="Thorium Brotherhood" reputation="250"/>
         <faction id="576" key="timbermawhold" name="Timbermaw Hold" reputation="-3530"/>
         <faction id="922" key="tranquillien" name="Tranquillien" reputation="4000"/>
-        <faction header="1" iconKey="classic" id="67" key="horde" name="Horde" reputation="11410">
-          <faction id="911" key="silvermooncity" name="Silvermoon City" reputation="28825"/>
-          <faction id="68" key="undercity" name="Undercity" reputation="11010"/>
-          <faction id="81" key="thunderbluff" name="Thunder Bluff" reputation="8410"/>
-          <faction id="76" key="orgrimmar" name="Orgrimmar" reputation="15882"/>
-          <faction id="530" key="darkspeartrolls" name="Darkspear Trolls" reputation="13372"/>
+        <faction header="1" iconKey="classic" id="67" key="horde" name="Horde" reputation="11472">
+          <faction id="911" key="silvermooncity" name="Silvermoon City" reputation="29075"/>
+          <faction id="68" key="undercity" name="Undercity" reputation="11072"/>
+          <faction id="81" key="thunderbluff" name="Thunder Bluff" reputation="8472"/>
+          <faction id="76" key="orgrimmar" name="Orgrimmar" reputation="15945"/>
+          <faction id="530" key="darkspeartrolls" name="Darkspear Trolls" reputation="13435"/>
         </faction>
         <faction id="809" key="shen'dralar" name="Shen'dralar" reputation="0"/>
         <faction id="87" key="bloodsailbuccaneers" name="Bloodsail Buccaneers" reputation="-7200"/>

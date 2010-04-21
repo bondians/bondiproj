@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/sheet.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-sheet.xml">
   <tabInfo subTab="profile" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Thunderstuc&amp;gn=Alliance+Pwners+II"/>
   <characterInfo>
-    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Thunderstuc" class="Priest" classId="5" classUrl="c=Priest" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 17, 2010" level="80" name="Thunderstuc" points="3165" prefix="" race="Blood Elf" raceId="10" realm="Coilfang" suffix=" of the Nightfall" titleId="107">
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Thunderstuc" class="Priest" classId="5" classUrl="c=Priest" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 18, 2010" level="80" name="Thunderstuc" points="3165" prefix="" race="Blood Elf" raceId="10" realm="Coilfang" suffix=" of the Nightfall" titleId="107">
       <modelBasePath value="http://us.media.battle.net.edgesuite.net/"/>
     </character>
     <characterTab>
@@ -12,7 +12,7 @@
       <buffs/>
       <debuffs/>
       <pvp>
-        <lifetimehonorablekills value="8654"/>
+        <lifetimehonorablekills value="8663"/>
         <arenacurrency value="25"/>
       </pvp>
       <professions>
@@ -92,7 +92,7 @@
       <items>
         <item displayInfoId="62073" durability="60" gem0Id="41285" gem1Id="40133" gem2Id="0" gemIcon0="inv_jewelcrafting_icediamond_02" gemIcon1="inv_jewelcrafting_gem_40" icon="inv_helmet_139" id="47692" level="245" maxDurability="60" name="Hood of Smoldering Aftermath" permanentEnchantIcon="spell_fire_masterofelements" permanentEnchantItemId="44159" permanentenchant="3820" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="0"/>
         <item displayInfoId="39162" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_necklace_36" id="51335" level="264" maxDurability="0" name="Wrathful Gladiator's Pendant of Ascendancy" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="0" slot="1"/>
-        <item displayInfoId="62092" durability="59" gem0Id="40155" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_39" icon="inv_shoulder_35" id="47714" level="245" maxDurability="60" name="Pauldrons of Catastrophic Emanation" permanentEnchantIcon="spell_nature_lightningoverload" permanentEnchantItemId="44874" permanentenchant="3810" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="2"/>
+        <item displayInfoId="62092" durability="58" gem0Id="40155" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_39" icon="inv_shoulder_35" id="47714" level="245" maxDurability="60" name="Pauldrons of Catastrophic Emanation" permanentEnchantIcon="spell_nature_lightningoverload" permanentEnchantItemId="44874" permanentenchant="3810" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="2"/>
         <item displayInfoId="64350" durability="96" gem0Id="40113" gem1Id="40155" gem2Id="40133" gemIcon0="inv_jewelcrafting_gem_37" gemIcon1="inv_jewelcrafting_gem_39" gemIcon2="inv_jewelcrafting_gem_40" icon="inv_chest_cloth_78" id="50974" level="264" maxDurability="100" name="Meteor Chaser's Raiment" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44465" permanentenchant="3832" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="4"/>
         <item displayInfoId="64347" durability="34" gem0Id="40133" gem1Id="40113" gem2Id="40113" gemIcon0="inv_jewelcrafting_gem_40" gemIcon1="inv_jewelcrafting_gem_37" gemIcon2="inv_jewelcrafting_gem_37" icon="inv_belt_66" id="49978" level="264" maxDurability="35" name="Crushing Coldwraith Belt" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="0" slot="5"/>
         <item displayInfoId="64255" durability="74" gem0Id="40133" gem1Id="40155" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_40" gemIcon1="inv_jewelcrafting_gem_39" icon="inv_pants_cloth_35" id="50769" level="251" maxDurability="75" name="Crimson Acolyte Leggings" permanentEnchantIcon="spell_nature_astralrecalgroup" permanentEnchantSpellDesc="Permanently embroiders your pants with sanctified spellthread, increasing spell power by 50 and Spirit by 20.&#10;&#10;&#10;&#10;Only the tailor's pants can be embroidered, and doing so will cause them to become soulbound." permanentEnchantSpellName="Sanctified Spellthread" permanentenchant="3872" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="1009340320" slot="6"/>

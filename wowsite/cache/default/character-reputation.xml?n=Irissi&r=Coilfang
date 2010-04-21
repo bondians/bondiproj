@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/reputation.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-reputation.xml">
   <tabInfo subTab="reputation" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Irissi&amp;gn=Alliance+Pwners+II"/>
   <characterInfo>
-    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Irissi" class="Death Knight" classId="6" classUrl="c=Death+Knight" faction="Horde" factionId="1" gender="Female" genderId="1" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 16, 2010" level="80" name="Irissi" points="3435" prefix="" race="Blood Elf" raceId="10" realm="Coilfang" suffix=" the Noble" titleId="122">
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Irissi" class="Death Knight" classId="6" classUrl="c=Death+Knight" faction="Horde" factionId="1" gender="Female" genderId="1" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 21, 2010" level="80" name="Irissi" points="3445" prefix="" race="Blood Elf" raceId="10" realm="Coilfang" suffix=" the Noble" titleId="122">
       <arenaTeams>
-        <arenaTeam battleGroup="Retaliation" created="1257638400000" faction="Horde" factionId="1" gamesPlayed="0" gamesWon="0" lastSeasonRanking="0" name="Steamwheedle" ranking="7149" rating="239" realm="Coilfang" realmUrl="b=Retaliation&amp;r=Coilfang&amp;ts=2&amp;t=Steamwheedle&amp;ff=realm&amp;fv=Coilfang&amp;select=Steamwheedle" season="0" seasonGamesPlayed="21" seasonGamesWon="5" size="2" teamSize="2" teamUrl="r=Coilfang&amp;ts=2&amp;t=Steamwheedle&amp;select=Steamwheedle" url="r=Coilfang&amp;ts=2&amp;t=Steamwheedle&amp;select=Steamwheedle">
+        <arenaTeam battleGroup="Retaliation" created="1257638400000" faction="Horde" factionId="1" gamesPlayed="0" gamesWon="0" lastSeasonRanking="0" name="Steamwheedle" ranking="7526" rating="239" realm="Coilfang" realmUrl="b=Retaliation&amp;r=Coilfang&amp;ts=2&amp;t=Steamwheedle&amp;ff=realm&amp;fv=Coilfang&amp;select=Steamwheedle" season="0" seasonGamesPlayed="21" seasonGamesWon="5" size="2" teamSize="2" teamUrl="r=Coilfang&amp;ts=2&amp;t=Steamwheedle&amp;select=Steamwheedle" url="r=Coilfang&amp;ts=2&amp;t=Steamwheedle&amp;select=Steamwheedle">
           <emblem background="fff5d7fd" borderColor="ff030708" borderStyle="5" iconColor="ff02030d" iconStyle="71"/>
           <members>
             <character battleGroup="" charUrl="r=Coilfang&amp;cn=Cronixx" class="Death Knight" classId="6" contribution="239" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners II" guildId="9452058" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" name="Cronixx" race="Orc" raceId="2" seasonGamesPlayed="21" seasonGamesWon="5" teamRank="0"/>
@@ -50,10 +50,10 @@
           <faction id="1105" key="theoracles" name="The Oracles" reputation="15901"/>
         </faction>
         <faction id="1119" key="thesonsofhodir" name="The Sons of Hodir" reputation="15330"/>
-        <faction id="1090" key="kirintor" name="Kirin Tor" reputation="23393"/>
+        <faction id="1090" key="kirintor" name="Kirin Tor" reputation="23718"/>
         <faction id="1091" key="thewyrmrestaccord" name="The Wyrmrest Accord" reputation="23261"/>
         <faction id="1106" key="argentcrusade" name="Argent Crusade" reputation="42999"/>
-        <faction id="1156" key="theashenverdict" name="The Ashen Verdict" reputation="27305"/>
+        <faction id="1156" key="theashenverdict" name="The Ashen Verdict" reputation="29866"/>
       </faction>
       <faction header="1" iconKey="classic" id="1118" key="classic" name="Classic">
         <faction header="1" iconKey="classic" id="892" key="hordeforces" name="Horde Forces">

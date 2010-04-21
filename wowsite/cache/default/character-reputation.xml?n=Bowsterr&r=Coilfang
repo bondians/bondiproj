@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/reputation.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-reputation.xml">
   <tabInfo subTab="reputation" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Bowsterr&amp;gn=Alliance+Pwners"/>
   <characterInfo>
-    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Bowsterr" class="Death Knight" classId="6" classUrl="c=Death+Knight" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners" lastModified="April 19, 2010" level="80" name="Bowsterr" points="2860" prefix="" race="Tauren" raceId="6" realm="Coilfang" suffix=" the Noble" titleId="122">
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Bowsterr" class="Death Knight" classId="6" classUrl="c=Death+Knight" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners" lastModified="April 21, 2010" level="80" name="Bowsterr" points="2860" prefix="" race="Tauren" raceId="6" realm="Coilfang" suffix=" the Noble" titleId="122">
       <modelBasePath value="http://us.media.battle.net.edgesuite.net/"/>
     </character>
     <reputationTab>
       <faction header="1" iconKey="zzother" id="999999" key="zzother" name="Other">
-        <faction id="70" key="syndicate" name="Syndicate" reputation="-25150"/>
+        <faction id="70" key="syndicate" name="Syndicate" reputation="-25750"/>
       </faction>
       <faction header="1" iconKey="theburningcrusade" id="980" key="theburningcrusade" name="The Burning Crusade">
         <faction id="990" key="thescaleofthesands" name="The Scale of the Sands" reputation="0"/>
@@ -76,7 +76,7 @@
           <faction id="577" key="everlook" name="Everlook" reputation="-12555"/>
           <faction id="470" key="ratchet" name="Ratchet" reputation="-18165"/>
         </faction>
-        <faction id="349" key="ravenholdt" name="Ravenholdt" reputation="2990"/>
+        <faction id="349" key="ravenholdt" name="Ravenholdt" reputation="3110"/>
         <faction id="910" key="broodofnozdormu" name="Brood of Nozdormu" reputation="-41750"/>
       </faction>
     </reputationTab>

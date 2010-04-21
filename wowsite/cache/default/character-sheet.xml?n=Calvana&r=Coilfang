@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/sheet.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-sheet.xml">
   <tabInfo subTab="profile" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Calvana&amp;gn=Alliance+Pwners"/>
   <characterInfo>
-    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Calvana" class="Mage" classId="8" classUrl="c=Mage" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners" lastModified="April 19, 2010" level="80" name="Calvana" points="3490" prefix="" race="Blood Elf" raceId="10" realm="Coilfang" suffix=", Champion of the Frozen Wastes" titleId="97">
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Calvana" class="Mage" classId="8" classUrl="c=Mage" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners" lastModified="April 21, 2010" level="80" name="Calvana" points="3510" prefix="" race="Blood Elf" raceId="10" realm="Coilfang" suffix=", Champion of the Frozen Wastes" titleId="97">
       <arenaTeams>
-        <arenaTeam battleGroup="Retaliation" created="1257638400000" faction="Horde" factionId="1" gamesPlayed="26" gamesWon="11" lastSeasonRanking="0" name="Bringers of Death" ranking="2059" rating="819" realm="Coilfang" realmUrl="b=Retaliation&amp;r=Coilfang&amp;ts=3&amp;t=Bringers+of+Death&amp;ff=realm&amp;fv=Coilfang&amp;select=Bringers+of+Death" season="0" seasonGamesPlayed="85" seasonGamesWon="28" size="3" teamSize="3" teamUrl="r=Coilfang&amp;ts=3&amp;t=Bringers+of+Death&amp;select=Bringers+of+Death" url="r=Coilfang&amp;ts=3&amp;t=Bringers+of+Death&amp;select=Bringers+of+Death">
+        <arenaTeam battleGroup="Retaliation" created="1257638400000" faction="Horde" factionId="1" gamesPlayed="0" gamesWon="0" lastSeasonRanking="0" name="Bringers of Death" ranking="2015" rating="819" realm="Coilfang" realmUrl="b=Retaliation&amp;r=Coilfang&amp;ts=3&amp;t=Bringers+of+Death&amp;ff=realm&amp;fv=Coilfang&amp;select=Bringers+of+Death" season="0" seasonGamesPlayed="85" seasonGamesWon="28" size="3" teamSize="3" teamUrl="r=Coilfang&amp;ts=3&amp;t=Bringers+of+Death&amp;select=Bringers+of+Death" url="r=Coilfang&amp;ts=3&amp;t=Bringers+of+Death&amp;select=Bringers+of+Death">
           <emblem background="ff040a0b" borderColor="ffcd1216" borderStyle="4" iconColor="ffa35f14" iconStyle="58"/>
           <members>
-            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Sulair" class="Warlock" classId="9" contribution="819" gamesPlayed="26" gamesWon="11" gender="Male" genderId="0" guild="Alliance Pwners II" guildId="9452058" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" name="Sulair" race="Orc" raceId="2" seasonGamesPlayed="85" seasonGamesWon="28" teamRank="0"/>
+            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Sulair" class="Warlock" classId="9" contribution="819" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners II" guildId="9452058" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" name="Sulair" race="Orc" raceId="2" seasonGamesPlayed="85" seasonGamesWon="28" teamRank="0"/>
             <character battleGroup="" charUrl="r=Coilfang&amp;cn=Calvana" class="Mage" classId="8" contribution="285" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners" guildId="3585075" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners" name="Calvana" race="Blood Elf" raceId="10" seasonGamesPlayed="0" seasonGamesWon="0" teamRank="1"/>
-            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Cronixx" class="Death Knight" classId="6" contribution="819" gamesPlayed="26" gamesWon="11" gender="Male" genderId="0" guild="Alliance Pwners II" guildId="9452058" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" name="Cronixx" race="Orc" raceId="2" seasonGamesPlayed="85" seasonGamesWon="28" teamRank="1"/>
-            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Grumbel" class="Hunter" classId="3" contribution="819" gamesPlayed="26" gamesWon="11" gender="Male" genderId="0" guild="Alliance Pwners II" guildId="9452058" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" name="Grumbel" race="Troll" raceId="8" seasonGamesPlayed="85" seasonGamesWon="28" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Cronixx" class="Death Knight" classId="6" contribution="819" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners II" guildId="9452058" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" name="Cronixx" race="Orc" raceId="2" seasonGamesPlayed="85" seasonGamesWon="28" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Grumbel" class="Hunter" classId="3" contribution="819" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners II" guildId="9452058" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" name="Grumbel" race="Troll" raceId="8" seasonGamesPlayed="85" seasonGamesWon="28" teamRank="1"/>
           </members>
         </arenaTeam>
         <arenaTeam battleGroup="Retaliation" created="1257638400000" faction="Horde" factionId="1" gamesPlayed="0" gamesWon="0" lastSeasonRanking="0" name="Alliance Pwners" ranking="0" rating="0" realm="Coilfang" realmUrl="b=Retaliation&amp;r=Coilfang&amp;ts=5&amp;t=Alliance+Pwners&amp;ff=realm&amp;fv=Coilfang&amp;select=Alliance+Pwners" season="0" seasonGamesPlayed="0" seasonGamesWon="0" size="5" teamSize="5" teamUrl="r=Coilfang&amp;ts=5&amp;t=Alliance+Pwners&amp;select=Alliance+Pwners" url="r=Coilfang&amp;ts=5&amp;t=Alliance+Pwners&amp;select=Alliance+Pwners">
@@ -35,7 +35,7 @@
       <buffs/>
       <debuffs/>
       <pvp>
-        <lifetimehonorablekills value="6793"/>
+        <lifetimehonorablekills value="6794"/>
         <arenacurrency value="0"/>
       </pvp>
       <professions>
@@ -141,7 +141,7 @@
       </glyphs>
     </characterTab>
     <summary>
-      <c earned="340" points="3490" total="1054" totalPoints="11635"/>
+      <c earned="342" points="3510" total="1054" totalPoints="11635"/>
       <category id="92" name="General">
         <c earned="29" earnedPoints="305" total="54" totalPoints="570"/>
       </category>
@@ -155,7 +155,7 @@
         <c earned="52" earnedPoints="530" total="166" totalPoints="1930"/>
       </category>
       <category id="168" name="Dungeons &amp; Raids">
-        <c earned="125" earnedPoints="1275" total="454" totalPoints="4915"/>
+        <c earned="127" earnedPoints="1295" total="454" totalPoints="4915"/>
       </category>
       <category id="169" name="Professions">
         <c earned="51" earnedPoints="510" total="75" totalPoints="760"/>

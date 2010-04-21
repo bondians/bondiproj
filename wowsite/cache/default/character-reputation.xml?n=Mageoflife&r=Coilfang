@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/reputation.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-reputation.xml">
   <tabInfo subTab="reputation" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Mageoflife&amp;gn=Alliance+Pwners+II"/>
   <characterInfo>
-    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Mageoflife" class="Mage" classId="8" classUrl="c=Mage" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 16, 2010" level="80" name="Mageoflife" points="1895" prefix="" race="Blood Elf" raceId="10" realm="Coilfang" suffix=", Champion of the Frozen Wastes" titleId="97">
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Mageoflife" class="Mage" classId="8" classUrl="c=Mage" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 20, 2010" level="80" name="Mageoflife" points="1895" prefix="" race="Blood Elf" raceId="10" realm="Coilfang" suffix=", Champion of the Frozen Wastes" titleId="97">
       <modelBasePath value="http://us.media.battle.net.edgesuite.net/"/>
     </character>
     <reputationTab>
@@ -26,8 +26,8 @@
         <faction id="1073" key="thekalu'ak" name="The Kalu'ak" reputation="9200"/>
         <faction id="1090" key="kirintor" name="Kirin Tor" reputation="9142"/>
         <faction id="1091" key="thewyrmrestaccord" name="The Wyrmrest Accord" reputation="4641"/>
-        <faction id="1106" key="argentcrusade" name="Argent Crusade" reputation="7644"/>
-        <faction id="1156" key="theashenverdict" name="The Ashen Verdict" reputation="7853"/>
+        <faction id="1106" key="argentcrusade" name="Argent Crusade" reputation="8294"/>
+        <faction id="1156" key="theashenverdict" name="The Ashen Verdict" reputation="9875"/>
       </faction>
       <faction header="1" iconKey="classic" id="1118" key="classic" name="Classic">
         <faction header="1" iconKey="classic" id="892" key="hordeforces" name="Horde Forces">

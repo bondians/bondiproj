@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/reputation.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-reputation.xml">
   <tabInfo subTab="reputation" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Arosh&amp;gn=Alliance+Pwners+II"/>
   <characterInfo>
-    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Arosh" class="Druid" classId="11" classUrl="c=Druid" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 17, 2010" level="80" name="Arosh" points="3985" prefix="Elder " race="Tauren" raceId="6" realm="Coilfang" suffix="" titleId="43">
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Arosh" class="Druid" classId="11" classUrl="c=Druid" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 21, 2010" level="80" name="Arosh" points="3995" prefix="Elder " race="Tauren" raceId="6" realm="Coilfang" suffix="" titleId="43">
       <modelBasePath value="http://us.media.battle.net.edgesuite.net/"/>
     </character>
     <reputationTab>
@@ -46,7 +46,7 @@
         <faction id="1090" key="kirintor" name="Kirin Tor" reputation="42999"/>
         <faction id="1091" key="thewyrmrestaccord" name="The Wyrmrest Accord" reputation="42117"/>
         <faction id="1106" key="argentcrusade" name="Argent Crusade" reputation="42999"/>
-        <faction id="1156" key="theashenverdict" name="The Ashen Verdict" reputation="7821"/>
+        <faction id="1156" key="theashenverdict" name="The Ashen Verdict" reputation="10357"/>
       </faction>
       <faction header="1" iconKey="classic" id="1118" key="classic" name="Classic">
         <faction header="1" iconKey="classic" id="892" key="hordeforces" name="Horde Forces">

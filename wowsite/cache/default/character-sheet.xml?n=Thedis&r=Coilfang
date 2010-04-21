@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/sheet.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-sheet.xml">
-  <tabInfo subTab="profile" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Thedis&amp;gn=Alliance+Pwners+II"/>
+  <tabInfo subTab="profile" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Thedis&amp;gn=Hypnotik"/>
   <characterInfo>
-    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Thedis" class="Death Knight" classId="6" classUrl="c=Death+Knight" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 17, 2010" level="80" name="Thedis" points="2315" prefix="" race="Blood Elf" raceId="10" realm="Coilfang" suffix=" the Patient" titleId="137">
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Thedis" class="Death Knight" classId="6" classUrl="c=Death+Knight" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Hypnotik" guildUrl="r=Coilfang&amp;gn=Hypnotik" lastModified="April 21, 2010" level="80" name="Thedis" points="2365" prefix="" race="Blood Elf" raceId="10" realm="Coilfang" suffix=" the Patient" titleId="137">
       <arenaTeams>
         <arenaTeam battleGroup="Retaliation" created="1270425600000" faction="Horde" factionId="1" gamesPlayed="0" gamesWon="0" lastSeasonRanking="0" name="Pwner Alliance" ranking="0" rating="0" realm="Coilfang" realmUrl="b=Retaliation&amp;r=Coilfang&amp;ts=2&amp;t=Pwner+Alliance&amp;ff=realm&amp;fv=Coilfang&amp;select=Pwner+Alliance" season="0" seasonGamesPlayed="0" seasonGamesWon="0" size="2" teamSize="2" teamUrl="r=Coilfang&amp;ts=2&amp;t=Pwner+Alliance&amp;select=Pwner+Alliance" url="r=Coilfang&amp;ts=2&amp;t=Pwner+Alliance&amp;select=Pwner+Alliance">
           <emblem background="ff000000" borderColor="ff3d5234" borderStyle="2" iconColor="ff24fd00" iconStyle="17"/>
           <members>
+            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Thedis" class="Death Knight" classId="6" contribution="0" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Hypnotik" guildId="10120067" guildUrl="r=Coilfang&amp;gn=Hypnotik" name="Thedis" race="Blood Elf" raceId="10" seasonGamesPlayed="0" seasonGamesWon="0" teamRank="0"/>
             <character battleGroup="" charUrl="r=Coilfang&amp;cn=Thedis" class="Death Knight" classId="6" contribution="0" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners II" guildId="9452058" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" name="Thedis" race="Blood Elf" raceId="10" seasonGamesPlayed="0" seasonGamesWon="0" teamRank="0"/>
             <character battleGroup="" charUrl="r=Coilfang&amp;cn=Tepeecreeper" class="Shaman" classId="7" contribution="0" gamesPlayed="0" gamesWon="0" gender="Female" genderId="1" guild="Alliance Pwners II" guildId="9452058" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" name="Tepeecreeper" race="Troll" raceId="8" seasonGamesPlayed="0" seasonGamesWon="0" teamRank="1"/>
           </members>
@@ -20,7 +21,7 @@
       <buffs/>
       <debuffs/>
       <pvp>
-        <lifetimehonorablekills value="4084"/>
+        <lifetimehonorablekills value="4093"/>
         <arenacurrency value="0"/>
       </pvp>
       <professions>
@@ -98,23 +99,24 @@
         <resilience damagePercent="2.38" hitPercent="1.08" value="102.00"/>
       </defenses>
       <items>
-        <item displayInfoId="64527" durability="97" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_helmet_158" id="50779" level="251" maxDurability="100" name="Deathspeaker Zealot's Helm" permanentEnchantIcon="ability_warrior_shieldmastery" permanentEnchantItemId="44069" permanentenchant="3795" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="2075726720" slot="0"/>
+        <item displayInfoId="64527" durability="99" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_helmet_158" id="50779" level="251" maxDurability="100" name="Deathspeaker Zealot's Helm" permanentEnchantIcon="ability_warrior_shieldmastery" permanentEnchantItemId="44069" permanentenchant="3795" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="2075726720" slot="0"/>
         <item displayInfoId="34034" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_necklace_22" id="50228" level="232" maxDurability="0" name="Barbed Ymirheim Choker" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="638418128" slot="1"/>
-        <item displayInfoId="62130" durability="98" gem0Id="40111" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_37" icon="inv_shoulder_73" id="48505" level="232" maxDurability="100" name="Koltira's Shoulderplates of Conquest" permanentEnchantIcon="spell_holy_weaponmastery" permanentEnchantItemId="44067" permanentenchant="3793" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="2"/>
+        <item displayInfoId="62130" durability="100" gem0Id="40111" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_37" icon="inv_shoulder_73" id="48505" level="232" maxDurability="100" name="Koltira's Shoulderplates of Conquest" permanentEnchantIcon="spell_holy_weaponmastery" permanentEnchantItemId="44067" permanentenchant="3793" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="2"/>
         <item displayInfoId="15858" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shirt_black_01" id="4333" level="31" maxDurability="0" name="Dark Silk Shirt" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="1" seed="2074004742" slot="3"/>
-        <item displayInfoId="64569" durability="156" gem0Id="40143" gem1Id="45862" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_39" gemIcon1="inv_jewelcrafting_gem_37" icon="inv_chest_plate_25" id="49951" level="264" maxDurability="165" name="Gendarme's Cuirass" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="1994592256" slot="4"/>
-        <item displayInfoId="61472" durability="53" gem0Id="40129" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_40" icon="inv_belt_48c" id="40883" level="245" maxDurability="55" name="Relentless Gladiator's Girdle of Triumph" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="906939776" slot="5"/>
-        <item displayInfoId="62122" durability="117" gem0Id="40128" gem1Id="40111" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_38" gemIcon1="inv_jewelcrafting_gem_37" icon="inv_pants_plate_25" id="48504" level="232" maxDurability="120" name="Koltira's Legplates of Conquest" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="6"/>
-        <item displayInfoId="64857" durability="69" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_boots_plate_11" id="50305" level="232" maxDurability="75" name="Grinning Skull Boots" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44449" permanentenchant="3824" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="435585488" slot="7"/>
-        <item displayInfoId="64833" durability="54" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_bracer_49" id="50230" level="232" maxDurability="55" name="Malykriss Vambraces" permanentEnchantIcon="inv_chest_chain_04" permanentEnchantItemId="35429" permanentenchant="2661" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="1595475648" slot="8"/>
-        <item displayInfoId="61486" durability="54" gem0Id="40128" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_38" icon="inv_gauntlets_62" id="48502" level="232" maxDurability="55" name="Koltira's Gauntlets of Conquest" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="38964" permanentenchant="3829" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="9"/>
-        <item displayInfoId="44841" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_71" id="47729" level="245" maxDurability="0" name="Bloodshed Band" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="0" slot="10"/>
-        <item displayInfoId="63958" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_81" id="50387" level="259" maxDurability="0" name="Ashen Band of Greater Vengeance" permanentenchant="0" pickUp="PickUpMetalSmall" putDown="PutDownSmallMEtal" randomPropertiesId="0" rarity="4" seed="1046705472" slot="11"/>
+        <item displayInfoId="64569" durability="164" gem0Id="40143" gem1Id="45862" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_39" gemIcon1="inv_jewelcrafting_gem_37" icon="inv_chest_plate_25" id="49951" level="264" maxDurability="165" name="Gendarme's Cuirass" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="1994592256" slot="4"/>
+        <item displayInfoId="61472" durability="55" gem0Id="40129" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_40" icon="inv_belt_48c" id="40883" level="245" maxDurability="55" name="Relentless Gladiator's Girdle of Triumph" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="906939776" slot="5"/>
+        <item displayInfoId="62122" durability="119" gem0Id="40128" gem1Id="40111" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_38" gemIcon1="inv_jewelcrafting_gem_37" icon="inv_pants_plate_25" id="48504" level="232" maxDurability="120" name="Koltira's Legplates of Conquest" permanentenchant="0" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="6"/>
+        <item displayInfoId="64857" durability="75" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_boots_plate_11" id="50305" level="232" maxDurability="75" name="Grinning Skull Boots" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="44449" permanentenchant="3824" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="435585488" slot="7"/>
+        <item displayInfoId="64833" durability="55" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_bracer_49" id="50230" level="232" maxDurability="55" name="Malykriss Vambraces" permanentEnchantIcon="inv_chest_chain_04" permanentEnchantItemId="35429" permanentenchant="2661" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="1595475648" slot="8"/>
+        <item displayInfoId="61486" durability="55" gem0Id="40128" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_38" icon="inv_gauntlets_62" id="48502" level="232" maxDurability="55" name="Koltira's Gauntlets of Conquest" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="38964" permanentenchant="3829" pickUp="PickUpLargeChain" putDown="PutDownLArgeChain" randomPropertiesId="0" rarity="4" seed="0" slot="9"/>
+        <item displayInfoId="63958" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_81" id="50387" level="259" maxDurability="0" name="Ashen Band of Greater Vengeance" permanentenchant="0" pickUp="PickUpMetalSmall" putDown="PutDownSmallMEtal" randomPropertiesId="0" rarity="4" seed="1046705472" slot="10"/>
+        <item displayInfoId="44841" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_jewelry_ring_71" id="47729" level="245" maxDurability="0" name="Bloodshed Band" permanentenchant="0" pickUp="PickUpRing" putDown="PutDownRing" randomPropertiesId="0" rarity="4" seed="0" slot="11"/>
         <item displayInfoId="61413" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_bone_skull_02" id="50342" level="251" maxDurability="0" name="Whispering Fanged Skull" permanentenchant="0" pickUp="PickUpWand" putDown="PutDownWand" randomPropertiesId="0" rarity="4" seed="985641408" slot="12"/>
         <item displayInfoId="59322" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_misc_gem_bloodstone_03" id="47734" level="245" maxDurability="0" name="Mark of Supremacy" permanentenchant="0" pickUp="PickUpWand" putDown="PutDownWand" randomPropertiesId="0" rarity="4" seed="0" slot="13"/>
         <item displayInfoId="61403" durability="0" gem0Id="40111" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_37" icon="inv_misc_cape_16" id="50764" level="251" maxDurability="0" name="Shawl of Nerubian Silk" permanentEnchantIcon="inv_scroll_03" permanentEnchantItemId="39003" permanentenchant="3831" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="4" seed="2112520448" slot="14"/>
-        <item displayInfoId="64396" durability="117" gem0Id="40143" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_39" icon="inv_sword_153" id="50761" level="251" maxDurability="120" name="Citadel Enforcer's Claymore" permanentEnchantIcon="spell_holy_retributionaura" permanentEnchantSpellDesc="Affixes your rune weapon with a rune that has a chance to heal you for 3% and increase total Strength by 15% for 15 sec.  Modifying your rune weapon requires a Rune Forge in Ebon Hold." permanentEnchantSpellName="Rune of the Fallen Crusader" permanentenchant="3368" pickUp="PickUpMetalLArge" putDown="PutDownLArgeMEtal" randomPropertiesId="0" rarity="4" seed="2086193792" slot="15"/>
+        <item displayInfoId="64396" durability="120" gem0Id="40143" gem1Id="0" gem2Id="0" gemIcon0="inv_jewelcrafting_gem_39" icon="inv_sword_153" id="50761" level="251" maxDurability="120" name="Citadel Enforcer's Claymore" permanentEnchantIcon="spell_holy_retributionaura" permanentEnchantSpellDesc="Affixes your rune weapon with a rune that has a chance to heal you for 3% and increase total Strength by 15% for 15 sec.  Modifying your rune weapon requires a Rune Forge in Ebon Hold." permanentEnchantSpellName="Rune of the Fallen Crusader" permanentenchant="3368" pickUp="PickUpMetalLArge" putDown="PutDownLArgeMEtal" randomPropertiesId="0" rarity="4" seed="2086193792" slot="15"/>
         <item displayInfoId="51913" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shield_56" id="47673" level="245" maxDurability="0" name="Sigil of Virulence" permanentenchant="0" pickUp="PickUpWoodSmall" putDown="PutDownWoodSmall" randomPropertiesId="0" rarity="4" seed="0" slot="17"/>
+        <item displayInfoId="54176" durability="0" gem0Id="0" gem1Id="0" gem2Id="0" icon="inv_shirt_guildtabard_01" id="43157" level="75" maxDurability="0" name="Tabard of the Kirin Tor" permanentenchant="0" pickUp="PickUpCloth_Leather01" putDown="PutDownCloth_Leather01" randomPropertiesId="0" rarity="1" seed="0" slot="18"/>
       </items>
       <glyphs>
         <glyph effect="Increases the total armor granted by Unbreakable Armor to 30%." icon="ui-glyph-rune-2" id="531" name="Glyph of Unbreakable Armor" type="major"/>
@@ -126,7 +128,7 @@
       </glyphs>
     </characterTab>
     <summary>
-      <c earned="223" points="2315" total="1054" totalPoints="11635"/>
+      <c earned="228" points="2365" total="1054" totalPoints="11635"/>
       <category id="92" name="General">
         <c earned="24" earnedPoints="270" total="54" totalPoints="570"/>
       </category>
@@ -134,13 +136,13 @@
         <c earned="10" earnedPoints="100" total="49" totalPoints="530"/>
       </category>
       <category id="97" name="Exploration">
-        <c earned="18" earnedPoints="195" total="70" totalPoints="830"/>
+        <c earned="19" earnedPoints="205" total="70" totalPoints="830"/>
       </category>
       <category id="95" name="Player vs. Player">
         <c earned="51" earnedPoints="530" total="166" totalPoints="1930"/>
       </category>
       <category id="168" name="Dungeons &amp; Raids">
-        <c earned="95" earnedPoints="960" total="454" totalPoints="4915"/>
+        <c earned="99" earnedPoints="1000" total="454" totalPoints="4915"/>
       </category>
       <category id="169" name="Professions">
         <c earned="12" earnedPoints="120" total="75" totalPoints="760"/>

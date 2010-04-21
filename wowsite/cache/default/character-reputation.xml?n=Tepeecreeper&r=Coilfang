@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/reputation.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-reputation.xml">
   <tabInfo subTab="reputation" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Tepeecreeper&amp;gn=Alliance+Pwners+II"/>
   <characterInfo>
-    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Tepeecreeper" class="Shaman" classId="7" classUrl="c=Shaman" faction="Horde" factionId="1" gender="Female" genderId="1" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 16, 2010" level="80" name="Tepeecreeper" points="3560" prefix="" race="Troll" raceId="8" realm="Coilfang" suffix=", Champion of the Frozen Wastes" titleId="97">
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Tepeecreeper" class="Shaman" classId="7" classUrl="c=Shaman" faction="Horde" factionId="1" gender="Female" genderId="1" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 21, 2010" level="80" name="Tepeecreeper" points="3560" prefix="" race="Troll" raceId="8" realm="Coilfang" suffix=", Champion of the Frozen Wastes" titleId="97">
       <arenaTeams>
         <arenaTeam battleGroup="Retaliation" created="1270425600000" faction="Horde" factionId="1" gamesPlayed="0" gamesWon="0" lastSeasonRanking="0" name="Pwner Alliance" ranking="0" rating="0" realm="Coilfang" realmUrl="b=Retaliation&amp;r=Coilfang&amp;ts=2&amp;t=Pwner+Alliance&amp;ff=realm&amp;fv=Coilfang&amp;select=Pwner+Alliance" season="0" seasonGamesPlayed="0" seasonGamesWon="0" size="2" teamSize="2" teamUrl="r=Coilfang&amp;ts=2&amp;t=Pwner+Alliance&amp;select=Pwner+Alliance" url="r=Coilfang&amp;ts=2&amp;t=Pwner+Alliance&amp;select=Pwner+Alliance">
           <emblem background="ff000000" borderColor="ff3d5234" borderStyle="2" iconColor="ff24fd00" iconStyle="17"/>
           <members>
+            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Thedis" class="Death Knight" classId="6" contribution="0" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Hypnotik" guildId="10120067" guildUrl="r=Coilfang&amp;gn=Hypnotik" name="Thedis" race="Blood Elf" raceId="10" seasonGamesPlayed="0" seasonGamesWon="0" teamRank="0"/>
             <character battleGroup="" charUrl="r=Coilfang&amp;cn=Thedis" class="Death Knight" classId="6" contribution="0" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners II" guildId="9452058" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" name="Thedis" race="Blood Elf" raceId="10" seasonGamesPlayed="0" seasonGamesWon="0" teamRank="0"/>
             <character battleGroup="" charUrl="r=Coilfang&amp;cn=Tepeecreeper" class="Shaman" classId="7" contribution="0" gamesPlayed="0" gamesWon="0" gender="Female" genderId="1" guild="Alliance Pwners II" guildId="9452058" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" name="Tepeecreeper" race="Troll" raceId="8" seasonGamesPlayed="0" seasonGamesWon="0" teamRank="1"/>
           </members>
@@ -24,7 +25,7 @@
         <faction id="967" key="thevioleteye" name="The Violet Eye" reputation="11267"/>
         <faction id="1012" key="ashtonguedeathsworn" name="Ashtongue Deathsworn" reputation="1707"/>
         <faction id="941" key="themag'har" name="The Mag'har" reputation="26068"/>
-        <faction id="1015" key="netherwing" name="Netherwing" reputation="15425"/>
+        <faction id="1015" key="netherwing" name="Netherwing" reputation="16375"/>
         <faction id="970" key="sporeggar" name="Sporeggar" reputation="9995"/>
         <faction header="1" iconKey="theburningcrusade" id="936" key="shattrathcity" name="Shattrath City">
           <faction id="934" key="thescryers" name="The Scryers" reputation="7385"/>
@@ -53,7 +54,7 @@
         <faction id="1090" key="kirintor" name="Kirin Tor" reputation="42999"/>
         <faction id="1091" key="thewyrmrestaccord" name="The Wyrmrest Accord" reputation="42999"/>
         <faction id="1106" key="argentcrusade" name="Argent Crusade" reputation="42999"/>
-        <faction id="1156" key="theashenverdict" name="The Ashen Verdict" reputation="37441"/>
+        <faction id="1156" key="theashenverdict" name="The Ashen Verdict" reputation="37991"/>
       </faction>
       <faction header="1" iconKey="classic" id="1118" key="classic" name="Classic">
         <faction header="1" iconKey="classic" id="892" key="hordeforces" name="Horde Forces">

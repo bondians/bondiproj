@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/reputation.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-reputation.xml">
   <tabInfo subTab="reputation" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Saralas&amp;gn=Alliance+Pwners+II"/>
   <characterInfo>
-    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Saralas" class="Paladin" classId="2" classUrl="c=Paladin" faction="Horde" factionId="1" gender="Female" genderId="1" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 16, 2010" level="80" name="Saralas" points="3395" prefix="" race="Blood Elf" raceId="10" realm="Coilfang" suffix=" the Patient" titleId="137">
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Saralas" class="Paladin" classId="2" classUrl="c=Paladin" faction="Horde" factionId="1" gender="Female" genderId="1" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 21, 2010" level="80" name="Saralas" points="3405" prefix="" race="Blood Elf" raceId="10" realm="Coilfang" suffix=" the Patient" titleId="137">
       <arenaTeams>
         <arenaTeam battleGroup="Retaliation" created="1257206400000" faction="Horde" factionId="1" gamesPlayed="0" gamesWon="0" lastSeasonRanking="0" name="Dream Theater" ranking="0" rating="0" realm="Coilfang" realmUrl="b=Retaliation&amp;r=Coilfang&amp;ts=2&amp;t=Dream+Theater&amp;ff=realm&amp;fv=Coilfang&amp;select=Dream+Theater" season="0" seasonGamesPlayed="0" seasonGamesWon="0" size="2" teamSize="2" teamUrl="r=Coilfang&amp;ts=2&amp;t=Dream+Theater&amp;select=Dream+Theater" url="r=Coilfang&amp;ts=2&amp;t=Dream+Theater&amp;select=Dream+Theater">
           <emblem background="ff8a3a08" borderColor="ff32252a" borderStyle="4" iconColor="fffe151f" iconStyle="58"/>
@@ -50,7 +50,7 @@
         <faction id="1090" key="kirintor" name="Kirin Tor" reputation="42999"/>
         <faction id="1091" key="thewyrmrestaccord" name="The Wyrmrest Accord" reputation="42669"/>
         <faction id="1106" key="argentcrusade" name="Argent Crusade" reputation="42999"/>
-        <faction id="1156" key="theashenverdict" name="The Ashen Verdict" reputation="19242"/>
+        <faction id="1156" key="theashenverdict" name="The Ashen Verdict" reputation="21998"/>
       </faction>
       <faction header="1" iconKey="classic" id="1118" key="classic" name="Classic">
         <faction header="1" iconKey="classic" id="892" key="hordeforces" name="Horde Forces">

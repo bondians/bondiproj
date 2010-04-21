@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/reputation.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-reputation.xml">
   <tabInfo subTab="reputation" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Vallinmagi&amp;gn=Alliance+Pwners+II"/>
   <characterInfo>
-    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Vallinmagi" class="Mage" classId="8" classUrl="c=Mage" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 17, 2010" level="80" name="Vallinmagi" points="3630" prefix="" race="Blood Elf" raceId="10" realm="Coilfang" suffix="" titleId="0">
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Vallinmagi" class="Mage" classId="8" classUrl="c=Mage" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 21, 2010" level="80" name="Vallinmagi" points="3650" prefix="" race="Blood Elf" raceId="10" realm="Coilfang" suffix="" titleId="0">
       <modelBasePath value="http://us.media.battle.net.edgesuite.net/"/>
     </character>
     <reputationTab>
@@ -45,13 +45,13 @@
         <faction id="1090" key="kirintor" name="Kirin Tor" reputation="42999"/>
         <faction id="1091" key="thewyrmrestaccord" name="The Wyrmrest Accord" reputation="27358"/>
         <faction id="1106" key="argentcrusade" name="Argent Crusade" reputation="42999"/>
-        <faction id="1156" key="theashenverdict" name="The Ashen Verdict" reputation="5280"/>
+        <faction id="1156" key="theashenverdict" name="The Ashen Verdict" reputation="7567"/>
       </faction>
       <faction header="1" iconKey="classic" id="1118" key="classic" name="Classic">
         <faction header="1" iconKey="classic" id="892" key="hordeforces" name="Horde Forces">
           <faction id="729" key="frostwolfclan" name="Frostwolf Clan" reputation="42999"/>
-          <faction id="510" key="thedefilers" name="The Defilers" reputation="34340"/>
-          <faction id="889" key="warsongoutriders" name="Warsong Outriders" reputation="6995"/>
+          <faction id="510" key="thedefilers" name="The Defilers" reputation="34440"/>
+          <faction id="889" key="warsongoutriders" name="Warsong Outriders" reputation="7100"/>
         </faction>
         <faction id="749" key="hydraxianwaterlords" name="Hydraxian Waterlords" reputation="126"/>
         <faction id="909" key="darkmoonfaire" name="Darkmoon Faire" reputation="0"/>

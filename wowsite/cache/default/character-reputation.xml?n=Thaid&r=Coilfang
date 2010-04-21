@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/reputation.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-reputation.xml">
   <tabInfo subTab="reputation" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Thaid&amp;gn=Alliance+Pwners+II"/>
   <characterInfo>
-    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Thaid" class="Druid" classId="11" classUrl="c=Druid" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 17, 2010" level="80" name="Thaid" points="1685" prefix="" race="Tauren" raceId="6" realm="Coilfang" suffix="" titleId="0">
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Thaid" class="Druid" classId="11" classUrl="c=Druid" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 21, 2010" level="80" name="Thaid" points="1705" prefix="" race="Tauren" raceId="6" realm="Coilfang" suffix="" titleId="0">
       <modelBasePath value="http://us.media.battle.net.edgesuite.net/"/>
     </character>
     <reputationTab>
@@ -23,8 +23,9 @@
           <faction id="1064" key="thetaunka" name="The Taunka" reputation="42999"/>
         </faction>
         <faction id="1119" key="thesonsofhodir" name="The Sons of Hodir" reputation="21700"/>
-        <faction id="1090" key="kirintor" name="Kirin Tor" reputation="2093"/>
-        <faction id="1156" key="theashenverdict" name="The Ashen Verdict" reputation="7436"/>
+        <faction id="1090" key="kirintor" name="Kirin Tor" reputation="2418"/>
+        <faction id="1106" key="argentcrusade" name="Argent Crusade" reputation="0"/>
+        <faction id="1156" key="theashenverdict" name="The Ashen Verdict" reputation="12044"/>
       </faction>
       <faction header="1" iconKey="classic" id="1118" key="classic" name="Classic">
         <faction header="1" iconKey="classic" id="892" key="hordeforces" name="Horde Forces">
@@ -35,12 +36,12 @@
         <faction id="609" key="cenarioncircle" name="Cenarion Circle" reputation="4520"/>
         <faction id="59" key="thoriumbrotherhood" name="Thorium Brotherhood" reputation="0"/>
         <faction id="922" key="tranquillien" name="Tranquillien" reputation="0"/>
-        <faction header="1" iconKey="classic" id="67" key="horde" name="Horde" reputation="6566">
-          <faction id="911" key="silvermooncity" name="Silvermoon City" reputation="3916"/>
-          <faction id="68" key="undercity" name="Undercity" reputation="4428"/>
-          <faction id="81" key="thunderbluff" name="Thunder Bluff" reputation="18021"/>
-          <faction id="76" key="orgrimmar" name="Orgrimmar" reputation="10522"/>
-          <faction id="530" key="darkspeartrolls" name="Darkspear Trolls" reputation="6766"/>
+        <faction header="1" iconKey="classic" id="67" key="horde" name="Horde" reputation="6691">
+          <faction id="911" key="silvermooncity" name="Silvermoon City" reputation="4041"/>
+          <faction id="68" key="undercity" name="Undercity" reputation="4553"/>
+          <faction id="81" key="thunderbluff" name="Thunder Bluff" reputation="18146"/>
+          <faction id="76" key="orgrimmar" name="Orgrimmar" reputation="11022"/>
+          <faction id="530" key="darkspeartrolls" name="Darkspear Trolls" reputation="6891"/>
         </faction>
         <faction id="529" key="argentdawn" name="Argent Dawn" reputation="6956"/>
         <faction header="1" iconKey="classic" id="169" key="steamwheedlecartel" name="Steamwheedle Cartel">

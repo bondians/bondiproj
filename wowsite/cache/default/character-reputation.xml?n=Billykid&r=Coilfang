@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/_layout/character/reputation.xsl"?><page globalSearch="1" lang="en_us" requestUrl="/character-reputation.xml">
   <tabInfo subTab="reputation" tab="character" tabGroup="character" tabUrl="r=Coilfang&amp;cn=Billykid&amp;gn=Alliance+Pwners+II"/>
   <characterInfo>
-    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Billykid" class="Paladin" classId="2" classUrl="c=Paladin" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 17, 2010" level="80" name="Billykid" points="3415" prefix="" race="Blood Elf" raceId="10" realm="Coilfang" suffix=" Jenkins" titleId="110">
+    <character battleGroup="Retaliation" charUrl="r=Coilfang&amp;cn=Billykid" class="Paladin" classId="2" classUrl="c=Paladin" faction="Horde" factionId="1" gender="Male" genderId="0" guildName="Alliance Pwners II" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" lastModified="April 21, 2010" level="80" name="Billykid" points="3435" prefix="" race="Blood Elf" raceId="10" realm="Coilfang" suffix=" Jenkins" titleId="110">
       <arenaTeams>
-        <arenaTeam battleGroup="Retaliation" created="1259280000000" faction="Horde" factionId="1" gamesPlayed="4" gamesWon="1" lastSeasonRanking="0" name="FRUIT MONKEYS" ranking="0" rating="91" realm="Coilfang" realmUrl="b=Retaliation&amp;r=Coilfang&amp;ts=2&amp;t=FRUIT+MONKEYS&amp;ff=realm&amp;fv=Coilfang&amp;select=FRUIT+MONKEYS" season="0" seasonGamesPlayed="13" seasonGamesWon="2" size="2" teamSize="2" teamUrl="r=Coilfang&amp;ts=2&amp;t=FRUIT+MONKEYS&amp;select=FRUIT+MONKEYS" url="r=Coilfang&amp;ts=2&amp;t=FRUIT+MONKEYS&amp;select=FRUIT+MONKEYS">
+        <arenaTeam battleGroup="Retaliation" created="1259280000000" faction="Horde" factionId="1" gamesPlayed="0" gamesWon="0" lastSeasonRanking="0" name="FRUIT MONKEYS" ranking="0" rating="91" realm="Coilfang" realmUrl="b=Retaliation&amp;r=Coilfang&amp;ts=2&amp;t=FRUIT+MONKEYS&amp;ff=realm&amp;fv=Coilfang&amp;select=FRUIT+MONKEYS" season="0" seasonGamesPlayed="13" seasonGamesWon="2" size="2" teamSize="2" teamUrl="r=Coilfang&amp;ts=2&amp;t=FRUIT+MONKEYS&amp;select=FRUIT+MONKEYS" url="r=Coilfang&amp;ts=2&amp;t=FRUIT+MONKEYS&amp;select=FRUIT+MONKEYS">
           <emblem background="ffbdabc4" borderColor="ff850010" borderStyle="3" iconColor="ff090709" iconStyle="17"/>
           <members>
-            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Brolie" class="Paladin" classId="2" contribution="92" gamesPlayed="4" gamesWon="1" gender="Male" genderId="0" guild="Blight" guildId="2186058" guildUrl="r=Coilfang&amp;gn=Blight" name="Brolie" race="Blood Elf" raceId="10" seasonGamesPlayed="6" seasonGamesWon="2" teamRank="0"/>
+            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Brolie" class="Paladin" classId="2" contribution="92" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guildId="0" name="Brolie" race="Blood Elf" raceId="10" seasonGamesPlayed="6" seasonGamesWon="2" teamRank="0"/>
             <character battleGroup="" charUrl="r=Coilfang&amp;cn=Mathesis" class="Death Knight" classId="6" contribution="46" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Hypnotik" guildId="10120067" guildUrl="r=Coilfang&amp;gn=Hypnotik" name="Mathesis" race="Blood Elf" raceId="10" seasonGamesPlayed="7" seasonGamesWon="0" teamRank="1"/>
-            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Billykid" class="Paladin" classId="2" contribution="91" gamesPlayed="4" gamesWon="1" gender="Male" genderId="0" guild="Alliance Pwners II" guildId="9452058" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" name="Billykid" race="Blood Elf" raceId="10" seasonGamesPlayed="13" seasonGamesWon="2" teamRank="1"/>
+            <character battleGroup="" charUrl="r=Coilfang&amp;cn=Billykid" class="Paladin" classId="2" contribution="91" gamesPlayed="0" gamesWon="0" gender="Male" genderId="0" guild="Alliance Pwners II" guildId="9452058" guildUrl="r=Coilfang&amp;gn=Alliance+Pwners+II" name="Billykid" race="Blood Elf" raceId="10" seasonGamesPlayed="13" seasonGamesWon="2" teamRank="1"/>
           </members>
         </arenaTeam>
       </arenaTeams>
@@ -23,7 +23,7 @@
         <faction id="933" key="theconsortium" name="The Consortium" reputation="1664"/>
         <faction id="989" key="keepersoftime" name="Keepers of Time" reputation="3048"/>
         <faction id="947" key="thrallmar" name="Thrallmar" reputation="22416"/>
-        <faction id="967" key="thevioleteye" name="The Violet Eye" reputation="18297"/>
+        <faction id="967" key="thevioleteye" name="The Violet Eye" reputation="25838"/>
         <faction id="941" key="themag'har" name="The Mag'har" reputation="11192"/>
         <faction header="1" iconKey="theburningcrusade" id="936" key="shattrathcity" name="Shattrath City">
           <faction id="934" key="thescryers" name="The Scryers" reputation="3500"/>
@@ -46,7 +46,7 @@
         <faction id="1090" key="kirintor" name="Kirin Tor" reputation="42999"/>
         <faction id="1091" key="thewyrmrestaccord" name="The Wyrmrest Accord" reputation="42999"/>
         <faction id="1106" key="argentcrusade" name="Argent Crusade" reputation="42999"/>
-        <faction id="1156" key="theashenverdict" name="The Ashen Verdict" reputation="26516"/>
+        <faction id="1156" key="theashenverdict" name="The Ashen Verdict" reputation="28527"/>
       </faction>
       <faction header="1" iconKey="classic" id="1118" key="classic" name="Classic">
         <faction header="1" iconKey="classic" id="892" key="hordeforces" name="Horde Forces">
