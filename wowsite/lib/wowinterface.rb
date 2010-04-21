@@ -51,7 +51,7 @@ class WowInterface
       member.update_attributes attributes
       member.save
       ##Debug
-      puits member.name
+      puts member.name
       sleep 1.5
     end
     caching = true
