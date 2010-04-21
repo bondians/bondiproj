@@ -34,9 +34,6 @@ class WowInterface
   def updateMembers
     system "rm #{RAILS_ROOT}/cache/default/*"
     
-    debugger
-    1
-    1
     armoryData = {}
 
     WowInterface::GUILDS.each do |guild|
