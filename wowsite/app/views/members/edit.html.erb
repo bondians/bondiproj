@@ -55,9 +55,9 @@
     <%= f.submit 'Update' %>
   </p>
   <% Capability.all.each do |g| %>
-  <% debugger;1;1 %>
+  <%# debugger;1;1 %>
   <%#= check_box_tag("member[capabilities][#{g.id}]","1", @member.capabilities.include?(g)) %>
-  <%= check_box_tag "member[capability_ids][]", g.id, @member.capabilities.include?(g) %>
+  <%= check_box_tag "member[capabilities_ids][]", g.id, @member.capabilities.include?(g) %>
   <% end %>
 <% end %>
 
