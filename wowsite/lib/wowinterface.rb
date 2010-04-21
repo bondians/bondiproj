@@ -50,6 +50,8 @@ class WowInterface
       members.delete member
       member.update_attributes attributes
       member.save
+      ##Debug
+      puits member.name
       sleep 1.5
     end
     caching = true
