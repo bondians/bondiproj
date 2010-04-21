@@ -6,7 +6,7 @@ class WowInterface
   
   
   def initialize
-    @api = Wowr::API.new (:realm => WowInterface::REALM)
+    @api = Wowr::API.new(:realm => WowInterface::REALM)
   end
   
   def search(name)
@@ -44,7 +44,7 @@ class WowInterface
     
     caching = false
     armoryData.each do |key,value|
-      dude = @api.get_character key
+      dude = @api.get_character key, :options => {:caching => false}
       attributes = getAttributes dude
       member = members.find {|mem| mem.name == key} || Member.new
       members.delete member
