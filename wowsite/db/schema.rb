@@ -141,7 +141,7 @@ ActiveRecord::Schema.define(:version => 20100421160947) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "url"
-    t.integer  "user"
+    t.integer  "user_id"
   end
 
   create_table "plugin_schema_migrations", :id => false, :force => true do |t|
