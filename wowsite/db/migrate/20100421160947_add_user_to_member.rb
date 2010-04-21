@@ -1,6 +1,6 @@
 class AddUserToMember < ActiveRecord::Migration
   def self.up
-    add_column :members, :user, :references
+    add_column :members, :user, :integer
   end
 
   def self.down
