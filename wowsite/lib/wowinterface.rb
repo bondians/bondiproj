@@ -48,7 +48,7 @@ class WowInterface
       dude = @api.get_character key
       attributes = getAttributes dude
       member = members.find {|mem| mem.name == key} || Member.new
-      members.delete member
+      members.delete member if WowInterface.GUILDS.include? member.guild
       member.update_attributes attributes
       member.save
       ##Debug

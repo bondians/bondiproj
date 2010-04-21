@@ -4,7 +4,7 @@ module Goldberg
   class User < ActiveRecord::Base
     include Goldberg::Model
     
-    has_many :submissions
+    has_many :members
 
     belongs_to :role, :class_name=>"Goldberg::Role", :foreign_key => :role_id
     
