@@ -1,13 +1,25 @@
 <h1>Please select toons to associate with your account</h1>
-<% mems = @mymembers %>
 <div id="tabs">
   
   <ul>
+    <li><a href="#tabs-mine">My Toons</a></li>
     <% WowInterface::GUILDS.each_index do |idx| %>
       <% guild = WowInterface::GUILDS[idx] %>
-      <li><a href="#tabs-<%= idx -%>"><%= guild -%></a></li>
+      <li><a href="#tabs-<%= idx -%>">Select From: <%= guild -%></a></li>
     <% end -%>
-  </ul> 
+  </ul>
+  <div id="tabs-mine">
+    <table>
+      <tr>
+        <th width="25%">Name</th>
+        <th width="5%">Race</th>
+        <th width="5%">Class</th>
+      </tr>
+      <% @mymembers.each do |dude| %>
+        <%= render :partial => 'member', :locals => {:dude => dude} %>
+      <% end %>
+    </table>
+  </div>
   <% WowInterface::GUILDS.each_index do |idx| %>
   <div id="tabs-<%= idx -%>">
     <table>
@@ -16,25 +28,9 @@
         <th width="5%">Race</th>
         <th width="5%">Class</th>
       </tr>
-      <tr>
-        <td span=3>Previously Selected</td>
-      </tr>
+      <% mems = @unused.select{|m| m.guild == WowInterface::GUILDS[idx]} %>
       <% mems.each do |dude| %>
-      <tr>
-        <td> <%=link_to dude.name, Member::MEMBER_URL_PREFIX + dude.url.to_s, :popup => true %></td>
-        <td><%=image_tag(dude.racepic) %></td>
-        <td><%=image_tag(dude.classpic) %></td>
-      </tr>
-      <% end %>
-      <tr>
-        <td span=3>Unassigned</td>
-      </tr>
-      <% [].each do |dude| %>
-      <tr>
-        <td><%=link_to dude.name, Member::MEMBER_URL_PREFIX + dude.url.to_s, :popup => true %></td>
-        <td><%=image_tag(dude.racepic) %></td>
-        <td><%=image_tag(dude.classpic) %></td>
-      </tr>
+        <%= render :partial => 'member', :locals => {:dude => dude} %>
       <% end %>
     </table>
   </div> <!-- tabs-<%= idx%> -->
