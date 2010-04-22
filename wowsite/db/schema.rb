@@ -133,7 +133,7 @@ ActiveRecord::Schema.define(:version => 20100421214553) do
 
   create_table "membercapabilities", :force => true do |t|
     t.integer  "member_id"
-    t.integer  "capabilities_id"
+    t.integer  "capability_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

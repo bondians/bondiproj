@@ -1,64 +1,26 @@
-<h1>Editing member</h1>
-
+<h1>Please Set Attributes for <%= @member.name %> </h1>
+<h2>Guild: <%= @member.guild %></h2>
+  <p>
+    Race:
+    <%= image_tag(@member.racepic) %>
+  </p>
+  <p>
+    Class:
+    <%= image_tag(@member.classpic) %>
+  </p>
 <% form_for(@member) do |f| %>
   <%= f.error_messages %>
-
+<h3> Select all roles that <%= @member.name %> is capable of raiding with.</h3>
+  <% Capability.all.each do |g| %>
   <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
+  <%= check_box_tag "member[capability_ids][]", g.id, @member.capabilities.include?(g) %>
+  <%= h g.name %>
   </p>
-  <p>
-    <%= f.label :level %><br />
-    <%= f.text_field :level %>
-  </p>
-  <p>
-    <%= f.label :racepic %><br />
-    <%= f.text_field :racepic %>
-  </p>
-  <p>
-    <%= f.label :classpic %><br />
-    <%= f.text_field :classpic %>
-  </p>
-  <p>
-    <%= f.label :guild %><br />
-    <%= f.text_field :guild %>
-  </p>
-  <p>
-    <%= f.label :health %><br />
-    <%= f.text_field :health %>
-  </p>
-  <p>
-    <%= f.label :armor %><br />
-    <%= f.text_field :armor %>
-  </p>
-  <p>
-    <%= f.label :strength %><br />
-    <%= f.text_field :strength %>
-  </p>
-  <p>
-    <%= f.label :stamina %><br />
-    <%= f.text_field :stamina %>
-  </p>
-  <p>
-    <%= f.label :agility %><br />
-    <%= f.text_field :agility %>
-  </p>
-  <p>
-    <%= f.label :spirit %><br />
-    <%= f.text_field :spirit %>
-  </p>
-  <p>
-    <%= f.label :intellect %><br />
-    <%= f.text_field :intellect %>
-  </p>
+  <% end %>
+  
   <p>
     <%= f.submit 'Update' %>
   </p>
-  <% Capability.all.each do |g| %>
-  <%# debugger;1;1 %>
-  <%#= check_box_tag("member[capabilities][#{g.id}]","1", @member.capabilities.include?(g)) %>
-  <%= check_box_tag "member[capabilities_ids][]", g.id, @member.capabilities.include?(g) %>
-  <% end %>
 <% end %>
 
 <%= link_to 'Show', @member %> |
