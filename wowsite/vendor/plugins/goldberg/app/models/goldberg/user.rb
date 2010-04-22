@@ -1,4 +1,6 @@
 require 'digest/sha1'
+require_dependency 'member'
+require_dependency 'setting'
 
 module Goldberg
   class User < ActiveRecord::Base

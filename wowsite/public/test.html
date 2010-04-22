@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+  
+  <script>
+  $(document).ready(function() {
+    $("#tabs").tabs();
+  });
+  </script>
+</head>
+<body style="font-size:62.5%;">
+  
+<div id="tabs">
+  
+  <ul>
+    
+      
+      <li><a href="#tabs-0">Alliance Pwners</a></li>
+    
+      
+      <li><a href="#tabs-1">Alliance Pwners II</a></li>
+    
+  </ul> 
+  
+  <div id="tabs-0">
+
+  <table>
+    <tr>
+      <th width="25%">Name</th>
+      <th width="5%">Race</th>
+      <th width="5%">Class</th>
+    </tr>
+    <tr>
+
+      <td span=3>Previously Selected</td>
+    </tr>
+    
+    <tr>
+      <td> <a href="http://www.wowarmory.com/character-sheet.xml?r=Coilfang&amp;cn=Cayuse" onclick="window.open(this.href);return false;">Cayuse</a></td>
+      <td><img alt="5-0" src="http://www.wowarmory.com/_images/icons/race/5-0.gif" /></td>
+      <td><img alt="1" src="http://www.wowarmory.com/_images/icons/class/1.gif" /></td>
+    </tr>
+
+    
+    <tr>
+      <td span=3>Unassigned</td>
+    </tr>
+    
+  </div> <!-- tabs-0 -->
+  
+  <div id="tabs-1">
+  <table>
+    <tr>
+      <th width="25%">Name</th>
+
+      <th width="5%">Race</th>
+      <th width="5%">Class</th>
+    </tr>
+    <tr>
+      <td span=3>Previously Selected</td>
+    </tr>
+    
+    <tr>
+
+      <td> <a href="http://www.wowarmory.com/character-sheet.xml?r=Coilfang&amp;cn=Cayuse" onclick="window.open(this.href);return false;">Cayuse</a></td>
+      <td><img alt="5-0" src="http://www.wowarmory.com/_images/icons/race/5-0.gif" /></td>
+      <td><img alt="1" src="http://www.wowarmory.com/_images/icons/class/1.gif" /></td>
+    </tr>
+    
+    <tr>
+      <td span=3>Unassigned</td>
+    </tr>
+
+    
+  </div> <!-- tabs-1 -->
+  
+</div> <!-- tabs -->
+
+</body>

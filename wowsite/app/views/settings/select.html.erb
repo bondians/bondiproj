@@ -1,0 +1,49 @@
+<h1>Please select toons to associate with your account</h1>
+<% mems = @mymembers %>
+<div id="tabs">
+  
+  <ul>
+    <% WowInterface::GUILDS.each_index do |idx| %>
+      <% guild = WowInterface::GUILDS[idx] %>
+      <li><a href="#tabs-<%= idx -%>"><%= guild -%></a></li>
+    <% end -%>
+  </ul> 
+  <% WowInterface::GUILDS.each_index do |idx| %>
+  <div id="tabs-<%= idx -%>">
+    <table>
+      <tr>
+        <th width="25%">Name</th>
+        <th width="5%">Race</th>
+        <th width="5%">Class</th>
+      </tr>
+      <tr>
+        <td span=3>Previously Selected</td>
+      </tr>
+      <% mems.each do |dude| %>
+      <tr>
+        <td> <%=link_to dude.name, Member::MEMBER_URL_PREFIX + dude.url.to_s, :popup => true %></td>
+        <td><%=image_tag(dude.racepic) %></td>
+        <td><%=image_tag(dude.classpic) %></td>
+      </tr>
+      <% end %>
+      <tr>
+        <td span=3>Unassigned</td>
+      </tr>
+      <% [].each do |dude| %>
+      <tr>
+        <td><%=link_to dude.name, Member::MEMBER_URL_PREFIX + dude.url.to_s, :popup => true %></td>
+        <td><%=image_tag(dude.racepic) %></td>
+        <td><%=image_tag(dude.classpic) %></td>
+      </tr>
+      <% end %>
+    </table>
+  </div> <!-- tabs-<%= idx%> -->
+  <% end %>
+</div> <!-- tabs -->
+
+<script>
+  $(document).ready(function() {
+    // Tabs
+    $('#tabs').tabs();
+  });
+</script>

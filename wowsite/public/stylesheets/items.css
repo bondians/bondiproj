@@ -1,0 +1,154 @@
+.cssNoDay2 {
+	font-family: Arial, Helvetica; 
+	font-size: 12px; 
+	color: #FFFFFF; 
+	background-color: #B1260D; 
+}
+.cssNoDay1 {
+	font-family: Arial, Helvetica;
+	font-size: 12px; color: #FFFFFF;
+	background-color: #B1260D;
+}
+.cssTitle1 {
+	font-family: Comic Sans MS;
+	font-size: 36px; color: #FFFFFF;
+	background-color: #045C97;
+}
+.cssTitle2 {
+	font-family: Comic Sans MS;
+	font-size: 24px; color: #FFFFFF;
+	background-color: #4A3A92;
+}
+.cssTitle3 {
+	font-family: Arial, Helvetica;
+	font-size: 24px; color: #FFFFFF;
+	background-color: #045C97;
+}
+.cssTitle4 {
+	font-family: Comic Sans MS;
+	font-size: 24px; color: #FFFFFF;
+	background-color: #99B1C7;
+}
+.cssTitle5 {
+	font-family: Comic Sans MS;
+	font-size: 24px; color: #FFFFFF;
+	background-color: #213564;
+}
+.cssTitle6 {
+	font-family: Arial, Helvetica;
+	font-size: 24px; color: #FFFFFF;
+	background-color: #59718D;
+}
+.cssTitleHilite1 {
+	font-family: Comic Sans MS;
+	font-size: 36px;
+	color: #000000;
+	background-color: #FFFF00;
+	cursor: default;
+}
+.cssTitleHilite2 {
+	font-family: Comic Sans MS;
+	font-size: 24px;
+	color: #000000;
+	background-color: #FFFF00;
+	cursor: default;
+}
+.cssHeading1 {
+	font-family: Arial, Helvetica;
+	font-size: 24px;
+	color: #FFFFFF;
+	background-color: #045C97;
+}
+.cssDays1 {
+	font-family: Arial, Helvetica;
+	font-size: 24px;
+	color: #000000;
+	background-color: #FFFFFF;
+}
+.cssWeeks1 {
+	font-family: Arial, Helvetica;
+	font-size: 12px;
+	color: #000000;
+	background-color: #92BC34;
+}
+.cssLogin1 {
+	font-family: Arial, Helvetica;
+	font-size: 24px;
+	color: #000000;
+	background-color: #045C97;
+}
+.cssSaturdays1 {
+	font-family: Arial, Helvetica;
+	font-size: 24px;
+	color: #0000D0;
+	background-color: #F6F6FF;
+}
+.cssSundays1 {
+	font-family: Arial, Helvetica;
+	font-size: 24px;
+	color: #000000;
+	background-color: #A0A0A0;
+}
+.cssWeekend1 {
+	font-family: Arial, Helvetica;
+	font-size: 24px;
+	color: #000000;
+	background-color: #A0A0A0;
+}
+.cssToday1 {
+	font-family: Arial, Helvetica;
+	font-size: 12px;
+	color: #FFFFFF;
+	background-color: #708BD0;
+}
+.cssToday2 {
+	font-family: Arial, Helvetica;
+	font-size: 18px;
+	color: #FFFFFF;
+	background-color: #708BD0;
+}
+.cssDue1 {
+	font-family: Arial, Helvetica;
+	font-size: 12px;
+	color: #000000;
+	background-color: #045C97;
+}
+.cssDue2 {
+	font-family: Arial, Helvetica;
+	font-size: 12px;
+	color: #FFFFFF;
+	background-color: #708BD0;
+}
+.cssDue3 {
+	font-family: Arial, Helvetica;
+	font-size: 12px;
+	color: #FFFFFF;
+	background-color: #708BD0;
+}
+.cssDue4 {
+	font-family: Arial, Helvetica;
+	font-size: 12px;
+	color: #000000;
+	background-color: #FAFCFF;
+}
+.cssHilight1 {
+	font-family: Arial, Helvetica;
+	font-size: 24px;
+	color: #000000;
+	background-color: #FFFF00;
+	cursor: default;
+}
+.cssAlternating1 {
+	font-family: Arial, Helvetica;
+	font-size: 12px;
+	color: #000000;
+	background-color: #DADCDF;
+	cursor: default;
+}
+.cssAlternating2 {
+	font-family: Arial, Helvetica;
+	font-size: 12px;
+	color: #000000;
+	background-color: #FAFCFF;
+	cursor: default;
+}
