@@ -1,42 +1,49 @@
 <h1>Please select toons to associate with your account</h1>
+        <% form_tag :controller => :settings, :action => :update_members do %>
 <div id="tabs">
   
   <ul>
-    <li><a href="#tabs-mine">My Toons</a></li>
+    <li><a href="#tabs-mine">Your Toons</a></li>
     <% WowInterface::GUILDS.each_index do |idx| %>
       <% guild = WowInterface::GUILDS[idx] %>
       <li><a href="#tabs-<%= idx -%>">Select From: <%= guild -%></a></li>
     <% end -%>
   </ul>
   <div id="tabs-mine">
-    <table>
+    <table cellspacing="20">
       <tr>
-        <th width="25%">Name</th>
-        <th width="5%">Race</th>
-        <th width="5%">Class</th>
+        <th>Check</th>
+        <th>Name</th>
+        <th>Guild
+        <th>Race</th>
+        <th>Class</th>
       </tr>
       <% @mymembers.each do |dude| %>
-        <%= render :partial => 'member', :locals => {:dude => dude} %>
+        <%= render :partial => 'member', :locals => {:dude => dude, :mymembers => @mymembers, :opts => {:guild => "true"} } %>
       <% end %>
     </table>
   </div>
   <% WowInterface::GUILDS.each_index do |idx| %>
   <div id="tabs-<%= idx -%>">
-    <table>
+    <table cellspacing="20">
       <tr>
-        <th width="25%">Name</th>
-        <th width="5%">Race</th>
-        <th width="5%">Class</th>
+        <th>Check</th>
+        <th>Name</th>
+        <th>Race</th>
+        <th>Class</th>
       </tr>
       <% mems = @unused.select{|m| m.guild == WowInterface::GUILDS[idx]} %>
       <% mems.each do |dude| %>
-        <%= render :partial => 'member', :locals => {:dude => dude} %>
+        <%= render :partial => 'member', :locals => {:dude => dude, :mymembers => @mymembers} %>
       <% end %>
     </table>
   </div> <!-- tabs-<%= idx%> -->
   <% end %>
 </div> <!-- tabs -->
-
+  <p>
+    <%= submit_tag 'Update' %>
+  </p>
+<% end %>
 <script>
   $(document).ready(function() {
     // Tabs

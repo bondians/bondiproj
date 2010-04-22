@@ -27,6 +27,6 @@ class Member < ActiveRecord::Base
   MEMBER_URL_PREFIX = "http://www.wowarmory.com/character-sheet.xml?"
   
   def self.unassigned
-    Member.find_all_by_user_id nil
+    Member.find_all_by_user_id nil, :order => :name
   end
 end

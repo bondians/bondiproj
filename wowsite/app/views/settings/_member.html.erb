@@ -1,5 +1,10 @@
 <tr>
+  <td><%= check_box_tag "member_ids[]", dude.id, mymembers.include?(dude)%></td>
   <td><%=link_to dude.name, Member::MEMBER_URL_PREFIX + dude.url.to_s, :popup => true %></td>
+  <% opts ||= {} %>
+  <% if opts[:guild] %>
+    <td> <%= dude.guild %> </td>
+  <% end %>
   <td><%=image_tag(dude.racepic) %></td>
   <td><%=image_tag(dude.classpic) %></td>
 </tr>

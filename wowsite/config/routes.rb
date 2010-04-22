@@ -7,6 +7,8 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :members
   
   map.connect 'settings/select', :controller => "settings", :action => "select"
+  
+  map.resources :settings
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
