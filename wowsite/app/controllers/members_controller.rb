@@ -3,12 +3,18 @@ class MembersController < ApplicationController
   # GET /members.xml
   def index
     #@members = Member.all
-
+    @title = "Listing All members"
     @members = Member.all :order => order_with_default("name", "asc")
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @members }
     end
+  end
+  
+  def myindex
+    @title = "Listing Your Toons"
+    @members = Goldberg.user.members
+    render :action => 'index'
   end
 
   # GET /members/1

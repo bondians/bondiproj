@@ -1,38 +1,49 @@
-<h1>Listing members</h1>
+<h1><%=h @title %></h1>
 
-<table>
-  <tr>
-    <th width="25%"><%= default_sortable_header("name", 'desc') %></th>
-    <th width="5%" >Level</th>
-    <th width="5%"><%= sortable_header("racepic", 'asc') %></th>
-    <th width="5%"><%= sortable_header("classpic",  'asc') %></th>
-    <th width="20%"><%= sortable_header("guild",  'asc') %></th>
-    <th width="10%"><%= sortable_header("health",  'asc') %></th>
-    <th width="5%"><%= sortable_header("armor",  'asc') %></th>
-    <th width="5%"><%= sortable_header("strength",  'asc') %></th>
-    <th width="5%"><%= sortable_header("stamina",  'asc') %></th>
-    <th width="5%"><%= sortable_header("agility",  'asc') %></th>
-    <th width="5%"><%= sortable_header("spirit",  'asc') %></th>
-    <th width="5%"><%= sortable_header("intellect",  'asc') %></th>
-  </tr>
+<div id="tabs">
+  
+  <ul>
+    <% WowInterface::GUILDS.each_index do |idx| %>
+      <% guild = WowInterface::GUILDS[idx] %>
+      <li><a href="#tabs-<%= idx -%>"><%= guild -%></a></li>
+    <% end -%>
+  </ul>
 
-<% @members.each do |member| %>
-  <tr>
-    <td><%=link_to member.name, Member::MEMBER_URL_PREFIX + member.url.to_s, :popup => true %></td>
-    <td><%=h member.level %></td>
-    <td><%=image_tag(member.racepic) %></td>
-    <td><%=image_tag(member.classpic) %></td>
-    <td><%=h member.guild %></td>
-    <td><%=h member.health %></td>
-    <td><%=h member.armor %></td>
-    <td><%=h member.strength %></td>
-    <td><%=h member.stamina %></td>
-    <td><%=h member.agility %></td>
-    <td><%=h member.spirit %></td>
-    <td><%=h member.intellect %></td>
+<% WowInterface::GUILDS.each_index do |idx| %>
+  <% mems = @members.select{|m| m.guild == WowInterface::GUILDS[idx]} %>
+  <% unless mems.empty? %>
+    <div id="tabs-<%= idx -%>">
+      <table>
+        <tr>
+          <th width=5%><%= default_sortable_header("name", 'desc') %></th>
+          <th width=3%>Level</th>
+          <th width=3%><%= sortable_header("racepic", 'asc') %></th>
+          <th width=3%><%= sortable_header("classpic",  'asc') %></th>
+          <th width=3%><%= sortable_header("health",  'asc') %></th>
+          <th width=3%><%= sortable_header("armor",  'asc') %></th>
+          <th width=3%><%= sortable_header("strength",  'asc') %></th>
+          <th width=3%><%= sortable_header("stamina",  'asc') %></th>
+          <th width=3%><%= sortable_header("agility",  'asc') %></th>
+          <th width=3%><%= sortable_header("spirit",  'asc') %></th>
+          <th width=3%><%= sortable_header("intellect",  'asc') %></th>
+        </tr>
+        <% mems.each do |dude| %>
+          <tr class="<%= cycle("even", "odd") -%>">
+          <%= render :partial => 'member', :locals => {:member => dude}%>
+          </tr>
+        <% end %>
+      </table>
+    </div> <!-- tabs-<%= idx%> -->
+    <% end %>
+  <% end %>
+</div> <!-- tabs -->
 
-  </tr>
-<% end %>
-</table>
+<script>
+  $(document).ready(function() {
+    // Tabs
+    $('#tabs').tabs();
+  });
+</script>
 
-<br />
+
+

@@ -99,3 +99,11 @@
 	width: 18%;
 	float: left;
 }
+
+tr.even td{
+  background-color:#CCC;
+}
+
+tr.odd td{
+  background-color:#EEE;
+} 

@@ -4,6 +4,8 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :capabilities
 
+  map.connect 'members/myindex', :controller => "members", :action => "myindex"
+
   map.resources :members
   
   map.connect 'settings/select', :controller => "settings", :action => "select"
