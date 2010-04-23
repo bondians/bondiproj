@@ -1,43 +1,25 @@
 <h1><%=h @title %></h1>
+<p> Click name to edit available roles </p>
 
-<div id="tabs">
-  
-  <ul>
-    <% WowInterface::GUILDS.each_index do |idx| %>
-      <% guild = WowInterface::GUILDS[idx] %>
-      <li><a href="#tabs-<%= idx -%>"><%= guild -%></a></li>
-    <% end -%>
-  </ul>
-
-<% WowInterface::GUILDS.each_index do |idx| %>
-  <% mems = @members.select{|m| m.guild == WowInterface::GUILDS[idx]} %>
-  <% unless mems.empty? %>
-    <div id="tabs-<%= idx -%>">
+  <% unless @members.empty? %>
       <table>
         <tr>
           <th width=5%><%= default_sortable_header("name", 'desc') %></th>
+          <td width=5%><%= sortable_header("guild", 'asc') %></th>
           <th width=3%>Level</th>
           <th width=3%><%= sortable_header("racepic", 'asc') %></th>
           <th width=3%><%= sortable_header("classpic",  'asc') %></th>
-          <th width=3%><%= sortable_header("health",  'asc') %></th>
-          <th width=3%><%= sortable_header("armor",  'asc') %></th>
-          <th width=3%><%= sortable_header("strength",  'asc') %></th>
-          <th width=3%><%= sortable_header("stamina",  'asc') %></th>
-          <th width=3%><%= sortable_header("agility",  'asc') %></th>
-          <th width=3%><%= sortable_header("spirit",  'asc') %></th>
-          <th width=3%><%= sortable_header("intellect",  'asc') %></th>
+          <% @capabilities.each do |cap| %>
+          <th width=3%><%= cap.name %></th>
+          <% end %>
         </tr>
-        <% mems.each do |dude| %>
+        <% @members.each do |dude| %>
           <tr class="<%= cycle("even", "odd") -%>">
-          <%= render :partial => 'member', :locals => {:member => dude}%>
+          <%= render :partial => 'mymember', :locals => {:member => dude, :capabilities => @capabilities}%>
           </tr>
         <% end %>
       </table>
-    </div> <!-- tabs-<%= idx%> -->
     <% end %>
-  <% end %>
-</div> <!-- tabs -->
-
 <script>
   $(document).ready(function() {
     // Tabs

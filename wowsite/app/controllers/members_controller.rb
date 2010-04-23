@@ -3,7 +3,6 @@ class MembersController < ApplicationController
   # GET /members.xml
   def index
     #@members = Member.all
-    @title = "Listing All members"
     @members = Member.all :order => order_with_default("name", "asc")
     respond_to do |format|
       format.html # index.html.erb
@@ -13,8 +12,8 @@ class MembersController < ApplicationController
   
   def myindex
     @title = "Listing Your Toons"
-    @members = Goldberg.user.members
-    render :action => 'index'
+    @members = Goldberg.user.members :include => :capabilities
+    @capabilities = Capability.all
   end
 
   # GET /members/1
@@ -63,7 +62,7 @@ class MembersController < ApplicationController
     respond_to do |format|
       if @member.update_attributes(params[:member])
         flash[:notice] = 'Member was successfully updated.'
-        format.html { redirect_to(@member) }
+        format.html { redirect_to '/members/myindex' }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
