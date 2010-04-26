@@ -35,6 +35,7 @@ class WowInterface
     system "rm #{RAILS_ROOT}/cache/default/*"
     data = {}
     data[:updated] = []
+    timer = Time.now
     armoryData = {}
 
     GUILDS.each do |guild|
@@ -54,10 +55,11 @@ class WowInterface
       member.save
       ##Debug
       data[:updated].push member.name
-      sleep 1.5
+      sleep 1.0
     end
     data[:removed] = members.map {|mem| mem.name}
     members.each {|mem| mem.destroy}
+    data[:timer] = Time.now - timer
     return data
   end
 
