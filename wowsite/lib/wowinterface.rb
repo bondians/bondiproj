@@ -47,6 +47,7 @@ class WowInterface
     members = Member.all
     
     armoryData.each do |key,value|
+      catchTime = Time.now
       dude = @api.get_character key
       attributes = getAttributes dude
       member = members.find {|mem| mem.name == key} || Member.new
@@ -56,7 +57,8 @@ class WowInterface
       ##Debug
       puts member.name
       data[:updated].push member.name
-      sleep 1.0
+      timed = 1.5 - (Time.now - catchTime)
+      sleep timed if timed > 0
     end
     data[:removed] = members.map {|mem| mem.name}
     members.each {|mem| mem.destroy}
