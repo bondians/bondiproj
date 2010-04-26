@@ -32,7 +32,7 @@ class WowInterface
   end
 
   def updateMembers
-    system "rm #{RAILS_ROOT}/cache/default/*"
+    @api.clear_cache
     data = {}
     data[:updated] = []
     timer = Time.now

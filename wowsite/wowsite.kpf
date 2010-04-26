@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Komodo Project File - DO NOT EDIT -->
-<project id="c3120ae3-1951-49e6-9534-d0f6f8cb2480" kpf_version="4" name="wowsite.kpf">
-<livefolder id="c3120ae3-1951-49e6-9534-d0f6f8cb2480/app/helpers/controllers" idref="c3120ae3-1951-49e6-9534-d0f6f8cb2480/app/helpers" name="controllers" url="app/controllers">
-</livefolder>
-<preference-set idref="c3120ae3-1951-49e6-9534-d0f6f8cb2480">
+<project id="cbce36fa-9131-4c69-91ce-5a26ccedd929" kpf_version="4" name="wowsite.kpf">
+<preference-set idref="cbce36fa-9131-4c69-91ce-5a26ccedd929">
   <boolean id="import_live">1</boolean>
 </preference-set>
 </project>
