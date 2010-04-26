@@ -33,7 +33,7 @@ class WowInterface
 
   def updateMembers
     @api.clear_cache
-    @api.debug= true
+    @api.debug = true
     data = {}
     data[:updated] = []
     timer = Time.now
