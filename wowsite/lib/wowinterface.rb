@@ -6,12 +6,12 @@ class WowInterface
   
   
   def initialize
-    @api = Wowr::API.new(:realm => WowInterface::REALM)
+    @api = Wowr::API.new(:realm => REALM)
   end
   
   def search(name)
     results = @api.search_characters name
-    results.select {|dude| dude.realm == WowInterface::REALM}
+    results.select {|dude| dude.realm == REALM}
   end
   
   def getAttributes(data)
@@ -33,13 +33,14 @@ class WowInterface
 
   def updateMembers
     system "rm #{RAILS_ROOT}/cache/default/*"
-    
+    data = {}
+    data[:updated] = []
     armoryData = {}
 
     GUILDS.each do |guild|
       @api.guild_name = guild
       g = @api.get_guild
-      armoryData.merge!(g.members.reject {|k,v| v.level < WowInterface::MINIMUMLEVEL})
+      armoryData.merge!(g.members.reject {|k,v| v.level < MINIMUMLEVEL})
     end
     
     members = Member.all
@@ -52,12 +53,12 @@ class WowInterface
       member.update_attributes attributes
       member.save
       ##Debug
-      puts member.name
+      data[:updated].push member.name
       sleep 1.5
     end
-    
+    data[:removed] = members.map {|mem| mem.name}
     members.each {|mem| mem.destroy}
-    
+    return data
   end
 
   def caching
