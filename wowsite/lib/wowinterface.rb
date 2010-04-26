@@ -36,7 +36,7 @@ class WowInterface
     
     armoryData = {}
 
-    WowInterface::GUILDS.each do |guild|
+    GUILDS.each do |guild|
       @api.guild_name = guild
       g = @api.get_guild
       armoryData.merge!(g.members.reject {|k,v| v.level < WowInterface::MINIMUMLEVEL})
@@ -48,7 +48,7 @@ class WowInterface
       dude = @api.get_character key
       attributes = getAttributes dude
       member = members.find {|mem| mem.name == key} || Member.new
-      members.delete member if WowInterface.GUILDS.include? member.guild
+      members.delete member if GUILDS.include? member.guild
       member.update_attributes attributes
       member.save
       ##Debug
