@@ -54,6 +54,7 @@ class WowInterface
       member.update_attributes attributes
       member.save
       ##Debug
+      puts member.name
       data[:updated].push member.name
       sleep 1.0
     end
