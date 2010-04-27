@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user: 
+  keytime: 1
+  sun: MyString
+  mon: MyString
+  tue: MyString
+  wed: MyString
+  thu: MyString
+  fri: MyString
+  sat: MyString
+
+two:
+  user: 
+  keytime: 1
+  sun: MyString
+  mon: MyString
+  tue: MyString
+  wed: MyString
+  thu: MyString
+  fri: MyString
+  sat: MyString

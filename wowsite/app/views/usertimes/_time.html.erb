@@ -1,0 +1,12 @@
+<table border="1" cellpadding="5" cellspacing="0" style=cursor:pointer>
+  <tr>
+    <td width=100><%= sprintf("%02i:00", time.keytime) %></td>
+    <td width=100; BGCOLOR='<%= time.sun ? '#fadcc9' : 'white' %>'; onmouseover="ChangeColor(this, 1);" onmouseout="ChangeColor(this, <%=time.sun ? '2' : '3' %>);" onclick="<%=remote_function :url=>{:action=> 'edit', :with => {:id=> time.id, :day => :sun, :keytime => time.keytime}, :method=>:get}%>">&nbsp;</td>
+    <td width=100; BGCOLOR='<%= time.mon ? '#fadcc9' : 'white' %>'; onmouseover="ChangeColor(this, 1);" onmouseout="ChangeColor(this, <%=time.mon ? '2' : '3' %>);" onclick="<%=remote_function :url=>{:action=> 'edit', :with => {:id=> time.id, :day => :mon, :keytime => time.keytime}, :method=>:get}%>">&nbsp;</td>
+    <td width=100; BGCOLOR='<%= time.tue ? '#fadcc9' : 'white' %>'; onmouseover="ChangeColor(this, 1);" onmouseout="ChangeColor(this, <%=time.tue ? '2' : '3' %>);" onclick="<%=remote_function :url=>{:action=> 'edit', :with => {:id=> time.id, :day => :tue, :keytime => time.keytime}, :method=>:get}%>">&nbsp;</td>
+    <td width=100; BGCOLOR='<%= time.wed ? '#fadcc9' : 'white' %>'; onmouseover="ChangeColor(this, 1);" onmouseout="ChangeColor(this, <%=time.wed ? '2' : '3' %>);" onclick="<%=remote_function :url=>{:action=> 'edit', :with => {:id=> time.id, :day => :wed, :keytime => time.keytime}, :method=>:get}%>">&nbsp;</td>
+    <td width=100; BGCOLOR='<%= time.thu ? '#fadcc9' : 'white' %>'; onmouseover="ChangeColor(this, 1);" onmouseout="ChangeColor(this, <%=time.thu ? '2' : '3' %>);" onclick="<%=remote_function :url=>{:action=> 'edit', :with => {:id=> time.id, :day => :thu, :keytime => time.keytime}, :method=>:get}%>">&nbsp;</td>
+    <td width=100; BGCOLOR='<%= time.fri ? '#fadcc9' : 'white' %>'; onmouseover="ChangeColor(this, 1);" onmouseout="ChangeColor(this, <%=time.fri ? '2' : '3' %>);" onclick="<%=remote_function :url=>{:action=> 'edit', :with => {:id=> time.id, :day => :fri, :keytime => time.keytime}, :method=>:get}%>">&nbsp;</td>
+    <td width=100; BGCOLOR='<%= time.sat ? '#fadcc9' : 'white' %>'; onmouseover="ChangeColor(this, 1);" onmouseout="ChangeColor(this, <%=time.sat ? '2' : '3' %>);" onclick="<%=remote_function :url=>{:action=> 'edit', :with => {:id=> time.id, :day => :sat, :keytime => time.keytime}, :method=>:get}%>">&nbsp;</td> 
+  </tr>
+</table>

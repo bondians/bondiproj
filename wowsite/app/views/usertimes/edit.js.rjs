@@ -1,0 +1,1 @@
+page.replace_html :"time_#{@usertime.keytime}", :partial => 'time', :locals => {:time =>@usertime}

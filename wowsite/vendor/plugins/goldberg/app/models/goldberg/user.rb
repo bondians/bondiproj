@@ -1,12 +1,15 @@
 require 'digest/sha1'
 require_dependency 'member'
 require_dependency 'setting'
+require_dependency 'usertime'
+
 
 module Goldberg
   class User < ActiveRecord::Base
     include Goldberg::Model
     
     has_many :members
+    has_many :usertimes
 
     belongs_to :role, :class_name=>"Goldberg::Role", :foreign_key => :role_id
     

@@ -1,0 +1,20 @@
+<h1>Editing usertime</h1>
+
+<table border="1" cellpadding="5" cellspacing="0" style=cursor:pointer>
+  <tr>
+    <th width=100>&nbsp</th>
+    <th width=100>Sunday</th>
+    <th width=100>Monday</th>
+    <th width=100>Tuesday</th>
+    <th width=100>Wednesday</th>
+    <th width=100>Thursday</th>
+    <th width=100>Friday</th>
+    <th width=100>Saturday</th>
+  </tr>
+</table>
+  <% @times.each do |time| %>
+  <div id='<%="time_#{time.keytime}"%>'; class ="">
+  <%= render :partial => 'time', :locals => {:time => time}%>
+  </div>
+  <% end %>
+
