@@ -1,12 +1,7 @@
 class UsertimesController < ApplicationController
 
   def index
-    usertimes = Goldberg.user.usertimes
-    @times = []
-    24.times do |t|
-      this_time = (usertimes.find_by_keytime t) || usertimes.build(:attributes => {:keytime => t})
-      @times.push this_time
-    end
+    @times = Usertime.buildtimes(Goldberg.user)
   end
 
   def edit
