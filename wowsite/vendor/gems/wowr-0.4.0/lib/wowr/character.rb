@@ -2,6 +2,7 @@ $:.unshift(File.dirname(__FILE__)) unless $:.include?(File.dirname(__FILE__)) ||
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 
 require 'wowr/item.rb'
+require 'ruby-debug'
 
 module Wowr
 	module Classes
@@ -237,9 +238,13 @@ module Wowr
 			end
 			
 			def character_tab(elem)
-				
+				#debug
 				# <title value=""/>
-				@title				= (elem%'title')[:value] == "" ? nil : (elem%'title')[:value]
+				if elem%'title'
+					@title				= (elem%'title')[:value] == "" ? nil : (elem%'title')[:value]
+				else
+					@title = nil
+				end
 				#@known_titles = <knownTitles/>
 				
 				@health 		= (elem%'characterBars'%'health')[:effective].to_i
