@@ -267,7 +267,7 @@ module Wowr
 			
 			xml = get_xml(@@guild_info_url, options)
 			
-			if (xml%'guildKey') && !(xml%'guildInfo').children.empty?
+			unless (xml%'guildInfo').children.empty?
 				return Wowr::Classes::FullGuild.new(xml)
 			else
 				raise Wowr::Exceptions::GuildNotFound.new(options[:guild_name])
