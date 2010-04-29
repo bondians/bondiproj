@@ -1,7 +1,20 @@
 class UsertimesController < ApplicationController
 
   def index
-    @times = Usertime.buildtimes(Goldberg.user)
+    @users = Goldberg::User.all.select {|m| !m.usertimes.empty?}
+    allTimes = @users.map{|m| Usertime.reversetimes m}
+    @times = allTimes.transpose
+    
+  end
+  
+  def show
+    begin
+      @user = Goldberg::User.find params[:id]
+    rescue
+    end
+    
+    @user ||= Goldberg.user
+    @times = Usertime.buildtimes(@user)
   end
 
   def edit

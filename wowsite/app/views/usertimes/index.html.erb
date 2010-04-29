@@ -1,25 +1,48 @@
-<h1>Availability Selection</h1>
+<h1>Conglomerated times Selection</h1>
 
-<p>Please use Realm time when filling out this form</p>
-<p>Please click any times that you could start a 2-hour raiding block.</p>
-<p>For example, if you can play from 8PM to Midnight on Tuesdays, you'd click 20:00, 21:00, 22:00 for Tuesday.<p>
-<p>Simply click and its set. Click again to unset<p>
-
-<table border="1" cellpadding="5" cellspacing="0" style=cursor:pointer>
+<% Date::DAYNAMES.each_with_index do |day,idx| %>
+  <h1> <%= day %> </h1>
+<table border="0" cellpadding="0" cellspacing="0" style=cursor:pointer>
   <tr>
-    <th width=100; ALIGN="center">&nbsp</th>
-    <th width=100; ALIGN="center">Sunday</th>
-    <th width=100; ALIGN="center">Monday</th>
-    <th width=100; ALIGN="center">Tuesday</th>
-    <th width=100; ALIGN="center">Wednesday</th>
-    <th width=100; ALIGN="center">Thursday</th>
-    <th width=100; ALIGN="center">Friday</th>
-    <th width=100; ALIGN="center">Saturday</th>
+    <th width=5>&nbsp;</th>
+    <th width=20>Name</th>
+    <th width=10>01&nbsp;</th>
+    <th width=10>02&nbsp;</th>
+    <th width=10>03&nbsp;</th>
+    <th width=10>04&nbsp;</th>
+    <th width=10>05&nbsp;</th>
+    <th width=10>06&nbsp;</th>
+    <th width=10>07&nbsp;</th>
+    <th width=10>08&nbsp;</th>
+    <th width=10>09&nbsp;</th>
+    <th width=10>10&nbsp;</th>
+    <th width=10>11&nbsp;</th>
+    <th width=10>12&nbsp;</th>
+    <th width=10>13&nbsp;</th>
+    <th width=10>14&nbsp;</th>
+    <th width=10>15&nbsp;</th>
+    <th width=10>16&nbsp;</th>
+    <th width=10>17&nbsp;</th>
+    <th width=10>18&nbsp;</th>
+    <th width=10>19&nbsp;</th>
+    <th width=10>20&nbsp;</th>
+    <th width=10>21&nbsp;</th>
+    <th width=10>22&nbsp;</th>
+    <th width=10>23&nbsp;</th>
+    <th width=10>24&nbsp;</th>
   </tr>
+<% @times[idx].each_with_index do |time, usr| %>
+  <tr>
+    <% time.each_with_index do |t, cnt| %>
+      <% if cnt == 0%>
+      <% @bg = Usertime::COLORS[usr % Usertime::NUMCOLS] %>
+        <td  bgcolor="<%= @bg %>">&nbsp;</td>
+        <td><%= @users[usr].name%></td>
+        <% end %>
+      <td bgcolor="<%= t ? @bg : "white"%>">&nbsp;</td>
+    <% end %>
+  </tr>
+<% end %>
 </table>
-  <% @times.each do |time| %>
-  <div id='<%="time_#{time.keytime}"%>'; class ="">
-  <%= render :partial => 'time', :locals => {:time => time}%>
-  </div>
-  <% end %>
+<% end %>
 

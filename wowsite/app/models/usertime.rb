@@ -1,4 +1,6 @@
 class Usertime < ActiveRecord::Base
+  COLORS = ["#000099","#CCCCCC","#009999","#990000","#009900","#00FFFF","#990099","#999900","#999999","#0000FF","#00FF00","#FF0000","#FF00FF","#FFFF00" ]
+  NUMCOLS = Usertime::COLORS.length
   belongs_to :user, :class_name =>"Goldberg::User"
   
   def self.buildtimes(user)
