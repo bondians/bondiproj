@@ -1,0 +1,16 @@
+<h1>Editing newsfeed</h1>
+
+<% form_for(@newsfeed) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @newsfeed %> |
+<%= link_to 'Back', newsfeeds_path %>

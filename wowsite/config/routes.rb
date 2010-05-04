@@ -1,4 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :newsitems
+
+
+  map.hotnews "/hotnews", :controller => "newsfeeds", :action => "show", :id => "1"
+  map.resources :newsfeeds
+
   map.resources :usertimes
 
 

@@ -1,0 +1,20 @@
+<% if !@newsfeed.newsitems.empty? %>
+  <p>
+    <h1> <%= @newsfeed.name%> </h1>
+  </p>
+  <hr>
+  <% @newsfeed.newsitems.each do |item| %>
+    <p>
+      <h2><%= link_to item.title, item %></h2>
+    </p>
+    <p>
+      <%= truncate(Hpricot(item.body).inner_text, 50, "&hellip;") %>
+    </p>
+    <p>
+      <%= item.created_at.strftime("Posted at %b %d, %y At: %H:%M<br>By: #{item.user.name}") %>
+    </p>
+    <hr>
+  <% end %>
+<% else %>
+  <h1> Sorry, no News </h1>
+<%end%>

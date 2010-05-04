@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100427010342) do
+ActiveRecord::Schema.define(:version => 20100504193822) do
 
   create_table "capabilities", :force => true do |t|
     t.string   "name"
@@ -155,6 +155,21 @@ ActiveRecord::Schema.define(:version => 20100427010342) do
     t.datetime "updated_at"
     t.string   "url"
     t.integer  "user_id"
+  end
+
+  create_table "newsfeeds", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "newsitems", :force => true do |t|
+    t.string   "title"
+    t.text     "body"
+    t.integer  "newsfeed_id"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "plugin_schema_migrations", :id => false, :force => true do |t|

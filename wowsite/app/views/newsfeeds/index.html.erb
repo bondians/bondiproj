@@ -1,0 +1,20 @@
+<h1>Listing newsfeeds</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+
+<% @newsfeeds.each do |newsfeed| %>
+  <tr>
+    <td><%=h newsfeed.name %></td>
+    <td><%= link_to 'Show', newsfeed %></td>
+    <td><%= link_to 'Edit', edit_newsfeed_path(newsfeed) %></td>
+    <td><%= link_to 'Destroy', newsfeed, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New newsfeed', new_newsfeed_path %>
