@@ -29,7 +29,7 @@ module Goldberg
       else
         conditions = nil
       end
-      @users = User.find(:all, :conditions => conditions, :order => 'name')
+      @users = User.find(:all, :conditions => conditions, :order => 'role_id, name')
       render :action => 'list'
     end
     alias_method :delegate_list, :list
