@@ -11,7 +11,7 @@
       <%= truncate(Hpricot(item.body).inner_text, 50, "&hellip;") %>
     </p>
     <p>
-      <%= item.created_at.strftime("Posted at %b %d, %y At: %H:%M<br>By: #{item.user.name}") %>
+      <%= (item.created_at.in_time_zone('Pacific Time (US & Canada)')).strftime("Posted at %b %d, %y At: %H:%M<br>By: #{item.user.name}") %>
     </p>
     <hr>
   <% end %>
