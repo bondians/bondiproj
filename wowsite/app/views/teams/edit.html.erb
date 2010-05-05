@@ -1,5 +1,4 @@
-<h1>Editing team</h1>
-
+<h1>Editing "<%= @team.identity -%>"</h1>
 <% form_for(@team) do |f| %>
   <%= f.error_messages %>
 
@@ -18,7 +17,13 @@
   <p>
     <%= f.submit 'Update' %>
   </p>
-<% end %>
+  <br \>
+  <%= render :partial => 'form', :locals => {:team => @team, :unused => @unused, :capabilities => @capabilities} %>
 
-<%= link_to 'Show', @team %> |
-<%= link_to 'Back', teams_path %>
+<% end %>
+<script>
+  $(document).ready(function() {
+    // Tabs
+    $('#tabs').tabs();
+  });
+</script>

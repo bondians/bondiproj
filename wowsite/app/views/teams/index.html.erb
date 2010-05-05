@@ -1,0 +1,13 @@
+<br />
+<div id="accordion">
+<%= render :partial => 'teams', :locals => { :teams => @teams} %>
+</div>
+
+<br />
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+  $("#accordion").accordion({ header: "h3" });
+});
+</script>

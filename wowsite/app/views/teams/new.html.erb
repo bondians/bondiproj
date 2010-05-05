@@ -18,6 +18,12 @@
   <p>
     <%= f.submit 'Create' %>
   </p>
+  <br \>
+  <%= render :partial => 'form', :locals => {:team => @team, :unused => @unused, :capabilities => @capabilities} %>
 <% end %>
-
-<%= link_to 'Back', teams_path %>
+<script>
+  $(document).ready(function() {
+    // Tabs
+    $('#tabs').tabs();
+  });
+</script>

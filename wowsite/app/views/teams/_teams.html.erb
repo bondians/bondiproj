@@ -1,0 +1,14 @@
+<% for team in teams %>
+  <div>
+    <h3><a href="#team-"><%= team.identity -%></a></h3>
+      <div>
+          <%= render :partial=>'table', :locals => { :members => team.members} %>
+      
+      <% if Goldberg.user.role.cache[:credentials].permission_ids.include?7 %>
+      <br />
+      <br />
+      <%= link_to "edit", edit_team_path(team) %>
+      <% end %>
+      </div>
+  </div>
+<% end %>

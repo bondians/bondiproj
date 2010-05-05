@@ -1,0 +1,53 @@
+
+<h1>Please select members for this team</h1>
+<div id="tabs">
+  
+  <ul>
+    <li><a href="#tabs-mine">Current Members</a></li>
+    <% WowInterface::GUILDS.each_index do |idx| %>
+      <% guild = WowInterface::GUILDS[idx] %>
+      <li><a href="#tabs-<%= idx -%>">Select From: <%= guild -%></a></li>
+    <% end -%>
+  </ul>
+  <div id="tabs-mine">
+    <table>
+      <tr>
+        <th>Check</th>
+        <th>Name</th>
+        <th>Guild
+        <th>Race</th>
+        <th>Class</th>
+        <% capabilities.each do |cap| %>
+          <th width=3%><%= cap.name %></th>
+        <% end %>
+      </tr>
+      <% team.members.each do |dude| %>
+        <tr class="<%= cycle("even", "odd") -%>">
+        <%= render :partial => 'member', :locals => {:dude => dude, :mymembers => team.members, :capabilities => capabilities, :opts => {:guild => "true"} } %>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+  <% WowInterface::GUILDS.each_index do |idx| %>
+  <div id="tabs-<%= idx -%>">
+    <table>
+      <tr>
+        <th>Check</th>
+        <th>Name</th>
+        <th>Race</th>
+        <th>Class</th>
+        <% capabilities.each do |cap| %>
+          <th width=3%><%= cap.name %></th>
+        <% end %>
+      </tr>
+      <% mems = unused.select{|m| m.guild == WowInterface::GUILDS[idx]} %>
+      <% mems.each do |dude| %>
+        <tr class="<%= cycle("even", "odd") -%>">
+        <%= render :partial => 'member', :locals => {:dude => dude, :mymembers => team.members, :capabilities => capabilities} %>
+        </tr>
+      <% end %>
+    </table>
+  </div> <!-- tabs-<%= idx%> -->
+  <% end %>
+</div> <!-- tabs -->
+

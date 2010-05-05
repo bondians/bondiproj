@@ -2,7 +2,7 @@ class TeamsController < ApplicationController
   # GET /teams
   # GET /teams.xml
   def index
-    @teams = Team.all
+    @teams = Team.all :include => :members
 
     respond_to do |format|
       format.html # index.html.erb
@@ -24,7 +24,9 @@ class TeamsController < ApplicationController
   # GET /teams/new
   # GET /teams/new.xml
   def new
+    @capabilities = Capability.all
     @team = Team.new
+    @unused = Member.all :include => :capabilities
 
     respond_to do |format|
       format.html # new.html.erb
@@ -34,7 +36,9 @@ class TeamsController < ApplicationController
 
   # GET /teams/1/edit
   def edit
-    @team = Team.find(params[:id])
+    @capabilities = Capability.all
+    @team = Team.find params[:id], :include => :members
+    @unused = Team.not_on_team(@team)
   end
 
   # POST /teams
@@ -48,6 +52,7 @@ class TeamsController < ApplicationController
         format.html { redirect_to(@team) }
         format.xml  { render :xml => @team, :status => :created, :location => @team }
       else
+        debugger;1;1
         format.html { render :action => "new" }
         format.xml  { render :xml => @team.errors, :status => :unprocessable_entity }
       end
@@ -57,6 +62,7 @@ class TeamsController < ApplicationController
   # PUT /teams/1
   # PUT /teams/1.xml
   def update
+    #params[:member_ids]
     @team = Team.find(params[:id])
 
     respond_to do |format|

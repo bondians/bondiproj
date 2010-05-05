@@ -1,0 +1,9 @@
+<td><%= member.name %></td>
+<td><%= member.guild %></td>
+<td><%=h member.level %></td>
+<td><%=image_tag(member.racepic) %></td>
+<td><%=image_tag(member.classpic) %></td>
+<% capabilities.each do |cap| %>
+<td width=3%><%= (member.capabilities.include? cap) ? "&#x2713;" :"&nbsp" %></td>
+<% end %>
+
