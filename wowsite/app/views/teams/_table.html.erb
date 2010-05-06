@@ -1,10 +1,10 @@
 <table>
   <tr>
-    <th width=5%><%= default_sortable_header("name", 'desc') %></th>
-    <td width=5%><%= sortable_header("guild", 'asc') %></th>
+    <th width=5%>Name</th>
+    <td width=5%>Guild</th>
     <th width=3%>Level</th>
-    <th width=3%><%= sortable_header("racepic", 'asc') %></th>
-    <th width=3%><%= sortable_header("classpic",  'asc') %></th>
+    <th width=3%>Race</th>
+    <th width=3%>Class</th>
     <% @capabilities = Capability.all %>
     <% @capabilities.each do |cap| %>
       <th width=3%><%= cap.name %></th>

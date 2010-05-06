@@ -8,7 +8,7 @@ class Team < ActiveRecord::Base
   after_save :save_member_collections
   
   def self.not_on_team(team)
-    Member.all - team.members
+    (Member.all :order => :name) - team.members
   end
   
   

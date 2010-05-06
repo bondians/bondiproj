@@ -26,7 +26,7 @@ class TeamsController < ApplicationController
   def new
     @capabilities = Capability.all
     @team = Team.new
-    @unused = Member.all :include => :capabilities
+    @unused = Member.all :order => :name, :include => :capabilities
 
     respond_to do |format|
       format.html # new.html.erb
@@ -54,7 +54,7 @@ class TeamsController < ApplicationController
         format.xml  { render :xml => @team, :status => :created, :location => @team }
       else
         #@unused = (Member.all - Member.find(params[:team][:member_ids]))
-        @unused = Member.all
+        @unused = Member.all :order => :name, :include => :capabilities
         @capabilities = Capability.all
         format.html { render :action => "new" }
         format.xml  { render :xml => @team.errors, :status => :unprocessable_entity }
