@@ -9,6 +9,10 @@ class WowInterface
     @api = Wowr::API.new(:realm => REALM)
   end
   
+  def api
+    @api
+  end
+  
   def search(name)
     results = @api.search_characters name
     results.select {|dude| dude.realm == REALM}
