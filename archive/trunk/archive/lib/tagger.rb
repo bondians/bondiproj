@@ -87,7 +87,7 @@ class Tagger
   
   def genre
     mygenre = @tag.genre
-    return DBConstant::NO_GENRE if !!mygenre
+    return DBConstant::NO_GENRE unless !!mygenre
     found = lookup_genre mygenre
   end
   
