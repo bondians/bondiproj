@@ -27,7 +27,8 @@ module HpricotTruncator
     end
     
     def truncate_count(max_length)
-      return [self, max_length - inner_text.scan(/\S/).length] if (inner_text.length <= max_length)
+      inner_text_non_blanks = inner_text.scan(/\S/).length
+      return [self, max_length - inner_text_non_blanks] if (inner_text_non_blanks <= max_length)
       
       truncated_node = self.dup
       truncated_node.children = []
