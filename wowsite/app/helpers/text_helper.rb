@@ -7,7 +7,7 @@ require "hpricot"
 module TextHelper
 
   # Like the Rails _truncate_ helper but doesn't break HTML tags or entities.
-  def truncate_html(text, max_length = 30, ellipsis = "&hellip;")
+  def truncate_html(text, max_length = 120, ellipsis = "&hellip;")
     return if text.nil?
 
     doc = Hpricot(text.to_s)
@@ -23,28 +23,64 @@ end
 module HpricotTruncator
   module NodeWithChildren
     def truncate(max_length)
-      return self if inner_text.length <= max_length
+      truncate_count(max_length)[0]
+    end
+    
+    def truncate_count(max_length)
+      return [self, max_length - inner_text.scan(/\S/).length] if (inner_text.length <= max_length)
+      
       truncated_node = self.dup
       truncated_node.children = []
+      
+      remaining = max_length
       each_child do |node|
-        remaining_length = max_length - truncated_node.inner_text.length
-        break if remaining_length == 0
-        truncated_node.children << node.truncate(remaining_length)
+        result = node.truncate_count(remaining)
+        truncated_child = result[0]
+        remaining = result[1]
+        truncated_node.children << truncated_child
+        break if remaining <= 0
       end
-      truncated_node
+      [truncated_node, remaining]
     end
   end
 
+  # Not a precise truncation to the requested length.  I consider it more
+  # important that words not be split.
   module TextNode
     def truncate(max_length)
-      # We're using String#scan because Hpricot doesn't distinguish entities.
-      Hpricot::Text.new(content.scan(/&#?[^\W_]+;|./).first(max_length).join)
+      truncate_count(max_length)[0]
+    end
+    
+    def truncate_count(max_length)
+      remaining = max_length
+      words = content.scan(/\s+|\S+/)
+      outWords = []
+      
+      while (remaining > 0 && words.length > 0) do
+        word = words.shift
+        outWords.push(word)
+        remaining -= word.length if word.match(/^\S/)
+      end
+      
+      outString = outWords.join
+      
+      if (words.length > 0 || remaining < 0) then
+        remaining = 0 
+        outString = outString + "&hellip;"
+      end
+      
+      node = Hpricot::Text.new(outString)
+      [node, remaining]
     end
   end
 
   module IgnoredTag
     def truncate(max_length)
-      self
+      truncate_count(max_length)[0]
+    end
+    
+    def truncate_count(max_length)
+      [self, max_length]
     end
   end
 end
@@ -54,3 +90,4 @@ Hpricot::Elem.send(:include,      HpricotTruncator::NodeWithChildren)
 Hpricot::Text.send(:include,      HpricotTruncator::TextNode)
 Hpricot::BogusETag.send(:include, HpricotTruncator::IgnoredTag)
 Hpricot::Comment.send(:include,   HpricotTruncator::IgnoredTag)
+Hpricot::DocType.send(:include,   HpricotTruncator::IgnoredTag)
