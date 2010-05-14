@@ -63,14 +63,7 @@ module HpricotTruncator
         remaining -= word.length if word.match(/^\S/)
       end
       
-      outString = outWords.join
-      
-      if (words.length > 0 || remaining < 0) then
-        remaining = 0 
-        outString = outString + "&hellip;"
-      end
-      
-      node = Hpricot::Text.new(outString)
+      node = Hpricot::Text.new(outWords.join)
       [node, remaining]
     end
   end
