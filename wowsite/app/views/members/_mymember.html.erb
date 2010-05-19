@@ -1,9 +1,13 @@
-<td><%=link_to member.name, edit_member_path(member) %></td>
-<td><%= member.guild %></td>
-<td><%=h member.level %></td>
-<td><%=image_tag(member.racepic) %></td>
-<td><%=image_tag(member.classpic) %></td>
-<% capabilities.each do |cap| %>
-<td width=3%><%= (member.capabilities.include? cap) ? "&#x2713;" :"&nbsp" %></td>
-<% end %>
+<table border="1" cellpadding="5" cellspacing="0" style=cursor:pointer>
+  <tr class="<%= cycle("even", "odd") -%>">
+    <td width=5%><%= member.name %></td>
+    <td width=5%><%= member.guild %></td>
+    <td width=3%><%=h member.level %></td>
+    <td width=3%><%=image_tag(member.racepic) %></td>
+    <td width=3%><%=image_tag(member.classpic) %></td>
+    <% capabilities.each do |cap| %>
+      <td width=3%; align="center"><%= (member.capabilities.include? cap) ? "&#x2713;" :"&nbsp" %></td>
+    <% end %>
+  </tr>
+</table>
 

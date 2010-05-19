@@ -9,7 +9,6 @@ class Member < ActiveRecord::Base
   
   attr_accessor :capabilitiy_ids
   attr_accessor :team_ids
-  after_save :update_capabilities
   
   def update_capabilities
     unless capability_ids.nil?

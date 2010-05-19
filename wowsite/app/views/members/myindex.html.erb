@@ -4,28 +4,22 @@
   <% unless @members.empty? %>
       <table>
         <tr>
-          <th width=5%><%= default_sortable_header("name", 'desc') %></th>
-          <td width=5%><%= sortable_header("guild", 'asc') %></th>
+          <th width=5%>Name</th>
+          <td width=5%>Guild</th>
           <th width=3%>Level</th>
-          <th width=3%><%= sortable_header("racepic", 'asc') %></th>
-          <th width=3%><%= sortable_header("classpic",  'asc') %></th>
+          <th width=3%>Race</th>
+          <th width=3%>Class</th>
           <% @capabilities.each do |cap| %>
           <th width=3%><%= cap.name %></th>
           <% end %>
         </tr>
+      </table>
         <% @members.each do |dude| %>
-          <tr class="<%= cycle("even", "odd") -%>">
-          <%= render :partial => 'mymember', :locals => {:member => dude, :capabilities => @capabilities}%>
-          </tr>
+          <div id='<%="time_#{dude.id}"%>'; class ="">
+            <%= render :partial => 'mymember', :locals => {:member => dude, :capabilities => @capabilities}%>
         <% end %>
       </table>
     <% end %>
-<script>
-  $(document).ready(function() {
-    // Tabs
-    $('#tabs').tabs();
-  });
-</script>
 
 
 
