@@ -44,7 +44,7 @@ class MembersController < ApplicationController
         memcap.destroy if memcap.capability_id == @cap.id
       end
     end
-    @member.reload
+    @member = Member.find params[:id], :include => :capabilities
     respond_to do |format|
       format.js
     end
