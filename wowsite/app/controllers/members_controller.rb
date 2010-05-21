@@ -44,6 +44,7 @@ class MembersController < ApplicationController
         memcap.destroy if memcap.capability_id == @cap.id
       end
     end
+    ActiveRecord::Base.query_cache.clear_query_cache
     @member = Member.find params[:id], :include => :capabilities
     respond_to do |format|
       format.js
