@@ -1,25 +1,23 @@
 <h1><%=h @title %></h1>
-<p> Click name to edit available roles </p>
+<p> Click the roles that your toon can do </p>
 
   <% unless @members.empty? %>
-      <table>
-        <tr>
-          <th width=5%>Name</th>
-          <td width=5%>Guild</th>
-          <th width=3%>Level</th>
-          <th width=3%>Race</th>
-          <th width=3%>Class</th>
+      <table width="100%" border="1" cellpadding="5" cellspacing="0" style=cursor:default>
+        <tr class="even">
+          <td width="10%">Name</td>
+          <td width="10%">Guild</td>
+          <td width="5%">Level</td>
+          <td width="5%">Race</td>
+          <td width="5%">Class</td>
           <% @capabilities.each do |cap| %>
-          <th width=3%><%= cap.name %></th>
+          <td width="5%"><%= cap.name %></td>
           <% end %>
         </tr>
       </table>
         <% @members.each do |dude| %>
-          <div id='<%="time_#{dude.id}"%>'; class ="">
             <%= render :partial => 'mymember', :locals => {:member => dude, :capabilities => @capabilities}%>
         <% end %>
-      </table>
-    <% end %>
+  <% end %>
 
 
 

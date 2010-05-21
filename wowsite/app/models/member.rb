@@ -6,7 +6,7 @@ class Member < ActiveRecord::Base
   
   has_many :membercapabilities
   has_many :capabilities, :through => :membercapabilities
-  
+
   attr_accessor :capabilitiy_ids
   attr_accessor :team_ids
   

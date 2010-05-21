@@ -1,13 +1,14 @@
-<table border="1" cellpadding="5" cellspacing="0" style=cursor:pointer>
-  <tr class="<%= cycle("even", "odd") -%>">
-    <td width=5%><%= member.name %></td>
-    <td width=5%><%= member.guild %></td>
-    <td width=3%><%=h member.level %></td>
-    <td width=3%><%=image_tag(member.racepic) %></td>
-    <td width=3%><%=image_tag(member.classpic) %></td>
-    <% capabilities.each do |cap| %>
-      <td width=3%; align="center"><%= (member.capabilities.include? cap) ? "&#x2713;" :"&nbsp" %></td>
-    <% end %>
-  </tr>
-</table>
-
+<div id='<%="mem_#{member.id}"%>'>
+  <table width="100%" border="1" cellpadding="5" cellspacing="0" style=cursor:default>
+    <tr class="odd">
+      <td width="10%"><%= member.name %></td>
+      <td width="10%"><%= member.guild %></td>
+      <td width="5%"><%= member.level %></td>
+      <td width="5%"><%=image_tag(member.racepic) %></td>
+      <td width="5%"><%=image_tag(member.classpic) %></td>
+      <% capabilities.each do |cap| %>
+        <td width="5%"; align="center"; onclick="<%= remote_function :url=>{:action=> 'edit', :id => member.id, :with => {:cap => cap.id}}, :method=>:get %>"><%= (member.capabilities.include? cap) ? "&#x2713;" :"&nbsp" %></td>
+      <% end %>
+    </tr>
+  </table>
+</div>

@@ -34,7 +34,21 @@ class MembersController < ApplicationController
 
   # GET /members/1/edit
   def edit
-    @member = Member.find(params[:id])
+    @capabilities = Capability.all
+    @member = Member.find params[:id], :include => :capabilities
+    @cap = Capability.find params[:with][:cap]
+    unless @member.capabilities.exists? @cap
+      @member.membercapabilities.create(:capability_id => @cap.id)
+    else
+      @member.membercapabilities.each do |memcap|
+        memcap.destroy if memcap.capability_id == @cap.id
+      end
+    end
+    @member.reload
+    respond_to do |format|
+      format.js
+    end
+    
   end
 
   # POST /members
