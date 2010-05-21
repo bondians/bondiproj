@@ -35,12 +35,12 @@ class MembersController < ApplicationController
   # GET /members/1/edit
   def edit
     @capabilities = Capability.all
-    @member = Member.find params[:id], :include => :capabilities
+    member = Member.find params[:id], :include => :capabilities
     @cap = Capability.find params[:with][:cap]
-    unless @member.capabilities.exists? @cap
-      @member.membercapabilities.create(:capability_id => @cap.id)
+    unless member.capabilities.exists? @cap
+      member.membercapabilities.create(:capability_id => @cap.id)
     else
-      @member.membercapabilities.each do |memcap|
+      member.membercapabilities.each do |memcap|
         memcap.destroy if memcap.capability_id == @cap.id
       end
     end
