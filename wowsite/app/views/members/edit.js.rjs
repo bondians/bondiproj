@@ -1,0 +1,1 @@
+page.replace_html :"mem_#{@member.id}", :partial => 'mymember', :locals => {:member => @member, :capabilities =>@capabilities}
