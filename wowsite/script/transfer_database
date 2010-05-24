@@ -1,0 +1,5 @@
+#!/bin/sh
+
+myDir=`dirname "$0"`
+cd "$myDir/../db"
+cp production.sqlite3 development.sqlite3
