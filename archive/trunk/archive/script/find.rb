@@ -154,8 +154,10 @@ Find.find(options.path) do |path|
                 print "."
             end
         end
-    rescue
+    rescue Exception => e
         puts "choked on #{path}"
+        puts e.message
+        puts e.backtrace.inspect
     end
 end
     
