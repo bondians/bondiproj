@@ -1,7 +1,7 @@
 class Member < ActiveRecord::Base
   belongs_to :user, :class_name =>"Goldberg::User"
   
-  has_many :teammembers
+  has_many :teammembers, :dependent => :destroy
   has_many :teams, :through => :teammembers
   
   has_many :membercapabilities
