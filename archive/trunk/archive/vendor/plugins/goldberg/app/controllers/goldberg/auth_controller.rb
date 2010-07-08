@@ -91,7 +91,7 @@ module Goldberg
     protected
 
     def self.logout(session)
-      session.delete
+      session.clear
       self.clear_session(session)
     end
 
