@@ -1,0 +1,12 @@
+#!/bin/sh
+
+OF=transition-$(date +%Y%m%d).db
+
+pg_dump archive_production > $OF;
+dropdb archive_development;
+createdb archive_development;
+psql archive_development -f $OF;
+cp $OF db.back;
+gzip db.back;
+svn commit -m "db store";
+
