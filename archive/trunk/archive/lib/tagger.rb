@@ -46,6 +46,10 @@ class MP4Fixer
     return "image/jpeg" if @tag.cover
     nil
   end
+
+  def legacy_num
+   return nil
+  end
   
 end
 
@@ -63,9 +67,9 @@ class Tagger
   def initialize(filename)
     @filename = filename
     namechunks = @filename.split(".")
-    @type = Tagger::TAG_FOR_NAME[namechunks.last.downcase]
+    @filetype = Tagger::TAG_FOR_NAME[namechunks.last.downcase]
     
-    fail "Unregistered Filetype" unless @type
+    fail "Unregistered Filetype" unless @filetype
     
     read_frames
   end
@@ -73,6 +77,13 @@ class Tagger
   def title
     return convert(@tag.title) if @tag.title
     return DBConstant::NO_TITLE
+  end
+
+  def legacy_num
+    return nil unless @filetype == 'id3';
+    tagText = @tag.find{|t| t[:id]==:TXXX}
+    return tagText[:text].to_i if tagText 
+    return nil
   end
   
   def artist
@@ -103,7 +114,7 @@ class Tagger
     return nil
   end
   
-  def type
+  def filetype
     return @filename.split(".").last.downcase
   end
   
@@ -145,7 +156,7 @@ class Tagger
   end
   
   def read_frames
-    self.send("read_frames_#{@type}")
+    self.send("read_frames_#{@filetype}")
   end
   
   def read_frames_id3

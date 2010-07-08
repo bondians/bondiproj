@@ -90,8 +90,8 @@ Find.find(options.path) do |path|
             
                     ## Try to find old archive _id
                     ##### Relegated to legacy
-                    #tag_text = tag.find{|t| t[:id]==:TXXX}
-                    #attributes[:archive_number] = tag_text[:text] if tag_text
+		    legacy_num = tag.legacy_num
+                    attributes[:archive_number] = legacy_num if legacy_num
                     
                     #### Try to find each of the rest of the important fields
                     ##Artist
