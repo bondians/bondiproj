@@ -115,7 +115,7 @@ Find.find(options.path) do |path|
                     ##Album
                     album_tag  =  tag.album
                     album = @albums.find{|a| a.name == album_tag} || Album.new({:name=>album_tag})
-                    if album.new_record
+                    if album.new_record?
                         album = Album.new({:name=>album_tag, :genre=> genre})
                         album.save
                         album.artists.push artist
