@@ -10,6 +10,7 @@ require 'ostruct'
 require 'pp'
 require 'optparse'
 
+totalNumberOfSongs = 0
 DEFAULT_PATH = "/Volumes/MajorTuneage/"
 ##########################  Parse Options and all that crap
 options = OpenStruct.new
@@ -129,7 +130,7 @@ Find.find(options.path) do |path|
                 
                     song = Song.new(attributes)
                     if song.save
-                        puts "Saved #{tag.filetype.upcase} Titled #{attributes[:title]}"
+                        puts "Saved #{(totalNumberOfSongs += 1).to_s} #{tag.filetype.upcase} Titled #{attributes[:title]}"
                         @songs.unshift(song)
                         @currun.added += 1
                         @currun.save

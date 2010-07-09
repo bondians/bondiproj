@@ -3,13 +3,13 @@ class AlbumsController < ApplicationController
   # GET /albums.xml
   def index
     #@albums = Album.find(:all, :include=>:genre)
-    @albums = Album.search params[:search], :order => :name, :include => [:artist, :genre, :songs], :page=> params[:page], :per_page => 10
+    @albums = Album.search params[:search], :order => :name, :include => [:artists, :genre, :songs], :page=> params[:page], :per_page => 10
   end
 
   # GET /albums/1
   # GET /albums/1.xml
   def show
-    @album = Album.find(params[:id], :include => [:artist, :genre, :songs])
+    @album = Album.find(params[:id], :include => [:artists, :genre, :songs])
   end
 
   # GET /albums/new
