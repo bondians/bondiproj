@@ -86,7 +86,7 @@ Find.find(options.path) do |path|
                     attributes[:size] = tag.size
                     attributes[:year] = tag.year
                     attributes[:track] = tag.track || 0
-                    attributes[:songtype] = @types.find{|t| t.identifier == tag.type}
+                    attributes[:songtype] = @types.find{|t| t.identifier == tag.filetype}
             
                     ## Try to find old archive _id
                     ##### Relegated to legacy
