@@ -129,8 +129,7 @@ Find.find(options.path) do |path|
                     attributes[:album] = album
                 
                     song = Song.new(attributes)
-                    if song.save
-                        puts "Saved #{(totalNumberOfSongs += 1).to_s} #{tag.filetype.upcase} Titled #{attributes[:title]}"
+                    if song.save                        
                         @songs.unshift(song)
                         @currun.added += 1
                         @currun.save
