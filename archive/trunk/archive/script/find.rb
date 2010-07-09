@@ -141,12 +141,12 @@ Find.find(options.path) do |path|
                 
                     song = Song.new(attributes)
                     if song.save
-                        puts "Saved #{tag.type.upcase} Titled #{attributes[:title]}"
+                        puts "Saved #{tag.filetype.upcase} Titled #{attributes[:title]}"
                         @songs.unshift(song)
                         @currun.added += 1
                         @currun.save
                     else
-                        puts "Failed to save #{tag.title.upcase} Titled #{attributes[:title]}"
+                        puts "Failed to save #{tag.filetype.upcase} Titled #{attributes[:title]}"
                     end
                 end
         
