@@ -102,7 +102,7 @@ class SongsController < ApplicationController
   private
   
   def send_song_file(song)
-    send_file song.file, :type => song.songtype.mime_type, :disposition => "inline", :x_sendfile => true
+    send_file song.file, :type => song.songtype.mime_type, :disposition => "inline", :x_send_file => true
   end
   
   def send_song_cover(tags)
