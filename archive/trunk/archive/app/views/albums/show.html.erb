@@ -4,8 +4,11 @@
 </p>
 
 <p>
-  <b>Artist:</b>
-  <%=h @album.artist.name %>
+  <b>Artists:</b>
+    <% @album.artists.each do |artist| %>
+      <%=h artist.name%><br />
+    <% end %>
+  </p>
 </p>
 
 <p>

@@ -1,5 +1,5 @@
 
-<h1> EDITING IS NOT ACTIVE, DO NOT SUBMIT CHANGES </h1>
+<h1> EDITING DOES NOT FIX THE SONG FILE , DO NOT SUBMIT CHANGES </h1>
 
 <h1>Editing album</h1>
 
@@ -11,8 +11,10 @@
     <%= f.text_field :name %>
   </p>
   <p>
-    <%= f.label :artist %><br />
-    <%= link_to @album.artist.name, @album.artist %>
+    <%= f.label :artists %><br />
+    <% @album.artists.each do |artist| %>
+      <%= link_to artist.name, artist %><br />
+    <% end %>
   </p>
   <p>
     <%= f.label :genre %><br />
