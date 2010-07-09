@@ -146,7 +146,7 @@ Find.find(options.path) do |path|
                         @currun.added += 1
                         @currun.save
                     else
-                        puts "Failed to save #{tag.type.upcase} Titled #{attributes[:title]}"
+                        puts "Failed to save #{tag.title.upcase} Titled #{attributes[:title]}"
                     end
                 end
         
