@@ -114,28 +114,16 @@ Find.find(options.path) do |path|
                 
                     ##Album
                     album_tag  =  tag.album
-                    choices = @albums.select{|a| a.name == album_tag}
-                    new = (choices.empty? ? true : false)
-                    if !new 
-                        album = choices.find { |a| a.artist == artist }
-                        while !album
-                            puts "\n Album Doesn't match artist please select an action for:\nTitle:  #{attributes[:title]}\nArtist: #{artist.name}\nFile:   #{attributes[:file]}"
-                            choices.each_index { |i| puts "enter #{i} to select #{choices[i].name} by #{choices[i].artist.name}\n" }
-                            puts "enter n for new\n"
-                            a = gets.upcase.chomp
-                            if a == "N"
-                                new = true
-                                break
-                            end
-                            album = choices[a.to_i]
-                            new = false
-                        end
-                    end
-                
-                    if new
-                        album = Album.new({:name=>album_tag, :genre=> genre, :artist=>artist})
+                    album = @albums.find{|a| a.name == album_tag} || Album.new({:name=>album_tag})
+                    if album.new_record
+                        album = Album.new({:name=>album_tag, :genre=> genre})
                         album.save
+                        album.artists.push artist
                         @albums.unshift(album)
+                    else
+                        unless album.artists.include? artist
+                            album.artists.push artist
+                        end
                     end
                     attributes[:album] = album
                 
