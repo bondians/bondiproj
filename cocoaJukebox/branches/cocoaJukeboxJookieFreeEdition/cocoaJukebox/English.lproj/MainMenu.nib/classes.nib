@@ -1,0 +1,58 @@
+{
+    IBClasses = (
+        {
+            CLASS = DBMusicPlayer; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {startStop = NSButton; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {"" = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                dumpPlayList = id; 
+                pause = id; 
+                playerStartStop = id; 
+                request = id; 
+                setPlayList = id; 
+                showPreferences = id; 
+                skip = id; 
+                testStuff = id; 
+            }; 
+            CLASS = JukeboxController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                additive = NSButton; 
+                dbKeyDisplay = NSTextField; 
+                pauseResume = NSButton; 
+                playListLoader = NSProgressIndicator; 
+                prefsPanel = UKPrefsPanel; 
+                requestNumber = id; 
+                songArtistDisplay = NSTextField; 
+                songNameDisplay = NSTextField; 
+                songTimeDisplay = NSTextField; 
+                startStop = NSButton; 
+                userPlayListsTableView = NSTableView; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {changePanes = id; orderFrontPrefsPanel = id; }; 
+            CLASS = UKPrefsPanel; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {tabView = NSTabView; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = UserPlayList; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {myTableView = NSTableView; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}
