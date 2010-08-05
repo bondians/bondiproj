@@ -1,0 +1,10 @@
+libJookie.so:   *.[ch] Makefile
+	gcc -ggdb -shared -o libJookie.so *.c
+
+clean:
+	rm -f libJookie.so
+
+install:        libJookie.so
+	cp libJookie.so /usr/lib
+	ldconfig
+
