@@ -25,10 +25,13 @@ class SongsController < ApplicationController
       format.m3u
       format.xml { render :xml => @song }
       
+      format.m4a { send_song_file @song}
+      format.mp3 { send_song_file @song}
+      format.m4p { send_song_file @song}
       # make sure songtype.identifier is not the name of a "real" method!
-      unless format.respond_to? @song.songtype.identifier
-        format.send(@song.songtype.identifier) { send_song_file @song }
-      end
+#      unless format.respond_to? @song.songtype.identifier
+#        format.send(@song.songtype.identifier) { send_song_file @song }
+#      end
       
       format.jpg {send_song_cover @tags} if @tags.cover
       format.png {send_song_cover @tags} if @tags.cover
