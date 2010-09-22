@@ -155,5 +155,6 @@ end
     
     system "rake thinking_sphinx:index RAILS_ENV=\"#{RAILS_ENV}\""
     system "rake thinking_sphinx:stop RAILS_ENV=\"#{RAILS_ENV}\""
+    system "killall searchd"
     system "rake thinking_sphinx:start RAILS_ENV=\"#{RAILS_ENV}\""
     
