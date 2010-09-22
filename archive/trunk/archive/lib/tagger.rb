@@ -151,6 +151,7 @@ class Tagger
 
   def convert(string)
     out = Iconv.conv('UTF-8', 'LATIN1', string)
+    return out if string.length == 1
     out = Iconv.conv('UTF-8', 'UTF-16', string) unless !!out.match(/[[:print:]]{2,}/)
     return out
   end
