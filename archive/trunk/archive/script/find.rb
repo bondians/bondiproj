@@ -74,7 +74,7 @@ Find.find(options.path) do |path|
     begin
         ########### This currently sucks, becaus i eventually want to modify files.. however, this is no problem
         ########### Currently as that is not implemented it <should> be fixd when file modding becomes possible
-        if (options.full || (@lastrun.started < File.ctime(path)))
+        if (options.full || (@lastrun.started < File.mtime(path)))
             if FileTest.file?(path) && Tagger.valid?(path)
                 ##Build a song object, while working with the rest
                 attributes = DEFAULTS
