@@ -1,8 +1,8 @@
 class DBConstant
-  NO_GENRE = "<no genre>"
-  NO_ALBUM = "<no album>"
-  NO_ARTIST = "<no artist>"
-  NO_TITLE = "<no title>"
+  NO_GENRE = "NO GENRE"
+  NO_ALBUM = "NO ALBUM"
+  NO_ARTIST = "NO ARTIST"
+  NO_TITLE = "NO TITLE"
   
   GENRES = {
   0 => "Blues",                   1 => "Classic Rock",        2 => "Country",           3 => "Dance",
