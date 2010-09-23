@@ -13,7 +13,7 @@ class SongsController < ApplicationController
       end
     else
       @songs = Song.all :order => "created_at desc", :limit=>50
-      render :action = "last"
+      render :action => "last"
     end
 
   end
