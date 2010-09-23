@@ -12,8 +12,7 @@ class SongsController < ApplicationController
         format.xml { render :xml => @songs }
       end
     else
-      @songs = Song.all :order => "created_at desc", :limit=>50
-      render :action => "last"
+      @songs = Song.paginate :page => params[:page], :order => 'created_at DESC'
     end
 
   end

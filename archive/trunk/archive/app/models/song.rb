@@ -5,7 +5,10 @@ class Song < ActiveRecord::Base
   belongs_to :songtype
   has_many :plentries
   validates_presence_of :songtype
-  
+
+  cattr_reader :per_page
+  @@per_page = 100
+
   attr_accessor :form_idx
   
   def <=> (other)
