@@ -4,6 +4,8 @@ class SongsController < ApplicationController
   
   def index
     
+    return (@songs = Song.all :order => "created_at desc", :limit=>50) unless params[:search]
+    
     @songs = Song.search params[:search], :include => [:songtype, :album, :artist, :genre], 
     :order => order_with_default("title", "asc") , :page => params[:page], :per_page => 100
     
