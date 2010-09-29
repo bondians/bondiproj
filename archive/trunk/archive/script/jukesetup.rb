@@ -20,7 +20,7 @@ system "rake db:migrate RAILS_ENV='jukebox'"
 
 file = File.open("/tmp/commands.txt", "wb")
 
-file.printf(".separator '\\t'\n")
+file.printf(".separator \"\\t\"\n")
 
 #pg_dump -a mp3 -t genres > genres.db.out
 #./cleaner.pl genres.db.out genres.db
