@@ -12,7 +12,7 @@ require 'optparse'
 
 RAILS_ENV = "production"
 
-require File.expand_path(__FILE__ + "/../../config/environment")
+require File.expand_path(__FILE__ + "/../config/environment")
 
 
 tables = ActiveRecord::Base.connection.tables
