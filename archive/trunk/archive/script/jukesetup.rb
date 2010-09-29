@@ -12,13 +12,14 @@ require 'optparse'
 
 RAILS_ENV = "production"
 
-require File.expand_path(__FILE__ + "/../../config/environment")
+require File.expand_path(__FILE__ + "/../config/environment")
 
 system "rm db/jukebox.sqlite3"
 system "rake goldberg:migrate RAILS_ENV='jukebox'"
 system "rake db:migrate RAILS_ENV='jukebox'"
 
-file = File.open(__FILE__ + "/../commands.txt", "wb")
+file = File.open("/tmp/commands.txt", "wb")
+
 file.printf(".separator '\t'")
 
 #pg_dump -a mp3 -t genres > genres.db.out
@@ -31,9 +32,9 @@ CLEANER = (__FILE__ + "/../cleaner.pl")
 
 
 tables = ActiveRecord::Base.connection.tables
-cmd = sprintf("%s %s %s -t %s > %s.tmp.input", SUDO, COMMAND, DB, table, table )
+cmd = sprintf("%s %s %s -t %s > /tmp/%s.tmp.input", SUDO, COMMAND, DB, table, table )
 system cmd
-secondcmd = sprintf("%s %s.tmp.input %s.input", CLEANER, table, table)
+secondcmd = sprintf("%s /tmp/%s.tmp.input /tmp/%s.input", CLEANER, table, table)
 
 file.printf(".import %s.input %s\n", table, table)
 tables.each do |table|
