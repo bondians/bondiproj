@@ -8,7 +8,12 @@
     Mime::Type.register "image/jpeg", :jpg
     Mime::Type.register "image/png", :png
     Mime::Type.register "application/x-tar", :tar
-    
-    Songtype.all.each do |type|
-      Mime::Type.register type.mime_type, type.identifier
-    end
+   
+  begin 
+  Songtype.all.each do |type|
+     Mime::Type.register type.mime_type, type.identifier
+  end
+  rescue
+  puts "No Songtype table, probably a new install?"
+  end
+  
