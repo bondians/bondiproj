@@ -25,8 +25,8 @@ file.printf(".separator '\t'")
 #pg_dump -a mp3 -t genres > genres.db.out
 #./cleaner.pl genres.db.out genres.db
 
-SUDO = "sudo -u cayuse"
-COMMAND = "pg_dump -a"
+
+COMMAND = "pg_dump --username=cayuse -a"
 DB = (__FILE__ + "/../db/jukebox.sqlite3")
 CLEANER = (__FILE__ + "/../cleaner.pl")
 
@@ -35,7 +35,7 @@ tables = ActiveRecord::Base.connection.tables
 
 tables.each do |table|
 
-  cmd = sprintf("%s %s %s -t %s > /tmp/%s.tmp.input", SUDO, COMMAND, DB, table, table )
+  cmd = sprintf("%s %s -t %s > /tmp/%s.tmp.input", COMMAND, DB, table, table )
   system cmd
   secondcmd = sprintf("%s /tmp/%s.tmp.input /tmp/%s.input", CLEANER, table, table)
   file.printf(".import %s.input %s\n", table, table)
