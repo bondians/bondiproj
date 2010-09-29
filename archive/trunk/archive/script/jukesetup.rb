@@ -32,11 +32,12 @@ CLEANER = (__FILE__ + "/../cleaner.pl")
 
 
 tables = ActiveRecord::Base.connection.tables
-cmd = sprintf("%s %s %s -t %s > /tmp/%s.tmp.input", SUDO, COMMAND, DB, table, table )
-system cmd
-secondcmd = sprintf("%s /tmp/%s.tmp.input /tmp/%s.input", CLEANER, table, table)
 
-file.printf(".import %s.input %s\n", table, table)
 tables.each do |table|
-  file.printf(".import")
+
+  cmd = sprintf("%s %s %s -t %s > /tmp/%s.tmp.input", SUDO, COMMAND, DB, table, table )
+  system cmd
+  secondcmd = sprintf("%s /tmp/%s.tmp.input /tmp/%s.input", CLEANER, table, table)
+  file.printf(".import %s.input %s\n", table, table)
+
 end
