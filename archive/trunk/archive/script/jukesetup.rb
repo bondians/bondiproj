@@ -20,7 +20,7 @@ system "rake db:migrate RAILS_ENV='jukebox'"
 
 file = File.open("/tmp/commands.txt", "wb")
 
-file.printf(".separator '\t'")
+file.printf(".separator '\\t'")
 
 #pg_dump -a mp3 -t genres > genres.db.out
 #./cleaner.pl genres.db.out genres.db
@@ -38,6 +38,7 @@ tables.each do |table|
   cmd = sprintf("%s archive_production -t %s > /tmp/%s.tmp.input", COMMAND, table, table )
   system cmd
   secondcmd = sprintf("%s /tmp/%s.tmp.input /tmp/%s.input", CLEANER, table, table)
+  system secondcmd
   file.printf(".import %s.input %s\n", table, table)
 
 end
