@@ -48,3 +48,11 @@ production:
   database: archive_production
   pool: 5
   username: cayuse
+  
+jukebox:
+  adapter: sqlite3
+  database: db/jukebox.sqlite3
+  encoding: unicode
+  pool: 5
+  timeout: 5000
+
