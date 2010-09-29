@@ -42,5 +42,5 @@ tables.each do |table|
   file.printf(".import /tmp/%s.input %s\n", table, table)
 
 end
-
-  system "sqlite3 /web/app/archive.deepbondi.net/db/jukebox.sqlite3 < /tmp/commands.txt"
+  thirdcommand = "/usr/bin/sqlite3 /web/app/archive.deepbondi.net/db/jukebox.sqlite3 < /tmp/commands.txt"
+  system thirdcommand
