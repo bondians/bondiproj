@@ -14,6 +14,10 @@ RAILS_ENV = "production"
 
 require File.expand_path(__FILE__ + "/../config/environment")
 
+system "rm db/jukebox.sqlite3"
+system "rake goldberg:migrate RAILS_ENV='jukebox'"
+system "rake db:migrate RAILS_ENV='jukebox'"
+
 
 tables = ActiveRecord::Base.connection.tables
 
