@@ -39,6 +39,6 @@ tables.each do |table|
   system cmd
   secondcmd = sprintf("%s /tmp/%s.tmp.input /tmp/%s.input", CLEANER, table, table)
   system secondcmd
-  file.printf(".import %s.input %s\n", table, table)
+  file.printf(".import /tmp/%s.input %s\n", table, table)
 
 end
