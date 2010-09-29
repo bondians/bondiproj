@@ -41,6 +41,6 @@ tables.each do |table|
   system secondcmd
   file.printf(".import /tmp/%s.input %s\n", table, table)
 
-  system "sqlite3 /web/app/archive.deepbondi.net/db/jukebox.sqlite3 < /tmp/commands.txt"
-
 end
+
+  system "sqlite3 /web/app/archive.deepbondi.net/db/jukebox.sqlite3 < /tmp/commands.txt"
