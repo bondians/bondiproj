@@ -1,0 +1,77 @@
+<p>
+  <b>Title:</b>
+  <%=h @song.title %>
+</p>
+
+<p>
+  <b>Track:</b>
+  <%=h @song.track %> of: <%=h @song.album.songs.length %>
+</p>
+
+<p>
+  <b>Year:</b>
+  <%=h @song.year %>
+</p>
+
+<p>
+  <b>Album:</b>
+  <%=link_to @song.album.name, @song.album %>
+</p>
+
+<p>
+  <b>Artist:</b>
+  <%=link_to @song.artist.name, @song.artist %>
+</p>
+
+<p>
+  <b>Genre:</b>
+  <%=h @song.genre.name %>
+</p>
+
+<p>
+  <b>Comments:</b>
+  <%=h @song.comments %>
+</p>
+
+<p>
+  <b>Size:</b>
+  <%=h number_to_human_size(@song.size) %>
+</p>
+
+<p>
+  <b>Pre:</b>
+  <%=h @song.pre_id %>
+</p>
+
+<p>
+  <b>Post:</b>
+  <%=h @song.post_id %>
+</p>
+
+<p>
+  <b>Fade duration:</b>
+  <%=h @song.fade_duration %>
+</p>
+
+<p>
+  <b>Volume:</b>
+  <%=h @song.volume %>
+</p>
+
+<p>
+  <b>Fade in:</b>
+  <%=h @song.fade_in %>
+</p>
+
+<% if @tags.cover %>
+  <%= link_to image_tag( formatted_song_path(@song, :action => :show, :format => :jpg), :size => "100x100"), :action => :show, :id => @song, :format => :jpg %> 
+<% end %>
+<br />
+Your Selection:
+<br />
+<EMBED SRC="<%= @song.formatted_id %>" HEIGHT="20" WIDTH="200" AUTOSTART="FALSE" CONTROLLER="TRUE">
+<br />
+
+
+<%= link_to 'Edit', edit_song_path(@song) %> |
+<%= link_to 'Back', songs_path %>

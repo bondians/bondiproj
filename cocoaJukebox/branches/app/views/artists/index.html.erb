@@ -1,0 +1,26 @@
+<h1>Listing artists</h1>
+
+<% form_tag artists_path, :method => 'get' do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>
+  </p>
+<% end %>
+
+
+<table>
+  <tr>
+    <th>Click To View</th>
+  </tr>
+
+<% for artist in @artists %>
+  <tr class="<%= cycle("cssAlternating1", "cssAlternating2") %>" >
+    <td><%=link_to artist.name, artist %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= will_paginate @artists %>
+<br>

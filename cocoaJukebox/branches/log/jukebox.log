@@ -1,0 +1,165 @@
+# Logfile created on Wed Sep 29 12:03:54 -0700 2010  [4;36;1mSongtype Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: songtypes: SELECT * FROM "songtypes" [0m
+  [4;36;1mSongtype Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: songtypes: SELECT * FROM "songtypes" [0m
+  [4;36;1mSongtype Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: songtypes: SELECT * FROM "songtypes" [0m
+  [4;36;1mSongtype Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: songtypes: SELECT * FROM "songtypes" [0m
+  [4;36;1mSongtype Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: songtypes: SELECT * FROM "songtypes" [0m
+  [4;36;1mSongtype Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: songtypes: SELECT * FROM "songtypes" [0m
+  [4;36;1mSongtype Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: songtypes: SELECT * FROM "songtypes" [0m
+  [4;36;1mSongtype Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: songtypes: SELECT * FROM "songtypes" [0m
+  [4;36;1mSongtype Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: songtypes: SELECT * FROM "songtypes" [0m
+  [4;36;1mSongtype Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: songtypes: SELECT * FROM "songtypes" [0m
+  [4;36;1mSongtype Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: songtypes: SELECT * FROM "songtypes" [0m
+  [4;36;1mSongtype Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: songtypes: SELECT * FROM "songtypes" [0m
+  [4;36;1mSongtype Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: songtypes: SELECT * FROM "songtypes" [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.9ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateGenres (20090302053421)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCREATE TABLE "genres" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090302053421')[0m
+Migrating to CreateArtists (20090302053506)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCREATE TABLE "artists" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090302053506')[0m
+Migrating to CreateAlbums (20090302053938)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "albums" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "artist_id" integer, "genre_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090302053938')[0m
+Migrating to CreateSongs (20090302054450)
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "track" integer, "year" integer, "album_id" integer, "artist_id" integer, "genre_id" integer, "comments" text, "size" integer, "pre_id" integer, "post_id" integer, "fade_duration" float DEFAULT -1, "volume" float DEFAULT 0.7, "fade_in" boolean DEFAULT 't', "user_id" integer, "archive_number" integer, "file" text, "songtype_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090302054450')[0m
+Migrating to CreateSongtypes (20090303234627)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "songtypes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" varchar(255), "identifier" varchar(255), "mime_type" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090303234627')[0m
+Migrating to CreateAbuses (20090309211902)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "abuses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "abuse" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090309211902')[0m
+Migrating to CreatePlaylists (20090312214341)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "playlists" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090312214341')[0m
+Migrating to CreatePlentries (20090312214653)
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCREATE TABLE "plentries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "song_id" integer, "playlist_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090312214653')[0m
+Migrating to AddSortToPlentry (20090319025928)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mALTER TABLE "plentries" ADD "idx" integer[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090319025928')[0m
+Migrating to CreateFinders (20091119161020)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "finders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "started" datetime, "completed" datetime, "added" integer, "removed" integer, "success" boolean, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091119161020')[0m
+Migrating to AddFileToPlentry (20091120070711)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mALTER TABLE "plentries" ADD "file" text[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091120070711')[0m
+Migrating to RemoveArtistFromAlbum (20100709173350)
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCREATE TEMPORARY TABLE "altered_albums" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "artist_id" integer, "genre_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("albums")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mDROP TABLE "albums"[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "albums" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "genre_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("altered_albums")[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mDROP TABLE "altered_albums"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100709173350')[0m
+Migrating to CreateAlbumartists (20100709173414)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "albumartists" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "album_id" integer, "artist_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100709173414')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("abuses")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("albumartists")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("albums")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("artists")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("finders")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("genres")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("playlists")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("plentries")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("songs")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("songtypes")[0m
+  [4;36;1mSongtype Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: songtypes: SELECT * FROM "songtypes" [0m
+  [4;36;1mSongtype Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: songtypes: SELECT * FROM "songtypes" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (37.6ms)[0m   [0mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateGenres (20090302053421)
+  [4;35;1mSQL (0.7ms)[0m   [0mCREATE TABLE "genres" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090302053421')[0m
+Migrating to CreateArtists (20090302053506)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "artists" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090302053506')[0m
+Migrating to CreateAlbums (20090302053938)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "albums" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "artist_id" integer, "genre_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090302053938')[0m
+Migrating to CreateSongs (20090302054450)
+  [4;35;1mSQL (0.7ms)[0m   [0mCREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "track" integer, "year" integer, "album_id" integer, "artist_id" integer, "genre_id" integer, "comments" text, "size" integer, "pre_id" integer, "post_id" integer, "fade_duration" float DEFAULT -1, "volume" float DEFAULT 0.7, "fade_in" boolean DEFAULT 't', "user_id" integer, "archive_number" integer, "file" text, "songtype_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090302054450')[0m
+Migrating to CreateSongtypes (20090303234627)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "songtypes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" varchar(255), "identifier" varchar(255), "mime_type" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090303234627')[0m
+Migrating to CreateAbuses (20090309211902)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "abuses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "abuse" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090309211902')[0m
+Migrating to CreatePlaylists (20090312214341)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "playlists" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090312214341')[0m
+Migrating to CreatePlentries (20090312214653)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "plentries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "song_id" integer, "playlist_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090312214653')[0m
+Migrating to AddSortToPlentry (20090319025928)
+  [4;35;1mSQL (0.6ms)[0m   [0mALTER TABLE "plentries" ADD "idx" integer[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090319025928')[0m
+Migrating to CreateFinders (20091119161020)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "finders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "started" datetime, "completed" datetime, "added" integer, "removed" integer, "success" boolean, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091119161020')[0m
+Migrating to AddFileToPlentry (20091120070711)
+  [4;35;1mSQL (0.8ms)[0m   [0mALTER TABLE "plentries" ADD "file" text[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091120070711')[0m
+Migrating to RemoveArtistFromAlbum (20100709173350)
+  [4;35;1mSQL (0.8ms)[0m   [0mCREATE TEMPORARY TABLE "altered_albums" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "artist_id" integer, "genre_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("albums")[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mDROP TABLE "albums"[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE TABLE "albums" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "genre_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("altered_albums")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mDROP TABLE "altered_albums"[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100709173350')[0m
+Migrating to CreateAlbumartists (20100709173414)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "albumartists" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "album_id" integer, "artist_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100709173414')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("abuses")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("albumartists")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("albums")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("artists")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("finders")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("genres")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("playlists")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("plentries")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("songs")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("songtypes")[0m

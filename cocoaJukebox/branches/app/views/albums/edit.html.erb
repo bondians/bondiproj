@@ -1,0 +1,40 @@
+
+<h1> EDITING DOES NOT FIX THE SONG FILE , DO NOT SUBMIT CHANGES </h1>
+
+<h1>Editing album</h1>
+
+<% form_for(@album) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :artists %><br />
+    <% @album.artists.each do |artist| %>
+      <%= link_to artist.name, artist %><br />
+    <% end %>
+  </p>
+  <p>
+    <%= f.label :genre %><br />
+    <%= link_to @album.genre.name, @album.genre %>
+  </p>
+  
+  <br />
+  <h1> Seleced song files will be changed!</h1>
+  <br />
+  <table>
+  <% for song in @album.songs %>
+      <%= render :partial => 'song', :locals => { :song => song, :f => f, :cur_class => cycle("cssAlternating1", "cssAlternating2") } %>
+  <% end %>
+  </table>
+  <br />
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+  
+<% end %>
+
+<%= link_to 'Show', @album %> |
+<%= link_to 'Back', albums_path %>

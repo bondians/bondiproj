@@ -1,0 +1,14 @@
+<p>
+  <b>Name:</b>
+  <%=h @artist.name %>
+</p>
+
+  <% for album in @artist.albums %>
+    <%= link_to album.name , album %>
+    <br />
+  <% end %>
+    
+<br />
+
+<%= link_to 'Edit', edit_artist_path(@artist) %> |
+<%= link_to 'Back', artists_path %>
