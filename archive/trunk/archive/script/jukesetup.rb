@@ -40,11 +40,12 @@ tables.each do |table|
   secondcmd = sprintf("%s /tmp/%s.tmp.input /tmp/%s.input", CLEANER, table, table)
   system secondcmd
   file.printf(".import /tmp/%s.input %s\n", table, table)
-
 end
+file.close
   thirdcommand = "/usr/bin/sqlite3 /web/app/archive.deepbondi.net/db/jukebox.sqlite3 < /tmp/commands.txt"
-  puts thirdcommand
+
   system thirdcommand
+puts thirdcommand
   system("sqlite3 /web/app/archive.deepbondi.net/db/jukebox.sqlite3 < /tmp/commands.txt")
   1
   1
