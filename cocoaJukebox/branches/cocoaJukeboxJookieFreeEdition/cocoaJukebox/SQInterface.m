@@ -96,7 +96,7 @@ return 0;
         
         for (thisObject in users) {
                 const char *query = [[NSString stringWithFormat:
-                        @"SELECT song_key from song_lists where list_name=\'%@\'", thisObject] UTF8String];
+                        @"SELECT song_id from plentries where playlist_id=\'%@\'", thisObject] UTF8String];
 	sqlite3_exec(db, query, theCallback, tempList, &zErrMsg);
         }
 		
@@ -129,12 +129,14 @@ return 0;
 
 	NSMutableArray *tempList = [NSMutableArray array];
 	NSMutableArray *finalList = [NSMutableArray array];
+	NSMutableArray *finalIds = [NSMutableArray array];
 	
-	const char *listQuery = "SELECT DISTINCT list_name from song_lists";
+	const char *listQuery = "SELECT playlists.name, playlists.id, playlists.user_id, goldberg_users.id, goldberg_users.name FROM playlists JOIN goldberg_users ON (playlists.user_id = goldberg_users.id)";
 	sqlite3_exec(db, listQuery, theCallback, (void*) tempList, &zErrMsg);
 	
 	NSMutableArray *tempCounts = [NSMutableArray array];
 	NSMutableArray *finalCounts = [NSMutableArray array];
+	NSMutableArray *finalUsers = [NSMutableArray array];
 
 	
 	NSMutableArray *thisObject;
@@ -142,8 +144,11 @@ return 0;
 	for (thisObject in tempList) {
 		NSString *aString  = [thisObject objectAtIndex: 0];
 		[finalList addObject: aString];
+		NSString *bString = [thisObject objectAtIndex: 1];
+		[finalIds addObject: bString];
+		[finalUsers addObject: [thisObject objectAtIndex: 4]];
 		const char *countQuery = [[NSString stringWithFormat: 
-			@"select count(*) from song_lists where list_name=\'%@\'", aString] UTF8String];
+			@"select count(*) from plentries where playlist_id=\'%@\'", bString] UTF8String];
 		sqlite3_exec(db, countQuery, theCallback, (void*) tempCounts, &zErrMsg);
 
 	}
@@ -153,8 +158,8 @@ return 0;
 		[finalCounts addObject: [thisObject objectAtIndex: 0]];
 	}
 	
-	NSArray *keys = [NSArray arrayWithObjects: @"lists", @"lengths", nil];
-	NSArray *objects = [NSArray arrayWithObjects: finalList, finalCounts, nil];
+	NSArray *keys = [NSArray arrayWithObjects: @"lists", @"lengths", @"ids", @"users", nil];
+	NSArray *objects = [NSArray arrayWithObjects: finalList, finalCounts, finalIds, finalUsers, nil];
 	
 	return [NSDictionary dictionaryWithObjects: objects forKeys: keys];
 }

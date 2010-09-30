@@ -17,6 +17,8 @@
         return nil;
 	userList = [[NSMutableArray alloc] init];
 	listCounts = [[NSMutableArray alloc] init];
+	listID = [[NSMutableArray alloc] init];
+	listUser = [[NSMutableArray alloc] init];
 
     
     return self;
@@ -27,6 +29,8 @@
 	[self init];
 	[userList addObjectsFromArray: [list objectForKey: @"lists"]];
 	[listCounts addObjectsFromArray: [list objectForKey: @"lengths"]];
+	[listID addObjectsFromArray: [list objectForKey: @"ids"]];
+	[listUser addObjectsFromArray: [list objectForKey: @"users"]];
 	[myTableView reloadData];
 	return self;
 }
@@ -50,18 +54,24 @@
 
 	if ([[aTableColumn identifier] isEqual: @"entries"])
 		return [listCounts objectAtIndex: rowIndex];
+	
+	if ([[aTableColumn identifier] isEqual: @"ids"])
+		return [listID objectAtIndex: rowIndex];
+	
+	if ([[aTableColumn identifier] isEqual: @"users"])
+		return [listUser objectAtIndex: rowIndex];
 
 	return nil;
 }
 
 - (id) objectForIndex: (int) index
 {
-	return [userList objectAtIndex: index];
+	return [listID objectAtIndex: index];
 }
 
 - (int) countForIndex: (int) index
 {
-	return [[listCounts objectAtIndex: index] intValue];
+	return [[listID objectAtIndex: index] intValue];
 }
 
 @end

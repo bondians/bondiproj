@@ -1,31 +1,30 @@
 TcocoaJukebox
 v7
 r0
-t299958166.479154
+t307506016.764138
 cCheck dependencies
-cProcessInfoPlistFile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/Info.plist Info.plist
-cStripNIB /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/English.lproj/MainMenu.nib
-cCopyStringsFile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+cProcessInfoPlistFile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/Info.plist Info.plist
+cStripNIB /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/English.lproj/MainMenu.nib
+cCopyStringsFile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
 cCpResource build/Deployment/cocoaJukebox.app/Contents/Resources/note.icns note.icns
 cCpResource build/Deployment/cocoaJukebox.app/Contents/Resources/com.deepbondi.advanced.png com.deepbondi.advanced.png
 cCpResource build/Deployment/cocoaJukebox.app/Contents/Resources/com.deepbondi.playback.png com.deepbondi.playback.png
 cCpResource build/Deployment/cocoaJukebox.app/Contents/Resources/Notes.txt Notes.txt
-cCpResource build/Deployment/cocoaJukebox.app/Contents/Resources/mp3 mp3
-cProcessPCH /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/cocoaJukebox_Prefix-boxmwazkzictvhfqsoyceprypqga/cocoaJukebox_Prefix.pch.gch cocoaJukebox_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/main.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/JukeboxController.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/JukeboxController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/ArrayAdditions.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/ArrayAdditions.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/DBSong.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/DBSong.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/UserPlayList.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/UserPlayList.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/DBMusicPlayer.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/DBMusicPlayer.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/SongQueue.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/SongQueue.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/JBNetworkManager.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/JBNetworkManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/JBNetworkIOHandle.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/JBNetworkIOHandle.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/NSStreamAdditions.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/NSStreamAdditions.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/UKPrefsPanel.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/UKPrefsPanel.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/SQInterface.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/SQInterface.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/MacOS/cocoaJukebox normal i386
-cTouch /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment/cocoaJukebox.app
+cProcessPCH /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/cocoaJukebox_Prefix-cnacolsumectioenqadetpbcceaq/cocoaJukebox_Prefix.pch.gch cocoaJukebox_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/main.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/JukeboxController.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/JukeboxController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/ArrayAdditions.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/ArrayAdditions.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/DBSong.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/DBSong.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/UserPlayList.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/UserPlayList.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/DBMusicPlayer.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/DBMusicPlayer.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/SongQueue.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/SongQueue.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/JBNetworkManager.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/JBNetworkManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/JBNetworkIOHandle.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/JBNetworkIOHandle.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/NSStreamAdditions.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/NSStreamAdditions.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/UKPrefsPanel.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/UKPrefsPanel.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/SQInterface.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/SQInterface.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/MacOS/cocoaJukebox normal i386
+cTouch /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/cocoaJukebox.app
 
 N/Developer/SDKs/MacOSX10.5.sdk
 c000000004A49A9E400000000000000EE
@@ -88,9 +87,317 @@ t1243557219
 s42464
 
 N/System/Library/Frameworks/QTKit.framework/QTKit
-c000000004B692143000000000066F480
-t1265180995
-s6747264
+c000000004C11736600000000006705C0
+t1276212070
+s6751680
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/ArrayAdditions.h
+c000000004C4619FF00000000000001B0
+t1279662591
+s432
+i<Cocoa/Cocoa.h>
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/ArrayAdditions.m
+c000000004C4619FF000000000000052A
+t1279662591
+s1322
+i"ArrayAdditions.h"
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/DBMusicPlayer.h
+c000000004C4619FF0000000000000692
+t1279662591
+s1682
+i<Cocoa/Cocoa.h>
+i<QTKit/QTKit.h>
+i"SongQueue.h"
+i"DBSong.h"
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/DBMusicPlayer.m
+c000000004C4619FF00000000000020EA
+t1279662591
+s8426
+i"DBMusicPlayer.h"
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/DBSong.h
+c000000004C4619FF0000000000000B6E
+t1279662591
+s2926
+i<Cocoa/Cocoa.h>
+i<QTKit/QTKit.h>
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/DBSong.m
+c000000004C4619FF000000000000291F
+t1279662591
+s10527
+i"DBSong.h"
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/English.lproj/InfoPlist.strings
+c000000004C4619EB0000000000000110
+t1279662571
+s272
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/English.lproj/MainMenu.nib
+c000000004C4619EB00000000000000CC
+t1279662571
+s204
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/JBNetworkIOHandle.h
+c000000004C4619FF00000000000007CB
+t1279662591
+s1995
+i<Cocoa/Cocoa.h>
+i"NSStreamAdditions.h"
+i"DBSong.h"
+i"DBMusicPlayer.h"
+i"SongQueue.h"
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/JBNetworkIOHandle.m
+c000000004C4619FF0000000000003A92
+t1279662591
+s14994
+i"JBNetworkIOHandle.h"
+i<stdio.h>
+i<errno.h>
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/JBNetworkManager.h
+c000000004C4619FF000000000000026A
+t1279662591
+s618
+i<Cocoa/Cocoa.h>
+i"NSStreamAdditions.h"
+i"JBNetworkIOHandle.h"
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/JBNetworkManager.m
+c000000004C4619FF00000000000005BC
+t1279662591
+s1468
+i"JBNetworkManager.h"
+i<netdb.h>
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/JukeboxController.h
+c000000004C4619FF00000000000006E8
+t1279662591
+s1768
+i<Cocoa/Cocoa.h>
+i<math.h>
+i"SQInterface.h"
+i"SongQueue.h"
+i"DBSong.h"
+i"DBMusicPlayer.h"
+i"UserPlayList.h"
+i"JBNetworkManager.h"
+i"UKPrefsPanel.h"
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/JukeboxController.m
+c000000004C4619FF0000000000001B48
+t1279662591
+s6984
+i"JukeboxController.h"
+i"SongQueue.h"
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/NSStreamAdditions.h
+c000000004C4619FF0000000000000626
+t1279662591
+s1574
+i<Foundation/Foundation.h>
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/NSStreamAdditions.m
+c000000004C4619FF0000000000000DAB
+t1279662591
+s3499
+i"NSStreamAdditions.h"
+i<netinet/in.h>
+i<sys/socket.h>
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/Notes.txt
+c000000004C4619FF0000000000003BDF
+t1279662591
+s15327
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/SQInterface.h
+c000000004C4619FF000000000000023B
+t1279662591
+s571
+i<Cocoa/Cocoa.h>
+i<sqlite3.h>
+i"DBSong.h"
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/SQInterface.m
+c000000004CA3F3A90000000000001683
+t1285813161
+s5763
+i"SQInterface.h"
+i<stdio.h>
+i<sqlite3.h>
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/SongQueue.h
+c000000004C4619FF000000000000096F
+t1279662591
+s2415
+i<Cocoa/Cocoa.h>
+i"ArrayAdditions.h"
+i"SQInterface.h"
+i"DBSong.h"
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/SongQueue.m
+c000000004C4619FF00000000000027CD
+t1279662591
+s10189
+i"SongQueue.h"
+i"SQInterface.h"
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/UKPrefsPanel.h
+c000000004C4619FF0000000000000A09
+t1279662591
+s2569
+i<Foundation/Foundation.h>
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/UKPrefsPanel.m
+c000000004C4619FF0000000000002C31
+t1279662591
+s11313
+i"UKPrefsPanel.h"
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/UserPlayList.h
+c000000004C4619FF0000000000000291
+t1279662591
+s657
+i<Cocoa/Cocoa.h>
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/UserPlayList.m
+c000000004C4619FF000000000000053F
+t1279662591
+s1343
+i"UserPlayList.h"
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/cocoaJukebox.app
+t1285813184
+s102
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/Info.plist
+t1285806691
+s780
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/MacOS/cocoaJukebox
+t1285813183
+s71296
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/PkgInfo
+t1285806691
+s8
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/Resources/English.lproj/InfoPlist.strings
+t1285806691
+s272
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/Resources/English.lproj/MainMenu.nib
+t1285806691
+s34143
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/Resources/Notes.txt
+t1285806691
+s15327
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/Resources/com.deepbondi.advanced.png
+t1285806691
+s4937
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/Resources/com.deepbondi.playback.png
+t1285806691
+s11439
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/Resources/mp3
+t2
+s0
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/Resources/note.icns
+t1285806691
+s39888
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/ArrayAdditions.o
+t1285806694
+s3880
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/DBMusicPlayer.o
+t1285806696
+s13804
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/DBSong.o
+t1285806695
+s17628
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/JBNetworkIOHandle.o
+t1285806698
+s12392
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/JBNetworkManager.o
+t1285806697
+s3800
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/JukeboxController.o
+t1285806695
+s13356
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/NSStreamAdditions.o
+t1285806697
+s3772
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/SQInterface.o
+t1285813183
+s10532
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/SongQueue.o
+t1285806696
+s16468
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/UKPrefsPanel.o
+t1285806697
+s10436
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/UserPlayList.o
+t1285806695
+s4812
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/cocoaJukebox.LinkFileList
+c000000004CA3DA6300000000000008C8
+t1285806691
+s2248
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/main.o
+t1285806694
+s1832
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/cocoaJukebox_Prefix.pch
+c000000004C4619FF000000000000009B
+t1279662591
+s155
+i<Cocoa/Cocoa.h>
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/com.deepbondi.advanced.png
+c000000004C4619FF0000000000001349
+t1279662591
+s4937
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/com.deepbondi.playback.png
+c000000004C4619FF0000000000002CAF
+t1279662591
+s11439
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/main.m
+c000000004C4619FF0000000000000105
+t1279662591
+s261
+i<Cocoa/Cocoa.h>
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/mp3
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/note.icns
+c000000004C4619FF0000000000009BD0
+t1279662591
+s39888
 
 N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/ArrayAdditions.h
 c000000004C30C6D900000000000001B0
@@ -404,14 +711,31 @@ N/var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/Shared
 t1278265360
 s26198700
 
+N/var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/cocoaJukebox_Prefix-cnacolsumectioenqadetpbcceaq/cocoaJukebox_Prefix.pch.gch
+t1285806694
+s26198700
+
 NInfo.plist
-c000000004C30C6D90000000000000315
-t1278265049
+c000000004C4619FF0000000000000315
+t1279662591
 s789
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies299958156#299958157#0(0"0(0#1#0"2465734688#0"0#
+lSLF07#2@18"Check dependencies307506016#307506016#0(0"0(0#1#0"2543517632#0"0#
+
+CCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/ArrayAdditions.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/ArrayAdditions.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s307499494.450486
+e307499494.651565
+r1
+xCompileC
+xbuild/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/ArrayAdditions.o
+x/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/ArrayAdditions.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@121"Compile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/ArrayAdditions.m307499494#307499494#0(0"0(0#0#113"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/ArrayAdditions.m2543517632#3122"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/cocoaJukebox.hmap -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/include -I/usr/local/pgsql/include -I/usr/local/pgsql/include/informix -I/usr/local/pgsql/include/internal -I/usr/local/pgsql/include/libpq -I/usr/local/pgsql/include/server -I/usr/local/pgsql/include/informix/esql -I/usr/local/pgsql/include/internal/libpq -I/usr/local/pgsql/include/server/access -I/usr/local/pgsql/include/server/bootstrap -I/usr/local/pgsql/include/server/catalog -I/usr/local/pgsql/include/server/commands -I/usr/local/pgsql/include/server/executor -I/usr/local/pgsql/include/server/foreign -I/usr/local/pgsql/include/server/lib -I/usr/local/pgsql/include/server/libpq -I/usr/local/pgsql/include/server/mb -I/usr/local/pgsql/include/server/nodes -I/usr/local/pgsql/include/server/optimizer -I/usr/local/pgsql/include/server/parser -I/usr/local/pgsql/include/server/port -I/usr/local/pgsql/include/server/portability -I/usr/local/pgsql/include/server/postmaster -I/usr/local/pgsql/include/server/regex -I/usr/local/pgsql/include/server/rewrite -I/usr/local/pgsql/include/server/snowball -I/usr/local/pgsql/include/server/storage -I/usr/local/pgsql/include/server/tcop -I/usr/local/pgsql/include/server/tsearch -I/usr/local/pgsql/include/server/utils -I/usr/local/pgsql/include/server/port/win32_msvc -I/usr/local/pgsql/include/server/snowball/libstemmer -I/usr/local/pgsql/include/server/tsearch/dicts -I/usr/local/pgsql/include/server/port/win32_msvc/sys -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources/i386 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources -include /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/cocoaJukebox_Prefix-cnacolsumectioenqadetpbcceaq/cocoaJukebox_Prefix.pch -c /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/ArrayAdditions.m -o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/ArrayAdditions.o0#
 
 CCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/ArrayAdditions.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/ArrayAdditions.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s299958160.930762
@@ -426,6 +750,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@88"Compile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/ArrayAdditions.m299958160#299958161#0(0"0(0#0#80"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/ArrayAdditions.m2465734688#2825"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/cocoaJukebox.hmap -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment/include -I/usr/local/pgsql/include -I/usr/local/pgsql/include/informix -I/usr/local/pgsql/include/internal -I/usr/local/pgsql/include/libpq -I/usr/local/pgsql/include/server -I/usr/local/pgsql/include/informix/esql -I/usr/local/pgsql/include/internal/libpq -I/usr/local/pgsql/include/server/access -I/usr/local/pgsql/include/server/bootstrap -I/usr/local/pgsql/include/server/catalog -I/usr/local/pgsql/include/server/commands -I/usr/local/pgsql/include/server/executor -I/usr/local/pgsql/include/server/foreign -I/usr/local/pgsql/include/server/lib -I/usr/local/pgsql/include/server/libpq -I/usr/local/pgsql/include/server/mb -I/usr/local/pgsql/include/server/nodes -I/usr/local/pgsql/include/server/optimizer -I/usr/local/pgsql/include/server/parser -I/usr/local/pgsql/include/server/port -I/usr/local/pgsql/include/server/portability -I/usr/local/pgsql/include/server/postmaster -I/usr/local/pgsql/include/server/regex -I/usr/local/pgsql/include/server/rewrite -I/usr/local/pgsql/include/server/snowball -I/usr/local/pgsql/include/server/storage -I/usr/local/pgsql/include/server/tcop -I/usr/local/pgsql/include/server/tsearch -I/usr/local/pgsql/include/server/utils -I/usr/local/pgsql/include/server/port/win32_msvc -I/usr/local/pgsql/include/server/snowball/libstemmer -I/usr/local/pgsql/include/server/tsearch/dicts -I/usr/local/pgsql/include/server/port/win32_msvc/sys -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources/i386 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources -include /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/cocoaJukebox_Prefix-boxmwazkzictvhfqsoyceprypqga/cocoaJukebox_Prefix.pch -c /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/ArrayAdditions.m -o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/ArrayAdditions.o0#
 
+CCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/DBMusicPlayer.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/DBMusicPlayer.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s307499495.439916
+e307499496.368838
+r1
+xCompileC
+xbuild/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/DBMusicPlayer.o
+x/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/DBMusicPlayer.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@120"Compile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/DBMusicPlayer.m307499495#307499496#0(0"0(0#0#112"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/DBMusicPlayer.m2543517632#3120"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/cocoaJukebox.hmap -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/include -I/usr/local/pgsql/include -I/usr/local/pgsql/include/informix -I/usr/local/pgsql/include/internal -I/usr/local/pgsql/include/libpq -I/usr/local/pgsql/include/server -I/usr/local/pgsql/include/informix/esql -I/usr/local/pgsql/include/internal/libpq -I/usr/local/pgsql/include/server/access -I/usr/local/pgsql/include/server/bootstrap -I/usr/local/pgsql/include/server/catalog -I/usr/local/pgsql/include/server/commands -I/usr/local/pgsql/include/server/executor -I/usr/local/pgsql/include/server/foreign -I/usr/local/pgsql/include/server/lib -I/usr/local/pgsql/include/server/libpq -I/usr/local/pgsql/include/server/mb -I/usr/local/pgsql/include/server/nodes -I/usr/local/pgsql/include/server/optimizer -I/usr/local/pgsql/include/server/parser -I/usr/local/pgsql/include/server/port -I/usr/local/pgsql/include/server/portability -I/usr/local/pgsql/include/server/postmaster -I/usr/local/pgsql/include/server/regex -I/usr/local/pgsql/include/server/rewrite -I/usr/local/pgsql/include/server/snowball -I/usr/local/pgsql/include/server/storage -I/usr/local/pgsql/include/server/tcop -I/usr/local/pgsql/include/server/tsearch -I/usr/local/pgsql/include/server/utils -I/usr/local/pgsql/include/server/port/win32_msvc -I/usr/local/pgsql/include/server/snowball/libstemmer -I/usr/local/pgsql/include/server/tsearch/dicts -I/usr/local/pgsql/include/server/port/win32_msvc/sys -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources/i386 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources -include /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/cocoaJukebox_Prefix-cnacolsumectioenqadetpbcceaq/cocoaJukebox_Prefix.pch -c /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/DBMusicPlayer.m -o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/DBMusicPlayer.o0#
+
 CCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/DBMusicPlayer.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/DBMusicPlayer.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s299958161.848249
 e299958163.196897
@@ -438,6 +775,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@87"Compile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/DBMusicPlayer.m299958161#299958163#0(0"0(0#0#79"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/DBMusicPlayer.m2465734688#2823"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/cocoaJukebox.hmap -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment/include -I/usr/local/pgsql/include -I/usr/local/pgsql/include/informix -I/usr/local/pgsql/include/internal -I/usr/local/pgsql/include/libpq -I/usr/local/pgsql/include/server -I/usr/local/pgsql/include/informix/esql -I/usr/local/pgsql/include/internal/libpq -I/usr/local/pgsql/include/server/access -I/usr/local/pgsql/include/server/bootstrap -I/usr/local/pgsql/include/server/catalog -I/usr/local/pgsql/include/server/commands -I/usr/local/pgsql/include/server/executor -I/usr/local/pgsql/include/server/foreign -I/usr/local/pgsql/include/server/lib -I/usr/local/pgsql/include/server/libpq -I/usr/local/pgsql/include/server/mb -I/usr/local/pgsql/include/server/nodes -I/usr/local/pgsql/include/server/optimizer -I/usr/local/pgsql/include/server/parser -I/usr/local/pgsql/include/server/port -I/usr/local/pgsql/include/server/portability -I/usr/local/pgsql/include/server/postmaster -I/usr/local/pgsql/include/server/regex -I/usr/local/pgsql/include/server/rewrite -I/usr/local/pgsql/include/server/snowball -I/usr/local/pgsql/include/server/storage -I/usr/local/pgsql/include/server/tcop -I/usr/local/pgsql/include/server/tsearch -I/usr/local/pgsql/include/server/utils -I/usr/local/pgsql/include/server/port/win32_msvc -I/usr/local/pgsql/include/server/snowball/libstemmer -I/usr/local/pgsql/include/server/tsearch/dicts -I/usr/local/pgsql/include/server/port/win32_msvc/sys -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources/i386 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources -include /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/cocoaJukebox_Prefix-boxmwazkzictvhfqsoyceprypqga/cocoaJukebox_Prefix.pch -c /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/DBMusicPlayer.m -o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/DBMusicPlayer.o0#
+
+CCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/DBSong.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/DBSong.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s307499494.651714
+e307499495.770119
+r1
+xCompileC
+xbuild/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/DBSong.o
+x/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/DBSong.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@113"Compile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/DBSong.m307499494#307499495#0(0"0(0#0#105"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/DBSong.m2543517632#3106"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/cocoaJukebox.hmap -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/include -I/usr/local/pgsql/include -I/usr/local/pgsql/include/informix -I/usr/local/pgsql/include/internal -I/usr/local/pgsql/include/libpq -I/usr/local/pgsql/include/server -I/usr/local/pgsql/include/informix/esql -I/usr/local/pgsql/include/internal/libpq -I/usr/local/pgsql/include/server/access -I/usr/local/pgsql/include/server/bootstrap -I/usr/local/pgsql/include/server/catalog -I/usr/local/pgsql/include/server/commands -I/usr/local/pgsql/include/server/executor -I/usr/local/pgsql/include/server/foreign -I/usr/local/pgsql/include/server/lib -I/usr/local/pgsql/include/server/libpq -I/usr/local/pgsql/include/server/mb -I/usr/local/pgsql/include/server/nodes -I/usr/local/pgsql/include/server/optimizer -I/usr/local/pgsql/include/server/parser -I/usr/local/pgsql/include/server/port -I/usr/local/pgsql/include/server/portability -I/usr/local/pgsql/include/server/postmaster -I/usr/local/pgsql/include/server/regex -I/usr/local/pgsql/include/server/rewrite -I/usr/local/pgsql/include/server/snowball -I/usr/local/pgsql/include/server/storage -I/usr/local/pgsql/include/server/tcop -I/usr/local/pgsql/include/server/tsearch -I/usr/local/pgsql/include/server/utils -I/usr/local/pgsql/include/server/port/win32_msvc -I/usr/local/pgsql/include/server/snowball/libstemmer -I/usr/local/pgsql/include/server/tsearch/dicts -I/usr/local/pgsql/include/server/port/win32_msvc/sys -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources/i386 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources -include /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/cocoaJukebox_Prefix-cnacolsumectioenqadetpbcceaq/cocoaJukebox_Prefix.pch -c /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/DBSong.m -o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/DBSong.o0#
 
 CCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/DBSong.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/DBSong.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s299958161.149309
@@ -452,6 +802,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@80"Compile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/DBSong.m299958161#299958162#0(0"0(0#0#72"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/DBSong.m2465734688#2809"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/cocoaJukebox.hmap -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment/include -I/usr/local/pgsql/include -I/usr/local/pgsql/include/informix -I/usr/local/pgsql/include/internal -I/usr/local/pgsql/include/libpq -I/usr/local/pgsql/include/server -I/usr/local/pgsql/include/informix/esql -I/usr/local/pgsql/include/internal/libpq -I/usr/local/pgsql/include/server/access -I/usr/local/pgsql/include/server/bootstrap -I/usr/local/pgsql/include/server/catalog -I/usr/local/pgsql/include/server/commands -I/usr/local/pgsql/include/server/executor -I/usr/local/pgsql/include/server/foreign -I/usr/local/pgsql/include/server/lib -I/usr/local/pgsql/include/server/libpq -I/usr/local/pgsql/include/server/mb -I/usr/local/pgsql/include/server/nodes -I/usr/local/pgsql/include/server/optimizer -I/usr/local/pgsql/include/server/parser -I/usr/local/pgsql/include/server/port -I/usr/local/pgsql/include/server/portability -I/usr/local/pgsql/include/server/postmaster -I/usr/local/pgsql/include/server/regex -I/usr/local/pgsql/include/server/rewrite -I/usr/local/pgsql/include/server/snowball -I/usr/local/pgsql/include/server/storage -I/usr/local/pgsql/include/server/tcop -I/usr/local/pgsql/include/server/tsearch -I/usr/local/pgsql/include/server/utils -I/usr/local/pgsql/include/server/port/win32_msvc -I/usr/local/pgsql/include/server/snowball/libstemmer -I/usr/local/pgsql/include/server/tsearch/dicts -I/usr/local/pgsql/include/server/port/win32_msvc/sys -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources/i386 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources -include /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/cocoaJukebox_Prefix-boxmwazkzictvhfqsoyceprypqga/cocoaJukebox_Prefix.pch -c /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/DBSong.m -o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/DBSong.o0#
 
+CCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/JBNetworkIOHandle.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/JBNetworkIOHandle.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s307499496.956443
+e307499498.056800
+r1
+xCompileC
+xbuild/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/JBNetworkIOHandle.o
+x/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/JBNetworkIOHandle.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@124"Compile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/JBNetworkIOHandle.m307499496#307499498#0(0"0(0#0#116"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/JBNetworkIOHandle.m2543517632#3128"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/cocoaJukebox.hmap -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/include -I/usr/local/pgsql/include -I/usr/local/pgsql/include/informix -I/usr/local/pgsql/include/internal -I/usr/local/pgsql/include/libpq -I/usr/local/pgsql/include/server -I/usr/local/pgsql/include/informix/esql -I/usr/local/pgsql/include/internal/libpq -I/usr/local/pgsql/include/server/access -I/usr/local/pgsql/include/server/bootstrap -I/usr/local/pgsql/include/server/catalog -I/usr/local/pgsql/include/server/commands -I/usr/local/pgsql/include/server/executor -I/usr/local/pgsql/include/server/foreign -I/usr/local/pgsql/include/server/lib -I/usr/local/pgsql/include/server/libpq -I/usr/local/pgsql/include/server/mb -I/usr/local/pgsql/include/server/nodes -I/usr/local/pgsql/include/server/optimizer -I/usr/local/pgsql/include/server/parser -I/usr/local/pgsql/include/server/port -I/usr/local/pgsql/include/server/portability -I/usr/local/pgsql/include/server/postmaster -I/usr/local/pgsql/include/server/regex -I/usr/local/pgsql/include/server/rewrite -I/usr/local/pgsql/include/server/snowball -I/usr/local/pgsql/include/server/storage -I/usr/local/pgsql/include/server/tcop -I/usr/local/pgsql/include/server/tsearch -I/usr/local/pgsql/include/server/utils -I/usr/local/pgsql/include/server/port/win32_msvc -I/usr/local/pgsql/include/server/snowball/libstemmer -I/usr/local/pgsql/include/server/tsearch/dicts -I/usr/local/pgsql/include/server/port/win32_msvc/sys -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources/i386 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources -include /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/cocoaJukebox_Prefix-cnacolsumectioenqadetpbcceaq/cocoaJukebox_Prefix.pch -c /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/JBNetworkIOHandle.m -o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/JBNetworkIOHandle.o0#
+
 CCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/JBNetworkIOHandle.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/JBNetworkIOHandle.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s299958164.257976
 e299958165.774512
@@ -464,6 +827,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@91"Compile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/JBNetworkIOHandle.m299958164#299958165#0(0"0(0#0#83"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/JBNetworkIOHandle.m2465734688#2831"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/cocoaJukebox.hmap -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment/include -I/usr/local/pgsql/include -I/usr/local/pgsql/include/informix -I/usr/local/pgsql/include/internal -I/usr/local/pgsql/include/libpq -I/usr/local/pgsql/include/server -I/usr/local/pgsql/include/informix/esql -I/usr/local/pgsql/include/internal/libpq -I/usr/local/pgsql/include/server/access -I/usr/local/pgsql/include/server/bootstrap -I/usr/local/pgsql/include/server/catalog -I/usr/local/pgsql/include/server/commands -I/usr/local/pgsql/include/server/executor -I/usr/local/pgsql/include/server/foreign -I/usr/local/pgsql/include/server/lib -I/usr/local/pgsql/include/server/libpq -I/usr/local/pgsql/include/server/mb -I/usr/local/pgsql/include/server/nodes -I/usr/local/pgsql/include/server/optimizer -I/usr/local/pgsql/include/server/parser -I/usr/local/pgsql/include/server/port -I/usr/local/pgsql/include/server/portability -I/usr/local/pgsql/include/server/postmaster -I/usr/local/pgsql/include/server/regex -I/usr/local/pgsql/include/server/rewrite -I/usr/local/pgsql/include/server/snowball -I/usr/local/pgsql/include/server/storage -I/usr/local/pgsql/include/server/tcop -I/usr/local/pgsql/include/server/tsearch -I/usr/local/pgsql/include/server/utils -I/usr/local/pgsql/include/server/port/win32_msvc -I/usr/local/pgsql/include/server/snowball/libstemmer -I/usr/local/pgsql/include/server/tsearch/dicts -I/usr/local/pgsql/include/server/port/win32_msvc/sys -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources/i386 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources -include /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/cocoaJukebox_Prefix-boxmwazkzictvhfqsoyceprypqga/cocoaJukebox_Prefix.pch -c /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/JBNetworkIOHandle.m -o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/JBNetworkIOHandle.o0#
+
+CCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/JBNetworkManager.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/JBNetworkManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s307499496.369014
+e307499497.127739
+r1
+xCompileC
+xbuild/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/JBNetworkManager.o
+x/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/JBNetworkManager.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@123"Compile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/JBNetworkManager.m307499496#307499497#0(0"0(0#0#115"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/JBNetworkManager.m2543517632#3126"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/cocoaJukebox.hmap -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/include -I/usr/local/pgsql/include -I/usr/local/pgsql/include/informix -I/usr/local/pgsql/include/internal -I/usr/local/pgsql/include/libpq -I/usr/local/pgsql/include/server -I/usr/local/pgsql/include/informix/esql -I/usr/local/pgsql/include/internal/libpq -I/usr/local/pgsql/include/server/access -I/usr/local/pgsql/include/server/bootstrap -I/usr/local/pgsql/include/server/catalog -I/usr/local/pgsql/include/server/commands -I/usr/local/pgsql/include/server/executor -I/usr/local/pgsql/include/server/foreign -I/usr/local/pgsql/include/server/lib -I/usr/local/pgsql/include/server/libpq -I/usr/local/pgsql/include/server/mb -I/usr/local/pgsql/include/server/nodes -I/usr/local/pgsql/include/server/optimizer -I/usr/local/pgsql/include/server/parser -I/usr/local/pgsql/include/server/port -I/usr/local/pgsql/include/server/portability -I/usr/local/pgsql/include/server/postmaster -I/usr/local/pgsql/include/server/regex -I/usr/local/pgsql/include/server/rewrite -I/usr/local/pgsql/include/server/snowball -I/usr/local/pgsql/include/server/storage -I/usr/local/pgsql/include/server/tcop -I/usr/local/pgsql/include/server/tsearch -I/usr/local/pgsql/include/server/utils -I/usr/local/pgsql/include/server/port/win32_msvc -I/usr/local/pgsql/include/server/snowball/libstemmer -I/usr/local/pgsql/include/server/tsearch/dicts -I/usr/local/pgsql/include/server/port/win32_msvc/sys -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources/i386 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources -include /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/cocoaJukebox_Prefix-cnacolsumectioenqadetpbcceaq/cocoaJukebox_Prefix.pch -c /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/JBNetworkManager.m -o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/JBNetworkManager.o0#
 
 CCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/JBNetworkManager.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/JBNetworkManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s299958163.197054
@@ -478,6 +854,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@90"Compile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/JBNetworkManager.m299958163#299958164#0(0"0(0#0#82"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/JBNetworkManager.m2465734688#2829"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/cocoaJukebox.hmap -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment/include -I/usr/local/pgsql/include -I/usr/local/pgsql/include/informix -I/usr/local/pgsql/include/internal -I/usr/local/pgsql/include/libpq -I/usr/local/pgsql/include/server -I/usr/local/pgsql/include/informix/esql -I/usr/local/pgsql/include/internal/libpq -I/usr/local/pgsql/include/server/access -I/usr/local/pgsql/include/server/bootstrap -I/usr/local/pgsql/include/server/catalog -I/usr/local/pgsql/include/server/commands -I/usr/local/pgsql/include/server/executor -I/usr/local/pgsql/include/server/foreign -I/usr/local/pgsql/include/server/lib -I/usr/local/pgsql/include/server/libpq -I/usr/local/pgsql/include/server/mb -I/usr/local/pgsql/include/server/nodes -I/usr/local/pgsql/include/server/optimizer -I/usr/local/pgsql/include/server/parser -I/usr/local/pgsql/include/server/port -I/usr/local/pgsql/include/server/portability -I/usr/local/pgsql/include/server/postmaster -I/usr/local/pgsql/include/server/regex -I/usr/local/pgsql/include/server/rewrite -I/usr/local/pgsql/include/server/snowball -I/usr/local/pgsql/include/server/storage -I/usr/local/pgsql/include/server/tcop -I/usr/local/pgsql/include/server/tsearch -I/usr/local/pgsql/include/server/utils -I/usr/local/pgsql/include/server/port/win32_msvc -I/usr/local/pgsql/include/server/snowball/libstemmer -I/usr/local/pgsql/include/server/tsearch/dicts -I/usr/local/pgsql/include/server/port/win32_msvc/sys -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources/i386 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources -include /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/cocoaJukebox_Prefix-boxmwazkzictvhfqsoyceprypqga/cocoaJukebox_Prefix.pch -c /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/JBNetworkManager.m -o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/JBNetworkManager.o0#
 
+CCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/JukeboxController.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/JukeboxController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s307499494.264057
+e307499495.245927
+r1
+xCompileC
+xbuild/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/JukeboxController.o
+x/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/JukeboxController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@124"Compile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/JukeboxController.m307499494#307499495#0(0"0(0#0#116"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/JukeboxController.m2543517632#3128"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/cocoaJukebox.hmap -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/include -I/usr/local/pgsql/include -I/usr/local/pgsql/include/informix -I/usr/local/pgsql/include/internal -I/usr/local/pgsql/include/libpq -I/usr/local/pgsql/include/server -I/usr/local/pgsql/include/informix/esql -I/usr/local/pgsql/include/internal/libpq -I/usr/local/pgsql/include/server/access -I/usr/local/pgsql/include/server/bootstrap -I/usr/local/pgsql/include/server/catalog -I/usr/local/pgsql/include/server/commands -I/usr/local/pgsql/include/server/executor -I/usr/local/pgsql/include/server/foreign -I/usr/local/pgsql/include/server/lib -I/usr/local/pgsql/include/server/libpq -I/usr/local/pgsql/include/server/mb -I/usr/local/pgsql/include/server/nodes -I/usr/local/pgsql/include/server/optimizer -I/usr/local/pgsql/include/server/parser -I/usr/local/pgsql/include/server/port -I/usr/local/pgsql/include/server/portability -I/usr/local/pgsql/include/server/postmaster -I/usr/local/pgsql/include/server/regex -I/usr/local/pgsql/include/server/rewrite -I/usr/local/pgsql/include/server/snowball -I/usr/local/pgsql/include/server/storage -I/usr/local/pgsql/include/server/tcop -I/usr/local/pgsql/include/server/tsearch -I/usr/local/pgsql/include/server/utils -I/usr/local/pgsql/include/server/port/win32_msvc -I/usr/local/pgsql/include/server/snowball/libstemmer -I/usr/local/pgsql/include/server/tsearch/dicts -I/usr/local/pgsql/include/server/port/win32_msvc/sys -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources/i386 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources -include /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/cocoaJukebox_Prefix-cnacolsumectioenqadetpbcceaq/cocoaJukebox_Prefix.pch -c /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/JukeboxController.m -o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/JukeboxController.o0#
+
 CCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/JukeboxController.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/JukeboxController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s299958160.679372
 e299958161.624858
@@ -490,6 +879,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@91"Compile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/JukeboxController.m299958160#299958161#0(0"0(0#0#83"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/JukeboxController.m2465734688#2831"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/cocoaJukebox.hmap -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment/include -I/usr/local/pgsql/include -I/usr/local/pgsql/include/informix -I/usr/local/pgsql/include/internal -I/usr/local/pgsql/include/libpq -I/usr/local/pgsql/include/server -I/usr/local/pgsql/include/informix/esql -I/usr/local/pgsql/include/internal/libpq -I/usr/local/pgsql/include/server/access -I/usr/local/pgsql/include/server/bootstrap -I/usr/local/pgsql/include/server/catalog -I/usr/local/pgsql/include/server/commands -I/usr/local/pgsql/include/server/executor -I/usr/local/pgsql/include/server/foreign -I/usr/local/pgsql/include/server/lib -I/usr/local/pgsql/include/server/libpq -I/usr/local/pgsql/include/server/mb -I/usr/local/pgsql/include/server/nodes -I/usr/local/pgsql/include/server/optimizer -I/usr/local/pgsql/include/server/parser -I/usr/local/pgsql/include/server/port -I/usr/local/pgsql/include/server/portability -I/usr/local/pgsql/include/server/postmaster -I/usr/local/pgsql/include/server/regex -I/usr/local/pgsql/include/server/rewrite -I/usr/local/pgsql/include/server/snowball -I/usr/local/pgsql/include/server/storage -I/usr/local/pgsql/include/server/tcop -I/usr/local/pgsql/include/server/tsearch -I/usr/local/pgsql/include/server/utils -I/usr/local/pgsql/include/server/port/win32_msvc -I/usr/local/pgsql/include/server/snowball/libstemmer -I/usr/local/pgsql/include/server/tsearch/dicts -I/usr/local/pgsql/include/server/port/win32_msvc/sys -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources/i386 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources -include /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/cocoaJukebox_Prefix-boxmwazkzictvhfqsoyceprypqga/cocoaJukebox_Prefix.pch -c /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/JukeboxController.m -o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/JukeboxController.o0#
+
+CCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/NSStreamAdditions.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/NSStreamAdditions.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s307499497.127891
+e307499497.311614
+r1
+xCompileC
+xbuild/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/NSStreamAdditions.o
+x/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/NSStreamAdditions.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@124"Compile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/NSStreamAdditions.m307499497#307499497#0(0"0(0#0#116"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/NSStreamAdditions.m2543517632#3128"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/cocoaJukebox.hmap -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/include -I/usr/local/pgsql/include -I/usr/local/pgsql/include/informix -I/usr/local/pgsql/include/internal -I/usr/local/pgsql/include/libpq -I/usr/local/pgsql/include/server -I/usr/local/pgsql/include/informix/esql -I/usr/local/pgsql/include/internal/libpq -I/usr/local/pgsql/include/server/access -I/usr/local/pgsql/include/server/bootstrap -I/usr/local/pgsql/include/server/catalog -I/usr/local/pgsql/include/server/commands -I/usr/local/pgsql/include/server/executor -I/usr/local/pgsql/include/server/foreign -I/usr/local/pgsql/include/server/lib -I/usr/local/pgsql/include/server/libpq -I/usr/local/pgsql/include/server/mb -I/usr/local/pgsql/include/server/nodes -I/usr/local/pgsql/include/server/optimizer -I/usr/local/pgsql/include/server/parser -I/usr/local/pgsql/include/server/port -I/usr/local/pgsql/include/server/portability -I/usr/local/pgsql/include/server/postmaster -I/usr/local/pgsql/include/server/regex -I/usr/local/pgsql/include/server/rewrite -I/usr/local/pgsql/include/server/snowball -I/usr/local/pgsql/include/server/storage -I/usr/local/pgsql/include/server/tcop -I/usr/local/pgsql/include/server/tsearch -I/usr/local/pgsql/include/server/utils -I/usr/local/pgsql/include/server/port/win32_msvc -I/usr/local/pgsql/include/server/snowball/libstemmer -I/usr/local/pgsql/include/server/tsearch/dicts -I/usr/local/pgsql/include/server/port/win32_msvc/sys -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources/i386 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources -include /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/cocoaJukebox_Prefix-cnacolsumectioenqadetpbcceaq/cocoaJukebox_Prefix.pch -c /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/NSStreamAdditions.m -o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/NSStreamAdditions.o0#
 
 CCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/NSStreamAdditions.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/NSStreamAdditions.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s299958164.586677
@@ -504,6 +906,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@91"Compile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/NSStreamAdditions.m299958164#299958164#0(0"0(0#0#83"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/NSStreamAdditions.m2465734688#2831"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/cocoaJukebox.hmap -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment/include -I/usr/local/pgsql/include -I/usr/local/pgsql/include/informix -I/usr/local/pgsql/include/internal -I/usr/local/pgsql/include/libpq -I/usr/local/pgsql/include/server -I/usr/local/pgsql/include/informix/esql -I/usr/local/pgsql/include/internal/libpq -I/usr/local/pgsql/include/server/access -I/usr/local/pgsql/include/server/bootstrap -I/usr/local/pgsql/include/server/catalog -I/usr/local/pgsql/include/server/commands -I/usr/local/pgsql/include/server/executor -I/usr/local/pgsql/include/server/foreign -I/usr/local/pgsql/include/server/lib -I/usr/local/pgsql/include/server/libpq -I/usr/local/pgsql/include/server/mb -I/usr/local/pgsql/include/server/nodes -I/usr/local/pgsql/include/server/optimizer -I/usr/local/pgsql/include/server/parser -I/usr/local/pgsql/include/server/port -I/usr/local/pgsql/include/server/portability -I/usr/local/pgsql/include/server/postmaster -I/usr/local/pgsql/include/server/regex -I/usr/local/pgsql/include/server/rewrite -I/usr/local/pgsql/include/server/snowball -I/usr/local/pgsql/include/server/storage -I/usr/local/pgsql/include/server/tcop -I/usr/local/pgsql/include/server/tsearch -I/usr/local/pgsql/include/server/utils -I/usr/local/pgsql/include/server/port/win32_msvc -I/usr/local/pgsql/include/server/snowball/libstemmer -I/usr/local/pgsql/include/server/tsearch/dicts -I/usr/local/pgsql/include/server/port/win32_msvc/sys -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources/i386 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources -include /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/cocoaJukebox_Prefix-boxmwazkzictvhfqsoyceprypqga/cocoaJukebox_Prefix.pch -c /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/NSStreamAdditions.m -o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/NSStreamAdditions.o0#
 
+CCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/SQInterface.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/SQInterface.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s307505982.791605
+e307505983.675975
+r1
+xCompileC
+xbuild/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/SQInterface.o
+x/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/SQInterface.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@118"Compile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/SQInterface.m307505982#307505983#0(0"0(0#0#110"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/SQInterface.m2543517632#3116"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/cocoaJukebox.hmap -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/include -I/usr/local/pgsql/include -I/usr/local/pgsql/include/informix -I/usr/local/pgsql/include/internal -I/usr/local/pgsql/include/libpq -I/usr/local/pgsql/include/server -I/usr/local/pgsql/include/informix/esql -I/usr/local/pgsql/include/internal/libpq -I/usr/local/pgsql/include/server/access -I/usr/local/pgsql/include/server/bootstrap -I/usr/local/pgsql/include/server/catalog -I/usr/local/pgsql/include/server/commands -I/usr/local/pgsql/include/server/executor -I/usr/local/pgsql/include/server/foreign -I/usr/local/pgsql/include/server/lib -I/usr/local/pgsql/include/server/libpq -I/usr/local/pgsql/include/server/mb -I/usr/local/pgsql/include/server/nodes -I/usr/local/pgsql/include/server/optimizer -I/usr/local/pgsql/include/server/parser -I/usr/local/pgsql/include/server/port -I/usr/local/pgsql/include/server/portability -I/usr/local/pgsql/include/server/postmaster -I/usr/local/pgsql/include/server/regex -I/usr/local/pgsql/include/server/rewrite -I/usr/local/pgsql/include/server/snowball -I/usr/local/pgsql/include/server/storage -I/usr/local/pgsql/include/server/tcop -I/usr/local/pgsql/include/server/tsearch -I/usr/local/pgsql/include/server/utils -I/usr/local/pgsql/include/server/port/win32_msvc -I/usr/local/pgsql/include/server/snowball/libstemmer -I/usr/local/pgsql/include/server/tsearch/dicts -I/usr/local/pgsql/include/server/port/win32_msvc/sys -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources/i386 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources -include /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/cocoaJukebox_Prefix-cnacolsumectioenqadetpbcceaq/cocoaJukebox_Prefix.pch -c /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/SQInterface.m -o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/SQInterface.o0#
+
 CCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/SQInterface.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/SQInterface.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s299958165.341220
 e299958166.403243
@@ -516,6 +931,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@85"Compile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/SQInterface.m299958165#299958166#0(0"0(0#0#77"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/SQInterface.m2465734688#2819"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/cocoaJukebox.hmap -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment/include -I/usr/local/pgsql/include -I/usr/local/pgsql/include/informix -I/usr/local/pgsql/include/internal -I/usr/local/pgsql/include/libpq -I/usr/local/pgsql/include/server -I/usr/local/pgsql/include/informix/esql -I/usr/local/pgsql/include/internal/libpq -I/usr/local/pgsql/include/server/access -I/usr/local/pgsql/include/server/bootstrap -I/usr/local/pgsql/include/server/catalog -I/usr/local/pgsql/include/server/commands -I/usr/local/pgsql/include/server/executor -I/usr/local/pgsql/include/server/foreign -I/usr/local/pgsql/include/server/lib -I/usr/local/pgsql/include/server/libpq -I/usr/local/pgsql/include/server/mb -I/usr/local/pgsql/include/server/nodes -I/usr/local/pgsql/include/server/optimizer -I/usr/local/pgsql/include/server/parser -I/usr/local/pgsql/include/server/port -I/usr/local/pgsql/include/server/portability -I/usr/local/pgsql/include/server/postmaster -I/usr/local/pgsql/include/server/regex -I/usr/local/pgsql/include/server/rewrite -I/usr/local/pgsql/include/server/snowball -I/usr/local/pgsql/include/server/storage -I/usr/local/pgsql/include/server/tcop -I/usr/local/pgsql/include/server/tsearch -I/usr/local/pgsql/include/server/utils -I/usr/local/pgsql/include/server/port/win32_msvc -I/usr/local/pgsql/include/server/snowball/libstemmer -I/usr/local/pgsql/include/server/tsearch/dicts -I/usr/local/pgsql/include/server/port/win32_msvc/sys -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources/i386 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources -include /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/cocoaJukebox_Prefix-boxmwazkzictvhfqsoyceprypqga/cocoaJukebox_Prefix.pch -c /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/SQInterface.m -o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/SQInterface.o0#
+
+CCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/SongQueue.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/SongQueue.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s307499495.770348
+e307499496.956293
+r1
+xCompileC
+xbuild/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/SongQueue.o
+x/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/SongQueue.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@116"Compile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/SongQueue.m307499495#307499496#0(0"0(0#0#108"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/SongQueue.m2543517632#3112"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/cocoaJukebox.hmap -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/include -I/usr/local/pgsql/include -I/usr/local/pgsql/include/informix -I/usr/local/pgsql/include/internal -I/usr/local/pgsql/include/libpq -I/usr/local/pgsql/include/server -I/usr/local/pgsql/include/informix/esql -I/usr/local/pgsql/include/internal/libpq -I/usr/local/pgsql/include/server/access -I/usr/local/pgsql/include/server/bootstrap -I/usr/local/pgsql/include/server/catalog -I/usr/local/pgsql/include/server/commands -I/usr/local/pgsql/include/server/executor -I/usr/local/pgsql/include/server/foreign -I/usr/local/pgsql/include/server/lib -I/usr/local/pgsql/include/server/libpq -I/usr/local/pgsql/include/server/mb -I/usr/local/pgsql/include/server/nodes -I/usr/local/pgsql/include/server/optimizer -I/usr/local/pgsql/include/server/parser -I/usr/local/pgsql/include/server/port -I/usr/local/pgsql/include/server/portability -I/usr/local/pgsql/include/server/postmaster -I/usr/local/pgsql/include/server/regex -I/usr/local/pgsql/include/server/rewrite -I/usr/local/pgsql/include/server/snowball -I/usr/local/pgsql/include/server/storage -I/usr/local/pgsql/include/server/tcop -I/usr/local/pgsql/include/server/tsearch -I/usr/local/pgsql/include/server/utils -I/usr/local/pgsql/include/server/port/win32_msvc -I/usr/local/pgsql/include/server/snowball/libstemmer -I/usr/local/pgsql/include/server/tsearch/dicts -I/usr/local/pgsql/include/server/port/win32_msvc/sys -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources/i386 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources -include /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/cocoaJukebox_Prefix-cnacolsumectioenqadetpbcceaq/cocoaJukebox_Prefix.pch -c /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/SongQueue.m -o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/SongQueue.o0#
 
 CCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/SongQueue.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/SongQueue.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s299958162.794450
@@ -530,6 +958,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@83"Compile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/SongQueue.m299958162#299958164#0(0"0(0#0#75"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/SongQueue.m2465734688#2815"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/cocoaJukebox.hmap -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment/include -I/usr/local/pgsql/include -I/usr/local/pgsql/include/informix -I/usr/local/pgsql/include/internal -I/usr/local/pgsql/include/libpq -I/usr/local/pgsql/include/server -I/usr/local/pgsql/include/informix/esql -I/usr/local/pgsql/include/internal/libpq -I/usr/local/pgsql/include/server/access -I/usr/local/pgsql/include/server/bootstrap -I/usr/local/pgsql/include/server/catalog -I/usr/local/pgsql/include/server/commands -I/usr/local/pgsql/include/server/executor -I/usr/local/pgsql/include/server/foreign -I/usr/local/pgsql/include/server/lib -I/usr/local/pgsql/include/server/libpq -I/usr/local/pgsql/include/server/mb -I/usr/local/pgsql/include/server/nodes -I/usr/local/pgsql/include/server/optimizer -I/usr/local/pgsql/include/server/parser -I/usr/local/pgsql/include/server/port -I/usr/local/pgsql/include/server/portability -I/usr/local/pgsql/include/server/postmaster -I/usr/local/pgsql/include/server/regex -I/usr/local/pgsql/include/server/rewrite -I/usr/local/pgsql/include/server/snowball -I/usr/local/pgsql/include/server/storage -I/usr/local/pgsql/include/server/tcop -I/usr/local/pgsql/include/server/tsearch -I/usr/local/pgsql/include/server/utils -I/usr/local/pgsql/include/server/port/win32_msvc -I/usr/local/pgsql/include/server/snowball/libstemmer -I/usr/local/pgsql/include/server/tsearch/dicts -I/usr/local/pgsql/include/server/port/win32_msvc/sys -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources/i386 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources -include /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/cocoaJukebox_Prefix-boxmwazkzictvhfqsoyceprypqga/cocoaJukebox_Prefix.pch -c /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/SongQueue.m -o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/SongQueue.o0#
 
+CCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/UKPrefsPanel.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/UKPrefsPanel.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s307499497.311846
+e307499497.658127
+r1
+xCompileC
+xbuild/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/UKPrefsPanel.o
+x/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/UKPrefsPanel.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@119"Compile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/UKPrefsPanel.m307499497#307499497#0(0"0(0#0#111"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/UKPrefsPanel.m2543517632#3118"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/cocoaJukebox.hmap -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/include -I/usr/local/pgsql/include -I/usr/local/pgsql/include/informix -I/usr/local/pgsql/include/internal -I/usr/local/pgsql/include/libpq -I/usr/local/pgsql/include/server -I/usr/local/pgsql/include/informix/esql -I/usr/local/pgsql/include/internal/libpq -I/usr/local/pgsql/include/server/access -I/usr/local/pgsql/include/server/bootstrap -I/usr/local/pgsql/include/server/catalog -I/usr/local/pgsql/include/server/commands -I/usr/local/pgsql/include/server/executor -I/usr/local/pgsql/include/server/foreign -I/usr/local/pgsql/include/server/lib -I/usr/local/pgsql/include/server/libpq -I/usr/local/pgsql/include/server/mb -I/usr/local/pgsql/include/server/nodes -I/usr/local/pgsql/include/server/optimizer -I/usr/local/pgsql/include/server/parser -I/usr/local/pgsql/include/server/port -I/usr/local/pgsql/include/server/portability -I/usr/local/pgsql/include/server/postmaster -I/usr/local/pgsql/include/server/regex -I/usr/local/pgsql/include/server/rewrite -I/usr/local/pgsql/include/server/snowball -I/usr/local/pgsql/include/server/storage -I/usr/local/pgsql/include/server/tcop -I/usr/local/pgsql/include/server/tsearch -I/usr/local/pgsql/include/server/utils -I/usr/local/pgsql/include/server/port/win32_msvc -I/usr/local/pgsql/include/server/snowball/libstemmer -I/usr/local/pgsql/include/server/tsearch/dicts -I/usr/local/pgsql/include/server/port/win32_msvc/sys -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources/i386 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources -include /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/cocoaJukebox_Prefix-cnacolsumectioenqadetpbcceaq/cocoaJukebox_Prefix.pch -c /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/UKPrefsPanel.m -o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/UKPrefsPanel.o0#
+
 CCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/UKPrefsPanel.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/UKPrefsPanel.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s299958164.900538
 e299958165.341071
@@ -542,6 +983,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@86"Compile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/UKPrefsPanel.m299958164#299958165#0(0"0(0#0#78"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/UKPrefsPanel.m2465734688#2821"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/cocoaJukebox.hmap -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment/include -I/usr/local/pgsql/include -I/usr/local/pgsql/include/informix -I/usr/local/pgsql/include/internal -I/usr/local/pgsql/include/libpq -I/usr/local/pgsql/include/server -I/usr/local/pgsql/include/informix/esql -I/usr/local/pgsql/include/internal/libpq -I/usr/local/pgsql/include/server/access -I/usr/local/pgsql/include/server/bootstrap -I/usr/local/pgsql/include/server/catalog -I/usr/local/pgsql/include/server/commands -I/usr/local/pgsql/include/server/executor -I/usr/local/pgsql/include/server/foreign -I/usr/local/pgsql/include/server/lib -I/usr/local/pgsql/include/server/libpq -I/usr/local/pgsql/include/server/mb -I/usr/local/pgsql/include/server/nodes -I/usr/local/pgsql/include/server/optimizer -I/usr/local/pgsql/include/server/parser -I/usr/local/pgsql/include/server/port -I/usr/local/pgsql/include/server/portability -I/usr/local/pgsql/include/server/postmaster -I/usr/local/pgsql/include/server/regex -I/usr/local/pgsql/include/server/rewrite -I/usr/local/pgsql/include/server/snowball -I/usr/local/pgsql/include/server/storage -I/usr/local/pgsql/include/server/tcop -I/usr/local/pgsql/include/server/tsearch -I/usr/local/pgsql/include/server/utils -I/usr/local/pgsql/include/server/port/win32_msvc -I/usr/local/pgsql/include/server/snowball/libstemmer -I/usr/local/pgsql/include/server/tsearch/dicts -I/usr/local/pgsql/include/server/port/win32_msvc/sys -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources/i386 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources -include /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/cocoaJukebox_Prefix-boxmwazkzictvhfqsoyceprypqga/cocoaJukebox_Prefix.pch -c /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/UKPrefsPanel.m -o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/UKPrefsPanel.o0#
+
+CCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/UserPlayList.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/UserPlayList.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s307499495.246074
+e307499495.439767
+r1
+xCompileC
+xbuild/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/UserPlayList.o
+x/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/UserPlayList.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@119"Compile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/UserPlayList.m307499495#307499495#0(0"0(0#0#111"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/UserPlayList.m2543517632#3118"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/cocoaJukebox.hmap -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/include -I/usr/local/pgsql/include -I/usr/local/pgsql/include/informix -I/usr/local/pgsql/include/internal -I/usr/local/pgsql/include/libpq -I/usr/local/pgsql/include/server -I/usr/local/pgsql/include/informix/esql -I/usr/local/pgsql/include/internal/libpq -I/usr/local/pgsql/include/server/access -I/usr/local/pgsql/include/server/bootstrap -I/usr/local/pgsql/include/server/catalog -I/usr/local/pgsql/include/server/commands -I/usr/local/pgsql/include/server/executor -I/usr/local/pgsql/include/server/foreign -I/usr/local/pgsql/include/server/lib -I/usr/local/pgsql/include/server/libpq -I/usr/local/pgsql/include/server/mb -I/usr/local/pgsql/include/server/nodes -I/usr/local/pgsql/include/server/optimizer -I/usr/local/pgsql/include/server/parser -I/usr/local/pgsql/include/server/port -I/usr/local/pgsql/include/server/portability -I/usr/local/pgsql/include/server/postmaster -I/usr/local/pgsql/include/server/regex -I/usr/local/pgsql/include/server/rewrite -I/usr/local/pgsql/include/server/snowball -I/usr/local/pgsql/include/server/storage -I/usr/local/pgsql/include/server/tcop -I/usr/local/pgsql/include/server/tsearch -I/usr/local/pgsql/include/server/utils -I/usr/local/pgsql/include/server/port/win32_msvc -I/usr/local/pgsql/include/server/snowball/libstemmer -I/usr/local/pgsql/include/server/tsearch/dicts -I/usr/local/pgsql/include/server/port/win32_msvc/sys -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources/i386 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources -include /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/cocoaJukebox_Prefix-cnacolsumectioenqadetpbcceaq/cocoaJukebox_Prefix.pch -c /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/UserPlayList.m -o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/UserPlayList.o0#
 
 CCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/UserPlayList.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/UserPlayList.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s299958161.625008
@@ -556,6 +1010,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@86"Compile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/UserPlayList.m299958161#299958161#0(0"0(0#0#78"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/UserPlayList.m2465734688#2821"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/cocoaJukebox.hmap -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment/include -I/usr/local/pgsql/include -I/usr/local/pgsql/include/informix -I/usr/local/pgsql/include/internal -I/usr/local/pgsql/include/libpq -I/usr/local/pgsql/include/server -I/usr/local/pgsql/include/informix/esql -I/usr/local/pgsql/include/internal/libpq -I/usr/local/pgsql/include/server/access -I/usr/local/pgsql/include/server/bootstrap -I/usr/local/pgsql/include/server/catalog -I/usr/local/pgsql/include/server/commands -I/usr/local/pgsql/include/server/executor -I/usr/local/pgsql/include/server/foreign -I/usr/local/pgsql/include/server/lib -I/usr/local/pgsql/include/server/libpq -I/usr/local/pgsql/include/server/mb -I/usr/local/pgsql/include/server/nodes -I/usr/local/pgsql/include/server/optimizer -I/usr/local/pgsql/include/server/parser -I/usr/local/pgsql/include/server/port -I/usr/local/pgsql/include/server/portability -I/usr/local/pgsql/include/server/postmaster -I/usr/local/pgsql/include/server/regex -I/usr/local/pgsql/include/server/rewrite -I/usr/local/pgsql/include/server/snowball -I/usr/local/pgsql/include/server/storage -I/usr/local/pgsql/include/server/tcop -I/usr/local/pgsql/include/server/tsearch -I/usr/local/pgsql/include/server/utils -I/usr/local/pgsql/include/server/port/win32_msvc -I/usr/local/pgsql/include/server/snowball/libstemmer -I/usr/local/pgsql/include/server/tsearch/dicts -I/usr/local/pgsql/include/server/port/win32_msvc/sys -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources/i386 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources -include /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/cocoaJukebox_Prefix-boxmwazkzictvhfqsoyceprypqga/cocoaJukebox_Prefix.pch -c /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/UserPlayList.m -o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/UserPlayList.o0#
 
+CCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/main.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s307499494.262299
+e307499494.450331
+r1
+xCompileC
+xbuild/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/main.o
+x/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@111"Compile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/main.m307499494#307499494#0(0"0(0#0#103"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/main.m2543517632#3102"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/cocoaJukebox.hmap -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/include -I/usr/local/pgsql/include -I/usr/local/pgsql/include/informix -I/usr/local/pgsql/include/internal -I/usr/local/pgsql/include/libpq -I/usr/local/pgsql/include/server -I/usr/local/pgsql/include/informix/esql -I/usr/local/pgsql/include/internal/libpq -I/usr/local/pgsql/include/server/access -I/usr/local/pgsql/include/server/bootstrap -I/usr/local/pgsql/include/server/catalog -I/usr/local/pgsql/include/server/commands -I/usr/local/pgsql/include/server/executor -I/usr/local/pgsql/include/server/foreign -I/usr/local/pgsql/include/server/lib -I/usr/local/pgsql/include/server/libpq -I/usr/local/pgsql/include/server/mb -I/usr/local/pgsql/include/server/nodes -I/usr/local/pgsql/include/server/optimizer -I/usr/local/pgsql/include/server/parser -I/usr/local/pgsql/include/server/port -I/usr/local/pgsql/include/server/portability -I/usr/local/pgsql/include/server/postmaster -I/usr/local/pgsql/include/server/regex -I/usr/local/pgsql/include/server/rewrite -I/usr/local/pgsql/include/server/snowball -I/usr/local/pgsql/include/server/storage -I/usr/local/pgsql/include/server/tcop -I/usr/local/pgsql/include/server/tsearch -I/usr/local/pgsql/include/server/utils -I/usr/local/pgsql/include/server/port/win32_msvc -I/usr/local/pgsql/include/server/snowball/libstemmer -I/usr/local/pgsql/include/server/tsearch/dicts -I/usr/local/pgsql/include/server/port/win32_msvc/sys -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources/i386 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources -include /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/cocoaJukebox_Prefix-cnacolsumectioenqadetpbcceaq/cocoaJukebox_Prefix.pch -c /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/main.m -o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/main.o0#
+
 CCompileC build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/main.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s299958160.677146
 e299958160.930620
@@ -569,6 +1036,15 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@78"Compile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/main.m299958160#299958160#0(0"0(0#0#70"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/main.m2465734688#2805"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/cocoaJukebox.hmap -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment/include -I/usr/local/pgsql/include -I/usr/local/pgsql/include/informix -I/usr/local/pgsql/include/internal -I/usr/local/pgsql/include/libpq -I/usr/local/pgsql/include/server -I/usr/local/pgsql/include/informix/esql -I/usr/local/pgsql/include/internal/libpq -I/usr/local/pgsql/include/server/access -I/usr/local/pgsql/include/server/bootstrap -I/usr/local/pgsql/include/server/catalog -I/usr/local/pgsql/include/server/commands -I/usr/local/pgsql/include/server/executor -I/usr/local/pgsql/include/server/foreign -I/usr/local/pgsql/include/server/lib -I/usr/local/pgsql/include/server/libpq -I/usr/local/pgsql/include/server/mb -I/usr/local/pgsql/include/server/nodes -I/usr/local/pgsql/include/server/optimizer -I/usr/local/pgsql/include/server/parser -I/usr/local/pgsql/include/server/port -I/usr/local/pgsql/include/server/portability -I/usr/local/pgsql/include/server/postmaster -I/usr/local/pgsql/include/server/regex -I/usr/local/pgsql/include/server/rewrite -I/usr/local/pgsql/include/server/snowball -I/usr/local/pgsql/include/server/storage -I/usr/local/pgsql/include/server/tcop -I/usr/local/pgsql/include/server/tsearch -I/usr/local/pgsql/include/server/utils -I/usr/local/pgsql/include/server/port/win32_msvc -I/usr/local/pgsql/include/server/snowball/libstemmer -I/usr/local/pgsql/include/server/tsearch/dicts -I/usr/local/pgsql/include/server/port/win32_msvc/sys -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources/i386 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources -include /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/cocoaJukebox_Prefix-boxmwazkzictvhfqsoyceprypqga/cocoaJukebox_Prefix.pch -c /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/main.m -o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/main.o0#
 
+CCopyStringsFile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+s307499491.175760
+e307499491.244914
+r1
+xCopyStringsFile
+x/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/Resources/English.lproj/InfoPlist.strings
+xEnglish.lproj/InfoPlist.strings
+lSLF07#2@36"Copy English.lproj/InfoPlist.strings307499491#307499491#0(0"0(0#0#128"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/English.lproj/InfoPlist.strings2543517632#492"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-16 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/Resources/English.lproj0#
+
 CCopyStringsFile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
 s299958157.058370
 e299958157.108456
@@ -579,49 +1055,60 @@ xEnglish.lproj/InfoPlist.strings
 lSLF07#2@36"Copy English.lproj/InfoPlist.strings299958157#299958157#0(0"0(0#0#95"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/English.lproj/InfoPlist.strings2465734688#426"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-16 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/Resources/English.lproj0#
 
 CCpResource build/Deployment/cocoaJukebox.app/Contents/Resources/Notes.txt Notes.txt
-s299958157.123168
-e299958157.137631
+s307499491.269477
+e307499491.286289
 r1
 xCpResource
 xbuild/Deployment/cocoaJukebox.app/Contents/Resources/Notes.txt
 xNotes.txt
-lSLF07#2@14"Copy Notes.txt299958157#299958157#0(0"0(0#0#73"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/Notes.txt2465734688#431"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/Notes.txt /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/Resources0#
+lSLF07#2@14"Copy Notes.txt307499491#307499491#0(0"0(0#0#106"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/Notes.txt2543517632#530"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/Notes.txt /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/Resources0#
 
 CCpResource build/Deployment/cocoaJukebox.app/Contents/Resources/com.deepbondi.advanced.png com.deepbondi.advanced.png
-s299958157.111747
-e299958157.137291
+s307499491.247493
+e307499491.285974
 r1
 xCpResource
 xbuild/Deployment/cocoaJukebox.app/Contents/Resources/com.deepbondi.advanced.png
 xcom.deepbondi.advanced.png
-lSLF07#2@31"Copy com.deepbondi.advanced.png299958157#299958157#0(0"0(0#0#90"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/com.deepbondi.advanced.png2465734688#448"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/com.deepbondi.advanced.png /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/Resources0#
+lSLF07#2@31"Copy com.deepbondi.advanced.png307499491#307499491#0(0"0(0#0#123"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/com.deepbondi.advanced.png2543517632#547"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/com.deepbondi.advanced.png /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/Resources0#
 
 CCpResource build/Deployment/cocoaJukebox.app/Contents/Resources/com.deepbondi.playback.png com.deepbondi.playback.png
-s299958157.120328
-e299958157.137466
+s307499491.250011
+e307499491.292699
 r1
 xCpResource
 xbuild/Deployment/cocoaJukebox.app/Contents/Resources/com.deepbondi.playback.png
 xcom.deepbondi.playback.png
-lSLF07#2@31"Copy com.deepbondi.playback.png299958157#299958157#0(0"0(0#0#90"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/com.deepbondi.playback.png2465734688#448"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/com.deepbondi.playback.png /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/Resources0#
+lSLF07#2@31"Copy com.deepbondi.playback.png307499491#307499491#0(0"0(0#0#123"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/com.deepbondi.playback.png2543517632#547"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/com.deepbondi.playback.png /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/Resources0#
 
 CCpResource build/Deployment/cocoaJukebox.app/Contents/Resources/mp3 mp3
-s299958157.129992
-e299958157.267999
-r1
+s307499491.271751
+e307499491.284586
+r0
 xCpResource
 xbuild/Deployment/cocoaJukebox.app/Contents/Resources/mp3
 xmp3
-lSLF07#2@8"Copy mp3299958157#299958157#0(0"0(0#0#67"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/mp32465734688#425"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/mp3 /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/Resources0#
+opbxcp: mp3: No such file or directory
+lSLF07#2@8"Copy mp3307499491#307499491#0(38"pbxcp: mp3: No such file or directory1(4@37"pbxcp: mp3: No such file or directory307499491#4294967295#0#0(6@0"307499491#0#0#0#0#0"0(0#0#100"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/mp32543517632#524"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/mp3 /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/Resources1#
 
 CCpResource build/Deployment/cocoaJukebox.app/Contents/Resources/note.icns note.icns
-s299958157.108585
-e299958157.137067
+s307499491.245117
+e307499491.275091
 r1
 xCpResource
 xbuild/Deployment/cocoaJukebox.app/Contents/Resources/note.icns
 xnote.icns
-lSLF07#2@14"Copy note.icns299958157#299958157#0(0"0(0#0#73"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/note.icns2465734688#431"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/note.icns /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/Resources0#
+lSLF07#2@14"Copy note.icns307499491#307499491#0(0"0(0#0#106"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/note.icns2543517632#530"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/note.icns /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/Resources0#
+
+CLd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/MacOS/cocoaJukebox normal i386
+s307505983.676109
+e307505984.001296
+r1
+xLd
+x/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/MacOS/cocoaJukebox
+xnormal
+xi386
+lSLF07#2@163"Link /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/MacOS/cocoaJukebox307505983#307505984#0(0"0(0#0#0"2543517632#999"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox -filelist /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/cocoaJukebox.LinkFileList -mmacosx-version-min=10.5 -lsqlite3 -framework Cocoa -framework QTKit -o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/MacOS/cocoaJukebox0#
 
 CLd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/MacOS/cocoaJukebox normal i386
 s299958166.403475
@@ -632,6 +1119,15 @@ x/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deploymen
 xnormal
 xi386
 lSLF07#2@130"Link /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/MacOS/cocoaJukebox299958166#299958166#0(0"0(0#0#0"2465734688#801"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox -filelist /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/Objects-normal/i386/cocoaJukebox.LinkFileList -mmacosx-version-min=10.5 -lsqlite3 -framework Cocoa -framework QTKit -o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/MacOS/cocoaJukebox0#
+
+CProcessInfoPlistFile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/Info.plist Info.plist
+s307499491.168762
+e307499491.173680
+r1
+xProcessInfoPlistFile
+x/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/Info.plist
+xInfo.plist
+lSLF07#2@18"Process Info.plist307499491#307499491#0(0"0(0#0#107"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/Info.plist2543517632#496"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox    builtin-infoPlistUtility Info.plist -genpkginfo /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/Info.plist0#
 
 CProcessInfoPlistFile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/Info.plist Info.plist
 s299958156.999267
@@ -655,6 +1151,27 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@34"Precompile cocoaJukebox_Prefix.pch299958157#299958160#0(0"0(0#0#87"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/cocoaJukebox_Prefix.pch2465734688#2678"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/cocoaJukebox.hmap -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment/include -I/usr/local/pgsql/include -I/usr/local/pgsql/include/informix -I/usr/local/pgsql/include/internal -I/usr/local/pgsql/include/libpq -I/usr/local/pgsql/include/server -I/usr/local/pgsql/include/informix/esql -I/usr/local/pgsql/include/internal/libpq -I/usr/local/pgsql/include/server/access -I/usr/local/pgsql/include/server/bootstrap -I/usr/local/pgsql/include/server/catalog -I/usr/local/pgsql/include/server/commands -I/usr/local/pgsql/include/server/executor -I/usr/local/pgsql/include/server/foreign -I/usr/local/pgsql/include/server/lib -I/usr/local/pgsql/include/server/libpq -I/usr/local/pgsql/include/server/mb -I/usr/local/pgsql/include/server/nodes -I/usr/local/pgsql/include/server/optimizer -I/usr/local/pgsql/include/server/parser -I/usr/local/pgsql/include/server/port -I/usr/local/pgsql/include/server/portability -I/usr/local/pgsql/include/server/postmaster -I/usr/local/pgsql/include/server/regex -I/usr/local/pgsql/include/server/rewrite -I/usr/local/pgsql/include/server/snowball -I/usr/local/pgsql/include/server/storage -I/usr/local/pgsql/include/server/tcop -I/usr/local/pgsql/include/server/tsearch -I/usr/local/pgsql/include/server/utils -I/usr/local/pgsql/include/server/port/win32_msvc -I/usr/local/pgsql/include/server/snowball/libstemmer -I/usr/local/pgsql/include/server/tsearch/dicts -I/usr/local/pgsql/include/server/port/win32_msvc/sys -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources/i386 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources -c /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/cocoaJukebox_Prefix.pch -o /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/cocoaJukebox_Prefix-boxmwazkzictvhfqsoyceprypqga/cocoaJukebox_Prefix.pch.gch0#
 
+CProcessPCH /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/cocoaJukebox_Prefix-cnacolsumectioenqadetpbcceaq/cocoaJukebox_Prefix.pch.gch cocoaJukebox_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s307499491.428044
+e307499494.262024
+r1
+xProcessPCH
+x/var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/cocoaJukebox_Prefix-cnacolsumectioenqadetpbcceaq/cocoaJukebox_Prefix.pch.gch
+xcocoaJukebox_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@34"Precompile cocoaJukebox_Prefix.pch307499491#307499494#0(0"0(0#0#120"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/cocoaJukebox_Prefix.pch2543517632#2942"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/cocoaJukebox.hmap -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/include -I/usr/local/pgsql/include -I/usr/local/pgsql/include/informix -I/usr/local/pgsql/include/internal -I/usr/local/pgsql/include/libpq -I/usr/local/pgsql/include/server -I/usr/local/pgsql/include/informix/esql -I/usr/local/pgsql/include/internal/libpq -I/usr/local/pgsql/include/server/access -I/usr/local/pgsql/include/server/bootstrap -I/usr/local/pgsql/include/server/catalog -I/usr/local/pgsql/include/server/commands -I/usr/local/pgsql/include/server/executor -I/usr/local/pgsql/include/server/foreign -I/usr/local/pgsql/include/server/lib -I/usr/local/pgsql/include/server/libpq -I/usr/local/pgsql/include/server/mb -I/usr/local/pgsql/include/server/nodes -I/usr/local/pgsql/include/server/optimizer -I/usr/local/pgsql/include/server/parser -I/usr/local/pgsql/include/server/port -I/usr/local/pgsql/include/server/portability -I/usr/local/pgsql/include/server/postmaster -I/usr/local/pgsql/include/server/regex -I/usr/local/pgsql/include/server/rewrite -I/usr/local/pgsql/include/server/snowball -I/usr/local/pgsql/include/server/storage -I/usr/local/pgsql/include/server/tcop -I/usr/local/pgsql/include/server/tsearch -I/usr/local/pgsql/include/server/utils -I/usr/local/pgsql/include/server/port/win32_msvc -I/usr/local/pgsql/include/server/snowball/libstemmer -I/usr/local/pgsql/include/server/tsearch/dicts -I/usr/local/pgsql/include/server/port/win32_msvc/sys -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources/i386 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Deployment/cocoaJukebox.build/DerivedSources -c /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/cocoaJukebox_Prefix.pch -o /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/cocoaJukebox_Prefix-cnacolsumectioenqadetpbcceaq/cocoaJukebox_Prefix.pch.gch0#
+
+CStripNIB /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/English.lproj/MainMenu.nib
+s307499491.173857
+e307499491.427750
+r1
+xStripNIB
+x/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/English.lproj/MainMenu.nib
+lSLF07#2@35"StripNIB English.lproj/MainMenu.nib307499491#307499491#0(0"0(0#0#123"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/English.lproj/MainMenu.nib2543517632#479"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox    /Developer/usr/bin/ibtool --strip /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/Resources/English.lproj/MainMenu.nib --output-format human-readable-text /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/English.lproj/MainMenu.nib0#
+
 CStripNIB /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/English.lproj/MainMenu.nib
 s299958157.030720
 e299958157.351747
@@ -662,6 +1179,14 @@ r1
 xStripNIB
 x/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/English.lproj/MainMenu.nib
 lSLF07#2@35"StripNIB English.lproj/MainMenu.nib299958157#299958157#0(0"0(0#0#90"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/English.lproj/MainMenu.nib2465734688#380"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox    /Developer/usr/bin/ibtool --strip /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment/cocoaJukebox.app/Contents/Resources/English.lproj/MainMenu.nib --output-format human-readable-text /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/English.lproj/MainMenu.nib0#
+
+CTouch /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/cocoaJukebox.app
+s307505984.001456
+e307505984.015412
+r1
+xTouch
+x/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/cocoaJukebox.app
+lSLF07#2@136"Touch /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/cocoaJukebox.app307505984#307505984#0(0"0(0#0#0"2543517632#257"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox    /usr/bin/touch -c /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Deployment/cocoaJukebox.app0#
 
 CTouch /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Deployment/cocoaJukebox.app
 s299958166.473081

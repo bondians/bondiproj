@@ -10,7 +10,6 @@
 		410F604B08FEBF19002B050D /* JBNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 410F604A08FEBF19002B050D /* JBNetworkManager.m */; };
 		410F605108FEBF61002B050D /* JBNetworkIOHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 410F605008FEBF61002B050D /* JBNetworkIOHandle.m */; };
 		4117372909577512001BABFE /* SQInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 4117372809577512001BABFE /* SQInterface.m */; };
-		4117373409577A82001BABFE /* mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4117373309577A82001BABFE /* mp3 */; };
 		41277D8708EB58AD00C1D4CB /* JukeboxController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41277D8608EB58AD00C1D4CB /* JukeboxController.m */; };
 		41277DB908EBAF6700C1D4CB /* ArrayAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 41277DB808EBAF6700C1D4CB /* ArrayAdditions.m */; };
 		413C0FB008F210EE009706B2 /* UserPlayList.m in Sources */ = {isa = PBXBuildFile; fileRef = 413C0FAF08F210EE009706B2 /* UserPlayList.m */; };
@@ -45,7 +44,6 @@
 		410F605008FEBF61002B050D /* JBNetworkIOHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBNetworkIOHandle.m; sourceTree = "<group>"; };
 		4117372709577512001BABFE /* SQInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQInterface.h; sourceTree = "<group>"; };
 		4117372809577512001BABFE /* SQInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQInterface.m; sourceTree = "<group>"; };
-		4117373309577A82001BABFE /* mp3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = mp3; sourceTree = "<group>"; };
 		41277D8508EB58AD00C1D4CB /* JukeboxController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = JukeboxController.h; sourceTree = "<group>"; };
 		41277D8608EB58AD00C1D4CB /* JukeboxController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = JukeboxController.m; sourceTree = "<group>"; };
 		41277DB708EBAF6700C1D4CB /* ArrayAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayAdditions.h; sourceTree = "<group>"; };
@@ -185,7 +183,6 @@
 		4138076A08F591F700D7D127 /* Other Files */ = {
 			isa = PBXGroup;
 			children = (
-				4117373309577A82001BABFE /* mp3 */,
 				415E1186092E965200BCD2AC /* Notes.txt */,
 				415E1176092D8B0C00BCD2AC /* com.deepbondi.playback.png */,
 				415E1157092D880200BCD2AC /* com.deepbondi.advanced.png */,
@@ -242,7 +239,6 @@
 				415E1158092D880200BCD2AC /* com.deepbondi.advanced.png in Resources */,
 				415E1177092D8B0C00BCD2AC /* com.deepbondi.playback.png in Resources */,
 				415E1187092E965200BCD2AC /* Notes.txt in Resources */,
-				4117373409577A82001BABFE /* mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

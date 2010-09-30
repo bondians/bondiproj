@@ -14,6 +14,8 @@
     NSString *userName;
 	NSMutableArray *userList;
 	NSMutableArray *listCounts;
+	NSMutableArray *listID;
+	NSMutableArray *listUser;
 	IBOutlet NSTableView *myTableView;
 
 }
