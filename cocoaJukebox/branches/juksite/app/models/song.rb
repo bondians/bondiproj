@@ -98,6 +98,17 @@ class Song < ActiveRecord::Base
       }
     end
   end
+  ## Need to fix this logic, but need stub for now
+  def self.padRands
+    (11 - Randlist.all.length).times do |time|
+      new = Randlist.new
+      new.song_id = 49166
+      new.save
+      new.sort = new.id
+      new.save
+    end
+  end
+  
   def self.search(search, page)
     paginate :per_page => 100, :page => page,
              :conditions => ['title like ?', "%#{search}%"],
