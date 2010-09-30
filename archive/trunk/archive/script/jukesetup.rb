@@ -41,11 +41,12 @@ tables.each do |table|
   system secondcmd
   file.printf(".import /tmp/%s.input %s\n", table, table)
 end
+
 file.close
+
   thirdcommand = "/usr/bin/sqlite3 /web/app/archive.deepbondi.net/db/jukebox.sqlite3 < /tmp/commands.txt"
 
   system thirdcommand
 puts thirdcommand
-  system("sqlite3 /web/app/archive.deepbondi.net/db/jukebox.sqlite3 < /tmp/commands.txt")
   1
   1
