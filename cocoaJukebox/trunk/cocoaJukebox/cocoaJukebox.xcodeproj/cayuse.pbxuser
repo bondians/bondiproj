@@ -168,8 +168,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 299957856;
-			PBXWorkspaceStateSaveDate = 299957856;
+			PBXPerProjectTemplateStateSaveDate = 307499402;
+			PBXWorkspaceStateSaveDate = 307499402;
 		};
 		perUserProjectItems = {
 			410F40CD095B4D63002A1739 /* PBXTextBookmark */ = 410F40CD095B4D63002A1739 /* PBXTextBookmark */;
@@ -178,9 +178,9 @@
 			410F411E095B6719002A1739 /* PBXTextBookmark */ = 410F411E095B6719002A1739 /* PBXTextBookmark */;
 			410F611708FF47C3002B050D /* PBXTextBookmark */ = 410F611708FF47C3002B050D /* PBXTextBookmark */;
 			4118D1F911E1017C00F6C671 /* PBXTextBookmark */ = 4118D1F911E1017C00F6C671 /* PBXTextBookmark */;
+			412BECE1125411D10021B4D0 /* PBXTextBookmark */ = 412BECE1125411D10021B4D0 /* PBXTextBookmark */;
 			4154C13409343352001A1A2A /* PBXTextBookmark */ = 4154C13409343352001A1A2A /* PBXTextBookmark */;
 			415D3FA710DACB31009B8AB5 /* PBXTextBookmark */ = 415D3FA710DACB31009B8AB5 /* PBXTextBookmark */;
-			415D3FC110DAD03D009B8AB5 /* PBXTextBookmark */ = 415D3FC110DAD03D009B8AB5 /* PBXTextBookmark */;
 			415E114E092D86FF00BCD2AC /* PBXBookmark */ = 415E114E092D86FF00BCD2AC /* PBXBookmark */;
 			415E11C9092F151A00BCD2AC /* PBXTextBookmark */ = 415E11C9092F151A00BCD2AC /* PBXTextBookmark */;
 			4162DC6F0C568BCF00FE98D3 /* PBXTextBookmark */ = 4162DC6F0C568BCF00FE98D3 /* PBXTextBookmark */;
@@ -338,9 +338,9 @@
 	};
 	41277D8608EB58AD00C1D4CB /* JukeboxController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {691, 2951}}";
+			sepNavIntBoundsRect = "{{0, 0}, {775, 2938}}";
 			sepNavSelRange = "{1293, 0}";
-			sepNavVisRange = "{1183, 1324}";
+			sepNavVisRange = "{460, 1703}";
 			sepNavVisRect = "{{0, 0}, {1052, 613}}";
 			sepNavWindowFrame = "{{65, 253}, {1091, 742}}";
 		};
@@ -358,6 +358,16 @@
 			sepNavSelRange = "{1103, 0}";
 			sepNavVisRect = "{{0, 373}, {711, 565}}";
 		};
+	};
+	412BECE1125411D10021B4D0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 41277D8608EB58AD00C1D4CB /* JukeboxController.m */;
+		name = "JukeboxController.m: 38";
+		rLen = 0;
+		rLoc = 1293;
+		rType = 0;
+		vrLen = 1703;
+		vrLoc = 460;
 	};
 	413C0FAE08F210EE009706B2 /* UserPlayList.h */ = {
 		uiCtxt = {
@@ -485,16 +495,6 @@
 		rType = 0;
 		vrLen = 1415;
 		vrLoc = 1672;
-	};
-	415D3FC110DAD03D009B8AB5 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 41277D8608EB58AD00C1D4CB /* JukeboxController.m */;
-		name = "JukeboxController.m: 53";
-		rLen = 0;
-		rLoc = 1782;
-		rType = 0;
-		vrLen = 1331;
-		vrLoc = 1183;
 	};
 	415E114E092D86FF00BCD2AC /* PBXBookmark */ = {
 		isa = PBXBookmark;

@@ -1,7 +1,7 @@
 TcocoaJukebox
 v7
 r0
-t307512353.423814
+t307517135.045204
 cCheck dependencies
 cProcessInfoPlistFile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Development/cocoaJukebox.app/Contents/Info.plist Info.plist
 cStripNIB /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/English.lproj/MainMenu.nib
@@ -713,7 +713,7 @@ s789
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies307512353#307512353#0(0"0(0#1#0"2543517632#0"0#
+lSLF07#2@18"Check dependencies307517135#307517135#0(0"0(0#1#0"2543517632#0"0#
 
 CCompileC build/cocoaJukebox.build/Development/cocoaJukebox.build/Objects-normal/i386/ArrayAdditions.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/ArrayAdditions.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s307506031.561250
