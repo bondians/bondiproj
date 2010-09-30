@@ -43,4 +43,5 @@ tables.each do |table|
 
 end
   thirdcommand = "/usr/bin/sqlite3 /web/app/archive.deepbondi.net/db/jukebox.sqlite3 < /tmp/commands.txt"
+  puts thirdcommand
   system thirdcommand
