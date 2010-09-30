@@ -1,0 +1,5 @@
+#EXTM3U
+<% @songs.each do |song| %>
+#EXTINF: <%= song.size / 192000 / 8 %>, <%= song.title %>
+<%= url_for :controller => "songs", :id => song, :action => "show", :format => song.songtype.identifier, :only_path => false %>
+<% end %>

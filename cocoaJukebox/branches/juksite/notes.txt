@@ -1,0 +1,218 @@
+<object id="id4" classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" codebase="http://www.apple.com/qtactivex/qtplugin.cab" width="224" height="16">
+  <param name="src" value="../../../../Media/Let%20Not%20Your%20Heart%20Be%20Troubled%20Pt%20I.m4a" /><param name="controller" value="true" />
+  <param name="autoplay" value="false" />
+  <param name="scale" value="tofit" />
+  <param name="volume" value="65" />
+  <param name="loop" value="false" />
+</object>');}
+<object id="id4" type="video/quicktime" width="224" height="16">
+  <param name="src" value="../../../../Media/Let%20Not%20Your%20Heart%20Be%20Troubled%20Pt%20I.m4a"/>
+  <param name="controller" value="true"/>
+  <param name="scale" value="tofit"/>
+</object>');}
+<object id="id4" type="video/quicktime" width="224" height="16" data="../../../../Media/Let%20Not%20Your%20Heart%20Be%20Troubled%20Pt%20I.m4a">
+  <param name="src" value="../../../../Media/Let%20Not%20Your%20Heart%20Be%20Troubled%20Pt%20I.m4a"/>
+  <param name="controller" value="true"/>
+  <param name="autoplay" value="false"/>
+  <param name="scale" value="tofit"/>
+  <param name="volume" value="65"/>
+  <param name="loop" value="false"/>
+</object>');}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+his is what I did in my view:
+<%= link_to_remote 'play in line',
+:url=>{:action=>'playinline',:songurl=>a.url
+,:disposition=>'inline'}%>
+<div id="playa<%= Digest::MD5.hexdigest(a.url) %>">
+</div>
+
+in my controller:
+def playinline
+@songurl=params[:songurl]
+@md5=Digest::MD5.hexdigest(params[:songurl])
+end
+
+def play
+@tag=Rtag.find_by_url(params['songurl'])
+@file=@xxxxxxxxxxxxxxxxxxxxxxxxxx+-J2VVmMCRNWE@public.gmane.org[1..-1]
+@file=@file[1..-1] if @file[0..1]=='//'
+# render :layout=>false
+Mongrel::DirHandler::add_mime_type('mp3','audio/mp3')
+send_file @file, :type => 'audio/mp3', :disposition => 'inline' ,:stream=>true
+end
+
+in my playinline.rjs:
+page.replace_html 'playa'+@md5, '<embed
+src="'+url_for(:action=>'play',:disposition=>'inline',:songurl=>@songurl)+'"
+width="300" height="42" ></embed>'
+
+works great
+
+Pat
+
+
+
+require 'id3lib'
+require 'iconv'
+class String
+  require 'iconv' #this line is not needed in rails !
+    def to_utf
+        Iconv.conv('UTF-8', 'UTF-8', self)
+    end
+end
+
+a = ID3Lib::Tag.new("jones.mp3")
+b =Album.new
+b.name = Kconv.toutf8(a[2][:text])
+b.name = Iconv.conv('UTF-8', 'LATIN1', a[2][:text] )
+b.save
+
+
+
+### Quick way to search tree structure for every file.. not bad eh?
+#!/usr/bin/env ruby
+
+require 'find'
+
+a = []
+
+Find.find(".") do |path|
+    puts path
+end
+
+###### Old Schemas
+
+###sqlite> .schema artists
+CREATE TABLE artists (
+    "key" integer NOT NULL,
+    artist text NOT NULL,
+    soundex text
+);
+CREATE INDEX artists_pkey on artists (key);
+
+###sqlite> .schema albums
+CREATE TABLE albums (
+    "key" integer NOT NULL,
+    album text NOT NULL,
+    artist integer DEFAULT 1 NOT NULL,
+    genre integer DEFAULT 1 NOT NULL,
+    soundex text
+);
+CREATE INDEX albums_pkey on albums (key);
+
+###sqlite> .schema genres
+CREATE TABLE genres (
+    "key" integer NOT NULL,
+    genre text NOT NULL
+);
+
+###sqlite> .schema songs
+CREATE TABLE songs (
+    "key" integer NOT NULL,
+    song text NOT NULL,
+    file text NOT NULL,
+    track integer,
+    "year" integer,
+    album integer DEFAULT 1 NOT NULL,
+    artist integer DEFAULT 1 NOT NULL,
+    genre integer DEFAULT 1 NOT NULL,
+    ripper integer DEFAULT 1 NOT NULL,
+    comments text,
+    soundex text,
+    touch timestamp with time zone,
+    size integer,
+    prekey integer DEFAULT 0 NOT NULL,
+    postkey integer DEFAULT 0 NOT NULL,
+    fadeduration double precision DEFAULT -1 NOT NULL,
+    volume double precision DEFAULT 0.7 NOT NULL,
+    fadein boolean DEFAULT true NOT NULL
+);
+CREATE INDEX songs_pkey on songs (key);
+
+
+when "APIC"     # Picture
+when "COMM"     # Comment
+when "IPLS"     # InvolvedPeople
+when "MCDI"     # MusicCDIdentifier
+when "PCNT"     # PlayCounter
+when "PRIV"     # Private --> ID3 Private Tags
+when "TALB"     # Album
+when "TBPM"     # BeatsPerMinute
+when "TCMP"     # Compilation   0 = No 1 = Yes
+when "TCOM"     # Composer
+when "TCON"     # Genre (uses same lookup table as ID3v1 Genre)
+when "TCOP"     # Copyright 
+when "TDAT"     # Date
+when "TDLY"     # PlaylistDelay
+when "TENC"     # EncodedBy
+when "TEXT"     # Lyricist
+when "TFLT"     # FileType
+when "TIME"     # Time
+when "TIT1"     # Grouping
+when "TIT2"     # Title
+when "TIT3"     # Subtitle
+when "TKEY"     # InitialKey
+when "TLAN"     # Language
+when "TLEN"     # Length
+when "TMED"     # Media
+when "TOAL"     # OriginalAlbum
+when "TOFN"     # OriginalFilename
+when "TOLY"     # OriginalLyricist
+when "TOPE"     # OriginalArtist
+when "TORY"     # OriginalReleaseYear
+when "TOWN"     # FileOwner
+when "TPE1"     # Artist
+when "TPE2"     # Band
+when "TPE3"     # Conductor
+when "TPE4"     # InterpretedBy
+when "TPOS"     # PartOfSet
+when "TPUB"     # Publisher
+when "TRCK"     # Track
+when "TRDA"     # RecordingDates
+when "TRSN"     # InternetRadioStationName 
+when "TRSO"     # InternetRadioStationOwner
+when "TSIZ"     # Size
+when "TSRC"     # ISRC
+when "TSSE"     # EncoderSettings
+when "TXXX"     # UserDefinedText
+when "TYER"     # Year
+when "USER"     # TermsOfUse
+when "USLT"     # Lyrics
+when "WCOM"     # CommercialURL
+when "WCOP"     # CopyrightURL
+when "WOAF"     # FileRUL
+when "WOAR"     # ArtistURL
+when "WOAS"     # SourceURL
+when "WORS"     # InternetRadioStationURL
+when "WPAY"     # PaymentURL
+when "WPUB"     # PublisherURL
+when "WXXX"     # UserDefinedURL
