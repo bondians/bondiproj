@@ -34,7 +34,7 @@ class SongsController < ApplicationController
 #      unless format.respond_to? @song.songtype.identifier
 #        format.send(@song.songtype.identifier) { send_song_file @song }
 #      end
-      
+      format.txt
       format.jpg {send_song_cover @tags} if @tags.cover
       format.png {send_song_cover @tags} if @tags.cover
       format.tar {send_song_tar @songs}
