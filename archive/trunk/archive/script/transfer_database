@@ -2,10 +2,10 @@
 
 OF=transition-$(date +%Y%m%d).db
 
-pg_dump archive_production > $OF;
-dropdb archive_development;
-createdb archive_development;
-psql archive_development -f $OF;
+pg_dump --username=cayuse archive_production > $OF;
+dropdb --username=cayuse archive_development;
+createdb --username=cayuse archive_development;
+psql --username=cayuse archive_development -f $OF;
 cp $OF db.back;
 gzip db.back;
 svn commit -m "db store";
