@@ -1,7 +1,7 @@
 TcocoaJukebox
 v7
 r0
-t307517135.045204
+t307581515.349095
 cCheck dependencies
 cProcessInfoPlistFile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Development/cocoaJukebox.app/Contents/Info.plist Info.plist
 cStripNIB /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/English.lproj/MainMenu.nib
@@ -210,9 +210,9 @@ i<netinet/in.h>
 i<sys/socket.h>
 
 N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/Notes.txt
-c000000004CA408230000000000003DFA
-t1285818403
-s15866
+c000000004CA512AA0000000000003DF7
+t1285886634
+s15863
 
 N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/SQInterface.h
 c000000004C4619FF000000000000023B
@@ -240,9 +240,9 @@ i"SQInterface.h"
 i"DBSong.h"
 
 N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/SongQueue.m
-c000000004C4619FF00000000000027CD
-t1279662591
-s10189
+c000000004CA51AC9000000000000286A
+t1285888713
+s10346
 i"SongQueue.h"
 i"SQInterface.h"
 
@@ -271,7 +271,7 @@ s1739
 i"UserPlayList.h"
 
 N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Development/cocoaJukebox.app
-t1285818767
+t1285888715
 s102
 
 N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Development/cocoaJukebox.app/Contents/Info.plist
@@ -279,8 +279,8 @@ t1285813222
 s780
 
 N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Development/cocoaJukebox.app/Contents/MacOS/cocoaJukebox
-t1285817035
-s102368
+t1285888715
+s102412
 
 N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Development/cocoaJukebox.app/Contents/PkgInfo
 t1285813222
@@ -295,8 +295,8 @@ t1285813224
 s34143
 
 N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Development/cocoaJukebox.app/Contents/Resources/Notes.txt
-t1285818767
-s15866
+t1285886634
+s15863
 
 N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Development/cocoaJukebox.app/Contents/Resources/com.deepbondi.advanced.png
 t1285813223
@@ -343,8 +343,8 @@ t1285817035
 s24228
 
 N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Development/cocoaJukebox.build/Objects-normal/i386/SongQueue.o
-t1285813233
-s47704
+t1285888714
+s47004
 
 N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Development/cocoaJukebox.build/Objects-normal/i386/UKPrefsPanel.o
 t1285813234
@@ -713,7 +713,7 @@ s789
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies307517135#307517135#0(0"0(0#1#0"2543517632#0"0#
+lSLF07#2@18"Check dependencies307581513#307581514#0(0"0(0#1#0"2543517632#0"0#
 
 CCompileC build/cocoaJukebox.build/Development/cocoaJukebox.build/Objects-normal/i386/ArrayAdditions.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/ArrayAdditions.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s307506031.561250
@@ -924,8 +924,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@85"Compile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/SQInterface.m299957916#299957918#0(0"0(0#0#77"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/SQInterface.m2465734688#2817"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Development/cocoaJukebox.build/cocoaJukebox.hmap -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Development -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Development/include -I/usr/local/pgsql/include -I/usr/local/pgsql/include/informix -I/usr/local/pgsql/include/internal -I/usr/local/pgsql/include/libpq -I/usr/local/pgsql/include/server -I/usr/local/pgsql/include/informix/esql -I/usr/local/pgsql/include/internal/libpq -I/usr/local/pgsql/include/server/access -I/usr/local/pgsql/include/server/bootstrap -I/usr/local/pgsql/include/server/catalog -I/usr/local/pgsql/include/server/commands -I/usr/local/pgsql/include/server/executor -I/usr/local/pgsql/include/server/foreign -I/usr/local/pgsql/include/server/lib -I/usr/local/pgsql/include/server/libpq -I/usr/local/pgsql/include/server/mb -I/usr/local/pgsql/include/server/nodes -I/usr/local/pgsql/include/server/optimizer -I/usr/local/pgsql/include/server/parser -I/usr/local/pgsql/include/server/port -I/usr/local/pgsql/include/server/portability -I/usr/local/pgsql/include/server/postmaster -I/usr/local/pgsql/include/server/regex -I/usr/local/pgsql/include/server/rewrite -I/usr/local/pgsql/include/server/snowball -I/usr/local/pgsql/include/server/storage -I/usr/local/pgsql/include/server/tcop -I/usr/local/pgsql/include/server/tsearch -I/usr/local/pgsql/include/server/utils -I/usr/local/pgsql/include/server/port/win32_msvc -I/usr/local/pgsql/include/server/snowball/libstemmer -I/usr/local/pgsql/include/server/tsearch/dicts -I/usr/local/pgsql/include/server/port/win32_msvc/sys -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Development/cocoaJukebox.build/DerivedSources/i386 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Development/cocoaJukebox.build/DerivedSources -include /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/cocoaJukebox_Prefix-doxyncjmirelxmbylcdtfjjwnkql/cocoaJukebox_Prefix.pch -c /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/SQInterface.m -o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/cocoaJukebox.build/Development/cocoaJukebox.build/Objects-normal/i386/SQInterface.o0#
 
 CCompileC build/cocoaJukebox.build/Development/cocoaJukebox.build/Objects-normal/i386/SongQueue.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/SongQueue.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s307506032.726026
-e307506033.542585
+s307581513.999048
+e307581514.885638
 r1
 xCompileC
 xbuild/cocoaJukebox.build/Development/cocoaJukebox.build/Objects-normal/i386/SongQueue.o
@@ -934,7 +934,9 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@116"Compile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/SongQueue.m307506032#307506033#0(0"0(0#0#108"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/SongQueue.m2543517632#3110"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Development/cocoaJukebox.build/cocoaJukebox.hmap -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Development -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Development/include -I/usr/local/pgsql/include -I/usr/local/pgsql/include/informix -I/usr/local/pgsql/include/internal -I/usr/local/pgsql/include/libpq -I/usr/local/pgsql/include/server -I/usr/local/pgsql/include/informix/esql -I/usr/local/pgsql/include/internal/libpq -I/usr/local/pgsql/include/server/access -I/usr/local/pgsql/include/server/bootstrap -I/usr/local/pgsql/include/server/catalog -I/usr/local/pgsql/include/server/commands -I/usr/local/pgsql/include/server/executor -I/usr/local/pgsql/include/server/foreign -I/usr/local/pgsql/include/server/lib -I/usr/local/pgsql/include/server/libpq -I/usr/local/pgsql/include/server/mb -I/usr/local/pgsql/include/server/nodes -I/usr/local/pgsql/include/server/optimizer -I/usr/local/pgsql/include/server/parser -I/usr/local/pgsql/include/server/port -I/usr/local/pgsql/include/server/portability -I/usr/local/pgsql/include/server/postmaster -I/usr/local/pgsql/include/server/regex -I/usr/local/pgsql/include/server/rewrite -I/usr/local/pgsql/include/server/snowball -I/usr/local/pgsql/include/server/storage -I/usr/local/pgsql/include/server/tcop -I/usr/local/pgsql/include/server/tsearch -I/usr/local/pgsql/include/server/utils -I/usr/local/pgsql/include/server/port/win32_msvc -I/usr/local/pgsql/include/server/snowball/libstemmer -I/usr/local/pgsql/include/server/tsearch/dicts -I/usr/local/pgsql/include/server/port/win32_msvc/sys -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Development/cocoaJukebox.build/DerivedSources/i386 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Development/cocoaJukebox.build/DerivedSources -include /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/cocoaJukebox_Prefix-alyxvdybeecceceobbncdyfojkal/cocoaJukebox_Prefix.pch -c /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/SongQueue.m -o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Development/cocoaJukebox.build/Objects-normal/i386/SongQueue.o0#
+o/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/SongQueue.m: In function '-[SongQueue getNextSong]':
+o/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/SongQueue.m:255: warning: 'stringWithContentsOfURL:' is deprecated (declared at /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSString.h:358)
+lSLF07#2@116"Compile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/SongQueue.m307581514#307581514#0(429"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/SongQueue.m: In function '-[SongQueue getNextSong]':/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/SongQueue.m:255: warning: 'stringWithContentsOfURL:' is deprecated (declared at /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSString.h:358)1(22@155"'stringWithContentsOfURL:' is deprecated (declared at /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSString.h:358)307581514#150#279#0(6@108"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/SongQueue.m307581513#255#0#255#0#33"'*' is deprecated (declared at *)0(0#0#108"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/SongQueue.m2543517632#3110"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Development/cocoaJukebox.build/cocoaJukebox.hmap -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Development -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Development/include -I/usr/local/pgsql/include -I/usr/local/pgsql/include/informix -I/usr/local/pgsql/include/internal -I/usr/local/pgsql/include/libpq -I/usr/local/pgsql/include/server -I/usr/local/pgsql/include/informix/esql -I/usr/local/pgsql/include/internal/libpq -I/usr/local/pgsql/include/server/access -I/usr/local/pgsql/include/server/bootstrap -I/usr/local/pgsql/include/server/catalog -I/usr/local/pgsql/include/server/commands -I/usr/local/pgsql/include/server/executor -I/usr/local/pgsql/include/server/foreign -I/usr/local/pgsql/include/server/lib -I/usr/local/pgsql/include/server/libpq -I/usr/local/pgsql/include/server/mb -I/usr/local/pgsql/include/server/nodes -I/usr/local/pgsql/include/server/optimizer -I/usr/local/pgsql/include/server/parser -I/usr/local/pgsql/include/server/port -I/usr/local/pgsql/include/server/portability -I/usr/local/pgsql/include/server/postmaster -I/usr/local/pgsql/include/server/regex -I/usr/local/pgsql/include/server/rewrite -I/usr/local/pgsql/include/server/snowball -I/usr/local/pgsql/include/server/storage -I/usr/local/pgsql/include/server/tcop -I/usr/local/pgsql/include/server/tsearch -I/usr/local/pgsql/include/server/utils -I/usr/local/pgsql/include/server/port/win32_msvc -I/usr/local/pgsql/include/server/snowball/libstemmer -I/usr/local/pgsql/include/server/tsearch/dicts -I/usr/local/pgsql/include/server/port/win32_msvc/sys -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Development/cocoaJukebox.build/DerivedSources/i386 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Development/cocoaJukebox.build/DerivedSources -include /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/cocoaJukebox_Prefix-alyxvdybeecceceobbncdyfojkal/cocoaJukebox_Prefix.pch -c /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/SongQueue.m -o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Development/cocoaJukebox.build/Objects-normal/i386/SongQueue.o0#
 
 CCompileC build/cocoaJukebox.build/Development/cocoaJukebox.build/Objects-normal/i386/SongQueue.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/SongQueue.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s299957915.110131
@@ -1046,13 +1048,13 @@ xEnglish.lproj/InfoPlist.strings
 lSLF07#2@36"Copy English.lproj/InfoPlist.strings299957908#299957908#0(0"0(0#0#95"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/English.lproj/InfoPlist.strings2465734688#427"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-16 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Development/cocoaJukebox.app/Contents/Resources/English.lproj0#
 
 CCpResource build/Development/cocoaJukebox.app/Contents/Resources/Notes.txt Notes.txt
-s307511567.617357
-e307511567.627207
+s307579434.323075
+e307579434.387625
 r1
 xCpResource
 xbuild/Development/cocoaJukebox.app/Contents/Resources/Notes.txt
 xNotes.txt
-lSLF07#2@14"Copy Notes.txt307511567#307511567#0(0"0(0#0#106"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/Notes.txt2543517632#510"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/Notes.txt /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Development/cocoaJukebox.app/Contents/Resources0#
+lSLF07#2@14"Copy Notes.txt307579434#307579434#0(0"0(0#0#106"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/Notes.txt2543517632#510"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/Notes.txt /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Development/cocoaJukebox.app/Contents/Resources0#
 
 CCpResource build/Development/cocoaJukebox.app/Contents/Resources/com.deepbondi.advanced.png com.deepbondi.advanced.png
 s307506023.388284
@@ -1091,14 +1093,14 @@ xnote.icns
 lSLF07#2@14"Copy note.icns307506023#307506023#0(0"0(0#0#106"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/note.icns2543517632#510"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/note.icns /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Development/cocoaJukebox.app/Contents/Resources0#
 
 CLd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Development/cocoaJukebox.app/Contents/MacOS/cocoaJukebox normal i386
-s307509835.378984
-e307509835.438749
+s307581514.885810
+e307581515.328813
 r1
 xLd
 x/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Development/cocoaJukebox.app/Contents/MacOS/cocoaJukebox
 xnormal
 xi386
-lSLF07#2@164"Link /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Development/cocoaJukebox.app/Contents/MacOS/cocoaJukebox307509835#307509835#0(0"0(0#0#0"2543517632#1003"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Development -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Development -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox -filelist /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Development/cocoaJukebox.build/Objects-normal/i386/cocoaJukebox.LinkFileList -mmacosx-version-min=10.5 -lsqlite3 -framework Cocoa -framework QTKit -o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Development/cocoaJukebox.app/Contents/MacOS/cocoaJukebox0#
+lSLF07#2@164"Link /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Development/cocoaJukebox.app/Contents/MacOS/cocoaJukebox307581514#307581515#0(0"0(0#0#0"2543517632#1003"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Development -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Development -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox -filelist /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/cocoaJukebox.build/Development/cocoaJukebox.build/Objects-normal/i386/cocoaJukebox.LinkFileList -mmacosx-version-min=10.5 -lsqlite3 -framework Cocoa -framework QTKit -o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Development/cocoaJukebox.app/Contents/MacOS/cocoaJukebox0#
 
 CLd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Development/cocoaJukebox.app/Contents/MacOS/cocoaJukebox normal i386
 s299957917.719394
@@ -1171,12 +1173,12 @@ x/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/English.lproj/M
 lSLF07#2@35"StripNIB English.lproj/MainMenu.nib299957908#299957909#0(0"0(0#0#90"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/English.lproj/MainMenu.nib2465734688#381"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox    /Developer/usr/bin/ibtool --strip /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Development/cocoaJukebox.app/Contents/Resources/English.lproj/MainMenu.nib --output-format human-readable-text /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/English.lproj/MainMenu.nib0#
 
 CTouch /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Development/cocoaJukebox.app
-s307511567.630640
-e307511567.700622
+s307581515.328992
+e307581515.349031
 r1
 xTouch
 x/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Development/cocoaJukebox.app
-lSLF07#2@137"Touch /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Development/cocoaJukebox.app307511567#307511567#0(0"0(0#0#0"2543517632#258"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox    /usr/bin/touch -c /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Development/cocoaJukebox.app0#
+lSLF07#2@137"Touch /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Development/cocoaJukebox.app307581515#307581515#0(0"0(0#0#0"2543517632#258"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox    /usr/bin/touch -c /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/build/Development/cocoaJukebox.app0#
 
 CTouch /Users/cayuse/Desktop/bondiproj/cocoaJukebox/trunk/cocoaJukebox/build/Development/cocoaJukebox.app
 s299957918.453828

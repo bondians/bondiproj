@@ -251,7 +251,9 @@
 - (DBSong *) getNextSong
 {
 	DBSong *aSong;
-	NSString *preQueue;
+	aSong = [myConnection getSongForKey: [NSString stringWithContentsOfURL: 
+										 [NSURL URLWithString: @"http://127.0.0.1:3000/nextsongs.txt"]]];
+/*	NSString *preQueue;
 	NSString *postQueue;
 	
 	if (respectSongHinting && followOnSong) {
@@ -280,7 +282,8 @@
 			followOnSong = [[myConnection getSongForKey: postQueue] retain];
 		}
 	}
-}
+ }
+ */
 	return aSong;
 }
 

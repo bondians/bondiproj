@@ -119,8 +119,8 @@ CREATE TABLE users (
 @"SELECT key, song, artist, album, filepath, volume, fadeduration, fadein, prekey, postkey FROM songs_view WHERE key =\'%@\'", key]
 
 ##################### this one is for real
-CREATE VIEW songs_view AS
-    SELECT songs.id AS key, songs.title AS song, albums.name AS album, songs.track AS track, artists.name AS artist, genres.name AS genre, songs.file AS filepath, songs.size, songs.volume AS volume, songs.fade_duration AS fadeduration, songs.fade_in AS fadein, songs.pre_id AS prekey, songs.post_id AS postkey FROM songs, albums, artists, genres WHERE ((((songs.album_id = albums.id) AND(songs.artist_id = artists.id)) AND (songs.genre_id = genres.id)));
+CREATE VIEW songs_view AS SELECT songs.id AS key, songs.title AS song, albums.name AS album, songs.track AS track, artists.name AS artist, genres.name AS genre, songs.file AS filepath, songs.size, songs.volume AS volume, songs.fade_duration AS fadeduration, songs.fade_in AS fadein, songs.pre_id AS prekey, songs.post_id AS postkey FROM songs, albums, artists, genres WHERE ((((songs.album_id = albums.id) AND(songs.artist_id = artists.id)) AND (songs.genre_id = genres.id)));
+
 
 ################
 
