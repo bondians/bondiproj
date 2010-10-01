@@ -1,0 +1,12 @@
+<p>
+  <h1><%#=h @playlist.name %></h1>
+</p>
+
+<p>
+  <b>Tracks:</b>
+<%= draw_songs(@randsongs, :no_track) %>
+</p>
+
+
+<%#= link_to 'Edit', edit_playlist_path(@playlist) %> |
+<%#= link_to 'Back', playlists_path %>

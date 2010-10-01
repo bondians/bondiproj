@@ -1,0 +1,21 @@
+<h1>Select Playlists</h1>
+
+<% form_tag :action => 'update' do%>
+<table width="20%">
+  <hr>
+    <td width="2%">Check</td>
+    <td width="2%">User</td>
+    <td width="2%">Playlist Name</td>
+    <td width="2%">Size</td>
+  </hr>
+<% @playlists.each do |playlist| %>
+<tr>
+<td><%= check_box_tag "playlist[playlist_ids][]", playlist.id, playlist.active? %></td>
+<td><%= playlist.user.name %></td>
+<td><%= playlist.name %></td>
+<td><%= playlist.songs.length %></td>
+</tr>
+<% end %>
+</table>
+  <%= submit_tag "Update" %>
+<% end %>

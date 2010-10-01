@@ -100,8 +100,9 @@ class Song < ActiveRecord::Base
   end
   ## Need to fix this logic, but need stub for now
   def self.padRands
-    playlist = Playlist.find(1).songs
-    list = playlist.collect{|t| t.id}
+    #playlist = Playlist.find(1).songs
+    playlist = Playlist.find_all_by_active true, :include => :songs
+    list = playlist.collect {|a| a.songs.collect {|c| c.id}}.flatten
     (11 - Randlist.all.length).times do |time|
       new = Randlist.new
       new.song_id = list[rand(list.length)]
