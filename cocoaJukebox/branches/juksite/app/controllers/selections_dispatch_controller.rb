@@ -34,7 +34,7 @@ class SelectionsDispatchController < ApplicationController
         
       when "Remove Selected"
         removals = Reqlist.find_all_by_song_id params[:songs]
-        removals = Randlist.find_all_by_song_id params[:songs]
+        removals += Randlist.find_all_by_song_id params[:songs]
         removals.each do |remove|
           remove.destroy
         end
