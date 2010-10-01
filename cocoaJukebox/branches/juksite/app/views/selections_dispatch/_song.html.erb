@@ -5,4 +5,6 @@
   <% unless toggledraws.include?(:no_artist)   %> <td><%= link_to song.artist.name, song.artist %></td> <% end %>
   <% unless toggledraws.include?(:no_album)    %> <td><%= link_to song.album.name, song.album %></td> <% end %>
   <% unless toggledraws.include?(:no_genre)    %> <td><%=h song.genre.name %></td> <% end %>
+  <% unless toggledraws.include?(:no_dnd)      %> <td><%= hidden_field_tag("index[]", song.form_idx.to_i, :class=>'reqlist') -%></td><% end %>
+
 </tr>

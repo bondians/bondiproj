@@ -1,12 +1,19 @@
 <p>
-  <h1><%#=h @playlist.name %></h1>
+  <h1>Listing Songs In the Queue</h1>
+  <% form_tag songs_path, :method => 'get' do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>
+  </p>
+<% end %>
 </p>
-
+<% unless @reqsongs.empty? %>
 <p>
-  <b>Tracks:</b>
-<%= draw_songs(@randsongs, :no_track) %>
+  <b>Request Queue</b>
+  <%= draw_songs(@reqsongs, :no_track) %>
 </p>
-
-
-<%#= link_to 'Edit', edit_playlist_path(@playlist) %> |
-<%#= link_to 'Back', playlists_path %>
+<% end %>
+<p>
+  <b>Random Queue</b>
+<%= draw_songs(@randsongs, :no_track, :no_dnd) %>
+</p>
