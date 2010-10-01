@@ -104,6 +104,15 @@ class SongsController < ApplicationController
     end
   end
   
+  def pick
+    song = Song.find params[:id]
+    req = Reqlist.new
+    req.song = song
+    req.save
+    flash[:notice] = "#{song.title} was successfully added."
+    redirect_to(selections_url)
+  end
+  
   private
   
   def send_song_file(song)

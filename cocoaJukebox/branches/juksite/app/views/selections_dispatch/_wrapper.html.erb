@@ -4,6 +4,7 @@
 <table id="table-1">
   <tr class="nodrop nodrag">
     <% unless toggledraws.include?(:no_checkbox) %> <th width="5%" >&nbsp;</th> <% end %>
+    <% if toggledraws.include?(:request_button)  %> <th width="5%" >&nbsp;</th> <% end %>
     <% unless toggledraws.include?(:no_title)    %> <th width="25%"><%= default_sortable_header("title", 'desc') %></th> <% end %>
     <% unless toggledraws.include?(:no_track)    %> <th width="5%" >Track</th>  <% end %>
     <% unless toggledraws.include?(:no_artist)   %> <th width="25%"><%= sortable_header("artist", 'asc') %></th> <% end %>
