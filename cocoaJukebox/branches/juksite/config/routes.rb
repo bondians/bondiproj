@@ -10,7 +10,7 @@ ActionController::Routing::Routes.draw do |map|
   
   map.resources :songtypes
   
-  map.connect '/nextsong', :controller => "songs", :action => "nextsong", :method => :get
+  map.resources :nextsongs
   map.resources :songs
   map.resources :albums
 

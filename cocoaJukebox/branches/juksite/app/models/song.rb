@@ -100,9 +100,11 @@ class Song < ActiveRecord::Base
   end
   ## Need to fix this logic, but need stub for now
   def self.padRands
+    playlist = Playlist.find(1).songs
+    list = playlist.collect{|t| t.id}
     (11 - Randlist.all.length).times do |time|
       new = Randlist.new
-      new.song_id = 49166
+      new.song_id = list[rand(list.length)]
       new.save
       new.sort = new.id
       new.save
