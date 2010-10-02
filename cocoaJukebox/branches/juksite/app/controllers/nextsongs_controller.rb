@@ -5,13 +5,19 @@ class NextsongsController < ApplicationController
       Song.padRands
       rands = Randlist.all :order => :sort
     end
-    @next = Reqlist.first :order => :sort
-    if @next
-      @next.destroy
+    item = Reqlist.first :order => :sort
+    if item
+      @song = item.song
+      item.destroy
     else
-      @next = rands.first
-      @next.destroy
+      item = rands.first
+      if item
+        @song = item.song
+        item.destroy
+      end
     end
+    @song ||= Song.new
+    Currentsong.setPlaying(@song)
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @song }

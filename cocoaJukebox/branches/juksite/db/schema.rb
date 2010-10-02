@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101001155416) do
+ActiveRecord::Schema.define(:version => 20101002043049) do
 
   create_table "abuses", :force => true do |t|
     t.text     "abuse"
@@ -33,6 +33,12 @@ ActiveRecord::Schema.define(:version => 20101001155416) do
 
   create_table "artists", :force => true do |t|
     t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "currentsongs", :force => true do |t|
+    t.integer  "song_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -199,6 +205,11 @@ ActiveRecord::Schema.define(:version => 20101001155416) do
   create_table "reqlists", :force => true do |t|
     t.integer  "song_id"
     t.integer  "sort"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "selections", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end

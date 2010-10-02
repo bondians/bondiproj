@@ -1,5 +1,9 @@
 <p>
-  <h1>Listing Songs In the Queue</h1>
+  <% if Currentsong.playing %>
+  <h1>Now Playing: <%= Currentsong.playing.title%> <br>By: <%= Currentsong.playing.artist.name %></h1>
+  <% else %>
+    <h1>Now Playing: None</h1>
+  <% end %>
   <% form_tag songs_path, :method => 'get' do %>
   <p>
     <%= text_field_tag :search, params[:search] %>
@@ -15,5 +19,6 @@
 <% end %>
 <p>
   <b>Random Queue</b>
-<%= draw_songs(@randsongs, :no_track, :no_dnd) %>
+<%= draw_songs(@randsongs, :no_track, :no_dnd, :request_button) %>
 </p>
+<script language="javascript" type="text/javascript">setTimeout("location.reload();",20000);</script>

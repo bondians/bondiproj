@@ -109,6 +109,8 @@ class SongsController < ApplicationController
     req = Reqlist.new
     req.song = song
     req.save
+    req.sort = req.id
+    req.save
     flash[:notice] = "#{song.title} was successfully added."
     redirect_to(selections_url)
   end

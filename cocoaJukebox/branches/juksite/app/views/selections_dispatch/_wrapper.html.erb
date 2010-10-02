@@ -5,11 +5,11 @@
   <tr class="nodrop nodrag">
     <% unless toggledraws.include?(:no_checkbox) %> <th width="5%" >&nbsp;</th> <% end %>
     <% if toggledraws.include?(:request_button)  %> <th width="5%" >&nbsp;</th> <% end %>
-    <% unless toggledraws.include?(:no_title)    %> <th width="25%"><%= default_sortable_header("title", 'desc') %></th> <% end %>
+    <% unless toggledraws.include?(:no_title)    %> <th width="25%">Title</th> <% end %>
     <% unless toggledraws.include?(:no_track)    %> <th width="5%" >Track</th>  <% end %>
-    <% unless toggledraws.include?(:no_artist)   %> <th width="25%"><%= sortable_header("artist", 'asc') %></th> <% end %>
-    <% unless toggledraws.include?(:no_album)    %> <th width="20%"><%= sortable_header("album",  'asc') %></th> <% end %>
-    <% unless toggledraws.include?(:no_genre)    %> <th width="10%"><%= sortable_header("genre",  'asc') %></th> <% end %>
+    <% unless toggledraws.include?(:no_artist)   %> <th width="25%">Artist</th> <% end %>
+    <% unless toggledraws.include?(:no_album)    %> <th width="20%">Album</th> <% end %>
+    <% unless toggledraws.include?(:no_genre)    %> <th width="10%">Genre</th> <% end %>
 
 
   </tr>

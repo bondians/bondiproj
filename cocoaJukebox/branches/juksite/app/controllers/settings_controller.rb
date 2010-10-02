@@ -18,5 +18,6 @@ class SettingsController < ApplicationController
       active.include?(list.id) ? list.active = true : list.active = false
       list.save
     end
+    redirect_to(selections_url)
   end
 end
