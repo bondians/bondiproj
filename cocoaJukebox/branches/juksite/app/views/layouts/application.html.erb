@@ -7,6 +7,11 @@
 
 <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
 
+<link rel="stylesheet" href="/goldberg/stylesheets/goldberg.css" 
+  type="text/css" media="screen" />
+<link rel="stylesheet" href="/goldberg/stylesheets/layout.css" 
+  type="text/css" media="screen" />
+
 
 <%= stylesheet_link_tag 'items' %>
 <%= stylesheet_link_tag 'dw_styles' %>
@@ -25,8 +30,48 @@
 </head>
 
 <body>
-<p style="color: green"><%= flash[:notice] %></p>
+     <div class="container">
+     <div class="header">
+          <img class="logo_right" src="/images/test.png"/>
+<h1>The Jukebox</h1>
+<p>Relax and enjoy.</p>
+     </div> <!-- "header -->
+     <div class="mainmenu">
+          <ul>
+               <li>
+                    <a href="/menu/home">Home</a>    
+            </li>
+               </ul>
+     </div> <!-- "mainmenu" -->
+     
+     <div class="wrap">
 
-<%= yield %>
+<!-- Left-hand side.  Vertical submenus, plus other stuff -->
+     <div class="leftside">
+  
+          <ul class="sidemenu">
+  
+               <li>
+                    <a href="/menu/setup">Setup</a>
+               </li>  
+          </ul>
+     </div>  <!-- class="leftside" -->
+
+     <div class="rightside">
+     </div>  <!-- class="rightside" -->
+
+     <div class="content">
+          <% if flash[:note] -%>
+               <div class="flash_note"><%= flash[:note] %></div>
+          <% elsif flash[:note] -%>
+               <div class="flash_note"><%= flash[:note] %></div>
+          <% elsif flash[:error] -%>
+               <div class="flash_error"><h1>Error!</h1><%= flash[:error] %></div>
+          <% end -%>
+          <%= yield %>
+     </div>  <!-- class="content" -->
+     <div class="header"> </div>
+     </div> <!-- "container" -->
+     <div class="footer"></div>
 </body>
 </html>
