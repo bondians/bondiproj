@@ -2,10 +2,19 @@ class AlbumsController < ApplicationController
   # GET /albums
   # GET /albums.xml
   def index
-    #@albums = Album.find(:all, :include=>:genre)
-    @albums = Album.search params[:search], :order => :name, :include => [:artists, :genre, :songs], :page=> params[:page], :per_page => 10
-  end
+    params[:page] ||= 1
+    if params[:search]
+      @albums = Album.search (params[:search], params[:page])
+    
+      respond_to do |format|
+        format.html
+        format.xml { render :xml => @albums }
+      end
+    else
+      @albums = Album.paginate :page => params[:page], :order => 'created_at DESC'
+    end
 
+  end
   # GET /albums/1
   # GET /albums/1.xml
   def show

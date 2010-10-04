@@ -1,11 +1,21 @@
 class ArtistsController < ApplicationController
   # GET /artists
   # GET /artists.xml
-  def index
-    #@artists = Artist.find(:all)
-    @artists = Artist.search params[:search], :order => :name, :page => params[:page], :per_page => 100
-  end
 
+  def index
+    params[:page] ||= 1
+    if params[:search]
+      @artists = Artist.search (params[:search], params[:page])
+    
+      respond_to do |format|
+        format.html
+        format.xml { render :xml => @artists }
+      end
+    else
+      @artists = Artist.paginate :page => params[:page], :order => 'created_at DESC'
+    end
+
+  end
   # GET /artists/1
   # GET /artists/1.xml
   def show
