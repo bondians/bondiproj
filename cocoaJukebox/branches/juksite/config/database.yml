@@ -43,12 +43,13 @@ test:
 #  password:
 
 production:
-  adapter: postgresql
+  adapter: sqlite3
+  database: db/jukebox.sqlite3
   encoding: unicode
-  database: archive_production
   pool: 5
-  username: cayuse
-  
+  timeout: 5000
+#  password:
+ 
 jukebox:
   adapter: sqlite3
   database: db/jukebox.sqlite3
