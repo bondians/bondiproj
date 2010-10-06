@@ -212,7 +212,6 @@ width:134px;
 
 ul.sidemenu a:hover, ul.sidemenu > li.selected > a {
 background:#FFFFAF url(/images/button.png) center center repeat-x;;
-border:1px solid #909090;
 text-decoration:none;
 }
 
@@ -220,17 +219,36 @@ text-decoration:none;
 /*** Content ***/
 
 .content {
-background-color:#fafcff;
+background:#fafcff;
 border:1px solid #909090;
 color:#2a2a2a;
 padding:15px 20px 5px;
 }
 
-.content {margin:0 200px;}
+.content {
+margin:0 200px;
+}
+table{
+border-collapse:collapse;
+}
+
+table.content, td, th
+{
+border-collapse:collapse;
+border:1px solid green;
+}
+th
+{
+background-color:green;
+color:white;
+}
+
+tr:nth-child(even) {background-color: #FFF}
+tr:nth-child(odd) {background-color: #EAF2D3}
 
 div.content h1, div.content h2 {
-background-color:inherit;
-color:#606060;
+/*** background-color:inherit;
+color:#606060; ***/
 font-size:1.8em;
 font-weight:bold;
 letter-spacing:-1px;
