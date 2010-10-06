@@ -193,6 +193,8 @@ padding-left: 0px;
 ul.sidemenu li a {
 background:#ED8F1F url(/images/button.png) center center repeat-x;;
 border:1px solid #4F3530;
+-moz-border-radius: 5px;
+border-radius: 5px;
 color:#000;
 display:block;
 margin-top:8px;
@@ -211,7 +213,7 @@ width:134px;
 }
 
 ul.sidemenu a:hover, ul.sidemenu > li.selected > a {
-background:#FFFFAF url(/images/button.png) center center repeat-x;;
+background:#FFFFAF url(/images/button.png) center center repeat-x;
 text-decoration:none;
 }
 
@@ -219,9 +221,11 @@ text-decoration:none;
 /*** Content ***/
 
 .content {
-background:#fafcff;
-border:1px solid #909090;
-color:#2a2a2a;
+background:#fafcff url(/images/small-leaf-texture.jpg) center center;
+/*border:1px solid #909090;*/
+-moz-border-radius: 15px;
+border-radius: 15px;
+color:black;
 padding:15px 20px 5px;
 }
 
@@ -232,19 +236,36 @@ table{
 border-collapse:collapse;
 }
 
-table.content, td, th
+table.content, td, th,
 {
 border-collapse:collapse;
 border:1px solid green;
 }
+
 th
 {
 background-color:green;
 color:white;
 }
+a{
+color:black;
+}
+tr:nth-child(even) {
+background-color: #FFF;
+/* for IE */
+filter:alpha(opacity=60);
+/* CSS3 standard */
+opacity:0.6;
+}
+tr:nth-child(odd) {
+background-color: #EAFFD3;
+/* for IE */
+filter:alpha(opacity=60);
+/* CSS3 standard */
+opacity:0.6;
 
-tr:nth-child(even) {background-color: #FFF}
-tr:nth-child(odd) {background-color: #EAF2D3}
+}
+
 
 div.content h1, div.content h2 {
 /*** background-color:inherit;
