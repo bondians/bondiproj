@@ -218,7 +218,14 @@
 			isa = PBXProject;
 			buildConfigurationList = 414821730933BA3C00AA83BE /* Build configuration list for PBXProject "cocoaJukebox" */;
 			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* cocoaJukebox */;
 			projectDirPath = "";
 			projectRoot = "";
