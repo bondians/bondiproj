@@ -221,7 +221,7 @@ text-decoration:none;
 /*** Content ***/
 
 .content {
-background:#fafcff url(/images/small-leaf-texture.jpg) center center;
+background:#fafcff url(/images/leaf.png) center center;
 /*border:1px solid #909090;*/
 -moz-border-radius: 15px;
 border-radius: 15px;
@@ -236,8 +236,8 @@ margin:0 200px;
 fieldset.search {
 	border: none;
 	width: 243px;
-/*	margin: 0 auto;  */
-	background: #222;
+/*	margin: 0 auto;  
+	background: #222; */
 }
 .search input, .search button {
 	border: none;
@@ -246,6 +246,9 @@ fieldset.search {
 .search input.box {
 	color: #fff;
 	font-size: 1.2em;
+filter:alpha(opacity=60);
+/* CSS3 standard */
+opacity:0.6;
 	width: 190px;
 	height: 30px;
 	padding: 8px 5px 0;
@@ -253,7 +256,11 @@ fieldset.search {
 	margin-right: 5px;
 }
 .search input.box:focus {
+        color:#fff;
 	background: #616161 url(/images/search_bg.gif) no-repeat left -38px;
+filter:alpha(opacity=100);
+/* CSS3 standard */
+opacity:1.0;
 	outline: none;
 }
 .search button.btn {
