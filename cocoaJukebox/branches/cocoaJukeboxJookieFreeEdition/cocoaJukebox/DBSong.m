@@ -136,7 +136,7 @@
             target: self selector: @selector(fadeInControl) 
             userInfo: nil repeats: YES] retain];
         isPlaying = YES;
-        [myMovie play];
+        [myMovie autoplay];
 
         return YES;
     }
