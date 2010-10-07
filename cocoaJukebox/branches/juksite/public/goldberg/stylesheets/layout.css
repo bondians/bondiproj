@@ -236,7 +236,7 @@ margin:0 200px;
 fieldset.search {
 	border: none;
 	width: 243px;
-	margin: 0 auto;
+/*	margin: 0 auto;  */
 	background: #222;
 }
 .search input, .search button {
