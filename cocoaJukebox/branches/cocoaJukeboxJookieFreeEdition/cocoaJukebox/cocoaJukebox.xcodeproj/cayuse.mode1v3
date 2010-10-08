@@ -307,7 +307,7 @@
 							<real>250</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>-471 120 1264 758 0 0 1440 878 </string>
+						<string>1 120 1264 758 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -335,7 +335,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>415BB770125E6B690064D364</string>
+										<string>415BB784125E86F10064D364</string>
 										<key>history</key>
 										<array>
 											<string>410F611708FF47C3002B050D</string>
@@ -372,7 +372,7 @@
 											<string>410E51AA1256EADD0090E169</string>
 											<string>411643561256EC60009C94F4</string>
 											<string>415BB76E125E6B690064D364</string>
-											<string>415BB76F125E6B690064D364</string>
+											<string>415BB783125E86F10064D364</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -386,7 +386,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {992, 710}}</string>
 								<key>RubberWindowFrame</key>
-								<string>-471 120 1264 758 0 0 1440 878 </string>
+								<string>1 120 1264 758 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -406,7 +406,7 @@
 								<key>Frame</key>
 								<string>{{0, 715}, {992, 2}}</string>
 								<key>RubberWindowFrame</key>
-								<string>-471 120 1264 758 0 0 1440 878 </string>
+								<string>1 120 1264 758 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -570,11 +570,10 @@
 	<array>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>415D3FA310DACB28009B8AB5</string>
-		<string>41E7D5BA12554A530078F4B3</string>
 		<string>/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/cocoaJukeboxJookieFreeEdition/cocoaJukebox/cocoaJukebox.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>-471 120 1264 758 0 0 1440 878 </string>
+	<string>1 120 1264 758 0 0 1440 878 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -666,7 +665,7 @@
 			<key>WindowToolGUID</key>
 			<string>415D3FA310DACB28009B8AB5</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
