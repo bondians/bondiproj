@@ -87,12 +87,12 @@ class Tagger
   end
   
   def artist
-    return convert(@tag.artist) if @tag.title
+    return convert(@tag.artist) if @tag.artist
     return DBConstant::NO_ARTIST
   end
   
   def album
-    return convert(@tag.album) if @tag.title
+    return convert(@tag.album) if @tag.album
     return DBConstant::NO_ALBUM
   end
   

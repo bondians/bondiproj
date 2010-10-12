@@ -137,6 +137,7 @@ Find.find(options.path) do |path|
 			puts "Matches"
 			sng = Song.find copy
 			puts sng.file
+			puts ""
                     else
 			system "cp \"#{path}\" #{DEFAULT_SAVE_PATH}"
                     end
