@@ -51,10 +51,6 @@ class MP4Fixer
    return nil
   end
   
-  def baseName
-    @baseFilename
-  end
-  
 end
 
 class Tagger
@@ -79,6 +75,10 @@ class Tagger
     read_frames
   end
   
+  def baseName
+    @baseFilename
+  end
+    
   def title=(text)
     return nil unless @filetype == "mp3";
     (text = DBConstant::NO_TITLE) if text == ""
