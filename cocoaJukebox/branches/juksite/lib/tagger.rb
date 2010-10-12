@@ -74,6 +74,22 @@ class Tagger
     read_frames
   end
   
+  def title=(text)
+    @tag.title=(text)
+  end
+
+  def artist=(text)
+    @tag.artist=(text)
+  end
+  
+  def album=(text)
+    @tag.album=(text)
+  end
+  
+  def saveChanges
+    @tag.update!
+  end
+  
   def title
     return convert(@tag.title) if @tag.title
     return DBConstant::NO_TITLE
