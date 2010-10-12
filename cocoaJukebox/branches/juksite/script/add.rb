@@ -68,7 +68,7 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
 ###
 
 Find.find(options.path) do |path|
-    begin
+#    begin
         ########### This currently sucks, becaus i eventually want to modify files.. however, this is no problem
         ########### Currently as that is not implemented it <should> be fixd when file modding becomes possible
             if FileTest.file?(path) && Tagger.valid?(path)
@@ -129,7 +129,7 @@ Find.find(options.path) do |path|
                     copy = 0
                     unless testsongs.empty?
 			testsongs.each do |sng|
-			    copy = sng.title if (song.title == sng.title && song.artist == sng.artist)
+			    copy = sng.id if (song.title eq sng.title && song.artist eq sng.artist)
 			end
                     end
                     if copy > 0
@@ -145,11 +145,11 @@ Find.find(options.path) do |path|
             else
                 print "."
             end
-    rescue Exception => e
-        puts "choked on #{path}"
-        puts e.message
-        puts e.backtrace.inspect
-    end
+#    rescue Exception => e
+#        puts "choked on #{path}"
+#        puts e.message
+#        puts e.backtrace.inspect
+#    end
 end
     
     @currun.completed = Time.now
