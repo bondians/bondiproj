@@ -129,7 +129,7 @@ Find.find(options.path) do |path|
                     copy = 0
                     unless testsongs.empty?
 			copy = testsongs.inject(0) do |r, sng|
-			    if (song.title == sng.title, song.artist == sng.artist)
+			    if (song.title == sng.title && song.artist == sng.artist)
 				return song.id
 			    else
 				return 0
