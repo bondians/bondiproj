@@ -13,6 +13,7 @@ require 'optparse'
 
 totalNumberOfSongs = 0
 DEFAULT_PATH = "/Volumes/MajorTuneage/"
+DEFAULT_SAVE_PATH = "/Users/cayuse/Desktop/MajorTuneage/incoming"
 ##########################  Parse Options and all that crap
 options = OpenStruct.new
 
@@ -55,11 +56,6 @@ require "#{RAILS_ROOT}/lib/tagger"
 @songs = Song.all
 @types = Songtype.all
 
-@lastrun = Finder.lastrun
-
-puts "\n\nWas last run #{@lastrun.started} and #{@lastrun.added} songs were processed\n\n"
-@currun = Finder.fresh
-
 DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
 
 ### Important models, all have Timestamps plus whatever is below.
@@ -72,11 +68,9 @@ DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
 ###
 
 Find.find(options.path) do |path|
-    puts path
     begin
         ########### This currently sucks, becaus i eventually want to modify files.. however, this is no problem
         ########### Currently as that is not implemented it <should> be fixd when file modding becomes possible
-        if (options.full || (@lastrun.started < File.mtime(path)))
             if FileTest.file?(path) && Tagger.valid?(path)
                 ##Build a song object, while working with the rest
                 attributes = DEFAULTS
@@ -131,19 +125,30 @@ Find.find(options.path) do |path|
                     attributes[:album] = album
                 
                     song = Song.new(attributes)
-                    if song.save                        
-                        @songs.unshift(song)
-                        @currun.added += 1
-                        @currun.save
+                    testsongs = Song.find_all_by_title song.title
+                    copy = 0
+                    unless testsongs.empty?
+			copy = testsongs.inject(0) do |r, sng|
+			    if (song.title == sng.title, song.artist == sng.artist)
+				return song.id
+			    else
+				return 0
+			    end
+			end
+                    end
+                    if copy > 0
+			puts path
+			puts "Matches"
+			sng = Song.find copy
+			puts sng.file
                     else
-                        puts "Failed to save #{tag.filetype.upcase} Titled #{attributes[:title]}"
+			system "cp \"#{path}\" #{DEFAULT_SAVE_PATH}"
                     end
                 end
         
             else
                 print "."
             end
-        end
     rescue Exception => e
         puts "choked on #{path}"
         puts e.message
@@ -154,9 +159,4 @@ end
     @currun.completed = Time.now
     @currun.success = true if options.path == DEFAULT_PATH
     @currun.save
-    
-    system "rake thinking_sphinx:index RAILS_ENV=\"#{RAILS_ENV}\""
-    system "rake thinking_sphinx:stop RAILS_ENV=\"#{RAILS_ENV}\""
-    system "killall searchd"
-    system "rake thinking_sphinx:start RAILS_ENV=\"#{RAILS_ENV}\""
     
