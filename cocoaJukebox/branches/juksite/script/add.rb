@@ -175,7 +175,7 @@ Find.find(options.path) do |path|
 			    puts "Enter a new album or nothing to skip"
 			    alb = gets().chomp
 			    
-			    puts "You put Title: \"#{tit}\", Artist: \"#{art}\", Album: \"#{alb}\""
+			    puts "You put Title: #{tit}, Artist: #{art}, Album: #{alb}"
 			    puts "Does this look good? Y/N"
 				question = gets().chomp.upcase
 				if question == "Y"
