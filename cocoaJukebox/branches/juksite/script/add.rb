@@ -162,7 +162,7 @@ Find.find(options.path) do |path|
 			    puts "You are adding a song with no information, how about you spruce up your copy a bit"
 			    puts "\"#{DEFAULT_SAVE_PATH}/#{tag.baseName}\""
 			    debugger;1;1
-			    newtag = Tagger.new("\"#{DEFAULT_SAVE_PATH}/#{tag.baseName}\"")
+			    newtag = Tagger.new("#{DEFAULT_SAVE_PATH}/#{tag.baseName}")
 			    puts "Title was \"{newtag.title}\""
 			    puts "Enter a new title or nothing to skip"
 			    tit = gets().chomp
