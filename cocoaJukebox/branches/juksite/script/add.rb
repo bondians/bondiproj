@@ -128,12 +128,8 @@ Find.find(options.path) do |path|
                     testsongs = Song.find_all_by_title song.title
                     copy = 0
                     unless testsongs.empty?
-			copy = testsongs.inject(0) do |r, sng|
-			    if (song.title == sng.title && song.artist == sng.artist)
-				return song.id
-			    else
-				return 0
-			    end
+			testsongs.each do |sng|
+			    copy = sng.title if (song.title == sng.title && song.artist == sng.artist)
 			end
                     end
                     if copy > 0
