@@ -106,6 +106,8 @@ class SongsController < ApplicationController
   
   def pick
     song = Song.find params[:id]
+    list = Randlist.all
+    list.each{|l| l.destroy if l.song_id == song.id}
     req = Reqlist.new
     req.song = song
     req.save
