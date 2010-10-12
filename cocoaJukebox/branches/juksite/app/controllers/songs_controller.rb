@@ -3,7 +3,7 @@ class SongsController < ApplicationController
   def index
     params[:page] ||= 1
     if params[:search]
-      @songs = Song.search (params[:search], params[:page])
+      @songs = Song.search(params[:search], params[:page])
     
       respond_to do |format|
         format.html

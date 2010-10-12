@@ -4,7 +4,7 @@ class AlbumsController < ApplicationController
   def index
     params[:page] ||= 1
     if params[:search]
-      @albums = Album.search (params[:search], params[:page])
+      @albums = Album.search(params[:search], params[:page])
     
       respond_to do |format|
         format.html
