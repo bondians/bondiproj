@@ -75,18 +75,25 @@ class Tagger
   end
   
   def title=(text)
+    return nil if @tag.filetype != "mp3"
+    (text = DBConstant::NO_TITLE) if text == ""
     @tag.title=(text)
   end
 
   def artist=(text)
+    return nil if @tag.filetype != "mp3"
+    (text = DBConstant::NO_ARTIST) if text == ""
     @tag.artist=(text)
   end
   
   def album=(text)
+    return nil if @tag.filetype != "mp3"
+    (text = DBConstant::NO_ALBUM) if text == ""
     @tag.album=(text)
   end
   
   def saveChanges
+    return nil if @tag.filetype != "mp3"
     @tag.update!
   end
   
