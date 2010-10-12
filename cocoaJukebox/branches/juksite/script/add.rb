@@ -143,7 +143,7 @@ Find.find(options.path) do |path|
 				puts "Would you like to add anyway? Y/N"
 				question = gets().chomp.upcase
 				if question == "Y"
-				    copy = 0
+				    copy = -1
 				    answered = 1
 				elsif question == "N"
 				    answered = 1
@@ -154,7 +154,37 @@ Find.find(options.path) do |path|
 			    end
 			end
                     end
-			(system "cp \"#{path}\" #{DEFAULT_SAVE_PATH}") if copy == 0
+		    (system "cp \"#{path}\" #{DEFAULT_SAVE_PATH}") if copy < 1
+		    #### fix your mess
+		    if (tag.filetype == "mp3" && copy == -1)
+			ready = 0
+			while (ready == 0)
+			    puts "You are adding a song with no information, how about you spruce up your copy a bit"
+			    newtag = Tagger.new("\"#{DEFAULT_SAVE_PATH}/#{tag.baseName}\"")
+			    puts "Title was \"{newtag.title}\""
+			    puts "Enter a new title or nothing to skip"
+			    tit = gets().chomp
+			    
+			    puts "Artist was \"{newtag.artist}\""
+			    puts "Enter a new artist or nothing to skip"
+			    art = gets().chomp
+			    
+			    puts "Album was \"{newtag.album}\""
+			    puts "Enter a new album or nothing to skip"
+			    alb = gets().chomp
+			    
+			    puts "You put Title: \"#{tit}\", Artist: \"#{art}\", Album: \"#{alb}\""
+			    puts "Does this look good? Y/N"
+				question = gets().chomp.upcase
+				if question == "Y"
+				    ready = 1
+				    newtag.title=(tit) unless (tit == "")
+				    newtag.artist=(art) unless (art == "")
+				    newtag.album=(alb) unless (alb == "")
+				    newtag.saveChanges
+				end
+			end
+		    end
                 end
         
             else
