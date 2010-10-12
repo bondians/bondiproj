@@ -135,17 +135,18 @@ Find.find(options.path) do |path|
                     if copy > 0
 			answered = 0
 			while answered == 0
-			puts path
-			puts "Matches"
-			sng = Song.find copy
-			puts sng.file
-			puts "Would you like to add anyway? Y/N"
-			question = gets().chomp.upcase
-			if question == "Y"
-			    copy = 0
-			    answered = 1
-			elsif question == "N"
-			    answered = 1
+			    puts path
+			    puts "Matches"
+			    sng = Song.find copy
+			    puts sng.file
+			    puts "Would you like to add anyway? Y/N"
+			    question = gets().chomp.upcase
+			    if question == "Y"
+				copy = 0
+				answered = 1
+			    elsif question == "N"
+				answered = 1
+			    end
 			end
                     end
 			(system "cp \"#{path}\" #{DEFAULT_SAVE_PATH}") if copy == 0
