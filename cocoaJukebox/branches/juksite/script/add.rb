@@ -163,15 +163,15 @@ Find.find(options.path) do |path|
 			    puts "\"#{DEFAULT_SAVE_PATH}/#{tag.baseName}\""
 			    debugger;1;1
 			    newtag = Tagger.new("#{DEFAULT_SAVE_PATH}/#{tag.baseName}")
-			    puts "Title was \"{newtag.title}\""
+			    puts "Title was \"#{newtag.title}\""
 			    puts "Enter a new title or nothing to skip"
 			    tit = gets().chomp
 			    
-			    puts "Artist was \"{newtag.artist}\""
+			    puts "Artist was \"#{newtag.artist}\""
 			    puts "Enter a new artist or nothing to skip"
 			    art = gets().chomp
 			    
-			    puts "Album was \"{newtag.album}\""
+			    puts "Album was \"#{newtag.album}\""
 			    puts "Enter a new album or nothing to skip"
 			    alb = gets().chomp
 			    
