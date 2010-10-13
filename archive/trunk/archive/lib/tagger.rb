@@ -94,6 +94,11 @@ class Tagger
     @tag.album=(text)
   end
   
+  def genre=(text)
+    (text = DBConstant::NO_GENRE) if text == ""
+    @tag.genre=(text)
+  end
+  
   def saveChanges
     @tag.update!
   end

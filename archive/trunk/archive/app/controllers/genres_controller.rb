@@ -2,8 +2,16 @@ class GenresController < ApplicationController
   # GET /genres
   # GET /genres.xml
   def index
-    #@genres = Genre.find(:all)
-    @genres = Genre.search params[:search], :order => :name, :page => params[:page], :per_page => 100
+    if params[:q]
+      @genres = Genre.all :conditions => ["name like ?", params[:q] + '%']
+    else
+      #@genres = Genre.find(:all)
+      @genres = Genre.search params[:search], :order => :name, :page => params[:page], :per_page => 100
+    end
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
   # GET /genres/1

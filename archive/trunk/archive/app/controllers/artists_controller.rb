@@ -2,8 +2,16 @@ class ArtistsController < ApplicationController
   # GET /artists
   # GET /artists.xml
   def index
-    #@artists = Artist.find(:all)
-    @artists = Artist.search params[:search], :order => :name, :page => params[:page], :per_page => 100
+    if params[:q]
+      @artists = Artist.all :conditions => ["name like ?", params[:q] + '%']
+    else
+      #@artists = Artist.find(:all)
+      @artists = Artist.search params[:search], :order => :name, :page => params[:page], :per_page => 100
+    end
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
   # GET /artists/1

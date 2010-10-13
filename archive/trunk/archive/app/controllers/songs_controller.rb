@@ -33,6 +33,8 @@ class SongsController < ApplicationController
       format.mp3 { send_song_file @song}
       format.m4p { send_song_file @song}
       # make sure songtype.identifier is not the name of a "real" method!
+      ## Too Smart by 1/2 this method get's cached as available and then this bypasses
+      ## Results in a weird HTML "unpossible" error
 #      unless format.respond_to? @song.songtype.identifier
 #        format.send(@song.songtype.identifier) { send_song_file @song }
 #      end
@@ -57,6 +59,7 @@ class SongsController < ApplicationController
 
   # GET /songs/1/edit
   def edit
+    flash[:error] = "You better know what you are doing, thats why there's no button"
     @song = Song.find(params[:id])
   end
 
@@ -81,16 +84,72 @@ class SongsController < ApplicationController
   # PUT /songs/1.xml
   def update
     @song = Song.find(params[:id])
-
-    respond_to do |format|
-      if @song.update_attributes(params[:song])
-        flash[:note] = 'Song was successfully updated.'
-        format.html { redirect_to(@song) }
-        format.xml  { head :ok }
-      else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @song.errors, :status => :unprocessable_entity }
+    if (@song && tag = (Tagger.new(@song.file)) )
+      ## Title
+      title_tag = params[:title]
+      if title_tag
+        tag.title= title_tag
+        params[:song][:title] = title_tag
       end
+      ## Artist
+      artist_tag = params[:artist]
+      if artist_tag
+        artist = (Artist.find_by_name artist_tag) || Artist.new({:name=>artist_tag})
+          if artist.new_record?
+            artist.save
+          end
+        params[:song][:artist] = artist
+        tag.artist= artist_tag
+      end
+      ## Genre
+      genre_tag  =  params[:genre]
+      if genre_tag
+        genre = (Genre.find_by_name genre_tag) || Genre.new({:name=>genre_tag})
+        if genre.new_record?
+          genre.save
+        end
+        params[:song][:genre] = genre
+        tag.genre= genre_tag
+      end
+      genre ||= tag.lookup_genre
+      genre_tag ||= genre.name
+      ## Album
+      
+      album_tag  =  params[:album]
+      if album_tag
+        album = (Album.find_by_name album_tag) || Album.new({:name=>album_tag})
+        if album.new_record?
+          album = Album.new({:name=>album_tag, :genre=> genre})
+          album.save
+          album.artists.push artist
+        else
+          unless album.artists.include? artist
+            album.artists.push artist
+          end
+        end
+        params[:song][:album] = album
+        tag.album= album_tag
+      end
+      tag.saveChanges
+      b = Tagger.new(@song.file)
+      unless ( ( params[:title] && b.title == params[:title]) && ( params[:artist] && b.artist == params[:artist]) && (params[:album] && b.album == params[:album]) && (params[:genre] && b.lookup_genre == params[:genre]) )
+        flash[:error] = "Song file did not save"
+        redirect_to edit_song_path(@song)
+      end
+      
+      respond_to do |format|
+        if @song.update_attributes(params[:song])
+          flash[:note] = 'Song was successfully updated.'
+          format.html { redirect_to(@song) }
+          format.xml  { head :ok }
+        else
+          format.html { render :action => "edit" }
+          format.xml  { render :xml => @song.errors, :status => :unprocessable_entity }
+        end
+      end
+    else
+      flash[:error] = "Song or its file Was not found"
+      redirect_to(songs_url)
     end
   end
 
