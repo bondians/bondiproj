@@ -13,7 +13,7 @@ require 'optparse'
 
 totalNumberOfSongs = 0
 DEFAULT_PATH = "/Volumes/MajorTuneage/"
-DEFAULT_SAVE_PATH = "/Users/cayuse/Desktop/MajorTuneage/incoming"
+DEFAULT_SAVE_PATH = "/Volumes/MajorTuneage/incoming"
 ##########################  Parse Options and all that crap
 options = OpenStruct.new
 
@@ -154,15 +154,21 @@ Find.find(options.path) do |path|
 			    end
 			end
                     end
-		    (system "cp \"#{path}\" #{DEFAULT_SAVE_PATH}") if copy < 1
+                    destination = DEFAULT_SAVE_PATH + "/" + tag.baseName
+                    count = 1
+                    while FileTest.file?(destination)
+			destination = DEFAULT_SAVE_PATH + "/" + count.to_s + tag.baseName
+			count += 1
+                    end
+		    (system "cp \"#{path}\" \"#{destination}\"") if copy < 1
 		    #### fix your mess
 		    if (tag.filetype == "mp3" && copy == -1)
 			ready = 0
 			while (ready == 0)
 			    puts "You are adding a song with no information, how about you spruce up your copy a bit"
 			    puts "\"#{DEFAULT_SAVE_PATH}/#{tag.baseName}\""
-			    debugger;1;1
-			    newtag = Tagger.new("#{DEFAULT_SAVE_PATH}/#{tag.baseName}")
+
+			    newtag = Tagger.new(destination)
 			    puts "Title was \"#{newtag.title}\""
 			    puts "Enter a new title or nothing to skip"
 			    tit = gets().chomp
@@ -198,8 +204,5 @@ Find.find(options.path) do |path|
 #        puts e.backtrace.inspect
 #    end
 end
-    
-    @currun.completed = Time.now
-    @currun.success = true if options.path == DEFAULT_PATH
-    @currun.save
+
     

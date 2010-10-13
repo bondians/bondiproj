@@ -100,6 +100,7 @@ class Tagger
   
   def title
     return convert(@tag.title) if @tag.title
+    return @baseFilename unless @baseFilename.include?("rack")
     return DBConstant::NO_TITLE
   end
 
