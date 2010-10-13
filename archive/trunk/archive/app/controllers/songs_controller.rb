@@ -136,7 +136,7 @@ class SongsController < ApplicationController
         flash[:error] = "Song file did not save"
         redirect_to edit_song_path(@song)
       end
-      
+      params[:song][:filemod] = Time.now
       respond_to do |format|
         if @song.update_attributes(params[:song])
           flash[:note] = 'Song was successfully updated.'
