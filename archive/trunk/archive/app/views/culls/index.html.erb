@@ -12,10 +12,10 @@
     <td><%=h cull.created_at %></td>
     <td><%=h cull.file %></td>
     <% if cull.gone %>
-      <td BGCOLOR="#700">YES</td>
+      <td BGCOLOR="#7f0000">YES</td>
       <td>&nbsp;</td>
     <% else %>
-      <td BGCOLOR="#070">NO</td>
+      <td BGCOLOR="#007f00">NO</td>
       <td><%= link_to 'Un-Cull', cull, :method => :delete %></td>
     <% end %>
     <td><%=h cull.reason %></td>
