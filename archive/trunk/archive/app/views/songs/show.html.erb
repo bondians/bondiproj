@@ -2,7 +2,14 @@
   <b>Title:</b>
   <%=h @song.title %>
 </p>
-
+<% unless @song.plentries.empty? %>
+<p>
+  <h2>This song appears in the following playlists:</h2>
+  <% @song.plentries.each do |entry| %>
+  <%= "#{entry.playlist.name} belonging to #{entry.playlist.user.name}" %> 
+  <% end %>
+</p>
+<% end %>
 <p>
   <b>Track:</b>
   <%=h @song.track %> of: <%=h @song.album.songs.length %>

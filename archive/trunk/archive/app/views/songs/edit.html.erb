@@ -1,6 +1,15 @@
 
 <h1> EDITING IS VERY BETA DO NOT ACT STUPID </h1>
 
+<% unless @song.plentries.empty? %>
+<p>
+  <h2>This song appears in the following playlists:</h2>
+  <% @song.plentries.each do |entry| %>
+  <%= "#{entry.playlist.name} belonging to #{entry.playlist.user.name}" %> 
+  <% end %>
+</p>
+<% end %>
+
 <% form_for(@song) do |f| %>
   <%= f.error_messages %>
 

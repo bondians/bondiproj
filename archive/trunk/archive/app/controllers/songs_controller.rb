@@ -4,7 +4,7 @@ class SongsController < ApplicationController
   
   def index
     if params[:search]
-      @songs = Song.search params[:search], :include => [:songtype, :album, :artist, :genre], 
+      @songs = Song.search params[:search], :include => [:songtype, :album, :artist, :genre, :plentries], 
       :order => order_with_default("title", "asc") , :page => params[:page], :per_page => 100
     
       respond_to do |format|
