@@ -38,10 +38,14 @@ end
 song = Song.find_by_file old
 
 if song
-    song.pastpaths.push song.file
+    pastpath = song.pastpaths.build :attributes => {:file => song.file}
+    pastpath.save
     system "mv #{old} #{new}"
     song.file = new
     song.save
+    if ( (FileTest.file?(song.file)) && !(FileTest.file?(old)) )
+        puts "Everything looks good"
+    end
 else
     puts "Couldn't find your song: #{old}. Sumthin' musta happend to it man."
 end
