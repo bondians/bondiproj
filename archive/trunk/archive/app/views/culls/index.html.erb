@@ -1,0 +1,22 @@
+<h1>Listing culls</h1>
+
+<table>
+  <tr>
+    <th>String</th>
+    <th>Text</th>
+  </tr>
+
+<% @culls.each do |cull| %>
+  <tr>
+    <td><%=h cull.string %></td>
+    <td><%=h cull.text %></td>
+    <td><%= link_to 'Show', cull %></td>
+    <td><%= link_to 'Edit', edit_cull_path(cull) %></td>
+    <td><%= link_to 'Destroy', cull, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New cull', new_cull_path %>

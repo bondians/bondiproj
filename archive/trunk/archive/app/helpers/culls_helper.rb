@@ -1,0 +1,2 @@
+module CullsHelper
+end

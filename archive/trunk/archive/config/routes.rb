@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :culls
+
   map.resources :plentries
 
   map.resources :playlists

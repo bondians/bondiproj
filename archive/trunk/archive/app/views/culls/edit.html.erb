@@ -1,0 +1,20 @@
+<h1>Editing cull</h1>
+
+<% form_for(@cull) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :string %><br />
+    <%= f.text_field :string %>
+  </p>
+  <p>
+    <%= f.label :text %><br />
+    <%= f.text_field :text %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @cull %> |
+<%= link_to 'Back', culls_path %>
