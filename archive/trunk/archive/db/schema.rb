@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101015143943) do
+ActiveRecord::Schema.define(:version => 20101015171659) do
 
   create_table "abuses", :force => true do |t|
     t.text     "abuse"
@@ -173,6 +173,13 @@ ActiveRecord::Schema.define(:version => 20101015143943) do
   end
 
   add_index "goldberg_users", ["role_id"], :name => "fk_user_role_id"
+
+  create_table "pastpaths", :force => true do |t|
+    t.integer  "song_id"
+    t.string   "file"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "playlists", :force => true do |t|
     t.integer  "user_id"
