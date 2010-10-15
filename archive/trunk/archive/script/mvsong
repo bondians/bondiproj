@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 
+require 'rubygems'
 require 'find'
 require 'ruby-debug'
 
@@ -8,9 +9,9 @@ DEFAULT_PATH = "/Volumes/MajorTuneage/"
 RAILS_ENV="production"
 
 
-old = ARGV.shift
-new = ARGV.shift
-test = ARGV.shift
+old = ARGV.shift  #first argument
+new = ARGV.shift  #second argument
+test = ARGV.shift #third argument should be nil
 
 ### if first argument is the literal "--help" then print the following simple help.
 if old == "--help"
