@@ -2,7 +2,7 @@ class CullsController < ApplicationController
   # GET /culls
   # GET /culls.xml
   def index
-    @culls = Cull.all
+    @culls = Cull.all :order => 'created_at DESC'
 
     respond_to do |format|
       format.html # index.html.erb

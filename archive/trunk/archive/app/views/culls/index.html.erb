@@ -1,11 +1,13 @@
-<table>
+<table style= background-color: #777; height: 20px;" border="1" cellpadding="2" cellspacing="1">
   <tr>
-    <th>String</th>
-    <th>Text</th>
+    <th>Culled</th>
+    <th>File</th>
+    <th>Reason</th>
   </tr>
 
 <% @culls.each do |cull| %>
   <tr>
+    <td><%=h cull.created_at %></td>
     <td><%=h cull.file %></td>
     <td><%=h cull.reason %></td>
   </tr>
