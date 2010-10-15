@@ -157,11 +157,16 @@ class SongsController < ApplicationController
   # DELETE /songs/1.xml
   def destroy
     @song = Song.find(params[:id])
-    @song.destroy
-
-    respond_to do |format|
-      format.html { redirect_to(songs_url) }
-      format.xml  { head :ok }
+    cull = Cull.new :attributes => {:file => @song.file}
+    if cull.save
+      @song.destroy
+      respond_to do |format|
+        format.html { redirect_to(songs_url) }
+        format.xml  { head :ok }
+      end
+    else
+      flash[:error] "couldn't save cull data"
+      redirect_to(@song)
     end
   end
   
