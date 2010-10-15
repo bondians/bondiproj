@@ -45,6 +45,18 @@ song = Song.find_by_file old
 if song
     pastpath = song.pastpaths.build :attributes => {:file => song.file}
     pastpath.save
+    directories = old.split("/")
+    directories.shift
+    directories.pop
+    rebuild = ""
+    directories.each do |dir|
+        rebuild += ("/" + dir)
+        (raise "there is a real file in that path!!!") if (FileTest.file?(rebuild))
+        unless (FileTest.directory?(rebuild))
+                puts rebuild
+            system "mkdir #{rebuild}"
+        end
+    end
     system "mv #{old} #{new}"
     song.file = new
     song.save
