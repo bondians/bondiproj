@@ -58,9 +58,9 @@ if song  #did we get a song?
     rebuild = ""
     directories.each do |dir|
         rebuild += ("/" + dir)
+        puts rebuild
         (raise "there is a real file in that path!!!") if (FileTest.file?(rebuild))
         unless (FileTest.directory?(rebuild))
-                puts rebuild
             system "mkdir \"#{rebuild}\""
         end
     end
