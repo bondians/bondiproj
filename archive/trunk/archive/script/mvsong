@@ -44,7 +44,6 @@ song = Song.find_by_file old
 
 if song
     pastpath = song.pastpaths.build :attributes => {:file => song.file}
-    pastpath.save
     directories = old.split("/")
     directories.shift
     directories.pop
@@ -59,9 +58,10 @@ if song
     end
     system "mv \"#{old}\" \"#{new}\""
     song.file = new
-    song.save
     if ( (FileTest.file?(song.file)) && !(FileTest.file?(old)) )
         puts "Everything looks good"
+        pastpath.save
+        song.save
     end
 else
     puts "Couldn't find your song: #{old}. Sumthin' musta happend to it man."
