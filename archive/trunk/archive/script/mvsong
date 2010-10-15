@@ -49,6 +49,7 @@ if song
     directories.pop
     rebuild = ""
     directories.each do |dir|
+        debugger;1;1
         rebuild += ("/" + dir)
         (raise "there is a real file in that path!!!") if (FileTest.file?(rebuild))
         unless (FileTest.directory?(rebuild))
