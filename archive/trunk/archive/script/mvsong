@@ -24,6 +24,10 @@ unless( FileTest.file?(old))
     raise "Specified file: #{old}. Does not exist."
 end
 
+if ( FileTest.file?(new))
+    raise "There is something at the specified move to location. That is no good"
+end
+
 unless ((old.include? DEFAULT_PATH) && (new.include? DEFAULT_PATH))
     raise "You specified files outside of our default path. You Specified:
 #{old}

@@ -4,7 +4,7 @@ class Song < ActiveRecord::Base
   belongs_to :genre
   belongs_to :songtype
   has_many   :plentries
-  has_many   :pastpaths
+  has_many   :pastpaths, :dependent => :destroy
   validates_presence_of :songtype
 
   cattr_reader :per_page
