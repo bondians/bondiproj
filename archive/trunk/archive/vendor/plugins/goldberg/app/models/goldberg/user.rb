@@ -40,6 +40,14 @@ module Goldberg
       self.confirmation_key = Digest::SHA1.hexdigest(self.object_id.to_s +
                                                        rand.to_s)
     end
+    
+    def administrator?
+      self.role.cache[:credentials].permission_ids.include?(1)
+    end
+
+    def superUser?
+      self.role.cache[:credentials].permission_ids.include?(8)
+    end
 
     def email_valid?
       self.email &&

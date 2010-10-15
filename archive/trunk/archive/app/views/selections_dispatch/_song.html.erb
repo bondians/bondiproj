@@ -9,4 +9,8 @@
   <% unless toggledraws.include?(:no_type)     %> <td><%=h song.songtype.name %></td> <% end %>
   <% unless toggledraws.include?(:no_get)      %> <td><%= link_to 'Get', :controller => "songs", :action => "show", :id => song, :format => song.songtype.identifier %></td> <% end %>
   <% unless toggledraws.include?(:no_dnd)      %><td><%= hidden_field_tag("index[]", song.form_idx.to_i, :class=>'plentry') -%></td><% end %>
+  <% if Goldberg.user.superuser? %>
+    <td><%= link_to 'Edit', edit_song_path(song) %></td>
+    <td><%= link_to 'Destroy', song, :confirm => 'Are you sure?', :method => :delete %></td>
+    <%end%>
 </tr>
