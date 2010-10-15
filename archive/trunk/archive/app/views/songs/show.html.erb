@@ -71,7 +71,8 @@ Your Selection:
 <br />
 <EMBED SRC="<%= @song.formatted_id %>" HEIGHT="20" WIDTH="200" AUTOSTART="FALSE" CONTROLLER="TRUE">
 <br />
-
+<br />
+  <br />
 
   <% if Goldberg.user.superUser? %>
     <%= (@song.songtype.name == "mp3") ? (link_to 'Edit', edit_song_path(@song)) : "no edit" %> | 
