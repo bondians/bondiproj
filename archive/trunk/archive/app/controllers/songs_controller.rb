@@ -165,7 +165,7 @@ class SongsController < ApplicationController
         format.xml  { head :ok }
       end
     else
-      flash[:error] "couldn't save cull data"
+      flash[:error] = "couldn't save cull data"
       redirect_to(@song)
     end
   end
