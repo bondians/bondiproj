@@ -68,6 +68,8 @@ if song  #did we get a song?
         end
     end
     system "mv \"#{old}\" \"#{new}\""
+    system "chmod 775 \"#{new}\""
+    system "chown root:wheel \"#{new}\""
     song.file = new
     if ( (FileTest.file?(song.file)) && !(FileTest.file?(old)) )
         puts "Everything looks good"
