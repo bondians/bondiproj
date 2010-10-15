@@ -59,8 +59,11 @@ class SongsController < ApplicationController
 
   # GET /songs/1/edit
   def edit
-    flash[:error] = "You better know what you are doing, thats why there's no button"
     @song = Song.find(params[:id])
+    unless @song.songtype.name == "mp3"
+      flash[:error] = "It doesn't work on that song type"
+      redirect_to(songs_url)
+    end
   end
 
   # POST /songs
@@ -84,6 +87,10 @@ class SongsController < ApplicationController
   # PUT /songs/1.xml
   def update
     @song = Song.find(params[:id])
+    unless @song.songtype.name == "mp3"
+      flash[:error] = "It doesn't work on that song type"
+      redirect_to(songs_url)
+    end
     if (@song && tag = (Tagger.new(@song.file)) )
       ## Title
       title_tag = params[:title]
