@@ -38,6 +38,8 @@ ActiveRecord::Schema.define(:version => 20101015143943) do
   end
 
   create_table "culls", :force => true do |t|
+    t.string   "file"
+    t.text     "reason"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
