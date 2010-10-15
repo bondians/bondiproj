@@ -63,7 +63,7 @@ if song  #did we get a song?
         unless (FileTest.directory?(rebuild))
             system "mkdir \"#{rebuild}\""
             system "chmod 775 \"#{rebuild}\""
-            system " chown root:wheel \"#{rebuild}\""
+            system "chown root:wheel \"#{rebuild}\""
         end
     end
     system "mv \"#{old}\" \"#{new}\""
