@@ -12,7 +12,7 @@ old = ARGV.shift
 new = ARGV.shift
 test = ARGV.shift
 
-
+### if first argument is the literal "--help" then print the following simple help.
 if old == "--help"
     puts "Usage:"
     puts "./script/mvsong \"/fully/qualifed/path/to/old/file\" \"/fully/qualified/path/to/new/file\""
@@ -20,29 +20,37 @@ if old == "--help"
     exit
 end
 
+### Is there even an old file?
 unless( FileTest.file?(old))
     raise "Specified file: #{old}. Does not exist."
 end
 
+### Are you overwriting a new file?
 if ( FileTest.file?(new))
     raise "There is something at the specified move to location. That is no good"
 end
 
+### Force user to keep the files in the right place.
 unless ((old.include? DEFAULT_PATH) && (new.include? DEFAULT_PATH))
     raise "You specified files outside of our default path. You Specified:
 #{old}
 #{new}" 
 end
 
+
+### Check if they sent more arguments.. This would likely be the result of unquoted paths.
 if (test)
     raise "WTF is #{test}? Do you know what you are doing? Or do you just need to quote your paths?"
 end
 
+### Things look good, load the rails env. Wait until now for speed of checking the above.
 require File.expand_path(__FILE__ + "/../../config/environment")
 
+
+### Find the song in the database
 song = Song.find_by_file old
 
-if song
+if song  #did we get a song?
     pastpath = song.pastpaths.build :attributes => {:file => song.file}
     directories = new.split("/")
     directories.shift
