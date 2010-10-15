@@ -74,7 +74,7 @@ Your Selection:
 
 
   <% if Goldberg.user.superUser? %>
-    <%= (song.songtype.name == "mp3") ? (link_to 'Edit', edit_song_path(song)) : "can't edit" %> | 
-    <%= link_to 'Destroy', song, :confirm => 'Are you sure?', :method => :delete %> | 
+    <%= (@song.songtype.name == "mp3") ? (link_to 'Edit', edit_song_path(@song)) : "no edit" %> | 
+    <%= link_to 'Destroy', @song, :confirm => 'Are you sure?', :method => :delete %> | 
     <%end%>
 <%= link_to 'Back', songs_path %>
