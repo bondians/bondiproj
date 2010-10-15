@@ -10,7 +10,7 @@
 <% @culls.each do |cull| %>
   <tr>
     <td><%=h cull.created_at %></td>
-    <td><%=h cull.file %></td>
+    <td><%=h "\"#{cull.file}\"" %></td>
     <% if cull.gone %>
       <td BGCOLOR="#7f0000">YES</td>
       <td>&nbsp;</td>
