@@ -2,6 +2,7 @@
   <tr>
     <th>Culled</th>
     <th>File</th>
+    <th>Erased?</th>
     <th>Reason</th>
   </tr>
 
@@ -9,6 +10,11 @@
   <tr>
     <td><%=h cull.created_at %></td>
     <td><%=h cull.file %></td>
+    <% if cull.gone %>
+      <td color: #700>YES</td>
+    <% else %>
+      <td color: #070>NO</td>
+    <% end >
     <td><%=h cull.reason %></td>
   </tr>
 <% end %>
