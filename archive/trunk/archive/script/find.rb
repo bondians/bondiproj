@@ -8,7 +8,6 @@ require 'optparse'
 require 'optparse/time'
 require 'ostruct'
 require 'pp'
-require 'optparse'
 
 totalNumberOfSongs = 0
 DEFAULT_PATH = "/Volumes/MajorTuneage/"

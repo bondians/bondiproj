@@ -3,7 +3,8 @@ class Song < ActiveRecord::Base
   belongs_to :artist
   belongs_to :genre
   belongs_to :songtype
-  has_many :plentries
+  has_many   :plentries
+  has_many   :pastpaths
   validates_presence_of :songtype
 
   cattr_reader :per_page

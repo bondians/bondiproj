@@ -1,0 +1,47 @@
+#!/usr/bin/env ruby
+
+require 'find'
+require 'ruby-debug'
+
+DEFAULT_PATH = "/Volumes/MajorTuneage/"
+
+RAILS_ENV="production"
+
+#require File.expand_path(__FILE__ + "/../../config/environment")
+
+old = ARGV.shift
+new = ARGV.shift
+
+if old == "--help"
+    puts "Usage:"
+    puts "./script/mvsong \"/fully/qualifed/path/to/old/file\" \"/fully/qualified/path/to/new/file\""
+    puts "Note: You should quote your path names to use this utility"
+    exit
+end
+
+test = ARGV.shift
+
+unless( FileTest.file?(old))
+    raise "Specified file: #{old}. Does not exist."
+end
+
+unless ((old.include? DEFAULT_PATH) && (new.include? DEFAULT_PATH))
+    raise "You specified files outside of our default path. You Specified:
+#{old}
+#{new}" 
+end
+
+if (test)
+    raise "WTF is #{test}? Do you know what you are doing? Or do you just need to quote your paths?"
+end
+
+song = Song.find_by_file old
+
+if song
+    song.pastpaths.push song.file
+    system "mv #{old} #{new}"
+    song.file = new
+    song.save
+else
+    puts "Couldn't find your song: #{old}. Sumthin' musta happend to it man."
+end
