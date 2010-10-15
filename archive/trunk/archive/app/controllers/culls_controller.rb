@@ -13,4 +13,16 @@ class CullsController < ApplicationController
       format.xml  { render :xml => @culls }
     end
   end
+
+  # DELETE /songs/1
+  # DELETE /songs/1.xml
+  def destroy
+    @cull = Cull.find(params[:id])
+    @cull.destroy
+    respond_to do |format|
+      format.html { redirect_to(culls_url) }
+      format.xml  { head :ok }
+    end
+  end
+  
 end
