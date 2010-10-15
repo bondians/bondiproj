@@ -54,10 +54,10 @@ if song
         (raise "there is a real file in that path!!!") if (FileTest.file?(rebuild))
         unless (FileTest.directory?(rebuild))
                 puts rebuild
-            system "mkdir #{rebuild}"
+            system "mkdir \"#{rebuild}\""
         end
     end
-    system "mv #{old} #{new}"
+    system "mv \"#{old}\" \"#{new}\""
     song.file = new
     song.save
     if ( (FileTest.file?(song.file)) && !(FileTest.file?(old)) )
