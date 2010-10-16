@@ -257,7 +257,7 @@ fieldset.search {
 	background: #616161 url(/images/search_bg.gif) no-repeat left -76px;
 	margin-right: 5px;
 }
-.search input.box:not(value) {
+.search input.box:not([value="Rosanna"]) {
 	color: #fff;
 	background: #616161 url(/images/search_bg.gif) no-repeat lef;
 }
