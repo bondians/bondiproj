@@ -17,7 +17,7 @@ class AlbumsController < ApplicationController
   # GET /albums/1
   # GET /albums/1.xml
   def show
-    @album = Album.find(params[:id], :include => [:artists, :genre, :songs])
+    @album = Album.find(params[:id], :include => [:artists, :songs])
   end
 
   # GET /albums/new
