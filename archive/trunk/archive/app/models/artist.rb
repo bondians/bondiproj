@@ -1,9 +1,12 @@
 class Artist < ActiveRecord::Base
   has_many :songs
-  has_many :albums, :through => :songs
   
   define_index do
     indexes :name, :sortable => true
+  end
+
+  def albums
+    arts = self.songs.map{|song| song.album}.uniq
   end
   
 end
