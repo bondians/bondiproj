@@ -9,7 +9,7 @@ class Album < ActiveRecord::Base
   end
   
   def genre
-    self.songs.select{|song| song.genre.name}.first
+    self.songs.map{|song| song.genre}.first
   end
   
 end
