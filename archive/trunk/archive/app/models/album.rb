@@ -12,7 +12,7 @@ class Album < ActiveRecord::Base
   end
   
   def artists
-    self.songs.map{|song| song.artist}.uniq || []
+    self.songs.map{|song| song.artist}.uniq || [Artist.new]
   end
   
 end
