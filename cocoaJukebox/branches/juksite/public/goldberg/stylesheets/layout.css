@@ -254,8 +254,12 @@ fieldset.search {
         -moz-border-radius: 5px;
         border-radius: 5px;
 	padding: 8px 5px 0;
-	background: #616161 url(/images/search_bg.gif) no-repeat;
+	background: #616161 url(/images/search_bg.gif) no-repeat left -76px;
 	margin-right: 5px;
+}
+.search input.box:empty {
+	color: #fff;
+	background: #616161 url(/images/search_bg.gif) no-repeat;
 }
 .search input.box:focus {
         color:#fff;
