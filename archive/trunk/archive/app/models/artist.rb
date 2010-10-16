@@ -6,7 +6,7 @@ class Artist < ActiveRecord::Base
   end
 
   def albums
-    arts = self.songs.map{|song| song.album}.uniq
+    self.songs.map{|song| song.album}.uniq
   end
   
 end
