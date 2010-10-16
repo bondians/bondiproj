@@ -6,7 +6,7 @@ class AlbumsController < ApplicationController
     if params[:q]
       @albums = Album.all :conditions => ["name like ?", params[:q] + '%']
     else
-      @albums = Album.search params[:search], :order => :name, :include => [:artists, :songs], :page=> params[:page], :per_page => 10
+      @albums = Album.search params[:search], :order => :name, :include => [:songs], :page=> params[:page], :per_page => 10
     end
     respond_to do |format|
       format.html
@@ -17,7 +17,7 @@ class AlbumsController < ApplicationController
   # GET /albums/1
   # GET /albums/1.xml
   def show
-    @album = Album.find(params[:id], :include => [:artists, :songs])
+    @album = Album.find(params[:id], :include => [:songs])
   end
 
   # GET /albums/new
