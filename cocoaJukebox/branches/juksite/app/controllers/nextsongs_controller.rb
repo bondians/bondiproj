@@ -16,7 +16,7 @@ class NextsongsController < ApplicationController
         item.destroy
       end
     end
-    @song ||= Song.new
+    @song ||= Song.first ## give up something NMW
     Currentsong.setPlaying(@song)
     respond_to do |format|
       format.html # new.html.erb

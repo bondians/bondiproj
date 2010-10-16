@@ -19,7 +19,7 @@ class ArtistsController < ApplicationController
   # GET /artists/1
   # GET /artists/1.xml
   def show
-    @artist = Artist.find(params[:id], :include => :albums)
+    @artist = Artist.find params[:id]
   end
 
   # GET /artists/new

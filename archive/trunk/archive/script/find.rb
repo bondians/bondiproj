@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 
+require 'rubygems'
 require 'find'
 require 'id3lib'
 require 'mp4info'
@@ -8,6 +9,7 @@ require 'optparse'
 require 'optparse/time'
 require 'ostruct'
 require 'pp'
+require 'optparse'
 
 totalNumberOfSongs = 0
 DEFAULT_PATH = "/Volumes/MajorTuneage/"
@@ -116,14 +118,9 @@ Find.find(options.path) do |path|
                     album_tag  =  tag.album
                     album = @albums.find{|a| a.name == album_tag} || Album.new({:name=>album_tag})
                     if album.new_record?
-                        album = Album.new({:name=>album_tag, :genre=> genre})
+                        album = Album.new({:name=>album_tag})
                         album.save
-                        album.artists.push artist
                         @albums.unshift(album)
-                    else
-                        unless album.artists.include? artist
-                            album.artists.push artist
-                        end
                     end
                     attributes[:album] = album
                 
@@ -151,9 +148,5 @@ end
     @currun.completed = Time.now
     @currun.success = true if options.path == DEFAULT_PATH
     @currun.save
-    
-    system "rake thinking_sphinx:index RAILS_ENV=\"#{RAILS_ENV}\""
-    system "rake thinking_sphinx:stop RAILS_ENV=\"#{RAILS_ENV}\""
-    system "killall searchd"
-    system "rake thinking_sphinx:start RAILS_ENV=\"#{RAILS_ENV}\""
+
     

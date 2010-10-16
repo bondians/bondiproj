@@ -1,16 +1,21 @@
 class Album < ActiveRecord::Base
-  belongs_to :genre
-  has_many :albumartists, :dependent => :destroy
-  has_many :artists, :through => :albumartists
   has_many :songs
   
 
   cattr_reader :per_page
-  @@per_page = 100
+  @@per_page = 10
   
   def self.search(search, page)
-    paginate :per_page => 100, :page => page,
+    paginate :per_page => 10, :page => page,
              :conditions => ['name like ?', "%#{search}%"]
+  end
+
+  def genre
+    self.songs.map{|song| song.genre}.first
+  end
+  
+  def artists
+    self.songs.map{|song| song.artist}.uniq
   end
 
 end

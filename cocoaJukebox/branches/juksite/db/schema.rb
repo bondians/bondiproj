@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101002043049) do
+ActiveRecord::Schema.define(:version => 20101016045904) do
 
   create_table "abuses", :force => true do |t|
     t.text     "abuse"
@@ -17,22 +17,21 @@ ActiveRecord::Schema.define(:version => 20101002043049) do
     t.datetime "updated_at"
   end
 
-  create_table "albumartists", :force => true do |t|
-    t.integer  "album_id"
-    t.integer  "artist_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "albums", :force => true do |t|
     t.string   "name"
-    t.integer  "genre_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "artists", :force => true do |t|
     t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "culls", :force => true do |t|
+    t.string   "file"
+    t.text     "reason"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -173,6 +172,13 @@ ActiveRecord::Schema.define(:version => 20101002043049) do
 
   add_index "goldberg_users", ["role_id"], :name => "fk_user_role_id"
 
+  create_table "pastpaths", :force => true do |t|
+    t.integer  "song_id"
+    t.string   "file"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "playlists", :force => true do |t|
     t.integer  "user_id"
     t.string   "name"
@@ -234,6 +240,7 @@ ActiveRecord::Schema.define(:version => 20101002043049) do
     t.integer  "songtype_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.datetime "filemod"
   end
 
   create_table "songtypes", :force => true do |t|
