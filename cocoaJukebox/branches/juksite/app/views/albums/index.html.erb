@@ -1,10 +1,11 @@
 <h1>Listing albums</h1>
 
-<% form_tag albums_path, :method => 'get' do %>
-  <p>
-    <%= text_field_tag :search, params[:search] %>
-    <%= submit_tag "Search", :name => nil %>
-  </p>
+  <% form_tag albums_path, :method => 'get' do %>
+  <fieldset class="search">
+    <%= text_field_tag :search, params[:search], :class =>"box" %>
+    <button class="btn" title="Submit Search">Search</button>
+    <%#= submit_tag "Search", :name => nil, :class=>"btn" %>
+  </fieldset>
 <% end %>
 
 
