@@ -1,10 +1,12 @@
 <br />
 <h1>Listing songs</h1>
+
 <% form_tag songs_path, :method => 'get' do %>
-  <p>
-    <%= text_field_tag :search, params[:search] %>
-    <%= submit_tag "Search", :name => nil %>
-  </p>
+  <fieldset class="search">
+    <%= text_field_tag :search, params[:search], :class =>"box" %>
+    <button class="btn" title="Submit Search">Search</button>
+    <%#= submit_tag "Search", :name => nil, :class=>"btn" %>
+  </fieldset>
 <% end %>
 
 <%= draw_songs(@songs, :no_track, :no_dnd, :no_checkbox, :request_button) %>
