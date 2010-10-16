@@ -6,7 +6,7 @@ class AlbumsController < ApplicationController
     if params[:q]
       @albums = Album.all :conditions => ["name like ?", params[:q] + '%']
     else
-      @albums = Album.search params[:search], :order => :name, :include => [:artists, :genre, :songs], :page=> params[:page], :per_page => 10
+      @albums = Album.search params[:search], :order => :name, :include => [:artists, :songs], :page=> params[:page], :per_page => 10
     end
     respond_to do |format|
       format.html
