@@ -1,8 +1,6 @@
 class Album < ActiveRecord::Base
-  belongs_to :genre
-  has_many :albumartists, :dependent => :destroy
-  has_many :artists, :through => :albumartists
   has_many :songs
+  has_many :artists, :through => :songs
   
   define_index do
     indexes :name, :sortable => true
@@ -10,5 +8,8 @@ class Album < ActiveRecord::Base
     indexes genre.name, :as => :genre, :sortable => true
   end
   
+  def genre
+    self.songs.select(|song| song.genre).first
+  end
   
 end

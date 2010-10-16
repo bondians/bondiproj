@@ -1,7 +1,6 @@
 class Artist < ActiveRecord::Base
   has_many :songs
-  has_many :albumartists, :dependent => :destroy
-  has_many :albums, :through => :albumartists
+  has_many :albums, :through => :songs
   
   define_index do
     indexes :name, :sortable => true
