@@ -259,7 +259,7 @@ fieldset.search {
 }
 .search input.box:empty {
 	color: #fff;
-	background: #616161 url(/images/search_bg.gif) no-repeat;
+	background: #616161 url(/images/search_bg.gif) no-repeat left -76px;
 }
 .search input.box:focus {
         color:#fff;
