@@ -13,9 +13,6 @@ class Album < ActiveRecord::Base
   
   def artists
     arts = self.songs.map{|song| song.artist}.uniq
-    if arts.empty?
-      arts.push Artist.new
-    end
   end
   
 end
