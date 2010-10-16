@@ -8,11 +8,11 @@ class Album < ActiveRecord::Base
   end
   
   def genre
-    self.songs.map{|song| song.genre}.first
+    songs.map{|song| song.genre}.first
   end
   
   def artists
-    arts = self.songs.map{|song| song.artist}.uniq
+    arts = songs.map{|song| song.artist}.uniq
     if arts.empty?
       arts.push Artist.new
     end
