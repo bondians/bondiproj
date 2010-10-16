@@ -3,8 +3,6 @@ class Album < ActiveRecord::Base
   
   define_index do
     indexes :name, :sortable => true
-    indexes artist.name, :as => :artist, :sortable => true
-    indexes genre.name, :as => :genre, :sortable => true
   end
   
   def genre
