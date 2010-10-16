@@ -5,7 +5,7 @@
     <h1>Now Playing: None</h1>
   <% end %>
   <% form_tag songs_path, :method => 'get' do %>
-  <fieldset class="search">
+  <fieldset class="<%= params[:search] ? "searched" : "search" %>">
     <%= text_field_tag :search, params[:search], :class =>"box" %>
     <button class="btn" title="Submit Search">Search</button>
     <%#= submit_tag "Search", :name => nil, :class=>"btn" %>

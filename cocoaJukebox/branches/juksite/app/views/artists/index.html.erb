@@ -1,7 +1,7 @@
 <h1>Listing artists</h1>
 
 <% form_tag artists_path, :method => 'get' do %>
-  <fieldset class="search">
+  <fieldset class="<%= params[:search] ? "searched" : "search" %>">
     <%= text_field_tag :search, params[:search], :class =>"box" %>
     <button class="btn" title="Submit Search">Search</button>
     <%#= submit_tag "Search", :name => nil, :class=>"btn" %>
