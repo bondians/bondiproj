@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101015171659) do
+ActiveRecord::Schema.define(:version => 20101016045904) do
 
   create_table "abuses", :force => true do |t|
     t.text     "abuse"
@@ -17,9 +17,15 @@ ActiveRecord::Schema.define(:version => 20101015171659) do
     t.datetime "updated_at"
   end
 
+  create_table "albumartists", :force => true do |t|
+    t.integer  "album_id"
+    t.integer  "artist_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "albums", :force => true do |t|
     t.string   "name"
-    t.integer  "genre_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
