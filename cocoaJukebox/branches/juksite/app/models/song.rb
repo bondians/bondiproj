@@ -5,6 +5,8 @@ class Song < ActiveRecord::Base
   belongs_to :songtype
   has_many :plentries
   validates_presence_of :songtype
+  validates_presence_of :genre
+  validates_presence_of :artist
 
   cattr_reader :per_page
   @@per_page = 100
