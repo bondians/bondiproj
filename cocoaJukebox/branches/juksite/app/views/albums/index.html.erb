@@ -19,7 +19,6 @@
 <% for album in @albums %>
   <tr>
     <td><%= link_to album.name, album %></td>
-    <% debugger;1;1 %>
     <td><%=h album.artists.first.name %><%= album.artists.length > 1 ? " et al" : "" %></td>
     <td><%=h album.genre.name %></td>
   </tr>
