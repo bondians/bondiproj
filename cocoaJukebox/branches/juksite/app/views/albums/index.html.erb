@@ -19,7 +19,10 @@
 <% for album in @albums %>
   <tr>
     <td><%= link_to album.name, album %></td>
+    <% begin %>
     <td><%=h album.artists.first.name %><%= album.artists.length > 1 ? " et al" : "" %></td>
+    <% rescue %>
+    <% puts album.id; end%>
     <td><%=h album.genre.name %></td>
   </tr>
 <% end %>
