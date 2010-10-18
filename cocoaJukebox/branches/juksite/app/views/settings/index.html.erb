@@ -1,6 +1,11 @@
 <h1>Select Playlists</h1>
 
 <% form_tag :action => 'update' do%>
+<p>
+<%= check_box_tag "setting", "hidem4p", Setting.hide_protected? %>
+<h2> Hide Protected songs (.m4p)?</h2>
+</p>
+</br>
 <table width="20%">
   <hr>
     <td width="2%">Check</td>

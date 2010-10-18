@@ -7,6 +7,12 @@ class SettingsController < ApplicationController
   end
   
   def update
+    if (params[:setting] && params[:setting][:hidem4p])
+      Setting.hide_protected= true
+    else
+      Setting.hide_protected= false
+    end
+    
     if params[:playlist] && params[:playlist]["playlist_ids"]
       active =  params[:playlist]["playlist_ids"].collect{|a| a.to_i}
     else

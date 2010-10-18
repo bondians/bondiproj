@@ -1,0 +1,23 @@
+
+    song = Song.find t[0]
+    new = song.file
+    old = t[1]
+    directories = new.split("/")
+    directories.shift
+    directories.pop
+    rebuild = ""
+    directories.each do |dir|
+        rebuild += ("/" + dir)
+        puts rebuild
+        (raise "there is a real file in that path!!!") if (FileTest.file?(rebuild))
+        unless (FileTest.directory?(rebuild))
+            system "mkdir \"#{rebuild}\""
+            system "chmod 775 \"#{rebuild}\""
+            system "chown root:wheel \"#{rebuild}\""
+        end
+    end
+    system "mv \"#{old}\" \"#{new}\""
+    system "chmod 775 \"#{new}\""
+    system "chown root:wheel \"#{new}\""
+
+just us this to push the changes
