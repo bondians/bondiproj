@@ -18,7 +18,7 @@
 <td><%= check_box_tag "playlist[playlist_ids][]", playlist.id, playlist.active? %></td>
 <td><%= playlist.user.name %></td>
 <td><%= playlist.name %></td>
-<td><%= playlist.songs.length %></td>
+<td><%= playlist.plentries.length %></td>
 </tr>
 <% end %>
 </table>

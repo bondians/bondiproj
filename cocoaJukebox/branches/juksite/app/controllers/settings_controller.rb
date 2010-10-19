@@ -1,7 +1,7 @@
 class SettingsController < ApplicationController
   
   def index
-    @playlists = Playlist.all :include => [:user, :songs]
+    @playlists = Playlist.all :include => [:user, :plentries]
     @playlists.sort! {|x,y| x.user.name <=> y.user.name}
     
   end
