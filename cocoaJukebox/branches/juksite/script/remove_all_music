@@ -1,0 +1,36 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'ruby-debug'
+
+puts "This will completely wipe your database of all songs,playlists,artist, etc are you absolutely sure?\nType \"yes\" to continue."
+answer = gets().upcase.chomp
+
+exit unless answer == "YES"
+
+require File.expand_path(__FILE__ + "/../../config/environment")
+require "#{RAILS_ROOT}/lib/tagger"
+
+Song.all do |song|
+    song.destroy
+end
+
+Plentry.all do |entry|
+    entry.destroy
+end
+
+Playlist.all do |playlist|
+    playlist.destroy
+end
+
+Album.all do |album|
+    album.destroy
+end
+
+Artist.all do |artist|
+    artist.destroy
+end
+
+Genre.all do |genre|
+    genre.destroy
+end
