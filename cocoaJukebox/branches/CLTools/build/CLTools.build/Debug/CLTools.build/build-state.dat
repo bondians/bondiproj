@@ -1,0 +1,93 @@
+TCLTools
+v7
+r0
+t309469670.389940
+cCheck dependencies
+cProcessPCH /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-dkpuqqjlsavivscnlebjqcebulkd/CLTools_Prefix.pch.gch CLTools_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/CLTools.build/Debug/CLTools.build/Objects-normal/i386/CLTools.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Debug/CLTools normal i386
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004CBB923A00000000000000EE
+t1287361082
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004C46BD4600000000000013E6
+t1279704390
+s5094
+
+N/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004C11730A0000000000B37440
+t1276211978
+s11760704
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools.m
+c000000004CC1EB5700000000000003A3
+t1287777111
+s931
+i<Foundation/Foundation.h>
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools_Prefix.pch
+c000000004CC1E6C2000000000000009C
+t1287775938
+s156
+i<Foundation/Foundation.h>
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Debug/CLTools.build/Objects-normal/i386/CLTools.LinkFileList
+c000000004CC1E7020000000000000084
+t1287776002
+s132
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Debug/CLTools.build/Objects-normal/i386/CLTools.o
+t1287776870
+s7108
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Debug/CLTools
+t1287776870
+s13324
+
+N/var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-dkpuqqjlsavivscnlebjqcebulkd/CLTools_Prefix.pch.gch
+t1287776005
+s29728620
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies309469670#309469670#0(0"0(0#1#0"2436812736#0"0#
+
+CCompileC build/CLTools.build/Debug/CLTools.build/Objects-normal/i386/CLTools.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s309469670.015004
+e309469670.358196
+r1
+xCompileC
+xbuild/CLTools.build/Debug/CLTools.build/Objects-normal/i386/CLTools.o
+x/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@79"Compile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools.m309469670#309469670#0(0"0(0#0#71"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools.m2436812736#1703"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Debug/CLTools.build/CLTools-generated-files.hmap -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Debug/CLTools.build/CLTools-own-target-headers.hmap -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Debug/CLTools.build/CLTools-all-target-headers.hmap -iquote /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Debug/CLTools.build/CLTools-project-headers.hmap -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Debug -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Debug/include -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Debug/CLTools.build/DerivedSources/i386 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Debug/CLTools.build/DerivedSources -include /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-dkpuqqjlsavivscnlebjqcebulkd/CLTools_Prefix.pch -c /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools.m -o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Debug/CLTools.build/Objects-normal/i386/CLTools.o0#
+
+CLd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Debug/CLTools normal i386
+s309469670.358328
+e309469670.389874
+r1
+xLd
+x/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Debug/CLTools
+xnormal
+xi386
+lSLF07#2@86"Link /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Debug/CLTools309469670#309469670#0(0"0(0#0#0"2436812736#631"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Debug -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Debug -filelist /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Debug/CLTools.build/Objects-normal/i386/CLTools.LinkFileList -mmacosx-version-min=10.6 -framework Foundation -o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Debug/CLTools0#
+
+CProcessPCH /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-dkpuqqjlsavivscnlebjqcebulkd/CLTools_Prefix.pch.gch CLTools_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s309468802.821162
+e309468805.680855
+r1
+xProcessPCH
+x/var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-dkpuqqjlsavivscnlebjqcebulkd/CLTools_Prefix.pch.gch
+xCLTools_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@29"Precompile CLTools_Prefix.pch309468802#309468805#0(0"0(0#0#80"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools_Prefix.pch2436812736#1582"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Debug/CLTools.build/CLTools-generated-files.hmap -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Debug/CLTools.build/CLTools-own-target-headers.hmap -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Debug/CLTools.build/CLTools-all-target-headers.hmap -iquote /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Debug/CLTools.build/CLTools-project-headers.hmap -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Debug -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Debug/include -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Debug/CLTools.build/DerivedSources/i386 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Debug/CLTools.build/DerivedSources -c /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools_Prefix.pch -o /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-dkpuqqjlsavivscnlebjqcebulkd/CLTools_Prefix.pch.gch0#
+

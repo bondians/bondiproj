@@ -1,0 +1,159 @@
+TCLTools
+v7
+r1
+cCheck dependencies
+
+N/Developer/SDKs/MacOSX10.4u.sdk
+c000000004AC5F97600000000000000EE
+t1254488438
+s238
+
+N/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c00000000462EB9B00000000000001382
+t1177467312
+s4994
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004CBB923A00000000000000EE
+t1287361082
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004C46BD4600000000000013E6
+t1279704390
+s5094
+
+N/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004C11730A0000000000B37440
+t1276211978
+s11760704
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools.m
+c000000004CC1EB5700000000000003A3
+t1287777111
+s931
+i<Foundation/Foundation.h>
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools_Prefix.pch
+c000000004CC1E6C2000000000000009C
+t1287775938
+s156
+i<Foundation/Foundation.h>
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/Objects-normal/i386/CLTools
+t2
+s0
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/Objects-normal/i386/CLTools.LinkFileList
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/Objects-normal/i386/CLTools.o
+t2
+s0
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/Objects-normal/ppc/CLTools
+t2
+s0
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/Objects-normal/ppc/CLTools.LinkFileList
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/Objects-normal/ppc/CLTools.o
+t2
+s0
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/Objects-normal/x86_64/CLTools
+t2
+s0
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/Objects-normal/x86_64/CLTools.LinkFileList
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/Objects-normal/x86_64/CLTools.o
+t2
+s0
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Release/CLTools
+t2
+s0
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Release/CLTools.dSYM
+t2
+s0
+
+N/var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-avfkjzipvwsvaoeuqzeuztpxlaxb/CLTools_Prefix.pch.gch
+t2
+s0
+
+N/var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-bpjfgwffisjnztfthagjdgaiynsz/CLTools_Prefix.pch.gch
+t2
+s0
+
+N/var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-bwgkqpooqicttaherauynxybuwjq/CLTools_Prefix.pch.gch
+t2
+s0
+
+N/var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-bxoiagvezexqnafcvfgzcnlkpnpm/CLTools_Prefix.pch.gch
+t2
+s0
+
+N/var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-emfqfpkopflakybfqbhwniqrdelo/CLTools_Prefix.pch.gch
+t2
+s0
+
+N/var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-gxgtlpgaanbakpayrjevsqiruzrb/CLTools_Prefix.pch.gch
+t2
+s0
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies309469963#309469963#0(70"GCC 4.2 is not compatible with the Mac OS X 10.4 SDK (file CLTools.m)1(4@69"GCC 4.2 is not compatible with the Mac OS X 10.4 SDK (file CLTools.m)309469963#4294967295#0#0(1@0"0(0#1#0"2436812736#0"0#
+
+CCompileC build/CLTools.build/Release/CLTools.build/Objects-normal/i386/CLTools.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/CLTools.build/Release/CLTools.build/Objects-normal/ppc/CLTools.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools.m normal ppc objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/CLTools.build/Release/CLTools.build/Objects-normal/x86_64/CLTools.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCreateUniversalBinary /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Release/CLTools normal "x86_64 i386 ppc"
+r0
+
+CGenerateDSYMFile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Release/CLTools.dSYM /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Release/CLTools
+r0
+
+CLd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/Objects-normal/i386/CLTools normal i386
+r0
+
+CLd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/Objects-normal/ppc/CLTools normal ppc
+r0
+
+CLd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/Objects-normal/x86_64/CLTools normal x86_64
+r0
+
+CProcessPCH /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-avfkjzipvwsvaoeuqzeuztpxlaxb/CLTools_Prefix.pch.gch CLTools_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-bpjfgwffisjnztfthagjdgaiynsz/CLTools_Prefix.pch.gch CLTools_Prefix.pch normal ppc objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-bwgkqpooqicttaherauynxybuwjq/CLTools_Prefix.pch.gch CLTools_Prefix.pch normal ppc objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-bxoiagvezexqnafcvfgzcnlkpnpm/CLTools_Prefix.pch.gch CLTools_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-emfqfpkopflakybfqbhwniqrdelo/CLTools_Prefix.pch.gch CLTools_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-gxgtlpgaanbakpayrjevsqiruzrb/CLTools_Prefix.pch.gch CLTools_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+

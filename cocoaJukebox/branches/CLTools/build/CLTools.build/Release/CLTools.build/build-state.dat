@@ -1,0 +1,304 @@
+TCLTools
+v7
+r0
+t309470267.773919
+cCheck dependencies
+cProcessPCH /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-bxvwhquqorsxitcezaiimopykotx/CLTools_Prefix.pch.gch CLTools_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_0
+cProcessPCH /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-cyxmrtlopghstyarmjzryxdrdoac/CLTools_Prefix.pch.gch CLTools_Prefix.pch normal ppc objective-c com.apple.compilers.gcc.4_0
+cCompileC build/CLTools.build/Release/CLTools.build/Objects-normal/i386/CLTools.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools.m normal i386 objective-c com.apple.compilers.gcc.4_0
+cCompileC build/CLTools.build/Release/CLTools.build/Objects-normal/ppc/CLTools.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools.m normal ppc objective-c com.apple.compilers.gcc.4_0
+cLd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/Objects-normal/ppc/CLTools normal ppc
+cLd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/Objects-normal/i386/CLTools normal i386
+cCreateUniversalBinary /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Release/CLTools normal "i386 ppc"
+cGenerateDSYMFile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Release/CLTools.dSYM /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Release/CLTools
+
+N/Developer/SDKs/MacOSX10.4u.sdk
+c000000004AC5F97600000000000000EE
+t1254488438
+s238
+
+N/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c00000000462EB9B00000000000001382
+t1177467312
+s4994
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004CBB923A00000000000000EE
+t1287361082
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004C46BD4600000000000013E6
+t1279704390
+s5094
+
+N/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004C11730A0000000000B37440
+t1276211978
+s11760704
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools.m
+c000000004CC1ECB6000000000000037A
+t1287777462
+s890
+i<Foundation/Foundation.h>
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools_Prefix.pch
+c000000004CC1E6C2000000000000009C
+t1287775938
+s156
+i<Foundation/Foundation.h>
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/Objects-normal/i386/CLTools
+t1287777467
+s17896
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/Objects-normal/i386/CLTools.LinkFileList
+c000000004CC1EBE90000000000000086
+t1287777257
+s134
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/Objects-normal/i386/CLTools.o
+t1287777467
+s7036
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/Objects-normal/ppc/CLTools
+t1287777467
+s13888
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/Objects-normal/ppc/CLTools.LinkFileList
+c000000004CC1EBE90000000000000085
+t1287777257
+s133
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/Objects-normal/ppc/CLTools.o
+t1287777467
+s7428
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/Objects-normal/x86_64/CLTools
+t2
+s0
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/Objects-normal/x86_64/CLTools.LinkFileList
+c000000004CC1EBE90000000000000088
+t1287777257
+s136
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/Objects-normal/x86_64/CLTools.o
+t2
+s0
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Release/CLTools
+t1287777467
+s38464
+
+N/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Release/CLTools.dSYM
+t1287777467
+s102
+
+N/var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-avfkjzipvwsvaoeuqzeuztpxlaxb/CLTools_Prefix.pch.gch
+t2
+s0
+
+N/var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-bpjfgwffisjnztfthagjdgaiynsz/CLTools_Prefix.pch.gch
+t2
+s0
+
+N/var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-bwgkqpooqicttaherauynxybuwjq/CLTools_Prefix.pch.gch
+t2
+s0
+
+N/var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-bxoiagvezexqnafcvfgzcnlkpnpm/CLTools_Prefix.pch.gch
+t2
+s0
+
+N/var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-bxvwhquqorsxitcezaiimopykotx/CLTools_Prefix.pch.gch
+t1287777261
+s23896840
+
+N/var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-chooafazkhdejzfhaezspgaznjqe/CLTools_Prefix.pch.gch
+t2
+s0
+
+N/var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-cyxmrtlopghstyarmjzryxdrdoac/CLTools_Prefix.pch.gch
+t1287777264
+s22246040
+
+N/var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-emfqfpkopflakybfqbhwniqrdelo/CLTools_Prefix.pch.gch
+t2
+s0
+
+N/var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-gxgtlpgaanbakpayrjevsqiruzrb/CLTools_Prefix.pch.gch
+t2
+s0
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies309470267#309470267#0(0"0(0#1#0"2436812736#0"0#
+
+CCompileC build/CLTools.build/Release/CLTools.build/Objects-normal/i386/CLTools.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools.m normal i386 objective-c com.apple.compilers.gcc.4_0
+s309470267.331416
+e309470267.697647
+r1
+xCompileC
+xbuild/CLTools.build/Release/CLTools.build/Objects-normal/i386/CLTools.o
+x/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_0
+lSLF07#2@79"Compile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools.m309470267#309470267#0(0"0(0#0#71"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools.m2436812736#1740"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.0 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.4u.sdk -fvisibility=hidden -mmacosx-version-min=10.4 -gdwarf-2 -iquote /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/CLTools-generated-files.hmap -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/CLTools-own-target-headers.hmap -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/CLTools-all-target-headers.hmap -iquote /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/CLTools-project-headers.hmap -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Release -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Release/include -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/DerivedSources/i386 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/DerivedSources -include /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-bxvwhquqorsxitcezaiimopykotx/CLTools_Prefix.pch -c /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools.m -o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/Objects-normal/i386/CLTools.o0#
+
+CCompileC build/CLTools.build/Release/CLTools.build/Objects-normal/i386/CLTools.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/CLTools.build/Release/CLTools.build/Objects-normal/ppc/CLTools.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools.m normal ppc objective-c com.apple.compilers.gcc.4_0
+s309470267.491857
+e309470267.694394
+r1
+xCompileC
+xbuild/CLTools.build/Release/CLTools.build/Objects-normal/ppc/CLTools.o
+x/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_0
+lSLF07#2@79"Compile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools.m309470267#309470267#0(0"0(0#0#71"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools.m2436812736#1747"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.0 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.4u.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.4 -gdwarf-2 -iquote /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/CLTools-generated-files.hmap -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/CLTools-own-target-headers.hmap -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/CLTools-all-target-headers.hmap -iquote /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/CLTools-project-headers.hmap -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Release -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Release/include -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/DerivedSources/ppc -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/DerivedSources -include /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-cyxmrtlopghstyarmjzryxdrdoac/CLTools_Prefix.pch -c /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools.m -o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/Objects-normal/ppc/CLTools.o0#
+
+CCompileC build/CLTools.build/Release/CLTools.build/Objects-normal/ppc/CLTools.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools.m normal ppc objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/CLTools.build/Release/CLTools.build/Objects-normal/x86_64/CLTools.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools.m normal x86_64 objective-c com.apple.compilers.gcc.4_0
+r0
+
+CCompileC build/CLTools.build/Release/CLTools.build/Objects-normal/x86_64/CLTools.o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCreateUniversalBinary /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Release/CLTools normal "i386 ppc"
+s309470267.753981
+e309470267.758964
+r1
+xCreateUniversalBinary
+x/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Release/CLTools
+xnormal
+xi386 ppc
+lSLF07#2@61"CreateUniversalBinary build/Release/CLTools normal "i386 ppc"309470267#309470267#0(0"0(0#0#70"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/i386 ppc2436812736#450"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools    /usr/bin/lipo -create /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/Objects-normal/i386/CLTools /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/Objects-normal/ppc/CLTools -output /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Release/CLTools0#
+
+CCreateUniversalBinary /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Release/CLTools normal "x86_64 i386 ppc"
+r0
+
+CGenerateDSYMFile /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Release/CLTools.dSYM /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Release/CLTools
+s309470267.759094
+e309470267.773848
+r1
+xGenerateDSYMFile
+x/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Release/CLTools.dSYM
+x/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Release/CLTools
+lSLF07#2@65"GenerateDSYMFile build/Release/CLTools.dSYM build/Release/CLTools309470267#309470267#0(0"0(0#0#83"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Release/CLTools2436812736#277"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools    /Developer/usr/bin/dsymutil /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Release/CLTools -o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Release/CLTools.dSYM0#
+
+CLd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/Objects-normal/i386/CLTools normal i386
+s309470267.697773
+e309470267.753829
+r1
+xLd
+x/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/Objects-normal/i386/CLTools
+xnormal
+xi386
+lSLF07#2@136"Link /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/Objects-normal/i386/CLTools309470267#309470267#0(0"0(0#0#0"2436812736#688"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools    setenv MACOSX_DEPLOYMENT_TARGET 10.4    /Developer/usr/bin/gcc-4.0 -arch i386 -isysroot /Developer/SDKs/MacOSX10.4u.sdk -L/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Release -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Release -filelist /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/Objects-normal/i386/CLTools.LinkFileList -mmacosx-version-min=10.4 -framework Foundation -o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/Objects-normal/i386/CLTools0#
+
+CLd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/Objects-normal/ppc/CLTools normal ppc
+s309470267.694532
+e309470267.747183
+r1
+xLd
+x/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/Objects-normal/ppc/CLTools
+xnormal
+xppc
+old: warning: object file compiled with -mlong-branch which is no longer needed. To remove this warning, recompile without -mlong-branch: /Developer/SDKs/MacOSX10.4u.sdk/usr/lib/crt1.o
+lSLF07#2@135"Link /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/Objects-normal/ppc/CLTools309470267#309470267#0(184"ld: warning: object file compiled with -mlong-branch which is no longer needed. To remove this warning, recompile without -mlong-branch: /Developer/SDKs/MacOSX10.4u.sdk/usr/lib/crt1.o1(22@170"Object file compiled with -mlong-branch which is no longer needed. To remove this warning, recompile without -mlong-branch: /Developer/SDKs/MacOSX10.4u.sdk/usr/lib/crt1.o309470267#0#184#0(6@0"309470267#0#0#0#0#0"0(0#0#0"2436812736#685"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools    setenv MACOSX_DEPLOYMENT_TARGET 10.4    /Developer/usr/bin/gcc-4.0 -arch ppc -isysroot /Developer/SDKs/MacOSX10.4u.sdk -L/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Release -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Release -filelist /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/Objects-normal/ppc/CLTools.LinkFileList -mmacosx-version-min=10.4 -framework Foundation -o /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/Objects-normal/ppc/CLTools0#
+
+CLd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/Objects-normal/x86_64/CLTools normal x86_64
+r0
+
+CProcessPCH /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-avfkjzipvwsvaoeuqzeuztpxlaxb/CLTools_Prefix.pch.gch CLTools_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-bpjfgwffisjnztfthagjdgaiynsz/CLTools_Prefix.pch.gch CLTools_Prefix.pch normal ppc objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-bwgkqpooqicttaherauynxybuwjq/CLTools_Prefix.pch.gch CLTools_Prefix.pch normal ppc objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-bxoiagvezexqnafcvfgzcnlkpnpm/CLTools_Prefix.pch.gch CLTools_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-bxvwhquqorsxitcezaiimopykotx/CLTools_Prefix.pch.gch CLTools_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_0
+s309470057.942249
+e309470062.253662
+r1
+xProcessPCH
+x/var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-bxvwhquqorsxitcezaiimopykotx/CLTools_Prefix.pch.gch
+xCLTools_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_0
+lSLF07#2@29"Precompile CLTools_Prefix.pch309470057#309470062#0(0"0(0#0#80"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools_Prefix.pch2436812736#1617"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.0 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.4u.sdk -fvisibility=hidden -mmacosx-version-min=10.4 -gdwarf-2 -iquote /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/CLTools-generated-files.hmap -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/CLTools-own-target-headers.hmap -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/CLTools-all-target-headers.hmap -iquote /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/CLTools-project-headers.hmap -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Release -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Release/include -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/DerivedSources/i386 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/DerivedSources -c /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools_Prefix.pch -o /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-bxvwhquqorsxitcezaiimopykotx/CLTools_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-chooafazkhdejzfhaezspgaznjqe/CLTools_Prefix.pch.gch CLTools_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_0
+s309470057.940622
+e309470061.725170
+r0
+xProcessPCH
+x/var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-chooafazkhdejzfhaezspgaznjqe/CLTools_Prefix.pch.gch
+xCLTools_Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_0
+o<built-in>:0: warning: Mac OS X version 10.5 or later is needed for use of the new objc abi
+oIn file included from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:9,
+o                 from /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools_Prefix.pch:6:
+o/Developer/SDKs/MacOSX10.4u.sdk/usr/include/objc/objc.h:34:6: error: #error 64-bit not supported
+oIn file included from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:20,
+o                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSAppleEventDescriptor.h:8,
+o                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:104,
+o                 from /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools_Prefix.pch:6:
+o/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:20:6: error: #error 64-bit not supported
+oIn file included from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/DriverServices.h:32,
+o                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/CarbonCore.h:125,
+o                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:24,
+o                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:20,
+o                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSAppleEventDescriptor.h:8,
+o                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:104,
+o                 from /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools_Prefix.pch:6:
+o/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/MachineExceptions.h:286: error: syntax error before '*' token
+o/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/MachineExceptions.h:320: error: syntax error before '*' token
+oIn file included from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/CarbonCore.h:161,
+o                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:24,
+o                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:20,
+o                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSAppleEventDescriptor.h:8,
+o                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:104,
+o                 from /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools_Prefix.pch:6:
+o/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/fp.h:1338: error: 'SIGDIGLEN' undeclared here (not in a function)
+lSLF07#2@29"Precompile CLTools_Prefix.pch309470057#309470061#0(3406"<built-in>:0: warning: Mac OS X version 10.5 or later is needed for use of the new objc abiIn file included from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:9,                 from /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools_Prefix.pch:6:/Developer/SDKs/MacOSX10.4u.sdk/usr/include/objc/objc.h:34:6: error: #error 64-bit not supportedIn file included from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:20,                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSAppleEventDescriptor.h:8,                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:104,                 from /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools_Prefix.pch:6:/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:20:6: error: #error 64-bit not supportedIn file included from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/DriverServices.h:32,                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/CarbonCore.h:125,                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:24,                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:20,                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSAppleEventDescriptor.h:8,                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:104,                 from /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools_Prefix.pch:6:/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/MachineExceptions.h:286: error: syntax error before '*' token/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/MachineExceptions.h:320: error: syntax error before '*' tokenIn file included from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/CarbonCore.h:161,                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:24,                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h:20,                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSAppleEventDescriptor.h:8,                 from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:104,                 from /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools_Prefix.pch:6:/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/fp.h:1338: error: 'SIGDIGLEN' undeclared here (not in a function)6(22@68"Mac OS X version 10.5 or later is needed for use of the new objc abi309470057#0#92#0(6@10"<built-in>309470057#0#0#0#0#0"0(4@27"#error 64-bit not supported309470058#323#97#3(7@102"In file included from /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools_Prefix.pch309470058#4294967295#0#0(6@80"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools_Prefix.pch309468738#6#0#6#0#0"0(7@121"In file included from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h309470058#4294967295#0#0(6@99"/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h199160112#9#0#9#0#0"0(13@86"#error 64-bit not supported in /Developer/SDKs/MacOSX10.4u.sdk/usr/include/objc/objc.h309470058#4294967295#0#0(6@55"/Developer/SDKs/MacOSX10.4u.sdk/usr/include/objc/objc.h276181238#34#0#34#0#0"0(6@55"/Developer/SDKs/MacOSX10.4u.sdk/usr/include/objc/objc.h276181238#34#0#34#0#8"#error *0(4@27"#error 64-bit not supported309470058#934#145#5(7@102"In file included from /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools_Prefix.pch309470058#4294967295#0#0(6@80"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools_Prefix.pch309468738#6#0#6#0#0"0(7@121"In file included from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h309470058#4294967295#0#0(6@99"/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h199160112#104#0#104#0#0"0(7@133"In file included from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSAppleEventDescriptor.h309470058#4294967295#0#0(6@111"/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSAppleEventDescriptor.h199160116#8#0#8#0#0"0(7@139"In file included from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h309470058#4294967295#0#0(6@117"/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h198768451#20#0#20#0#0"0(13@134"#error 64-bit not supported in /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h309470058#4294967295#0#0(6@103"/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h276181238#20#0#20#0#0"0(6@103"/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h276181238#20#0#20#0#8"#error *0(4@29"Syntax error before '*' token309470059#2048#183#8(7@102"In file included from /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools_Prefix.pch309470059#4294967295#0#0(6@80"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools_Prefix.pch309468738#6#0#6#0#0"0(7@121"In file included from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h309470059#4294967295#0#0(6@99"/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h199160112#104#0#104#0#0"0(7@133"In file included from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSAppleEventDescriptor.h309470059#4294967295#0#0(6@111"/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSAppleEventDescriptor.h199160116#8#0#8#0#0"0(7@139"In file included from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h309470059#4294967295#0#0(6@117"/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h198768451#20#0#20#0#0"0(7@125"In file included from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h309470059#4294967295#0#0(6@103"/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h276181238#24#0#24#0#0"0(7@155"In file included from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/CarbonCore.h309470059#4294967295#0#0(6@133"/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/CarbonCore.h203396006#125#0#125#0#0"0(7@159"In file included from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/DriverServices.h309470059#4294967295#0#0(6@137"/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/DriverServices.h203396006#32#0#32#0#0"0(13@173"Syntax error before '*' token in /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/MachineExceptions.h309470059#4294967295#0#0(6@140"/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/MachineExceptions.h276181238#286#0#286#0#0"0(6@140"/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/MachineExceptions.h276181238#286#0#286#0#29"syntax error before '*' token0(4@29"Syntax error before '*' token309470059#2231#183#8(7@102"In file included from /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools_Prefix.pch309470059#4294967295#0#0(6@80"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools_Prefix.pch309468738#6#0#6#0#0"0(7@121"In file included from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h309470059#4294967295#0#0(6@99"/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h199160112#104#0#104#0#0"0(7@133"In file included from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSAppleEventDescriptor.h309470059#4294967295#0#0(6@111"/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSAppleEventDescriptor.h199160116#8#0#8#0#0"0(7@139"In file included from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h309470059#4294967295#0#0(6@117"/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h198768451#20#0#20#0#0"0(7@125"In file included from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h309470059#4294967295#0#0(6@103"/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h276181238#24#0#24#0#0"0(7@155"In file included from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/CarbonCore.h309470059#4294967295#0#0(6@133"/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/CarbonCore.h203396006#125#0#125#0#0"0(7@159"In file included from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/DriverServices.h309470059#4294967295#0#0(6@137"/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/DriverServices.h203396006#32#0#32#0#0"0(13@173"Syntax error before '*' token in /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/MachineExceptions.h309470059#4294967295#0#0(6@140"/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/MachineExceptions.h276181238#320#0#320#0#0"0(6@140"/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/MachineExceptions.h276181238#320#0#320#0#29"syntax error before '*' token0(4@47"'SIGDIGLEN' undeclared here (not in a function)309470059#3219#187#7(7@102"In file included from /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools_Prefix.pch309470059#4294967295#0#0(6@80"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools_Prefix.pch309468738#6#0#6#0#0"0(7@121"In file included from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h309470059#4294967295#0#0(6@99"/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h199160112#104#0#104#0#0"0(7@133"In file included from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSAppleEventDescriptor.h309470059#4294967295#0#0(6@111"/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSAppleEventDescriptor.h199160116#8#0#8#0#0"0(7@139"In file included from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h309470059#4294967295#0#0(6@117"/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h198768451#20#0#20#0#0"0(7@125"In file included from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h309470059#4294967295#0#0(6@103"/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h276181238#24#0#24#0#0"0(7@155"In file included from /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/CarbonCore.h309470059#4294967295#0#0(6@133"/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/CarbonCore.h203396006#161#0#161#0#0"0(13@176"'SIGDIGLEN' undeclared here (not in a function) in /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/fp.h309470059#4294967295#0#0(6@125"/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/fp.h203396007#1338#0#1338#0#0"0(6@125"/Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/fp.h203396007#1338#0#1338#0#39"'*' undeclared here (not in a function)0(0#0#80"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools_Prefix.pch2436812736#1621"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.0 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.4u.sdk -fvisibility=hidden -mmacosx-version-min=10.4 -gdwarf-2 -iquote /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/CLTools-generated-files.hmap -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/CLTools-own-target-headers.hmap -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/CLTools-all-target-headers.hmap -iquote /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/CLTools-project-headers.hmap -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Release -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Release/include -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/DerivedSources/x86_64 -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/DerivedSources -c /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools_Prefix.pch -o /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-chooafazkhdejzfhaezspgaznjqe/CLTools_Prefix.pch.gch1#
+
+CProcessPCH /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-cyxmrtlopghstyarmjzryxdrdoac/CLTools_Prefix.pch.gch CLTools_Prefix.pch normal ppc objective-c com.apple.compilers.gcc.4_0
+s309470061.725389
+e309470064.334666
+r1
+xProcessPCH
+x/var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-cyxmrtlopghstyarmjzryxdrdoac/CLTools_Prefix.pch.gch
+xCLTools_Prefix.pch
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_0
+lSLF07#2@29"Precompile CLTools_Prefix.pch309470061#309470064#0(0"0(0#0#80"/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools_Prefix.pch2436812736#1625"    cd /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.0 -x objective-c-header -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.4u.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.4 -gdwarf-2 -iquote /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/CLTools-generated-files.hmap -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/CLTools-own-target-headers.hmap -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/CLTools-all-target-headers.hmap -iquote /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/CLTools-project-headers.hmap -F/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Release -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/Release/include -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/DerivedSources/ppc -I/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/build/CLTools.build/Release/CLTools.build/DerivedSources -c /Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools_Prefix.pch -o /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-cyxmrtlopghstyarmjzryxdrdoac/CLTools_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-emfqfpkopflakybfqbhwniqrdelo/CLTools_Prefix.pch.gch CLTools_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/8X/8XuXDgOfEyKDXTd7UWbXqE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CLTools_Prefix-gxgtlpgaanbakpayrjevsqiruzrb/CLTools_Prefix.pch.gch CLTools_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
