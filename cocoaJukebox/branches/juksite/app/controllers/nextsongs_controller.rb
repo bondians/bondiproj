@@ -26,7 +26,7 @@ class NextsongsController < ApplicationController
     what = params[:do]
     if what
       case what
-      when "skipsong"
+      when "skipSong"
         system "#{app} skipsong"
       else
         
