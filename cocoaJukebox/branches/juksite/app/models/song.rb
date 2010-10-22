@@ -108,7 +108,7 @@ class Song < ActiveRecord::Base
       playlist = Playlist.all
     end
     list = playlist.collect {|a| a.songs.collect {|c| c.id}}.flatten
-    (11 - Randlist.all.length).times do |time|
+    (11 - Randlist.count).times do |time|
       new = Randlist.new
       new.song_id = list[rand(list.length)]
       new.save
