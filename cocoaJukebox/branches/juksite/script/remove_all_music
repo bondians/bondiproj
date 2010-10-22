@@ -11,26 +11,38 @@ exit unless answer == "YES"
 require File.expand_path(__FILE__ + "/../../config/environment")
 require "#{RAILS_ROOT}/lib/tagger"
 
-Song.all do |song|
+puts "Destroying songs"
+things = Song.all
+things.each do |song|
     song.destroy
 end
 
-Plentry.all do |entry|
+puts "Destroying playlist entries"
+things = Plentry.all
+things.each do |entry|
     entry.destroy
 end
 
-Playlist.all do |playlist|
+puts "Destroying playlists"
+things = Playlist.all
+things.each do |playlist|
     playlist.destroy
 end
 
-Album.all do |album|
+puts "Destroying albums"
+things = Album.all
+things.each do |album|
     album.destroy
 end
 
-Artist.all do |artist|
+puts "Destroying artists"
+things = Artist.all
+things.each do |artist|
     artist.destroy
 end
 
-Genre.all do |genre|
+puts "Destroying genres"
+things = Genre.all
+things.each do |genre|
     genre.destroy
 end
