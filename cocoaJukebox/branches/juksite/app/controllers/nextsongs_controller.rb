@@ -20,4 +20,22 @@ class NextsongsController < ApplicationController
       format.txt
     end
   end
+  
+  def action
+    app = "#{RAILS_ROOT}/script/jookieControl -action"
+    what = params[:do]
+    if what
+      case what
+      when "skipsong"
+        system "#{app} skipsong"
+      else
+        
+      end
+    end
+    respond_to do |format|
+      format.js
+    end
+  end
+  
+  
 end

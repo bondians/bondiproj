@@ -1,9 +1,13 @@
 <h1>Select Playlists</h1>
 
+<%= link_to_remote "Skip Song",
+   :url => { :controller => :nextsongs,:action => 'action', :do => :skipSong}%>
+
+
+
 <% form_tag :action => 'update' do%>
 <p>
-<%= check_box_tag "setting", "hidem4p", Setting.hide_protected? %>
-<h2> Hide Protected songs (.m4p)?</h2>
+<h2><%= check_box_tag "setting", "hidem4p", Setting.hide_protected? %> Hide Protected songs (.m4p)?</h2>
 </p>
 </br>
 <table width="20%">
