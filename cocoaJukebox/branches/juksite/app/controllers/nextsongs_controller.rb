@@ -1,7 +1,7 @@
 class NextsongsController < ApplicationController
   def index
     if Randlist.count < 10
-      Song.padRands
+      Randlist.padRands
     end
     
     item = Reqlist.first :order => :sort

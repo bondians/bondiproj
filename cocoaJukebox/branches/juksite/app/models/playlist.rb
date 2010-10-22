@@ -2,6 +2,7 @@ class Playlist < ActiveRecord::Base
 
   belongs_to :user
   has_many :plentries
+  has_many :song_ids, :through => :plentries
   has_many :songs, :through => :plentries
   
   attr_accessible :name
