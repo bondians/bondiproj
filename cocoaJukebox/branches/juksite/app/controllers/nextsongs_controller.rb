@@ -31,7 +31,7 @@ class NextsongsController < ApplicationController
       when "playerStartStop"
         system "#{app} startstop"
       when "playerPause"
-        system "#{appp} pause"
+        system "#{app} pause"
       else
         
       end
