@@ -1,7 +1,11 @@
 <h1>Select Playlists</h1>
 
 <%= link_to_remote "Skip Song",
-   :url => { :controller => :nextsongs,:action => 'action', :do => :skipSong}%>
+   :url => { :controller => :nextsongs,:action => 'action', :do => :playerSkip}%> |
+   <%= link_to_remote "Start/Stop",
+   :url => { :controller => :nextsongs,:action => 'action', :do => :playerStartStop}%> |
+   <%= link_to_remote "Pause",
+   :url => { :controller => :nextsongs,:action => 'action', :do => :playerPause}%>
 
 
 

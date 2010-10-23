@@ -26,8 +26,12 @@ class NextsongsController < ApplicationController
     what = params[:do]
     if what
       case what
-      when "skipSong"
+      when "playerSkip"
         system "#{app} skipsong"
+      when "playerStartStop"
+        system "#{app} startstop"
+      when "playerPause"
+        system "#{appp} pause"
       else
         
       end
