@@ -33,13 +33,13 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 309649755;
-			PBXWorkspaceStateSaveDate = 309649755;
+			PBXPerProjectTemplateStateSaveDate = 309667731;
+			PBXWorkspaceStateSaveDate = 309667731;
 		};
 		perUserProjectItems = {
-			414979481274DD7F008EDA4F = 414979481274DD7F008EDA4F /* PBXTextBookmark */;
-			4151252A127392C8004675F8 = 4151252A127392C8004675F8 /* PBXTextBookmark */;
-			41DB8C6D127223CF003FD822 = 41DB8C6D127223CF003FD822 /* PBXTextBookmark */;
+			41130864127511A600059042 /* PBXTextBookmark */ = 41130864127511A600059042 /* PBXTextBookmark */;
+			418B0E3B127531630063DD6D /* PBXTextBookmark */ = 418B0E3B127531630063DD6D /* PBXTextBookmark */;
+			41DB8C6D127223CF003FD822 /* PBXTextBookmark */ = 41DB8C6D127223CF003FD822 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 41DB8C1112721E53003FD822 /* Source Control */;
 		userBuildSettings = {
@@ -47,30 +47,30 @@
 	};
 	08FB7796FE84155DC02AAC07 /* CLTools.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {789, 572}}";
-			sepNavSelRange = "{1269, 0}";
-			sepNavVisRange = "{169, 725}";
+			sepNavIntBoundsRect = "{{0, 0}, {950, 793}}";
+			sepNavSelRange = "{1424, 0}";
+			sepNavVisRange = "{1044, 752}";
 		};
 	};
-	414979481274DD7F008EDA4F /* PBXTextBookmark */ = {
+	41130864127511A600059042 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 08FB7796FE84155DC02AAC07 /* CLTools.m */;
-		name = "CLTools.m: 38";
+		name = "CLTools.m: 9";
 		rLen = 0;
-		rLoc = 1269;
+		rLoc = 334;
 		rType = 0;
-		vrLen = 725;
-		vrLoc = 169;
+		vrLen = 583;
+		vrLoc = 1289;
 	};
-	4151252A127392C8004675F8 /* PBXTextBookmark */ = {
+	418B0E3B127531630063DD6D /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 08FB7796FE84155DC02AAC07 /* CLTools.m */;
-		name = "CLTools.m: 38";
+		name = "CLTools.m: 41";
 		rLen = 0;
-		rLoc = 1269;
+		rLoc = 1424;
 		rType = 0;
-		vrLen = 614;
-		vrLoc = 694;
+		vrLen = 752;
+		vrLoc = 1044;
 	};
 	41DB8C0412721E42003FD822 /* CLTools */ = {
 		isa = PBXExecutable;
