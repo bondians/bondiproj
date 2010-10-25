@@ -322,11 +322,11 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>415125291273901A004675F8</string>
+										<string>414979481274DD7F008EDA4F</string>
 										<key>history</key>
 										<array>
 											<string>41DB8C6D127223CF003FD822</string>
-											<string>410B22CC12724D3D00357802</string>
+											<string>4151252A127392C8004675F8</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -338,14 +338,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {754, 344}}</string>
+								<string>{{0, 0}, {754, 336}}</string>
 								<key>RubberWindowFrame</key>
 								<string>252 291 962 585 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>344pt</string>
+							<string>336pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -358,14 +358,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 349}, {754, 195}}</string>
+								<string>{{0, 341}, {754, 203}}</string>
 								<key>RubberWindowFrame</key>
 								<string>252 291 962 585 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>195pt</string>
+							<string>203pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -384,9 +384,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>415124C8127388B4004675F8</string>
+				<string>414979491274DD7F008EDA4F</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>415124C9127388B4004675F8</string>
+				<string>4149794A1274DD7F008EDA4F</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -525,7 +525,6 @@
 	<key>WindowOrderList</key>
 	<array>
 		<string>41DB8C0F12721E53003FD822</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -606,7 +605,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>41DB8C0F12721E53003FD822</string>
-				<string>415124CA127388B4004675F8</string>
+				<string>4149794B1274DD7F008EDA4F</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>

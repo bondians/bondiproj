@@ -5,7 +5,6 @@
 		activeExecutable = 41DB8C0412721E42003FD822 /* CLTools */;
 		activeTarget = 8DD76F960486AA7600D96B5E /* CLTools */;
 		breakpoints = (
-			41DB8C5112722267003FD822 /* CLTools.m:20 */,
 		);
 		codeSenseManager = 41DB8C1212721E53003FD822 /* Code sense */;
 		executables = (
@@ -34,17 +33,13 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 309561490;
-			PBXWorkspaceStateSaveDate = 309561490;
+			PBXPerProjectTemplateStateSaveDate = 309649755;
+			PBXWorkspaceStateSaveDate = 309649755;
 		};
 		perUserProjectItems = {
-			410B22CC12724D3D00357802 = 410B22CC12724D3D00357802 /* PBXTextBookmark */;
-			415124C7127388B4004675F8 /* PBXTextBookmark */ = 415124C7127388B4004675F8 /* PBXTextBookmark */;
-			415124D11273891C004675F8 /* PBXTextBookmark */ = 415124D11273891C004675F8 /* PBXTextBookmark */;
-			4151252412738F45004675F8 /* PBXTextBookmark */ = 4151252412738F45004675F8 /* PBXTextBookmark */;
-			415125291273901A004675F8 /* PBXTextBookmark */ = 415125291273901A004675F8 /* PBXTextBookmark */;
+			414979481274DD7F008EDA4F = 414979481274DD7F008EDA4F /* PBXTextBookmark */;
+			4151252A127392C8004675F8 = 4151252A127392C8004675F8 /* PBXTextBookmark */;
 			41DB8C6D127223CF003FD822 = 41DB8C6D127223CF003FD822 /* PBXTextBookmark */;
-			41DB8C8412722561003FD822 = 41DB8C8412722561003FD822 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 41DB8C1112721E53003FD822 /* Source Control */;
 		userBuildSettings = {
@@ -54,58 +49,28 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {789, 572}}";
 			sepNavSelRange = "{1269, 0}";
-			sepNavVisRange = "{533, 759}";
+			sepNavVisRange = "{169, 725}";
 		};
 	};
-	410B22CC12724D3D00357802 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 08FB7796FE84155DC02AAC07 /* CLTools.m */;
-		name = "CLTools.m: 18";
-		rLen = 0;
-		rLoc = 746;
-		rType = 0;
-		vrLen = 824;
-		vrLoc = 0;
-	};
-	415124C7127388B4004675F8 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 08FB7796FE84155DC02AAC07 /* CLTools.m */;
-		name = "CLTools.m: 20";
-		rLen = 0;
-		rLoc = 837;
-		rType = 0;
-		vrLen = 784;
-		vrLoc = 34;
-	};
-	415124D11273891C004675F8 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 08FB7796FE84155DC02AAC07 /* CLTools.m */;
-		name = "CLTools.m: 4";
-		rLen = 154;
-		rLoc = 121;
-		rType = 0;
-		vrLen = 860;
-		vrLoc = 0;
-	};
-	4151252412738F45004675F8 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 08FB7796FE84155DC02AAC07 /* CLTools.m */;
-		name = "CLTools.m: 6";
-		rLen = 0;
-		rLoc = 255;
-		rType = 0;
-		vrLen = 863;
-		vrLoc = 34;
-	};
-	415125291273901A004675F8 /* PBXTextBookmark */ = {
+	414979481274DD7F008EDA4F /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 08FB7796FE84155DC02AAC07 /* CLTools.m */;
 		name = "CLTools.m: 38";
 		rLen = 0;
 		rLoc = 1269;
 		rType = 0;
-		vrLen = 759;
-		vrLoc = 533;
+		vrLen = 725;
+		vrLoc = 169;
+	};
+	4151252A127392C8004675F8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* CLTools.m */;
+		name = "CLTools.m: 38";
+		rLen = 0;
+		rLoc = 1269;
+		rType = 0;
+		vrLen = 614;
+		vrLoc = 694;
 	};
 	41DB8C0412721E42003FD822 /* CLTools */ = {
 		isa = PBXExecutable;
@@ -153,24 +118,6 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
-	41DB8C5112722267003FD822 /* CLTools.m:20 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 08FB7796FE84155DC02AAC07 /* CLTools.m */;
-		functionName = "main()";
-		hitCount = 1;
-		ignoreCount = 0;
-		lineNumber = 20;
-		location = CLTools;
-		modificationTime = 309469809.9418319;
-		originalNumberOfMultipleMatches = 1;
-		state = 1;
-	};
 	41DB8C6412722370003FD822 /* objc.h */ = {
 		isa = PBXFileReference;
 		lastKnownFileType = sourcecode.c.h;
@@ -187,16 +134,6 @@
 		rType = 0;
 		vrLen = 434;
 		vrLoc = 1015;
-	};
-	41DB8C8412722561003FD822 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 08FB7796FE84155DC02AAC07 /* CLTools.m */;
-		name = "CLTools.m: 14";
-		rLen = 0;
-		rLoc = 746;
-		rType = 0;
-		vrLen = 824;
-		vrLoc = 0;
 	};
 	8DD76F960486AA7600D96B5E /* CLTools */ = {
 		activeExec = 0;
