@@ -15,7 +15,7 @@ class SettingsController < ApplicationController
     newVolume = params[:newVolume].to_f
     unless (currentVolume == newVolume)
       app = "#{RAILS_ROOT}/script/jookieControl -volume"
-      system "#{app} newVolume"
+      system "#{app} #{newVolume}"
     end
     if (params[:setting] && params[:setting][:hidem4p])
       Setting.hide_protected= true
