@@ -17,13 +17,13 @@ class SettingsController < ApplicationController
       app = "#{RAILS_ROOT}/script/jookieControl -volume"
       system "#{app} #{newVolume}"
     end
-    if (params[:setting] && params[:setting][:hidem4p])
+    if (params[:setting] && params[:setting] == "hidem4p")
       Setting.hide_protected= true
     else
       Setting.hide_protected= false
     end
     
-    if params[:playlist] && params[:playlist]["playlist_ids"]
+    if (params[:playlist] && params[:playlist]["playlist_ids"])
       active =  params[:playlist]["playlist_ids"].collect{|a| a.to_i}
     else
       active = []

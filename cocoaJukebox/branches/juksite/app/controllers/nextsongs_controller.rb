@@ -1,11 +1,23 @@
 class NextsongsController < ApplicationController
   def index
+    item = nil
     if Randlist.count < 10
       Randlist.padRands
     end
-    
-    item = Reqlist.first :order => :sort
-    item ||= Randlist.first :order => :sort
+    if Setting.hide_protected?
+      until (item && item.song.songtype_id != 2)
+        item.destroy if item
+        if Randlist.count < 10
+          Randlist.padRands
+        end
+        item = Reqlist.first :order => :sort
+        item ||= Randlist.first :order => :sort
+      end
+    else
+      item = Reqlist.first :order => :sort
+      item ||= Randlist.first :order => :sort
+    end
+      
     
     if item
       @song = item.song

@@ -1,3 +1,14 @@
+<% if (Setting.hide_protected? && song.songtype_id == 2) %>
+<tr id="<%=song.id%>">
+  <% unless toggledraws.include?(:no_checkbox) %> <td>&nbsp;</td> <% end %>
+  <% if toggledraws.include?(:request_button)  %> <td>&nbsp;</td> <% end %>
+  <td><%= song.title %></td>
+  <% unless toggledraws.include?(:no_track)    %> <td><%= song.track %></td><% end %>
+  <% unless toggledraws.include?(:no_artist)   %> <td><%= link_to song.artist.name, song.artist %></td> <% end %>
+  <% unless toggledraws.include?(:no_album)    %> <td><%= link_to song.album.name, song.album %></td> <% end %>
+  <% unless toggledraws.include?(:no_genre)    %> <td><%=h song.genre.name %></td> <% end %>
+</tr>
+<% else %>
 <tr id="<%=song.id%>">
   <% unless toggledraws.include?(:no_checkbox) %> <td><%= check_box_tag("songs[]", song.id, false, :class=>'song') %> </td> <% end %>
   <% if toggledraws.include?(:request_button)  %> <td><%= link_to "Request", :controller => "songs", :id => song, :action => :pick %> </td> <% end %>
@@ -7,4 +18,5 @@
   <% unless toggledraws.include?(:no_album)    %> <td><%= link_to song.album.name, song.album %></td> <% end %>
   <% unless toggledraws.include?(:no_genre)    %> <td><%=h song.genre.name %></td> <% end %>
 </tr>
+<% end %>
 
