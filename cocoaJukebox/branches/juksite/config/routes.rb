@@ -7,7 +7,7 @@ ActionController::Routing::Routes.draw do |map|
 
   
   map.resources :sonviews
-  
+  map.resources :currentsongs
   map.resources :songtypes
   map.resources :selections
   map.resources :settings
