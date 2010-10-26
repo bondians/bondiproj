@@ -1,0 +1,18 @@
+<br />
+<h1>Recently Played Songs</h1>
+<% songs = @playentries.map{|s| s.song} %>
+
+<% form_tag songs_path, :method => 'get' do %>
+  <fieldset class="<%= params[:search] ? "searched" : "search" %>">
+    <%= text_field_tag :search, params[:search], :class =>"box" %>
+    <button class="btn" title="Submit Search">Search</button>
+    <%#= submit_tag "Search", :name => nil, :class=>"btn" %>
+  </fieldset>
+<% end %>
+
+<%= draw_songs(songs, :no_track, :no_dnd, :no_checkbox, :request_button) %>
+
+<br />
+
+<%= will_paginate @playentries %>
+<br>
