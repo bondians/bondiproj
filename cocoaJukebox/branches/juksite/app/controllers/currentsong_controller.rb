@@ -1,2 +1,0 @@
-class CurrentsongController < ApplicationController
-end
