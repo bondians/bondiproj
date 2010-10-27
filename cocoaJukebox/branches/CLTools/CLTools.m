@@ -16,8 +16,9 @@ int main (int argc, const char * argv[]) {
 	NSString *argument = [args stringForKey:@"action"];
 	NSDictionary *dict;
 	NSNumber *volume = [NSNumber numberWithFloat: [args floatForKey:@"volume"]];
+        NSString *stringVolume = [args stringForKey: @"volume"];
         
-	if (argument == nil && volume == nil)
+	if (argument == nil && stringVolume == nil)
 	{
 		NSLog(@"A command Line Argument is required:\n-action skipsong\n-action startstop\n-action pause\n-volume <float 0.0 - 1.0>");
 	}
@@ -40,7 +41,7 @@ int main (int argc, const char * argv[]) {
 							object: nil userInfo: nil deliverImmediately: YES];
 	}
 	
-	if (volume)
+	if (stringVolume)
 	{
 		NSLog(@"volume was %f", [volume floatValue]);
 		dict = [NSDictionary dictionaryWithObjectsAndKeys:
@@ -49,7 +50,7 @@ int main (int argc, const char * argv[]) {
 				nil];
 		[distributedNotificationCenter postNotificationName: kJookiePlayerSetVolume
 									   object: nil userInfo: dict deliverImmediately: YES];
-		NSLog(@"volume was %f", [[dict objectForKey: @"volume"] floatValue]);
+	//	NSLog(@"volume was %f", [[dict objectForKey: @"volume"] floatValue]);
 
 	//	[distributeNotificationCenter
 	}
