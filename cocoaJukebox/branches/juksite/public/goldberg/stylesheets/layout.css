@@ -18,13 +18,13 @@ text-align:center;
 }
 
 a {
-color:#505050;
+color:#FFFFFF;
 font-weight:bold;
 text-decoration:none;
 }
 
 a:hover {
-color:#808080;
+color:#00FFFF;
 text-decoration:underline;
 }
 
@@ -56,7 +56,7 @@ div.header img.logo_right {
 float: right ;
 height:200px ;
 margin:0 0 0 0px ;
-border:0 0 0 0px ;
+border:0px ;
 }
 
 div.header p {
@@ -223,14 +223,16 @@ background:#fafcff url(/images/leaf.png) center center;
 /*border:1px solid #909090;*/
 -moz-border-radius: 15px;
 border-radius: 15px;
-color:black;
+color:white;
 padding:15px 20px 5px;
 }
 
 .content {
 margin:0 200px;
 }
-
+a{
+color:white;
+}
 fieldset.search {
 	border: none;
 	width: 243px;
@@ -336,8 +338,12 @@ th
 background-color:green;
 color:white;
 }
-a{
+table a:link{
 color:black;
+}
+
+table a:hover{
+color:#00FFFF;
 }
 tr:nth-child(even) {
 background-color: #FFF;
