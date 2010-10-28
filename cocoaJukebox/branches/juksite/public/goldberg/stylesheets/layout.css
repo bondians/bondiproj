@@ -48,20 +48,27 @@ width:100%;
 div.header {
 color:#ffffff;
 height:85px;
-margin:0 20px 10px;
+margin:-5px 10px;
 text-align:left;
+}
+
+div.header img.logo_left {
+float: left ;
+height:200px ;
+margin:0px ;
+border:0px ;
 }
 
 div.header img.logo_right {  
 float: right ;
 height:200px ;
-margin:0 0 0 0px ;
+margin:0px ;
 border:0px ;
 }
 
 div.header p {
 line-height:1.5em;
-margin:0 0 0px;
+margin:0px;
 }
 
 div.header p.right_text { 
@@ -71,17 +78,18 @@ text-align: right ;
 div.header h1, div.header h2 {
 font-weight:400;
 letter-spacing:-2px;
-margin:0;
+margin-left:200px;
 padding:0;
 }
 
 div.header h1 {
-font-size:2.4em;
+font-size:3.0em;
 padding-top:15px;
 }
 
 div.header h2 {
-font-size:1.6em;
+font-size:1.5em;
+margin-top:-20px;
 }
 
 /*** Horizontal menu ***/
@@ -189,11 +197,13 @@ padding-left: 0px;
 }
 
 ul.sidemenu li a {
-background:#ED8F1F url(/images/button.png) center center repeat-x;;
+/*** background:#ED8F1F url(/images/button.png) center center repeat-x;; ***/
+background:#008B00 url(/images/button.png) center center repeat-x;
 border:1px solid #4F3530;
 -moz-border-radius: 5px;
 border-radius: 5px;
-color:#000;
+color:#FFFFC0;
+font-weight:bold;
 display:block;
 margin-top:8px;
 padding:5px 4px 4px 10px;
@@ -211,7 +221,8 @@ width:134px;
 }
 
 ul.sidemenu a:hover, ul.sidemenu > li.selected > a {
-background:#FFFFAF url(/images/button.png) center center repeat-x;
+/*** background:#FFFFAF url(/images/button.png) center center repeat-x; ***/
+background:#CD6839 url(/images/button.png) center center repeat-x;
 text-decoration:none;
 }
 
@@ -223,7 +234,7 @@ background:#fafcff url(/images/leaf.png) center center;
 /*border:1px solid #909090;*/
 -moz-border-radius: 15px;
 border-radius: 15px;
-color:white;
+color:#FFF8C0;
 padding:15px 20px 5px;
 }
 
@@ -231,7 +242,7 @@ padding:15px 20px 5px;
 margin:0 200px;
 }
 a{
-color:white;
+color:#FFFFFF;
 }
 fieldset.search {
 	border: none;
@@ -335,8 +346,8 @@ border:1px solid green;
 
 th
 {
-background-color:green;
-color:white;
+background-color:#008000;
+color:#FFFF00; 
 }
 table a:link{
 color:black;
@@ -347,21 +358,25 @@ color:black;
 }
 
 table a:hover{
-color:#00FFFF;
+color:#EE3278;
 }
 tr:nth-child(even) {
-background-color: #FFF;
+background-color: #FEFFEF;
+color:#8B4513;
+font-weight:bold;
 /* for IE */
-filter:alpha(opacity=60);
+filter:alpha(opacity=70);
 /* CSS3 standard */
-opacity:0.6;
+opacity:0.7;
 }
 tr:nth-child(odd) {
 background-color: #EAFFD3;
+color:#006400;
+font-weight:bold;
 /* for IE */
-filter:alpha(opacity=60);
+filter:alpha(opacity=70);
 /* CSS3 standard */
-opacity:0.6;
+opacity:0.7;
 
 }
 
