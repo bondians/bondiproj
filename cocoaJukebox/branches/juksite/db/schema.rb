@@ -238,7 +238,7 @@ ActiveRecord::Schema.define(:version => 20101028204226) do
     t.integer  "size"
     t.integer  "pre_id"
     t.integer  "post_id"
-    t.float    "fade_duration",  :default => -1.0
+    t.float    "fade_duration"
     t.float    "volume",         :default => 0.7
     t.boolean  "fade_in",        :default => true
     t.integer  "user_id"
