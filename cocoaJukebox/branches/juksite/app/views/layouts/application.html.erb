@@ -7,9 +7,9 @@
 
 <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
 
-<link rel="stylesheet" href="/goldberg/stylesheets/goldberg.css" 
+<link rel="stylesheet" href="/themes/<%= theme -%>/stylesheets/theme.css" 
   type="text/css" media="screen" />
-<link rel="stylesheet" href="/goldberg/stylesheets/layout.css" 
+<link rel="stylesheet" href="/themes/<%= theme -%>/stylesheets/layout.css" 
   type="text/css" media="screen" />
 
 
@@ -33,8 +33,8 @@
      <div class="container">
 
      <div class="header">
-	  <img class="logo_right" src="/images/jack.png"/>
-          <a href="/settings"><img class="logo_left" src="/images/jukebox.png"/></a>
+	  <img class="logo_right" src="<%= upper_right -%>"/>
+          <a href="/settings"><img class="logo_left" src="<%= jukebox_image -%>"/></a>
 <h1>The Jukebox</h1>
 <h2>Relax and enjoy.</h2>
      </div> <!-- "header -->
