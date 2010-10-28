@@ -1,11 +1,7 @@
 # Methods added to this helper will be available to all templates in the application.
 module ApplicationHelper
   def theme
-      a = Setting.first
-  if a
-    @theme = a.theme
-  end
-  @theme ||= "standard"
+      Setting.theme
   end
   
   def upper_right

@@ -48,7 +48,10 @@
 <p>
 <%= check_box_tag "setting", "hidem4p", Setting.hide_protected? %> Hide Protected songs (.m4p)?
 </p>
-
+<p>
+  Theme:<% @setting.theme ||= "standard" %>
+  <%= select_tag :theme, options_for_select(@themes, @setting.theme) %>
+</p>
 <table width="20%">
   <tr>
     <td width="2%">Check</td>

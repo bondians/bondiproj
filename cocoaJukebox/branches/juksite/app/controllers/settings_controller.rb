@@ -3,6 +3,8 @@ class SettingsController < ApplicationController
   def index
     @playlists = Playlist.all :include => [:user, :plentries]
     @playlists.sort! {|x,y| x.user.name <=> y.user.name}
+    @setting = Setting.current
+    @themes = Setting.themes
     vol = `defaults read com.deepbondi.cocoaJukebox kMasterVolume`
     vol = 1.0 if (vol.empty?)
     @currentVolume = vol.to_f
@@ -22,7 +24,9 @@ class SettingsController < ApplicationController
     else
       Setting.hide_protected= false
     end
-    
+    if (params[:theme] && params[:theme] != Setting.theme)
+      Setting.theme= params[:theme]
+    end
     if (params[:playlist] && params[:playlist]["playlist_ids"])
       active =  params[:playlist]["playlist_ids"].collect{|a| a.to_i}
     else
