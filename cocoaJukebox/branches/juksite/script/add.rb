@@ -124,7 +124,7 @@ Find.find(options.path) do |path|
                     copy = 0
                     unless testsongs.empty?
 			testsongs.each do |sng|
-			    copy = sng.id if (song.title == sng.title && song.artist == sng.artist)
+			    copy = sng.id if (song.title == sng.title && song.artist == sng.artist && sng.songtype_id != 2)
 			end
                     end
                     if copy > 0
