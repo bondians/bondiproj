@@ -362,7 +362,7 @@ table a:hover{
 color:#EE3278;
 }
 tr:nth-child(even) {
-background-color: #552E69;
+background-color: #894aaa;
 color:#000000;
 font-weight:bold;
 /* for IE */
@@ -371,7 +371,7 @@ filter:alpha(opacity=70);
 opacity:0.7;
 }
 tr:nth-child(odd) {
-background-color: #f5851f;
+background-color: #f79944;
 color:#000000;
 font-weight:bold;
 /* for IE */
@@ -437,6 +437,13 @@ background:#e2710a;
 border:1px solid #000000;
 margin:0 4px 0 0;
 width:100px;
+}
+
+select {
+background:#f79944;
+border:5px solid #894aaa;
+-moz-border-radius: 5px;
+border-radius: 5px;
 }
 
 input[type="submit"] {
