@@ -155,7 +155,10 @@ Find.find(options.path) do |path|
 			destination = DEFAULT_SAVE_PATH + "/" + count.to_s + tag.baseName
 			count += 1
                     end
-		    (system "cp \"#{path}\" \"#{destination}\"") if copy < 1
+                    if (copy < 1)
+			system "cp \"#{path}\" \"#{destination}\""
+			system "touch \"#{path}\" \"#{destination}\""
+		    end
 		    #### fix your mess
 		    if (tag.filetype == "mp3" && copy == -1)
 			ready = 0
