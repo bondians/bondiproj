@@ -9,7 +9,7 @@ long as the proper credits are given to the original author.
 */
 
 body {
-background:#F0F0F0 url(/themes/standard/images/far_background.jpg) repeat;
+background:#F0F0F0 url(/themes/Jeff%20Thanksgiving/images/far_background.jpg) repeat;
 color:#303030;
 font:76% Verdana,Tahoma,Arial,sans-serif;
 margin:0;
@@ -198,7 +198,7 @@ padding-left: 0px;
 }
 
 ul.sidemenu li a {
-background:#203030 url(/themes/standard/images/button.png) center center repeat-x;
+background:#203030 url(/themes/Jeff%20Thanksgiving/images/button.png) center center repeat-x;
 border:1px solid #4F3530;
 -moz-border-radius: 5px;
 border-radius: 5px;
@@ -221,7 +221,7 @@ width:134px;
 }
 
 ul.sidemenu a:hover, ul.sidemenu > li.selected > a {
-background:#A44F3A url(/themes/standard/images/button.png) center center repeat-x;
+background:#A44F3A url(/themes/Jeff%20Thanksgiving/images/button.png) center center repeat-x;
 text-decoration:none;
 }
 
@@ -229,7 +229,7 @@ text-decoration:none;
 /*** Content ***/
 
 .content {
-background:#FAFCFF url(/themes/standard/images/content_background.png) center center;
+background:#FAFCFF url(/themes/Jeff%20Thanksgiving/images/content_background.png) center center;
 /*border:1px solid #909090;*/
 -moz-border-radius: 15px;
 border-radius: 15px;
