@@ -9,7 +9,7 @@ long as the proper credits are given to the original author.
 */
 
 body {
-background:#f0f0f0 url(/themes/standard/images/far_background.jpg) repeat;
+background:#f0f0f0 url(/themes/Dave%20Halloween/images/far_background.gif) repeat;
 color:#303030;
 font:76% Verdana,Tahoma,Arial,sans-serif;
 margin:0;
@@ -198,11 +198,11 @@ padding-left: 0px;
 
 ul.sidemenu li a {
 /*** background:#ED8F1F url(/images/button.png) center center repeat-x;; ***/
-background:#830CF1 url(/themes/standard/images/button.png) center center repeat-x;
+background:#830CF1 url(/themes/Dave%20Halloween/images/button.gif) center center repeat-x;
 border:1px solid #4F3530;
 -moz-border-radius: 5px;
-border-radius: 5px;
-color:#FFFFC0;
+border-radius: 10px;
+color:#BCBCBC;
 font-weight:bold;
 display:block;
 margin-top:8px;
@@ -222,7 +222,8 @@ width:134px;
 
 ul.sidemenu a:hover, ul.sidemenu > li.selected > a {
 /*** background:#FFFFAF url(/images/button.png) center center repeat-x; ***/
-background:#9FE821 url(/themes/standard/images/button.png) center center repeat-x;
+background:#9FE821 url(/themes/Dave%20Halloween/images/button.gif) center center repeat-x;
+color:#FFFFFF;
 text-decoration:none;
 }
 
@@ -230,7 +231,7 @@ text-decoration:none;
 /*** Content ***/
 
 .content {
-background:#fafcff url(/themes/standard/images/content_background.png) center center;
+background:#fafcff url(/themes/Dave%20Halloween/images/content_background.jpg) center center;
 /*border:1px solid #909090;*/
 -moz-border-radius: 15px;
 border-radius: 15px;
