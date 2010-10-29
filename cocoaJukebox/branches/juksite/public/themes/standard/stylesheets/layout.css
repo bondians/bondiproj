@@ -9,7 +9,7 @@ long as the proper credits are given to the original author.
 */
 
 body {
-background:#F0F0F0 url(/themes/standard/images/far_background.jpg) repeat;
+background:#F0F0F0 url(/themes/standard/images/far_background.jpg) repeat-x;
 color:#303030;
 font:76% Verdana,Tahoma,Arial,sans-serif;
 margin:0;
@@ -46,6 +46,7 @@ width:100%;
 /*** Header section ***/
 
 div.header {
+font:0% Verdana,Tahoma,Arial,sans-serif;
 color:#FFFFF0;
 height:85px;
 margin:-5px 10px;
@@ -61,9 +62,6 @@ border:0px ;
 
 div.header img.logo_right {  
 float: right ;
-height:200px ;
-margin:0px ;
-border:0px ;
 }
 
 div.header p {
@@ -202,7 +200,7 @@ background:#203030 url(/themes/standard/images/button.png) center center repeat-
 border:1px solid #4F3530;
 -moz-border-radius: 5px;
 border-radius: 5px;
-color:#FFFFC0;
+color:#FFFFFF;
 font-weight:bold;
 display:block;
 margin-top:8px;
@@ -222,6 +220,7 @@ width:134px;
 
 ul.sidemenu a:hover, ul.sidemenu > li.selected > a {
 background:#A44F3A url(/themes/standard/images/button.png) center center repeat-x;
+color:#000000;
 text-decoration:none;
 }
 
@@ -229,11 +228,12 @@ text-decoration:none;
 /*** Content ***/
 
 .content {
-background:#FAFCFF url(/themes/standard/images/content_background.png) center center;
-/*border:1px solid #909090;*/
+/*background:#FAFCFF url(/themes/standard/images/content_background.png) center center;
+border:1px solid #909090;*/
+background:#FAFCFF;
 -moz-border-radius: 15px;
 border-radius: 15px;
-color:#FFF8C0;
+color:#000000;
 padding:15px 20px 5px;
 }
 
