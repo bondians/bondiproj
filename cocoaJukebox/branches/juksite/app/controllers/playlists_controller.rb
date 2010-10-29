@@ -38,10 +38,6 @@ class PlaylistsController < ApplicationController
   # GET /playlists/1/edit
   def edit
     @playlist = Playlist.find(params[:id], :include=>[:user, :songs])
-    if @playlist.user != Goldberg.user
-      flash[:error] = "You cannot Edit other users' playlists"
-      redirect_to(@playlist)
-    end
   end
 
   # POST /playlists
@@ -49,7 +45,7 @@ class PlaylistsController < ApplicationController
   def create
     
     @playlist = Playlist.new(params[:playlist])
-    @playlist.user_id = Goldberg.user.id
+    @playlist.user = User.find_by_name "deepbondi"
     
     respond_to do |format|
       if @playlist.save

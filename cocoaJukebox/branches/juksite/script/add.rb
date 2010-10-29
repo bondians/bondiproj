@@ -95,7 +95,6 @@ Find.find(options.path) do |path|
                     artist_tag = tag.artist
                     artist = @artists.find{|a| a.name == artist_tag} || Artist.new({:name=>artist_tag})
                     if artist.new_record?
-                        artist.save
                         @artists.unshift(artist)
                     end
                     attributes[:artist] = artist
@@ -104,7 +103,6 @@ Find.find(options.path) do |path|
                     genre_tag  =  tag.lookup_genre
                     genre = @genres.find{|g| g.name == genre_tag} || Genre.new({:name=>genre_tag})
                     if genre.new_record?
-                        genre.save
                         @genres.unshift(genre)
                     end
                     attributes[:genre] = genre
@@ -114,7 +112,6 @@ Find.find(options.path) do |path|
                     album = @albums.find{|a| a.name == album_tag} || Album.new({:name=>album_tag})
                     if album.new_record?
                         album = Album.new({:name=>album_tag})
-                        album.save
                         @albums.unshift(album)
                     end
                     attributes[:album] = album

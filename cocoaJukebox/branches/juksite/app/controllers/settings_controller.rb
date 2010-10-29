@@ -24,6 +24,11 @@ class SettingsController < ApplicationController
     else
       Setting.hide_protected= false
     end
+    if (params[:editing] && params[:editing] == "playlists")
+      Setting.allow_playlists= true
+    else
+      Setting.allow_playlists= false
+    end
     if (params[:theme] && params[:theme] != Setting.theme)
       Setting.theme= params[:theme]
     end

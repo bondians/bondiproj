@@ -10,8 +10,11 @@
   </fieldset>
 <% end %>
 
-<%= draw_songs(@songs, :no_track, :no_dnd, :no_checkbox, :request_button) %>
-
+<% if Setting.allow_playlists? %>
+  <%= draw_songs(@songs, :no_track, :no_dnd, :no_checkbox, :request_button) %>
+<% else %>
+  <%= draw_songs(@songs,:no_playlist_sel, :no_playlist_add, :no_track, :no_dnd, :no_checkbox, :request_button) %>
+<% end %>
 <br />
 
 <%= will_paginate @products %>

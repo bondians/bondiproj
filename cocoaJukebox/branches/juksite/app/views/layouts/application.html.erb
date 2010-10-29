@@ -67,6 +67,11 @@
                <%= params[:controller] == "currentsongs" ? "<li class=\"selected\">" : "<li>" %>
                     <a href="/currentsongs">Play History</a>    
                </li>
+          <% if Setting.allow_playlists? %>
+               <%= params[:controller] == "playlists" ? "<li class=\"selected\">" : "<li>" %>
+               <a href="/playlists">Playlists</a>    
+               </li>
+          <% end %>
           </ul>
      </div>  <!-- class="leftside" -->
 

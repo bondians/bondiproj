@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101028204226) do
+ActiveRecord::Schema.define(:version => 20101029193102) do
 
   create_table "abuses", :force => true do |t|
     t.text     "abuse"
@@ -225,6 +225,7 @@ ActiveRecord::Schema.define(:version => 20101028204226) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "theme"
+    t.boolean  "allowplaylist"
   end
 
   create_table "songs", :force => true do |t|
@@ -238,7 +239,7 @@ ActiveRecord::Schema.define(:version => 20101028204226) do
     t.integer  "size"
     t.integer  "pre_id"
     t.integer  "post_id"
-    t.float    "fade_duration"
+    t.float    "fade_duration",  :default => -1.0
     t.float    "volume",         :default => 0.7
     t.boolean  "fade_in",        :default => true
     t.integer  "user_id"
