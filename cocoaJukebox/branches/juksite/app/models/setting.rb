@@ -35,7 +35,8 @@ class Setting < ActiveRecord::Base
   
   
   def self.current
-    return Setting.first
+    set = Setting.first
+    set ||= Setting.new
   end
   
   def self.themes

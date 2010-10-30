@@ -2,13 +2,14 @@ junk.each do |thing|
 thing.chomp!
 c = Song.search thing,1
 unless c.empty?
-p *c.map{|s| s.title}
+p *c.map{|s| "#{s.artist.name}   #{s.title}"}
 puts "add?"
 num = gets()
 num = num.to_i
-b.songs.push c[num] 
+b.songs.push c[num]
 end
 end
+
 
 THE HEAT IS ON
 GLENN FREY
