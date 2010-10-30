@@ -11,7 +11,7 @@
 <% end %>
 
 <% if Setting.allow_playlists? %>
-  <%= draw_songs(@songs, :no_track, :no_dnd, :no_checkbox, :request_button) %>
+  <%= draw_songs(@songs, :no_track, :no_dnd, :request_button) %>
 <% else %>
   <%= draw_songs(@songs,:no_playlist_sel, :no_playlist_add, :no_track, :no_dnd, :no_checkbox, :request_button) %>
 <% end %>

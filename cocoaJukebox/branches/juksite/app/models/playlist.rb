@@ -9,7 +9,6 @@ class Playlist < ActiveRecord::Base
   
   def self.add_songs_to_playlist(songs, plist)
     playlist = Playlist.find plist
-    return unless Goldberg.user.playlists.include?(playlist)
     
     songs.each do |s|
       song = Song.find s
@@ -21,9 +20,7 @@ class Playlist < ActiveRecord::Base
   
   def self.remove_songs_from_playlist(songs, plist)
     playlist = Playlist.find plist, :include=>[:plentries, :songs]
-    
-    return unless Goldberg.user.playlists.include?(playlist)
-    
+        
     songs.each do |song|
       entry = playlist.plentries.select{|p| p.song.id == song.to_i}.first
       entry.destroy if entry
@@ -33,7 +30,6 @@ class Playlist < ActiveRecord::Base
   def self.set_index(new_index)
     
     test_entry = Plentry.find new_index.first
-    return test_entry.playlist unless Goldberg.user.playlists.include?(test_entry.playlist)
     
     new_index.each_with_index{|entry,i| Plentry.update_all(["idx = ?", i], ["id = ?", entry])}
     
