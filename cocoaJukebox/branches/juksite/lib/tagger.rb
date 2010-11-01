@@ -42,6 +42,10 @@ class MP4Fixer
     @tag.COVR
   end
   
+  def apid
+    @tag.APID
+  end
+  
   def covertype
     return "image/jpeg" if @tag.cover
     nil
@@ -80,22 +84,30 @@ class Tagger
   end
     
   def title=(text)
+    return if text == ""
     (text = DBConstant::NO_TITLE) if text == ""
     @tag.title=(text)
   end
 
   def artist=(text)
+    return if text == ""
     (text = DBConstant::NO_ARTIST) if text == ""
     @tag.artist=(text)
   end
   
   def album=(text)
+    return if text == ""
     (text = DBConstant::NO_ALBUM) if text == ""
     @tag.album=(text)
   end
   
   def saveChanges
     @tag.update!
+  end
+  
+  def apid
+    return @tag.apid if @tag.apid
+    return nil
   end
   
   def title
