@@ -106,8 +106,8 @@ class Tagger
   end
   
   def apid
-    return @tag.apid if @tag.apid
-    return nil
+    return nil if @tag.filetype != "m4p"
+    return @tag.apid
   end
   
   def title
