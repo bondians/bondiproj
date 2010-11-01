@@ -55,6 +55,7 @@ require "#{RAILS_ROOT}/lib/tagger"
 @albums = Album.all
 @songs = Song.all
 @types = Songtype.all
+@apids = Apid.all
 
 DEFAULTS = {:volume => 0.7, :fade_duration => -1, :fade_in => true}
 
@@ -91,6 +92,19 @@ Find.find(options.path) do |path|
                     attributes[:archive_number] = legacy_num if legacy_num
                     
                     #### Try to find each of the rest of the important fields
+                    ##Apid
+                    apid_tag = tag.apid
+                    unless apid_tag == nil
+			apid = @apids.find{|a| a.email == apid_tag} || Artist.new({:email=>apid_tag})
+			if apid.new_record?
+			    apid.save
+			    @apids.unshift(apid)
+			end
+                    else
+			apid = nil
+                    end
+                    attributes[:apid] = apid
+                    
                     ##Artist
                     artist_tag = tag.artist
                     artist = @artists.find{|a| a.name == artist_tag} || Artist.new({:name=>artist_tag})
@@ -121,7 +135,8 @@ Find.find(options.path) do |path|
                     copy = 0
                     unless testsongs.empty?
 			testsongs.each do |sng|
-			    copy = sng.id if (song.title == sng.title && song.artist == sng.artist && sng.songtype_id != 2)
+			    copy = sng.id if ((song.title == sng.title) && (song.artist == sng.artist) && (sng.songtype_id != 2))
+			    copy = sng.id if (song.songtype_id == 2 && (song.apid == sng.apid))
 			end
                     end
                     if copy > 0
@@ -152,7 +167,6 @@ Find.find(options.path) do |path|
 			destination = DEFAULT_SAVE_PATH + "/" + count.to_s + tag.baseName
 			count += 1
                     end
-		    copy = 2 if song.songtype_id == 2
                     if (copy < 1)
 			system "cp \"#{path}\" \"#{destination}\""
 			system "touch \"#{path}\" \"#{destination}\""
