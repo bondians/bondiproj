@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101016045904) do
+ActiveRecord::Schema.define(:version => 20101101162409) do
 
   create_table "abuses", :force => true do |t|
     t.text     "abuse"
@@ -19,6 +19,12 @@ ActiveRecord::Schema.define(:version => 20101016045904) do
 
   create_table "albums", :force => true do |t|
     t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "apids", :force => true do |t|
+    t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -151,9 +157,9 @@ ActiveRecord::Schema.define(:version => 20101016045904) do
   add_index "goldberg_system_settings", ["site_default_page_id"], :name => "fk_system_settings_site_default_page_id"
 
   create_table "goldberg_users", :force => true do |t|
-    t.string   "name",                                         :null => false
-    t.string   "password",                       :limit => 40, :null => false
-    t.integer  "role_id",                                      :null => false
+    t.string   "name",                           :null => false
+    t.string   "password",                       :null => false
+    t.integer  "role_id",                        :null => false
     t.string   "password_salt"
     t.string   "fullname"
     t.string   "email"
@@ -215,6 +221,7 @@ ActiveRecord::Schema.define(:version => 20101016045904) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.datetime "filemod"
+    t.integer  "apid_id"
   end
 
   create_table "songtypes", :force => true do |t|

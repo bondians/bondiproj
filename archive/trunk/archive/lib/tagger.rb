@@ -47,7 +47,7 @@ class MP4Fixer
   end
   
   def covertype
-    return "image/jpeg" if @tag.cover
+    return "image/jpeg" if @tag.COVR
     nil
   end
 
