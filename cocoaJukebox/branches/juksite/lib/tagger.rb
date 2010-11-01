@@ -106,6 +106,7 @@ class Tagger
   end
   
   def apid
+    debugger;1;1
     return nil unless @filetype == "m4p"
     return @tag.apid
   end
