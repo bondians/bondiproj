@@ -42,6 +42,10 @@ class MP4Fixer
     @tag.COVR
   end
   
+  def apid
+    @tag.APID
+  end
+  
   def covertype
     return "image/jpeg" if @tag.cover
     nil
@@ -80,27 +84,30 @@ class Tagger
   end
     
   def title=(text)
+    return if text == ""
     (text = DBConstant::NO_TITLE) if text == ""
     @tag.title=(text)
   end
 
   def artist=(text)
+    return if text == ""
     (text = DBConstant::NO_ARTIST) if text == ""
     @tag.artist=(text)
   end
   
   def album=(text)
+    return if text == ""
     (text = DBConstant::NO_ALBUM) if text == ""
     @tag.album=(text)
   end
   
-  def genre=(text)
-    (text = DBConstant::NO_GENRE) if text == ""
-    @tag.genre=(text)
-  end
-  
   def saveChanges
     @tag.update!
+  end
+  
+  def apid
+    return nil unless @filetype == "aac"
+    return @tag.apid
   end
   
   def title
@@ -110,7 +117,7 @@ class Tagger
   end
 
   def legacy_num
-    return nil unless @filetype == "mp3";
+    return nil unless @filetype == "mp3"
     tagText = @tag.find{|t| t[:id]==:TXXX}
     return tagText[:text].to_i if tagText 
     return nil
