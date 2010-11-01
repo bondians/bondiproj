@@ -1,0 +1,22 @@
+Setting Active Apids
+
+<% form_tag :action => 'update' do%>
+<table width="30%">
+  <tr>
+    <td width="10%">Check</td>
+    <td width="10%">Apid</td>
+    <td width="10%">Test</td>
+
+  </tr>
+<% @apids.each do |apid| %>
+<tr>
+<td><%= check_box_tag "apids[apids_ids][]", apid.id, apid.active? %></td>
+<td><%= apid.email %></td>
+<% song = apid.songs.first %>
+<td><%= link_to song.title, (song)%></td>
+</tr>
+<% end %>
+</table>
+<br>
+  <%= submit_tag "Update" %>
+<% end %>
