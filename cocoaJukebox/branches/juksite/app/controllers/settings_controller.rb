@@ -19,11 +19,6 @@ class SettingsController < ApplicationController
       app = "#{RAILS_ROOT}/script/jookieControl -volume"
       system "#{app} #{newVolume}"
     end
-    if (params[:setting] && params[:setting] == "hidem4p")
-      Setting.hide_protected= true
-    else
-      Setting.hide_protected= false
-    end
     if (params[:editing] && params[:editing] == "playlists")
       Setting.allow_playlists= true
     else

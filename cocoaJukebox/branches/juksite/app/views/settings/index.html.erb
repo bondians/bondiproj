@@ -8,12 +8,15 @@
     rel="stylesheet"
     type="text/css" />
 
+<p>
 <%= link_to_remote "Skip Song",
    :url => { :controller => :nextsongs,:action => 'action', :do => :playerSkip}%> |
    <%= link_to_remote "Start/Stop",
    :url => { :controller => :nextsongs,:action => 'action', :do => :playerStartStop}%> |
    <%= link_to_remote "Pause",
    :url => { :controller => :nextsongs,:action => 'action', :do => :playerPause}%>
+</p>
+<p><%= link_to "Set Active m4p types", :apids %></p>
 
 
 <% form_tag :action => 'update' do%>
@@ -45,7 +48,6 @@
 <div class="spacer">&nbsp;</div>
 <div class="spacer">&nbsp;</div>
 <div class="spacer">&nbsp;</div>
-<p><%= check_box_tag "setting", "hidem4p", Setting.hide_protected? %> Hide Protected songs (.m4p)?</p>
 <p><%= check_box_tag "editing", "playlists", Setting.allow_playlists? %> Allow Playlist Editing? Note: Changes will be lost eventually.</p>
 
 <p>

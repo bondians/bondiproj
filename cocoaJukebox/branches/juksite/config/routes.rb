@@ -13,6 +13,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :settings
   map.resources :nextsongs
   
+  map.resources :apids
   
   map.connect 'songs/pick/:id', :controller => "songs", :action => "pick"
   map.resources :songs
