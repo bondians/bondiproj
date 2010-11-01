@@ -4,6 +4,7 @@ class Song < ActiveRecord::Base
   belongs_to :genre
   belongs_to :songtype
   has_many :plentries
+  belongs_to :apid
   validates_presence_of :songtype
   validates_presence_of :genre
   validates_presence_of :artist
