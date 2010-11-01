@@ -1,0 +1,2 @@
+class ApidsController < ApplicationController
+end
