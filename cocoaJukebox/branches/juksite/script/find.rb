@@ -43,7 +43,7 @@ end.parse!
 RAILS_ENV = (options.dev ? "development" : "production")
 
 require File.expand_path(__FILE__ + "/../../config/environment")
-require "#{RAILS_ROOT}/lib/tagger"
+#require "#{RAILS_ROOT}/lib/tagger"
 
 
 
@@ -54,6 +54,7 @@ require "#{RAILS_ROOT}/lib/tagger"
 @albums = Album.all
 @songs = Song.all
 @types = Songtype.all
+@apids = Apid.all
 
 @lastrun = Finder.lastrun
 
@@ -96,6 +97,20 @@ Find.find(options.path) do |path|
                     attributes[:archive_number] = legacy_num if legacy_num
                     
                     #### Try to find each of the rest of the important fields
+                    ##apid
+                    apid_tag = tag.apid
+                    unless apid_tag == nil
+			apid = @apids.find{|a| a.email == apid_tag} || Artist.new({:email=>apid_tag})
+			if apid.new_record?
+			    apid.save
+			    @apids.unshift(apid)
+			end
+                    else
+			apid = nil
+                    end
+                    attributes[:apid] = apid
+                    
+                    attributes[:artist] = artist
                     ##Artist
                     artist_tag = tag.artist
                     artist = @artists.find{|a| a.name == artist_tag} || Artist.new({:name=>artist_tag})
