@@ -10,7 +10,7 @@ Setting Active Apids
   </tr>
 <% @apids.each do |apid| %>
 <tr>
-<td><%= check_box_tag "apids[apids_ids][]", apid.id, apid.active? %></td>
+<td><%= check_box_tag "apid[apid_ids][]", apid.id, apid.active? %></td>
 <td><%= apid.email %></td>
 <% song = apid.songs.first %>
 <td><%= link_to song.title, (song)%></td>
