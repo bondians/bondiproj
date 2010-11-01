@@ -152,6 +152,7 @@ Find.find(options.path) do |path|
 			destination = DEFAULT_SAVE_PATH + "/" + count.to_s + tag.baseName
 			count += 1
                     end
+		    copy = 2 if song.songtype_id == 2
                     if (copy < 1)
 			system "cp \"#{path}\" \"#{destination}\""
 			system "touch \"#{path}\" \"#{destination}\""
