@@ -117,7 +117,7 @@ class Tagger
   end
 
   def legacy_num
-    return nil unless @filetype == "mp3";
+    return nil unless @filetype == "mp3"
     tagText = @tag.find{|t| t[:id]==:TXXX}
     return tagText[:text].to_i if tagText 
     return nil
