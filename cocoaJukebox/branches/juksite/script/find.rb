@@ -12,7 +12,7 @@ require 'pp'
 require 'optparse'
 
 totalNumberOfSongs = 0
-DEFAULT_PATH = "/Volumes/MajorTuneage/"
+DEFAULT_PATH = "/Volumes/MajorTuneage/incoming"
 ##########################  Parse Options and all that crap
 options = OpenStruct.new
 
@@ -78,6 +78,7 @@ Find.find(options.path) do |path|
         ########### Currently as that is not implemented it <should> be fixd when file modding becomes possible
         if (options.full || (@lastrun.started < File.mtime(path)))
             if FileTest.file?(path) && Tagger.valid?(path)
+puts path
                 ##Build a song object, while working with the rest
                 attributes = DEFAULTS
                 attributes[:file] = Iconv.conv('UTF-8', 'LATIN1', path)
@@ -100,7 +101,7 @@ Find.find(options.path) do |path|
                     ##apid
                     apid_tag = tag.apid
                     unless apid_tag == nil
-			apid = @apids.find{|a| a.email == apid_tag} || Artist.new({:email=>apid_tag})
+			apid = @apids.find{|a| a.email == apid_tag} || Apid.new({:email=>apid_tag})
 			if apid.new_record?
 			    apid.save
 			    @apids.unshift(apid)
@@ -110,7 +111,6 @@ Find.find(options.path) do |path|
                     end
                     attributes[:apid] = apid
                     
-                    attributes[:artist] = artist
                     ##Artist
                     artist_tag = tag.artist
                     artist = @artists.find{|a| a.name == artist_tag} || Artist.new({:name=>artist_tag})
