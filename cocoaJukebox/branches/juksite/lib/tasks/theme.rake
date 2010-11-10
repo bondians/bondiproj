@@ -7,10 +7,11 @@ namespace :theme do
         end
     end
     
-    task :new do
+    task :new => :list do
         desc "Generate new theme."
-        a = gets
-        puts a
+        puts "Please select the Theme to copy -> "
+        old_theme = STDIN.gets
+        puts old_theme
     end
     
 end
