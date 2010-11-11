@@ -1,0 +1,486 @@
+/* layout.css
+
+This stylesheet is based on "andreas09.css", modified for Goldberg.
+The original credits follow:
+
+andreas09 v1.0 (Dec 10th 2005) - An open source template by Andreas
+Viklund - http://andreasviklund.com. Free to use for any purpose as
+long as the proper credits are given to the original author.
+*/
+
+body {
+background:#F9F8FF url(/themes/Kiowa%20Patriotic/images/far_background.jpg) repeat;
+color:#303030;
+font:76% Verdana,Tahoma,Arial,sans-serif;
+margin:0;
+padding:0;
+text-align:center;
+}
+
+a {
+color:#FFFFFF;
+font-weight:bold;
+text-decoration:none;
+}
+
+a:hover {
+color:#00FFFF;
+text-decoration:underline;
+}
+
+p {
+line-height:1.5em;
+margin:0 0 15px;
+}
+
+/*** Main container ***/
+
+div.container {
+margin:0;
+min-width:770px;
+padding:0;
+text-align:left;
+width:100%;
+}
+
+/*** Header section ***/
+
+div.header {
+color:#42A0FF;
+height:85px;
+margin:-5px 10px;
+text-align:left;
+}
+
+div.header img.logo_left {
+float: left ;
+height:200px ;
+margin:0px ;
+border:0px ;
+}
+
+div.header img.logo_right {  
+float: right ;
+height:200px ;
+margin:0px ;
+border:0px ;
+}
+
+div.header p {
+line-height:1.5em;
+margin:0px;
+}
+
+div.header p.right_text { 
+text-align: right ;
+}
+
+div.header h1, div.header h2 {
+font-weight:400;
+letter-spacing:-2px;
+margin-left:200px;
+padding:0;
+}
+
+div.header h1 {
+font-size:3.0em;
+padding-top:15px;
+}
+
+div.header h2 {
+font-size:1.5em;
+margin-top:-20px;
+}
+
+/*** Horizontal menu ***/
+
+div.mainmenu {
+float:left;
+margin-bottom:25px;
+}
+
+div.mainmenu ul {
+font-size:16px;
+margin:0;
+padding:0;
+}
+
+div.mainmenu li {
+float:left;
+/*height:20px;*/
+list-style:none;
+margin:0;
+padding:0;
+}
+
+div.mainmenu a {
+border-right:1px solid #b0b0b0;
+background:#f0f0f0 url(/images/cornucopia.png) center center repeat-x;
+color:#606060;
+display:block;
+font-size:0.7em;
+padding:5px 7px 5px;
+/* text-transform:uppercase; */
+}
+
+div.mainmenu a:hover {
+background:#f0f0f0 url(/goldberg/images/menuhover.jpg) top left repeat-x;
+color:#505050;
+text-decoration:none;
+}
+
+div.mainmenu li.selected a {
+background:#f0f0f0 url(/goldberg/images/menuhover.jpg) top left repeat-x;
+color:#505050;
+text-decoration:none;
+}
+
+/*** Content wrap ***/
+
+div.wrap {
+clear:both;
+font-size:0.9em;
+padding:0;
+}
+
+/*** Sidebars ***/
+
+div.leftside,div.rightside {
+margin:0;
+padding:0 10px 10px;
+width:165px;
+}
+
+div.leftside {
+float:left;
+margin-right:10px;
+}
+
+div.rightside {
+float:right;
+margin-left:10px;
+}
+
+div.leftside h1, div.rightside h1 { 
+font-size:1.6em;
+font-weight:bold;
+letter-spacing:-1px;
+margin:0 0 12px;
+}
+
+div.leftside h2, div.rightside h2 {
+font-size:1.1em;
+margin:0 0 20px;
+}
+
+div.leftside p, div.rightside p {
+font-size:0.9em;
+line-height:1.4em;
+margin:0 0 16px 10px;
+}
+
+.linklist {
+list-style:none;
+margin:0 0 16px 10px;
+padding:0;
+}
+
+.linklist li {margin-bottom:0.7em;}
+
+/*** Sidebar menu ***/
+
+ul.sidemenu {
+list-style-type:none;
+font-size:1.5em;
+margin-left: 0px;
+padding-left: 0px;
+}
+
+ul.sidemenu li a {
+/*** background:#ED8F1F url(/images/button.png) center center repeat-x;; ***/
+background:#F10002 url(/themes/Kiowa%20Patriotic/images/button.gif) center center repeat-x;
+border:1px solid #4F3530;
+-moz-border-radius: 5px;
+border-radius: 10px;
+color:#FFFFFF;
+font-weight:bold;
+display:block;
+margin-top:8px;
+padding:5px 4px 4px 10px;
+position:relative;
+/*text-transform:uppercase;*/
+width:150px;
+}
+
+ul.sidemenu ul.sidemenu li a {
+font-size:.8em;
+letter-spacing:1px;
+margin:3px 0 2px 20px;
+padding:4px 2px 2px 8px;
+width:134px;
+}
+
+ul.sidemenu a:hover, ul.sidemenu > li.selected > a {
+/*** background:#FFFFAF url(/images/button.png) center center repeat-x; ***/
+background:#0910E8 url(/themes/Kiowa%20Patriotic/images/button.gif) center center repeat-x;
+color:#FFFFFF;
+text-decoration:none;
+}
+
+
+/*** Content ***/
+
+.content {
+background:#fafcff url(/themes/Kiowa%20Patriotic/images/content_background.jpg) center center;
+/*border:1px solid #909090;*/
+-moz-border-radius: 15px;
+border-radius: 15px;
+color:#FFF8C0;
+padding:15px 20px 5px;
+}
+
+.content {
+margin:0 200px;
+}
+a{
+color:#FFFFFF;
+}
+fieldset.search {
+	border: none;
+	width: 243px;
+/*	margin: 0 auto;  
+	background: #222; */
+}
+.search input, .search button {
+	border: none;
+	float: left;
+}
+.search input.box {
+	color: #fff;
+	font-size: 1.2em;
+        filter:alpha(opacity=60);
+        /* CSS3 standard */
+        opacity:0.6;
+	width: 190px;
+	height: 30px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+	padding: 8px 5px 0;
+	background: #616161 url(/images/search_bg.gif) no-repeat;
+	margin-right: 5px;
+}
+.search input.box:focus {
+        color:#fff;
+	background: #616161 url(/images/search_bg.gif) no-repeat left -38px;
+        filter:alpha(opacity=100);
+        /* CSS3 standard */
+        opacity:1.0;
+	outline: none;
+}
+.search button.btn {
+	width: 38px;
+	height: 38px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+	cursor: pointer;
+	text-indent: -9999px;
+	background: #fbc900 url(/images/search_bg.gif) no-repeat top right;
+}
+.search button.btn:hover {
+	background: #fbc900 url(/images/search_bg.gif) no-repeat bottom right;
+}
+
+fieldset.searched {
+	border: none;
+	width: 243px;
+/*	margin: 0 auto;  
+	background: #222; */
+}
+.searched input, .search button {
+	border: none;
+	float: left;
+}
+.searched input.box {
+	color: #fff;
+	font-size: 1.2em;
+        filter:alpha(opacity=60);
+        /* CSS3 standard */
+        opacity:0.6;
+	width: 190px;
+	height: 30px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+	padding: 8px 5px 0;
+	background: #616161 url(/images/search_bg.gif) no-repeat left -76px;
+	margin-right: 5px;
+}
+.searched input.box:focus {
+        color:#fff;
+	background: #616161 url(/images/search_bg.gif) no-repeat left -38px;
+        filter:alpha(opacity=100);
+        /* CSS3 standard */
+        opacity:1.0;
+	outline: none;
+}
+.searched button.btn {
+	width: 38px;
+	height: 38px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+	cursor: pointer;
+	text-indent: -9999px;
+	background: #fbc900 url(/images/search_bg.gif) no-repeat top right;
+}
+.searched button.btn:hover {
+	background: #fbc900 url(/images/search_bg.gif) no-repeat bottom right;
+}
+
+table{
+border-collapse:collapse;
+}
+
+table.content, td, th,
+{
+border-collapse:collapse;
+border:1px solid green;
+}
+
+th
+{
+background-color:#000000;
+color:#f5851f; 
+}
+table a:link{
+color:black;
+}
+
+table a:visited{
+color:black;
+}
+
+table a:hover{
+color:#EE3278;
+}
+tr:nth-child(even) {
+background-color: #1218AA;
+color:#000000;
+font-weight:bold;
+/* for IE */
+filter:alpha(opacity=70);
+/* CSS3 standard */
+opacity:0.7;
+}
+tr:nth-child(odd) {
+background-color: #FF3B32;
+color:#000000;
+font-weight:bold;
+/* for IE */
+filter:alpha(opacity=70);
+/* CSS3 standard */
+opacity:0.7;
+
+}
+
+
+div.content h1, div.content h2 {
+/*** background-color:inherit;
+color:#606060; ***/
+font-size:1.8em;
+font-weight:bold;
+letter-spacing:-1px;
+margin:0 0 15px;
+padding:0;
+}
+
+div.content h2 {
+font-size:1.6em;
+margin-bottom:10px;
+}
+
+div.content img {
+border:1px solid #b0b0b0;
+}
+
+/*** Footer ***/
+
+div.footer {
+background:#8b8b8b;
+clear:both;
+color:#d0d0d0;
+font-size:0.9em;
+font-weight:bold;
+margin:0;
+padding:20px 0;
+text-align:center;
+width:100%;
+}
+
+div.footer a {
+color:#d0d0d0;
+font-weight:bold;
+}
+
+/*** Various classes ***/
+
+.thumbnail {
+background:#fafbfc;
+border:1px solid #b0b0b0;
+margin:0 0 10px 10px;
+padding:5px;
+}
+
+
+.searchform {margin:0;}
+
+.searchbox {
+background:#e2710a;
+border:1px solid #000000;
+margin:0 4px 0 0;
+width:100px;
+}
+
+select {
+background:#f79944;
+border:5px solid #894aaa;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+
+input[type="submit"] {
+background:#f5851f;
+border:1px solid #000000;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+background:#000000;
+border:1px solid #909090;
+color:#f5851f;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+
+
+.clearingdiv {
+clear:both;
+height:30px;
+width:1px;
+}
+
+.hide {display:none;}
+
+/*** Text format ***/
+
+.intro {
+font-size:1.1em;
+font-weight:bold;
+letter-spacing:-1px;
+}
+
+.small {font-size:0.8em;}
+.large {font-size:1.4em;}
+.center {text-align:center;}
+.right {text-align:right;}
+
+/*** End of file ***/
