@@ -1,4 +1,4 @@
-<% unless (!song.apid || (!!song.apid && !!song.apid.active)) %>
+<% unless ((song.songtype_id != 2) || !song.apid || (!!song.apid && !!song.apid.active)) %>
 <tr id="<%=song.id%>">
   <% unless toggledraws.include?(:no_checkbox) %> <td>&nbsp;</td> <% end %>
   <% if toggledraws.include?(:request_button)  %> <td>&nbsp;</td> <% end %>

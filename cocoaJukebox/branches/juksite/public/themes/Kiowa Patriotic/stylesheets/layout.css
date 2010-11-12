@@ -46,7 +46,7 @@ width:100%;
 /*** Header section ***/
 
 div.header {
-color:#42A0FF;
+color:#FCFFF9;
 height:85px;
 margin:-5px 10px;
 text-align:left;
@@ -197,7 +197,7 @@ padding-left: 0px;
 }
 
 ul.sidemenu li a {
-/*** background:#ED8F1F url(/images/button.png) center center repeat-x;; ***/
+/*** background:#ED210D url(/images/button.png) center center repeat-x;; ***/
 background:#F10002 url(/themes/Kiowa%20Patriotic/images/button.gif) center center repeat-x;
 border:1px solid #4F3530;
 -moz-border-radius: 5px;
@@ -221,7 +221,7 @@ width:134px;
 }
 
 ul.sidemenu a:hover, ul.sidemenu > li.selected > a {
-/*** background:#FFFFAF url(/images/button.png) center center repeat-x; ***/
+/*** background:#FF120F url(/images/button.png) center center repeat-x; ***/
 background:#0910E8 url(/themes/Kiowa%20Patriotic/images/button.gif) center center repeat-x;
 color:#FFFFFF;
 text-decoration:none;
@@ -231,11 +231,11 @@ text-decoration:none;
 /*** Content ***/
 
 .content {
-background:#fafcff url(/themes/Kiowa%20Patriotic/images/content_background.jpg) center center;
+background:#fafcff url(/themes/Kiowa%20Patriotic/images/content_background.gif) center center;
 /*border:1px solid #909090;*/
 -moz-border-radius: 15px;
 border-radius: 15px;
-color:#FFF8C0;
+color:#101595;
 padding:15px 20px 5px;
 }
 
@@ -329,10 +329,10 @@ fieldset.searched {
         border-radius: 5px;
 	cursor: pointer;
 	text-indent: -9999px;
-	background: #fbc900 url(/images/search_bg.gif) no-repeat top right;
+	background: #101595 url(/images/search_bg.gif) no-repeat top right;
 }
 .searched button.btn:hover {
-	background: #fbc900 url(/images/search_bg.gif) no-repeat bottom right;
+	background: #101595 url(/images/search_bg.gif) no-repeat bottom right;
 }
 
 table{
@@ -348,7 +348,7 @@ border:1px solid green;
 th
 {
 background-color:#000000;
-color:#f5851f; 
+color:#FFFFF8; 
 }
 table a:link{
 color:black;
@@ -433,21 +433,21 @@ padding:5px;
 .searchform {margin:0;}
 
 .searchbox {
-background:#e2710a;
+background:#E23416;
 border:1px solid #000000;
 margin:0 4px 0 0;
 width:100px;
 }
 
 select {
-background:#f79944;
-border:5px solid #894aaa;
+background:#F71B18;
+border:5px solid #AA000D;
 -moz-border-radius: 5px;
 border-radius: 5px;
 }
 
 input[type="submit"] {
-background:#f5851f;
+background:#E23416;
 border:1px solid #000000;
 -moz-border-radius: 5px;
 border-radius: 5px;
@@ -456,7 +456,7 @@ border-radius: 5px;
 input[type="submit"]:hover {
 background:#000000;
 border:1px solid #909090;
-color:#f5851f;
+color:#E23416;
 -moz-border-radius: 5px;
 border-radius: 5px;
 }

@@ -5,7 +5,7 @@ class NextsongsController < ApplicationController
       Randlist.padRands
     end
     
-    until (item && (!item.song.apid || (!!item.song.apid && !!item.song.apid.active)))
+    until (item && (item.song.songtype_id != 2 || (!item.song.apid || (!!item.song.apid && !!item.song.apid.active))))
       item.destroy if item
       if Randlist.count < 10
         Randlist.padRands
