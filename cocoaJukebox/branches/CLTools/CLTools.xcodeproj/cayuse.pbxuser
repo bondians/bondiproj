@@ -37,9 +37,9 @@
 			PBXWorkspaceStateSaveDate = 309893416;
 		};
 		perUserProjectItems = {
-			41130864127511A600059042 = 41130864127511A600059042 /* PBXTextBookmark */;
-			418B0E3B127531630063DD6D = 418B0E3B127531630063DD6D /* PBXTextBookmark */;
-			41DB8C6D127223CF003FD822 = 41DB8C6D127223CF003FD822 /* PBXTextBookmark */;
+			410E1E0C1278A13C00A0D8A9 /* PBXTextBookmark */ = 410E1E0C1278A13C00A0D8A9 /* PBXTextBookmark */;
+			418B0E3B127531630063DD6D /* PBXTextBookmark */ = 418B0E3B127531630063DD6D /* PBXTextBookmark */;
+			41DB8C6D127223CF003FD822 /* PBXTextBookmark */ = 41DB8C6D127223CF003FD822 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 41DB8C1112721E53003FD822 /* Source Control */;
 		userBuildSettings = {
@@ -47,20 +47,20 @@
 	};
 	08FB7796FE84155DC02AAC07 /* CLTools.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {950, 793}}";
+			sepNavIntBoundsRect = "{{0, 0}, {950, 806}}";
 			sepNavSelRange = "{1424, 0}";
-			sepNavVisRange = "{1044, 752}";
+			sepNavVisRange = "{983, 665}";
 		};
 	};
-	41130864127511A600059042 /* PBXTextBookmark */ = {
+	410E1E0C1278A13C00A0D8A9 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 08FB7796FE84155DC02AAC07 /* CLTools.m */;
-		name = "CLTools.m: 9";
+		name = "CLTools.m: 40";
 		rLen = 0;
-		rLoc = 334;
+		rLoc = 1424;
 		rType = 0;
-		vrLen = 583;
-		vrLoc = 1289;
+		vrLen = 665;
+		vrLoc = 983;
 	};
 	418B0E3B127531630063DD6D /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
