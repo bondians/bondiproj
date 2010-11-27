@@ -13,7 +13,7 @@ require 'optparse'
 
 totalNumberOfSongs = 0
 DEFAULT_PATH = "/Volumes/MajorTuneage/"
-DEFAULT_SAVE_PATH = "/Volumes/MajorTuneage/incoming"
+DEFAULT_SAVE_PATH = "/Volumes/MajorTuneage/muroincoming"
 ##########################  Parse Options and all that crap
 options = OpenStruct.new
 
@@ -95,7 +95,7 @@ Find.find(options.path) do |path|
                     ##Apid
                     apid_tag = tag.apid
                     unless apid_tag == nil
-			apid = @apids.find{|a| a.email == apid_tag} || Artist.new({:email=>apid_tag})
+			apid = @apids.find{|a| a.email == apid_tag} || Apid.new({:email=>apid_tag})
 			if apid.new_record?
 			    apid.save
 			    @apids.unshift(apid)
