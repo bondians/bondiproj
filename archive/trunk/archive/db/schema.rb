@@ -157,9 +157,9 @@ ActiveRecord::Schema.define(:version => 20101101162409) do
   add_index "goldberg_system_settings", ["site_default_page_id"], :name => "fk_system_settings_site_default_page_id"
 
   create_table "goldberg_users", :force => true do |t|
-    t.string   "name",                           :null => false
-    t.string   "password",                       :null => false
-    t.integer  "role_id",                        :null => false
+    t.string   "name",                                         :null => false
+    t.string   "password",                       :limit => 40, :null => false
+    t.integer  "role_id",                                      :null => false
     t.string   "password_salt"
     t.string   "fullname"
     t.string   "email"
