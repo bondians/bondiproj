@@ -60,7 +60,7 @@ margin:0px ;
 border:0px ;
 }
 
-div.header img.logo_right {  
+div.header img.logo_right {
 float: right ;
 }
 
@@ -69,7 +69,7 @@ line-height:1.5em;
 margin:0px;
 }
 
-div.header p.right_text { 
+div.header p.right_text {
 text-align: right ;
 }
 
@@ -88,7 +88,7 @@ padding-top:15px;
 div.header h2 {
 font-size:1.5em;
 margin-top:-20px;
-color:#FFF8C0;
+color:#3a00ea;
 }
 
 /*** Horizontal menu ***/
@@ -160,7 +160,7 @@ float:right;
 margin-left:10px;
 }
 
-div.leftside h1, div.rightside h1 { 
+div.leftside h1, div.rightside h1 {
 font-size:1.6em;
 font-weight:bold;
 letter-spacing:-1px;
@@ -240,13 +240,18 @@ padding:15px 20px 5px;
 .content {
 margin:0 200px;
 }
+
+/*** Here you set the color for bare links like the name of a song in the song display page ***/
 a{
-color:#FFFFC0;
+	color:#1616e9;
+}
+a:hover{
+	color:#14ebe0;
 }
 fieldset.search {
 	border: none;
 	width: 243px;
-/*	margin: 0 auto;  
+/*	margin: 0 auto;
 	background: #222; */
 }
 .search input, .search button {
@@ -291,7 +296,7 @@ fieldset.search {
 fieldset.searched {
 	border: none;
 	width: 243px;
-/*	margin: 0 auto;  
+/*	margin: 0 auto;
 	background: #222; */
 }
 .searched input, .search button {
@@ -330,7 +335,7 @@ fieldset.searched {
 	background: #FBC900 url(/images/search_bg.gif) no-repeat top right;
 }
 .searched button.btn:hover {
-	background: #FBC900 url(/images/search_bg.gif) no-repeat bottom right;
+	background: #00ff00 url(/images/search_bg.gif) no-repeat bottom right;
 }
 
 table{
@@ -346,7 +351,7 @@ border:1px solid green;
 th
 {
 background-color:#203030;
-color:#FFFFC0; 
+color:#FFFFC0;
 }
 table a:link{
 color:black;
@@ -436,20 +441,22 @@ border:1px solid #B0B0B0;
 margin:0 4px 0 0;
 width:100px;
 }
+/*** This section sets the paramaters for the "remove from playlist" button ***/
 
 input[type="submit"] {
-background:#F5A51F;
+background:#0080ff;
 border:1px solid #000000;
-border-radius:3px;
--moz-border-radius:3px;
+border-radius:4px;
+-moz-border-radius:4px;
 }
 
+/*** This section sets the paramaters for the "remove from playlist" button ***/
 input[type="submit"]:hover {
-background:#FFC010;
+background:#80ffff;
 border:1px solid #493109;
 color:#303030;
-border-radius:3px;
--moz-border-radius:3px;
+border-radius:4px;
+-moz-border-radius:4px;
 }
 
 
