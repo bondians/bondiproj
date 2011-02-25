@@ -16,7 +16,7 @@ class SelectionsDispatchController < ApplicationController
       send_data(`/bin/tar cvhfs - #{files.join " "}`, :filename => 'songs.tar', :type => :tar, :x_send_file => true)
       #send_data(`/bin/tar cvhfs - \"#{files.join "\" \""}\""`, :filename => 'songs.tar', :type => :tar)
       #send_data( data, :filename => 'songs.tar', :type => :tar)
-      #redirect_to(playlist)
+      redirect_to(playlist)
 
     when "Remove from Playlist"
       Playlist.remove_songs_from_playlist(songs, playlist)
