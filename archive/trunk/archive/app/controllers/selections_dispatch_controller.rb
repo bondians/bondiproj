@@ -11,11 +11,10 @@ class SelectionsDispatchController < ApplicationController
       redirect_to(playlist)
 
     when "Get As Tar"
-
       files = songs.collect {|s| Song.find(s).file.gsub(/^[\/]/,"")}
-      data = IO.popen("cd / ; /bin/tar cvhfs - \"#{files.join "\" \""}\"" )
-      send_data( data, :filename => 'songs.tar', :type => :tar)
-      redirect_to(playlist)
+      send_data(IO.popen("cd / ; /bin/tar cvhfs - \"#{files.join "\" \""}\"" ), :filename => 'songs.tar', :type => :tar)
+      #send_data( data, :filename => 'songs.tar', :type => :tar)
+      #redirect_to(playlist)
 
     when "Remove from Playlist"
       Playlist.remove_songs_from_playlist(songs, playlist)
