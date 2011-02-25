@@ -26,7 +26,7 @@
   <%     if toggledraws.include?(:playlist_del)    %><p><%= submit_tag "Set Order", :name => "submit"            %></p> <% end %>
   <% unless toggledraws.include?(:no_stream)       %><p><%= submit_tag "Get Streaming List",   :name => "submit", :format=> :m3u %></p> <% end %>
   <p>
-    <h1>TAR IS IN TESTING DO NOT USE</h1>
+    <h1>TAR Is working, please report bugs!</h1>
   </p>
   <p>
   <% unless toggledraws.include?(:no_stream)       %><p><%= submit_tag "Get As Tar",   :name => "submit", :format=> :tar %></p> <% end %>
