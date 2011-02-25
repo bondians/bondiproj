@@ -12,7 +12,7 @@ class SelectionsDispatchController < ApplicationController
 
     when "Get As Tar"
       files = songs.collect {|s| Song.find(s).file.gsub(/^[\/]/,"")}
-      send_data(IO.popen("cd / ; /bin/tar cvhfs - \"#{files.join "\" \""}\"" ), :filename => 'songs.tar', :type => :tar)
+      send_data(`/bin/tar cvhfs - \"#{files.join "\" \""}\""`, :filename => 'songs.tar', :type => :tar)
       #send_data( data, :filename => 'songs.tar', :type => :tar)
       #redirect_to(playlist)
 
