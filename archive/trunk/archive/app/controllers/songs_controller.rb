@@ -190,6 +190,7 @@ class SongsController < ApplicationController
   end
 
   def send_song_tar(songs)
+    raise "you should not be here"
       files = songs.collect {|s| Song.find(s).file.gsub(/^[\/]/,"")}
       send_data(IO.popen("cd / ; /bin/tar cvhfs - \"#{files.join "\" \""}\"" ).readlines)
       Process.wait
