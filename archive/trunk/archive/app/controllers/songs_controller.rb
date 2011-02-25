@@ -1,12 +1,12 @@
 class SongsController < ApplicationController
   skip_before_filter :goldberg_security_up
   prepend_before_filter :do_basic_auth, :goldberg_security_up
-  
+
   def index
     if params[:search]
-      @songs = Song.search params[:search], :include => [:songtype, :album, :artist, :genre, :plentries], 
+      @songs = Song.search params[:search], :include => [:songtype, :album, :artist, :genre, :plentries],
       :order => order_with_default("title", "asc") , :page => params[:page], :per_page => 100
-    
+
       respond_to do |format|
         format.html
         format.xml { render :xml => @songs }
@@ -23,12 +23,12 @@ class SongsController < ApplicationController
     @song = Song.find(params[:id])
     @tags = Tagger.new @song.file
     @songs = params[:songs]
-    
+
     respond_to do |format|
       format.html
       format.m3u
       format.xml { render :xml => @song }
-      
+
       format.m4a { send_song_file @song}
       format.mp3 { send_song_file @song}
       format.m4p { send_song_file @song}
@@ -38,7 +38,7 @@ class SongsController < ApplicationController
 #      unless format.respond_to? @song.songtype.identifier
 #        format.send(@song.songtype.identifier) { send_song_file @song }
 #      end
-      
+
       format.jpg {send_song_cover @tags} if @tags.cover
       format.png {send_song_cover @tags} if @tags.cover
       format.tar {send_song_tar @songs}
@@ -70,7 +70,7 @@ class SongsController < ApplicationController
   # POST /songs.xml
   def create
     @song = Song.new(params[:song])
-    
+
     respond_to do |format|
       if @song.save
         flash[:note] = 'Song was successfully created.'
@@ -121,7 +121,7 @@ class SongsController < ApplicationController
       genre ||= tag.lookup_genre
       genre_tag ||= genre.name
       ## Album
-      
+
       album_tag  =  params[:album]
       if album_tag
         album = (Album.find_by_name album_tag) || Album.new({:name=>album_tag})
@@ -176,26 +176,26 @@ class SongsController < ApplicationController
       redirect_to(@song)
     end
   end
-  
+
   private
-  
+
   def send_song_file(song)
     send_file song.file, :type => song.songtype.mime_type, :disposition => "inline", :x_send_file => true
   end
-  
+
   def send_song_cover(tags)
     if tags.cover
       send_data tags.cover, :type => tags.covertype, :disposition => "inline"
     end
   end
-  
+
   def send_song_tar(songs)
       files = songs.collect {|s| Song.find(s).file.gsub(/^[\/]/,"")}
-      data = IO.popen("cd / ; /bin/tar cvhfs - \"#{files.join "\" \""}\"" ).readlines
+      send_data(IO.popen("cd / ; /bin/tar cvhfs - \"#{files.join "\" \""}\"" ).readlines)
       Process.wait
-      send_data( data, :filename => 'songs.tar', :type => :tar)
+      #send_data( data, :filename => 'songs.tar', :type => :tar)
   end
-  
+
   def order_with_default(column, direction)
     if params[:sort]
       "#{params[:sort]} #{params[:direction]}"
@@ -203,5 +203,5 @@ class SongsController < ApplicationController
       "#{column} #{direction}"
     end
   end
-  
+
 end
