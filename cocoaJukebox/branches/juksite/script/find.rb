@@ -12,7 +12,7 @@ require 'pp'
 require 'optparse'
 
 totalNumberOfSongs = 0
-DEFAULT_PATH = "/Volumes/MajorTuneage/incoming"
+DEFAULT_PATH = "/Volumes/MajorTuneage/moreincoming"
 ##########################  Parse Options and all that crap
 options = OpenStruct.new
 

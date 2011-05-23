@@ -15,6 +15,7 @@ class SettingsController < ApplicationController
     vol = 1.0 if (vol.empty?)
     currentVolume = vol.to_f
     newVolume = params[:newVolume].to_f
+    newValume = 1.0 if newVolume > 1.0
     unless (currentVolume == newVolume)
       app = "#{RAILS_ROOT}/script/jookieControl -volume"
       system "#{app} #{newVolume}"
