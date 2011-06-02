@@ -1,0 +1,66 @@
+// !$*UTF8*$!
+{
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 412DFB4213982678001FB600 /* SpaceAlertRMG */;
+		activeTarget = 8D1107260486CEB800E47090 /* SpaceAlertRMG */;
+		codeSenseManager = 412DFB4F1398269B001FB600 /* Code sense */;
+		executables = (
+			412DFB4213982678001FB600 /* SpaceAlertRMG */,
+		);
+		perUserDictionary = {
+			PBXPerProjectTemplateStateSaveDate = 328738424;
+			PBXWorkspaceStateSaveDate = 328738424;
+		};
+		sourceControlManager = 412DFB4E1398269B001FB600 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	412DFB4213982678001FB600 /* SpaceAlertRMG */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = SpaceAlertRMG;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	412DFB4E1398269B001FB600 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	412DFB4F1398269B001FB600 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	8D1107260486CEB800E47090 /* SpaceAlertRMG */ = {
+		activeExec = 0;
+		executables = (
+			412DFB4213982678001FB600 /* SpaceAlertRMG */,
+		);
+	};
+}

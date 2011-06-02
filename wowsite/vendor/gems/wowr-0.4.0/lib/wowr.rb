@@ -652,9 +652,12 @@ module Wowr
 			doc = Hpricot.XML(response)
 			errors = doc.search("*[@errCode]")
 			if errors.size > 0
+begin
 				errors.each do |error|
 					raise Wowr::Exceptions::raise_me(error[:errCode], options)
 				end
+rescue
+end
 			elsif (doc%'page').nil?
 				raise Wowr::Exceptions::EmptyPage
 			else

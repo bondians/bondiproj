@@ -53,15 +53,17 @@ class WowInterface
     
     armoryData.each do |key,value|
       catchTime = Time.now
-      dude = @api.get_character key
-      attributes = getAttributes dude
-      member = members.find {|mem| mem.name == key} || Member.new
-      members.delete member if GUILDS.include? member.guild
-      member.update_attributes attributes
-      member.save
+      unless( ["Tboneiscrazy", "Selestine"].include? key )
+        dude = @api.get_character key
+        attributes = getAttributes dude
+        member = members.find {|mem| mem.name == key} || Member.new
+        members.delete member if GUILDS.include? member.guild
+        member.update_attributes attributes
+        member.save
       ##Debug
-      puts member.name
-      data[:updated].push member.name
+        puts member.name
+        data[:updated].push member.name
+      end
       timed = 1.5 - (Time.now - catchTime)
       sleep timed if timed > 0
     end
