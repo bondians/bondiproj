@@ -21,46 +21,46 @@
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	appDefaults = [[[NSMutableDictionary alloc] init] autorelease];
 
-        [appDefaults setValue: @"8"                          forKey: @"MinMissionThreatLevel"];
-        [appDefaults setValue: @"8"                          forKey: @"MaxMissionThreatLevel"];
+        [appDefaults setValue: @"8"                          forKey: @"kMinMissionThreatLevel"];
+        [appDefaults setValue: @"8"                          forKey: @"kMaxMissionThreatLevel"];
 
-        [appDefaults setValue: @"1"                          forKey: @"MinUnconfirmedThreatLevel"];
-        [appDefaults setValue: @"1"                          forKey: @"MaxUnconfirmedThreatLevel"];
+        [appDefaults setValue: @"1"                          forKey: @"kMinUnconfirmedThreatLevel"];
+        [appDefaults setValue: @"1"                          forKey: @"kMaxUnconfirmedThreatLevel"];
 
-        [appDefaults setValue: @"0"                          forKey: @"MinRangeUnconfirmedInternalThreat"];
-        [appDefaults setValue: @"1"                          forKey: @"MaxRangeUnconfirmedInternalThreat"];
-        [appDefaults setValue: @"1"                          forKey: @"ThresholdUnconfirmedInternalThreat"];
+        [appDefaults setValue: @"0"                          forKey: @"kMinRangeUnconfirmedInternalThreat"];
+        [appDefaults setValue: @"1"                          forKey: @"kMaxRangeUnconfirmedInternalThreat"];
+        [appDefaults setValue: @"1"                          forKey: @"kThresholdUnconfirmedInternalThreat"];
 
-        [appDefaults setValue: @"0"                          forKey: @"MinRangeSeriousThreat"];
-        [appDefaults setValue: @"2"                          forKey: @"MaxRangeSeriousThreat"];
-        [appDefaults setValue: @"2"                          forKey: @"ThresholdSeriousThreat"];
+        [appDefaults setValue: @"0"                          forKey: @"kMinRangeSeriousThreat"];
+        [appDefaults setValue: @"2"                          forKey: @"kMaxRangeSeriousThreat"];
+        [appDefaults setValue: @"2"                          forKey: @"kThresholdSeriousThreat"];
 
-        [appDefaults setValue: @"1"                          forKey: @"MinInternalThreatLevel"];
-        [appDefaults setValue: @"3"                          forKey: @"MaxInternalThreatLevel"];
+        [appDefaults setValue: @"1"                          forKey: @"kMinInternalThreatLevel"];
+        [appDefaults setValue: @"3"                          forKey: @"kMaxInternalThreatLevel"];
 
-        [appDefaults setValue: @"2"                          forKey: @"MinIncomingData"];
-        [appDefaults setValue: @"3"                          forKey: @"MaxIncomingData"];
+        [appDefaults setValue: @"2"                          forKey: @"kMinIncomingData"];
+        [appDefaults setValue: @"3"                          forKey: @"kMaxIncomingData"];
 
-        [appDefaults setValue: @"3"                          forKey: @"MinDataTransfer"];
-        [appDefaults setValue: @"4"                          forKey: @"MaxDataTransfer"];
+        [appDefaults setValue: @"3"                          forKey: @"kMinDataTransfer"];
+        [appDefaults setValue: @"4"                          forKey: @"kMaxDataTransfer"];
 
-        [appDefaults setValue: @"45"                         forKey: @"MinTotalCommunicationFailureDuration"];
-        [appDefaults setValue: @"60"                         forKey: @"MaxTotalCommunicationFailureDuration"];
+        [appDefaults setValue: @"45"                         forKey: @"kMinTotalCommunicationFailureDuration"];
+        [appDefaults setValue: @"60"                         forKey: @"kMaxTotalCommunicationFailureDuration"];
 
-        [appDefaults setValue: @"9"                          forKey: @"MinSingleCommunicationFailureDuration"];
-        [appDefaults setValue: @"20"                         forKey: @"MaxSingleCommunicationFailureDuration"];
+        [appDefaults setValue: @"9"                          forKey: @"kMinSingleCommunicationFailureDuration"];
+        [appDefaults setValue: @"20"                         forKey: @"kMaxSingleCommunicationFailureDuration"];
 
-        [appDefaults setValue: @"205"                        forKey: @"MinPhaseOneDuration"];
-        [appDefaults setValue: @"240"                        forKey: @"MaxPhaseOneDuration"];
+        [appDefaults setValue: @"205"                        forKey: @"kMinPhaseOneDuration"];
+        [appDefaults setValue: @"240"                        forKey: @"kMaxPhaseOneDuration"];
 
-        [appDefaults setValue: @"180"                        forKey: @"MinPhaseTwoDuration"];
-        [appDefaults setValue: @"225"                        forKey: @"MaxPhaseTwoDuration"];
+        [appDefaults setValue: @"180"                        forKey: @"kMinPhaseTwoDuration"];
+        [appDefaults setValue: @"225"                        forKey: @"kMaxPhaseTwoDuration"];
 
-        [appDefaults setValue: @"140"                        forKey: @"MinPhaseThreeDuration"];
-        [appDefaults setValue: @"155"                        forKey: @"MaxPhaseThreeDuration"];
+        [appDefaults setValue: @"140"                        forKey: @"kMinPhaseThreeDuration"];
+        [appDefaults setValue: @"155"                        forKey: @"kMaxPhaseThreeDuration"];
 
-        [appDefaults setValue: @"0"                          forKey: @"MinTimeToFirstConfirmedThreat"];
-        [appDefaults setValue: @"3500"                       forKey: @"MaxTimeToFirstConfirmedThreat"];
+        [appDefaults setValue: @"0"                          forKey: @"kMinTimeToFirstConfirmedThreat"];
+        [appDefaults setValue: @"3500"                       forKey: @"kMaxTimeToFirstConfirmedThreat"];
 
 	[defaults registerDefaults: appDefaults];
 	[defaults synchronize];
