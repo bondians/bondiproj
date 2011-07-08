@@ -12,7 +12,7 @@ require 'pp'
 require 'optparse'
 
 totalNumberOfSongs = 0
-DEFAULT_PATH = "/Volumes/MajorTuneage/incoming"
+DEFAULT_PATH = "/Volumes/MajorTuneage"
 ##########################  Parse Options and all that crap
 options = OpenStruct.new
 
@@ -165,3 +165,7 @@ end
     @currun.save
 
     
+        system "rake thinking_sphinx:index RAILS_ENV=production"
+	system "/etc/init.d/searchd restart"
+	#system "rake thinking_sphinx:restart RAILS_ENV=production"
+

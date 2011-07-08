@@ -4,7 +4,7 @@ class Song < ActiveRecord::Base
   belongs_to :genre
   belongs_to :songtype
   belongs_to :apid
-  has_many   :plentries
+  has_many   :plentries, :dependent => :destroy
   has_many   :pastpaths, :dependent => :destroy
   validates_presence_of :songtype
 
