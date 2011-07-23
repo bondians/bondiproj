@@ -15,11 +15,11 @@
 <% unless reqsongs.empty? %>
 <p>
   <b>Request Queue</b>
-  <%= draw_songs(reqsongs,:no_playlist_sel, :no_playlist_add, :no_track ) %>
+  <%= draw_songs(reqsongs, :checkbox, :remove_current, :no_track ) %>
 </p>
 <% end %>
 <p>
   <b>Random Queue</b>
-<%= draw_songs(randsongs, :no_playlist_sel, :no_playlist_add, :no_track, :no_dnd, :request_button) %>
+<%= draw_songs(randsongs, :checkbox, :remove_current, :no_track, :no_dnd, :request_button) %>
 </p>
 <script language="javascript" type="text/javascript">setTimeout("<%= remote_function :url=>{:action=> 'index'}, :method=>:get%>",20000);</script>

@@ -3,7 +3,7 @@
 
 <table id="table-1">
   <tr class="nodrop nodrag">
-    <% unless toggledraws.include?(:no_checkbox) %> <th width="5%" >&nbsp;</th> <% end %>
+    <% if toggledraws.include?(:checkbox) %> <th width="5%" >&nbsp;</th> <% end %>
     <% if toggledraws.include?(:request_button)  %> <th width="5%" >&nbsp;</th> <% end %>
     <% unless toggledraws.include?(:no_title)    %> <th width="25%">Title</th> <% end %>
     <% unless toggledraws.include?(:no_track)    %> <th width="5%" >Track</th>  <% end %>
@@ -20,13 +20,13 @@
 
 <br />
 
-  <% unless toggledraws.include?(:no_playlist_sel) %><p><%= collection_select :playlist, :id, (Playlist.all :order => :user_id, :include => :user), :id, :name %></p> <% end %>
-  <% unless toggledraws.include?(:no_playlist_add) %><p><%= submit_tag "Add to Playlist",      :name => "submit" %></p> <% end %>
+  <% if toggledraws.include?(:playlist_sel) %><p><%= collection_select :playlist, :id, (Playlist.all :order => :user_id, :include => :user), :id, :name %></p> <% end %>
+  <% if toggledraws.include?(:playlist_add) %><p><%= submit_tag "Add to Playlist",      :name => "submit" %></p> <% end %>
   <%     if toggledraws.include?(:playlist_del)    %><p><%= submit_tag "Remove from Playlist", :name => "submit" %></p> <% end %>
   <%     if toggledraws.include?(:playlist_del)    %><p><%= submit_tag "Set Playlist Order", :name => "submit"            %></p> <% end %>
 <% unless toggledraws.include?(:playlist_del) %>
  <%     unless toggledraws.include?(:no_dnd)    %><p><%= submit_tag "Set Order", :name => "submit"            %></p> <% end %>
- <%     unless toggledraws.include?(:no_checkbox) %><p><%= submit_tag "Remove Selected", :name => "submit"               %></p> <% end %>
+ <%     if toggledraws.include?(:remove_current) %><p><%= submit_tag "Remove Selected", :name => "submit"               %></p> <% end %>
 <% end %>
 <% end %>
 

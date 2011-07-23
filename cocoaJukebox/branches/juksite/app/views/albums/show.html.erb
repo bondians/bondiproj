@@ -18,7 +18,11 @@
 
 <p>
   <b>Tracks:</b>
-<%= draw_songs(@album.songs.sort, :no_album, :no_checkbox, :request_button) %>
+<% if Setting.allow_playlists? %>
+  <%= draw_songs(@album.songs.sort, :playlist_sel, :playlist_add, :checkbox, :no_album, :request_button) %>
+<% else %>
+  <%= draw_songs(@album.songs.sort, :no_album, :request_button) %>
+<% end %>
 </p>
 
 

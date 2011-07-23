@@ -13,7 +13,7 @@ require 'optparse'
 
 totalNumberOfSongs = 0
 DEFAULT_PATH = "/Volumes/MajorTuneage/"
-DEFAULT_SAVE_PATH = "/Volumes/MajorTuneage/julieincoming"
+DEFAULT_SAVE_PATH = "/Volumes/MajorTuneage/latestincoming"
 ##########################  Parse Options and all that crap
 options = OpenStruct.new
 

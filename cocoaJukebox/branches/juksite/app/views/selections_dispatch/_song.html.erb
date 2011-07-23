@@ -1,6 +1,6 @@
 <% unless ((song.songtype_id != 2) || !song.apid || (!!song.apid && !!song.apid.active)) %>
 <tr id="<%=song.id%>">
-  <% unless toggledraws.include?(:no_checkbox) %> <td>&nbsp;</td> <% end %>
+  <% if toggledraws.include?(:checkbox) %> <td>&nbsp;</td> <% end %>
   <% if toggledraws.include?(:request_button)  %> <td>&nbsp;</td> <% end %>
   <td><%= song.title %></td>
   <% unless toggledraws.include?(:no_track)    %> <td><%= song.track %></td><% end %>
@@ -10,7 +10,7 @@
 </tr>
 <% else %>
 <tr id="<%=song.id%>">
-  <% unless toggledraws.include?(:no_checkbox) %> <td><%= check_box_tag("songs[]", song.id, false, :class=>'song') %> </td> <% end %>
+  <% if toggledraws.include?(:checkbox) %> <td><%= check_box_tag("songs[]", song.id, false, :class=>'song') %> </td> <% end %>
   <% if toggledraws.include?(:request_button)  %> <td><%= link_to "Request", :controller => "songs", :id => song, :action => :pick %> </td> <% end %>
   <td><%= link_to song.title, song  %>  <% unless toggledraws.include?(:no_dnd)      %><%= hidden_field_tag("index[]", song.form_idx.to_i, :class=>'reqlist') -%><% end %></td>
   <% unless toggledraws.include?(:no_track)    %> <td><%= song.track %></td><% end %>

@@ -8,7 +8,9 @@ module SelectionsDispatchHelper
   ## For each element you add, you should decide whether its present by default, or only when needed.
   ## Then wrap it in an 'unless' or 'if' statement as appropriate to toggle.
   ## on by default
-  # :no_checkbox  <= also disables all buttons (it should but dosn't, they need to be disabled on their own)
+  # :checkbox  <= also disables all buttons (it should but dosn't, they need to be disabled on their own)
+  # reversed the behavior of these.. idk why i always want to do things backwards
+  
   # :no_title
   # :no_artist
   # :no_album
@@ -16,8 +18,12 @@ module SelectionsDispatchHelper
   # :no_size
   # :no_type
   # :no_get
-  # :no_playlist_sel <= playlist pulldown list
-  # :no_playlist_add <= add button for playlist
+  
+  # :remove_current  is for the playlist remove from queue button
+  # reversed the behavior of these.. idk why i always want to do things backwards
+
+  # :playlist_sel <= playlist pulldown list
+  # :playlist_add <= add button for playlist
   
   ## off by defoult
   # :playlist_del <= delet buttor for playlist

@@ -10,7 +10,11 @@
   </fieldset>
 <% end %>
 
-<%= draw_songs(songs, :no_track, :no_dnd, :no_checkbox, :request_button) %>
+<% if Setting.allow_playlists? %>
+  <%= draw_songs(songs, :playlist_sel, :playlist_add, :checkbox, :no_track, :no_dnd, :request_button) %>
+<% else %>
+  <%= draw_songs(songs, :no_track, :no_dnd, :request_button) %>
+<% end %>
 
 <br />
 
