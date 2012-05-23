@@ -6,6 +6,9 @@ class SongsController < ApplicationController
     if params[:search]
       @songs = Song.search params[:search], :include => [:songtype, :album, :artist, :genre, :plentries],
       :order => order_with_default("title", "asc") , :page => params[:page], :per_page => 100
+      logger.debug "stuff"
+      logger.debug @songs
+
 
       respond_to do |format|
         format.html
