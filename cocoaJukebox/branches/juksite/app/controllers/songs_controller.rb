@@ -144,4 +144,8 @@ class SongsController < ApplicationController
     end
   end
   
+  def current_song
+    @song = 'defaults read com.deepbondi.cocoaJukebox kCurrentSong'
+  end
+  
 end
