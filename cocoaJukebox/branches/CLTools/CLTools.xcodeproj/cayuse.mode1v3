@@ -197,7 +197,48 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array/>
+	<array>
+		<dict>
+			<key>Content</key>
+			<dict>
+				<key>PBXProjectModuleGUID</key>
+				<string>41CE2F91157402A7009D9502</string>
+				<key>PBXProjectModuleLabel</key>
+				<string>CLTools.m</string>
+				<key>PBXSplitModuleInNavigatorKey</key>
+				<dict>
+					<key>Split0</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>41CE2F92157402A7009D9502</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>CLTools.m</string>
+						<key>_historyCapacity</key>
+						<integer>0</integer>
+						<key>bookmark</key>
+						<string>41CE2F93157402A7009D9502</string>
+						<key>history</key>
+						<array>
+							<string>41CE2F3D1573F2FC009D9502</string>
+						</array>
+					</dict>
+					<key>SplitCount</key>
+					<string>1</string>
+				</dict>
+				<key>StatusBarVisibility</key>
+				<true/>
+			</dict>
+			<key>Geometry</key>
+			<dict>
+				<key>Frame</key>
+				<string>{{0, 20}, {1123, 693}}</string>
+				<key>PBXModuleWindowStatusBarHidden2</key>
+				<false/>
+				<key>RubberWindowFrame</key>
+				<string>15 139 1123 734 0 0 1440 878 </string>
+			</dict>
+		</dict>
+	</array>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>-1</integer>
@@ -212,6 +253,7 @@
 				<string>action</string>
 				<string>NSToolbarFlexibleSpaceItem</string>
 				<string>debugger-enable-breakpoints</string>
+				<string>build</string>
 				<string>build-and-go</string>
 				<string>com.apple.ide.PBXToolbarStopButton</string>
 				<string>get-info</string>
@@ -303,8 +345,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -322,11 +362,11 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>410E1E0C1278A13C00A0D8A9</string>
+										<string>41CE2F8E157402A7009D9502</string>
 										<key>history</key>
 										<array>
 											<string>41DB8C6D127223CF003FD822</string>
-											<string>418B0E3B127531630063DD6D</string>
+											<string>41CE2F8D157402A7009D9502</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -338,16 +378,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {754, 302}}</string>
+								<string>{{0, 0}, {754, 293}}</string>
 								<key>RubberWindowFrame</key>
 								<string>260 224 962 585 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>302pt</string>
+							<string>293pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -358,14 +400,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 307}, {754, 237}}</string>
+								<string>{{0, 298}, {754, 246}}</string>
 								<key>RubberWindowFrame</key>
 								<string>260 224 962 585 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>237pt</string>
+							<string>246pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -384,9 +426,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>410E1E0D1278A13C00A0D8A9</string>
+				<string>41CE2F8F157402A7009D9502</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>410E1E0E1278A13C00A0D8A9</string>
+				<string>41CE2F90157402A7009D9502</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -524,9 +566,9 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1CD10A99069EF8BA00B06720</string>
-		<string>/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools.xcodeproj</string>
 		<string>41DB8C0F12721E53003FD822</string>
+		<string>/Users/cayuse/Desktop/bondiproj/cocoaJukebox/branches/CLTools/CLTools.xcodeproj</string>
+		<string>41CE2F91157402A7009D9502</string>
 	</array>
 	<key>WindowString</key>
 	<string>260 224 962 585 0 0 1440 878 </string>
@@ -567,8 +609,6 @@
 							<string>218pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -608,7 +648,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>41DB8C0F12721E53003FD822</string>
-				<string>410E1E0F1278A13C00A0D8A9</string>
+				<string>41CE2F94157402A7009D9502</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -621,7 +661,7 @@
 			<key>WindowToolGUID</key>
 			<string>41DB8C0F12721E53003FD822</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>

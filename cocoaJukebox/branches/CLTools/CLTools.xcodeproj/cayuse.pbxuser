@@ -33,12 +33,14 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 309893416;
-			PBXWorkspaceStateSaveDate = 309893416;
+			PBXPerProjectTemplateStateSaveDate = 359920374;
+			PBXWorkspaceStateSaveDate = 359920374;
 		};
 		perUserProjectItems = {
-			410E1E0C1278A13C00A0D8A9 /* PBXTextBookmark */ = 410E1E0C1278A13C00A0D8A9 /* PBXTextBookmark */;
-			418B0E3B127531630063DD6D /* PBXTextBookmark */ = 418B0E3B127531630063DD6D /* PBXTextBookmark */;
+			41CE2F3D1573F2FC009D9502 /* PBXBookmark */ = 41CE2F3D1573F2FC009D9502 /* PBXBookmark */;
+			41CE2F8D157402A7009D9502 /* PBXTextBookmark */ = 41CE2F8D157402A7009D9502 /* PBXTextBookmark */;
+			41CE2F8E157402A7009D9502 /* PBXTextBookmark */ = 41CE2F8E157402A7009D9502 /* PBXTextBookmark */;
+			41CE2F93157402A7009D9502 /* PBXTextBookmark */ = 41CE2F93157402A7009D9502 /* PBXTextBookmark */;
 			41DB8C6D127223CF003FD822 /* PBXTextBookmark */ = 41DB8C6D127223CF003FD822 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 41DB8C1112721E53003FD822 /* Source Control */;
@@ -50,9 +52,14 @@
 			sepNavIntBoundsRect = "{{0, 0}, {950, 806}}";
 			sepNavSelRange = "{1424, 0}";
 			sepNavVisRange = "{983, 665}";
+			sepNavWindowFrame = "{{15, 83}, {1123, 790}}";
 		};
 	};
-	410E1E0C1278A13C00A0D8A9 /* PBXTextBookmark */ = {
+	41CE2F3D1573F2FC009D9502 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* CLTools.m */;
+	};
+	41CE2F8D157402A7009D9502 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 08FB7796FE84155DC02AAC07 /* CLTools.m */;
 		name = "CLTools.m: 40";
@@ -62,15 +69,25 @@
 		vrLen = 665;
 		vrLoc = 983;
 	};
-	418B0E3B127531630063DD6D /* PBXTextBookmark */ = {
+	41CE2F8E157402A7009D9502 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 08FB7796FE84155DC02AAC07 /* CLTools.m */;
-		name = "CLTools.m: 41";
+		name = "CLTools.m: 40";
 		rLen = 0;
 		rLoc = 1424;
 		rType = 0;
-		vrLen = 752;
-		vrLoc = 1044;
+		vrLen = 665;
+		vrLoc = 983;
+	};
+	41CE2F93157402A7009D9502 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* CLTools.m */;
+		name = "CLTools.m: 3";
+		rLen = 29;
+		rLoc = 43;
+		rType = 0;
+		vrLen = 1736;
+		vrLoc = 0;
 	};
 	41DB8C0412721E42003FD822 /* CLTools */ = {
 		isa = PBXExecutable;
