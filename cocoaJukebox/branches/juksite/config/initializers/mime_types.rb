@@ -9,6 +9,8 @@
     Mime::Type.register "image/png", :png
     Mime::Type.register "application/x-tar", :tar
     Mime::Type.register "text/plain", :txt
+        #Mime::Type.register "application/json", :json
+
    
   begin 
   Songtype.all.each do |type|

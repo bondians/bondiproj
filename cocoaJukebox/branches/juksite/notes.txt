@@ -1,3 +1,17 @@
+<%#= {:songlist => @songs}.to_json %>
+<%# debugger;1;1 %>
+<%= JSON.pretty_generate({:songlist => @songs.map { |s| {
+:song => {:id => s.id,
+          :title => s.title,
+          :artist => s.artist.name,
+          :album => s.album.name,
+          :genre => s.genre.name,
+          :size => s.size,
+          :type => s.songtype.name}
+          }}}) %>
+          
+songs =
+
 junk.each do |thing|
 thing.chomp!
 c = Song.search thing,1

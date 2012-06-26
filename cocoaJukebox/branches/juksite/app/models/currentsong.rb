@@ -2,9 +2,8 @@ class Currentsong < ActiveRecord::Base
   belongs_to :song
   
   def self.playing
-    playing = Currentsong.first :order => 'id DESC'
-    playing ||= Currentsong.new
-    return playing.song
+    song = `defaults read com.deepbondi.cocoaJukebox kCurrentSong`
+    song.chomp!
   end
   
   def self.setPlaying (song)
